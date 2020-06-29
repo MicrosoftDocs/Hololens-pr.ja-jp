@@ -1,0 +1,207 @@
+---
+title: プロビジョニングパッケージ (HoloLens) を使用して HoloLens を構成する
+description: Windows プロビジョニングによって、IT 管理者はイメージングすることなく簡単にエンド ユーザー デバイスを設定できます。
+ms.prod: hololens
+ms.sitesec: library
+author: dansimp
+ms.author: dansimp
+ms.topic: article
+ms.custom:
+- CI 115190
+- CSSTroubleshooting
+ms.localizationpriority: medium
+ms.date: 03/10/2020
+ms.reviewer: Teresa-Motiv
+manager: laurawi
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
+ms.openlocfilehash: 2b34cc642aa08adf5bb875588c9e4458df0034e1
+ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "10830161"
+---
+# <span data-ttu-id="d1393-103">プロビジョニングパッケージを使用して HoloLens を構成する</span><span class="sxs-lookup"><span data-stu-id="d1393-103">Configure HoloLens by using a provisioning package</span></span>
+
+<span data-ttu-id="d1393-104">[Windows プロビジョニング](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages)は、it 管理者がイメージングを使わずにエンドユーザーのデバイスを簡単に構成できるようにします。</span><span class="sxs-lookup"><span data-stu-id="d1393-104">[Windows provisioning](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) makes it easy for IT administrators to configure end-user devices without imaging.</span></span> <span data-ttu-id="d1393-105">Windows 構成デザイナーは、プロビジョニングパッケージに組み込まれるイメージとランタイム設定を構成するためのツールです。</span><span class="sxs-lookup"><span data-stu-id="d1393-105">Windows Configuration Designer is a tool for configuring images and runtime settings which are then built into provisioning packages.</span></span>
+
+<span data-ttu-id="d1393-106">プロビジョニングパッケージで適用できる HoloLens 構成の一部には、次のようなものがあります。</span><span class="sxs-lookup"><span data-stu-id="d1393-106">Some of the HoloLens configurations that you can apply in a provisioning package include the following:</span></span>
+
+- <span data-ttu-id="d1393-107">[ここで](hololens1-upgrade-enterprise.md)一般法人向け Windows ホログラフィックにアップグレードする</span><span class="sxs-lookup"><span data-stu-id="d1393-107">Upgrade to Windows Holographic for Business [here](hololens1-upgrade-enterprise.md)</span></span>
+- <span data-ttu-id="d1393-108">ローカル アカウントをセットアップする</span><span class="sxs-lookup"><span data-stu-id="d1393-108">Set up a local account</span></span>
+- <span data-ttu-id="d1393-109">Wi-Fi 接続をセットアップする</span><span class="sxs-lookup"><span data-stu-id="d1393-109">Set up a Wi-Fi connection</span></span>
+- <span data-ttu-id="d1393-110">証明書をデバイスに適用する</span><span class="sxs-lookup"><span data-stu-id="d1393-110">Apply certificates to the device</span></span>
+- <span data-ttu-id="d1393-111">開発者モードを有効にする</span><span class="sxs-lookup"><span data-stu-id="d1393-111">Enable Developer Mode</span></span>
+- <span data-ttu-id="d1393-112">キオスクモードを構成する (キオスクモードを構成する詳細な手順については、[こちら](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d1393-112">Configure Kiosk mode (Detailed instructions for configuring kiosk mode can be found [here](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk).</span></span>
+
+## <span data-ttu-id="d1393-113">プロビジョニングパッケージ HoloLens ウィザード</span><span class="sxs-lookup"><span data-stu-id="d1393-113">Provisioning package HoloLens wizard</span></span>
+
+<span data-ttu-id="d1393-114">HoloLens ウィザードでは、プロビジョニングパッケージで次の設定を構成することができます。</span><span class="sxs-lookup"><span data-stu-id="d1393-114">The HoloLens wizard helps you configure the following settings in a provisioning package:</span></span>
+
+- <span data-ttu-id="d1393-115">Enterprise edition にアップグレードする</span><span class="sxs-lookup"><span data-stu-id="d1393-115">Upgrade to the enterprise edition</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="d1393-116">これは、HoloLens 第1世代のデバイスに対してのみ使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d1393-116">This should only be used for HoloLens 1st gen devices.</span></span> <span data-ttu-id="d1393-117">プロビジョニングパッケージの設定は、プロビジョニングパッケージに Windows ホログラフィック for Business のエディションアップグレードライセンスが含まれている場合、または[デバイスが既に Windows ホログラフィック For business にアップグレードされて](hololens1-upgrade-enterprise.md)いる場合にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="d1393-117">Settings in a provisioning package are only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).</span></span>
+
+- <span data-ttu-id="d1393-118">HoloLens の first experience (OOBE) を構成する</span><span class="sxs-lookup"><span data-stu-id="d1393-118">Configure the HoloLens first experience (OOBE)</span></span>
+- <span data-ttu-id="d1393-119">Wi-fi ネットワークを構成する</span><span class="sxs-lookup"><span data-stu-id="d1393-119">Configure the Wi-Fi network</span></span>
+- <span data-ttu-id="d1393-120">Azure Active Directory にデバイスを登録するか、ローカルアカウントを作成する</span><span class="sxs-lookup"><span data-stu-id="d1393-120">Enroll the device in Azure Active Directory, or create a local account</span></span>
+- <span data-ttu-id="d1393-121">証明書を追加する</span><span class="sxs-lookup"><span data-stu-id="d1393-121">Add certificates</span></span>
+- <span data-ttu-id="d1393-122">開発者モードを有効にする</span><span class="sxs-lookup"><span data-stu-id="d1393-122">Enable Developer Mode</span></span>
+- <span data-ttu-id="d1393-123">キオスクモードを構成します。</span><span class="sxs-lookup"><span data-stu-id="d1393-123">Configure kiosk mode.</span></span> <span data-ttu-id="d1393-124">(キオスクモードを構成する詳細な手順については、[こちら](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)を参照してください)。</span><span class="sxs-lookup"><span data-stu-id="d1393-124">(Detailed instructions for configuring kiosk mode can be found [here](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)).</span></span>
+
+> [!WARNING]
+> <span data-ttu-id="d1393-125">いずれかのウィザードを使って Azure Active Directory の登録を構成するには、Windows 10 で Windows 構成デザイナーを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d1393-125">You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.</span></span>
+
+<span data-ttu-id="d1393-126">プロビジョニングパッケージには、管理の手順とポリシー、カスタムのネットワーク接続とポリシーなどを含めることができます。</span><span class="sxs-lookup"><span data-stu-id="d1393-126">Provisioning packages can include management instructions and policies, custom network connections and policies, and more.</span></span>
+
+> [!TIP]
+> <span data-ttu-id="d1393-127">デスクトップ ウィザードを使用して、共通設定を含むパッケージを作成し、詳細エディターに切り替えて、他の設定、アプリ、ポリシーなどを追加します。</span><span class="sxs-lookup"><span data-stu-id="d1393-127">Use the desktop wizard to create a package with the common settings, then switch to the advanced editor to add other settings, apps, policies, etc.</span></span>
+
+## <span data-ttu-id="d1393-128">プロビジョニングパッケージを作成する手順</span><span class="sxs-lookup"><span data-stu-id="d1393-128">Steps for creating provisioning packages</span></span>
+
+1. <span data-ttu-id="d1393-129">**オプション 1:** [Microsoft ストアから](https://www.microsoft.com/store/apps/9nblggh4tx22)</span><span class="sxs-lookup"><span data-stu-id="d1393-129">**Option 1:** [From Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22).</span></span> <span data-ttu-id="d1393-130">これには、HoloLens 2 の機能が含まれます。</span><span class="sxs-lookup"><span data-stu-id="d1393-130">This includes HoloLens 2 capabilities.</span></span>
+2. <span data-ttu-id="d1393-131">**オプション 2:** windows [10 の Windows アセスメント & デプロイメントキット (ADK) から](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)。</span><span class="sxs-lookup"><span data-stu-id="d1393-131">**Option 2:** [From the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).</span></span> <span data-ttu-id="d1393-132">Windows ADK から Windows 構成デザイナーをインストールする場合は、[**インストールする機能を選択**してください] ダイアログボックスで [**構成デザイナー** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="d1393-132">If you install Windows Configuration Designer from the Windows ADK, select **Configuration Designer** from the **Select the features you want to install** dialog box.</span></span> <span data-ttu-id="d1393-133">このオプションには、HoloLens 2 機能は含まれません。</span><span class="sxs-lookup"><span data-stu-id="d1393-133">This option does not include HoloLens 2 capabilities.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="d1393-134">Windows 構成デザイナーへのアクセスが必要なオフライン PC を使用していることがわかっている場合は、[この](https://docs.microsoft.com/hololens/hololens-recovery#downloading-arc-without-using-the-app-store)後の「アドバンスト回復コンパニオンのためのオフラインアプリのインストール」を参照してください。ただし、代わりに windows Confiugration で選択を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="d1393-134">If you know you will be using an offline PC that needs access to Windows Configuration Designer please follow the offline app install [here](https://docs.microsoft.com/hololens/hololens-recovery#downloading-arc-without-using-the-app-store) for Advanced Recovery Companion but making Windows Confiugration Desinger your selection instead.</span></span> 
+
+### <span data-ttu-id="d1393-135">2. プロビジョニングパッケージを作成する</span><span class="sxs-lookup"><span data-stu-id="d1393-135">2. Create the provisioning package</span></span>
+
+<span data-ttu-id="d1393-136">Windows 構成デザイナー ツールを使用して、プロビジョニング パッケージを作成します。</span><span class="sxs-lookup"><span data-stu-id="d1393-136">Use the Windows Configuration Designer tool to create a provisioning package.</span></span>
+
+1. <span data-ttu-id="d1393-137">Windows 構成デザイナーを開きます (既定では %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe)。</span><span class="sxs-lookup"><span data-stu-id="d1393-137">Open Windows Configuration Designer (by default, %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).</span></span>
+
+2. <span data-ttu-id="d1393-138">[ **HoloLens デバイスのプロビジョニング**] を選びます。</span><span class="sxs-lookup"><span data-stu-id="d1393-138">Select **Provision HoloLens devices**.</span></span>
+
+   ![ICD の起動オプション](images/icd-create-options-1703.png)
+
+3. <span data-ttu-id="d1393-140">プロジェクトに名前を指定し、[**完了**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="d1393-140">Name your project and select **Finish**.</span></span>
+
+4. <span data-ttu-id="d1393-141">[**はじめに] ページの**手順を読み、[**次へ**] を選びます。</span><span class="sxs-lookup"><span data-stu-id="d1393-141">Read the instructions on the **Getting started** page and select **Next**.</span></span> <span data-ttu-id="d1393-142">デスクトッププロビジョニング用のページでは、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="d1393-142">The pages for desktop provisioning walk you through the following steps.</span></span>
+  
+> [!IMPORTANT]
+> <span data-ttu-id="d1393-143">プロビジョニング パッケージを作成する場合、プロジェクト ファイルとプロビジョニング パッケージ (.ppkg) ファイルに機密情報を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="d1393-143">When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file.</span></span> <span data-ttu-id="d1393-144">.ppkg ファイルは暗号化するかどうかを選べますが、プロジェクト ファイルは暗号化されません。</span><span class="sxs-lookup"><span data-stu-id="d1393-144">Although you have the option to encrypt the .ppkg file, project files are not encrypted.</span></span> <span data-ttu-id="d1393-145">プロジェクト ファイルは、安全な場所に保存し、不要になったときに削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d1393-145">You should store the project files in a secure location and delete the project files when they are no longer needed.</span></span>
+
+### <span data-ttu-id="d1393-146">設定の構成</span><span class="sxs-lookup"><span data-stu-id="d1393-146">Configure settings</span></span>
+
+<table>
+<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br><span data-ttu-id="d1393-147">HoloLens エディションをアップグレードするエンタープライズライセンスファイルを参照して選びます。</span><span class="sxs-lookup"><span data-stu-id="d1393-147">Browse to and select the enterprise license file to upgrade the HoloLens edition.</span></span></br></br><span data-ttu-id="d1393-148"><strong>また、[はい] </strong> または [ <strong> いいえ] </strong> を切り替えて、最初のエクスペリエンスの一部を非表示にすることもできます。</span><span class="sxs-lookup"><span data-stu-id="d1393-148">You can also toggle <strong>Yes</strong> or <strong>No</strong> to hide parts of the first experience.</span></span></br></br><span data-ttu-id="d1393-149">Wi-fi ネットワークに接続しなくてもデバイスをセットアップするには、 <strong> [wi-fi のセットアップ </strong> をスキップします] をオンに切り替え <strong> </strong> ます。</span><span class="sxs-lookup"><span data-stu-id="d1393-149">To set up the device without the need to connect to a Wi-Fi network, toggle <strong>Skip Wi-Fi setup</strong> to <strong>On</strong>.</span></span></br></br><span data-ttu-id="d1393-150">デバイスが使用される地域とタイムゾーンを選択します。</span><span class="sxs-lookup"><span data-stu-id="d1393-150">Select a region and timezone in which the device will be used.</span></span> </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br><span data-ttu-id="d1393-151">このセクションでは、デバイスが自動的に接続する Wi-fi ワイヤレスネットワークの詳細を入力できます。</span><span class="sxs-lookup"><span data-stu-id="d1393-151">In this section, you can enter the details of the Wi-Fi wireless network that the device should automatically connect to.</span></span> <span data-ttu-id="d1393-152">これを行うには、[ <strong> オン] を選び </strong> 、SSID、ネットワーク <strong> の種類 ([オープン] </strong> または [ <strong> wpa2-パーソナル] </strong> )、および [ <strong> </strong> ワイヤレスネットワークのパスワード] (wpa2-個人用) を入力します。</span><span class="sxs-lookup"><span data-stu-id="d1393-152">To do this, select <strong>On</strong>, enter the SSID, the network type (<strong>Open</strong> or <strong>WPA2-Personal</strong>), and (if <strong>WPA2-Personal</strong>) the password for the wireless network.</span></span></td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br><span data-ttu-id="d1393-153">Azure Active Directory にデバイスを登録するか、デバイスにローカルアカウントを作成することができます。</span><span class="sxs-lookup"><span data-stu-id="d1393-153">You can enroll the device in Azure Active Directory, or create a local account on the device</span></span></br></br><span data-ttu-id="d1393-154">Windows 構成デザイナー ウィザードを使って Azure AD の登録を一括で構成する前に、<a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">組織での Azure AD 参加の設定</a>を行います。</span><span class="sxs-lookup"><span data-stu-id="d1393-154">Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, <a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">set up Azure AD join in your organization</a>.</span></span> <span data-ttu-id="d1393-155">Azure AD テナントの <strong>[ユーザーあたりのデバイスの最大数]</strong> の設定は、ウィザードで利用できる一括トークンを使用できる回数を決定します。</span><span class="sxs-lookup"><span data-stu-id="d1393-155">The <strong>maximum number of devices per user</strong> setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used.</span></span> <span data-ttu-id="d1393-156">Azure AD にデバイスを登録するには、そのオプションを選択して、ウィザードを使って取得する一括トークンのフレンドリ名を入力します。</span><span class="sxs-lookup"><span data-stu-id="d1393-156">To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard.</span></span> <span data-ttu-id="d1393-157">トークンの有効期限を設定します (最大、トークンの取得日から 30 日間)。</span><span class="sxs-lookup"><span data-stu-id="d1393-157">Set an expiration date for the token (maximum is 30 days from the date you get the token).</span></span> <span data-ttu-id="d1393-158">[ <strong> バルクトークンの取得] を選び </strong> ます。</span><span class="sxs-lookup"><span data-stu-id="d1393-158">Select <strong>Get bulk token</strong>.</span></span> <span data-ttu-id="d1393-159"><strong>[&#39;s にサインインします </strong> ] ウィンドウで、Azure AD にデバイスを参加するためのアクセス許可を持つアカウントを入力し、その後、パスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="d1393-159">In the <strong>Let&#39;s get you signed in</strong> window, enter an account that has permissions to join a device to Azure AD, and then the password.</span></span> <span data-ttu-id="d1393-160">[同意する] を選択し <strong> </strong> て、Windows 構成デザイナーに必要なアクセス許可を付与します。</span><span class="sxs-lookup"><span data-stu-id="d1393-160">Select <strong>Accept</strong> to give Windows Configuration Designer the necessary permissions.</span></span> </br></br><span data-ttu-id="d1393-161">ローカルアカウントを作成するには、このオプションを選択し、ユーザー名とパスワードを入力します。</span><span class="sxs-lookup"><span data-stu-id="d1393-161">To create a local account, select that option and enter a user name and password.</span></span> </br></br><strong><span data-ttu-id="d1393-162">重要:</span><span class="sxs-lookup"><span data-stu-id="d1393-162">Important:</span></span></strong> <br /><span data-ttu-id="d1393-163">(Windows 10 バージョン1607のみ)プロビジョニングパッケージでローカルアカウントを作成する場合は、[設定] アプリで42日ごとにパスワードを変更する必要があり <strong> </strong> ます。</span><span class="sxs-lookup"><span data-stu-id="d1393-163">(For Windows 10, version 1607 only) If you create a local account in the provisioning package, you must change the password using the <strong>Settings</strong> app every 42 days.</span></span> <span data-ttu-id="d1393-164">その期間内にパスワードを変更しない場合、アカウントがロックされてサインインできなくなる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="d1393-164">If the password is not changed during that period, the account might be locked out and unable to sign in.</span></span>  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="four"></a><img src="images/four.png" alt="step four"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br><span data-ttu-id="d1393-165">証明書を使ってデバイスをプロビジョニングするには、<strong>[証明書の追加]</strong> をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d1393-165">To provision the device with a certificate, click <strong>Add a certificate</strong>.</span></span> <span data-ttu-id="d1393-166">証明書の名前を入力し、使用する証明書を表示して選択します。</span><span class="sxs-lookup"><span data-stu-id="d1393-166">Enter a name for the certificate, and then browse to and select the certificate to be used.</span></span></td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
+<tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br><span data-ttu-id="d1393-167"><strong> </strong> <strong> </strong> HoloLens で開発者モードを有効にするには、[はい] または [いいえ] をオンにします。</span><span class="sxs-lookup"><span data-stu-id="d1393-167">Toggle <strong>Yes</strong> or <strong>No</strong> to enable Developer Mode on the HoloLens.</span></span> <a href="https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)"><span data-ttu-id="d1393-168">開発者モードの詳細をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="d1393-168">Learn more about Developer Mode.</span></span></a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finish"/></br></br><span data-ttu-id="d1393-169">プロビジョニングパッケージを保護するためにパスワードを設定しないでください。</span><span class="sxs-lookup"><span data-stu-id="d1393-169">Do not set a password to protect your provisioning package.</span></span> <span data-ttu-id="d1393-170">プロビジョニングパッケージがパスワードで保護されている場合、HoloLens デバイスのプロビジョニングは失敗します。</span><span class="sxs-lookup"><span data-stu-id="d1393-170">If the provisioning package is protected by a password, provisioning the HoloLens device will fail.</span></span></td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
+</table>
+
+<span data-ttu-id="d1393-171">完了したら、[**作成**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="d1393-171">After you're done, select **Create**.</span></span> <span data-ttu-id="d1393-172">これは数秒で終わります。</span><span class="sxs-lookup"><span data-stu-id="d1393-172">It only takes a few seconds.</span></span> <span data-ttu-id="d1393-173">パッケージがビルドされると、ページの下部に、パッケージの格納場所がハイパーリンクで表示されます。</span><span class="sxs-lookup"><span data-stu-id="d1393-173">When the package is built, the location where the package is stored is displayed as a hyperlink at the bottom of the page.</span></span>
+
+### <span data-ttu-id="d1393-174">3. advanced provisioning を使用して HoloLens 用のプロビジョニングパッケージを作成する</span><span class="sxs-lookup"><span data-stu-id="d1393-174">3. Create a provisioning package for HoloLens by using advanced provisioning</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="d1393-175">**Advanced provisioning**で作成するプロビジョニングパッケージでは、ビジネスが HoloLens (1 つ目の gen) に正常に適用されるようにするために、Windows ホログラフィックのエディションアップグレードライセンスを含める必要はありません。</span><span class="sxs-lookup"><span data-stu-id="d1393-175">A provisioning package that you create in **Advanced provisioning** does not need to include an edition upgrade license to Windows Holographic for Business to succesfully apply to a HoloLens (1st gen).</span></span> <span data-ttu-id="d1393-176">[詳細については、「HoloLens For Business For ホログラフィック (第1世代)」を参照してください](hololens1-upgrade-enterprise.md)。</span><span class="sxs-lookup"><span data-stu-id="d1393-176">[See more on Windows Holographic for Business for HoloLens (1st gen)](hololens1-upgrade-enterprise.md).</span></span>
+
+1. <span data-ttu-id="d1393-177">Windows 構成デザイナースタート ページで、**[プロビジョニングの詳細設定]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d1393-177">On the Windows Configuration Designer start page, select **Advanced provisioning**.</span></span>
+2. <span data-ttu-id="d1393-178">**[プロジェクトの詳細の入力]** ウィンドウで、プロジェクトの名前とプロジェクトの場所を指定します。</span><span class="sxs-lookup"><span data-stu-id="d1393-178">In the **Enter project details** window, specify a name for your project and the location for your project.</span></span> <span data-ttu-id="d1393-179">必要に応じて、プロジェクトの簡単な説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="d1393-179">Optionally, enter a brief description to describe your project.</span></span>
+
+3. <span data-ttu-id="d1393-180">**[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d1393-180">Select **Next**.</span></span>
+
+4. <span data-ttu-id="d1393-181">[**表示および構成する設定を選択**してください] ウィンドウで、[ **Windows 10 ホログラフィック**] を選び、[**次へ**] を選びます。</span><span class="sxs-lookup"><span data-stu-id="d1393-181">In the **Choose which settings to view and configure** window, select **Windows 10 Holographic**, and then select **Next**.</span></span>
+
+5. <span data-ttu-id="d1393-182">[**完了**] を選びます。</span><span class="sxs-lookup"><span data-stu-id="d1393-182">Select **Finish**.</span></span>
+
+6. <span data-ttu-id="d1393-183">[この記事の後半で説明](#what-you-can-configure)する設定のいずれかを使用して、[**ランタイム設定**] を展開し、パッケージをカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="d1393-183">Expand **Runtime settings** and customize the package by using any of the settings [described later in this article](#what-you-can-configure).</span></span>
+
+    > [!IMPORTANT]
+    > <span data-ttu-id="d1393-184">(Windows 10 バージョン1607のみ)プロビジョニングパッケージでローカルアカウントを作成する場合は、[**設定**] アプリで42日ごとにパスワードを変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d1393-184">(For Windows 10, version 1607 only) If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days.</span></span> <span data-ttu-id="d1393-185">その期間内にパスワードを変更しない場合、アカウントがロックされてサインインできなくなる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="d1393-185">If the password is not changed during that period, the account might be locked out and unable to sign in.</span></span> <span data-ttu-id="d1393-186">ユーザー アカウントがロックされた場合、[デバイスのフル回復](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery)を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d1393-186">If the user account is locked out, you must [perform a full device recovery](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery).</span></span>
+
+7. <span data-ttu-id="d1393-187">[**ファイル**  >  の**保存**] を選びます。</span><span class="sxs-lookup"><span data-stu-id="d1393-187">Select **File** > **Save**.</span></span>
+
+8. <span data-ttu-id="d1393-188">プロジェクトファイルに機密情報が含まれている可能性があるという警告を読み、[ **OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d1393-188">Read the warning that project files may contain sensitive information, and select **OK**.</span></span>
+
+    > [!IMPORTANT]
+    > <span data-ttu-id="d1393-189">プロビジョニング パッケージを作成する場合、プロジェクト ファイルとプロビジョニング パッケージ (.ppkg) ファイルに機密情報を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="d1393-189">When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file.</span></span> <span data-ttu-id="d1393-190">.ppkg ファイルは暗号化するかどうかを選べますが、プロジェクト ファイルは暗号化されません。</span><span class="sxs-lookup"><span data-stu-id="d1393-190">Although you have the option to encrypt the .ppkg file, project files are not encrypted.</span></span> <span data-ttu-id="d1393-191">プロジェクト ファイルは、安全な場所に保存し、不要になったときに削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d1393-191">You should store the project files in a secure location and delete the project files when they are no longer needed.</span></span>
+    
+9. <span data-ttu-id="d1393-192">[ **Export**  >  **プロビジョニングパッケージ**のエクスポート] を選びます。</span><span class="sxs-lookup"><span data-stu-id="d1393-192">Select **Export** > **Provisioning package**.</span></span>
+
+10. <span data-ttu-id="d1393-193">**所有者**を**IT 管理**者に変更します。これにより、このプロビジョニングパッケージの優先順位が、他のソースからこのデバイスに適用されるプロビジョニングパッケージよりも高くなります。</span><span class="sxs-lookup"><span data-stu-id="d1393-193">Change **Owner** to **IT Admin**. This sets the precedence of this provisioning package higher than provisioning packages applied to this device from other sources.</span></span> <span data-ttu-id="d1393-194">**[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d1393-194">Select **Next**.</span></span>
+
+11. <span data-ttu-id="d1393-195">**[パッケージのバージョン]** の値を設定します。</span><span class="sxs-lookup"><span data-stu-id="d1393-195">Set a value for **Package Version**.</span></span>
+
+    > [!TIP]
+    > <span data-ttu-id="d1393-196">既存のパッケージに変更を加えてバージョン番号を変更することで、以前に適用されたパッケージを更新できます。</span><span class="sxs-lookup"><span data-stu-id="d1393-196">You can make changes to existing packages and change the version number to update previously applied packages.</span></span>
+
+12. <span data-ttu-id="d1393-197">**プロビジョニングパッケージの [セキュリティの詳細の選択**] で、[**次へ**] を選びます。</span><span class="sxs-lookup"><span data-stu-id="d1393-197">On the **Select security details for the provisioning package**, select **Next**.</span></span>
+
+    > [!WARNING]
+    > <span data-ttu-id="d1393-198">プロビジョニング パッケージを暗号化すると、HoloLens デバイスのプロビジョニングは失敗します。</span><span class="sxs-lookup"><span data-stu-id="d1393-198">If you encrypt the provisioning package, provisioning the HoloLens device will fail.</span></span>  
+
+13. <span data-ttu-id="d1393-199">[**次へ**] を選択して、プロビジョニングパッケージをビルドするときの出力場所を指定します。</span><span class="sxs-lookup"><span data-stu-id="d1393-199">Select **Next** to specify the output location where you want the provisioning package to go once it's built.</span></span> <span data-ttu-id="d1393-200">既定では、Windows 構成デザイナーはプロジェクト フォルダーを出力先として使います。</span><span class="sxs-lookup"><span data-stu-id="d1393-200">By default, Windows Configuration Designer uses the project folder as the output location.</span></span>
+
+    <span data-ttu-id="d1393-201">必要に応じて [**参照**] を選択して、既定の出力場所を変更できます。</span><span class="sxs-lookup"><span data-stu-id="d1393-201">Optionally, you can select **Browse** to change the default output location.</span></span>
+
+14. <span data-ttu-id="d1393-202">**[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="d1393-202">Select **Next**.</span></span>
+
+15. <span data-ttu-id="d1393-203">[**ビルド**] を選択して、パッケージの作成を開始します。</span><span class="sxs-lookup"><span data-stu-id="d1393-203">Select **Build** to start building the package.</span></span> <span data-ttu-id="d1393-204">ビルド ページにプロジェクト情報が表示され、進行状況バーでビルドの状態が示されます。</span><span class="sxs-lookup"><span data-stu-id="d1393-204">The project information is displayed in the build page and the progress bar indicates the build status.</span></span>
+
+16. <span data-ttu-id="d1393-205">ビルドが完了したら、[**完了**] を選びます。</span><span class="sxs-lookup"><span data-stu-id="d1393-205">When the build completes, select **Finish**.</span></span>
+
+<span id="apply" />
+
+## <span data-ttu-id="d1393-206">セットアップ中に HoloLens にプロビジョニングパッケージを適用する</span><span class="sxs-lookup"><span data-stu-id="d1393-206">Apply a provisioning package to HoloLens during setup</span></span>
+
+1. <span data-ttu-id="d1393-207">USB ケーブルを使用して、デバイスを PC に接続してから、デバイスを起動します。</span><span class="sxs-lookup"><span data-stu-id="d1393-207">Use the USB cable to connect the device to a PC, and then start the device.</span></span> <span data-ttu-id="d1393-208">OOBE の**最初の押さモーメント**ページ以降は続行しないでください。</span><span class="sxs-lookup"><span data-stu-id="d1393-208">Do not continue past the **First interactable moment** page of OOBE.</span></span>   
+    - <span data-ttu-id="d1393-209">HoloLens (第1世代) では、このページには青色のボックスが含まれています。</span><span class="sxs-lookup"><span data-stu-id="d1393-209">On HoloLens (1st gen), this page contains a blue box.</span></span> 
+    - <span data-ttu-id="d1393-210">HoloLens 2 では、このページに hummingbird が含まれています。</span><span class="sxs-lookup"><span data-stu-id="d1393-210">On HoloLens 2, this page contains the hummingbird.</span></span>
+
+2. <span data-ttu-id="d1393-211">**[音量を下げる]** ボタンと**電源**ボタンを同時に短く押して離します。</span><span class="sxs-lookup"><span data-stu-id="d1393-211">Briefly press and release the **Volume Down** and **Power** buttons simultaneously.</span></span> 
+
+3. <span data-ttu-id="d1393-212">PC のエクスプローラーで、HoloLens がデバイスとして表示されます。</span><span class="sxs-lookup"><span data-stu-id="d1393-212">HoloLens shows up as a device in File Explorer on the PC.</span></span>
+
+4. <span data-ttu-id="d1393-213">エクスプローラーで、プロビジョニング パッケージ (.ppkg) をデバイス ストレージに ドラッグ アンド ドロップします。</span><span class="sxs-lookup"><span data-stu-id="d1393-213">In File Explorer, drag and drop the provisioning package (.ppkg) onto the device storage.</span></span>
+
+5. <span data-ttu-id="d1393-214">**調整**ページが表示されている間に、もう一度 **[音量を下げる]** ボタンと**電源**ボタンを同時に短く押して離します。</span><span class="sxs-lookup"><span data-stu-id="d1393-214">Briefly press and release the **Volume Down** and **Power** buttons simultaneously again while on the **fit** page.</span></span>
+
+6. <span data-ttu-id="d1393-215">パッケージを信頼しているかどうかをデバイスが確認し、アプリを適用します。</span><span class="sxs-lookup"><span data-stu-id="d1393-215">The device asks you if you trust the package and would like to apply it.</span></span> <span data-ttu-id="d1393-216">パッケージが信頼できることを確認します。</span><span class="sxs-lookup"><span data-stu-id="d1393-216">Confirm that you trust the package.</span></span>
+
+7. <span data-ttu-id="d1393-217">パッケージが正常に適用されたかどうかが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d1393-217">You will see whether the package was applied successfully or not.</span></span> <span data-ttu-id="d1393-218">失敗した場合、パッケージを修正してもう一度試します。</span><span class="sxs-lookup"><span data-stu-id="d1393-218">If it failed, you can fix your package and try again.</span></span> <span data-ttu-id="d1393-219">成功した場合は OOBE を続けます。</span><span class="sxs-lookup"><span data-stu-id="d1393-219">If it succeeded, proceed with OOBE.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="d1393-220">2016年8月より前にデバイスを購入した場合は、Microsoft アカウントを使用してデバイスにサインインし、最新のオペレーティングシステム更新プログラムを入手して、プロビジョニングパッケージを適用するためにオペレーティングシステムをリセットする必要があります。</span><span class="sxs-lookup"><span data-stu-id="d1393-220">If the device was purchased before August 2016, you will need to sign in to the device by using a Microsoft account, get the latest operating system update, and then reset the operating system in order to apply the provisioning package.</span></span>
+
+### <span data-ttu-id="d1393-221">4. セットアップ後に HoloLens にプロビジョニングパッケージを適用する</span><span class="sxs-lookup"><span data-stu-id="d1393-221">4. Apply a provisioning package to HoloLens after setup</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="d1393-222">これらの手順は、Windows 10 バージョン1809にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="d1393-222">These steps apply only toWindows 10, version 1809.</span></span>
+
+<span data-ttu-id="d1393-223">PC の場合は、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="d1393-223">On your PC, follow these steps:</span></span>
+1. <span data-ttu-id="d1393-224">「 [Hololens ウィザードを使って hololens 用のプロビジョニングパッケージを作成する](hololens-provisioning.md)」の説明に従ってプロビジョニングパッケージを作成します。</span><span class="sxs-lookup"><span data-stu-id="d1393-224">Create a provisioning package as described at [Create a provisioning package for HoloLens using the HoloLens wizard](hololens-provisioning.md).</span></span>
+2. <span data-ttu-id="d1393-225">USB ケーブルを使用して、HoloLens デバイスを PC に接続します。</span><span class="sxs-lookup"><span data-stu-id="d1393-225">Connect the HoloLens device to a PC by using a USB cable.</span></span> <span data-ttu-id="d1393-226">PC のエクスプローラーで、HoloLens がデバイスとして表示されます。</span><span class="sxs-lookup"><span data-stu-id="d1393-226">HoloLens shows up as a device in File Explorer on the PC.</span></span>
+3. <span data-ttu-id="d1393-227">プロビジョニングパッケージを HoloLens の [ドキュメント] フォルダーにドラッグアンドドロップします。</span><span class="sxs-lookup"><span data-stu-id="d1393-227">Drag and drop the provisioning package to the Documents folder on the HoloLens.</span></span>
+
+<span data-ttu-id="d1393-228">HoloLens では、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="d1393-228">On your HoloLens, follow these steps:</span></span>
+1. <span data-ttu-id="d1393-229">[ **Settings**  >  **アカウント**  >  **アクセスの職場または学校にアクセス**する] 設定に移動します。</span><span class="sxs-lookup"><span data-stu-id="d1393-229">Go to **Settings** > **Accounts** > **Access work or school**.</span></span> 
+2. <span data-ttu-id="d1393-230">[**関連設定**] で、[**プロビジョニングパッケージの追加または削除**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="d1393-230">In **Related Settings**, select **Add or remove a provisioning package**.</span></span>
+3. <span data-ttu-id="d1393-231">次のページで [**パッケージの追加**] を選択して、ファイルピッカーを起動し、プロビジョニングパッケージを選択します。</span><span class="sxs-lookup"><span data-stu-id="d1393-231">On the next page, select **Add a package** to launch the file picker and select your provisioning package.</span></span> <span data-ttu-id="d1393-232">フォルダーが空の場合は、[**このデバイス**] を選択し、[**ドキュメント**] を選択してください。</span><span class="sxs-lookup"><span data-stu-id="d1393-232">If the folder is empty, make sure you select **This Device** and select **Documents**.</span></span>
+
+<span data-ttu-id="d1393-233">パッケージを適用すると、**インストールされているパッケージ**の一覧に表示されます。</span><span class="sxs-lookup"><span data-stu-id="d1393-233">After your package has been applied, it shows up in the list of **Installed packages**.</span></span> <span data-ttu-id="d1393-234">パッケージの詳細を表示するか、またはデバイスからパッケージを削除するには、一覧表示されたパッケージを選択します。</span><span class="sxs-lookup"><span data-stu-id="d1393-234">To view the package details or to remove the package from the device, select the listed package.</span></span>
+
+## <span data-ttu-id="d1393-235">構成可能なもの</span><span class="sxs-lookup"><span data-stu-id="d1393-235">What you can configure</span></span>
+
+<span data-ttu-id="d1393-236">プロビジョニング パッケージは、構成サービス プロバイダー (CSP) を利用します。</span><span class="sxs-lookup"><span data-stu-id="d1393-236">Provisioning packages make use of configuration service providers (CSPs).</span></span> <span data-ttu-id="d1393-237">CSP について詳しくない場合は、「[構成サービス プロバイダー (CSP) の概要 (IT 担当者向け)](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="d1393-237">If you're not familiar with CSPs, see [Introduction to configuration service providers (CSPs) for IT pros](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers).</span></span>
+
+<span data-ttu-id="d1393-238">Windows 構成デザイナーで、Windows Holographic 向けプロビジョニング パッケージを作成する場合、**[利用可能なカスタマイズ]** の設定は [Windows Holographic でサポートされている CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) によって異なります。</span><span class="sxs-lookup"><span data-stu-id="d1393-238">In Windows Configuration Designer, when you create a provisioning package for Windows Holographic, the settings in **Available customizations** are based on [CSPs that are supported in Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices).</span></span> <span data-ttu-id="d1393-239">次の表では、HoloLens 用に構成できる設定について説明します。</span><span class="sxs-lookup"><span data-stu-id="d1393-239">The following table describes settings that you might want to configure for HoloLens.</span></span>
+
+![HoloLens 用の一般的な実行時設定](images/icd-settings.png)
+
+| <span data-ttu-id="d1393-241">設定</span><span class="sxs-lookup"><span data-stu-id="d1393-241">Setting</span></span> | <span data-ttu-id="d1393-242">説明</span><span class="sxs-lookup"><span data-stu-id="d1393-242">Description</span></span> |
+| --- | --- |
+| **<span data-ttu-id="d1393-243">証明書</span><span class="sxs-lookup"><span data-stu-id="d1393-243">Certificates</span></span>** | <span data-ttu-id="d1393-244">証明書を HoloLens に展開します。</span><span class="sxs-lookup"><span data-stu-id="d1393-244">Deploy a certificate to HoloLens.</span></span>  |
+| **<span data-ttu-id="d1393-245">ConnectivityProfiles</span><span class="sxs-lookup"><span data-stu-id="d1393-245">ConnectivityProfiles</span></span>** | <span data-ttu-id="d1393-246">Wi-Fi プロファイルを HoloLens に展開します。</span><span class="sxs-lookup"><span data-stu-id="d1393-246">Deploy a Wi-Fi profile to HoloLens.</span></span>   |
+| **<span data-ttu-id="d1393-247">EditionUpgrade</span><span class="sxs-lookup"><span data-stu-id="d1393-247">EditionUpgrade</span></span>** | [<span data-ttu-id="d1393-248">Windows Holographic for Business にアップグレードします。</span><span class="sxs-lookup"><span data-stu-id="d1393-248">Upgrade to Windows Holographic for Business.</span></span>](hololens1-upgrade-enterprise.md)  |
+| **<span data-ttu-id="d1393-249">Policies</span><span class="sxs-lookup"><span data-stu-id="d1393-249">Policies</span></span>** | <span data-ttu-id="d1393-250">HoloLens で開発者モードを許可または禁止します。</span><span class="sxs-lookup"><span data-stu-id="d1393-250">Allow or prevent developer mode on HoloLens.</span></span> [<span data-ttu-id="d1393-251">Windows Holographic for Business でサポートされているポリシー</span><span class="sxs-lookup"><span data-stu-id="d1393-251">Policies supported by Windows Holographic for Business</span></span>](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#hololenspolicies) |
+
+> [!NOTE]
+> <span data-ttu-id="d1393-252">現時点では、プロビジョニングパッケージを使ったアプリのインストール (**UniversalAppInstall**) はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d1393-252">HoloLens does not currently support installing apps (**UniversalAppInstall**) by using a provisioning package.</span></span>
