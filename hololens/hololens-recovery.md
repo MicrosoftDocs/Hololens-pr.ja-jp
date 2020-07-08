@@ -14,17 +14,14 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 5da7f954454b5713823c5aa94742f9c9c0033ca2
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 2c7fa9b8c86900c89bbced1a10f3e9e2bc69bcd0
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828599"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857765"
 ---
-# HoloLens 2 のリセットと回復
+# HoloLens を再起動、リセット、または回復する
 
 ## デバイスの充電
 
@@ -60,7 +57,7 @@ HoloLens 2 デバイスに付属の充電器と USB Type-C ケーブルを使用
 
 4. デバイスをホスト PC に接続し、デバイス マネージャーを開きます (Windows 10 の場合は、**「Windows」キー**を押し、次に **「x」キー**を押して、「デバイス マネージャー」をクリックします)。下の図に示すように、デバイスが Microsoft HoloLens として正しく列挙されていることを確認します。
 
-![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
+![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### ハード リセット手順
 
