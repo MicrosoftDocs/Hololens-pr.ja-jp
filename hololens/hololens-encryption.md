@@ -1,5 +1,5 @@
 ---
-title: HoloLens の Bitlocker の暗号化を有効にする (HoloLens)
+title: HoloLens BitLocker 暗号化
 description: Bitlocker デバイスの暗号化を有効にして、HoloLens に保存されたファイルを保護する
 ms.prod: hololens
 ms.mktglfcycl: manage
@@ -11,16 +11,13 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-appliesto:
-- HoloLens (1st gen)
-ms.openlocfilehash: 29b9ce346456019dad8e9bc6fd02b104ed4a821d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.openlocfilehash: a18d9e890b34f28ffcd8be7546dcdbe08e9934a6
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828689"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857815"
 ---
-# HoloLens の暗号化を有効にする
+# HoloLens BitLocker 暗号化
 
 HoloLens (第1世代) と HoloLens 2 のどちらでも、BitLocker を使ったデバイスの暗号化がサポートされますが、HoloLens 2 では常に BitLocker を有効にします。
 

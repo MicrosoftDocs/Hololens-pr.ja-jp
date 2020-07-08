@@ -1,29 +1,25 @@
 ---
-title: HoloLens の問題のトラブルシューティング
+title: トラブルシューティング
 description: HoloLens の一般的な問題に対する解決策です。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 12/02/2019
 ms.prod: hololens
 ms.topic: article
-ms.custom:
-- CI 111456
-- CSSTroubleshooting
-audience: ITPro
+audience: HoloLens
 ms.localizationpriority: medium
 keywords: 問題、バグ、トラブルシューティング、修正プログラム、ヘルプ、サポート、HoloLens
 manager: jarrettr
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 4897d02f4b789c77204d57c0a7750e3c3803d7bb
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.custom:
+- CI 111456
+- CSSTroubleshooting
+ms.openlocfilehash: 15998fe11de1e7be4f12087a2724bec7e22337b0
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829022"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857745"
 ---
-# HoloLens の問題のトラブルシューティング
+# トラブルシューティング
 
 この記事では、いくつかの一般的な HoloLens の問題を解決する方法について説明します。
 
