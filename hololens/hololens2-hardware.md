@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0b686801651710e6e8c4dcaaaa39e1c0dc4a76b4
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: e41dc6c9d12ee57bb306ebca7e2eeac0b3478014
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829261"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857725"
 ---
 # HoloLens 2 のハードウェア
 
@@ -138,7 +138,9 @@ Microsoft HoloLens 2 は、自立型ホログラフィック コンピュータ�
 
 ### 安全性
 
-[製品の安全性](https://support.microsoft.com/en-us/help/4023454/safety-information): HoloLens 2 は、ANSI Z87.1、CSA Z94.3、および EN 166 の規格試験済みであり、基本的な衝撃保護要件に準拠しています。
+* [製品の安全性](https://support.microsoft.com/en-us/help/4023454/safety-information)
+* [製品の安全性に関する警告と手順](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
+* 目の保護: HoloLens 2 は、ANSI Z87.1、CSA Z94.3、および EN 166 の規格試験済みであり、基本的な衝撃保護要件に準拠しています。
 
 ### 規制情報
 [HoloLens の規制](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)

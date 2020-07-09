@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality 展開のライセンス
+title: ライセンス要件
 description: ''
 ms.prod: hololens
 ms.sitesec: library
@@ -14,14 +14,14 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0da2a2337b3b1f361ffbb698607f304efbf6d193
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: 18a583f407b19c5b86870a49b8182d45f46a45f5
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830141"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857805"
 ---
-# 必要なライセンスを決定する
+# ライセンス要件
 
 ## モバイル デバイス管理 (MDM) ライセンス ガイダンス
 

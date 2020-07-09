@@ -1,5 +1,5 @@
 ---
-title: HoloLens の環境に関する考慮事項
+title: HoloLens 環境に関する考慮事項
 description: ユーザーの目と環境に合わせてデバイスを最適化すると、HoloLens を使用して最善のエクスペリエンスを得られます。 追跡を可能にするために、さまざまな環境要因が組み合わされていますが、Mixed Reality 開発者としては、空間を調整してホログラムの精度を高めるためのいくつかの要素を考慮することができます。
 keywords: ホログラフィック フレーム, 視野, fov, 調整, 空間, 環境, 方法
 author: dorreneb
@@ -10,17 +10,14 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: d2bec32e118ee1c9307b56fad99b7e8859e2a94d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 0fa147eb2b1194dacdcabff4995f5141a1b25bde
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828682"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857855"
 ---
-# HoloLens の環境に関する考慮事項
+# HoloLens 環境に関する考慮事項
 
 HoloLens は、ホログラフィックを "実際の" 世界とブレンドし、周囲にホログラムを配置します。 ホログラフィック アプリ ウィンドウが壁で "ハング" すると、ホログラフィックのバレリーナが卓上で回転し、ウサギの耳が知らないうちにフレンドの頭上に表示されます。 イマーシブなゲームやアプリを使用している場合、ホログラフィックの世界が周囲を埋めるために広がりますが、引き続き空間を表示して移動することができます。
 
