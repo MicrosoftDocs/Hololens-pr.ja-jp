@@ -16,11 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd2b055679f5e1a9a529ad4947773e412211f9c4
-ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
+ms.openlocfilehash: b054b61b269522d673be104ffbda9abc1bc85415
+ms.sourcegitcommit: 168a7659420525e5f3e3088d7ce0b5e03c969029
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858011"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860607"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -28,7 +29,7 @@ HoloLens 用の最新の Insider Preview ビルドへようこそ!  簡単に使
 
 Windows insider がチャネルに移動するようになりました。 **ファスト**リングは**Dev チャネル**になります。**スロー**リングは**ベータチャネル**になり、 **release preview** ring は**リリースプレビューチャネル**になります。 マッピングの外観は次のようになります。
 
-![Windows Insider チャンネル explination](images/WindowsInsiderChannels.png)
+![Windows Insider チャネルの説明](images/WindowsInsiderChannels.png)
 
 詳細については、「 [Windows のブログエントリ](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)」を参照してください。
 
@@ -58,7 +59,6 @@ Insider ビルドをオプトアウトするには、次の操作を行います
 1. 画面の指示に従って、デバイスでの受信を停止します。
 
 
-
 ## フィードバックを提供し、問題を報告する
 
 HoloLens で[フィードバック Hub アプリ](hololens-feedback.md)を使用してフィードバックを提供し、問題を報告することができます。 フィードバック Hub を使用すると、エンジニアが問題を迅速にデバッグして解決するのに役立つすべての必要な診断情報が含まれるようになります。  中国語および日本語版の HoloLens に関する問題は、同じ方法で報告する必要があります。
@@ -73,9 +73,10 @@ HoloLens の Insider ビルドを使用して自由にアプリケーション�
 
 ## Windows Insider リリース ノート
 
-ここに記載されている機能が、insider 以外のビルドでは表示されていない場合は、[リリースノート](hololens-release-notes.md)をお読みになっていることを確認してください。すべての機能を利用できるようになっていることを確認してください。 [HoloLens を更新して](hololens-update-hololens.md)、最新の機能をすべて入手してください。  
+[Windows ホログラフィック5月の更新プログラム2020が](hololens-release-notes.md)リリースされた時点では、リリースプレビューのすべての機能が使用できるようになりました。 [HoloLens を更新して](hololens-update-hololens.md)、最新の機能をすべて入手してください。
 
-このページは、Windows Insider ビルドにリリースするときに、新しい機能を使ってもう一度更新します。 
+Windows Insider ビルドにリリースするときに、このページを新しい機能で再度更新します。
+
 
 ### オートアイポジションのサポート
 
@@ -101,6 +102,6 @@ Uncalibrated ユーザーがデバイスに配置したときに、オートア�
 フライト署名のある FFU でテストするには、フライト署名のある FFU をフラッシュする前にデバイスのフライト ロックを解除する必要があります。
 1. PC で次の操作を実行します。
     1. [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) から PC に FFU をダウンロードします。
-    1. Microsoft Store ([https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)) から ARC (Advanced Recovery Companion) をインストールします。 
+    1. Microsoft Store ([https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)) から ARC (Advanced Recovery Companion) をインストールします。
 1. HoloLens - フライト ロックを解除します。**[設定]** > **[更新とセキュリティ]** > **[Windows Insider Program]** の順に開き、サインアップして、デバイスを再起動します
-1. フラッシュ FFU - ARC を使用してフライト署名された FFU をフラッシュできるようになりました 
+1. フラッシュ FFU - ARC を使用してフライト署名された FFU をフラッシュできるようになりました
