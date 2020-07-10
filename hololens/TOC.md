@@ -71,7 +71,7 @@
 
 # 保守
 ## [HoloLens の更新プログラムの管理](hololens-updates.md)
-## HoloLens の問題解決
+## HoloLens の問題の解決
 ### [トラブルシューティング](hololens-troubleshooting.md)
 ### [HoloLens 2 を再起動、リセット、または回復する](hololens-recovery.md)
 ### [HoloLens (第1世代) を再起動、リセット、または回復する ](hololens1-recovery.md)
