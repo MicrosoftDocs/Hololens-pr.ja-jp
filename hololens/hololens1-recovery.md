@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 36192315e234db16c7747457e69d6d6281c31bfe
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: a52e8e5bae49973d92efa6ea75391dc44d8b8ddb
+ms.sourcegitcommit: 357094acfd39f7c59a0a62f1dd7918b58c209ef7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857735"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "10861162"
 ---
 # HoloLens 第 1 世代を再起動、リセット、または回復する
 
@@ -123,7 +123,7 @@ HoloLens (第 1 世代) が自動的に検出されない場合は、[**デバ�
 
 1. すべての電源からデバイスを取り外します。
 1. デバイスがオンになっている場合は、完全にオフになるまで電源ボタンを押し続けてください。
-1. [**音量を上げる**] ボタンを押したまま、**電源ボタン**を軽くたたきます。 
+1. [**音量を上げる**] ボタンを押したまま、**電源ボタン**を軽くタップします。 
 1. デバイスが起動し、中央の LED ライトのみが表示されます。
 1. デバイスを PC に接続します。
 1. Windows Device Recovery Tool を起動します。
