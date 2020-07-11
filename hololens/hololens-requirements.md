@@ -10,18 +10,21 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/15/2019
-ms.openlocfilehash: 8aa8e0f679ad18a2e47f34c5f1233435a502dc0c
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: e53e6575ef688e01ce2d1f6124f3214b18b05c95
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830131"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865566"
 ---
 # 商用環境での HoloLens の展開
 
 企業向けの設定では、HoloLens をスケールで展開して構成することができます。 この記事では、商用環境で HoloLens デバイスを展開するための手順について説明します。 このガイドでは、HoloLens の基本的な知識を前提としています。 「[はじめに」のガイド](hololens1-setup.md)に従って、初めて HoloLens をセットアップします。
 
-また、このドキュメントでは、企業ネットワークでの使用に関しては、HoloLens がセキュリティチームによって評価されていることを前提としています。 セキュリティに関するよく寄せられる質問については、[こちら](hololens-faq-security.md)をご覧ください。
+また、このドキュメントでは、企業ネットワークでの使用に関しては、HoloLens がセキュリティチームによって評価されていることを前提としています。  
+> [!Tip]
+> [HoloLens のセキュリティ](security-overview.md)についての詳細はこちらをご覧ください。
+> HoloLens (第1世代) セキュリティについては、[この FAQ](hololens1-faq-security.md)を確認してください。
 
 ## 展開手順の概要
 
@@ -32,11 +35,11 @@ ms.locfileid: "10830131"
 1. 省略[プロビジョニングパッケージを使用して HoloLens を構成](hololens-provisioning.md)する
 1. [デバイスを登録する](hololens-enroll-mdm.md)
 1. [HoloLens のリング ベースの更新プログラムをセットアップする](hololens-updates.md)
-1. [HoloLens の Bitlocker デバイスの暗号化を有効にする](hololens-encryption.md)
+1. [HoloLens の Bitlocker デバイスの暗号化を有効にする](security-encryption-data-protection.md)
 
 ## 手順 1.  必要なものを決定する
 
-お客様の環境に HoloLens を展開する前に、まず必要な機能、アプリ、および種類を特定することが重要です。 また、セキュリティチームが会社のネットワークで HoloLens の使用を承認していることを確認することも重要です。 セキュリティの追加情報について[よく寄せられる質問](hololens-faq-security.md)を参照してください。
+お客様の環境に HoloLens を展開する前に、まず必要な機能、アプリ、および種類を特定することが重要です。 また、セキュリティチームが会社のネットワークで HoloLens の使用を承認していることを確認することも重要です。 追加のセキュリティ情報については、「 [HoloLens2 のセキュリティ](security-overview.md)」を参照してください。
 
 ### Id の種類
 
