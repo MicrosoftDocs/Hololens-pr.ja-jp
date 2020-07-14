@@ -38,12 +38,27 @@
 ## HoloLens 2 のエンタープライズ展開の計画
 ### [商用環境での HoloLens の展開](hololens-requirements.md)
 ### [一般的なインフラストラクチャの展開シナリオ](common-scenarios.md)
+## セキュリティ
+### [セキュリティの概要](security-overview.md)
+### [アーキテクチャ](security-architecture.md)
+### [状態の分割と分離](security-state-separation-isolation.md)
+### [管理者不要のオペレーティング システム ](security-adminless-os.md)
+### [パスワードの使用制限](security-limiting-password-use.md)
+### [ハードウェアで支援されたセキュリティとランタイム認証](security-hardware-backed-integrity.md)
+### [暗号化とデータ保護](security-encryption-data-protection.md)
+### [ネットワーク セキュリティ](security-network-security.md)
+### [無線と Wi-Fi](security-wireless-wifi.md)
+### [セキュリティ エンジニアリング ](security-engineering.md)
+### HoloLens 第 1 世代のセキュリティ
+#### [HoloLens (第 1 世代) のセキュリティに関するよく寄せられる質問](hololens1-faq-security.md)
+#### [HoloLens (第1世代) ドライブ BitLocker 暗号化](hololens1-encryption.md)
 ## [ライセンス要件](hololens-licenses-requirements.md)
 ## 環境
 ### [HoloLens 環境に関する考慮事項](hololens-environment-considerations.md)
 ### [HoloLens を使用して物理的スペースをマッピングする](hololens-spaces.md)
 ## [商用機能](hololens-commercial-features.md)
 ## [Windows Holographic for Business 機能のロック解除](hololens1-upgrade-enterprise.md)
+
 # 構成
 ## Identity
 ### [HoloLens のユーザー ID とサインインを管理する](hololens-identity.md)
@@ -53,9 +68,8 @@
 ### [HoloLens をネットワークに接続する](hololens-network.md)
 ### [HoloLens の接続エンドポイントの管理](hololens-offline.md)
 ### [Bluetooth および USB-C デバイスに接続する](hololens-connect-devices.md)
-## セキュリティ
-### [セキュリティに関するよく寄せられる質問](hololens-faq-security.md)
-### [HoloLens BitLocker の暗号化](hololens-encryption.md)
+
+
 ## Policies
 ### [プロビジョニングパッケージを使用して HoloLens を構成する](hololens-provisioning.md)
 ### [HoloLens を Kiosk としてセットアップする](hololens-kiosk.md)

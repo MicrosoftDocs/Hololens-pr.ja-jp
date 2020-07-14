@@ -16,12 +16,12 @@ ms.custom:
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ca4256fc38253f6f1618da73f804ab3d4c0e66df
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 977f6b86e545e834bc9f7d5060b55755243531ac
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827521"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865546"
 ---
 # Microsoft HoloLens
 
@@ -56,7 +56,7 @@ ms.locfileid: "10827521"
 | [HoloLens 更新プログラム管理](hololens-updates.md) | モバイル デバイス管理 (MDM) ポリシーを使用して、更新プログラムの設定を構成します。 |
 | [HoloLens ユーザー管理](hololens-multiple-users.md) | 複数のユーザーが、Azure Active Directory アカウントを使用して HoloLens デバイスを共有できます。 |
 | [HoloLens アプリケーション アクセス管理](hololens-kiosk.md) | 異なるユーザー グループのアプリケーション アクセスを管理します。  |
-| [HoloLens の問題の回復とトラブルシューティング](https://support.microsoft.com/products/hololens) |  HoloLens からログを収集する方法、正常に動作していないデバイスを回復する方法、または必要に応じて HoloLens をリセットする方法について説明します。 |
+| [HoloLens の問題の回復とトラブルシューティング](hololens-recovery.md) |  問題のあるデバイスを再起動する方法、または必要に応じて HoloLens 2 をリセットする方法について説明します。 |
 | [サポートに問い合わせ](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) | ビジネス サポート チームへの新しいサポート要求を作成します。 | 
 | [サポート オプションの詳細](https://support.microsoft.com/products/hololens) | 社内の HoloLens 用 Microsoft サポート リソースに接続します。 |
 
