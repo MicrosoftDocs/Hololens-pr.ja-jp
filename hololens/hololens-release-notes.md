@@ -15,18 +15,37 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 25a1bc21638090cc5d22bc4482299f3931641dea
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: cb4296413fdf31376ff0d11f1fa807c190af81f4
+ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829042"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881237"
 ---
 # HoloLens 2 のリリース ノート
 
-HoloLens デバイスで生産性を向上させるには、引き続き機能、バグ、セキュリティの更新プログラムをリリースします。 このページでは、HoloLens の各月の新機能について説明します。 最新の HoloLens 2 FFU をダウンロードして、[アドバンスト回復コンパニオン](hololens-recovery.md#clean-reflash-the-device)でデバイスをフラッシュしたい場合は、[ここ](https://aka.ms/hololens2download)からダウンロードしてください。 これは最新の状態に維持され、最新の一般的なビルドと一致します。 
+HoloLens デバイスで生産性を向上させるには、引き続き機能、バグ、セキュリティの更新プログラムをリリースします。 このページでは、HoloLens の各月の新機能について説明します。 最新の HoloLens 2 FFU をダウンロードして、[アドバンスト回復コンパニオン](hololens-recovery.md#clean-reflash-the-device)でデバイスをフラッシュしたい場合は、[ここ](https://aka.ms/hololens2download)からダウンロードしてください。 これは最新の状態に保たれ、最新の一般に入手可能なビルドと一致します。 
 
 HoloLens エミュレーターのリリースノートは、[ここで](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)見つけることができます。
+
+## Windows ホログラフィック、バージョン 2004 (2020 年7月の更新プログラム)
+- ビルド19041.1109
+
+更新プログラムの改善と修正:
+
+- 開発者は、セキュリティで保護された接続を必要とする Device Portal を有効または無効にすることを選択できます。
+- OS の更新後にアプリケーションが起動するために、信頼性が向上しました。
+- 既定の受信トレイの明るさを100% に変更します。
+- HoloLens 2 での Windows Device Portal の HTTPS 転送に関する問題に対処しました。
+
+## Windows ホログラフィック、バージョン 1903 (2020 年7月の更新プログラム)
+- ビルド18362.1071
+
+更新プログラムの改善と修正:
+
+- Regaining トラッキングまたはその両方を使用しているときに、Unity アプリケーションでホログラムが消える可能性がある問題が修正されました。
+- 特定のデバイスでの Hololens エミュレーターとハードウェアアクセラレーションを使っているときに、排他 Hololens アプリがシェルにクラッシュする原因となっていた問題が修正されました。
+- HoloLens 2 での Windows Device Portal の HTTPS 転送に関する問題に対処しました。
 
 ## Windows ホログラフィック、バージョン 2004-2020 年6月の更新プログラム
 - ビルド19041.1106
