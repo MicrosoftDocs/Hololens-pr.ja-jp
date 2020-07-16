@@ -97,5 +97,6 @@
 # HoloLens のリリース ノート
 ## [HoloLens 2 のリリース ノート](hololens-release-notes.md)
 ## [Microsoft HoloLens の Insider Preview](hololens-insider.md)
+### [グローバルに割り当てられたアクセス-キオスク](hololens-global-assigned-access-kiosk.md)
 ## [HoloLens (第1世代) のリリース ノート](hololens1-release-notes.md)
 # [ご意見ご感想をお寄せください](hololens-feedback.md)
