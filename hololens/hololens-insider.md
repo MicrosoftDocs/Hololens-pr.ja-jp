@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b054b61b269522d673be104ffbda9abc1bc85415
-ms.sourcegitcommit: 168a7659420525e5f3e3088d7ce0b5e03c969029
+ms.openlocfilehash: 5cdb7302aec5b37a5071f2192f7c8bc5df760ac7
+ms.sourcegitcommit: 3db43bc4a007b10901d8edb045f66e1e299c57a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "10860607"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882429"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -51,11 +51,13 @@ Windows Holographic の Insider ビルドを受け取りたくない場合は、
 HoloLens が製品版ビルドを実行していることを確認するには、次の操作を行います。
 
 1. **[設定] > [システム] > [バージョン情報]** の順に移動し、ビルド番号を探します。
-1. [製品版ビルド番号については、リリース ノートをご覧ください。](hololens-release-notes.md)
+
+1. [製品のビルド番号については、リリースノートを参照してください](hololens-release-notes.md)。
 
 Insider ビルドをオプトアウトするには、次の操作を行います。
 
 1. 製品版ビルドを実行している HoloLens で、**[設定] > [更新とセキュリティ] > [Windows Insider Program]** に移動して、**[Insider Preview ビルドの停止]** を選択します。
+
 1. 画面の指示に従って、デバイスでの受信を停止します。
 
 
@@ -73,10 +75,15 @@ HoloLens の Insider ビルドを使用して自由にアプリケーション�
 
 ## Windows Insider リリース ノート
 
-[Windows ホログラフィック5月の更新プログラム2020が](hololens-release-notes.md)リリースされた時点では、リリースプレビューのすべての機能が使用できるようになりました。 [HoloLens を更新して](hololens-update-hololens.md)、最新の機能をすべて入手してください。
+ここに表示されていない機能を探している場合は、通常は利用可能になっています。 [リリースノート](hololens-release-notes.md)を参照して、どのような機能を利用しているかを確認してください。 [HoloLens を更新して](hololens-update-hololens.md)、最新の機能をすべて入手してください。
 
-Windows Insider ビルドにリリースするときに、このページを新しい機能で再度更新します。
+このページは、Windows Insider ビルドにリリースされるときに、もう一度新しい機能で更新されます。
 
+| 機能                               | 説明                                                                                   | Insider ビルドで利用可能 |
+|---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| オートアイポジションのサポート             | アイポジションを積極的に検索して、正確なホログラムの配置を実現します。                       | 19041.1339 +                 |
+| グローバルに割り当てられたアクセス                | システムレベルで適用可能な複数のアプリキオスクモード用に HoloLens 2 デバイスを構成します。  | 19041.1346 +                 |
+| マルチアプリキオスクでアプリを自動起動する | 複数アプリのキオスクモードにサインインしたときに自動的に起動するようにアプリケーションを設定します。 | 19041.1346 +                 |
 
 ### オートアイポジションのサポート
 
@@ -96,12 +103,29 @@ Uncalibrated ユーザーがデバイスに配置したときに、オートア�
 視力のデータを必要とするエクスペリエンスや、非常に正確なホログラムの配置が必要な場合は、ユーザーがアイトラッキングの調整プロンプトからアイトラッキングの調整を実行するか、[スタート] メニューから設定アプリを起動して、[**システム > 調整] >** 目の調整 > 実行することをお勧めします。
 
 **既知の問題**
-1.  この問題を調査していますが、メモリ負荷が高い状態で実行するとアイトラッカードライバーのホストプロセスがクラッシュする可能性があります。 アイトラッキングドライバーのホストプロセスは、自動的に回復する必要があります。
+ - この問題を調査していますが、メモリ負荷が高い状態で実行するとアイトラッカードライバーのホストプロセスがクラッシュする可能性があります。 アイトラッキングドライバーのホストプロセスは、自動的に回復する必要があります。
+
+### グローバル割り当てアクセス–キオスクモード
+この新機能により、IT 管理者は、システムレベルで適用可能な複数のアプリキオスクモード用に HoloLens 2 デバイスを構成できます。また、システム上の id とのアフィニティはありません。また、デバイスにサインインしたすべてのユーザーに適用されます。 この新機能の詳細について[は、こちらをご覧](hololens-global-assigned-access-kiosk.md)ください。
+
+### 複数アプリのキオスクモードでのアプリケーションの自動起動 
+複数のアプリのキオスクモードにのみ適用され、[割り当て済みのアクセス構成] の下の強調表示された属性を使用して、1つのアプリのみを自動起動に指定できます。 
+
+ユーザーがサインインすると、アプリケーションが自動的に起動します。 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
 
 ## FFU のダウンロードとフラッシュの手順
 フライト署名のある FFU でテストするには、フライト署名のある FFU をフラッシュする前にデバイスのフライト ロックを解除する必要があります。
-1. PC で次の操作を実行します。
-    1. [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) から PC に FFU をダウンロードします。
+1. PC の場合:
+
+    1. から PC に ffu をダウンロード [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) してください。
+    
     1. Microsoft Store ([https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)) から ARC (Advanced Recovery Companion) をインストールします。
-1. HoloLens - フライト ロックを解除します。**[設定]** > **[更新とセキュリティ]** > **[Windows Insider Program]** の順に開き、サインアップして、デバイスを再起動します
-1. フラッシュ FFU - ARC を使用してフライト署名された FFU をフラッシュできるようになりました
+    
+1. HoloLens でのロック解除:**設定**の  >  **更新 & セキュリティ**  >  **Windows Insider プログラム**を開くと、次にサインアップして、デバイスを再起動します。
+
+1. Flash FFU-「ARC」を使って、フライト署名された FFU を点滅させることができます。

@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: 330a7fd549a2b847f77715ca90d69f1d4df1fb1d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: db95edfbadb271b7fc47cf5798e80d9b2cad3c90
+ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829296"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881330"
 ---
 # HoloLens の既知の問題
 
@@ -47,6 +47,14 @@ ms.locfileid: "10829296"
 - Mixed Reality キャプチャのライブプレビュー機能は、数秒間の待機時間を示す場合があります。
 - 仮想入力ページでは、[仮想ジェスチャー] セクションのジェスチャとスクロールコントロールは機能しません。 これらを使用しても効果はありません。 同じページの仮想キーボードは正しく動作します。
 - [設定] で開発者モードを有効にした後、デバイスポータルが有効になるまでに数秒かかることがあります。
+
+### OneDrive カメラのアップロード
+
+HoloLens 用の OneDrive アプリでは、職場または学校アカウントの自動カメラアップロードはサポートされていません。
+
+対策
+- ビジネスで利用可能であれば、カメラの自動アップロードは、コンシューマーの Microsoft アカウントでサポートされています。 職場または学校のアカウントに加えて、Microsoft アカウントにサインインすることもできます (OneDrive アプリでは、2つのサインインがサポートされています)。 OneDrive 内の Microsoft アカウントプロファイルで、バックグラウンドカメラロールの自動アップロードを有効にすることができます。
+- 写真を自動的にアップロードするためにコンシューマーの Microsoft アカウントを安全に使用できない場合は、OneDrive アプリから職場または学校のアカウントに写真を手動でアップロードすることができます。 そのためには、OneDrive アプリで職場または学校のアカウントにサインインしていることを確認します。 ボタンを選択 **+** して、[**アップロード**] を選びます。 アップロードする写真またはビデオを検索するには、[**画像 > カメラロール**に移動します。 アップロードする写真またはビデオを選択し、[**開く**] ボタンを選択します。
 
 ## HoloLens 2 デバイスの既知の問題
 
