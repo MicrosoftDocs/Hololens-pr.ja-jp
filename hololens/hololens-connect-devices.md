@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d4c5441c1df198ae1c85be5d8f4fe38f10f0be4b
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 53d426b4319dafd0dd976e67111992020507f719
+ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828712"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881247"
 ---
 # Bluetooth および USB-C デバイスに接続する
 
@@ -29,6 +29,9 @@ HoloLens 2 は、次のクラスの Bluetooth デバイスをサポートしま�
 - マウス
 - キーボード
 - Bluetooth オーディオ出力 (A2DP) デバイス
+
+> [!NOTE]
+> 外付けマイクは使用できません。 HoloLens 2 は、内蔵の[マイクロフォン アレイ](hololens2-hardware.md#audio-and-speech)を使用します。
 
 HoloLens （第１世代） は、次のクラスの Bluetooth デバイスをサポートします。
 
@@ -44,7 +47,9 @@ HoloLens （第１世代） は、次のクラスの Bluetooth デバイスを�
 1. キーボードまたはマウスの電源をオンにして、検出可能にします。 デバイスを検出可能にする方法については、デバイス (またはそのドキュメント) に記載されている情報を検索するか、製造元の web サイトにアクセスしてください。
 
 1. ブルーム ジェスチャー (HoloLens (第１世代）) またはスタート ジェスチャー (HoloLens 2) を使用して、**[スタート]** に移動し、**[設定]** を選択します。
+
 1. **[デバイス]** を選択し、Bluetooth がオンになっていることを確認します。  
+
 1. デバイス名が表示されたら、**[ペアリング]** を選び、指示に従います。
 
 ### HoloLens （第１世代） : クリッカーをペアリング
@@ -74,7 +79,7 @@ HoloLens 2 は、次のクラスの USB-C デバイスをサポートします�
 - 複合 PD ハブ （USB-A + PD 充電器）
 
 > [!NOTE]
-> USB-C 接続を使用しているモバイル デバイスの中には、イーサネット アダプターとして HoloLens に直接表示されるため、Windows ホログラフィックのバージョン2004からテザリング構成で使用することができます。 別のドライバーを必要とする USB LTE モデム、および構成用にインストールされるアプリケーションがサポートされない
+> USB-C 接続を使用しているモバイル デバイスの中には、イーサネット アダプターとして HoloLens に直接表示されるため、Windows ホログラフィックのバージョン2004からテザリング構成で使用することができます。 別のドライバーが必要な USB LTE モデムと、構成用にインストールされるアプリケーションはサポートされません。
 
 ## Miracast に接続する
 
@@ -86,6 +91,7 @@ Miracast を使うには、次の手順を実行します。
    - **[スタート]** メニューを見つめながら、「接続」 と音声で指示します。  
 
 1. 表示されたデバイスの一覧で、使用可能なデバイスを選択します。
+
 1. ペアリングを完了させてプロジェクションを開始します。
 
 ## Bluetooth を無効にする
@@ -93,4 +99,5 @@ Miracast を使うには、次の手順を実行します。
 この手順を実行すると、Bluetooth 無線の RF コンポーネントの電源がオフになり、Microsoft HoloLens の Bluetooth 機能がすべて無効になります。
 
 1. ブルーム ジェスチャー (HoloLens (第１世代)) またはスタート ジェスチャー (HoloLens 2) を使用して **[スタート]** に移動し、**[設定]**  > **[デバイス]** を選択します。
+
 1. **Bluetooth** のスライダー スイッチを **[オフ]** の位置に移動します。
