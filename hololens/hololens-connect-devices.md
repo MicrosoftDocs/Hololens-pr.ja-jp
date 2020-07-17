@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 53d426b4319dafd0dd976e67111992020507f719
-ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
+ms.openlocfilehash: fef69ee4cd148b82721472436da8dfd627f86ff1
+ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881247"
+ms.locfileid: "10881340"
 ---
 # Bluetooth および USB-C デバイスに接続する
 
@@ -80,6 +80,8 @@ HoloLens 2 は、次のクラスの USB-C デバイスをサポートします�
 
 > [!NOTE]
 > USB-C 接続を使用しているモバイル デバイスの中には、イーサネット アダプターとして HoloLens に直接表示されるため、Windows ホログラフィックのバージョン2004からテザリング構成で使用することができます。 別のドライバーが必要な USB LTE モデムと、構成用にインストールされるアプリケーションはサポートされません。
+
+お客様からのフィードバックに応えて、USB-C を使用して HoloLens に直接テザリングされた Cellular 接続の限定的なサポートを有効にしました。  テザリング接続 は、汎用 Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) ドライバーの実装をサポートし、追加のドライバーやアプリケーションのインストールを必要としないデバイスでのみ機能します。  このようなデバイスが接続されると、HoloLens 2 のネットワーク設定 UI に新しいイーサネット接続として自動的に表示されます。 汎用 Microsoft RNDIS ドライバーをサポートしているかどうかの詳細については、デバイスの製造元にお問い合わせください。
 
 ## Miracast に接続する
 
