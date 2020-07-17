@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 28898c5c0cbc2a4f66cea13665e5ef63447db382
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 254c1048d2a1c7b63dfe87ead4585c21153fa8bb
+ms.sourcegitcommit: fc2ce4d843229bcc9ae6c7a42da559c0f6f558b7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828759"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10882987"
 ---
 # 商用機能
 
@@ -75,11 +75,11 @@ HoloLens (第 1 世代) には、ライセンス オプションとして開発�
 
 ## 商用機能を有効にする
 
-組織の IT 管理者は、ビジネス向け Microsoft Store、キオスク モード、エンタープライズ Wi-Fi アクセスなどの商用機能をセットアップできます。 デバイスを登録し、ビジネス向け Microsoft Store からアプリをインストールする手順については、[Microsoft HoloLens](index.md) ドキュメントをご覧ください。
+組織の IT 管理者は、ビジネス向け Microsoft Store、キオスク モード、エンタープライズ Wi-Fi アクセスなどの商用機能をセットアップできます。 デバイスを登録し、ビジネス向け Microsoft Store からアプリをインストールする手順については、[Microsoft HoloLens](index.yml) ドキュメントをご覧ください。
 
 ## 関連項目
 
-- [Microsoft HoloLens](index.md)
+- [Microsoft HoloLens](index.yml)
 - [キオスク モード](hololens-kiosk.md)
 - [HoloLens デバイスでサポートされている CSP](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)
 - [ビジネス向け Microsoft Store と基幹業務アプリケーション](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)
