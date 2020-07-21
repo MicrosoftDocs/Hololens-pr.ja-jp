@@ -47,7 +47,6 @@
 ### [ハードウェアで支援されたセキュリティとランタイム認証](security-hardware-backed-integrity.md)
 ### [暗号化とデータ保護](security-encryption-data-protection.md)
 ### [ネットワーク セキュリティ](security-network-security.md)
-### [無線と Wi-Fi](security-wireless-wifi.md)
 ### [セキュリティ エンジニアリング ](security-engineering.md)
 ### HoloLens 第 1 世代のセキュリティ
 #### [HoloLens (第 1 世代) のセキュリティに関するよく寄せられる質問](hololens1-faq-security.md)
