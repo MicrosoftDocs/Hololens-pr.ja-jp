@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 734176dcf8a789f130aa8b010f5f3c9ec1d22c72
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 0f46ff4a1bef95d153d9fa93c746c8977dc49771
+ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857795"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10883151"
 ---
 # HoloLens をネットワークに接続する
 
@@ -32,24 +32,14 @@ HoloLens を初めて使うときは、Wi-Fi ネットワークに接続する�
 
 ## セットアップ後の Wi-Fi 接続
 
-1. **[スタート]** > **[設定]** の順に選択します。
-   - *HoloLens (第 1 世代) のみ*: 視線入力を使って設定アプリを移動し、エアタップして配置するか、「置く」と言います。
-1. **[ネットワークとインターネット]** > **[Wi-Fi]** の順に選択します。 目的のネットワークが表示されない場合は、一覧を下方向へスクロールします。
+1. **スタート ジェスチャ** を事前に準備し、**設定**を選択します。 設定アプリは、ユーザーの正面に自動配置されます。
+1. **[ネットワークとインターネット]** > **[Wi-Fi]** の順に選択します。 Wi-Fi がオンになっていることを確認してください。 目的のネットワークが表示されない場合は、一覧を下方向へスクロールします。
 1. ネットワークを選択し、**[接続]** を選択します。
 1. ネットワーク パスワードを求めるメッセージが表示されたら、入力して **[次へ]** を選択します。
-
-## HoloLens (第 1 世代) での Wi-Fi 接続
 
 HoloLens には、802.11ac 対応の 2x2 Wi-Fi 無線が装備されています。 HoloLens から Wi-Fi ネットワークへの接続は、Windows 10 デスクトップまたはモバイル デバイスから Wi-Fi ネットワークへの接続と似ています。
 
 ![HoloLens の Wi-Fi 設定](./images/wifi-hololens-600px.jpg)
-
-1. **スタート** メニューを開きます。
-1. **[スタート]** か、**スタート** メニューの右側にある **[すべてのアプリ]** の一覧から、設定アプリを選択します。 設定アプリは、ユーザーの正面に自動配置されます。
-1. **[ネットワークとインターネット]** を選択します。
-1. Wi-Fi がオンになっていることを確認してください。
-1. 一覧から Wi-Fi ネットワークを選択します。
-1. 必要に応じて、Wi-Fi ネットワーク パスワードを入力します。
 
 **スタート** メニューで Wi-Fi の状態を確認することにより、Wi-Fi ネットワークへの接続を確認することもできます。
 
@@ -61,6 +51,19 @@ HoloLens には、802.11ac 対応の 2x2 Wi-Fi 無線が装備されています
 Wi-Fi への接続で問題が発生した場合は、「[Wi-Fi に接続できない](./hololens-faq.md#i-cant-connect-to-wi-fi)」をご覧ください。
 
 デバイスのエンタープライズ アカウントまたは組織アカウントにサインインするときに、ポリシーが IT 管理者によって構成されている場合、モバイル デバイス管理 (MDM) ポリシーも適用される場合があります。
+
+## VPN
+VPN 接続を使用すると、より安全な接続と会社のネットワークやインターネットへのアクセスを提供できます。 HoloLens 2 は、組み込み VPN クライアントおよびユニバーサル Windows プラットフォーム (UWP) VPN プラグインをサポートしています。 
+
+サポートされている組み込み VPN プロトコル:
+- IKEv2
+- L2TP
+- PPTP
+
+組み込みのVPN クライアントの認証に証明書を使用している場合は、必要なクライアント証明書をユーザー証明書ストアに追加する必要があります。 サードパーティの VPN プラグインが HoloLens 2 をサポートしているかどうかを確認するには、[VPN アプリ] がある [ストア] に移動し、 ARM または ARM64 アーキテクチャ をサポートしているアプリの [システム要件ページ] に [HoloLens] が表示されているかどうかを確認します。 HoloLens は、サードパーティ VPN 用のユニバーサル Windows プラットフォームアプリケーションのみをサポートしています。
+
+VPN は既定で有効になっていませんが、 **設定** アプリを開き、 **ネットワーク & インターネット -> VPN** に移動して、手動で有効にすることができます。 VPN は、[Settings/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)経由で MDM によって管理され、  [Vpnv2-csp ポリシー](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp)を使用して設定できます。
+詳細については、[これらのガイド](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide)を使用して[how to configure VPNを構成する方法](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn)を参照してください。  
 
 ## HoloLens (第 1 世代) での Wi-Fi の無効化
 
@@ -89,9 +92,9 @@ Wi-Fi への接続で問題が発生した場合は、「[Wi-Fi に接続でき�
 
    IP アドレスは **[IPv4 アドレス]** の横に表示されます。
 
-### Cortana を使用する
+### 音声コマンドを使用する
 
-「Hey Cortana, What's my IP address?」 (コルタナさん、IP アドレスを教えて) と言うと、 Cortana によって IP アドレスの表示と読み上げが行われます。
+使用しているデバイスに応じて、組み込み音声コマンドや Cortana を使用して IP アドレスを表示することができます。 ビルドで[19041.1103](hololens-release-notes.md#windows-holographic-version-2004)の後に、"IP アドレスを教えて" と話します。 すると、それが表示されます。 以前のビルドまたは HoloLens (第１世代) では、「コルタナさん、IP アドレスを教えて」 と言います。 Cortana によって IP アドレスの表示と読み上げが行われます。
 
 ### Windows デバイス ポータルを使用する
 
