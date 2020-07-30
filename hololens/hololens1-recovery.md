@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: a52e8e5bae49973d92efa6ea75391dc44d8b8ddb
-ms.sourcegitcommit: 357094acfd39f7c59a0a62f1dd7918b58c209ef7
+ms.openlocfilehash: de53f8f2cccfe3ece8900c88c5379adf2fb55a7b
+ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "10861162"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899180"
 ---
 # HoloLens 第 1 世代を再起動、リセット、または回復する
 
@@ -91,7 +91,7 @@ HoloLens を再起動する最も安全な方法は、Cortana を使用するこ
 
 デバイスをリセットすると、TPM リセットを含むすべての個人データ、アプリ、設定が消去されます。 リセットすると、インストールされている最新バージョンの Windows Holographic のみがインストールされ、すべての初期化手順 (調整、Wi-Fi への接続、ユーザー アカウントの作成、アプリのダウンロードなど) をやり直す必要があります。
 
-1. 設定アプリを起動し、[**更新**] > [**リセット**] の順に選択します。
+1. 設定アプリを起動し、**[更新]** > **[回復]** の順に選択します。
 1. [**デバイスのリセット**] オプションを選択し、確認メッセージを読みます。
 1. デバイスをリセットすることに同意すると、デバイスが再起動し、プログレス バー付きの回転するギアのセットが表示されます。
 1. このプロセスが完了するまで約 30 分待ちます。

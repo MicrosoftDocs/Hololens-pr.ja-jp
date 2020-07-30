@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7eaa08b7d88cac1841573b08d492f6b66b599c37
-ms.sourcegitcommit: bde0c2035638ba48f64ac05ed18595a907a05c6a
+ms.openlocfilehash: 11915bd6b2293be4491af2a7231b258b12d7b314
+ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894606"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "10902315"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -39,17 +39,19 @@ Windows insider がチャネルに移動するようになりました。 **フ�
 
 このページは、Windows Insider ビルドにリリースされるときに、もう一度新しい機能で更新されます。
 
-|                     機能                     |                                          説明                                          | Insider ビルドで利用可能 |
-|:-----------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
-| オートアイポジションのサポート                       | アイポジションを積極的に検索して、正確なホログラムの配置を実現します。                       | 19041.1339 +                 |
-| グローバルに割り当てられた                          | システムレベルで適用可能な複数のアプリキオスクモード用に HoloLens 2 デバイスを構成します。  | 19041.1346 +                 |
-| マルチアプリキオスクでアプリを自動起動する           | 複数アプリのキオスクモードにサインインしたときに自動的に起動するようにアプリケーションを設定します。 | 19041.1346 +                 |
-| Hololens 2 の新しい power policies               | Power timeout 設定に対して新しくサポートされているポリシー。                                          | 19041.1349 +                 |
-| 証明書ビューアー                              | 設定アプリでユーザーとデバイスの証明書を表示します。                                        | 19041.1346 +                 |
-| HoloLens 2 向けの新しいデバイス制限ポリシー  | HoloLens 2 のデバイス管理ポリシーが有効になっています。                              | 19041.1349 +                 |
-| HoloLens 2 で有効になっている設定ページの表示 | 設定アプリに表示されるページを選ぶためのポリシーです。                                          | 19041.1349 +                 |
-| HoloLens ポリシー                               | Mixed reality デバイスの新しいポリシー。                                                       | 19041.1349 +                 |
-| 更新ポリシー                                 | 新しく有効化されたポリシーにより、更新プログラムを制御できます。                                           | 19041.1352 +                 |
+| 機能                                              | 説明                                                                                   | Insider ビルドで利用可能 |
+|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| オートアイポジションのサポート                            | アイポジションを積極的に検索して、正確なホログラムの配置を実現します。                       | 19041.1339 +                 |
+| 証明書ビューアー                                   | 設定アプリでユーザーとデバイスの証明書を表示します。                                        | 19041.1346 +                 |
+| HoloLens ポリシー                                    | Mixed reality デバイスの新しいポリシー。                                                       | 19041.1349 +                 |
+| オフラインキオスクの AAD グループメンバーシップをキャッシュする         | AAD グループメンバーシップキャッシュをキオスクモードで使用できる日数のポリシーです。     | 19041.1356 +                 |
+| HoloLens 2 向けの新しいデバイス制限ポリシー       | HoloLens 2 のデバイス管理ポリシーが有効になっています。                              | 19041.1349 +                 |
+| HoloLens 2 の新しい power policies                    | Power timeout 設定に対して新しくサポートされているポリシー。                                          | 19041.1349 +                 |
+| 更新ポリシー                                      | 新しく有効化されたポリシーにより、更新プログラムを制御できます。                                           | 19041.1352 +                 |
+| HoloLens 2 で有効になっている設定ページの表示      | 設定アプリに表示されるページを選ぶためのポリシーです。                                          | 19041.1349 +                 |
+| グローバルに割り当てられた                               | システムレベルで適用可能な複数のアプリキオスクモード用に HoloLens 2 デバイスを構成します。  | 19041.1356 +                 |
+| マルチアプリキオスクでアプリを自動起動する                | 複数アプリのキオスクモードにサインインしたときに自動的に起動するようにアプリケーションを設定します。 | 19041.1346 +                 |
+| 障害処理のためのキオスクモードの動作の変更 | キオスクモードのエラーが処理されるようになった変更。                                             | 19041.1356 +                 |
 
 ### オートアイポジションのサポート
 
@@ -71,31 +73,6 @@ Uncalibrated ユーザーがデバイスに配置したときに、オートア�
 **既知の問題**
  - この問題を調査していますが、メモリ負荷が高い状態で実行するとアイトラッカードライバーのホストプロセスがクラッシュする可能性があります。 アイトラッキングドライバーのホストプロセスは、自動的に回復する必要があります。
 
-### グローバル割り当てアクセス–キオスクモード
-この新機能により、IT 管理者は、システムレベルで適用可能な複数のアプリキオスクモード用に HoloLens 2 デバイスを構成できます。また、システム上の id とのアフィニティはありません。また、デバイスにサインインしたすべてのユーザーに適用されます。 この新機能の詳細について[は、こちらをご覧](hololens-global-assigned-access-kiosk.md)ください。
-
-### 複数アプリのキオスクモードでのアプリケーションの自動起動 
-複数のアプリのキオスクモードにのみ適用され、[割り当て済みのアクセス構成] の下の強調表示された属性を使用して、1つのアプリのみを自動起動に指定できます。 
-
-ユーザーがサインインすると、アプリケーションが自動的に起動します。 
-
-```xml
-<AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
-
-### Hololens 2 の新しい power policies
-新しく追加されたポリシーにより、管理者はアイドルタイムアウトなどの電源状態を制御することができます。 個々のポリシーの詳細を確認するには、ポリシーのリンクをクリックしてください。
-
-|     ポリシードキュメントリンク                |     備考                                                                                                                                       |
-|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Windows 構成デザイナーで使用する値の例:  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
-|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Windows 構成デザイナーで使用する値の例:  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
-|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Windows 構成デザイナー (100) で使用する値の例                                                                             |
-|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Windows 構成デザイナー (100) で使用する値の例                                                                          |
-|     [スタンドアロン](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Windows 構成デザイナーで使用する値の例:   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
-|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Windows 構成デザイナーで使用する値の例:  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
-
 ### 証明書ビューアー
 
 Windows Insider ビルド 19041.1346 + では、HoloLens 2 設定アプリで証明書ビューアーを追加しています。 この機能を使うと、デバイス上の証明書を簡単かつわかりやすい方法で確認できます。 特定の証明書をすばやく見つけるには、名前、ストア、有効期限のいずれかを指定して並べ替えを行うオプションがあります。 ユーザーは、証明書を直接検索することもできます。 新しい証明書ビューアーを使用すると、管理者とユーザーは、より高度な監査、診断、検証ツールを使用して、デバイスの安全性と準拠性を維持することができるようになりました。  個々の証明書の詳細を表示するには、証明書を選択し、[情報] をクリックします。
@@ -111,11 +88,62 @@ Windows Insider ビルド 19041.1346 + では、HoloLens 2 設定アプリで証
 
 ![設定アプリの証明書ビューアー](images/hololens-certificate-viewer.png)
 
+### HoloLens ポリシー
+新しい mixed reality ポリシーは、ビルド 19041.1349 + の HoloLens 2 デバイス用に作成されています。 次のような新しい制御可能な設定があります。明るさの設定、音量の設定、混合の現実キャプチャでのオーディオ録音の無効化、診断を収集できるタイミングの設定、AAD グループメンバーシップキャッシュの設定があります。  
+
+| 新しい HoloLens ポリシー                                | 説明                                                                               | 備考                                                                |
+|----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| MixedReality\BrightnessButtonDisabled              | 明るさのボタンを無効にしても、明るさが変わらないようにすることができます。       | 1はい、0いいえ (既定)                                                |
+| MixedReality\VolumeButtonDisabled                  | ボリュームボタンを無効にして音量を変更しないようにすることができます。               | 1はい、0いいえ (既定)                                                |
+| MixedReality\MicrophoneDisabled                    | HoloLens 2 でオーディオ録音ができないように、マイクを無効にします。                      | 1はい、0いいえ (既定)                                                |
+| MixedReality\FallbackDiagnostics                   | 診断ログを収集できる場合の動作を制御します。                               | 0無効、デバイス所有者の場合は1、すべてに対して有効 (既定) |
+| MixedReality\HeadTrackingMode                      | 今後の使用のために予約されています。                                                                  |                                                                      |
+| MixedReality\AADGroupMembershipCacheValidityInDays | キオスクグループメンバーシップキャッシュを使用してキオスクターゲット AAD グループに使用する日数を制御します。 | 以下を参照してください。                                                           |
+
+### オフラインキオスクの AAD グループメンバーシップをキャッシュする
+
+このポリシーは、サインインしたユーザーの AAD グループを対象とした割り当て済みのアクセス構成に対して、AAD グループメンバーシップキャッシュを使用できる日数を管理します。 このポリシー値が0より大きい値に設定された場合は、キャッシュが使用されます。  
+
+AADGroupMembershipCacheValidityInDays 
+
+最小-0 日  
+最大60日 
+
+このポリシーを正しく使用するための手順: 
+1. キオスクターゲットの AAD グループ用のデバイス構成プロファイルを作成し、それを HoloLens デバイスに割り当てます。 
+1. このポリシーの値を必要な日数 (> 0) に設定し、それを HoloLens デバイスに割り当てる、カスタム OMA URI ベースのデバイス構成を作成します。 
+1. HoloLens デバイスを登録し、両方の構成がデバイスに適用されることを確認します。 
+1. AAD ユーザー1のサインインを許可するインターネットが利用可能な場合、ユーザーがサインインして AAD グループメンバーシップが正常に確認されると、キャッシュが作成されます。 
+1. この時点で、AAD user 1 は HoloLens をオフラインにして、ポリシー値が X 日で許可されている限り、キオスクモードで使用することができます。 
+1. 手順4と5は、他の AAD ユーザー N に対して繰り返すことができます。重要なポイントは、どの AAD ユーザーもインターネット経由でデバイスにサインインする必要があります。そのため、少なくとも1回は、そのユーザーがキオスクの構成の対象となる AAD グループのメンバーであることを確認できます。 
+ 
+> [!NOTE]
+> AAD ユーザーに対して手順4を実行するまで、"接続されていない" 環境でのエラー動作が発生します。 
+
 ### HoloLens 2 向けの新しいデバイス制限ポリシー
 HoloLens 2 デバイスの管理オプションを強化するための、新しく有効化されたポリシー。 
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+
+### Hololens 2 の新しい power policies
+新しく追加されたポリシーにより、管理者はアイドルタイムアウトなどの電源状態を制御することができます。 個々のポリシーの詳細を確認するには、ポリシーのリンクをクリックしてください。
+
+|     ポリシードキュメントリンク                |     備考                                                                                                                                       |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Windows 構成デザイナーで使用する値の例:  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Windows 構成デザイナーで使用する値の例:  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Windows 構成デザイナー (100) で使用する値の例                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Windows 構成デザイナー (100) で使用する値の例                                                                          |
+|     [スタンドアロン](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Windows 構成デザイナーで使用する値の例:   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Windows 構成デザイナーで使用する値の例:  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+### HoloLens 用の新しく有効化済みの更新ポリシー
+HoloLens 2 デバイスでは、これらの更新ポリシーが有効になりました。
+-   [Update/Active/Send](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-   [更新/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Update/Active¥ Start](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-   [更新/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 ### HoloLens 2 で有効になっている設定ページの表示
 このポリシーを有効にすると、IT 管理者は、システム設定アプリで特定のページを表示またはアクセスできないようにするか、指定されたページ以外のすべてのページに対して行うことができます。 この機能を完全にカスタマイズする方法については、以下のリンクをクリックしてください。
@@ -124,22 +152,24 @@ HoloLens 2 デバイスの管理オプションを強化するための、新し
  
 ![設定アプリで変更されているアクティブな時間のスクリーンショット](images/hololens-page-visibility-list.jpg)
 
-### HoloLens ポリシー
-新しい mixed reality ポリシーは、ビルド 19041.1349 + の HoloLens 2 デバイス用に作成されています。 次のような新しい制御可能な設定があります。輝度の設定、音量の設定、混合現実キャプチャでのオーディオ録音の無効化、診断を収集できるタイミングの設定などがあります。  
+### グローバル割り当てアクセス–キオスクモード
+この新機能により、IT 管理者は、システムレベルで適用可能な複数のアプリキオスクモード用に HoloLens 2 デバイスを構成できます。また、システム上の id とのアフィニティはありません。また、デバイスにサインインしたすべてのユーザーに適用されます。 この新機能の詳細について[は、こちらをご覧](hololens-global-assigned-access-kiosk.md)ください。
 
-|     新しい HoloLens ポリシー                   |     説明                                                                            |     備考                                                                |
-|-------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-|     MixedReality\BrightnessButtonDisabled |     明るさのボタンを無効にしても、明るさが変わらないようにすることができます。    |     1はい、0いいえ (既定)                                                |
-|     MixedReality\VolumeButtonDisabled     |     ボリュームボタンを無効にして音量を変更しないようにすることができます。            |     1はい、0いいえ (既定)                                                |
-|     MixedReality\MicrophoneDisabled       |     HoloLens 2 でオーディオ録音ができないように、マイクを無効にします。                   |     1はい、0いいえ (既定)                                                |
-|     MixedReality\FallbackDiagnostics      |     診断ログを収集できる場合の動作を制御します。                            |     0無効、デバイス所有者の場合は1、すべてに対して有効 (既定) |
-|     MixedReality\HeadTrackingMode         |     今後の使用のために予約されています。                                                               |                                                                          |
-### HoloLens 用の新しく有効化済みの更新ポリシー
-HoloLens 2 デバイスでは、これらの更新ポリシーが有効になりました。
--   [Update/Active/Send](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
--   [更新/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
--   [Update/Active¥ Start](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
--   [更新/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
+### 複数アプリのキオスクモードでのアプリケーションの自動起動 
+複数のアプリのキオスクモードにのみ適用され、[割り当て済みのアクセス構成] の下の強調表示された属性を使用して、1つのアプリのみを自動起動に指定できます。 
+
+ユーザーがサインインすると、アプリケーションが自動的に起動します。 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### 障害処理のためのキオスクモードの動作の変更
+
+「キオスクモードの適用時にエラーが発生しました」では、[スタート] メニューのすべてのアプリケーションを表示するために使用されていました。 この Windows Insider ビルド以降、障害が発生した場合、[スタート] メニューに次のようなアプリは表示されません。 
+
+![キオスクモードで失敗したときにどのように表示されるかを示した画像。](images/hololens-kiosk-failure-behavior.png )
 
 ## Insider ビルドの受信の開始
 

@@ -13,11 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 15998fe11de1e7be4f12087a2724bec7e22337b0
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: e00226852f92cf5b3137d8d41cfde0f01394f5bc
+ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857745"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "10902292"
 ---
 # トラブルシューティング
 
@@ -45,13 +46,15 @@ HoloLens がフリーズまたは応答しなくなった場合は、次の操�
 - HoloLens でより完全にスキャンされるように、お客様の環境を調査して見ていきましょう。
 - お客様のニーズに応じた HoloLens の調整。 [**設定**  >  **システム**  >  **ユーティリティ**] に移動します。 **[調整]** で、**[調整を開く]** を選択します。
 
-## HoloLens がジェスチャに応答しない
+## HoloLens が手書き入力に応答しない
 
-を選び、HoloLens がジェスチャを見られるようにします。  ジェスチャのフレームに手を置く-HoloLens で手を見られるようになると、カーソルがドットからリングに変わります。
+HoloLens が自分の手を見ることができるようにするには、ジェスチャのフレームにそのまま保存しておく必要があります。  Mixed Reality ホームでは、自分の針が追跡されたことを通知するフィードバックを提供します。  フィードバックは、HoloLens のバージョンによって異なります。
+- HoloLens (第1世代) では、宝石カーソルがドットからリングに変わります
+- HoloLens 2 では、手がスレートに近いときに指先のカーソルが表示され、slates が離れると手動で表示されます。
 
-[Hololens (第1世代)](hololens1-basic-usage.md#use-hololens-with-your-hands)または[hololens 2](hololens2-basic-usage.md#the-hand-tracking-frame)でのジェスチャの使い方については、こちらを参照してください。
+多くのイマーシブアプリは、Mixed Reality ホームに似た入力パターンに従います。  詳細については、「 [hololens (第1世代)](hololens1-basic-usage.md#use-hololens-with-your-hands)と[hololens 2](hololens2-basic-usage.md#the-hand-tracking-frame)での手書き入力の使い方」を参照してください。
 
-環境が暗すぎると、HoloLens で手が見えない場合があるため、十分なライトがあることを確認してください。
+手袋を装着している場合、一部の種類の手袋は、ハンドトラッキングで動作しないことに注意してください。  一般的な例としては、赤外線の光量を吸収し、深度カメラによって認識されないことが多い黒のゴムがあります。  ラバーグローブが含まれている場合は、青や灰色などの明るい色を試すことをお勧めします。  別の例としては、大きな baggy グローブがあります。これは、手の形が不明瞭になる傾向があります。 最善の結果を得るために、できるだけフォーム継ぎ手として手袋を使うことをお勧めします。
 
 お使いのバイザーに指紋や汚れがある場合は、HoloLens に付属のマイクロファイバーのクリーニング布を使って、お使いのバイザーを軽く拭きます。
 

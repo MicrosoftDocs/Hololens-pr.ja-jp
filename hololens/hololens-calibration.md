@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2f2c8afffdc24eedf9cb6b462448f5ed6ffc8d5d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: a4a5478f396dff9eef84540286e0fa9672172076
+ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828772"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899099"
 ---
 # 視覚効果と快適性の向上
 
@@ -89,6 +89,8 @@ HoloLens 2 デバイスは、複数のユーザーが共有できます。各ユ
 - 部屋の照明を点灯するか、直接日光が当たらない場所に移動する
 
 すべてのガイドラインに従っても調整に失敗する場合は、[設定] で調整プロンプトを無効にできます。 [フィードバック Hub](hololens-feedback.md) からフィードバックお送りください。
+
+[画像の色や明るさのトラブルシューティング](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right) についても確認してください。
 
 目の位置はシステムによって計算されるため、IPD 設定は Hololens 2 には当てはまらないことにご注意ください。 
 
