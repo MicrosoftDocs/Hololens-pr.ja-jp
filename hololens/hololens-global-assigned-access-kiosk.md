@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ad7f75ccfcae9fb42974abb43d87f2f1ce1571f8
-ms.sourcegitcommit: 3db43bc4a007b10901d8edb045f66e1e299c57a9
+ms.openlocfilehash: 1a0a3eb8ef3d21b34e13711bcc890af57e5ae2c2
+ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882455"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "10902302"
 ---
 # グローバルに割り当てられたアクセス-キオスク
 
@@ -36,46 +36,7 @@ ms.locfileid: "10882455"
 
 2.  値については、以下の内容を更新して貼り付けます: 
 
-    ```xml
-    <?xml version="1.0" encoding="utf-8" ?> 
-    <AssignedAccessConfiguration 
-        xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
-        xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-        xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" 
-        xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-    > 
-        <Profiles> 
-            <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
-                <AllAppsList> 
-                    <AllowedApps>                     
-                        <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch=”true” /> --> 
-                         <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.settingn_8wekyb3d8bbwe!MicrosoftEdge" /> --> 
-                     </AllowedApps> 
-                </AllAppsList> 
-                <StartLayout> 
-                    <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"> 
-                          <LayoutOptions StartTileGroupCellWidth="6" /> 
-                          <DefaultLayoutOverride> 
-                            <StartLayoutCollection> 
-                              <defaultlayout:StartLayout GroupCellWidth="6"> 
-                                <start:Group Name="Life at a glance"> 
-                                  <!—This AUMID can be of any app and is not used on Hololens but is required for parity, so you can leave it as is. --> 
-                                  <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />                               
-                                </start:Group> 
-                              </defaultlayout:StartLayout> 
-                            </StartLayoutCollection> 
-                          </DefaultLayoutOverride> 
-                        </LayoutModificationTemplate> 
-                    ]]> 
-                </StartLayout> 
-                <Taskbar ShowTaskbar="true"/> 
-            </Profile> 
-        </Profiles> 
-        <Configs> 
-            <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"/> 
-        </Configs> 
-    </AssignedAccessConfiguration> 
-    ```
+    :::code language="xml" source="samples/global-assigned-access.xml" highlight="12-13,23":::
 
 ## Windows 構成デザイナーでこれを使用する方法 
  
@@ -88,28 +49,13 @@ ms.locfileid: "10882455"
 はい。以下の XML blog の例を参照してください。 グローバルに割り当てられたアクセスプロファイルは、サインインしたユーザーの特定のプロファイルが見つからない場合に Hololens に適用されるため、サインインしたユーザーの既定キオスクモードの構成になっています。 使用する XML blob の例を表示します。 
 
 > [!NOTE]
-> <!- でマークされている領域に注意してください。これらの領域には、ユーザー設定に基づいて変更する必要があります。 
+> 強調表示されていて <!- でマークされている領域に注意してください。これらの領域には、ユーザー設定に基づいて変更する必要があります。 
 
-```xml
-<?xml version="1.0" encoding="utf-8" ?> 
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" 
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"> 
-    <Profiles> 
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"> 
-            <!—specify AUMIDs and other nodes as used in example above --> 
-        </Profile> 
-        <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
-            <!—specify AUMIDs and other nodes as used in example above --> 
-        </Profile> 
-    </Profiles> 
-    <Configs> 
-        <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"/> 
-        <Config> 
-           <Account>AzureAD\<!-fully qualified AAD account name></Account> 
-           <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
-        </Config> 
-    </Configs> 
-</AssignedAccessConfiguration> 
-```
+ :::code language="xml" source="samples/exclude-one-aad-user-or-group.xml" highlight="8,11,17":::
+
+## デバイスの所有者をグローバルに割り当てられているアクセスプロファイルから除外する
+
+この機能を使用すると、Hololens の 「[デバイス所有者](security-adminless-os.md)」 と見なされているユーザーは、グローバルに割り当てられたアクセスから除外されます。 この機能を利用するには、マルチアプリキオスク構成用の XML blob で、強調表示されている行を追加します。 
+
+ :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
+ 
