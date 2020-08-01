@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 054c4ded7496957671c055e3161a1297de7abc1a
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 1dd6c2e6cde980b86ac810f82d27b3b88f20f336
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828692"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903223"
 ---
 # MDM での HoloLens の登録
 
@@ -31,6 +31,21 @@ ms.locfileid: "10828692"
 ## 要件
 
  HoloLens デバイスを管理するには、組織でモバイルデバイス管理 (MDM) を設定する必要があります。 MDM プロバイダーには、Microsoft Intune や、Microsoft MDM API を使うサード パーティ プロバイダーを使うことができます。
+ 
+## さまざまな登録方法
+
+OOBE または投稿のサインインのいずれかで選択された id の種類に応じて、さまざまな登録方法があります。 HoloLens の各種類の Id の詳細については、[このページ](hololens-identity.md)をご覧ください。
+
+- Id が AAD の場合は、OOBE または**設定アプリ**への [  ->  **職場または学校**の  ->  **接続**] ボタンをクリックします。
+    - AAD の場合、自動 MDM 登録は、AAD が登録 Url で構成されている場合にのみ発生します。
+- Id が AAD であり、デバイスが、特定の構成プロファイルが割り当てられた Intune MDM サーバーに事前登録されている場合、AAD での参加と登録は自動的に行われます。
+    - [19041.1103 + ビルド](hololens-release-notes.md#windows-holographic-version-2004)で利用可能な[自動操縦フロー](hololens2-autopilot.md)とも呼ばれます。
+- Id が MSA の場合は、[**アプリ**  ->  **アクセスの職場または学校**の  ->  **接続**] ボタンを使用します。
+    - [ワークアカウントの追加] (AWA) フローとも呼ばれます。
+- Id が Local ユーザーの場合は、[**設定] アプリ**  ->  **へのアクセスは**、[  ->  **デバイス管理] リンクでのみ**機能します。
+    - 純粋 MDM の登録フローとも呼ばれます。
+
+デバイスが MDM サーバーに登録されると、設定アプリはデバイス管理にデバイスが登録されたことを反映するようになります。
 
 ## MDM への自動登録
 
@@ -38,16 +53,6 @@ Azure Active Directory (Azure AD) と、認証用の AAD トークンを受け�
 
 自動登録が有効な場合、追加の手動登録は必要ありません。 ユーザーが Azure AD アカウントでサインインすると、最初の実行エクスペリエンスを完了した後デバイスが MDM に登録されます。
 
-## 設定アプリを使った登録
-
- 最初の実行エクスペリエンス時にデバイスが MDM に登録されない場合、ユーザーは設定アプリを使って組織の MDM サーバーにデバイスを手動で登録できます。
-
-1. **[設定]** > **[アカウント]** > **[職場のアクセス]** の順に移動します。
-1. **[デバイス管理 (MDM) に登録する]** を選び、組織アカウントを入力します。 組織のサインイン ページにリダイレクトされます。
-1. MDM サーバーでの認証に成功すると、成功を示すメッセージが表示されます。
-
-これで、デバイスが MDM サーバーに登録されました。 設定アプリに、デバイスがデバイス管理に登録されたことが反映されます。
-
 ## Intune からの HoloLens の登録解除
 
-Intune からリモートで HoloLens を[登録解除する](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)ことはできません。 管理者が MDM を使用してデバイスを登録解除する場合、デバイスは Intune ダッシュボードから削除されます。
+デバイスの未登録の詳細については、[このページ](https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment)をご覧ください。 

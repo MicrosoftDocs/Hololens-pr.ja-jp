@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8c3d9a10533432b3e8489ffa297c16061abb9eaf
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: a0ba32e3caff7695cd284ee3752bb91d80da2194
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828972"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903243"
 ---
 # HoloLens 2 のセットアップ
 
@@ -69,12 +69,12 @@ HoloLens 2 に、以下の手順が表示されます。
 > また、HoloLens のセットアップ時に、2 分間の資格情報のタイムアウトがあることに注意してください。 ユーザー名/パスワードは 2 分以内に入力する必要があります。そうしないと、ユーザー名フィールドは自動的にクリアされます。
 
 1. お使いのユーザー アカウントにサインインします。 **[職場または学校が所有しています]** または **[自分が所有しています]** を選択します。
-    - **[職場または学校が所有しています]** を選んだ場合、Azure AD アカウントを使ってサインインします。 組織で Azure AD Premium を使用しており、MDM への自動登録が構成されている場合は、HoloLens が自動的に MDM に登録されます。 組織で Azure AD Premium が使用されていない場合、MDM への自動登録は使用できません。 その場合は、[HoloLens をデバイス管理に手動で登録](hololens-enroll-mdm.md#enroll-through-settings-app)する必要があります。
+    - **[職場または学校が所有しています]** を選んだ場合、Azure AD アカウントを使ってサインインします。 組織で Azure AD Premium を使用しており、MDM への自動登録が構成されている場合は、HoloLens が自動的に MDM に登録されます。 組織で Azure AD Premium が使用されていない場合、MDM への自動登録は使用できません。 その場合は、[HoloLens をデバイス管理に手動で登録](hololens-enroll-mdm.md#different-ways-to-enroll)する必要があります。
         1. 組織アカウントの情報を入力します。
         1. プライバシー ステートメントとソフトウェア ライセンス条項に同意します。
         1. Azure AD 資格情報を使用してサインインします。 組織のサインイン ページにリダイレクトされることがあります。
         1. デバイスのセットアップを続行します。
-    - **[自分が所有しています]** を選んだ場合、Microsoft アカウントを使ってサインインします。 セットアップが完了したら、[手動で HoloLens をデバイス管理に登録](hololens-enroll-mdm.md#enroll-through-settings-app)できます。
+    - **[自分が所有しています]** を選んだ場合、Microsoft アカウントを使ってサインインします。 セットアップが完了したら、[手動で HoloLens をデバイス管理に登録](hololens-enroll-mdm.md#different-ways-to-enroll)できます。
         1. Microsoft アカウントの情報を入力します。
         2. パスワードを入力します。 Microsoft アカウントで [2 段階認証 (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/) が要求される場合、検証プロセスを実行します。
 
