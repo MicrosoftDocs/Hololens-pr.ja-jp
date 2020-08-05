@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 477693dd0d4a3ce63bfe29df166e171b9292aea4
-ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
+ms.openlocfilehash: 5b1df54ea5112109a175f6d7172635042262ca14
+ms.sourcegitcommit: e85a55c110e729a4836b8a59aa29d786c74ed6bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894053"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "10903332"
 ---
 # HoloLens 2 のハードウェア
 
@@ -142,8 +142,25 @@ Microsoft HoloLens 2 は、自立型ホログラフィック コンピュータ�
 * [製品の安全性に関する警告と手順](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
 * 目の保護: HoloLens 2 は、ANSI Z87.1、CSA Z94.3、および EN 166 の規格試験済みであり、基本的な衝撃保護要件に準拠しています。
 
-### 規制情報
+### 規制に関する情報
 [HoloLens の規制](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information) : 温度、廃棄、ラジオやテレビの電波妨害に関する情報を含みます。
+
+## パッケージのサイズ
+
+|      測定値               |      ユニットのメトリック     |      ヤード ポンド単位     |
+|--------------------------------|-----------------------|-------------------------|
+|     ユニットの長さ                |     378.97mm          |     14.920 インチ       |
+|     ユニットの幅                 |     247.90mm          |     9.760 インチ        |
+|     ユニットの深さ                 |     163.07mm          |     6.420 インチ        |
+|     ユニットの重量                |     2.878kg           |     6.344 ポンド           |
+|     出荷時の外装の長さ    |     446.00mm          |     17.559 インチ       |
+|     出荷時の外装の幅     |     257.99mm          |     10.157 インチ       |
+|     出荷時の外装の深さ     |     172.01mm          |     6.772 インチ        |
+|     出荷時の外装の重量    |     3.284kg           |     7.240 ポンド           |
+
+注意:
+- ユニット: 黒い小売スタイル ボックスの HoloLens 2 が販売されています。
+- 出荷時の外装: ユニットを包んで保護する出荷用のパッケージ。
 
 ## 次のステップ
 
