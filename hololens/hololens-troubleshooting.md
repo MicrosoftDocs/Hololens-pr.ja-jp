@@ -13,12 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: e00226852f92cf5b3137d8d41cfde0f01394f5bc
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: 469848cf306675fcfb99247b5c91b159c204a5fe
+ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902292"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10915959"
 ---
 # トラブルシューティング
 
@@ -28,7 +28,7 @@ ms.locfileid: "10902292"
 
 HoloLens が起動しない場合は、次の操作を行います。
 
-- 電源ボタンの横にある Led が点灯しない場合、または1つの LED がわずかに点滅する場合は、HoloLens の充電が必要になることがあり[ます。](hololens-recovery.md#charging-the-device)
+- 電源ボタンの横にある Led が点灯しない場合、または1つの LED がわずかに点滅する場合は、HoloLens の充電が必要になることがあり[ます。](hololens-recovery.md#charge-the-device)
 - 電源ボタンを押したときに Led が点灯したが、ディスプレイに何も表示されない場合は、[デバイスのハードリセットを preform](hololens-recovery.md#hard-reset-procedure)します。
 
 HoloLens がフリーズまたは応答しなくなった場合は、次の操作を行います。
