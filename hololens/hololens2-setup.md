@@ -1,7 +1,7 @@
 ---
 title: 新しい HoloLens 2 の準備
 description: このガイドでは、初めてセットアップする場合の手順を説明し、ハードウェア ガイドを提供します。
-keywords: HoloLens
+keywords: HoloLens、ライト、適合性、快適、部品
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
 ms.prod: hololens
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b8803183382e3235c540c3bc175277ffdc7d04f2
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 943cc5af8f5be337a9cfcc0d3e4a4640aa307e72
+ms.sourcegitcommit: 14c30f412cd17058d0316444215f878ba1ee422f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829216"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "10905624"
 ---
 # HoloLens 2 の使用準備
 
@@ -119,6 +119,8 @@ HoloLens は、障害物やつまずく危険性のない安全な場所でお�
 ### 快適性を保つ
 
 HoloLens を使用する最初の数セッションは短時間にとどめ、必ず休憩を取りましょう。 不快感を覚えた場合は使用を中止し、気分が良くなるまで休んでください。 考えられる症状には、一時的な吐き気、乗り物酔い、目まい、方向感覚障害、頭痛、疲労、疲れ目、ドライ アイなどがあります。
+
+詳細については、「[製品の安全性に関する警告と手順](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions)」を参照してください。
 
 > [!div class="nextstepaction"]
 > [HoloLens 2 を起動して構成する](hololens2-start.md)
