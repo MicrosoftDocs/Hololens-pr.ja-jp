@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4c17ac2bf68076978c233db2f2b7156fee447f01
-ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
+ms.openlocfilehash: d14c397c4783acd88dcd922a92b0ffe6437a6473
+ms.sourcegitcommit: c2040b967f2f884a22f4b93a173224163e37da1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "10899170"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "10918598"
 ---
 # HoloLens デバイスから診断情報を収集する
 
@@ -130,7 +130,7 @@ IT 管理者は、DiagnosticLog CSP を使用して、次のことを管理す�
 2.  PC のエクスプローラーで、[**この pc \<hololens-device> \ 内部ストレージ]** に移動します。
 3.  **内部記憶域**フォルダーが表示されない場合、デバイスはユーザーのサインインを待機しています。 サインインするか、電源ボタンを10秒間押したままにして、デバイスの電源を入れ直します。
 4.  **POWER + ボリュームの下矢印**を同時に押します。
-5.  デバイスが zip アーカイブを準備できるようになるまで待ちます。
+5.  デバイスが zip アーカイブを準備できるようになるまで待ちます。 (HololensDiagnostics という名前の一時ファイルが、デバイスで zip アーカイブが生成されている間に表示されることがあります。 このファイルにアクセスしたり、保存したりしないでください。 プロセスが完了すると、zip アーカイブに置き換わります。)
 6.  エクスプローラーを更新して、[ **\Documents]** フォルダーに移動します。
 7.  診断 ZIP ファイルをコピーして、Microsoft サポートチームと共有します。
 
