@@ -1,7 +1,7 @@
 ---
 title: HoloLens でファイルを検索して保存する
 description: HoloLens でエクスプローラーを使用して、デバイス上のファイルを表示および管理する
-keywords: HoloLens
+keywords: 使い方、ファイルピッカー、ファイル、写真、ビデオ、画像、OneDrive、ストレージ、エクスプローラー、hololens
 ms.assetid: 77d2e357-f65f-43c8-b62f-6cd9bf37070a
 author: mattzmsft
 ms.author: mazeller
@@ -16,14 +16,14 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 50a13e1634344bea66bb6b7ce90d9e3fc8c2a783
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: fb3287f0a074eddeac0c7ee2871e289b93eafcac
+ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828559"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "10919128"
 ---
-# HoloLens でファイルを検索、開く、および保存する
+# HoloLens でファイルを検索し、開いて保存する
 
 お客様が、写真や動画などの HoloLens で作成したファイルは、HoloLens デバイスに直接保存されます。 Windows 10 でファイルを管理する場合と同じ方法で、ファイルを表示して管理します。
 
