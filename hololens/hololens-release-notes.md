@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: fa2c4b5562c27e8d80b765c4acce0191de54a545
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: deddd753c22095532c1a4e3f8e896e2e881a1ad5
+ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915967"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924259"
 ---
 # HoloLens 2 のリリース ノート
 
@@ -28,6 +28,20 @@ HoloLens デバイスで生産性を向上させるには、引き続き機能�
 
 >[!NOTE]
 > HoloLens エミュレーターのリリースノートを読むには、[アーカイブにアクセスして](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)ください。
+
+## Windows ホログラフィック、バージョン 2004 (2020 年8月の更新プログラム)
+- ビルド19041.1113
+
+更新プログラムの改善と修正:
+
+- 設定アプリでは、ユーザーは虹彩登録またはアイトラッキングの調整エクスペリエンスに従わなくなります。
+- デバイスの名前を変更してその他のアクション (ネットワークへの接続など) を実行することによって、デバイスの再起動後にその他の操作を実行できないというバグが修正されました。
+- 視覚品質を向上させるために、デバイスセットアップの初期フローの配色が変更されました。
+
+## Windows ホログラフィック、バージョン 1903 (2020 年8月の更新プログラム)
+- ビルド18362.1074
+
+この毎月の品質更新プログラムには、注目すべき変更内容が含まれていません。最新の Windows ホログラフィックバージョン2004のビルドをお試しいただくことをお勧めします。
 
 ## Windows ホログラフィック、バージョン 2004 (2020 年7月の更新プログラム)
 - ビルド19041.1109
