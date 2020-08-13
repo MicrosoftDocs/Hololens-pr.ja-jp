@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: deddd753c22095532c1a4e3f8e896e2e881a1ad5
-ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
+ms.openlocfilehash: 3e2bb1a6f8de93faa1a1157b3d05ff671d0b0a45
+ms.sourcegitcommit: 5799ce0f3d8f1d231823cff6c9c013ce933b8f3b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "10924259"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926330"
 ---
 # HoloLens 2 のリリース ノート
 
@@ -35,7 +35,7 @@ HoloLens デバイスで生産性を向上させるには、引き続き機能�
 更新プログラムの改善と修正:
 
 - 設定アプリでは、ユーザーは虹彩登録またはアイトラッキングの調整エクスペリエンスに従わなくなります。
-- デバイスの名前を変更してその他のアクション (ネットワークへの接続など) を実行することによって、デバイスの再起動後にその他の操作を実行できないというバグが修正されました。
+- デバイスの名前を変更して他の操作 (ネットワークへの接続など) を実行すると、名前の変更によるデバイスの再起動後に他の操作を実行できないというバグを修正しました。
 - 視覚品質を向上させるために、デバイスセットアップの初期フローの配色が変更されました。
 
 ## Windows ホログラフィック、バージョン 1903 (2020 年8月の更新プログラム)
