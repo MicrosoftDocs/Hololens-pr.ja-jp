@@ -17,20 +17,21 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7409865f63199dead1779fa183128b30445053aa
-ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
+ms.openlocfilehash: f5c45477ab33064afe30e275f8b0003bc6022eac
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858001"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929853"
 ---
 # HoloLens を Kiosk としてセットアップする
 
-HoloLens デバイスを、キオスクモードで実行するように構成することによって、*キオスク*デバイス (キオスクとも呼ばれます) として機能させることができます。 キオスクモードでは、デバイスで利用可能なアプリケーション (またはユーザー) を制限します。 キオスクモードは、HoloLens デバイスをビジネスアプリ専用にするために使うことができる便利な機能です。または、アプリデモで HoloLens デバイスを使うことができます。
+HoloLens デバイスを、キオスクモードで実行するように構成することによって、 *キオスク*デバイス (キオスクとも呼ばれます) として機能させることができます。 キオスクモードでは、デバイスで利用可能なアプリケーション (またはユーザー) を制限します。 キオスクモードは、HoloLens デバイスをビジネスアプリ専用にするために使うことができる便利な機能です。または、アプリデモで HoloLens デバイスを使うことができます。
 
 この記事では、HoloLens デバイスに固有のキオスク構成の要素について説明します。 Windows ベースのキオスクのさまざまな種類とその構成方法については、「 [windows デスクトップエディションでのキオスクとデジタル署名の構成](https://docs.microsoft.com/windows/configuration/kiosk-methods)」を参照してください。  
 
 > [!IMPORTANT]  
-> キオスクモードは、ユーザーがデバイスにサインインしたときに利用できるアプリを決定します。 ただし、キオスクモードはセキュリティの方法ではありません。 これにより、許可されていない別のアプリを開くことができなくなることはありません。 アプリやプロセスが開かれないようにするには、 [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp)を使って適切なポリシーを作成します。  
+> キオスクモードは、ユーザーがデバイスにサインインしたときに利用できるアプリを決定します。 ただし、キオスクモードはセキュリティの方法ではありません。 これにより、許可されていない別のアプリを開くことができなくなることはありません。 アプリやプロセスが開かれないようにするには、 [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) を使って適切なポリシーを作成します。  
 
 キオスクモードは1つのアプリまたは複数のアプリの構成で使うことができます。また、3つのプロセスのいずれかを使って、キオスク構成を設定して展開することもできます。
 
@@ -50,7 +51,7 @@ HoloLens (第1世代) デバイスでキオスクモードを使用するよう�
 
 ### 単一アプリのキオスクと複数アプリのキオスクのどちらを選択するかを決定する
 
-1つのアプリのキオスクは、ユーザーがデバイスにサインインしたときに、指定されたアプリを起動します。 [スタート] メニューは、Cortana のように無効になっています。 HoloLens 2 デバイスは、[開始](hololens2-basic-usage.md#start-gesture)ジェスチャには応答しません。 HoloLens (第1世代) デバイスは、[ブルーム](hololens1-basic-usage.md)ジェスチャに対応していません。 1つのアプリのみを実行できるため、ユーザーは他のアプリを配置することはできません。
+1つのアプリのキオスクは、ユーザーがデバイスにサインインしたときに、指定されたアプリを起動します。 [スタート] メニューは、Cortana のように無効になっています。 HoloLens 2 デバイスは、 [開始](hololens2-basic-usage.md#start-gesture) ジェスチャには応答しません。 HoloLens (第1世代) デバイスは、 [ブルーム](hololens1-basic-usage.md) ジェスチャに対応していません。 1つのアプリのみを実行できるため、ユーザーは他のアプリを配置することはできません。
 
 マルチアプリキオスクは、ユーザーがデバイスにサインインしたときに [スタート] メニューを表示します。 キオスクの構成では、[スタート] メニューで使用できるアプリを決定します。 複数アプリのキオスクを使って、ユーザーが使用する必要があるものだけを表示したり、使用する必要がないものを削除したりすることで、ユーザーにとってわかりやすいエクスペリエンスを提供することができます。
 
@@ -62,7 +63,7 @@ HoloLens (第1世代) デバイスでキオスクモードを使用するよう�
 |マルチアプリのキオスク |有効 |Enabled <sup> 2</sup> |利用可能な <sup> 2</sup> |利用可能な <sup> 2</sup> |利用可能な <sup> 2、3</sup>  |Enabled <sup> 1</sup> |
 
 > <sup>1 </sup> 無効な機能に関連する音声コマンドが機能しません。  
-> <sup>2 </sup> これらの機能を構成する方法の詳細については、「[キオスクアプリを選択](#plan-kiosk-apps)する」を参照してください。  
+> <sup>2 </sup> これらの機能を構成する方法の詳細については、「 [キオスクアプリを選択](#plan-kiosk-apps)する」を参照してください。  
 > <sup>3 </sup> Cortana が無効になっている場合でも、組み込みの音声コマンドは有効になります。
 
 次の表は、さまざまなキオスクモードのユーザーサポート機能をまとめたものです。
@@ -81,14 +82,14 @@ HoloLens (第1世代) デバイスでキオスクモードを使用するよう�
 
 ### キオスクアプリを計画する
 
-キオスクアプリの選択方法に関する一般的な情報については、「[割り当てられたアクセスのアプリを選ぶためのガイドライン (キオスクモード)](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app)」を参照してください。
+キオスクアプリの選択方法に関する一般的な情報については、「 [割り当てられたアクセスのアプリを選ぶためのガイドライン (キオスクモード)](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app)」を参照してください。
 
 Windows Device Portal を使って単一アプリのキオスクを構成する場合は、セットアッププロセス中にアプリを選択します。  
 
-モバイルデバイス管理 (MDM) システムまたはプロビジョニングパッケージを使ってキオスクモードを構成する場合は、 [AssignedAccess 構成サービスプロバイダー (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp)を使ってアプリケーションを指定します。 CSP は、[アプリケーションユーザーモデル id (aumid)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app)を使ってアプリケーションを特定します。 次の表に、マルチアプリキオスクで使用できる Aumid アプリケーションの一覧を示します。
+モバイルデバイス管理 (MDM) システムまたはプロビジョニングパッケージを使ってキオスクモードを構成する場合は、 [AssignedAccess 構成サービスプロバイダー (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) を使ってアプリケーションを指定します。 CSP は、 [アプリケーションユーザーモデル id (aumid)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) を使ってアプリケーションを特定します。 次の表に、マルチアプリキオスクで使用できる Aumid アプリケーションの一覧を示します。
 
 > [!CAUTION]
-> Shell アプリをキオスクアプリとして選択することはできません。 さらに、Microsoft Edge、Microsoft ストア、またはエクスプローラーをキオスクアプリとして選択し**ない**ことをお勧めします。  
+> Shell アプリをキオスクアプリとして選択することはできません。 さらに、Microsoft Edge、Microsoft ストア、またはエクスプローラーをキオスクアプリとして選択し **ない** ことをお勧めします。  
 
 <a id="aumids"></a>
 
@@ -125,12 +126,12 @@ Windows Device Portal を使って単一アプリのキオスクを構成する�
 
 MDM 環境では、グループを使ってデバイスの構成とユーザーアクセスを管理します。 
 
-キオスク構成プロファイルには、**ユーザーのログオンの種類**の設定が含まれています。 [**ユーザーのログオンの種類**] には、追加したアプリまたはアプリを使うことができるユーザー (またはユーザーが含まれているグループ) を指定します。 構成プロファイルに含まれていないアカウントを使用してサインインした場合、ユーザーはキオスクのアプリを使用できません。  
+キオスク構成プロファイルには、 **ユーザーのログオンの種類** の設定が含まれています。 [**ユーザーのログオンの種類**] には、追加したアプリまたはアプリを使うことができるユーザー (またはユーザーが含まれているグループ) を指定します。 構成プロファイルに含まれていないアカウントを使用してサインインした場合、ユーザーはキオスクのアプリを使用できません。  
 
 > [!NOTE]  
-> 単一アプリのキオスクの**ユーザーログオンの種類**は、1つのユーザーアカウントを指定します。 これは、キオスクを実行するユーザーコンテキストです。 マルチアプリキオスクの**ユーザーログオンの種類**では、キオスクを使用できる1つ以上のユーザーアカウントまたはグループを指定できます。
+> 単一アプリのキオスクの **ユーザーログオンの種類** は、1つのユーザーアカウントを指定します。 これは、キオスクを実行するユーザーコンテキストです。 マルチアプリキオスクの **ユーザーログオンの種類** では、キオスクを使用できる1つ以上のユーザーアカウントまたはグループを指定できます。
 
-キオスクの構成をデバイスに展開するには、その前に、デバイスにサインインできるデバイスまたはユーザーが含まれているグループにキオスク構成プロファイルを*割り当てる*必要があります。 この設定により、次のような動作が生成されます。
+キオスクの構成をデバイスに展開するには、その前に、デバイスにサインインできるデバイスまたはユーザーが含まれているグループにキオスク構成プロファイルを *割り当てる* 必要があります。 この設定により、次のような動作が生成されます。
 
 - デバイスが割り当てられたグループのメンバーである場合は、ユーザーが初めてデバイスにサインインしたときに、キオスクの構成がデバイスに展開されます。  
 - デバイスが割り当てられたグループのメンバーではなく、そのグループのメンバーであるユーザーがサインインすると、その時点で、キオスク構成がデバイスに展開されます。
@@ -204,9 +205,9 @@ Intune で構成プロファイルを割り当てる場合の影響の詳細に�
 
 | &nbsp; |Windows Device Portal を使用して展開する |プロビジョニングパッケージを使用して展開する |MDM を使用して展開する |
 | --------------------------- | ------------- | -------------------- | ---- |
-|単一アプリのキオスクの展開   | あり           | 要                  | 要  |
-|複数アプリのキオスクの展開    | なし            | あり                  | 要  |
-|ローカルデバイスのみに展開する | あり           | 可                  | ×   |
+|単一アプリのキオスクの展開   | あり           | あり                  | あり  |
+|複数アプリのキオスクの展開    | なし            | あり                  | あり  |
+|ローカルデバイスのみに展開する | あり           | あり                  | なし   |
 |開発者モードを使用して展開する |必須かどうか       | 任意            | 任意   |
 |Azure Active Directory (AAD) を使用して展開する  | 任意            | 任意                   | 必須かどうか  |
 |自動的に展開する      | なし            | なし                   | あり  |
@@ -242,7 +243,7 @@ Microsoft Intune または別の MDM システムを使用してキオスクモ�
 1. [キオスクの**構成**] を選択し、  >  **Kiosk**次のいずれかを選択します。
    - 単一アプリのキオスクを作成するには、[**キオスクモード**  >  **単一アプリキオスク**] を選びます。
    - マルチアプリキオスクを作成するには、[**キオスクモード**  >  **マルチアプリキオスク**] を選択します。
-1. キオスクの構成を開始するには、[**追加**] を選択します。
+1. キオスクの構成を開始するには、[ **追加**] を選択します。
 
 次の手順は、必要なキオスクの種類によって異なります。 詳細については、次のいずれかのオプションを選択します。  
 
@@ -251,20 +252,20 @@ Microsoft Intune または別の MDM システムを使用してキオスクモ�
 
 キオスク構成プロファイルの作成方法の詳細については、「 [windows 10 と Windows ホログラフィック For Business デバイスの設定」を参照して、Intune を使って専用のキオスクとして実行](https://docs.microsoft.com/intune/configuration/kiosk-settings)してください。
 
-### <a id="mdmconfigsingle"></a>MDM、ステップ 3 (単一アプリ) &ndash; 1 つのアプリのキオスクの設定を構成する
+### <a id="mdmconfigsingle"></a>MDM、ステップ 3 (単一アプリ) &ndash;  1 つのアプリのキオスクの設定を構成する
 
 このセクションでは、単一アプリのキオスクで必要な設定の概要を示します。 詳細については、次の記事を参照してください。
 
 - Intune でキオスク構成プロファイルを構成する方法については、「 [Microsoft Intune を使用してキオスクモードを構成する方法](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)」を参照してください。
 - Intune での単一アプリのキオスクで利用可能な設定について詳しくは、「[全画面表示アプリのキオスク](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks)」をご覧ください。
-- その他の MDM サービスについては、使用しているプロバイダーのドキュメントで手順を参照してください。 MDM サービスでユーザー設定の XML 構成を使用してキオスクを設定する必要がある場合は、[キオスクの構成を定義する xml ファイルを作成](#ppkioskconfig)します。
+- その他の MDM サービスについては、使用しているプロバイダーのドキュメントで手順を参照してください。 MDM サービスでユーザー設定の XML 構成を使用してキオスクを設定する必要がある場合は、 [キオスクの構成を定義する xml ファイルを作成](#ppkioskconfig)します。
 
 1. [**ユーザーログオンの種類**の  >  **ローカルユーザーアカウント**] を選択し、キオスクにサインインできるローカル (デバイス) アカウントまたは Microsoft アカウント (MSA) のユーザー名を入力します。
    > [!NOTE]  
-   > **自動ログオン**ユーザーアカウントの種類は、Windows ホログラフィック for Business ではサポートされていません。
+   > **自動ログオン** ユーザーアカウントの種類は、Windows ホログラフィック for Business ではサポートされていません。
 1. [ **Application type**  >  **Store アプリ**] を選び、一覧からアプリを選びます。
 
-次の手順では、プロファイルをグループに[割り当て](#mdmassign)ます。
+次の手順では、プロファイルをグループに [割り当て](#mdmassign) ます。
 
 ### <a id="mdmconfigmulti"></a>MDM、手順 3 (マルチアプリ) &ndash; マルチアプリキオスクの設定を構成する
 
@@ -272,7 +273,7 @@ Microsoft Intune または別の MDM システムを使用してキオスクモ�
 
 - Intune でキオスク構成プロファイルを構成する方法については、「 [Microsoft Intune を使用してキオスクモードを構成する方法](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)」を参照してください。
 - Intune でのマルチアプリキオスクで利用可能な設定の詳細については、「[マルチアプリキオスク](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks)」を参照してください。
-- その他の MDM サービスについては、使用しているプロバイダーのドキュメントで手順を参照してください。 カスタム XML 構成を使用して、MDM サービスでキオスクを設定する必要がある場合は、[キオスクの構成を定義する xml ファイルを作成](#ppkioskconfig)します。 XML ファイルを使用する場合は、[[開始] レイアウト](#start-layout-for-hololens)を含めるようにします。  
+- その他の MDM サービスについては、使用しているプロバイダーのドキュメントで手順を参照してください。 カスタム XML 構成を使用して、MDM サービスでキオスクを設定する必要がある場合は、 [キオスクの構成を定義する xml ファイルを作成](#ppkioskconfig)します。 XML ファイルを使用する場合は、[ [開始] レイアウト](#start-layout-for-hololens)を含めるようにします。  
 - 必要に応じて、Intune またはその他の MDM サービスでカスタム開始レイアウトを使用することができます。 詳細については、「 [MDM のレイアウトファイルを開始する (Intune など)](#start-layout-file-for-mdm-intune-and-others)」を参照してください。
 
 1. **S モードデバイスのターゲット Windows 10**を選択し  >  **No**ます。  
@@ -283,14 +284,14 @@ Microsoft Intune または別の MDM システムを使用してキオスクモ�
    **ユーザーのログオンの種類**で指定したグループまたはアカウントに属しているユーザーのみが、キオスクのエクスペリエンスを使用できます。
 
 1. 次のオプションを使用して、1つまたは複数のアプリを選択します。
-   - アップロードした基幹業務アプリを追加するには、[**ストアアプリの追加**] を選択し、目的のアプリを選択します。
-   - AUMID を指定してアプリを追加するには、[ **AUMID によって追加**] を選択し、アプリの AUMID を入力します。 [利用可能な Aumid のリストを表示する](#aumids)
+   - アップロードした基幹業務アプリを追加するには、[ **ストアアプリの追加** ] を選択し、目的のアプリを選択します。
+   - AUMID を指定してアプリを追加するには、[ **AUMID によって追加** ] を選択し、アプリの AUMID を入力します。 [利用可能な Aumid のリストを表示する](#aumids)
 
-次の手順では、プロファイルをグループに[割り当て](#mdmassign)ます。
+次の手順では、プロファイルをグループに [割り当て](#mdmassign) ます。
 
 ### <a id="mdmassign"></a>MDM、手順 4 &ndash; グループにキオスク構成プロファイルを割り当てる
 
-キオスク構成プロファイルの [**課題**] ページを使用して、キオスクの構成を展開する場所を設定します。 最も単純なケースでは、MDM にデバイスを登録するときに、HoloLens デバイスを含むグループにキオスク構成プロファイルを割り当てることになります。
+キオスク構成プロファイルの [ **課題** ] ページを使用して、キオスクの構成を展開する場所を設定します。 最も単純なケースでは、MDM にデバイスを登録するときに、HoloLens デバイスを含むグループにキオスク構成プロファイルを割り当てることになります。
 
 ### <a id="mdmsingledeploy"></a>MDM、ステップ 5 (単一アプリ) &ndash; 1 つのアプリでのキオスクの展開
 
@@ -304,7 +305,7 @@ OOBE 中に、次の手順を実行します。
 
 次にデバイスにサインインしたときに、キオスクアプリが自動的に起動します。
 
-この時点でキオスクの設定が表示されない場合は、[課題の状態を確認](https://docs.microsoft.com/intune/configuration/device-profile-monitor)してください。
+この時点でキオスクの設定が表示されない場合は、 [課題の状態を確認](https://docs.microsoft.com/intune/configuration/device-profile-monitor)してください。
 
 ### <a id="mdmmultideploy"></a>MDM、ステップ 5 (マルチアプリ) に &ndash; よるマルチアプリキオスクの展開
 
@@ -315,30 +316,30 @@ MDM システムを使用する場合は、デバイスを Azure AD テナント
 
 OOBE 中に、次の手順を実行します。
 
-1. [**ユーザーログオンの種類**] グループに属しているアカウントを使用してサインインします。
+1. [ **ユーザーログオンの種類** ] グループに属しているアカウントを使用してサインインします。
 1. デバイスを登録します。
 1. キオスク構成プロファイルに含まれているすべてのアプリについて、ダウンロードしてインストールします。 また、ポリシーが適用されるのを待ちます。  
 1. OOBE が完了したら、Microsoft ストアまたはサイドローディングから追加のアプリをインストールできます。 デバイスが属しているグループに[必要なアプリ](https://docs.microsoft.com/mem/intune/apps/apps-deploy#assign-an-app)が自動的にインストールされます。
 1. インストールが完了したら、デバイスを再起動します。
 
-次に、**ユーザーのログオンの種類**に属するアカウントを使用してデバイスにサインインすると、キオスクアプリが自動的に起動します。
+次に、 **ユーザーのログオンの種類**に属するアカウントを使用してデバイスにサインインすると、キオスクアプリが自動的に起動します。
 
-この時点でキオスクの設定が表示されない場合は、[課題の状態を確認](https://docs.microsoft.com/intune/configuration/device-profile-monitor)してください。
+この時点でキオスクの設定が表示されない場合は、 [課題の状態を確認](https://docs.microsoft.com/intune/configuration/device-profile-monitor)してください。
 
 ## プロビジョニングパッケージを使用して1つのアプリまたは複数のアプリのキオスクを設定する
 
 プロビジョニングパッケージを使用してキオスクモードを設定するには、次の手順を実行します。
 
-1. [キオスクの構成を定義する XML ファイルを作成します。](#ppkioskconfig)これには、[開始レイアウト](#start-layout-for-hololens)も含まれます。
+1. [キオスクの構成を定義する XML ファイルを作成します。](#ppkioskconfig)これには、 [開始レイアウト](#start-layout-for-hololens)も含まれます。
 2. [プロビジョニングパッケージに XML ファイルを追加します。](#ppconfigadd)
 3. [HoloLens にプロビジョニングパッケージを適用します。](#ppapply)
 
 ### <a id="ppkioskconfig"></a>プロビジョニングパッケージ、手順 1 &ndash; キオスク構成の XML ファイルを作成する
 
-次の点を除き、[一般的な手順に従って、Windows デスクトップ用のキオスク構成の XML ファイルを作成](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)します。
+次の点を除き、 [一般的な手順に従って、Windows デスクトップ用のキオスク構成の XML ファイルを作成](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)します。
 
 - クラシック Windows アプリケーション (Win32) は含まれません。 HoloLens はこれらのアプリケーションをサポートしていません。
-- HoloLens 用の[プレースホルダーの開始レイアウト XML](#start-layout-for-hololens)を使用します。
+- HoloLens 用の [プレースホルダーの開始レイアウト XML](#start-layout-for-hololens) を使用します。
 - オプション: キオスクの構成へのゲストアクセスの追加
 
 #### <a id="ppkioskguest"></a>オプション: キオスクの構成へのゲストアクセスの追加
@@ -366,7 +367,7 @@ OOBE 中に、次の手順を実行します。
 > [!NOTE]  
 > [MDM](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)を使ってマルチアプリのキオスクを設定する場合は、必要に応じて開始レイアウトを使うことができます。 詳細については、「 [MDM (Intune およびその他) のプレースホルダーの開始レイアウトファイル](#start-layout-file-for-mdm-intune-and-others)」を参照してください。
 
-開始レイアウトの場合は、次の**startlayout**セクションを KIOSK provisioning XML ファイルに追加します。
+開始レイアウトの場合は、次の **startlayout** セクションを KIOSK provisioning XML ファイルに追加します。
 
 ```xml
 <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
@@ -393,7 +394,7 @@ OOBE 中に、次の手順を実行します。
 次のサンプルを XML ファイルとして保存します。 このファイルは、Microsoft Intune (またはキオスクプロファイルを提供する別の MDM サービス) でマルチアプリキオスクを構成するときに使用できます。
 
 > [!NOTE]
-> カスタム設定と完全な XML 構成を使って MDM サービスでキオスクを設定する必要がある場合は、[プロビジョニングパッケージの開始レイアウトの手順](#start-layout-for-hololens)を使用します。
+> カスタム設定と完全な XML 構成を使って MDM サービスでキオスクを設定する必要がある場合は、 [プロビジョニングパッケージの開始レイアウトの手順](#start-layout-for-hololens)を使用します。
 
 ```xml
 <LayoutModificationTemplate
@@ -414,11 +415,11 @@ OOBE 中に、次の手順を実行します。
 ### <a id="ppconfigadd"></a>Prov.xml. パッケージ、手順2「 &ndash; キオスク構成 XML ファイルをプロビジョニングパッケージに追加する」
 
 1. [Windows 構成デザイナー](https://www.microsoft.com/store/apps/9nblggh4tx22)を開きます。
-1. [ **Advanced provisioning**] を選んで、プロジェクトの名前を入力し、[**次へ**] を選択します。
-1. [ **Windows 10 ホログラフィック**] を選び、[**次へ**] を選びます。
-1. [**完了**] を選びます。 パッケージのワークスペースが開きます。
+1. [ **Advanced provisioning**] を選んで、プロジェクトの名前を入力し、[ **次へ**] を選択します。
+1. [ **Windows 10 ホログラフィック**] を選び、[ **次へ**] を選びます。
+1. [ **完了**] を選びます。 パッケージのワークスペースが開きます。
 1. [ **Runtime settings**  >  **AssignedAccess**  >  **MultiAppAssignedAccessSettings**] を選びます。
-1. 中央のウィンドウで、[**参照**] を選択して、作成したキオスク構成の XML ファイルを見つけて選択します。
+1. 中央のウィンドウで、[ **参照** ] を選択して、作成したキオスク構成の XML ファイルを見つけて選択します。
 
    ![Windows 構成デザイナーにおける MultiAppAssignedAccessSettings フィールドのスクリーンショット](./images/multiappassignedaccesssettings.png)
 
@@ -429,15 +430,15 @@ OOBE 中に、次の手順を実行します。
 1. [**ファイル**  >  の**保存**] を選びます。
 1. [ **Export**  >  **プロビジョニングパッケージ**のエクスポート] を選択し、[**所有者**の  >  **IT 管理**者] を選択します。これにより、このプロビジョニングパッケージの優先順位が、他のソースからこのデバイスに適用されるプロビジョニングパッケージよりも高くなります。
 1. **[次へ]** を選択します。
-1. [**プロビジョニングパッケージのセキュリティ**] ページで、セキュリティオプションを選びます。
+1. [ **プロビジョニングパッケージのセキュリティ** ] ページで、セキュリティオプションを選びます。
    > [!IMPORTANT]  
-   > [**パッケージ署名を有効**にする] を選択した場合は、パッケージの署名に使用する有効な証明書を選択する必要もあります。 これを行うには、[**参照**] を選択し、パッケージの署名に使用する証明書を選択します。
+   > [ **パッケージ署名を有効**にする] を選択した場合は、パッケージの署名に使用する有効な証明書を選択する必要もあります。 これを行うには、[ **参照** ] を選択し、パッケージの署名に使用する証明書を選択します。
    
    > [!CAUTION]  
-   > [パッケージの**暗号化を有効にする**] を選択しないでください。 HoloLens デバイスでは、この設定によってプロビジョニングが失敗します。
+   > [パッケージの **暗号化を有効にする**] を選択しないでください。 HoloLens デバイスでは、この設定によってプロビジョニングが失敗します。
 1. **[次へ]** を選択します。
-1. プロビジョニングパッケージをビルドするときの出力場所を指定します。 既定では、Windows 構成デザイナーはプロジェクト フォルダーを出力先として使います。 出力場所を変更する場合は、[**参照**] を選択します。 完了したら、[**次へ**] を選びます。
-1. [**ビルド**] を選択して、パッケージの作成を開始します。 プロビジョニング パッケージのビルドにはそれほど時間はかかりません。 ビルドページにプロジェクト情報が表示され、進行状況バーにはビルドの状態が示されます。
+1. プロビジョニングパッケージをビルドするときの出力場所を指定します。 既定では、Windows 構成デザイナーはプロジェクト フォルダーを出力先として使います。 出力場所を変更する場合は、[ **参照**] を選択します。 完了したら、[ **次へ**] を選びます。
+1. [ **ビルド** ] を選択して、パッケージの作成を開始します。 プロビジョニング パッケージのビルドにはそれほど時間はかかりません。 ビルドページにプロジェクト情報が表示され、進行状況バーにはビルドの状態が示されます。
 
 ### <a id="ppapply"></a>プロビジョニングパッケージ、手順 3 &ndash; プロビジョニングパッケージを HoloLens に適用する
 
@@ -445,21 +446,21 @@ OOBE 中に、次の手順を実行します。
 
 - [セットアップ時に、最初にプロビジョニングパッケージを HoloLens に適用](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)することができます。
 
-- [セットアップ後に、プロビジョニングパッケージを HoloLens に適用](hololens-provisioning.md#4-apply-a-provisioning-package-to-hololens-after-setup)することもできます。
+- [セットアップ後に、プロビジョニングパッケージを HoloLens に適用](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-after-setup)することもできます。
 
 ## Windows Device Portal を使用して単一アプリのキオスクを設定する
 
 Windows Device Portal を使用してキオスクモードを設定するには、次の手順を実行します。
 
 > [!IMPORTANT]
-> キオスクモードは、デバイスに[Windows ホログラフィック For Business](hololens1-upgrade-enterprise.md)がインストールされている場合にのみ使用できます。
+> キオスクモードは、デバイスに [Windows ホログラフィック For Business](hololens1-upgrade-enterprise.md) がインストールされている場合にのみ使用できます。
 
 1. [Windows Device Portal を使用するように HoloLens デバイス](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal)をセットアップします。 デバイス ポータルは、お使いの PC に Web ブラウザーから接続することができる HoloLens 上の Web サーバーです。
 
     > [!CAUTION]
     > HoloLens で Device Portal を使うように設定する場合は、デバイスで開発者モードを有効にする必要があります。 Windows ホログラフィック for Business がインストールされているデバイスの開発者モードでは、アプリをサイドロードすることができます。 ただし、この設定では、Microsoft Store によって認定されていないアプリをユーザーがインストールできるというリスクが生じます。 管理者は、[ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)の**Applicationmanagement/allowdeveloper Unlock**設定を使用して、開発者モードを有効にする機能をブロックすることができます。 [開発者モードの詳細をご覧ください。](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
     
-1. コンピューターで、 [wi-fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi)または[USB](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb)を使って HoloLens に接続します。
+1. コンピューターで、 [wi-fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) または [USB](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb)を使って HoloLens に接続します。
 
 1. 次のいずれかの操作を行います。
    - Windows Device Portal に初めて接続している場合は、[ユーザー名とパスワードを作成](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password)する
@@ -468,12 +469,12 @@ Windows Device Portal を使用してキオスクモードを設定するには�
     > [!TIP]
     > ブラウザーに証明書エラーが表示された場合は、[こちらのトラブルシューティング手順](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#security_certificate)に従います。
 
-1. Windows Device Portal で、[**キオスクモード**] を選びます。
+1. Windows Device Portal で、[ **キオスクモード**] を選びます。
 
-1. [**キオスクモードを有効**にする] を選択し、デバイスの起動時に実行するアプリを選択して、[**保存**] を選択します。
+1. [ **キオスクモードを有効**にする] を選択し、デバイスの起動時に実行するアプリを選択して、[ **保存**] を選択します。
 
     ![Kiosk Mode (キオスク モード)](images/kiosk.png)
-1. HoloLens を再起動します。 まだデバイスポータルページを開いている場合は、ページの上部にある [**再起動**] を選択できます。
+1. HoloLens を再起動します。 まだデバイスポータルページを開いている場合は、ページの上部にある [ **再起動** ] を選択できます。
 
 ## 詳細情報
 
