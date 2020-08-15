@@ -16,12 +16,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 1 (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 992b17160eb6ba6ca2f6c8b12e112b98ab154774
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 7cedf2af90744477c33736087c85a43168167707
+ms.sourcegitcommit: 6f2ec9ced776166f96eddcd601bef5de715703a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829029"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "10931839"
 ---
 # HoloLens を使用して物理的スペースをマッピングする
 
@@ -119,4 +119,4 @@ Wi-Fi が有効になっている限り、HoloLens はマップ データを近�
 
 ## 関連トピック
 
-- [空間マッピング設計](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping-design)
+- [空間マッピング設計](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
