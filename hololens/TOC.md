@@ -7,6 +7,7 @@
 ### [HoloLens 2 の使用準備](hololens2-setup.md)
 ### [HoloLens 2 のセットアップ](hololens2-start.md)
 ### [HoloLens 2 を快適に使用する: よく寄せられる質問](hololens2-fit-comfort-faq.md)
+### [HoloLens 2 ディスプレイ](hololens2-display.md)
 ### [HoloLens 2 クリーニング: よく寄せられる質問](hololens2-maintenance.md)
 ### [HoloLens 2 でサポートされる言語](hololens2-language-support.md)
 ### [HoloLens 2 の操作方法](hololens2-basic-usage.md)

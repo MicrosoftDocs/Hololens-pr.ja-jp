@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 594f51897502847251adcbe8c32beb0c55d71098
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 17b55ef165cbb9df47f822f742141f4460cd9c6b
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829413"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929843"
 ---
 # HoloLens 2 を快適に使うためのよくある質問
 
@@ -50,12 +50,7 @@ HoloLens を使用して快適性を保ち、最良のエクスペリエンス�
 
 ## ホログラムの画像の色や明るさが正しくありません
 
-HoloLens 2 の場合、ディスプレイに表示されるホログラムの画質を最大限に高めるには、次の手順を実行します。
-
-- **ディスプレイの明るさのレベルを引き上げます。** ホログラムは、ディスプレイの明るさが最大レベルのときに最善の画質になります。
-- **バイザーを目に近づけます。** バイザーが目に最も近くなるように手前にスウィングさせます。
-- **バイザーの位置を下げます。** バイザーが鼻にフィットするように、額のブロー パッドを下に動かしてみます。
-- **目に合わせた調整を実行します。** ディスプレイでは、画像表示を最適化するために IPD と視線入力が使用されます。 目に合わせた調整を実行しないと、画質が低下する可能性があります。
+HoloLens 2 [ディスプレイのトラブルシューティングの手順](hololens2-display.md)をご覧ください。
 
 ## 使用中にデバイスが下にずれ落ちます。または、安全な状態に保つためにヘッドバンドをきつくする必要があります
 
