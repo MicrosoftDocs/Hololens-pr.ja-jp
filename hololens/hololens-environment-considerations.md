@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 0fa147eb2b1194dacdcabff4995f5141a1b25bde
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
+ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857855"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "10927841"
 ---
 # HoloLens 環境に関する考慮事項
 
@@ -116,6 +116,9 @@ Wi-Fi が有効になっている限り、実際の WiFi ネットワーク/ル�
 調整アプリにアクセスするには、**[設定]** > **[システム]** > **[ユーティリティ]** の順に移動します。 **[調整を開く]** を選択し、表示される手順に従います。
 
 お使いの HoloLens を他のユーザーが使用する場合、そのユーザーはまず調整アプリを実行して、デバイスをそのユーザー用に適切にセットアップする必要があります。
+
+### 温度および規制についての情報
+[HoloLens の規制](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information) : 温度、廃棄、ラジオやテレビの電波妨害に関する情報を含みます。
 
 ## 関連項目
 
