@@ -15,20 +15,20 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: db95edfbadb271b7fc47cf5798e80d9b2cad3c90
-ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
+ms.openlocfilehash: 6947fe2232701fb9451291bd07e1c896979861d5
+ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881330"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "10940197"
 ---
 # HoloLens の既知の問題
 
 これは、HoloLens デバイスの既知の問題の最新の一覧です。 奇数の動作が表示される場合は、まずここを確認してください。 この一覧は、新しい問題が検出または報告された場合、または今後の HoloLens ソフトウェアの更新で問題が解決された場合に、更新されます。
 
 >[!NOTE]
-> - ブロックされていない問題が見つかった場合は、[フィードバック Hub](hololens-feedback.md)経由で HoloLens デバイスで報告してください。
-> - 問題が解決している場合は、フィードバックを送信するために、[サポートリクエスト](https://aka.ms/hlsupport)を提出してください。
+> - ブロックされていない問題が見つかった場合は、 [フィードバック Hub](hololens-feedback.md)経由で HoloLens デバイスで報告してください。
+> - 問題が解決している場合は、フィードバックを送信するために、  [サポートリクエスト](https://aka.ms/hlsupport)を提出してください。
 
 - [すべての HoloLens ジェネレーションの既知の問題](#known-issues-for-all-hololens-generations)
 - [HoloLens 2 デバイスの既知の問題](#known-issues-for-hololens-2-devices)
@@ -39,7 +39,7 @@ ms.locfileid: "10881330"
 
 ### Unity
 
-- 「HoloLens の開発に推奨される最新バージョンの Unity 用の[ツールをインストール](https://docs.microsoft.com/windows/mixed-reality/install-the-tools)する」を参照してください。
+- 「HoloLens の開発に推奨される最新バージョンの Unity 用の [ツールをインストール](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) する」を参照してください。
 - Unity HoloLens のテクニカルプレビューの既知の問題については、「 [HoloLens Unity フォーラム](https://forum.unity3d.com/threads/known-issues.394627/)」で説明しています。
 
 ### Windows Device Portal
@@ -54,9 +54,23 @@ HoloLens 用の OneDrive アプリでは、職場または学校アカウント�
 
 対策
 - ビジネスで利用可能であれば、カメラの自動アップロードは、コンシューマーの Microsoft アカウントでサポートされています。 職場または学校のアカウントに加えて、Microsoft アカウントにサインインすることもできます (OneDrive アプリでは、2つのサインインがサポートされています)。 OneDrive 内の Microsoft アカウントプロファイルで、バックグラウンドカメラロールの自動アップロードを有効にすることができます。
-- 写真を自動的にアップロードするためにコンシューマーの Microsoft アカウントを安全に使用できない場合は、OneDrive アプリから職場または学校のアカウントに写真を手動でアップロードすることができます。 そのためには、OneDrive アプリで職場または学校のアカウントにサインインしていることを確認します。 ボタンを選択 **+** して、[**アップロード**] を選びます。 アップロードする写真またはビデオを検索するには、[**画像 > カメラロール**に移動します。 アップロードする写真またはビデオを選択し、[**開く**] ボタンを選択します。
+- 写真を自動的にアップロードするためにコンシューマーの Microsoft アカウントを安全に使用できない場合は、OneDrive アプリから職場または学校のアカウントに写真を手動でアップロードすることができます。 そのためには、OneDrive アプリで職場または学校のアカウントにサインインしていることを確認します。 ボタンを選択 **+** して、[ **アップロード**] を選びます。 アップロードする写真またはビデオを検索するには、[ **画像 > カメラロール**に移動します。 アップロードする写真またはビデオを選択し、[ **開く** ] ボタンを選択します。
 
 ## HoloLens 2 デバイスの既知の問題
+
+### キーボードが特殊文字に切り替わりません
+
+OOBE 中に、ユーザーが職場または学校のアカウントを選んでパスワードを入力している場合は、&123 ボタンをタップして特殊文字に変更しないで、キーボード上の特殊文字に切り替えようとしたときに問題が発生します。 
+
+回避策:
+-   キーボードを閉じて、テキストフィールドをタップしてもう一度開きます。
+-   パスワードが間違っています。 次回、キーボードが relaunched されると、期待どおりに動作するようになります。
+- Web 認証の場合は、キーボードを閉じて、[ **別のデバイスからサインイン**] を選択します。 
+-   数値のみを入力した場合、ユーザーは特定のキーを押したままにして展開されたメニューを開くことができます。
+-   USB キーボードを使用しています。
+
+これは、次のような影響はありません。
+- 個人アカウントの使用を選択したユーザー。
 
 ### Insider ビルドを使用して、デバイス reflashed で Insider preview ビルドから登録解除した後に、青色の画面が表示される
 
@@ -73,7 +87,7 @@ HoloLens 用の OneDrive アプリでは、職場または学校アカウント�
     - Insider 以外のビルドをフラッシュします。 通常の月次更新プログラムのいずれか。 
     - Insider プレビューを表示する
 - デバイスの Reflash
-    1. 接続していないときに完全に電源を切ることにより、 [HoloLens 2 を手動でフラッシュモードに](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2)します。 音量を上げながら、Power ボタンをタップします。
+    1. 接続していないときに完全に電源を切ることにより、 [HoloLens 2 を手動でフラッシュモードに](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) します。 音量を上げながら、Power ボタンをタップします。
     1. PC に接続し、アドバンスト回復コンパニオンを開きます。 
     1. HoloLens 2 を既定のビルドにフラッシュします。   
 
@@ -96,9 +110,9 @@ Visual Studio は VS 2019 バージョン16.2 をリリースしました。こ�
 1. [**ファイル**] の [  >  **新しい**  >  **プロジェクト**] を選びます。
 1. [ **Visual C#**  >  **Windows デスクトップ**  >  **コンソールアプリ (.net Framework)**] を選択します。
 1. プロジェクトに名前を付け ("HoloLensDeploymentFix" など)、フレームワークが少なくとも .NET Framework 4.5 に設定されていることを確認して、[ **OK]** を選択します。
-1. ソリューションエクスプローラーで [**参照設定**] ノードを右クリックし、次の参照を追加します ([**参照**] セクションを選び、[**参照**] を選択します)。
+1. ソリューションエクスプローラーで [ **参照設定** ] ノードを右クリックし、次の参照を追加します ([ **参照** ] セクションを選び、[ **参照**] を選択します)。
 
-    ```CMD
+    ```console
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Connectivity.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\SirepInterop.dll
@@ -108,12 +122,12 @@ Visual Studio は VS 2019 バージョン16.2 をリリースしました。こ�
     > 10.0.18362.0 をまだインストールしていない場合は、最新バージョンを使用します。 
 
 1. ソリューションエクスプローラーでプロジェクトを右クリックし、[ **Add**  >  **既存項目**の追加] を選択します。
-1. C:\Program Files (x86) \Windows Kits\10\bin\10.0.18362.0\x86 を参照して、フィルターを**すべてのファイル (\ *. \ *)** に変更します。
-1. SirepClient.dll と SshClient.dll の両方を選択して、[**追加**] を選択します。
+1. C:\Program Files (x86) \Windows Kits\10\bin\10.0.18362.0\x86 を参照して、フィルターを **すべてのファイル (\ *. \ *)** に変更します。
+1. SirepClient.dll と SshClient.dll の両方を選択して、[ **追加**] を選択します。
 1. ソリューションエクスプローラーで両方のファイルを見つけて選び (ファイルの一覧の一番下にある必要があります)、[**プロパティ**] ウィンドウの [**出力ディレクトリにコピー** ] を選択して、**常にコピー**します。
 1. ファイルの上部で、次のステートメントを既存のステートメント一覧に追加し `using` ます。
 
-    ```CMD
+    ```console
     using Microsoft.Tools.Deploy;
     using System.Net;
     ```
@@ -156,8 +170,8 @@ HoloLens で Microsoft Store とアプリを起動しようとすると、問題
 
 デバイスが更新プログラムを受け取ることができるかどうかを確認するには、次のことを行ってください。
 
-1. [設定] アプリに移動して、[**更新 & セキュリティ**] を開きます。
-1. [**更新プログラムの確認**] を選びます。
+1. [設定] アプリに移動して、[ **更新 & セキュリティ**] を開きます。
+1. [ **更新プログラムの確認**] を選びます。
 1. 17763.380 への更新プログラムが利用できる場合は、このビルドに更新して、アプリがハングするバグの修正プログラムを入手してください。
 1. このバージョンの OS への更新時に、アプリは期待どおりに動作する必要があります。
 
@@ -173,11 +187,11 @@ HoloLens で Microsoft Store とアプリを起動しようとすると、問題
 
 デバイスで依然としてアプリを読み込むことができない場合は、次の手順に従って、ダウンロードセンターから .NET ネイティブフレームワークとランタイムのバージョンをサイドローディングできます。
 
-1. Microsoft ダウンロードセンターから[この zip ファイル](https://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip)をダウンロードしてください。 解凍すると、2つのファイルが生成されます。  NET.TCP、.appx、および NET.EXE というように、.appx というようにします。
-1. デバイスが dev のロック解除されていることを確認してください。  この手順を完了していない場合は、[こちら](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)を参照してください。
+1. Microsoft ダウンロードセンターから [この zip ファイル](https://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) をダウンロードしてください。 解凍すると、2つのファイルが生成されます。  NET.TCP、.appx、および NET.EXE というように、.appx というようにします。
+1. デバイスが dev のロック解除されていることを確認してください。  この手順を完了していない場合は、 [こちら](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)を参照してください。
 1. 次に、Windows Device Portal にアクセスします。 この操作は USB 経由で行うことをお勧めします。そのためには、 http://127.0.0.1:10080 ブラウザーに入力します。
-1. Windows Device Portal を起動したら、ダウンロードした2つのファイルを "サイドロード" する必要があります。 そのためには、左側のバーに移動して [**アプリ**] セクションに移動し、[**アプリ**] を選択する必要があります。
-1. 次のような画面が表示されます。  [**アプリのインストール**] というセクションに移動して、2つの APPX ファイルを解凍した場所を参照します。 一度に1つしか実行できないため、最初の1つを選んでから、[展開] セクションの [移動] をクリックします。 次に、2つ目の APPX ファイルに対してこれを行います。
+1. Windows Device Portal を起動したら、ダウンロードした2つのファイルを "サイドロード" する必要があります。 そのためには、左側のバーに移動して [ **アプリ** ] セクションに移動し、[ **アプリ**] を選択する必要があります。
+1. 次のような画面が表示されます。  [ **アプリのインストール** ] というセクションに移動して、2つの APPX ファイルを解凍した場所を参照します。 一度に1つしか実行できないため、最初の1つを選んでから、[展開] セクションの [移動] をクリックします。 次に、2つ目の APPX ファイルに対してこれを行います。
 
    ![サイドロードアプリをインストールするための Windows Device Portal](images/20190322-DevicePortal.png)
 1. この時点で、アプリケーションは再び動作を開始する必要があり、ストアにアクセスすることもできます。
@@ -187,20 +201,20 @@ HoloLens で Microsoft Store とアプリを起動しようとすると、問題
 
 ### デバイスの更新
 
-- 30秒後に新しい更新プログラムを実行すると、シェルが1回表示されなくなることがあります。 セッションを再開するには、**ブルーム**ジェスチャを実行してください。
+- 30秒後に新しい更新プログラムを実行すると、シェルが1回表示されなくなることがあります。 セッションを再開するには、 **ブルーム** ジェスチャを実行してください。
 
 ### Visual Studio
 
-- 「HoloLens の開発に推奨される最新バージョンの Visual Studio 用の[ツールをインストール](https://docs.microsoft.com/windows/mixed-reality/install-the-tools)する」を参照してください。
-- Visual Studio から HoloLens にアプリを展開すると、次のエラーが表示されることがあります。要求された操作は、ユーザーによってマップされた**セクションが開いているファイルでは実行できません。(HRESULT: 0x800704C8 の例外)**。 この問題が発生した場合は、通常、展開は成功します。
+- 「HoloLens の開発に推奨される最新バージョンの Visual Studio 用の [ツールをインストール](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) する」を参照してください。
+- Visual Studio から HoloLens にアプリを展開すると、次のエラーが表示されることがあります。要求された操作は、ユーザーによってマップされた **セクションが開いているファイルでは実行できません。(HRESULT: 0x800704C8 の例外)**。 この問題が発生した場合は、通常、展開は成功します。
 
 ### API
 
-- ユーザーまたは通常のカメラに[フォーカスポイント](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity)を設定すると、ホログラムは Mixed Reality キャプチャ写真またはビデオに表示されません。 このバグが Windows で修正されるまでは、アプリケーションが[フォーカスポイント](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity)をアクティブに設定した場合、機体の法線が反対のカメラフォワード (たとえば、normal =-camera. forward) に設定されていることを確認する必要があります。
+- ユーザーまたは通常のカメラに [フォーカスポイント](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity) を設定すると、ホログラムは Mixed Reality キャプチャ写真またはビデオに表示されません。 このバグが Windows で修正されるまでは、アプリケーションが [フォーカスポイント](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity) をアクティブに設定した場合、機体の法線が反対のカメラフォワード (たとえば、normal =-camera. forward) に設定されていることを確認する必要があります。
 
 ### Xbox ワイヤレスコントローラー
 
-- Xbox ワイヤレスコントローラー S は、HoloLens で使用する前に更新する必要があります。 HoloLens とコントローラーをペアリングしようとする前に、[最新](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter)の状態であることを確認します。
+- Xbox ワイヤレスコントローラー S は、HoloLens で使用する前に更新する必要があります。 HoloLens とコントローラーをペアリングしようとする前に、 [最新](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) の状態であることを確認します。
 - Xbox ワイヤレスコントローラーが接続されているときに HoloLens を再起動すると、コントローラーが HoloLens に自動的に再接続されることはありません。 [ガイド] ボタンのライトは、3分後にコントローラーの電源が切れるまでゆっくり点滅します。 コントローラーをすぐに再接続するには、ライトがオフになるまでガイドボタンを押してコントローラーの電源を切ります。 コントローラーの電源を入れ直すと、HoloLens に再接続されます。
 - Xbox ワイヤレスコントローラーが接続されているときに HoloLens がスタンバイ状態になると、コントローラーでの入力によって HoloLens が復帰します。 この機能を使用したら、コントローラーの電源を切ることで、これを防ぐことができます。
 
