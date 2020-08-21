@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bf0f293fac531045e50bee9a9dd153eb9dd2b377
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 80ac6348dd2cba932316b690cafc4c5dc0331353
+ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929913"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "10940207"
 ---
 # HoloLens 2 ディスプレイ
 
@@ -30,7 +30,7 @@ HoloLens 2 の場合、ディスプレイに表示されるホログラムの画
 * **ディスプレイの明るさのレベルを引き上げます。** ホログラムは、ディスプレイの明るさが最大レベルのときに最善の画質になります。
 * **バイザーを目に近づけます。** バイザーが目に最も近くなるように手前にスウィングさせます。
 * **バイザーの位置を下げます。** バイザーが鼻にフィットするように、額のブロー パッドを下に動かしてみます。
-* **目に合わせた調整を実行します。** ディスプレイは、瞳孔間距離 （IPD） と視線入力を使用して、ディスプレイ上の画像を最適化します。 目に合わせた調整を実行しないと、画質が低下する可能性があります。 [視線の調整] を実行するには、**設定** ➔ **システム** ➔ **調整** ➔ **視線の調整** の順に移動します。
+* **目に合わせた調整を実行します。** ディスプレイは、瞳孔間距離 （IPD） と視線入力を使用して、ディスプレイ上の画像を最適化します。 目に合わせた調整を実行しないと、画質が低下する可能性があります。 [視線の調整] を実行するには、**[設定]** > **[システム]** > **[調整]** > **[視線の調整]** の順に移動します。
 
 ## FAQ
 
@@ -77,11 +77,14 @@ HoloLens 1を体験したお客様から Microsoft に寄せられた要望の�
 
 ### 開発者が濃色モード デザインの原則を適用するためには、どのようなガイダンスがありますか?
 
-Microsoft は、濃色モード デザインの原則に関する開発者向けガイダンスを準備しています。 ガイダンスは近日中に [開発者向けドキュメント](https://docs.microsoft.com/windows/mixed-reality/) に掲載される予定です。 アドバイスの概要
+ユーザーは、白い背景を避けたときに最高のエクスペリエンスを得ることができます。 黒のモードは、黒や濃色の背景を使用するためのアプリの設計原則です。 システム設定の既定は黒のモードで、**[設定]** > **[システム]** > **[色]** に移動して調整できます。
 
-* UI の背景として暗色を使う
-* Semibold または太字のフォントを使う
-* Mixed Reality ツールキットの HolographicBackplate マテリアルを使う
+開発者は、次の黒のモードの設計ガイダンスに従うことをお勧めします。
+
+* [HoloLens ディスプレイの開発者設計ガイドライン](https://docs.microsoft.com/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
+* [推奨されるフォント サイズ](https://docs.microsoft.com/windows/mixed-reality/typography#recommended-font-size)
+
+ホログラムに白い背景が必要な場合は、ホログラムのサイズをディスプレイの全視野よりも小さくします。 このサイズにより、ユーザーはホログラムをディスプレイの中央に配置できます。
 
 ### HoloLens 2 のディスプレイはどうやって掃除しますか?
 
