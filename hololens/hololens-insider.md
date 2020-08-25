@@ -16,165 +16,163 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1e6b8fcfad1dab49823f38c722de33654b361f58
-ms.sourcegitcommit: 16d61083a1da8007278aed7e11eb6d44f7a90952
+ms.openlocfilehash: d51616f23a63c1f45fe5ed7da88be4b5429c36eb
+ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10941694"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "10956773"
 ---
 # Microsoft HoloLens の Insider Preview
 
-HoloLens 用の最新の Insider Preview ビルドへようこそ! HoloLens の[get started](hololens-insider.md#start-receiving-insider-builds)次の主要オペレーティング システムの更新プログラムを利用して、優れたフィードバックを提供できます。
+HoloLens 用の最新の Insider Preview ビルドへようこそ! HoloLens 向けの次の主要オペレーティングシステム更新プログラムについては、簡単に [作業を開始](hololens-insider.md#start-receiving-insider-builds) して、貴重なフィードバックを提供していただくことができます。
 
 ## Windows Insider リリース ノート
 
-Windows Insider ビルドで今日試すことのできる今後の機能の一覧を次に示します。
+ここでは、Windows Insider ビルドで現在試すことができる今後の機能の一覧を示します。
 
 | 機能                                                | 説明                                                                                    | Insider ビルドで利用可能 |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
-| [自動的に目回復位置のサポート](hololens-insider.md#auto-eye-position-support)                              | イイーロック位置が見つかり、正確なホログラームの位置を正確に示します。                        | 19041.1339+                 |
-| [Certificate Viewer](hololens-insider.md#certificate-viewer)                                     | [設定] アプリでユーザーとデバイスの認明書を表示します。                                         | 19041.1346+                 |
-| [Certificat をインストールおよび削除する](hololens-insider.md#install-and-remove-certificates)                        | ユーザーは、Certificate Viewer を使用して、サーティフェイスをインストールおよび削除できます。                        | 19041.1361+                 |
-| [USB から自動起動プロビジョニングを行う](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE は、USB ドライブ上のプロビジョニング パッケージを自動的に検出します。                                | 19041.1361+                 |
-| [OOBE でのプロビジョニング パッケージの自動確認](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | OOBE で自動プロビジョニング パッケージを自動的に適用します。                                             | 19041.1361+                 |
-| [Wi-Fi 接続で自動パイロットを使用する](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | イーサネット アダプターが必要なく、デバイス Wi-Fi から自動パイロットを使用します。                             | 19041.1364+                 |
-|[Tenantlockdown CSP and Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | テナントの参加とポリシーの適用後、デバイスをリセットまたはフラッシュしたときはいつでも、デバイスをそのテナントに追加できます。 | 19041.1366+|
-| [グローバルに割り当てられた](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | システム レベルで適用される複数のアプリ キオスク モードの HoloLens 2 デバイスを構成します。 | 19041.1356+                 |
-| [マルチ アプリ キオスクでアプリを自動起動する](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 複数アプリキオスク モードへのサインイン時に自動的に起動するアプリケーションを設定します。     | 19041.1346+                 |
-| [Kiosks の表示者の自動ログオン](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | キオスク モードで、ベストター アカウントに自動ログオンを有効にします。                         | 19041.1361+                 |
-| [エラーの対数の対するキオク モードの動作変更](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | キオスク モードの障敗が現在どのように対ハンドルに対する対に行います。                                              | 19041.1356+                 |
-| [HoloLens ポリシー](hololens-insider.md#hololens-policies)                                      | Mixed Reality デバイス向けの新しいポリシー。                                                        | 19041.1349+                 |
-| [オフライン キオスクのキャッシュ AAD グループ メンバーシップ](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | Kiosk モードで使用できる AAD グループ メンバーシップ キャッシュの数を示すポリシー。    | 19041.1356+                 |
-| [HoloLens 2 の新しいデバイス制限ポリシー](hololens-insider.md#new-device-restriction-policies-for-hololens-2)         | HoloLens 2 で新しく有効化されたデバイス管理ポリシー。                               | 19041.1349+                 |
-| [HoloLens 2 の新しい電源ポリシー](hololens-insider.md#new-power-policies-for-hololens-2)                      | Power タイムアウト設定の新しくサポートされているポリシー。                                           | 19041.1349+                 |
-| [更新ポリシー](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | 新しく有効にされたポリシーにより、更新プログラムを制御できます。                                            | 19041.1352+                 |
-| [HoloLens 2 で設定ページの表示が有効にされました](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | 設定アプリで表示するページを選択するためのポリシー。                                           | 19041.1349+                 |
-| [更新プログラムの改善点と修正プログラム](hololens-insider.md#improvements-and-fixes-in-the-update)                   | 更新プログラムの追加の修正プログラム。                                                                | 19041.1361+                 |
+| [オートアイポジションのサポート](hololens-insider.md#auto-eye-position-support)                              | アイポジションを積極的に検索して、正確なホログラムの配置を実現します。                        | 19041.1339 +                 |
+| [証明書マネージャー](hololens-insider.md#certificate-manager)                                     | ユーザーは、設定アプリで現在のユーザーとローカルコンピューターの証明書の表示、インストール、削除を行うことができます。                                         | 19041.1361 +                 |
+| [USB からの自動起動プロビジョニング](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE は、USB ドライブ上のプロビジョニングパッケージを自動的に検出します。                                | 19041.1361 +                 |
+| [OOBE でプロビジョニングパッケージを自動確認する](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | OOBE でプロビジョニングパッケージを自動的に適用します。                                             | 19041.1361 +                 |
+| [Wi-fi 接続で自動操縦を使う](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | イーサネットアダプターを必要とせずに、デバイス Wi-fi から自動操縦を使用します。                             | 19041.1364 +                 |
+|[Tenantlockdown CSP と自動操縦](hololens-insider.md#tenantlockdown-csp-and-autopilot) | テナントの登録後、policiy が適用されると、デバイスがリセットまたは再アップデートされたときにのみ、そのテナントにデバイスを登録できます。 | 19041.1366 +|
+| [グローバルに割り当てられた](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | システムレベルで適用可能な複数のアプリキオスクモード用に HoloLens 2 デバイスを構成します。 | 19041.1356 +                 |
+| [マルチアプリキオスクでアプリを自動起動する](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 複数アプリのキオスクモードにサインインしたときに自動的に起動するようにアプリケーションを設定します。     | 19041.1346 +                 |
+| [キオスクでのゲストの自動ログオン](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | キオスクモードでの自動ログオンを有効にします。                         | 19041.1361 +                 |
+| [障害処理のためのキオスクモードの動作の変更](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | キオスクモードのエラーが処理されるようになった変更。                                              | 19041.1356 +                 |
+| [HoloLens ポリシー](hololens-insider.md#hololens-policies)                                      | Mixed reality デバイスの新しいポリシー。                                                        | 19041.1349 +                 |
+| [オフラインキオスクの AAD グループメンバーシップをキャッシュする](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | AAD グループメンバーシップキャッシュをキオスクモードで使用できる日数のポリシーです。    | 19041.1356 +                 |
+| [HoloLens 2 向けの新しいデバイス制限ポリシー](hololens-insider.md#new-device-restriction-policies-for-hololens-2)         | HoloLens 2 のデバイス管理ポリシーが有効になっています。                               | 19041.1349 +                 |
+| [HoloLens 2 の新しい power policies](hololens-insider.md#new-power-policies-for-hololens-2)                      | Power timeout 設定に対して新しくサポートされているポリシー。                                           | 19041.1349 +                 |
+| [更新ポリシー](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | 新しく有効化されたポリシーにより、更新プログラムを制御できます。                                            | 19041.1352 +                 |
+| [HoloLens 2 で有効になっている設定ページの表示](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | 設定アプリに表示されるページを選ぶためのポリシーです。                                           | 19041.1349 +                 |
+| [更新プログラムの機能強化と修正](hololens-insider.md#improvements-and-fixes-in-the-update)                   | 更新プログラムのその他の解決策。                                                                | 19041.1361 +                 |
 
-### 自動的に目回復位置のサポート
+### オートアイポジションのサポート
 
-HoloLens 2 では、目の位置によりホログラームの配置、操作性がわかりやすく表示され、表示品質が向上します。 目の進捗管理結果の一部として目の位置が計算されます。 ただし、エクスペリエンスに目を必要としない場合でも、目の追跡機能を経営する必要があります。
+HoloLens 2 では、目の位置によって正確なホログラムの配置が可能になり、表示品質が向上しました。 目の位置は、目の追跡結果の一部として計算されます。 ただし、そのためには、各ユーザーがアイ見つめ入力を必要としない場合でも、各ユーザーが目のトラッキングの調整を行う必要があります。
 
-**自動的に目を回る位置 (AEP)** を使用すると、これらのシナリオが対話型の方法でユーザーの目の位置を算出できます。  自動的にイーリーの場所で自動的に作業が始まるので、ユーザーがデバイスを配置します。 ユーザーに優先的な追跡機能がない場合、自動的にイイー語の位置は小さい処理時間の後でディスプレイ システムにユーザーの目の位置を指定します。 この処理時間は通常 20 ~ 60 秒です。 ユーザー データはデバイス上で永続的になり、ユーザーがデバイスをオフにしてデバイスを戻してデバイスを再開するか、デバイスが再び再開されたりスリープ状態から復復したりする場合は、このプロセスが繰り返されます。  
+**オートアイポジション (AEP)** では、これらのシナリオを対話式の方法でユーザーの視点を計算できます。  自動目の位置は、ユーザーがデバイスを配置した瞬間から自動的にバックグラウンドで作業を開始します。 ユーザーが前に目を通したトラッキングの調整を行っていない場合は、処理時間が短いときにユーザーの視点がディスプレイシステムに提供されるようになります。 通常、この処理時間は 20-60 秒以内に行われます。 ユーザーデータはデバイス上で保持されないため、ユーザーが停止し、デバイスを再起動するか、デバイスをスリープ状態に戻した場合は、このプロセスを繰り返します。  
 
-統合されていないユーザーがデバイスに配置されると、システムの動作がいくつか変更されます。 統合されていないユーザーは、以前にデバイス上で視示管理の評価プロセスを通じて移行していない人を示します。
+Uncalibrated ユーザーがデバイスに配置したときに、オートアイ位置機能によって、システムの動作がいくつか変更されます。 Uncalibrated ユーザーは、以前にデバイスの目のトラッキング調整プロセスを経ていないユーザーを参照しています。
 
-|     アクティブなアプリケーション                           |     現在の動作                                   |     Windows Insider ビルド 19041.1339 以降の動作                                                      |
+|     アクティブなアプリケーション                           |     現在の動作                                   |     Windows Insider ビルド19041.1339 以降の動作                                                      |
 |--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|     ガジェットなしのアプリまたは Holographic Shell    |     追跡機能のプロンプトが表示されます。    |     メッセージは表示されません。                                                                                |
-|     有効なアプリをゲーマートする                             |     追跡機能のプロンプトが表示されます。    |     視線の追跡のプロンプトは、アプリケーションがイージング ストリームにアクセスした場合にのみ表示されます。     |
+|     見つめ対応でないアプリまたはホログラフィックシェル    |     アイトラッキング調整のプロンプトが表示されます。    |     プロンプトは表示されません。                                                                                |
+|     宝石対応アプリ                             |     アイトラッキング調整のプロンプトが表示されます。    |     アイトラッキング調整プロンプトは、アプリケーションがアイ見つめストリームにアクセスしたときにのみ表示されます。     |
 
- ユーザーが見つからないアプリケーションからデータをアクセスするアプリケーションにユーザーを移行すると、そのように求めるプロンプトが表示されます。 [既定の操作環境] フローには変更されません。 
+ ユーザーが、見つめデータにアクセスするアプリケーションから、または見つめ対応のアプリケーションに切り替えた場合、調整のプロンプトが表示されます。 ボックスのエクスペリエンスフローの廃止には変更されません。 
  
-データを見ているエクスペリエンス、または非常に正確なホログラマ位置を必要とするエクスペリエンスの場合は、 ユーザーの調整調整の調整を、見たい確認のプロンプトから、または [スタート] メニューから [設定] アプリを起動してから [ **システム環境の >調整>** イエイリブ>を実行する方法をお勧めします。
+視力のデータを必要とするエクスペリエンスや、非常に正確なホログラムの配置が必要な場合は、ユーザーがアイトラッキングの調整プロンプトからアイトラッキングの調整を実行するか、[スタート] メニューから設定アプリを起動して、[ **システム > 調整] >** 目の調整 > 実行することをお勧めします。
 
 **既知の問題**
- - 負のメモリ ロードで実行しているときに、イーストラック ドライバー ホスト プロセスがクラッシュする可能性がある問題を調査しています。 イースト レージのホスト プロセスは自動的に回復する必要があります。
+ - この問題を調査していますが、メモリ負荷が高い状態で実行するとアイトラッカードライバーのホストプロセスがクラッシュする可能性があります。 アイトラッキングドライバーのホストプロセスは、自動的に回復する必要があります。
 
-### Certificate Viewer
+### 証明書マネージャー
 
-Windows Insider ビルド 19041.1346 以降では、HoloLens 2 Settings アプリに Certificate Viewer を追加しています。 現在、証明書インストールは .cer と .crt ファイルをサポートしています。 デバイスの所有者は、ローカル コンピューターと現在のユーザーに、サーティフェイスをインストールできます。 他のすべてのユーザーは、現在のユーザーのみにインストールできます。 ユーザーは、設定 UI から直接インストールされた Certificaticats のみを削除できます。 他の方法で、そのチャートがインストールされている場合は、同じメカニズマによるものが削除される必要があります。
+Windows Insider ビルド 19041.1361 + microsoft は、HoloLens 2 設定アプリで証明書マネージャーを追加しています。 [設定] に移動して **& セキュリティ > 証明書を更新 >** ます。 この機能を使うと、デバイスで証明書の表示、インストール、削除を簡単に行うことができます。 新しい証明書マネージャーを使用すると、管理者とユーザーは、より高度な監査、診断、検証ツールを使って、デバイスの安全性と準拠性を維持できるようになりました。 
 
--   **監査:** 証明書が正しく配置されていることを検証したり、適切に削除されたことを確認したりする機能。 
--   **診切れ:** 問題が発生した場合は、適切な証明書がデバイスに存在することを確認すると、時間を大きくなり、トラブルシューティングに役立ちます。 
--   **検証:** 証明書が目的を処理し、その証明書が機能することを確認することで、証明書をより大規模なスケールで展開する前に、業者環境で大きな時間を保存できます。
+-   **監査:** 証明書が正しく展開されていることを確認したり、適切に削除されたことを確認したりすることができます。 
+-   **診断:** 問題が発生した場合は、デバイス上に適切な証明書が存在することで、時間が節約され、トラブルシューティングに役立ちます。 
+-   **検証:** 証明書が意図したものであり、機能していることを確認することにより、より大規模な証明書を展開する前に、特に商用環境では時間を節約できます。
 
-証明書を表示するには、[設定] メニューの **[>の更新&>に移動します**。
+リスト内の特定の証明書をすばやく検索するには、名前、ストア、有効期限のいずれかで並べ替えを行うオプションがあります。 ユーザーは、証明書を直接検索することもできます。 証明書のプロパティを個別に表示するには、証明書を選択し、[ **情報**] をクリックします。 
 
-![設定アプリの認明者](images/certificate-viewer-device.jpg)
+証明書のインストールでは、現在、.cer および .crt ファイルがサポートされています。 デバイスの所有者は、ローカルコンピューターおよび現在のユーザーに証明書をインストールできます。 他のすべてのユーザーは、現在のユーザーにのみインストールできます。 ユーザーは、[設定] UI から直接インストールされた証明書のみを削除することができます。 証明書が他の方法でインストールされている場合は、同じメカニズムでも削除する必要があります。
 
-### Certificat をインストールおよび削除する
-Windows Insider リリース 19041.1361 以降では、設定アプリから直接、HoloLens 2 に、Certificaticat をインストールして削除することができます。 現在、証明書インストールは .cer と .crt ファイルをサポートしています。 デバイスの所有者は、ローカル コンピューターと現在のユーザーに、サーティフェイスをインストールできます。 他のすべてのユーザーは、現在のユーザーのみにインストールできます。 ユーザーは、設定 UI から直接インストールされた Certificaticats のみを削除できます。 他の方法で、そのチャートがインストールされている場合は、同じメカニズマによるものが削除される必要があります。
+#### 証明書をインストールするには: 
 
-#### 診明書ビューアーを使って、Certificate をインストールするには: 
-1. [**設定] アプリの更新**プログラムとセキュリティ証明書に移動し、[証明書のインストール]  ->  **Update and Security**  ->  **Certificates****を選択します**。 
-1. ファイル ピッカー エクスペリエンスから .cer ファイルを選択します。
-1. ローカル コンピューター (または、ユーザーの認証をしている場所) を選択します。
-1. Certificate Store (または、ユーザーの定め書を配置するストア) としてルートを選択します。 **Root** 
-1. **[インストール]** をクリックします。
+1.  HoloLens 2 を PC に接続します。
+1.  インストールする証明書ファイルを、HoloLens 2 の場所に配置します。
+1.  [設定] アプリに移動して **& セキュリティ > 証明書を更新 >**、[証明書のインストール] を選択します。
+1.  [ **ファイルのインポート** ] をクリックし、証明書を保存した場所に移動します。
+1.  [ **保存場所**] を選びます。
+1.  [ **証明書ストア**] を選びます。
+1.  **[インストール]** をクリックします。
 
-これで、Certificate がデバイスにインストールされるはずです。
+これで、証明書がデバイスにインストールされます。
 
-#### 診明書ビューアーを使って、Certificate を削除するには: 
-1. [設定 **] アプリの**  ->  **更新とセキュリティ**証明  ->  **書に移動します**。
-1. 検索ボックスで、名前で検索します。
-1. Certificate を選びます。
-1. [削除] を **クリックする**
-1. メッセージが表示されたら [はい] を選び、確認を求められたら [はい] を選びます。
+#### 証明書を削除するには: 
+1. [設定] アプリに移動し **て、[更新] および [セキュリティ > 証明書] >** します。
+1. 検索ボックスに名前で証明書を検索します。
+1. 証明書を選びます。
+1. [**削除**] をクリック
+1. 確認のメッセージが表示されたら、[ **はい]** を選択します。
 
-![Certificate UI を使用して、Certificate をインストールする方法を示す画像](images/certificate-device-install.jpg)
+![設定アプリの証明書ビューアー](images/certificate-viewer-device.jpg)
 
-#### 既知の問題 
-インストール フロー中に、[ファイル ピッカー] から証明書を選択した後、インストール ダイアログ UI には選択した証明書ファイルは表示されません。 ファイルを選ぶと、ダイアログ ボックスに表示されているファイルが表示されない場合でも、インストールを進めます。 
+![証明書の UI を使用して証明書をインストールする方法を示す図](images/certificate-device-install.jpg)
 
-### USB から自動起動プロビジョニングを行う
-このビルド ユーザーは、OOBE の前に手動でプロビジョニング画面を起動し、ボタンの組み合わせを使用してプロビジョニング画面を起動する必要があります。 ユーザーは、USB ストレージ ドライブでプロビジョニング パッケージを使用してボタンの組み合わせをスキップできるようになりました。 
+### USB からの自動起動プロビジョニング
+このビルドを実行する前に、OOBE 中にボタンの組み合わせを使用してプロビジョニング画面を手動で起動する必要がありました。 これで、ユーザーは USB ストレージドライブ上のプロビジョニングパッケージを使用して、ボタンの組み合わせをスキップできます。 
 
-1. OOBE の最初のインターフェイス率の間に、USB ドライブをプロビジョニング パッケージを接続します
-1. デバイスをプロビジョニングする準備ができたら、プロビジョニング ページを含むプロンプトが自動的に開きます。 
+1. OOBE の最初の押さモーメントの間にプロビジョニングパッケージを使って USB ドライブを接続する
+1. デバイスをプロビジョニングする準備ができたら、自動的に [プロビジョニング] ページでプロンプトが開きます。 
 
-注: デバイスのボット中に USB ドライブが接続されたままの場合、OOBE は既存の USB ストレージ デバイスと接続されている追加のデバイスを視点で確認します。
+注: デバイスの起動中に USB ドライブが電源に接続されている場合は、OOBE によって既存の USB ストレージデバイスが列挙されます。また、接続されている追加のデバイスを監視することもできます。
 
-OOBE のプロビジョニング パッケージの適用の詳細については、ここを参照 [してください](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)。
+OOBE 中のプロビジョニングパッケージの適用の詳細について [は、こちら](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)を参照してください。
 
-### OOBE でのプロビジョニング パッケージの自動確認
-プロビジョニング メイン画面が上に表示されると、すべてのプロビジョニング パッケージの適用を開始する前に OOBE は 10 秒間カウントされます。 期待されたパッケージを確認した後、この 10 秒後にユーザーはこの情報を確認または取り消すことができます。
+### OOBE でプロビジョニングパッケージを自動確認する
+プロビジョニングのメイン画面が表示されると、すべてのプロビジョニングパッケージの適用が自動的に開始されるまで、OOBE は10秒後にカウントされます。 ユーザーは、予期したパッケージを確認した後、この10秒以内に確認または取り消しを行うことができます。
 
-### UI を使用せずに自動プロビジョニングを行う
-USB デバイスからのプロビジョニングの自動起動とプロビジョニング パッケージの自動確認を組み合わせることで、ユーザーはデバイスの UI を使用することなく、またはデバイスをウェアリングしなくても、HoloLens 2 デバイスを自動的にプロビジョニングできます。 複数のデバイスに同じ USB ドライブとプロビジョニング パッケージを引き続き使用できます。 これは、複数のデバイスを同じ領域にまとめて配置する場合に便利です。 
+### UI を使用しない自動プロビジョニング
+USB デバイスからのプロビジョニングの自動起動とプロビジョニングパッケージの自動確認を組み合わせることで、ユーザーはデバイスの UI を使わずに、またはデバイスを装着しなくても、HoloLens 2 デバイスを自動的にプロビジョニングできます。 複数のデバイスに同じ USB ドライブとプロビジョニングパッケージを引き続き使用することができます。 これは、同じ領域に複数のデバイスを一度に展開する場合に便利です。 
 
-1. Windows[構成デザイナーを使用してプロ](hololens-provisioning.md)[ビジョニング パッケージを作成します](https://www.microsoft.com/store/productId/9NBLGGH4TX22)。 
-1. USB ストレージ ドライブにパッケージをコピーします。
-1. [HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) から [19041.1361 以降のビルドにフラッシュします](https://aka.ms/hololens2previewdownload)。 
-1. 高 [度な回復コンパニオン](https://www.microsoft.com/store/productId/9P74Z35SFRS8) が完了した後、デバイスが USB-C ケーブルを取り外すようになりました。 
+1. [Windows 構成デザイナー](https://www.microsoft.com/store/productId/9NBLGGH4TX22)を使用して[プロビジョニングパッケージを作成](hololens-provisioning.md)します。 
+1. パッケージを USB ストレージドライブにコピーします。
+1. [HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) を [19041.1361 以降のビルド](https://aka.ms/hololens2previewdownload)にフラッシュします。 
+1. [アドバンスト回復コンパニオン](https://www.microsoft.com/store/productId/9P74Z35SFRS8)のフラッシュが完了すると、USB デバイスのプラグが切断されます。 
 1. USB ドライブをデバイスに接続します。
-1. HoloLens 2 デバイスを OOBE にブートすると、USB ドライブ上のプロビジョニング パッケージが自動的に検出され、プロビジョニング ページが起動されます。
-1. 10 秒があったら、デバイスは自動的にプロビジョニング パッケージを適用します。 
+1. HoloLens 2 デバイスが OOBE にブートすると、USB ドライブのプロビジョニングパッケージが自動的に検出され、プロビジョニングページが起動します。
+1. 10秒後、デバイスはプロビジョニングパッケージを自動的に適用します。 
 
-デバイスが構成され、正常な画面が表示されます。
+これでデバイスが構成され、プロビジョニングが成功したことを表示します。
 
-### Wi-Fi 接続で自動パイロットを使用する
-OOBE の実行中に、HoloLens 2 を Wifi に接続すると、OOBE はデバイスの自動パイロット プロファイルを確認します。 いずれかが見つかった場合は、AAD 結合と加加フローの残りの完了に使用されます。 つまり、USB C または USB C アダプターへのイーサプターの使用は要件でないため、OOBE の開始時に提供された場合は、それらの機能は継続します。 [HoloLens 2 デバイスの Autopilot の詳細を参照してください](hololens2-autopilot.md)。
+### Wi-fi 接続で自動操縦を使う
+これで、OOBE 中に HoloLens 2 を Wifi で接続すると、OOBE はデバイスの自動操縦プロファイルを確認します。 検出された場合は、AAD の参加と登録フローの残りの部分を使用します。 つまり、イーサネットから USB C または wifi から USB c への接続を使うことは必須ではありませんが、OOBE の開始時に提供された場合でも引き続き動作します。 [HoloLens 2 デバイスの自動操縦の](hololens2-autopilot.md)詳細については、こちらを参照してください。
 
-### Tenantlockdown CSP and Autopilot
-HoloLens 2 デバイスでは、Windows Insider ビルド 19041.1366 以降の時に TenantLockdown CSP がサポートされるようになりました。 
+### Tenantlockdown CSP と自動操縦
+HoloLens 2 デバイスでは、Windows Insider ビルド 19041.1366 + の時点で TenantLockdown CSP がサポートされるようになりました。 
 
-[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP では、OloLens 2 を自動パイロットのみを使用して MDM の加用に強くすることができます。 HoloLens 2 で TenantLockDown CSP の RequireNetworkInOOBE ノードが true または false (初回セット) の値に設定すると、その値は再フラッシュ、OS 更新プログラムなどがデバイス上に残ります。 
+[Tenantlockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP は、HoloLens 2 が自動操縦のみを使用して MDM 登録に関連付けられるようにします。 RequireNetworkInOOBE ノードが HoloLens 2 の true または false (初期設定) の値に設定されると、その値は再フラッシュ、OS の更新などのデバイスに残ります。 
 
-HoloLens 2 で TenantLockDown CSPs' RequireNetworkInOOBE ノードが true に設定されると、ネットワーク接続が正常にダウンロードされ適用されると、OOBE は Autopilot プロファイルを無期限にダウンロードし、適用されます。 
+HoloLens で、RequireNetworkInOOBE ノードが HoloLens 2 で true に設定されると、OOBE は、ネットワーク接続後に自動操縦プロファイルが正常にダウンロードされ、適用されるまで無期限に待機します。 
 
-HoloLens 2 で TenantLockDown CSPs' RequireNetworkInOOBE ノードが true に設定されると、OOBE で次の操作が許可されます。 
-- ランタイムのプロビジョニングを使用してローカル ユーザーを作成する 
-- ランタイムのプロビジョニングを使用した AAD 結合操作の実行 
-- OOBE エクスペリエンスでデバイスを所有しているユーザーを選択する 
+HoloLens での RequireNetworkInOOBE ノードが HoloLens 2 で true に設定されると、次の操作は OOBE で許可されません。 
+- ランタイムプロビジョニングを使用したローカルユーザーの作成 
+- ランタイムプロビジョニングによる AAD 参加操作の実行 
+- OOBE エクスペリエンスでデバイスの所有者を選択する 
 
-#### Intune を使用して設定する方法 
-1. カスタム OMA URI デバイス構成プロファイルを作成し、次に示すように RequireNetworkInOOBE ノードに true を指定します。
-OMA-URI 値は、OMA-URI を使用して 、./ベンダー/MSFT/TenantLockdown/RequireNetworkInOOBE 設定のテンニアント ロック ![ ダウンを行う必要があります](images/hololens-tenant-lockdown.png)
-1. グループを作成し、デバイス構成プロファイルをそのデバイス グループに割り当てます。 
-1. 前の手順で作成したグループの HoloLens 2 デバイス メンバーを作成し、同期をトリガーします。  
+#### Intune を使ってこれを設定するにはどうすればよいですか? 
+1. カスタムの OMA URI デバイス構成プロファイルを作成し、次に示すように、RequireNetworkInOOBE ノードに true を指定します。
+OMA-URI 値は、/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE 設定テナントの OMA-URI で指定する必要があります。 ![](images/hololens-tenant-lockdown.png)
+1. グループを作成し、デバイス構成プロファイルをそのデバイスグループに割り当てます。 
+1. 前の手順で作成したグループの HoloLens 2 デバイスメンバーを、同期をトリガーするように設定します。  
 
-デバイスの構成が正常に適用されたことを Intune ポータルで確認します。 このデバイス構成が Hololens 2 デバイスに正常に適用されると、TenantLockdown の効果がアクティブになります。
+デバイス構成が正常に適用されたことを Intune ポータルで確認します。 このデバイスの構成が Hololens 2 デバイスに正常に適用されると、TenantLockdown の効果がアクティブになります。
 
-#### HoloLens 2 で TenantLockdown's RequireNetworkInOBE を解除する方法 
-1. 前の手順で作成したデバイス構成が割り当てられていたデバイス グループから HoloLens 2 を削除します。 
-1. カスタム OMA URI ベースのデバイス構成プロファイルを作成し、次に示すように要求ネットワークInOOBE の false を指定します。 OMA-URI 値は ![ 、OMA URI intune で OMA URI を使用して False への設定を要求する](images/hololens-tenant-lockdown-false.png)
-1. グループを作成し、デバイス構成プロファイルをそのデバイス グループに割り当てます。 
-1. 前の手順で作成したグループの HoloLens 2 デバイス メンバーを作成し、同期をトリガーします。
+#### Intune を使用して HoloLens 2 で TenantLockdown の RequireNetworkInOOBE を解除する方法 
+1. 上で作成したデバイス構成が以前に割り当てられていたデバイスグループから HoloLens 2 を削除します。 
+1. 次に示すように、カスタムの OMA URI ベースのデバイス構成プロファイルを作成し、RequireNetworkInOOBE に false を指定します。 OMA-URI 値は、 ![ Intune の OMA URI 経由で RequireNetworkInOOBE を false に設定する/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE のスクリーンショットです。](images/hololens-tenant-lockdown-false.png)
+1. グループを作成し、デバイス構成プロファイルをそのデバイスグループに割り当てます。 
+1. 前の手順で作成したグループの HoloLens 2 デバイスメンバーを、同期をトリガーするように設定します。
 
-デバイスの構成が正常に適用されたことを Intune ポータルで確認します。 このデバイス構成が Hololens 2 デバイスに正常に適用されると、TenantLockdown の効果は非アクティブになります。 
+デバイス構成が正常に適用されたことを Intune ポータルで確認します。 このデバイスの構成が Hololens 2 デバイスに正常に適用されると、TenantLockdown の効果は非アクティブになります。 
 
-#### TenantLockdown が True に設定された後に OOBE で AutoPilot プロファイルが割り当てられていない場合、どうなりますか? 
-OOBE は、AutoPilot プロファイルをダウンロードし、次のダイアログが表示されるのを間もなくお待たします。 TenantLockdown の効果を削除するには、TenantLockdown CSP によって制限を解除する前に、まず AutoPilot のみを使用してデバイスを元のテナントに追加し、RequireNetworkInOOBE を最初に使用してデバイスを元のテナントに追加する必要があります。 
+#### TenantLockdown が true に設定された後に、HoloLens で自動操縦プロファイルが割り当てられていない場合は、OOBE 中に何が起こりますか? 
+OOBE は、自動操縦プロファイルがダウンロードされるまで無期限に待機し、次のダイアログが表示されます。 TenantLockdown の効果を削除するには、まず自動操縦のみを使用するようにデバイスを元のテナントに登録する必要があります。前の手順で説明したように、TenantLockdown CSP によって導入された制限は削除されます。 
 
-![デバイスでポリシーが適用されている場合のデバイス内ビュー。](images/hololens-autopilot-lockdown.png)
+![デバイスでポリシーが適用されている場合のデバイス内表示。](images/hololens-autopilot-lockdown.png)
 
-### グローバル割り当てアクセス – Kiosk モード
-この新機能により、IT 管理者はシステム レベルで適用される複数のアプリ キオスク モード用の HoloLens 2 デバイスを構成できます。システムの ID に関するいかなることに優先があり、デバイスにサインインするすべてのユーザーに適用されます。 この新機能については、こちらを [参照してください](hololens-global-assigned-access-kiosk.md)。
+### グローバル割り当てアクセス–キオスクモード
+この新機能により、IT 管理者は、システムレベルで適用可能な複数のアプリキオスクモード用に HoloLens 2 デバイスを構成できます。また、システム上の id とのアフィニティはありません。また、デバイスにサインインしたすべてのユーザーに適用されます。 この新機能の詳細について [は、こちらをご覧](hololens-global-assigned-access-kiosk.md)ください。
 
-### 複数アプリ キオスク モードでアプリケーションを自動起動する 
-適用されるのは、複数アプリキオク モードにのみ適用され、[割り当て済みのアクセス] 構成で以下で強調表示されている属性を使用して自動起動に適用されるアプリは 1 つのアプリのみです。 
+### 複数アプリのキオスクモードでのアプリケーションの自動起動 
+複数のアプリのキオスクモードにのみ適用され、[割り当て済みのアクセス構成] の下の強調表示された属性を使用して、1つのアプリのみを自動起動に指定できます。 
 
 ユーザーがサインインすると、アプリケーションが自動的に起動します。 
 
@@ -183,129 +181,129 @@ OOBE は、AutoPilot プロファイルをダウンロードし、次のダイ�
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
-### Kiosks の表示者の自動ログオン
-この新機能により、ベストリ アカウントでの自動ログオンがキオスク モードで使用されるようになります。 
+### キオスクのゲスト自動ログオン
+この新機能により、ゲストアカウントの自動ログオンがキオスクモードで使用できるようになります。 
 
-AAD 以外の構成の場合、次の手順にアクセスするデバイスを構成して、サイトの自動ログオンを実行します。
-1.  次の操作を行うプロビジョニング パッケージを作成します。
-    1.  **Visitor アカウントを許可する Runtime 設定/AssignedAccess**を構成します。
-    1.  必要に応じて、デバイスを後で管理できるように MDM **(Runtime 設定/Workplace/加入)、デバイスを MDM (Runtime settings/Workplace/Enrollments)** に追加します。
-    1.  ローカル アカウントを作成しない
-1.  [プロビジョニング パッケージを適用します](hololens-provisioning.md)。
+AAD 以外の構成の場合、ゲストの自動ログオン用のデバイスを構成するには、次の操作を行います。
+1.  次のようなプロビジョニングパッケージを作成します。
+    1.  ゲストのアカウントを許可するように **ランタイム設定/AssignedAccess** を構成します。
+    1.  必要に応じて、MDM **(ランタイム設定/ワークスペース/登録)** にデバイスを登録し、後で管理できるようにします。
+    1.  ローカルアカウントを作成しない
+1.  [プロビジョニングパッケージを適用](hololens-provisioning.md)します。
 
-AAD 構成の場合、この変更を行わずにこのように同様のものを実用できます。 キオスク モード用に構成された AAD に参加しているデバイスでは、サインイン画面から 1 つのボタンをタップするだけで、"ベジター アカウント" にサインインできます。 アクセス者のアカウントにサインインすると、スタート メニューからその他のユーザーが自分でサインアウトするか、デバイスが再起動されるまで、デバイスにもう一度サインインするプロンプトが表示されません。
+AAD の構成では、この変更を行わなくても、ユーザーは次のようなことを行うことができます。 キオスクモード用に構成された AAD 参加デバイスでは、サインイン画面から1つのボタンをタップして、ゲストアカウントでサインインすることができます。 訪問者のアカウントにサインインした後は、ユーザーが明示的に [スタート] メニューからサインアウトするか、またはデバイスが再起動されるまで、デバイスでもう一度サインインを求められることはありません。
 
-### エラーの対数の対するキオク モードの動作変更
+### 障害処理のためのキオスクモードの動作の変更
 
-キオスク モードの適用に関して問題が発生した場合、HoloLens はスタート メニューにすべてのアプリケーションを表示するために使用した HoloLens が使用されています。 この Windows Insider ビルドから起動すると、エラーが表示されなかった場合、次のようにスタート メニューにアプリは表示されません。 
+「キオスクモードの適用時にエラーが発生しました」では、[スタート] メニューのすべてのアプリケーションを表示するために使用されていました。 この Windows Insider ビルド以降、障害が発生した場合、[スタート] メニューに次のようなアプリは表示されません。 
 
-![失敗したときに表示されるキオスク モードの画像。](images/hololens-kiosk-failure-behavior.png )
+![キオスクモードで失敗したときにどのように表示されるかを示した画像。](images/hololens-kiosk-failure-behavior.png )
 
 ### HoloLens ポリシー
-HoloLens 2 デバイス向けに新しい Mixed Reality ポリシーがビルドされ、ビルド 19041.1349 以降が作成されました。 新しい制御可能な設定には、明るさの設定、音量の設定、Mixed Reality キャプチャでのオーディオ録音の無効化、診切の診定を収集できる場合の設定、AAD グループ メンバーシップ キャッシュなどがあります。  
+新しい mixed reality ポリシーは、ビルド 19041.1349 + の HoloLens 2 デバイス用に作成されています。 次のような新しい制御可能な設定があります。明るさの設定、音量の設定、混合の現実キャプチャでのオーディオ録音の無効化、診断を収集できるタイミングの設定、AAD グループメンバーシップキャッシュの設定があります。  
 
 | 新しい HoloLens ポリシー                                | 説明                                                                               | 備考                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| MixedReality\BrightnessButtonDisabled              | 明るさボタンを無効にして、押して明るさは変更されません。       | あり、0 No (既定)                                                |
-| MixedReality\VolumeButtonDisabled                  | 音量ボタンを無効にして音量が変更されないようにします。               | あり、0 No (既定)                                                |
-| MixedReality\MicrophoneDisabled                    | HoloLens 2 でオーディオ録音を実行できないように、マイクを無効にします。                      | あり、0 No (既定)                                                |
-| MixedReality\FallbackDiagnostics                   | 診定ログを収集できるときのコントロール動作。                               | デバイスの所有者が 1 を有効にします。2 をすべてのデバイスで有効にします (既定) |
-| MixedReality\HeadTrackingMode                      | 後で使用するためにために予定されています。                                                                  |                                                                      |
-| MixedReality\AADGroupMembershipCacheValidityInDays | AAD グループを対象とする Kiosk に使用される AAD グループ メンバーシップのキャッシュの数を制御します。 | 以下を参照してください。                                                           |
+| MixedReality\BrightnessButtonDisabled              | 明るさのボタンを無効にしても、明るさが変わらないようにすることができます。       | 1はい、0いいえ (既定)                                                |
+| MixedReality\VolumeButtonDisabled                  | ボリュームボタンを無効にして音量を変更しないようにすることができます。               | 1はい、0いいえ (既定)                                                |
+| MixedReality\MicrophoneDisabled                    | HoloLens 2 でオーディオ録音ができないように、マイクを無効にします。                      | 1はい、0いいえ (既定)                                                |
+| MixedReality\FallbackDiagnostics                   | 診断ログを収集できる場合の動作を制御します。                               | 0無効、デバイス所有者の場合は1、すべてに対して有効 (既定) |
+| MixedReality\HeadTrackingMode                      | 今後の使用のために予約されています。                                                                  |                                                                      |
+| MixedReality\AADGroupMembershipCacheValidityInDays | キオスクグループメンバーシップキャッシュを使用してキオスクターゲット AAD グループに使用する日数を制御します。 | 以下を参照してください。                                                           |
 
-### オフライン キオスクのキャッシュ AAD グループ メンバーシップ
+### オフラインキオスクの AAD グループメンバーシップをキャッシュする
 
-このポリシーは、サインインしているユーザーの AAD グループを対象とする [割り当てられたアクセス] 構成に使用できる、AAD グループ メンバーシップ キャッシュを使用できる日数を制御します。 このポリシー値が 0 より大きい値に設定されたら、それ以外の場合はキャッシュが使用されます。  
+このポリシーは、サインインしたユーザーの AAD グループを対象とした割り当て済みのアクセス構成に対して、AAD グループメンバーシップキャッシュを使用できる日数を管理します。 このポリシー値が0より大きい値に設定された場合は、キャッシュが使用されます。  
 
-名前: AADGroupMembershipCacheValidityInDays URI 値: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+名前: AADGroupMembershipCacheValidityInDays URI 値:./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
-最小 - 0 日  
-最大 - 60 日間 
+最小-0 日  
+最大60日 
 
-このポリシーを正しく使用する手順: 
-1. AAD グループを対象とするキオスクのデバイス構成プロファイルを作成し、HoloLens デバイスに割り当てます。 
-1. このポリシー値を目的の日数 (> 0) に設定し、HoloLens デバイスに割り当てる OMA URI ベースのデバイス構成を作成します。 
-    1. URI 値は、OMA-URI テキスト ボックスに ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays として入力する必要があります。
-    1. 指定できる値の最小/最大値を指定できます。
-1. HoloLens デバイスを入手し、両方の構成がデバイスに適用されていることを確認します。 
-1. インターネットが利用可能になっていれば AAD ユーザー 1 のサインインを許可し、ユーザーがサインインし、AAD グループ メンバーシップが正常に確認されたら、キャッシュが作成されます。 
-1. これで、AAD ユーザー 1 は HoloLens をオフラインにし、ポリシー値が X 日間可能な場合にキオスク モードに使用できるようになりました。 
-1. その他の AAD ユーザー N に対して手順 4 と 5 を繰り返すことができます。ここで、AAD ユーザーはインターネットを使用してデバイスにサインインする必要があるため、Kiosk 構成がターゲットとなる AAD グループのメンバーであることを確認できるようになると、少なくとも AAD ユーザーがインターネットを使用してデバイスにサインインする必要があることです。 
+このポリシーを正しく使用するための手順: 
+1. キオスクターゲットの AAD グループ用のデバイス構成プロファイルを作成し、それを HoloLens デバイスに割り当てます。 
+1. このポリシーの値を必要な日数 (> 0) に設定し、それを HoloLens デバイスに割り当てる、カスタム OMA URI ベースのデバイス構成を作成します。 
+    1. URI 値は、/Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays のように、OMA-URI のテキストボックスに入力する必要があります。
+    1. 指定できる値は、最小値と最大値の間で指定できます。
+1. HoloLens デバイスを登録し、両方の構成がデバイスに適用されることを確認します。 
+1. AAD ユーザー1のサインインを許可するインターネットが利用可能な場合、ユーザーがサインインして AAD グループメンバーシップが正常に確認されると、キャッシュが作成されます。 
+1. この時点で、AAD user 1 は HoloLens をオフラインにして、ポリシー値が X 日で許可されている限り、キオスクモードで使用することができます。 
+1. 手順4と5は、他の AAD ユーザー N に対して繰り返すことができます。重要なポイントは、どの AAD ユーザーもインターネット経由でデバイスにサインインする必要があります。そのため、少なくとも1回は、そのユーザーがキオスクの構成の対象となる AAD グループのメンバーであることを確認できます。 
  
 > [!NOTE]
-> AAD ユーザーの手順 4 が "切断" 環境で下記のエラー行敗を実行するまでは、経験します。 
+> AAD ユーザーに対して手順4を実行するまで、"接続されていない" 環境でのエラー動作が発生します。 
 
-### HoloLens 2 の新しいデバイス制限ポリシー
-HoloLens 2 デバイスのより多くの管理オプションを管理できるポリシーが新しく有効になっています。 
+### HoloLens 2 向けの新しいデバイス制限ポリシー
+HoloLens 2 デバイスの管理オプションを強化するための、新しく有効化されたポリシー。 
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
 - [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
 
-### Hololens 2 の新しい電源ポリシー
-これらの新しく追加されたポリシーにより、管理者はアイドル タイムアウトなどの電源状態を制御できます。 個々のポリシーについて詳しく見るには、そのポリシーのリンクをクリックしてください。
+### Hololens 2 の新しい power policies
+新しく追加されたポリシーにより、管理者はアイドルタイムアウトなどの電源状態を制御することができます。 個々のポリシーの詳細を確認するには、ポリシーのリンクをクリックしてください。
 
-|     ポリシー ドキュメント リンク                |     備考                                                                                                                                       |
+|     ポリシードキュメントリンク                |     備考                                                                                                                                       |
 |----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Windows 構成デザイナーで使用する値の例 (例:  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
-|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Windows 構成デザイナーで使用する値の例 (例:  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
-|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Windows 構成デザイナー (例: 100) で使用する値の例                                                                             |
-|     [EnergySaverBatteryThresholdPlugedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Windows 構成デザイナー (例: 100) で使用する値の例                                                                          |
-|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Windows 構成デザイナーで使用する値の例 (例:   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
-|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Windows 構成デザイナーで使用する値の例 (例:  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Windows 構成デザイナーで使用する値の例:  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Windows 構成デザイナーで使用する値の例:  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Windows 構成デザイナー (100) で使用する値の例                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Windows 構成デザイナー (100) で使用する値の例                                                                          |
+|     [スタンドアロン](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Windows 構成デザイナーで使用する値の例:   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Windows 構成デザイナーで使用する値の例:  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
 
-### HoloLens の新しく有効な更新ポリシー
-HoloLens 2 デバイスで、次の更新ポリシーが有効になりました。
--   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
--   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
--   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
--   [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
+### HoloLens 用の新しく有効化済みの更新ポリシー
+HoloLens 2 デバイスでは、これらの更新ポリシーが有効になりました。
+-   [Update/Active/Send](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-   [更新/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Update/Active¥ Start](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-   [更新/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
-### HoloLens 2 で設定ページの表示が有効にされました
-IT 管理者がシステム設定アプリの特定のページを表示またはアクセスできないようにするポリシーを有効にできるようになりました。また、指定されているページを除くすべてのページに対しても、このようにすることができるようになりました。 この機能を完全にカスタマイズする方法については、以下のリンクをクリックしてください。
+### HoloLens 2 で有効になっている設定ページの表示
+このポリシーを有効にすると、IT 管理者は、システム設定アプリで特定のページを表示またはアクセスできないようにするか、指定されたページ以外のすべてのページに対して行うことができます。 この機能を完全にカスタマイズする方法については、以下のリンクをクリックしてください。
  
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
  
-![[設定] アプリで変更されているアクティブ時間のスクリーンショット](images/hololens-page-visibility-list.jpg)
+![設定アプリで変更されているアクティブな時間のスクリーンショット](images/hololens-page-visibility-list.jpg)
 
-### 更新プログラムの改善点と修正プログラム:
-- AllowUsbConnection の NCM を通じて USB 関数の列挙を無効にする更新ポリシー。
-- OOBE の画面がダーク モードになりました。
-- 詳細については、最新のプライバシーに関する声明をオンラインで参照する必要があります。
-- プロビジョニング パッケージを通じてユーザーが VPN プロファイルをプロビジョニングできない問題。
+### 更新プログラムの改善と修正:
+- AllowUsbConnection の NCM での MDM 経由の USB 機能の列挙を無効にするポリシーが更新されました。
+- OOBE のその他の画面が、ダークモードになります。
+- 詳細については、最新のプライバシーに関する声明をオンラインで参照するようにしてください。
+- ユーザーがプロビジョニングパッケージを使用して VPN プロファイルをプロビジョニングできない問題。
 
 ## Insider ビルドの受信の開始
 
 > [!NOTE]
-> 最近更新されない場合は、デバイスを再起動して最新のビルドを入手してください。
-> - 「再ボット デバイス」の音声コマンドが有効なので、問題なく利用できます。 
-> - [設定/Windows Insider Program] の [再起動] ボタンを選択することもできます。
+> 最近更新していない場合は、デバイスを再起動して、状態を更新し、最新のビルドを取得してください。
+> - "デバイスの再起動" 音声コマンドは適切に動作します。 
+> - [設定] または [Windows Insider Program] で [再起動] を選択することもできます。
 >
-> バックエンドでバックグラウンドでバグが発生したため、バックエンドに戻るとバグが発生しました。
+> バックエンドに、発生した可能性のあるバグがありました。これで、この問題が報告されます。
 
 HoloLens 2 デバイスで、**[設定]** > **[更新とセキュリティ]** > **[Windows Insider Program]** の順に移動し、**[開始する]** を選択します。 Windows Insider として登録するために使用したアカウントをリンクします。
 
-Windows Insider は Channels に移動できるようになりました。 フ **ァスト リ** ングは **Dev Channel**になり、 **スロ** ー リングが **ベータ チャネル**になり、リリース **プレビュー** リングが **リリース プレビュー チャネルになります**。 マッピングは次のようになります。
+Windows insider がチャネルに移動するようになりました。 **ファスト**リングは**Dev チャネル**になります。**スロー**リングは**ベータチャネル**になり、 **release preview** ring は**リリースプレビューチャネル**になります。 マッピングの外観は次のようになります。
 
-![Windows Insider Channels の説明](images/WindowsInsiderChannels.png)
+![Windows Insider チャネルの説明](images/WindowsInsiderChannels.png)
 
-詳細については、Windows ブログにお使いの [Windows Insider Channels のご](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) 説明をご覧ください。
+詳細については、「windows のブログに [Windows Insider チャネルを導入](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) する」を参照してください。
 
-次に **、Windows のアクティブ開発を選択し**、デベロッ **パ** ー チャネルビルドまたは **ベ** ータ版チャネル ビルドのいずれを受け取るかを選択し、プログラムの用語を確認します。
+次に、[ **Windows のアクティブな開発**] を選択し、 **開発者チャネル** または **ベータチャネル** のビルドを受け取るかどうかを選択して、プログラムの利用規約を確認します。
 
-[ **今すぐ再起動] >を選択** します。 デバイスが再起動されたら、[設定 **] >[更新プログラム] >[セキュリティ & >確認] に移動して最新の** ビルドを入手します。
+[確認] を選択し、[ **今すぐ再起動 >** ます。] を選びます。 デバイスが再起動したら、[設定] に移動して **& セキュリティ > 更新** プログラムを確認し > 最新のビルドを入手します。
 
 ## FFU のダウンロードとフラッシュの手順
 フライト署名のある FFU でテストするには、フライト署名のある FFU をフラッシュする前にデバイスのフライト ロックを解除する必要があります。
 1. PC の場合:
 
-    1. PC にファーストしてから PC にフィルタをダウンロードします [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) 。
+    1. から PC に ffu をダウンロード [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) してください。
     
     1. Microsoft Store ([https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)) から ARC (Advanced Recovery Companion) をインストールします。
     
-1. HoloLens の場合 - Flight **Settings**Unlock のロック解除: Windows Insider Program  >  **&設定**の更新を  >  **開**いてから、再びサインアップします。
+1. HoloLens でのロック解除:**設定**の  >  **更新 & セキュリティ**  >  **Windows Insider プログラム**を開くと、次にサインアップして、デバイスを再起動します。
 
-1. FFU - ARC を使用して署名した FFU をフラッシュできるようになりました。
+1. Flash FFU-「ARC」を使って、フライト署名された FFU を点滅させることができます。
 
 ## フィードバックを提供し、問題を報告する
 
@@ -329,7 +327,7 @@ HoloLens が製品版ビルドを実行していることを確認するには�
 
 1. **[設定] > [システム] > [バージョン情報]** の順に移動し、ビルド番号を探します。
 
-1. [製品ビルド番号のリリース ノートを参照してください](hololens-release-notes.md)。
+1. [製品のビルド番号については、リリースノートを参照してください](hololens-release-notes.md)。
 
 Insider ビルドをオプトアウトするには、次の操作を行います。
 
