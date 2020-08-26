@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d51616f23a63c1f45fe5ed7da88be4b5429c36eb
-ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
+ms.openlocfilehash: e819dfb95a6735d0eae6287d97f5856856a33526
+ms.sourcegitcommit: 7f48e7103f869a22a0d20a54dc8f9b708b22484c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "10956773"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "10963685"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -261,8 +261,10 @@ HoloLens 2 デバイスでは、これらの更新ポリシーが有効になり
 
 ### HoloLens 2 で有効になっている設定ページの表示
 このポリシーを有効にすると、IT 管理者は、システム設定アプリで特定のページを表示またはアクセスできないようにするか、指定されたページ以外のすべてのページに対して行うことができます。 この機能を完全にカスタマイズする方法については、以下のリンクをクリックしてください。
- 
+
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+
+HoloLens 2 でカスタマイズできるページ設定の詳細については、「 [Settings URIs (設定](settings-uri-list.md))」ページをご覧ください。 
  
 ![設定アプリで変更されているアクティブな時間のスクリーンショット](images/hololens-page-visibility-list.jpg)
 
@@ -270,7 +272,8 @@ HoloLens 2 デバイスでは、これらの更新ポリシーが有効になり
 - AllowUsbConnection の NCM での MDM 経由の USB 機能の列挙を無効にするポリシーが更新されました。
 - OOBE のその他の画面が、ダークモードになります。
 - 詳細については、最新のプライバシーに関する声明をオンラインで参照するようにしてください。
-- ユーザーがプロビジョニングパッケージを使用して VPN プロファイルをプロビジョニングできない問題。
+- ユーザーがプロビジョニングパッケージを使用して VPN プロファイルをプロビジョニングできなかった問題に対処しました。
+- デバイスが [単一アプリのキオスク](hololens-kiosk.md)として設定されているときに、HoloLens デバイスがメディア転送プロトコル (MTP) を介してファイルエクスプローラーに表示されない問題に対処しました。 [Allowusbconnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)ポリシーを使用しても、MTP (および通常の USB 接続) を無効にすることができます。
 
 ## Insider ビルドの受信の開始
 
