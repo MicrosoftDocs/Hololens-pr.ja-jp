@@ -11,12 +11,12 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 544582762cb950d319f96647fc41a75507389059
-  ms.sourcegitcommit: e17e3449d22e770ce45e9e7b9ad55396a1c7360c
+  ms.openlocfilehash: e867f5963f0f81261935b4ea6fc045200a48b61d
+  ms.sourcegitcommit: 85f0263ab0329477c423e92842c45fb465f2a466
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/28/2020
-  ms.locfileid: "10978634"
+  ms.lasthandoff: 08/31/2020
+  ms.locfileid: "10978950"
 landingContent:
 - title: HoloLens の概要
   linkLists:
@@ -74,7 +74,7 @@ landingContent:
       url: hololens2-autopilot.md
     - text: アプリケーション管理の概要
       url: app-deploy-overview.md
-    - text: ビジネス向け Microsoft Store
+    - text: Intune と会社のポータル
       url: app-deploy-intune.md
     - text: ビジネス向け Microsoft Store
       url: app-deploy-store-business.md
