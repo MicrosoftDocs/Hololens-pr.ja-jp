@@ -11,70 +11,124 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 10588713cc7670fb8e7f9601b504e327c3462aed
-  ms.sourcegitcommit: 5e9c558ff1c9c12eb17a7343a7571f710993e386
+  ms.openlocfilehash: 544582762cb950d319f96647fc41a75507389059
+  ms.sourcegitcommit: e17e3449d22e770ce45e9e7b9ad55396a1c7360c
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/17/2020
-  ms.locfileid: "10932120"
+  ms.lasthandoff: 08/28/2020
+  ms.locfileid: "10978634"
 landingContent:
-- title: 展開と管理
+- title: HoloLens の概要
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: HoloLens 2 のハードウェア
+      url: hololens2-hardware.md
+    - text: HoloLens (第1世代) のハードウェア
+      url: hololens1-hardware.md
+    - text: スタート メニューと Mixed Reality ホームを使用する
+      url: holographic-home.md
+    - text: アプリケーションの検索、インストール、およびアンインストール
+      url: holographic-store-apps.md
+    - text: 視覚効果と快適性の向上
+      url: hololens-calibration.md
+    - text: HoloLens を更新する方法
+      url: hololens-update-hololens.md
+- title: 準備
   linkLists:
   - linkListType: get-started
     links:
     - text: 商用環境での HoloLens の展開
       url: hololens-requirements.md
-    - text: アプリ管理の概要
-      url: app-deploy-overview.md
+    - text: セキュリティの概要
+      url: security-overview.md
+    - text: ライセンス要件
+      url: hololens-licenses-requirements.md
+    - text: HoloLens 環境に関する考慮事項
+      url: hololens-environment-considerations.md
+    - text: 商用機能
+      url: hololens-commercial-features.md
+- title: 構成
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: HoloLens のユーザー ID とサインインを管理する
+      url: hololens-identity.md
+    - text: HoloLens 向けにネットワークを構成する
+      url: hololens-commercial-infrastructure.md
+    - text: HoloLens をネットワークに接続する
+      url: hololens-network.md
+    - text: HoloLens の接続エンドポイントの管理
+      url: hololens-offline.md
+    - text: プロビジョニングパッケージを使用して HoloLens を構成する
+      url: hololens-provisioning.md
     - text: HoloLens を Kiosk としてセットアップする
       url: hololens-kiosk.md
+- title: 展開
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: MDM での HoloLens の登録
+      url: hololens-enroll-mdm.md
+    - text: Windows Autopilot for HoloLens 2
+      url: hololens2-autopilot.md
+    - text: アプリケーション管理の概要
+      url: app-deploy-overview.md
+    - text: ビジネス向け Microsoft Store
+      url: app-deploy-intune.md
+    - text: ビジネス向け Microsoft Store
+      url: app-deploy-store-business.md
+    - text: プロビジョニング パッケージ
+      url: app-deploy-provisioning-package.md
+- title: 保守
+  linkLists:
+  - linkListType: how-to-guide
+    links:
     - text: HoloLens の更新プログラムの管理
       url: hololens-updates.md
-- title: Dynamics 365
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: Microsoft Dynamics 365 Mixed Reality の説明書
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/
-    - text: HoloLens でリモート アシストを使用する
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens
-    - text: HoloLens でガイドを使用する
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
-    - text: リモート アシストのラーニング モジュール
-      url: https://docs.microsoft.com/en-us/learn/browse/?products=dynamics-remote-assist
-- title: 関連リソース
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: Mixed Reality 開発者向け説明書
-      url: https://developer.microsoft.com/windows/mixed-reality/development
-    - text: HoloLens の価格とオプション
-      url: https://www.microsoft.com/hololens/buy
-- title: トラブルシューティング
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: HoloLens 2 を再起動、リセット、または回復する
-      url: hololens-recovery.md
     - text: HoloLens の問題のトラブルシューティング
       url: hololens-troubleshooting.md
+    - text: HoloLens 2 を再起動、リセット、または回復する
+      url: hololens-recovery.md
+    - text: HoloLens (第1世代) を再起動、リセット、または回復する
+      url: hololens1-recovery.md
+    - text: Hololens で発生する既知の問題
+      url: hololens-known-issues.md
     - text: HoloLens デバイスから診断情報を収集する
       url: hololens-diagnostic-logs.md
-- title: サポート
+- title: リリース ノートとフィードバック
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: HoloLens 2 のリリース ノート
+      url: hololens-release-notes.md
+    - text: Microsoft HoloLens の Insider Preview
+      url: hololens-insider.md
+    - text: ご意見ご感想をお寄せください
+      url: hololens-feedback.md
+- title: 追加のサービス
   linkLists:
   - linkListType: reference
     links:
-    - text: HoloLens 2 のリリース ノート
-      url: https://docs.microsoft.com/hololens/hololens-release-notes
-    - text: サポートに問い合わせ
-      url: https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f
-- title: Mixed Reality
+    - text: Dynamics 365 Remote Assist
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
+    - text: Dynamics 365 Remote Assist について学習する
+      url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
+    - text: Dynamics 365 Guides
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+    - text: Microsoft Dynamics 365 Mixed Reality
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/
+    - text: クラウド サービスの概要
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+- title: その他のリソース
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Mixed Reality の概要
-      url: https://docs.microsoft.com/windows/mixed-reality/
+    - text: Mixed Reality とは
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
     - text: デザインとプロトタイプ作成を開始
       url: https://docs.microsoft.com/windows/mixed-reality/design
-    - text: ツールとアーキテクチャについて
-      url: https://docs.microsoft.com/windows/mixed-reality/development
+    - text: Mixed Reality 開発の概要
+      url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+    - text: サポートに問い合わせ
+      url: https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f
