@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 7/17/2020
+ms.date: 8/21/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 843e0ecf393a922be80d4a0c9d9c8be84bd8c553
-ms.sourcegitcommit: 98d6c4e63636c5d8707011d0044014fbc4b84495
+ms.openlocfilehash: 1ade83e263a8dcf7fbf0a6723f14e09befbd49f9
+ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "10965079"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10985863"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -149,16 +149,27 @@ HoloLens での RequireNetworkInOOBE ノードが HoloLens 2 で true に設定�
 
 #### Intune を使ってこれを設定するにはどうすればよいですか? 
 1. カスタムの OMA URI デバイス構成プロファイルを作成し、次に示すように、RequireNetworkInOOBE ノードに true を指定します。
-OMA-URI 値は、/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE 設定テナントの OMA-URI で指定する必要があります。 ![](images/hololens-tenant-lockdown.png)
+OMA-URI 値は/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE である必要があります。
+
+   > [!div class="mx-imgBorder"]
+   > ![OMA-URI によるテナントのロックダウンの設定](images/hololens-tenant-lockdown.png)
+
 1. グループを作成し、デバイス構成プロファイルをそのデバイスグループに割り当てます。 
+
 1. 前の手順で作成したグループの HoloLens 2 デバイスメンバーを、同期をトリガーするように設定します。  
 
 デバイス構成が正常に適用されたことを Intune ポータルで確認します。 このデバイスの構成が Hololens 2 デバイスに正常に適用されると、TenantLockdown の効果がアクティブになります。
 
 #### Intune を使用して HoloLens 2 で TenantLockdown の RequireNetworkInOOBE を解除する方法 
 1. 上で作成したデバイス構成が以前に割り当てられていたデバイスグループから HoloLens 2 を削除します。 
-1. 次に示すように、カスタムの OMA URI ベースのデバイス構成プロファイルを作成し、RequireNetworkInOOBE に false を指定します。 OMA-URI 値は、 ![ Intune の OMA URI 経由で RequireNetworkInOOBE を false に設定する/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE のスクリーンショットです。](images/hololens-tenant-lockdown-false.png)
+
+1. 次に示すように、カスタムの OMA URI ベースのデバイス構成プロファイルを作成し、RequireNetworkInOOBE に false を指定します。 OMA-URI 値は/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE である必要があります。
+
+   > [!div class="mx-imgBorder"]
+   > ![Intune の OMA URI 経由で RequireNetworkInOOBE を false に設定する画面のスクリーンショット](images/hololens-tenant-lockdown-false.png)
+
 1. グループを作成し、デバイス構成プロファイルをそのデバイスグループに割り当てます。 
+
 1. 前の手順で作成したグループの HoloLens 2 デバイスメンバーを、同期をトリガーするように設定します。
 
 デバイス構成が正常に適用されたことを Intune ポータルで確認します。 このデバイスの構成が Hololens 2 デバイスに正常に適用されると、TenantLockdown の効果は非アクティブになります。 
