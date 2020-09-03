@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1ade83e263a8dcf7fbf0a6723f14e09befbd49f9
-ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
+ms.openlocfilehash: 1f7e2be19f525863a64ec7652e2418029a98cdca
+ms.sourcegitcommit: f79d8a6e863cebf18270d33a26548ba4ffdcf6b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10985863"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10994430"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -38,7 +38,7 @@ HoloLens 用の最新の Insider Preview ビルドへようこそ! HoloLens 向�
 | [USB からの自動起動プロビジョニング](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE は、USB ドライブ上のプロビジョニングパッケージを自動的に検出します。                                | 19041.1361 +                 |
 | [OOBE でプロビジョニングパッケージを自動確認する](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | OOBE でプロビジョニングパッケージを自動的に適用します。                                             | 19041.1361 +                 |
 | [Wi-fi 接続で自動操縦を使う](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | イーサネットアダプターを必要とせずに、デバイス Wi-fi から自動操縦を使用します。                             | 19041.1364 +                 |
-|[Tenantlockdown CSP と自動操縦](hololens-insider.md#tenantlockdown-csp-and-autopilot) | テナントの登録後、policiy が適用されると、デバイスがリセットまたは再アップデートされたときにのみ、そのテナントにデバイスを登録できます。 | 19041.1366 +|
+|[Tenantlockdown CSP と自動操縦](hololens-insider.md#tenantlockdown-csp-and-autopilot) | テナントの登録後、ポリシーが適用されると、デバイスがリセットまたは再アップデートされるたびに、そのテナントにのみデバイスを登録できます。 | 19041.1366 +|
 | [グローバルに割り当てられた](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | システムレベルで適用可能な複数のアプリキオスクモード用に HoloLens 2 デバイスを構成します。 | 19041.1356 +                 |
 | [マルチアプリキオスクでアプリを自動起動する](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 複数アプリのキオスクモードにサインインしたときに自動的に起動するようにアプリケーションを設定します。     | 19041.1346 +                 |
 | [キオスクでのゲストの自動ログオン](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | キオスクモードでの自動ログオンを有効にします。                         | 19041.1361 +                 |
