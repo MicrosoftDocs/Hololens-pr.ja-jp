@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
-ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
+ms.openlocfilehash: dc8182d04a8cdc8a8ec3775a8e453a41d29486d3
+ms.sourcegitcommit: 0abe53295191e22299d5be49f2cef4e85744d0fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "10927841"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993647"
 ---
 # HoloLens 環境に関する考慮事項
 
@@ -117,8 +117,17 @@ Wi-Fi が有効になっている限り、実際の WiFi ネットワーク/ル�
 
 お使いの HoloLens を他のユーザーが使用する場合、そのユーザーはまず調整アプリを実行して、デバイスをそのユーザー用に適切にセットアップする必要があります。
 
-### 温度および規制についての情報
-[HoloLens の規制](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information) : 温度、廃棄、ラジオやテレビの電波妨害に関する情報を含みます。
+## 温度および規制についての情報
+
+[HoloLens の規制情報](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): 温度範囲、廃棄、ラジオやテレビの電波妨害などに関する情報を含みます。
+
+ご利用のデバイスを使用するときのガイドラインをご紹介します。
+
+1. デバイスを使用する前に、温度範囲内の環境に (スタンバイ状態またはオフのいずれかで) 1 時間保管します。
+1. 温度範囲内の環境でデバイスを使用します。
+1. 屋内でデバイスを使用します。
+1. デバイスは日陰で使用します。屋内であっても、窓や天窓からの直射日光は避けてください。
+1. 上記のガイドラインに従っているにもかかわらず、予期せぬオーバーヒートの問題が発生した場合は、[フィードバック](hololens-feedback.md)を送信する前にフル テレメトリが有効になっていることをご確認ください。
 
 ## 関連項目
 
