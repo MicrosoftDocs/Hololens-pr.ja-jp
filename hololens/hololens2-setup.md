@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 943cc5af8f5be337a9cfcc0d3e4a4640aa307e72
-ms.sourcegitcommit: 14c30f412cd17058d0316444215f878ba1ee422f
+ms.openlocfilehash: b2d95839ff394d61eec8f5c76baf9a151855794a
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "10905624"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996405"
 ---
 # HoloLens 2 の使用準備
 
@@ -33,6 +33,8 @@ USB-C ケーブル (付属) を使って、電源アダプターを充電ポー�
 - HoloLens の電源が入っているときは、バッテリー インジケーターにバッテリー レベルが段階的に表示されます。
 - 5 個のライトのうち 1 個しか点灯していない場合は、バッテリー レベルが 20 パーセントを下回っています。
 - バッテリー レベルが極端に低い場合にデバイスの電源を入れようとすると、1 個のライトが短く点滅してから消えます。
+
+詳細については、[デバイスの充電に関する説明](hololens-recovery.md#charge-the-device)をご覧ください。 
 
 ## フィット調整
 
@@ -108,7 +110,7 @@ HoloLens のインジケーター ライトの意味がわからない場合、 
 | - | - | - |
 | 電源ボタンを押す。 | 1 つのライトが 5 回点滅してから消えます。 | HoloLens のバッテリー残量が極端に少なくなっています。 HoloLens を充電してください。 |
 | 電源ボタンを押す。 | 5 つのライトがすべて 5 回点滅してから消えます。 |  HoloLens を正しく起動できません。エラー状態になっています。 [オペレーティング システムを再インストール](hololens-recovery.md)して、デバイスを回復してください。 |
-| 電源ボタンを押す。 | 1 番目、3 番目、および 5 番目のライトが連続して同時に点滅します。 |  HoloLens にハードウェア障害が発生している可能性があります。 確認するには、[OS を再インストール](hololens-recovery.md)し、再試行してください。 OS の再インストール後、ライトの点滅パターンが引き続き発生する場合は、[サポート](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb)にお問い合わせください。 |
+| 電源ボタンを押す。 | 1 番目、3 番目、および 5 番目のライトが連続して同時に点滅します。 |  HoloLens にハードウェア障害が発生している可能性があります。 [サポート](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb)に連絡。 |
 
 ## 安全性と快適性
 
