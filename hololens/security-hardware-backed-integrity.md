@@ -1,23 +1,24 @@
 ---
 title: ハードウェアで支援された整合性と実行時認証
-description: holoLens でのパスワードの使用を制限する
-author: jbennett
+description: ハードウェアで支援された整合性と実行時認証
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: セキュリティ、hololens、ハードウェアによる整合性、実行時の認証、UEFI、UEFI セキュアブート、セキュアブート、TPM、脅威保護、Windows のAnti-Persistence（永続攻撃対策）保証、コードの整合性、コードの保護、
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d1a3fe02b64ce1566806119e5309fd262667b181
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: b3986d7310650c2fac20204488ae5f882754deab
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865804"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009475"
 ---
 # ハードウェアで支援された整合性とランタイム認証
 

@@ -1,22 +1,24 @@
 ---
 title: セキュリティ adminless os
 description: adminless os および hololens セキュリティ
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
+ms.prod: hololens
 ms.topic: article
 keywords: セキュリティ、hololens、adminless、管理者不要、オペレーティング システム、管理者不要のオペレーティング システム、管理 os、管理者不要の os、hololens 2、hololens2 セキュリティ、
 ms.localizationpriority: high
-ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9243c6376348cfc3e0c44a049435a0f4b47fc6f7
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: e8a10a32d30206877eb79d53c90e59307b3990ab
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865767"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009565"
 ---
 # 管理者不要のオペレーティング システム
 

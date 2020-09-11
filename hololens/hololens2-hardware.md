@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5b1df54ea5112109a175f6d7172635042262ca14
-ms.sourcegitcommit: e85a55c110e729a4836b8a59aa29d786c74ed6bf
+ms.openlocfilehash: d5d875b17e69705591c6730349c8e23bc9692db1
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "10903332"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009435"
 ---
 # HoloLens 2 のハードウェア
 
@@ -126,13 +126,21 @@ Microsoft HoloLens 2 は、自立型ホログラフィック コンピュータ�
 ## プレインストール済みソフトウェア
 
 - Windows Holographic オペレーティング システム
-- Microsoft Edge
-- Dynamics 365 Remote Assist
-- Dynamics 365 Guides
 - 3D ビューアー
-- OneDrive for Business
-- HoloLens ヒント
+- カレンダー
 - Cortana
+- Dynamics 365 Guides
+- Dynamics 365 Remote Assist
+- フィードバック Hub
+- エクスプローラー
+- メール
+- Microsoft Edge
+- Microsoft Store
+- 映画 & テレビ
+- OneDrive
+- フォト
+- 設定
+- ヒント
 
 ## デバイスの認定規格
 

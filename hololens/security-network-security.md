@@ -1,23 +1,24 @@
 ---
 title: ネットワーク セキュリティ
 description: ネットワーク セキュリティ
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: セキュリティ、hololens、ネットワーク、ネットワークセキュリティ
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 147401331cb6da732a6fe37e57964d61a10dce99
-ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
+ms.openlocfilehash: f1e5304408a9a9543eb0703ad7321725484eef01
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "10883141"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009425"
 ---
 # ネットワーク セキュリティ
 
