@@ -72,6 +72,7 @@
 
 ## Policies
 ### [プロビジョニングパッケージを使用して HoloLens を構成する](hololens-provisioning.md)
+### [MDM を使用して HoloLens デバイスを管理する](hololens-mdm-configure.md)
 ### [HoloLens を Kiosk としてセットアップする](hololens-kiosk.md)
 # 展開
 ## 登録
