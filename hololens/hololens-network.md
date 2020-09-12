@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 0f46ff4a1bef95d153d9fa93c746c8977dc49771
-ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
+ms.openlocfilehash: 0db64ffb4113ff948651c708c28b91da535cb09b
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "10883151"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009525"
 ---
 # HoloLens をネットワークに接続する
 
@@ -29,6 +29,8 @@ HoloLens で何らかの操作を実行するには、ほとんどの場合、�
 ## 初めての接続
 
 HoloLens を初めて使うときは、Wi-Fi ネットワークに接続するためのガイドが表示されます。 セットアップ中に Wi-Fi に接続できない場合は、接続先がオープン ネットワーク、パスワードで保護されたネットワーク、またはキャプティブ ポータル ネットワークであることを確認してください。 また、そのネットワークへの接続時に証明書の使用が求められないことを確認してください。 セットアップの完了後は、他の種類の Wi-Fi ネットワークにも接続できます。
+
+HoloLens 2 デバイスでは、[USB-C to Ethernet アダプターを使用](hololens-connect-devices.md#hololens-2-connect-usb-c-devices)して、直接 Wi-Fi に接続してデバイスのセットアップを支援する こともできます。 デバイスを設定した後は、アダプターを使い続けることもできますが、アダプターから切断して、[セットアップ後にデバイスを Wi-Fi に接続する](hololens-network.md#connecting-to-wi-fi-after-setup)こともできます。 
 
 ## セットアップ後の Wi-Fi 接続
 
