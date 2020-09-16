@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1f7e2be19f525863a64ec7652e2418029a98cdca
-ms.sourcegitcommit: f79d8a6e863cebf18270d33a26548ba4ffdcf6b5
+ms.openlocfilehash: ef292e72eaf476a63df58a70865369790f88197a
+ms.sourcegitcommit: 1b19b0eb552189d7c50617bbdf3a102d3c85ee0e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10994430"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016298"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -49,7 +49,9 @@ HoloLens 用の最新の Insider Preview ビルドへようこそ! HoloLens 向�
 | [HoloLens 2 の新しい power policies](hololens-insider.md#new-power-policies-for-hololens-2)                      | Power timeout 設定に対して新しくサポートされているポリシー。                                           | 19041.1349 +                 |
 | [更新ポリシー](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | 新しく有効化されたポリシーにより、更新プログラムを制御できます。                                            | 19041.1352 +                 |
 | [HoloLens 2 で有効になっている設定ページの表示](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | 設定アプリに表示されるページを選ぶためのポリシーです。                                           | 19041.1349 +                 |
+|  [リサーチモード](hololens-insider.md#research-mode) | HoloLens 2 でのリサーチモードの使用 | 19041.1375 + |
 | [更新プログラムの機能強化と修正](hololens-insider.md#improvements-and-fixes-in-the-update)                   | 更新プログラムのその他の解決策。                                                                | 19041.1361 +                 |
+
 
 ### オートアイポジションのサポート
 
@@ -278,6 +280,15 @@ HoloLens 2 デバイスでは、これらの更新ポリシーが有効になり
 HoloLens 2 でカスタマイズできるページ設定の詳細については、「 [Settings URIs (設定](settings-uri-list.md))」ページをご覧ください。 
  
 ![設定アプリで変更されているアクティブな時間のスクリーンショット](images/hololens-page-visibility-list.jpg)
+
+### リサーチモード
+[リサーチ] モードでは、HoloLens 2 はコンピューターのビジョン調査のための potent ツールになります。 以前のバージョンと比較すると、HoloLens 2 の Research モードには次の利点があります。
+-   HoloLens (第1世代) リサーチモードで公開されるセンサーに加えて、加速度計、microsoft.devices.sensors.gyroscope、磁力計などの IMU センサーアクセスが提供されるようになりました。
+-   HoloLens 2 には、リサーチモードと共に使用できる新機能が用意されています。 具体的には、より充実した一連の試験的機能を実現するための、表現力を追跡するための独自の Api へのアクセスを可能にします。
+
+現在、研究者は、HoloLens デバイスでリサーチモードを有効にして、これらの外部向けの raw イメージセンサーストリームすべてにアクセスするオプションを利用できるようになりました。 HoloLens 2 の Research モードでは、加速度計、microsoft.devices.sensors.gyroscope、磁力計の読み取り結果にアクセスすることもできます。 ユーザーのプライバシーを保護するために、生の目を追跡するカメライメージは、リサーチモードでは使用できませんが、既存の Api を通じて目を見つめた方向にすることはできません。
+
+詳しい技術情報については、 [リサーチモードのマニュアル](https://docs.microsoft.com/windows/mixed-reality/research-mode) をご覧ください。
 
 ### 更新プログラムの改善と修正:
 - AllowUsbConnection の NCM での MDM 経由の USB 機能の列挙を無効にするポリシーが更新されました。
