@@ -5,20 +5,20 @@ author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
 ms.date: 6/30/2020
+ms.prod: hololens
 ms.topic: article
 keywords: セキュリティ、hololens、ハードウェアによる整合性、実行時の認証、UEFI、UEFI セキュアブート、セキュアブート、TPM、脅威保護、Windows のAnti-Persistence（永続攻撃対策）保証、コードの整合性、コードの保護、
-ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b3986d7310650c2fac20204488ae5f882754deab
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: befd2d892403b7b6c7050f48ba9beffb45b241fe
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009475"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016681"
 ---
 # ハードウェアで支援された整合性とランタイム認証
 

@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f5c45477ab33064afe30e275f8b0003bc6022eac
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: c6b2bf3d48da642e91b8709cfdf35d03a7913ac4
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929853"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016691"
 ---
 # HoloLens を Kiosk としてセットアップする
 
@@ -31,7 +31,9 @@ HoloLens デバイスを、キオスクモードで実行するように構成�
 この記事では、HoloLens デバイスに固有のキオスク構成の要素について説明します。 Windows ベースのキオスクのさまざまな種類とその構成方法については、「 [windows デスクトップエディションでのキオスクとデジタル署名の構成](https://docs.microsoft.com/windows/configuration/kiosk-methods)」を参照してください。  
 
 > [!IMPORTANT]  
-> キオスクモードは、ユーザーがデバイスにサインインしたときに利用できるアプリを決定します。 ただし、キオスクモードはセキュリティの方法ではありません。 これにより、許可されていない別のアプリを開くことができなくなることはありません。 アプリやプロセスが開かれないようにするには、 [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) を使って適切なポリシーを作成します。  
+> キオスクモードは、ユーザーがデバイスにサインインしたときに利用できるアプリを決定します。 ただし、キオスクモードはセキュリティの方法ではありません。 これにより、許可されていない別のアプリを開くことができなくなることはありません。 アプリやプロセスが開かれないようにするには、 [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) を使って適切なポリシーを作成します。
+>
+> Microsoft サービスの詳細については、「HoloLens 2 で使用する高度なセキュリティレベルをユーザーに提供する」を参照してください。 [状態の分離と分離防御の保護](security-state-separation-isolation.md#defender-protections)について詳しくはこちらをご覧ください。 または、 [WDAC と Windows PowerShell を使用して、Microsoft Intune との HoloLens 2 デバイスでアプリを許可またはブロックする](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)方法について説明します。
 
 キオスクモードは1つのアプリまたは複数のアプリの構成で使うことができます。また、3つのプロセスのいずれかを使って、キオスク構成を設定して展開することもできます。
 

@@ -4,7 +4,6 @@ description: intune、アプリ管理、アプリ、会社ポータル、ポー�
 keywords: intune、アプリ管理、アプリ、会社ポータル、ポータル、hololens
 author: evmill
 ms.author: v-evmill
-ms.reviewer: tagran
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.custom:
@@ -18,12 +17,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5fc369caa2e5e26c91c07f9270c3984177507dbd
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 55e2b15808e52bb80e8114e215bc0cef52358842
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009465"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016670"
 ---
 # Intune と会社のポータル
 
