@@ -66,6 +66,7 @@
 ## ネットワークと接続
 ### [HoloLens 向けにネットワークを構成する](hololens-commercial-infrastructure.md)
 ### [HoloLens をネットワークに接続する](hololens-network.md)
+### [HoloLens 2 証明書とネットワーク プロファイルを準備する](hololens-certificates-network.md)
 ### [HoloLens の接続エンドポイントの管理](hololens-offline.md)
 ### [Bluetooth および USB-C デバイスに接続する](hololens-connect-devices.md)
 
