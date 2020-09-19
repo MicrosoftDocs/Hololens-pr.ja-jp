@@ -42,11 +42,11 @@ SCEP や PKCS インフラストラクチャを介して証明書を展開する
 
 ## 証明書と Wi-Fi/VPN プロファイルを展開する
 証明書とプロファイルを展開するには、次の手順に従います。
-1.  ルート証明書と中間証明書のそれぞれにプロファイルを作成します (「[Create trusted certificate profiles (信頼された証明書プロファイルを作成する)](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)」を参照してください)。これらのプロファイルのそれぞれには、DD/MM/YYYY 形式による有効期限を含む説明が必要となります。 **有効期限のない証明書プロファイルは、展開されません。**
-1.  SCEP 証明書または PKCS 証明書のそれぞれにプロファイルを作成します (「[Create a SCEP certificate profile or Create a PKCS certificate profile (SCEP 証明書プロファイルの作成または PKCS 証明書プロファイルの作成)](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)」を参照してください)。これらのプロファイルのそれぞれには、DD/MM/YYYY 形式による有効期限を含む説明が必要となります。 **有効期限のない証明書プロファイルは、展開されません。**
+1.  ルート証明書と中間証明書のそれぞれにプロファイルを作成します (「[Create trusted certificate profiles (信頼された証明書プロファイルを作成する)](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)」を参照してください)。各プロファイルには、DD/MM/YYYY 形式による有効期限を含む説明が必要です。 **有効期限のない証明書プロファイルは、展開されません。**
+1.  SCEP 証明書または PKCS 証明書のそれぞれにプロファイルを作成します (「[Create a SCEP certificate profile or Create a PKCS certificate profile (SCEP 証明書プロファイルの作成または PKCS 証明書プロファイルの作成)](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)」を参照してください)。各プロファイルには、DD/MM/YYYY 形式による有効期限を含む説明が必要です。 **有効期限のない証明書プロファイルは、展開されません。**
 
 > [!NOTE]
-> HoloLens 2 は共有デバイスであり、デバイスごとに複数のユーザーがいると多くの方々に考えられているため、可能であれば Wi-Fi 認証にはユーザー証明書ではなくデバイス証明書の実装をお勧めします
+> HoloLens 2 は共有デバイスであり、デバイスごとに複数のユーザーがいると多くの方が認識されているように、可能であれば Wi-Fi 認証にはユーザー証明書ではなくデバイス証明書を展開することをお勧めします
 
 3.  企業の Wi-Fi ネットワークのそれぞれにプロファイルを作成します (「[Wi-Fi settings for Windows 10 and later devices (Windows 10 以降のデバイス向けの Wi-Fi 設定)](https://docs.microsoft.com/intune/wi-fi-settings-windows)」を参照してください)。 
 > [!NOTE]
@@ -55,7 +55,7 @@ SCEP や PKCS インフラストラクチャを介して証明書を展開する
 > [!TIP]
 > また、企業ネットワーク上の Windows 10 PC から実行中の Wi-Fi プロファイルをエクスポートすることもできます。 このエクスポートでは、現在のすべての設定を含む XML ファイルが作成されます。 次に、このファイルを Intune にインポートして、HoloLens 2 デバイスの Wi-Fi プロファイルとして使用します。 「[Export and import Wi-Fi settings for Windows devices (Windows デバイスの Wi-Fi 設定のエクスポートとインポート)](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)」を参照してください。
 
-4.  企業 VPN のそれぞれにプロファイルを作成します (「[Windows 10 and Windows Holographic device settings to add VPN connections using Intune (Windows 10 と Windows Holographic デバイスの設定で Intune を使用して VPN 接続を追加する)](https://docs.microsoft.com/intune/vpn-settings-windows-10)」)。
+4.  企業 VPN のそれぞれにプロファイルを作成します (「[Windows 10 and Windows Holographic device settings to add VPN connections using Intune (Windows 10 と Windows Holographic デバイスの設定で Intune を使用して VPN 接続を追加する)](https://docs.microsoft.com/intune/vpn-settings-windows-10)」を参照してください)。
 
 
 

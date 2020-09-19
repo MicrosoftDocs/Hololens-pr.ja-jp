@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ef292e72eaf476a63df58a70865369790f88197a
-ms.sourcegitcommit: 1b19b0eb552189d7c50617bbdf3a102d3c85ee0e
+ms.openlocfilehash: 604e1e54999f7fb76a3a6a31223c3d59b7e4161f
+ms.sourcegitcommit: 4ad9b6c73913808175b1a448d2be9e33592f65af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016298"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "11027445"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -35,6 +35,8 @@ HoloLens 用の最新の Insider Preview ビルドへようこそ! HoloLens 向�
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [オートアイポジションのサポート](hololens-insider.md#auto-eye-position-support)                              | アイポジションを積極的に検索して、正確なホログラムの配置を実現します。                        | 19041.1339 +                 |
 | [証明書マネージャー](hololens-insider.md#certificate-manager)                                     | ユーザーは、設定アプリで現在のユーザーとローカルコンピューターの証明書の表示、インストール、削除を行うことができます。                                         | 19041.1361 +                 |
+| [アプリ インストーラー](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | Device UI で appx ファイルからアプリをインストールします。 | 19041.1377 + |
+| [Web ページからのアプリのインストール](hololens-insider.md#installing-apps-from-a-web-page) | ブラウザーからダウンロードしてインストールするアプリをセットアップします。 | 19041.1366 + | 
 | [USB からの自動起動プロビジョニング](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE は、USB ドライブ上のプロビジョニングパッケージを自動的に検出します。                                | 19041.1361 +                 |
 | [OOBE でプロビジョニングパッケージを自動確認する](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | OOBE でプロビジョニングパッケージを自動的に適用します。                                             | 19041.1361 +                 |
 | [Wi-fi 接続で自動操縦を使う](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | イーサネットアダプターを必要とせずに、デバイス Wi-fi から自動操縦を使用します。                             | 19041.1364 +                 |
@@ -108,13 +110,30 @@ Windows Insider ビルド 19041.1361 + microsoft は、HoloLens 2 設定アプ�
 
 ![証明書の UI を使用して証明書をインストールする方法を示す図](images/certificate-device-install.jpg)
 
+### アプリインストーラーを使用して HoloLens 2 にアプリをインストールする
+ユーザーは、開発者モードを有効にしたり、Device Portal を使用したりする必要がないので、Appx バンドルを使ってアプリをインストールできるようになりました。 このエクスペリエンスは、ローカルデバイスにアプリをインストールしたり、HoloLens で他のアプリのインストール方法に慣れていない他のユーザーとアプリを共有したりする場合に簡単です。
+
+これは、完全にビルドされたアプリを配布するための簡単な方法です。 HoloLens を使って別のユーザーにアプリをデモしたい場合や、scale でアプリを展開したい場合は、両方の方法でこのメソッドを使うことができます。
+
+[アプリインストーラーで HoloLens 2 にアプリをインストールする](app-deploy-app-installer.md)方法については、こちらを参照してください。  
+
+![App Installer による MRTK の例のインストール](images/hololens-app-installer-picture.jpg)
+
+### Web ページからのアプリのインストール
+Windows Insider ビルド 19041.1366 + ユーザーは、web サーバーから直接アプリをインストールできます。 
+
+これで作成された Appx パッケージは、web ページでホストすることができます。 証明書の展開と組み合わせることで、アプリの配布方法はアプリの展開に非常に役立ちます。
+
+[Web ページから HoloLens 2 にアプリをインストールする](app-deploy-web-installer.md)手順について説明します。
+
 ### USB からの自動起動プロビジョニング
 このビルドを実行する前に、OOBE 中にボタンの組み合わせを使用してプロビジョニング画面を手動で起動する必要がありました。 これで、ユーザーは USB ストレージドライブ上のプロビジョニングパッケージを使用して、ボタンの組み合わせをスキップできます。 
 
 1. OOBE の最初の押さモーメントの間にプロビジョニングパッケージを使って USB ドライブを接続する
 1. デバイスをプロビジョニングする準備ができたら、自動的に [プロビジョニング] ページでプロンプトが開きます。 
 
-注: デバイスの起動中に USB ドライブが電源に接続されている場合は、OOBE によって既存の USB ストレージデバイスが列挙されます。また、接続されている追加のデバイスを監視することもできます。
+> [!NOTE]
+> デバイスの起動中に USB ドライブが接続されている場合は、OOBE によって既存の USB ストレージデバイスが列挙されます。また、接続されている追加のデバイスを監視することもできます。
 
 OOBE 中のプロビジョニングパッケージの適用の詳細について [は、こちら](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)を参照してください。
 
@@ -212,6 +231,9 @@ AAD の構成では、この変更を行わなくても、ユーザーは次の�
 
 ![キオスクモードで失敗したときにどのように表示されるかを示した画像。](images/hololens-kiosk-failure-behavior.png )
 
+#### 更新プログラム
+この方法でも更新プログラムを構成できます。そのため、ユーザーが Microsoft Store 経由でインストールしていない場合でも、更新プログラムを受け取ることができます。 アプリの起動チャンネルまたはスケジュールに基づいて更新を構成できます。 設定方法の詳細については、 [このページをご覧ください](https://docs.microsoft.com/windows/msix/app-installer/update-settings)。 
+
 ### HoloLens ポリシー
 新しい mixed reality ポリシーは、ビルド 19041.1349 + の HoloLens 2 デバイス用に作成されています。 次のような新しい制御可能な設定があります。明るさの設定、音量の設定、混合の現実キャプチャでのオーディオ録音の無効化、診断を収集できるタイミングの設定、AAD グループメンバーシップキャッシュの設定があります。  
 
@@ -279,7 +301,7 @@ HoloLens 2 デバイスでは、これらの更新ポリシーが有効になり
 
 HoloLens 2 でカスタマイズできるページ設定の詳細については、「 [Settings URIs (設定](settings-uri-list.md))」ページをご覧ください。 
  
-![設定アプリで変更されているアクティブな時間のスクリーンショット](images/hololens-page-visibility-list.jpg)
+![設定アプリで変更されたアクティブ時間のスクリーンショット](images/hololens-page-visibility-list.jpg)
 
 ### リサーチモード
 [リサーチ] モードでは、HoloLens 2 はコンピューターのビジョン調査のための potent ツールになります。 以前のバージョンと比較すると、HoloLens 2 の Research モードには次の利点があります。
