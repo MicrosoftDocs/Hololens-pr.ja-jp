@@ -1,6 +1,6 @@
 ---
-title: 設定に関する URI
-description: PageVisibilityList の HoloLens に対応している URI の一覧
+title: ページ設定の可視性
+description: PageVisibilityList およびガイドで HoloLens に対応している URI の一覧
 author: evmill
 ms.author: v-evmill
 ms.date: 09/16/2020
@@ -13,14 +13,14 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 17959fa25763d2c6b89d0956f29b9999b3012e60
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 7a24d64b0b60be9f922260b7145d04c2c13951ed
+ms.sourcegitcommit: 8b5e349990ba5566bcc6a2a72ff83d1a21b099b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016701"
+ms.locfileid: "11026940"
 ---
-# 設定に関する URI
+# ページ設定の可視性
 
 HoloLens デバイスの管理可能な機能の 1 つに、[Settings/PageVisibilityList ポリシー](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)を使用した設定アプリ内で閲覧されるページの制限があります。 PageVisibilityList は、IT 管理者がシステム設定アプリの特定のページを表示またはアクセスできないようにしたり、または指定されたページ以外のすべてのページで同様に行うことを許可するポリシーです。 
 
@@ -122,8 +122,7 @@ HoloLens デバイスと Windows 10 デバイスでは、設定アプリ内に�
 | Windows Update - 更新プログラムの確認 | ms-settings:windowsupdate-action          |
 | 詳細オプション                    | ms-settings:windowsupdate-options         |
 
-> [!NOTE]
->  1 次の 2 つの URI は、実際には [詳細オプション] や [オプション] ページへの移動を行いません。Windows Update のメイン ページをブロックしたり、表示したりするだけです。 
+>  <sup>1</sup> 次の 2 つの URI は、実際には **[詳細オプション]** や **[オプション]** ページへの移動を行いません。Windows Update のメイン ページをブロックしたり、表示したりするだけです。 
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
