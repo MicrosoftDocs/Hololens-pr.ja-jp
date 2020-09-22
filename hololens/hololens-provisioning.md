@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: da783756c271c589f67efca0c229ad0f777857e2
-ms.sourcegitcommit: ccdd628cdbb5b89741f5dbc971143cb2fd2e451b
+ms.openlocfilehash: c10f07a6caeae6f2e8ace41d345c3ad11901621a
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10990910"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052646"
 ---
 # プロビジョニングパッケージを使用して HoloLens を構成する
 
@@ -210,4 +210,4 @@ Windows 構成デザイナーで、Windows Holographic 向けプロビジョニ�
 アプリは、HoloLens 2 デバイスのプロビジョニングパッケージを使ってインストールできます。 これにより、簡単に再利用できるパッケージを使用して、アプリの配布に役立ちます。 [プロビジョニングパッケージでアプリを展開](app-deploy-provisioning-package.md)するための詳しい手順を参照してください。  
 
 > [!NOTE]
-> HoloLens (第1世代) は、プロビジョニングパッケージを使ったアプリのインストール (**UniversalAppInstall**) をサポートしていません。
+> HoloLens (第1世代) では、プロビジョニングパッケージを使用して、アプリのインストール (**UniversalAppInstall**) のサポートが制限されています。 HoloLens (第1世代) デバイスでは、OOBE 中のみ、ユーザーコンテキストによってインストールされるアプリのインストールのみがサポートされています。

@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 6daf99fbb60e0daf892d5d02e86492061a665070
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 0803b5f1b77ac7f123d534d101cd24903b87094c
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009505"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052584"
 ---
 # プロビジョニング パッケージ
 
@@ -32,6 +32,9 @@ ms.locfileid: "11009505"
 
 > [!NOTE] 
 > HoloLens デバイスのプロビジョニングパッケージの作成の基本については、「 [Hololens プロビジョニング](https://docs.microsoft.com/hololens/hololens-provisioning)」を参照してください。 アプリを展開するには、advanced provisioning から始める必要があります。 
+
+> [!NOTE] 
+> HoloLens (第1世代) では、プロビジョニングパッケージを使用して、アプリのインストール (**UniversalAppInstall**) のサポートが制限されています。 HoloLens (第1世代) デバイスでは、OOBE 中のみ、ユーザーコンテキストによってインストールされるアプリのインストールのみがサポートされています。
 
 ## セットアップ
 

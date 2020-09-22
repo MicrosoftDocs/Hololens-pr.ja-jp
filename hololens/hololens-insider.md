@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 604e1e54999f7fb76a3a6a31223c3d59b7e4161f
-ms.sourcegitcommit: 4ad9b6c73913808175b1a448d2be9e33592f65af
+ms.openlocfilehash: 64e31a03eb3c8cf1c0e6112fd0605aaebb26ba64
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "11027445"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052636"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -43,7 +43,6 @@ HoloLens 用の最新の Insider Preview ビルドへようこそ! HoloLens 向�
 |[Tenantlockdown CSP と自動操縦](hololens-insider.md#tenantlockdown-csp-and-autopilot) | テナントの登録後、ポリシーが適用されると、デバイスがリセットまたは再アップデートされるたびに、そのテナントにのみデバイスを登録できます。 | 19041.1366 +|
 | [グローバルに割り当てられた](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | システムレベルで適用可能な複数のアプリキオスクモード用に HoloLens 2 デバイスを構成します。 | 19041.1356 +                 |
 | [マルチアプリキオスクでアプリを自動起動する](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 複数アプリのキオスクモードにサインインしたときに自動的に起動するようにアプリケーションを設定します。     | 19041.1346 +                 |
-| [キオスクでのゲストの自動ログオン](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | キオスクモードでの自動ログオンを有効にします。                         | 19041.1361 +                 |
 | [障害処理のためのキオスクモードの動作の変更](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | キオスクモードのエラーが処理されるようになった変更。                                              | 19041.1356 +                 |
 | [HoloLens ポリシー](hololens-insider.md#hololens-policies)                                      | Mixed reality デバイスの新しいポリシー。                                                        | 19041.1349 +                 |
 | [オフラインキオスクの AAD グループメンバーシップをキャッシュする](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | AAD グループメンバーシップキャッシュをキオスクモードで使用できる日数のポリシーです。    | 19041.1356 +                 |
@@ -212,18 +211,6 @@ OOBE は、自動操縦プロファイルがダウンロードされるまで無
 <AllowedApps>                     
     <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
-
-### キオスクのゲスト自動ログオン
-この新機能により、ゲストアカウントの自動ログオンがキオスクモードで使用できるようになります。 
-
-AAD 以外の構成の場合、ゲストの自動ログオン用のデバイスを構成するには、次の操作を行います。
-1.  次のようなプロビジョニングパッケージを作成します。
-    1.  ゲストのアカウントを許可するように **ランタイム設定/AssignedAccess** を構成します。
-    1.  必要に応じて、MDM **(ランタイム設定/ワークスペース/登録)** にデバイスを登録し、後で管理できるようにします。
-    1.  ローカルアカウントを作成しない
-1.  [プロビジョニングパッケージを適用](hololens-provisioning.md)します。
-
-AAD の構成では、この変更を行わなくても、ユーザーは次のようなことを行うことができます。 キオスクモード用に構成された AAD 参加デバイスでは、サインイン画面から1つのボタンをタップして、ゲストアカウントでサインインすることができます。 訪問者のアカウントにサインインした後は、ユーザーが明示的に [スタート] メニューからサインアウトするか、またはデバイスが再起動されるまで、デバイスでもう一度サインインを求められることはありません。
 
 ### 障害処理のためのキオスクモードの動作の変更
 
