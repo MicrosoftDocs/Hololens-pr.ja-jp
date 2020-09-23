@@ -3,7 +3,7 @@ title: グローバルに割り当てられた
 description: グローバルに割り当てられた Access キオスク向けの OMA URI の使用ガイド
 author: evmill
 ms.author: v-evmill
-ms.date: 7/13/2020
+ms.date: 9/21/2020
 ms.topic: article
 keywords: hololens、hololens 2、割り当てられたアクセス、kiosk
 ms.prod: hololens
@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1a0a3eb8ef3d21b34e13711bcc890af57e5ae2c2
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: c2be1123d0e8a09d6955fb6e5da782daebc96bcf
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902302"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052626"
 ---
 # グローバルに割り当てられたアクセス-キオスク
 
@@ -44,7 +44,7 @@ ms.locfileid: "10902302"
 
 2.  [プロビジョニングパッケージを使用して、単一アプリまたはマルチアプリキオスクをセットアップする](https://docs.microsoft.com/hololens/hololens-kiosk#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) の手順に従います。特にセクション "Prov について。 パッケージ、ステップ 2-キオスクの構成 XML ファイルをプロビジョニングパッケージに追加し、前の手順で保存された XML ファイルを参照します。 
 
-## 1つの AAD アカウントや AAD グループを除くすべてのユーザーにグローバルが適用される構成を作成できますか? 
+## グローバルが全員に適用され、個別の構成が 1 つの AAD アカウントまたは AAD グループに適用される構成を作成できますか? 
 
 はい。以下の XML blog の例を参照してください。 グローバルに割り当てられたアクセスプロファイルは、サインインしたユーザーの特定のプロファイルが見つからない場合に Hololens に適用されるため、サインインしたユーザーの既定キオスクモードの構成になっています。 使用する XML blob の例を表示します。 
 
