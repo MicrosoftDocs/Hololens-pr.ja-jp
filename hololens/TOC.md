@@ -107,7 +107,6 @@
 ## [Microsoft HoloLens の Insider Preview](hololens-insider.md)
 ### [グローバルに割り当てられたアクセス-キオスク](hololens-global-assigned-access-kiosk.md)
 ### [HoloLens のページ設定 URI](settings-uri-list.md)
-### [アプリ インストーラー](app-deploy-app-installer.md)
-### [Web アプリ インストーラー](app-deploy-web-installer.md)
+
 ## [HoloLens (第1世代) のリリース ノート](hololens1-release-notes.md)
 # [ご意見ご感想をお寄せください](hololens-feedback.md)
