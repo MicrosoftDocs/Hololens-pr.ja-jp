@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d5d875b17e69705591c6730349c8e23bc9692db1
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 74afa9c39b66437e94aaf8f777ddc0347144b974
+ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009435"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11072774"
 ---
 # HoloLens 2 のハードウェア
 
@@ -149,6 +149,7 @@ Microsoft HoloLens 2 は、自立型ホログラフィック コンピュータ�
 * [製品の安全性](https://support.microsoft.com/en-us/help/4023454/safety-information)
 * [製品の安全性に関する警告と手順](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
 * 目の保護: HoloLens 2 は、ANSI Z87.1、CSA Z94.3、および EN 166 の規格試験済みであり、基本的な衝撃保護要件に準拠しています。
+* [SAR 情報](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ### 規制に関する情報
 [HoloLens の規制](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information) : 温度、廃棄、ラジオやテレビの電波妨害に関する情報を含みます。

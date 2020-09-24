@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 8/21/2020
+ms.date: 9/23/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 64e31a03eb3c8cf1c0e6112fd0605aaebb26ba64
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: c5e050fefc9a6a0717dea2258ada39df302f2e45
+ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052636"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "11077694"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -35,8 +35,6 @@ HoloLens 用の最新の Insider Preview ビルドへようこそ! HoloLens 向�
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [オートアイポジションのサポート](hololens-insider.md#auto-eye-position-support)                              | アイポジションを積極的に検索して、正確なホログラムの配置を実現します。                        | 19041.1339 +                 |
 | [証明書マネージャー](hololens-insider.md#certificate-manager)                                     | ユーザーは、設定アプリで現在のユーザーとローカルコンピューターの証明書の表示、インストール、削除を行うことができます。                                         | 19041.1361 +                 |
-| [アプリ インストーラー](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | Device UI で appx ファイルからアプリをインストールします。 | 19041.1377 + |
-| [Web ページからのアプリのインストール](hololens-insider.md#installing-apps-from-a-web-page) | ブラウザーからダウンロードしてインストールするアプリをセットアップします。 | 19041.1366 + | 
 | [USB からの自動起動プロビジョニング](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE は、USB ドライブ上のプロビジョニングパッケージを自動的に検出します。                                | 19041.1361 +                 |
 | [OOBE でプロビジョニングパッケージを自動確認する](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | OOBE でプロビジョニングパッケージを自動的に適用します。                                             | 19041.1361 +                 |
 | [Wi-fi 接続で自動操縦を使う](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | イーサネットアダプターを必要とせずに、デバイス Wi-fi から自動操縦を使用します。                             | 19041.1364 +                 |
@@ -108,22 +106,6 @@ Windows Insider ビルド 19041.1361 + microsoft は、HoloLens 2 設定アプ�
 ![設定アプリの証明書ビューアー](images/certificate-viewer-device.jpg)
 
 ![証明書の UI を使用して証明書をインストールする方法を示す図](images/certificate-device-install.jpg)
-
-### アプリインストーラーを使用して HoloLens 2 にアプリをインストールする
-ユーザーは、開発者モードを有効にしたり、Device Portal を使用したりする必要がないので、Appx バンドルを使ってアプリをインストールできるようになりました。 このエクスペリエンスは、ローカルデバイスにアプリをインストールしたり、HoloLens で他のアプリのインストール方法に慣れていない他のユーザーとアプリを共有したりする場合に簡単です。
-
-これは、完全にビルドされたアプリを配布するための簡単な方法です。 HoloLens を使って別のユーザーにアプリをデモしたい場合や、scale でアプリを展開したい場合は、両方の方法でこのメソッドを使うことができます。
-
-[アプリインストーラーで HoloLens 2 にアプリをインストールする](app-deploy-app-installer.md)方法については、こちらを参照してください。  
-
-![App Installer による MRTK の例のインストール](images/hololens-app-installer-picture.jpg)
-
-### Web ページからのアプリのインストール
-Windows Insider ビルド 19041.1366 + ユーザーは、web サーバーから直接アプリをインストールできます。 
-
-これで作成された Appx パッケージは、web ページでホストすることができます。 証明書の展開と組み合わせることで、アプリの配布方法はアプリの展開に非常に役立ちます。
-
-[Web ページから HoloLens 2 にアプリをインストールする](app-deploy-web-installer.md)手順について説明します。
 
 ### USB からの自動起動プロビジョニング
 このビルドを実行する前に、OOBE 中にボタンの組み合わせを使用してプロビジョニング画面を手動で起動する必要がありました。 これで、ユーザーは USB ストレージドライブ上のプロビジョニングパッケージを使用して、ボタンの組み合わせをスキップできます。 
@@ -260,7 +242,10 @@ HoloLens 2 デバイスの管理オプションを強化するための、新し
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
-- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
+- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp) *
+
+>[!NOTE]
+> [Remotelock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)に関しては、HoloLens は/Vendor/MSFT/RemoteLock/Lock 構成のみをサポートしています。 Reset や recover など、PIN を扱う構成はサポートされません。
 
 ### Hololens 2 の新しい power policies
 新しく追加されたポリシーにより、管理者はアイドルタイムアウトなどの電源状態を制御することができます。 個々のポリシーの詳細を確認するには、ポリシーのリンクをクリックしてください。
