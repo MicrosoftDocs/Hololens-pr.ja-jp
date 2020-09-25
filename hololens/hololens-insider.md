@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c5e050fefc9a6a0717dea2258ada39df302f2e45
-ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
+ms.openlocfilehash: caf860ad5926c03d1e87e829f04838531510df51
+ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "11077694"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "11078385"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -258,6 +258,9 @@ HoloLens 2 デバイスの管理オプションを強化するための、新し
 |     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Windows 構成デザイナー (100) で使用する値の例                                                                          |
 |     [スタンドアロン](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Windows 構成デザイナーで使用する値の例:   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
 |     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Windows 構成デザイナーで使用する値の例:  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+> [!NOTE]
+> HoloLens 2 で一貫したエクスペリエンスを実現するには、DisplayOffTimeoutOnBattery とスタンド Bytimeoutonバッテリーの両方の値が同じ値に設定されていることを確認してください。 同様に、DisplayOffTimeoutPluggedIn と StandbyTimeoutPluggedIn にも適用されます。 モダンスタンバイの詳細については [、「ディスプレイ、スリープ、および休止状態のアイドルタイマー」](https://docs.microsoft.com/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) を参照してください。
 
 ### HoloLens 用の新しく有効化済みの更新ポリシー
 HoloLens 2 デバイスでは、これらの更新ポリシーが有効になりました。
