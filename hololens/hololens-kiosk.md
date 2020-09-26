@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 8844f691ec5395f9c69bce7df44125da9c838f14
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 920ba7e84b1bb4818aef4efdee60be004d8a3300
+ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072794"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "11080446"
 ---
 # HoloLens を Kiosk としてセットアップする
 
@@ -90,8 +90,10 @@ Windows Device Portal を使って単一アプリのキオスクを構成する�
 
 モバイルデバイス管理 (MDM) システムまたはプロビジョニングパッケージを使ってキオスクモードを構成する場合は、 [AssignedAccess 構成サービスプロバイダー (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) を使ってアプリケーションを指定します。 CSP は、 [アプリケーションユーザーモデル id (aumid)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) を使ってアプリケーションを特定します。 次の表に、マルチアプリキオスクで使用できる Aumid アプリケーションの一覧を示します。
 
-> [!CAUTION]
-> Shell アプリをキオスクアプリとして選択することはできません。 さらに、Microsoft Edge、Microsoft ストア、またはエクスプローラーをキオスクアプリとして選択し **ない** ことをお勧めします。  
+> [!IMPORTANT]
+> キオスクモードは、ユーザーがデバイスにサインインしたときに利用できるアプリを決定します。 ただし、キオスクモードはセキュリティの方法ではありません。 これにより、許可されていない別のアプリを開くことができなくなることはありません。 この動作は制限されていないため、アプリは Edge、エクスプローラー、Microsoft ストアアプリから起動することができます。 キオスクで起動したくない特定のアプリがある場合は、 [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) を使って適切なポリシーを作成します。 
+> 
+> さらに、Mixed Reality ホームをキオスクアプリとして設定することはできません。
 
 <a id="aumids"></a>
 
