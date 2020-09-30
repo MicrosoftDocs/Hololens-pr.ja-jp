@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: caf860ad5926c03d1e87e829f04838531510df51
-ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
+ms.openlocfilehash: 439ae9ddfbc6e7a83807e85c445f3d9f4cd2e182
+ms.sourcegitcommit: fa2e551e3294ee49677035f5461b28861b20170f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "11078385"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "11088611"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -33,7 +33,7 @@ HoloLens 用の最新の Insider Preview ビルドへようこそ! HoloLens 向�
 
 | 機能                                                | 説明                                                                                    | Insider ビルドで利用可能 |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
-| [オートアイポジションのサポート](hololens-insider.md#auto-eye-position-support)                              | アイポジションを積極的に検索して、正確なホログラムの配置を実現します。                        | 19041.1339 +                 |
+| [オートアイポジションのサポート](hololens-insider.md#auto-eye-position-support)                              | 目の位置を実際に計算して、正確なホログラムの位置を指定します。                        | 19041.1339 +                 |
 | [証明書マネージャー](hololens-insider.md#certificate-manager)                                     | ユーザーは、設定アプリで現在のユーザーとローカルコンピューターの証明書の表示、インストール、削除を行うことができます。                                         | 19041.1361 +                 |
 | [USB からの自動起動プロビジョニング](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE は、USB ドライブ上のプロビジョニングパッケージを自動的に検出します。                                | 19041.1361 +                 |
 | [OOBE でプロビジョニングパッケージを自動確認する](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | OOBE でプロビジョニングパッケージを自動的に適用します。                                             | 19041.1361 +                 |
@@ -68,9 +68,6 @@ Uncalibrated ユーザーがデバイスに配置したときに、オートア�
  ユーザーが、見つめデータにアクセスするアプリケーションから、または見つめ対応のアプリケーションに切り替えた場合、調整のプロンプトが表示されます。 ボックスのエクスペリエンスフローの廃止には変更されません。 
  
 視力のデータを必要とするエクスペリエンスや、非常に正確なホログラムの配置が必要な場合は、ユーザーがアイトラッキングの調整プロンプトからアイトラッキングの調整を実行するか、[スタート] メニューから設定アプリを起動して、[ **システム > 調整] >** 目の調整 > 実行することをお勧めします。
-
-**既知の問題**
- - この問題を調査していますが、メモリ負荷が高い状態で実行するとアイトラッカードライバーのホストプロセスがクラッシュする可能性があります。 アイトラッキングドライバーのホストプロセスは、自動的に回復する必要があります。
 
 ### 証明書マネージャー
 
