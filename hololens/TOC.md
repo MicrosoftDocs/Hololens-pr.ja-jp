@@ -39,6 +39,8 @@
 ## HoloLens 2 のエンタープライズ展開の計画
 ### [商用環境での HoloLens の展開](hololens-requirements.md)
 ### [一般的なインフラストラクチャの展開シナリオ](common-scenarios.md)
+## 一般的なシナリオ
+### [Offline セキュリテイ保護](hololens-common-scenarios-offline-secure.md)
 ## セキュリティ
 ### [セキュリティの概要](security-overview.md)
 ### [アーキテクチャ](security-architecture.md)
