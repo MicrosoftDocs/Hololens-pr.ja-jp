@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c2be1123d0e8a09d6955fb6e5da782daebc96bcf
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: 9c7e4e37b54e6dd81341a64165e1e742a2242d00
+ms.sourcegitcommit: a0f6ff5c36aab0ed94e16e136728e4b8753203db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052626"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "11093937"
 ---
 # グローバルに割り当てられたアクセス-キオスク
 
@@ -32,7 +32,12 @@ ms.locfileid: "11052626"
 > [!NOTE]
 > [<!-] が付いている領域に注意してください。 これらの領域には、ユーザー設定に基づいて変更する必要があります。 
 
-1.  次のように、カスタムの OMA URI デバイス構成プロファイルを作成して、 HoloLens デバイスグループに適用します：![ Intune でグローバル割り当てられたアクセス OMA-URI](images/global-assigned-access-omauri.png)
+1.  次のようにカスタム OMA URI デバイス構成プロファイルを作成し、HoloLens デバイスグループに適用します。 
+
+    URI 値: .Device/Vendor/MSFT/AssignedAccess/Configuration
+   
+    > [!div class="mx-imgBorder"]
+    > ![Intune のグローバル割り当てアクセス OMA - URI](images/global-assigned-access-omauri.png)
 
 2.  値については、以下の内容を更新して貼り付けます: 
 
@@ -49,7 +54,7 @@ ms.locfileid: "11052626"
 はい。以下の XML blog の例を参照してください。 グローバルに割り当てられたアクセスプロファイルは、サインインしたユーザーの特定のプロファイルが見つからない場合に Hololens に適用されるため、サインインしたユーザーの既定キオスクモードの構成になっています。 使用する XML blob の例を表示します。 
 
 > [!NOTE]
-> 強調表示されていて <!- でマークされている領域に注意してください。これらの領域には、ユーザー設定に基づいて変更する必要があります。 
+> `<!-`でマークされた、強調表示された領域に注意してください。 これらの領域には、ユーザー設定に基づいて変更する必要があります。 
 
  :::code language="xml" source="samples/exclude-one-aad-user-or-group.xml" highlight="8,11,17":::
 
