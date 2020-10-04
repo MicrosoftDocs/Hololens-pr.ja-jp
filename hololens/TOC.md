@@ -87,6 +87,7 @@
 ## 登録
 ### [MDM での HoloLens の登録](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
+### [MAC アドレスが制限された Wi-Fi 環境に登録する](mac-address-options.md)
 ## アプリケーション
 ### [アプリケーション管理の概要](app-deploy-overview.md)
 ### [Intune と会社のポータル](app-deploy-intune.md)
