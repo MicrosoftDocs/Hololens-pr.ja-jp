@@ -62,6 +62,13 @@
 ## [Windows Holographic for Business 機能のロック解除](hololens1-upgrade-enterprise.md)
 
 # 構成
+## デバイス管理
+### [CSP の構成とデバイス管理の概要](hololens-csp-policy-overview.md)
+### [プロビジョニングパッケージを使用して HoloLens を構成する](hololens-provisioning.md)
+### [MDM を使用して HoloLens デバイスを管理する](hololens-mdm-configure.md)
+### [一般的なデバイスの制限](hololens-common-device-restrictions.md)
+### [HoloLens を Kiosk としてセットアップする](hololens-kiosk.md)
+### [Windows Defender アプリケーション制御 - WDAC](windows-defender-application-control-wdac.md)
 ## Identity
 ### [HoloLens のユーザー ID とサインインを管理する](hololens-identity.md)
 ### [複数のユーザーによる HoloLens の共有](hololens-multiple-users.md)
@@ -71,16 +78,6 @@
 ### [HoloLens 2 証明書とネットワーク プロファイルを準備する](hololens-certificates-network.md)
 ### [HoloLens の接続エンドポイントの管理](hololens-offline.md)
 ### [Bluetooth および USB-C デバイスに接続する](hololens-connect-devices.md)
-
-
-## デバイス管理
-### [CSP の構成とデバイス管理の概要](hololens-csp-policy-overview.md)
-### [プロビジョニングパッケージを使用して HoloLens を構成する](hololens-provisioning.md)
-### [MDM を使用して HoloLens デバイスを管理する](hololens-mdm-configure.md)
-### [一般的なデバイスの制限](hololens-common-device-restrictions.md)
-### [HoloLens を Kiosk としてセットアップする](hololens-kiosk.md)
-### [Windows Defender アプリケーション制御 - WDAC](windows-defender-application-control-wdac.md)
-
 
 
 # 展開
