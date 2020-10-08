@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: 33463685818c3e864c698160776c76ec7d8cbefd
-ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
+ms.openlocfilehash: 68e7b86259d4837be5bfa634c6ada4aa5b8006a1
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "10899109"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102346"
 ---
 # Windows Autopilot for HoloLens 2
 
@@ -199,6 +199,9 @@ Windows Autopilot プログラムに HoloLens 2 デバイスをセットアッ�
 ## Windows Autopilot for HoloLens 2 のユーザー エクスペリエンス
 
 上記の手順が完了すると、HoloLens 2 のユーザーは、次のようにして HoloLens デバイスをプロビジョニングします:  
+
+> [!NOTE]
+> Autopilot を使用すると、[デバイスの所有者](security-adminless-os.md#device-owner)に影響があります。
 
 1. 前述のように、現在のリリースでは、HoloLens をオンにし、Autopilot プロビジョニング プロセスを開始する前に、デバイスをインターネットに接続する必要があります。 有線インターネット接続には「USB-C to Ethernet」アダプターを、無線インターネット接続には「USB-C to Wifi」アダプターを使用して、デバイスを Ethernet に接続します。
    

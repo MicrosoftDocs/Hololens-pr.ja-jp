@@ -3,6 +3,7 @@
 # 概要
 
 ## HoloLens 2 の概要
+### [HoloLens 2 の概要](hololens2-options.md)
 ### [HoloLens 2 のハードウェア](hololens2-hardware.md)
 ### [HoloLens 2 の使用準備](hololens2-setup.md)
 ### [HoloLens 2 のセットアップ](hololens2-start.md)

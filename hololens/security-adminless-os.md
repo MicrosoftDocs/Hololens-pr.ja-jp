@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ea35012e63f4c0d8868f9604809c1552c3212e72
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016641"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102316"
 ---
 # 管理者不要のオペレーティング システム
 
@@ -29,6 +29,8 @@ HoloLens 2 は、管理者グループのサポートを無効にして、すべ
   * Windows
 
 Windows コンポーネントは、システム UWP を介して AppContainer サンドボックスを利用することもできます。 ユニバーサル Windows プラットフォーム (UWP) の詳細については、「[UWP ドキュメント](https://docs.microsoft.com/windows/uwp/)」を参照してください。 また、特権を削減する必要がある Windows コンポーネント (ブラウザーのコンテンツ ページ、パーサーなど) は、すべての AppContainers がアクセスできるリソースのセットへのアクセスを遮断する、Less Privileged AppContainer (LPAC) サンドボックスを使用します。
+
+## デバイスの所有者
 
 最後に、デバイスのテナントへの参加やユーザーの管理など、特定のデバイス全体の操作の実行は、"デバイス オーナー" にのみ許可されます。 デバイス上のユーザーは、次のいずれかの手順でこのグループに入ることができます。
   * デバイスの最初のユーザーは、常にオーナーとして指定されます。 

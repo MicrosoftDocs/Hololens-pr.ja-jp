@@ -1,6 +1,6 @@
 ---
-title: Enroll HoloLens in MDM
-description: Enroll HoloLens in mobile device management (MDM) for easier management of multiple devices.
+title: MDM での HoloLens の登録
+description: 複数のデバイスを管理しやすいように、モバイル デバイス管理 (MDM) に HoloLens を登録します。
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 2a9b3fca-8370-44ec-8b57-fb98b8d317b0
@@ -21,40 +21,40 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/07/2020
 ms.locfileid: "11102326"
 ---
-# Enroll HoloLens in MDM
+# MDM での HoloLens の登録
 
-You can manage multiple Microsoft HoloLens devices simultaneously using solutions like [Microsoft Intune](https://docs.microsoft.com/intune/windows-holographic-for-business). You will be able to manage settings, select apps to install and set security configurations tailored to your organization's need. 「[Microsoft Intune を使用して Windows Holographic を実行するデバイスを管理する](https://docs.microsoft.com/intune/windows-holographic-for-business)」、[Windows Holographic でサポートされている構成サービス プロバイダー (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens) と [Windows Holographic for Business でサポートされているポリシー](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies)に関するトピックを参照してください。
+[Microsoft Intune](https://docs.microsoft.com/intune/windows-holographic-for-business)などのソリューションを使用して、複数の microsoft HoloLens デバイスを同時に管理できます。 設定の管理、インストールするアプリの選択、組織のニーズに合わせたセキュリティ構成の設定を行うことができます。 「[Microsoft Intune を使用して Windows Holographic を実行するデバイスを管理する](https://docs.microsoft.com/intune/windows-holographic-for-business)」、[Windows Holographic でサポートされている構成サービス プロバイダー (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens) と [Windows Holographic for Business でサポートされているポリシー](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies)に関するトピックを参照してください。
 
 > [!NOTE]
 > VPN、Bitlocker、キオスク モードの機能を含むモバイル デバイス管理 (MDM) は、[Windows Holographic for Business にアップグレード](hololens1-upgrade-enterprise.md)した場合にのみ使用できます。
 
-## Requirements
+## 要件
 
- Your organization will need to have Mobile Device Management (MDM) set up in order to manage HoloLens devices. Your MDM provider can be Microsoft Intune or a 3rd party provider that uses Microsoft MDM APIs.
+ HoloLens デバイスを管理するには、組織でモバイルデバイス管理 (MDM) を設定する必要があります。 MDM プロバイダーには、Microsoft Intune や、Microsoft MDM API を使うサード パーティ プロバイダーを使うことができます。
  
-## Different ways to enroll
+## さまざまな登録方法
 
-Depending on the type of identity chosen either during OOBE or post sign-in there are different methods of enrollment. To learn more about each type of Identity on HoloLens please visit [this page](hololens-identity.md).
+OOBE または投稿のサインインのいずれかで選択された id の種類に応じて、さまざまな登録方法があります。 HoloLens の各種類の Id の詳細については、 [このページ](hololens-identity.md)をご覧ください。
 
-- If Identity is AAD, then either during OOBE or **Settings App** -> **Access Work or School** -> **Connect** button.
-    - For AAD, automatic MDM enrollment only occurs if AAD has been configured with enrollment URLs.
-- If Identity is AAD and device has been pre-registered with Intune MDM server with specific configuration profile assigned to it, then AAD-Join and enrollment will automatically occur during OOBE.
-    - Also called [Autopilot flow](hololens2-autopilot.md) Available in [19041.1103+ builds](hololens-release-notes.md#windows-holographic-version-2004).
-- If Identity is MSA, then using **Settings App** -> **Access Work or School** -> **Connect** button.
-    - Also called Add Work Account (AWA) flow.
-- If Identity is Local User, then using **Settings App** -> **Access Work or School** -> **Enroll only in device management** link.
-    - Also called pure MDM enrollment flow.
+- Id が AAD の場合は、OOBE または**設定アプリ**への [  ->  **職場または学校**の  ->  **接続**] ボタンをクリックします。
+    - AAD の場合、自動 MDM 登録は、AAD が登録 Url で構成されている場合にのみ発生します。
+- Id が AAD であり、デバイスが、特定の構成プロファイルが割り当てられた Intune MDM サーバーに事前登録されている場合、AAD での参加と登録は自動的に行われます。
+    - [19041.1103 + ビルド](hololens-release-notes.md#windows-holographic-version-2004)で利用可能な[自動操縦フロー](hololens2-autopilot.md)とも呼ばれます。
+- Id が MSA の場合は、[**アプリ**  ->  **アクセスの職場または学校**の  ->  **接続**] ボタンを使用します。
+    - [ワークアカウントの追加] (AWA) フローとも呼ばれます。
+- Id が Local ユーザーの場合は、[**設定] アプリ**  ->  **へのアクセスは**、[  ->  **デバイス管理] リンクでのみ**機能します。
+    - 純粋 MDM の登録フローとも呼ばれます。
 
-Once the device is enrolled with your MDM server, the Settings app will now reflect that the device is enrolled in device management.
+デバイスが MDM サーバーに登録されると、設定アプリはデバイス管理にデバイスが登録されたことを反映するようになります。
 
-## Auto-enrollment in MDM
+## MDM への自動登録
 
 Azure Active Directory (Azure AD) と、認証用の AAD トークンを受け入れる MDM ソリューション (現在のところ、Microsoft Intune と AirWatch でのみサポートされている場合) を組織で使っている場合、IT 管理者はユーザーが Azure AD アカウントにサインインした後 MDM 登録が自動的に行われるように Azure AD を構成できます。 [Azure AD の登録を構成する方法をご覧ください。](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
-自動登録が有効な場合、追加の手動登録は必要ありません。 When the user signs in with an Azure AD account, the device is enrolled in MDM after completing the first-run experience.
+自動登録が有効な場合、追加の手動登録は必要ありません。 ユーザーが Azure AD アカウントでサインインすると、最初の実行エクスペリエンスを完了した後デバイスが MDM に登録されます。
 
-When a device is AAD Joined it may affect who considered the [device owner](security-adminless-os.md#device-owner).
+デバイスが AAD に参加している場合、 [デバイス所有者](security-adminless-os.md#device-owner)と見なされるユーザーに影響を与える可能性があります。
 
-## Unenroll HoloLens from Intune
+## Intune からの HoloLens の登録解除
 
-To learn more about unenrolling a device visit [this page](https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment). 
+デバイスの未登録の詳細については、 [このページ](https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment)をご覧ください。 
