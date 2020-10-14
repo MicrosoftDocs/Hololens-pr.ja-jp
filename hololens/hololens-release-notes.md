@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0fe78d4b668523de4faa66a64f54c14760a81b12
-ms.sourcegitcommit: bddd470ac475dd8fc7b69e8904d18082a83f39e0
+ms.openlocfilehash: 23ec5478c35977d1fd1fa20a33827e441d4b5c12
+ms.sourcegitcommit: 264c8ff6726f702c3770525d774e0c1d263a2705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "10997218"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "11117772"
 ---
 # HoloLens 2 のリリース ノート
 
@@ -28,6 +28,18 @@ HoloLens デバイスで生産性を向上させるには、引き続き機能�
 
 >[!NOTE]
 > HoloLens エミュレーターのリリースノートを読むには、 [アーカイブにアクセスして](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)ください。
+
+## Windows ホログラフィック、バージョン 2004 (2020 年10月の更新プログラム)
+- ビルド19041.1124
+ 
+更新プログラムの改善と修正:
+
+- ランタイムシステムフォールトを引き起こす不要なチェックが削除されました。
+
+## Windows ホログラフィック、バージョン 1903 (2020 年10月の更新プログラム)
+- ビルド18362.1081
+
+この毎月の品質更新プログラムには、注目すべき変更内容が含まれていません。最新の Windows ホログラフィックバージョン2004のビルドをお試しいただくことをお勧めします。
 
 ## Windows ホログラフィック、バージョン 2004 (2020 年9月の更新プログラム)
 - ビルド19041.1117
@@ -97,7 +109,7 @@ HoloLens デバイスで生産性を向上させるには、引き続き機能�
 - 記録されたビデオでのホログラムの安定性が向上しました。
 - デバイスが複数日間スタンバイ状態になった後に、mixed reality キャプチャがビデオを録画できない問題を解決しました。
 - HolographicSpace のプレゼンス API は、通常 Unity アプリケーションでは無効になっています。 この動作により、"バックグラウンドで実行する" 設定が有効になっている場合でも、一部のアプリが、バイザーが反転したときに一時停止される問題が回避されます。 これで、Unity バージョン2018.4.18 以降と2019.3.4 以降で、API が有効になります。
-- Wi-fi 接続経由で Device Portal にアクセスすると、web ブラウザーで無効な証明書が原因でアクセスできなくなることがあります。 デバイス証明書が以前信頼されていた場合でも、ブラウザーから "ERR_SSL_PROTOCOL_ERROR" などのエラーが報告されることがあります。 この場合、セキュリティの警告を無視するオプションはありませんので、Device Portal に進むことはできません。 この更新プログラムは、この問題を解決しました。 デバイス証明書が以前にダウンロードされ、PC に信頼されていて、ブラウザーのセキュリティ警告が表示されない場合は、新しい証明書をダウンロードして信頼し、ブラウザーのセキュリティの警告に対処する必要があります。
+- Wi-Fi 接続経由で Device Portal にアクセスすると、web ブラウザーで無効な証明書が原因でアクセスできなくなることがあります。 デバイス証明書が以前信頼されていた場合でも、ブラウザーから "ERR_SSL_PROTOCOL_ERROR" などのエラーが報告されることがあります。 この場合、セキュリティの警告を無視するオプションはありませんので、Device Portal に進むことはできません。 この更新プログラムは、この問題を解決しました。 デバイス証明書が以前にダウンロードされ、PC に信頼されていて、ブラウザーのセキュリティ警告が表示されない場合は、新しい証明書をダウンロードして信頼し、ブラウザーのセキュリティの警告に対処する必要があります。
 - MSIX パッケージを使ってアプリをインストールできるランタイムプロビジョニングパッケージを作成する機能が有効になりました。
 - **Settings**  >  **System**  >  デバイスのシャットダウン時に、ユーザーが Mixed Reality ホームからすべてのホログラムを自動的に削除できるように設定システムの**ホログラム**の設定が追加されました。
 - HoloLens エミュレーターでピクセル形式を変更する HoloLens アプリが、ブラックをレンダリングする問題を修正しました。
@@ -208,7 +220,7 @@ NetworkQoSPolicy 構成サービスプロバイダーは、ネットワークの
 
 ### 5G/LTE tethered デバイスの拡張 USB イーサネットサポート
 
-5G、LTE 電話、Wi-fi ホットポットなどの特定のモバイルブロードバンドデバイスを USB 経由で HoloLens 2 に tethered すると、サポートが追加されました。 これらのデバイスは、別のイーサネット接続として [ **ネットワーク設定** ] に表示されるようになりました。 (外付けドライバーが必要なモバイルブロードバンドデバイスはサポートされていません。)この機能により、wi-fi が利用できず、Wi-fi テザリングが十分なパフォーマンスを備えていない場合に、高帯域幅接続が有効になります。 サポートされている USB デバイスの詳細については、「 [Bluetooth デバイスと usb デバイスに接続する](https://docs.microsoft.com/hololens/hololens-connect-devices)」を参照してください。  
+USB 経由で HoloLens 2 に tethered されている場合、5G/LTE 電話や Wi-Fi ホットポットなどの特定のモバイルブロードバンドデバイスを有効にするためのサポートが追加されました。 これらのデバイスは、別のイーサネット接続として [ **ネットワーク設定** ] に表示されるようになりました。 (外付けドライバーが必要なモバイルブロードバンドデバイスはサポートされていません。)この機能により、Wi-Fi が利用できない場合には高帯域幅接続が有効になり、Wi-Fi テザリングでは十分なパフォーマンスが実現されません。 サポートされている USB デバイスの詳細については、「 [Bluetooth デバイスと usb デバイスに接続する](https://docs.microsoft.com/hololens/hololens-connect-devices)」を参照してください。  
 
 ### 手動トラッキングの改善
 
@@ -245,13 +257,13 @@ NetworkQoSPolicy 構成サービスプロバイダーは、ネットワークの
 
 ### Cortana の更新
 
-更新されたアプリは Microsoft 365 と統合され、デバイス全体でより多くの作業を行うことができます (現時点では英語のみ)。 HoloLens 2 では、ボリュームの調整や再起動など、特定のデバイス固有のコマンドは Cortana でサポートされなくなりました。 これらのオプションは、新しいシステム音声コマンドでサポートされるようになりました。 [ブログ](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)の新しい Cortana アプリの詳細については、こちらを参照してください。
+更新されたアプリは Microsoft 365 と統合され、デバイス全体でより多くの作業を行うことができます (現時点では US-English のみ)。 HoloLens 2 では、ボリュームの調整や再起動など、特定のデバイス固有のコマンドは Cortana でサポートされなくなりました。 これらのオプションは、新しいシステム音声コマンドでサポートされるようになりました。 [ブログ](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)の新しい Cortana アプリの詳細については、こちらを参照してください。
 
 ### 品質の改善と修正
 
 以下の更新プログラムも含まれています。  
 - アクティブなディスプレイ調整システムが導入されました。 この機能により、ホログラムの安定性と配置が向上します。 これで、ヘッドを左右に移動しても表示されます。
-- HoloLens への Wi-fi ストリーミングが定期的に中断されるバグが修正されました。 待機時間の短いストリーミングが必要であることがアプリケーションで示されている場合は、 [SetSocketMediaStreamingMode 関数](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)を呼び出して修正プログラムを実装します。
+- HoloLens Wi-Fi のストリーミングが定期的に中断されているバグを修正しました。 待機時間の短いストリーミングが必要であることがアプリケーションで示されている場合は、 [SetSocketMediaStreamingMode 関数](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)を呼び出して修正プログラムを実装します。
 - リサーチモードでのストリーミング中に発生したデバイスのハングが修正されました。
 - セッションを再開するときに、サインイン画面に適切なユーザーが表示されない場合があるというバグを修正しました。
 - ユーザーが **設定**を使用して MDM ログをエクスポートできない問題が修正されました。
