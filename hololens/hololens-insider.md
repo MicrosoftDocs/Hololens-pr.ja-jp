@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 9/23/2020
+ms.date: 10/15/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 439ae9ddfbc6e7a83807e85c445f3d9f4cd2e182
-ms.sourcegitcommit: fa2e551e3294ee49677035f5461b28861b20170f
+ms.openlocfilehash: 408bf94b4cec49b91198917c16f83012fa9ab644
+ms.sourcegitcommit: a81d48d362f8511960e74d38c7c8f0cff19b67c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "11088611"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119300"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -37,7 +37,7 @@ HoloLens 用の最新の Insider Preview ビルドへようこそ! HoloLens 向�
 | [証明書マネージャー](hololens-insider.md#certificate-manager)                                     | ユーザーは、設定アプリで現在のユーザーとローカルコンピューターの証明書の表示、インストール、削除を行うことができます。                                         | 19041.1361 +                 |
 | [USB からの自動起動プロビジョニング](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE は、USB ドライブ上のプロビジョニングパッケージを自動的に検出します。                                | 19041.1361 +                 |
 | [OOBE でプロビジョニングパッケージを自動確認する](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | OOBE でプロビジョニングパッケージを自動的に適用します。                                             | 19041.1361 +                 |
-| [Wi-fi 接続で自動操縦を使う](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | イーサネットアダプターを必要とせずに、デバイス Wi-fi から自動操縦を使用します。                             | 19041.1364 +                 |
+| [Wi-Fi 接続で自動操縦を使用する](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | イーサネットアダプターを必要とせずに、デバイス Wi-Fi から自動操縦を使用します。                             | 19041.1364 +                 |
 |[Tenantlockdown CSP と自動操縦](hololens-insider.md#tenantlockdown-csp-and-autopilot) | テナントの登録後、ポリシーが適用されると、デバイスがリセットまたは再アップデートされるたびに、そのテナントにのみデバイスを登録できます。 | 19041.1366 +|
 | [グローバルに割り当てられた](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | システムレベルで適用可能な複数のアプリキオスクモード用に HoloLens 2 デバイスを構成します。 | 19041.1356 +                 |
 | [マルチアプリキオスクでアプリを自動起動する](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 複数アプリのキオスクモードにサインインしたときに自動的に起動するようにアプリケーションを設定します。     | 19041.1346 +                 |
@@ -49,6 +49,7 @@ HoloLens 用の最新の Insider Preview ビルドへようこそ! HoloLens 向�
 | [更新ポリシー](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | 新しく有効化されたポリシーにより、更新プログラムを制御できます。                                            | 19041.1352 +                 |
 | [HoloLens 2 で有効になっている設定ページの表示](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | 設定アプリに表示されるページを選ぶためのポリシーです。                                           | 19041.1349 +                 |
 |  [リサーチモード](hololens-insider.md#research-mode) | HoloLens 2 でのリサーチモードの使用 | 19041.1375 + |
+| [レコーディングの長さの増加](hololens-insider.md#recording-length-increased) | MRC レコーディングは、5分間では利用できなくなりました。 | 19041.1387 + |
 | [更新プログラムの機能強化と修正](hololens-insider.md#improvements-and-fixes-in-the-update)                   | 更新プログラムのその他の解決策。                                                                | 19041.1361 +                 |
 
 
@@ -131,7 +132,7 @@ USB デバイスからのプロビジョニングの自動起動とプロビジ�
 
 これでデバイスが構成され、プロビジョニングが成功したことを表示します。
 
-### Wi-fi 接続で自動操縦を使う
+### Wi-Fi 接続で自動操縦を使用する
 これで、OOBE 中に HoloLens 2 を Wifi で接続すると、OOBE はデバイスの自動操縦プロファイルを確認します。 検出された場合は、AAD の参加と登録フローの残りの部分を使用します。 つまり、イーサネットから USB C または wifi から USB c への接続を使うことは必須ではありませんが、OOBE の開始時に提供された場合でも引き続き動作します。 [HoloLens 2 デバイスの自動操縦の](hololens2-autopilot.md)詳細については、こちらを参照してください。
 
 ### Tenantlockdown CSP と自動操縦
@@ -283,6 +284,15 @@ HoloLens 2 でカスタマイズできるページ設定の詳細については
 現在、研究者は、HoloLens デバイスでリサーチモードを有効にして、これらの外部向けの raw イメージセンサーストリームすべてにアクセスするオプションを利用できるようになりました。 HoloLens 2 の Research モードでは、加速度計、microsoft.devices.sensors.gyroscope、磁力計の読み取り結果にアクセスすることもできます。 ユーザーのプライバシーを保護するために、生の目を追跡するカメライメージは、リサーチモードでは使用できませんが、既存の Api を通じて目を見つめた方向にすることはできません。
 
 詳しい技術情報については、 [リサーチモードのマニュアル](https://docs.microsoft.com/windows/mixed-reality/research-mode) をご覧ください。
+
+### レコーディングの長さの増加
+お客様からのフィードバックのため、「 [mixed reality キャプチャ](holographic-photos-and-videos.md)」の録音時間が延長されました。 Mixed reality キャプチャは既定で5分に制限されることはありませんが、使用可能なディスク領域に基づいて、最大レコーディング長が計算されます。 デバイスは、ディスクの空き領域の最大80% に基づいて、利用可能なディスク領域に基づいて、最大ビデオ録画時間を推定します。
+
+> [!NOTE]
+> HoloLens では、次のいずれかが発生した場合に、既定のビデオ録画長 (5 分) が使用されます。
+> - 予想される最大記録期間は、既定の5分よりも小さくなっています。
+> - 使用可能なディスク領域は、合計ディスク領域の20% 未満です。
+
 
 ### 更新プログラムの改善と修正:
 - AllowUsbConnection の NCM での MDM 経由の USB 機能の列挙を無効にするポリシーが更新されました。
