@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 8e72bef1ad82faeb734123828050de5273bc6505
-ms.sourcegitcommit: fba9bdbb9b9326f522d5078e776b68ac6c94b6a9
+ms.openlocfilehash: e1302a3d482648b1ebbf7fee71ceec3ca4261d23
+ms.sourcegitcommit: 87d503434339fc6c9b41aa9473e35ddfde845cac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "11119947"
+ms.locfileid: "11120148"
 ---
 # HoloLens デバイスから診断情報を収集する
 
@@ -124,8 +124,8 @@ IT 管理者は、DiagnosticLog CSP を使用して、次のことを管理す�
 
 > [!NOTE]
 > オフライン診断は、ユーザーが OOBE または [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) ポリシー値が full に設定されている場合にのみ有効になります (Hololens では基本は既定値です)。 
->
-> オフライン診断機能を無効にするには、[**設定] アプリ >** の [プライバシー] ページに移動し、[**診断データ**] で [**基本**] を選択します。
+
+デバイスがロックされていると、ログは表示されません。 オフライン診断機能を無効にするには、[**設定] アプリ >** の [プライバシー] ページに移動し、[**診断データ**] で [**基本**] を選択します。 オフライン診断がテレメトリ設定に依存するビルドでは、ログが収集されるかどうかにのみ影響します。 収集されるファイルには影響しません。
 
 詳細については、このビデオをご覧ください。 
 
