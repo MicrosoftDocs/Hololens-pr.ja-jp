@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 6183a478a9eee8a5ab6212443ea2955605754a21
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 8eef05c3d9f47fbbc86647ccf22c7de88bacc687
+ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072784"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "11134680"
 ---
 # HoloLens (第1世代) のハードウェア
 
@@ -94,7 +94,7 @@ HoloLens には、次の機能が含まれています。
 - 明るさ (上下)
 - 電源ボタン
 - バッテリーステータス Led
-- Wi-fi 802.11 ac
+- Wi-Fi 802.11 ac
 - マイクロ USB 2.0
 - Bluetooth 4.1 LE
 
@@ -167,6 +167,22 @@ HoloLens に洗浄剤や溶剤を使用しないでください。また、HoloL
 ヘッドバンドやデバイスアームなど、デバイスの残りの部分をクリーニングするには、中性洗剤と水を持つけばのない布 moistened を使用します。 もう一度使用する前に HoloLens を完全に乾燥させます。
 
 ![バイザーのクリーニング方法を示す画像](images/hololens-cleaning-visor.png)
+
+## シリアル番号の検索
+
+HoloLens (第1世代) デバイスのシリアル番号は、適切なレンズの下に印刷されます。
+1. 磨耗しているかのように、デバイスを自分の前に置いておきましょう。
+1. レンズを向こう側に回転させて、deivce の逆さまを反転させて、下側に表示されるようにします。
+1. 適切なレンズが左側に表示されるようになり、バンドのレンズの下にはシリアル番号が印刷されます。 
+
+シリアル番号は、接続された PC でも確認できます。
+
+1. デバイスを接続する
+1. エクスプローラーで **この PC** に移動する
+1. HoloLens デバイスの [ **プロパティ** ] を右クリックして選択します。
+1. これにより、デバイスのシリーズ番号が表示されます。 次のスクリーンショットのようになります。
+
+<img src="images/hl1-serial-number.png" width="400" height="600" />
 
 > [!div class="nextstepaction"]
 > [HoloLens をセットアップして開始する (第1世代)](hololens1-setup.md)
