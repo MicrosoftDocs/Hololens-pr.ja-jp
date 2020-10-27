@@ -2,7 +2,7 @@
 title: HoloLens 2 のハードウェア
 description: Windows 10 を実行する、Microsoft の完全自立型ホログラフィック コンピューターの最新版である Microsoft HoloLens 2 を構成するコンポーネントの概要。
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
-ms.date: 9/17/2019
+ms.date: 10/20/2020
 keywords: HoloLens
 ms.prod: hololens
 ms.sitesec: library
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 74afa9c39b66437e94aaf8f777ddc0347144b974
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 5299f56429adb6212074c16b67d2f10d418129f4
+ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072774"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "11134657"
 ---
 # HoloLens 2 のハードウェア
 
@@ -170,6 +170,25 @@ Microsoft HoloLens 2 は、自立型ホログラフィック コンピュータ�
 注意:
 - ユニット: 黒い小売スタイル ボックスの HoloLens 2 が販売されています。
 - 出荷時の外装: ユニットを包んで保護する出荷用のパッケージ。
+
+## シリアル番号を見つける
+
+HoloLens 2 デバイスのシリアル番号はバイザーの下に印刷されています。
+1. デバイスのバイザーを持ち上げます。
+1. Brow パッドの近くを見てください。
+1. ヒンジの近くにあるシリアル番号を見つけることができます。 
+
+
+<img src="images/serial-number-diagram-hl2.png" width="625" height="903" />
+
+シリアル番号は、接続されている PC でも確認できます。
+
+1. デバイスを接続する
+1. ファイル エクスプローラーで **[このPC]** に移動する
+1. 右クリックして、HoloLens デバイスの **[プロパティ]** を選択する
+1. これにより、デバイスのシリアル番号が表示されます。 次のスクリーンショットを参照してください。
+
+<img src="images/ResetRecovery2.png" width="400" height="600" />
 
 ## 次のステップ
 
