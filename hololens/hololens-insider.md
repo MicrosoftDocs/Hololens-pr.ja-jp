@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 408bf94b4cec49b91198917c16f83012fa9ab644
-ms.sourcegitcommit: a81d48d362f8511960e74d38c7c8f0cff19b67c3
+ms.openlocfilehash: 63350230a680bc5a6185a3f3f334180962602442
+ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119300"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11135558"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -35,6 +35,7 @@ HoloLens 用の最新の Insider Preview ビルドへようこそ! HoloLens 向�
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [オートアイポジションのサポート](hololens-insider.md#auto-eye-position-support)                              | 目の位置を実際に計算して、正確なホログラムの位置を指定します。                        | 19041.1339 +                 |
 | [証明書マネージャー](hololens-insider.md#certificate-manager)                                     | ユーザーは、設定アプリで現在のユーザーとローカルコンピューターの証明書の表示、インストール、削除を行うことができます。                                         | 19041.1361 +                 |
+| [アプリ インストーラー](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | Device UI で appx ファイルからアプリをインストールします。 | 19041.1377 + |
 | [USB からの自動起動プロビジョニング](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE は、USB ドライブ上のプロビジョニングパッケージを自動的に検出します。                                | 19041.1361 +                 |
 | [OOBE でプロビジョニングパッケージを自動確認する](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | OOBE でプロビジョニングパッケージを自動的に適用します。                                             | 19041.1361 +                 |
 | [Wi-Fi 接続で自動操縦を使用する](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | イーサネットアダプターを必要とせずに、デバイス Wi-Fi から自動操縦を使用します。                             | 19041.1364 +                 |
@@ -104,6 +105,26 @@ Windows Insider ビルド 19041.1361 + microsoft は、HoloLens 2 設定アプ�
 ![設定アプリの証明書ビューアー](images/certificate-viewer-device.jpg)
 
 ![証明書の UI を使用して証明書をインストールする方法を示す図](images/certificate-device-install.jpg)
+
+### アプリインストーラーを使用して HoloLens 2 にアプリをインストールする
+Windows insider のリリースでは、新しい機能 (アプリのインストーラー) を追加して、HoloLens 2 デバイスに **よりシームレスにアプリケーションをインストールできるように** しています。  開発者モードを有効にしたり、Device Portal を使用したりしなくても、アプリをインストールできるようになりました。  Appx バンドルをデバイスにダウンロード (USB 経由またはエッジ経由) するだけで、インストールを開始するように促すメッセージが表示されるように、ファイルエクスプローラーで Appx バンドルに移動できます。  または、 [web ページからインストールを開始](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)します。  Microsoft Store またはサイドローディングで MDM の LOB アプリの展開機能を使用してインストールしたアプリと同様に、アプリを展開するには、アプリを展開する前に、アプリをインストールする前に、 [サインインツール](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) を使ってデジタル署名する必要があります。また、署名に使用する証明書は、HoloLens デバイスで [信頼される必要があり](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) ます 注: アプリのインストールの新しいパスを無効にするには、 [Windows Defender アプリケーションコントロール (WDAC CSP](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)、ブロック Microsoft.DesktopAppInstaller_8wekyb3d8bbwe) を使用してアプリインストーラーを無効にする必要があります。
+
+**アプリケーションのインストール手順。**
+
+1.  HoloLens 2 デバイスの電源が入っていて、PC に接続されていることを確認する
+2.  HoloLens 2 デバイスにサインインしていることを確認する
+3.  PC でカスタムアプリに移動し、yourapp を yourdevicename\Internal Storage\Downloads. にコピーします。   ファイルのコピーが完了したら、デバイスを切断することができます。
+4.  HoloLens 2 デバイスから [スタート] メニューを開き、[すべてのアプリ] を選択して、エクスプローラーアプリを起動します。
+5.  [ダウンロード] フォルダーに移動します。 アプリの左側のパネルで、[このデバイス] を選択してから、[ダウンロード] に移動することが必要な場合があります。
+6.  Yourapp ファイルを選びます。
+7.  アプリのインストーラーが起動します。 アプリをインストールするには、[インストール] ボタンを選択します。
+インストールされたアプリは、インストールの完了時に自動的に起動します。
+
+このフローをテストするには、 [Windows Universal Sample GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) のサンプルアプリを参照してください。
+
+[アプリインストーラーで HoloLens 2 にアプリをインストールする](app-deploy-app-installer.md)方法については、こちらを参照してください。  
+
+![App Installer による MRTK の例のインストール](images/hololens-app-installer-picture.jpg)
 
 ### USB からの自動起動プロビジョニング
 このビルドを実行する前に、OOBE 中にボタンの組み合わせを使用してプロビジョニング画面を手動で起動する必要がありました。 これで、ユーザーは USB ストレージドライブ上のプロビジョニングパッケージを使用して、ボタンの組み合わせをスキップできます。 

@@ -15,21 +15,23 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 1
-ms.openlocfilehash: f610de413c9990bd3f8bc4df63fa8c7ed821e32b
-ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
+ms.openlocfilehash: ab67962efdafe3f39097210d60589dc6db715837
+ms.sourcegitcommit: c870802ea75a9dd602319c59fedb124f80c19b71
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "11077674"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11136172"
 ---
 # HoloLens 1 (gen) リリースノート
 
 ## HoloLens (第1世代) 長期的サービス
 HoloLens (第1世代) は、Long Term サービス (LTS) の状態を入力しました。 今後の更新プログラムでは、Windows 10 ホログラフィック、バージョン1809の HoloLens 用リリース (第1世代) で機能パリティを維持しながら、問題とセキュリティの修正に重点が置かれます。
 
+これは、開発者のために、HoloLens (第1世代) アプリが OpenXR API をサポートしていないことを意味します。  これらのヘッドセットは、unity 2019 LTS から LTS 2022 までの完全なライフサイクルを備えた、WinRT API バックエンドでの Unity 2019 でサポートされています。
+
 ### Windows 10 ホログラフィック、バージョン1809
 
-> **適用対象:** Hololens (第1世代)
+> **適用対象:** HoloLens (第1世代)
 
 | 機能 | 詳細情報 |
 |---|---|
@@ -63,7 +65,7 @@ HoloLens (第1世代) は、Long Term サービス (LTS) の状態を入力し�
 
 ### Windows 10 バージョン 1803 (Microsoft HoloLens の場合)
 
-> **適用対象:** Hololens (第1世代)
+> **適用対象:** HoloLens (第1世代)
 
 Windows 10 バージョン1803は、windows 10 バージョン1607のリリース以降、ホログラフィック for Business の最初の機能更新プログラムです。 この更新プログラムでは、次の変更が加えられます。
 
@@ -80,7 +82,7 @@ Windows 10 バージョン1803は、windows 10 バージョン1607のリリー�
 
 - 以前は、Azure Active Directory (Azure AD) アカウントでデバイスにサインインした後、会社のリソースにアクセスできるように、[**設定**] で**作業アクセスを追加**する必要がありました。 Azure AD アカウントでサインインすると、登録が自動的に行われます。
 
-- サインインする前に、[パスワード] フィールドの下にあるネットワークアイコンを選択して、接続する別の Wi-fi ネットワークを選びます。 ホテル、会議センター、ビジネスなどのゲストネットワークに接続することもできます。
+- サインインする前に、[パスワード] フィールドの下にあるネットワークアイコンを選択して、接続する別の Wi-Fi ネットワークを選択できます。 ホテル、会議センター、ビジネスなどのゲストネットワークに接続することもできます。
 
 - Azure AD アカウントを使用して、 [複数のユーザーと HoloLens](hololens-multiple-users.md) を簡単に共有できるようになりました。
 
