@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: 68e7b86259d4837be5bfa634c6ada4aa5b8006a1
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 6851249ab9ed79e7dcdea6afc853fee66fdddf19
+ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102346"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145658"
 ---
 # Windows Autopilot for HoloLens 2
 
@@ -62,12 +62,12 @@ Windows Autopilot プログラムに HoloLens 2 デバイスをセットアッ�
 **Windows Autopilot 自己展開モードに関する記事の "[要件](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying#requirements)" のセクションを確認してください。** お客様の環境が、これらの要件に加えて、標準的な Windows Autopilot の要件を満たす必要があります。 記事の "ステップ バイ ステップ" と "検証" のセクションを確認する必要はありません。 この記事の後半の手順では、HoloLens に固有の対応する手順を示します。 デバイスを登録して、プロファイルを構成する方法については、この記事の「[4. Windows Autopilot にデバイスを登録する](#4-register-devices-in-windows-autopilot)」および「[6. 展開プロファイルを作成する](#6-create-a-deployment-profile)」をご覧ください。 これらのセクションでは、HoloLens に固有の手順について説明します。
 
 > [!IMPORTANT]  
-> 他の Windows Autopilot プログラムとは異なり、Windows Autopilot for HoloLens 2 には、特定のオペレーティング システムの要件があります。 Autopilot は、HoloLens デバイスにプレインストールされている Windows Holographic バージョン 2004 (ビルド 19041.1103 以降) に依存します。 2020 年 8 月下旬までに出荷されたデバイスには、Windows Holographic バージョン 1903 がプレインストールされています。 Autopilot 対応デバイスをいつ出荷できるかについては、販売代理店にお問い合わせください。 プライベート プレビューに参加する場合は、以下の手順と要件を確認してください。
+> HoloLens 2 の Windows Autopilotには、オペレーティングシステム固有の要件があります。 Autopilot は、HoloLens デバイスにプレインストールされている Windows Holographic バージョン 2004 (ビルド 19041.1103 以降) に依存します。 2020 年 9 月下旬までに出荷されたデバイスには、Windows Holographic バージョン 1903 がプレインストールされています。 Autopilot 対応デバイスをいつ出荷できるかについては、販売代理店にお問い合わせください。 プライベート プレビューに参加する場合は、以下の手順と要件を確認してください。
 
 **Autopilot プレビューを試す場合は、OOBE とプロビジョニング プロセスを開始する前に、HoloLens デバイスが次の要件を満たしていることを確認します:**
 
-- [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) を使用して、最新の OS (Windows Holographic バージョン 2004 (ビルド 19041.1103 以降)) を手動でインストールする必要があります。 手順は [ここに](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device) あります。 
-- Windows Autopilot にデバイスを登録する必要があります。 デバイスを登録する方法については、[「4. Windows Autopilot にデバイスを登録する」](#4-register-devices-in-windows-autopilot) を参照してください。 
+- デバイスが Windows Holographic、バージョン 2004 (ビルド19041.1103 以降) であることを確認します。 最新の OS がプレインストールされていない場合は、 [Advanced Recovery コンパニオン (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab)を使用して手動で更新する必要があります。 手順は [ここに](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device) あります。 
+- Windows Autopilot にデバイスを登録する必要があります。 デバイスを登録する方法については、[「4. Windows Autopilot にデバイスを登録する」](#4-register-devices-in-windows-autopilot) を参照してください。 推奨されるパスは、リセラーまたはディストリビューターがデバイスを登録するときに使用します。     
 - 現在のリリースでは、HoloLens をオンにし、Autopilot プロビジョニング プロセスを開始する前に、デバイスをインターネットに接続する必要があります。 有線インターネット接続用の「USB-C to Ethernet」アダプターを使用して、デバイスをイーサネットに接続します。 
 - デバイスは、まだ Azure AD のメンバーではなく、Intune (または別の MDM システム) に登録されていません。 Autopilot の自己展開プロセスが、次の手順を実行します。 デバイス関連のすべての情報がクリーン アップされていることを確認するには、Azure AD および Intune Portal の両方の **[デバイス]** ページを確認します。
 - Autopilot の自己展開モードプロファイルを構成および管理するには、[Microsoft エンドポイント マネージャー管理センター](https://endpoint.microsoft.com)にアクセスできることをご確認ください。
@@ -75,9 +75,11 @@ Windows Autopilot プログラムに HoloLens 2 デバイスをセットアッ�
 
 ### 2. Windows Autopilot for HoloLens 2 プログラムに登録する
 
-**プログラムに参加するには、プライベート プレビュー プログラムにテナントを登録して、Autopilot の HoloLens 固有の Intune UI コントロールを取得する必要があります。** これを行うには、[Windows Autopilot for HoloLens のプライベート プレゼンテーションモード要求](https://aka.ms/APHoloLensTAP)にアクセスするか、次の QR コードを使用して要求を提出します。  
+**プログラムに参加するには、テナントをプライベートプレビュープログラムに登録している必要があります。 これにより、Autopilotの HoloLens 固有の Intune (別名MEM) UI コントロールが有効になります。** これを行うには、[Windows Autopilot for HoloLens のプライベート プレゼンテーションモード要求](https://aka.ms/APHoloLensTAP)にアクセスするか、次の QR コードを使用して要求を提出します。  
 
 ![Autopilot QR コード](./images/hololens-ap-qrcode.png)  
+
+1週間に1回Microsoftはテナントをフライティングさせます。 フライティングが完了すると、メール通知が送信されます。 
 
 この要求では、次の情報を提供してください。
 

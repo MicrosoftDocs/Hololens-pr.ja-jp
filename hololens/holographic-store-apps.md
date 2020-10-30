@@ -3,7 +3,7 @@ title: アプリケーションの検索、インストール、およびアン�
 description: Microsoft ストアは、HoloLens で動作するアプリやゲーム用のソースです。  Holographic アプリの検索、インストール、アンインストールの詳細については、こちらを参照してください。
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
-ms.date: 08/31/2020
+ms.date: 10/27/2020
 manager: jarrettr
 keywords: Hololens、ストア、UWP、アプリ、インストール
 ms.prod: hololens
@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fd818054fbe692363d411373a6a12ad1057d1be7
-ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
+ms.openlocfilehash: d64d0a18fbbf6570173c4bd80bc4f036f4408e08
+ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10985845"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145638"
 ---
 # Microsoft Store のアプリケーションの検索、インストール、アンインストール
 
@@ -35,6 +35,15 @@ HoloLens は、HoloLens 用に特別に作られた新しいアプリだけで�
 ## アプリの検索
 
 **スタート** メニューの Microsoft Store を開きます。 アプリやゲームを参照します。 [音声コマンド](hololens-cortana.md)を使用し、"検索"と声に出して検索できます。検索ウィンドウが表示されたら、"ディクテーションを開始"と声に出し、プロンプトが表示されたら、検索語句を読み上げます。
+
+> [!NOTE]
+> 2021年1月12日に、以下のアプリが HoloLens デバイスでサポートが終了するようになります。 アプリの web バージョンを使用するには、デバイスで次のリンクを使用することをお勧めします。
+
+| アプリ        | Link                                          |
+|------------|-----------------------------------------------|
+| Excel Mobile      | https://office.live.com/start/Excel.aspx      |
+| Word Mobile       | https://office.live.com/start/Word.aspx       |
+| PowerPoint Mobile | https://office.live.com/start/PowerPoint.aspx |
 
 ## アプリのインストール
 
