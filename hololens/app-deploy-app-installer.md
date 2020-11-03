@@ -14,29 +14,26 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4e2256f1086c92cdf0e788ba9dddf5b74a733116
-ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
+ms.openlocfilehash: 415733bb2809b7ae2808edc097423f8928910c57
+ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11135528"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11150918"
 ---
 # アプリインストーラーを使用して HoloLens 2 にアプリをインストールする
-
-Windows Insider のリリースでは、新しい機能 (アプリのインストーラー) を追加して、HoloLens 2 デバイスに **よりシームレスにアプリケーションをインストールできるように** しています。  開発者モードを有効にしたり、Device Portal を使用したりしなくても、アプリをインストールできるようになりました。  Appx バンドルをデバイスにダウンロード (USB 経由またはエッジ経由) するだけで、インストールを開始するように促すメッセージが表示されるように、ファイルエクスプローラーで Appx バンドルに移動できます。  または、 [web ページからインストールを開始](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)します。  Microsoft Store またはサイドローディングで MDM の LOB アプリの展開機能を使用してインストールしたアプリと同様に、アプリを展開するには、アプリを展開する前に、アプリをインストールする前に、 [サインインツール](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) を使ってデジタル署名する必要があります。また、署名に使用する証明書は、HoloLens デバイスで [信頼される必要があり](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) ます   
-
-この更新プログラム[は、既定でサイドローディングが有効になっ](https://blogs.windows.com/windows-insider/2019/08/07/announcing-windows-10-insider-preview-build-18956/)ているデスクトップと連携します
 
 > [!IMPORTANT]
 > この機能は、現時点では、Windows Insider ビルド 19041.1377 + でのみ avalible になっています。 [詳細については、「Windows Insider ビルドに登録する」を参照して](hololens-insider.md)ください。
 
-> [!NOTE]
-> この機能を無効にする IT 管理者は、次のパッケージファミリ名を、 [WDAC ポリシー](windows-defender-application-control-wdac.md)の一部として使用してください。 これにより、アプリのインストーラーアプリがブロックされるだけで、Microsoft ストアや MDM ソリューションなどの他のソースからアプリをインストールすることはできません。
-```
-Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
-```
-> [!NOTE]
-> アプリの制御には、 [WDAC ポリシー](windows-defender-application-control-wdac.md) を使用することをお勧めします。ただし、microsoft store アプリを許可するのは、 [Applicationmanagement/allowalltrustedapps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) ポリシーを明示的に設定したデバイスのみが、microsoft store からアプリをインストールすることを許可します。 
+Windows Insider のリリースでは、新しい機能 (アプリのインストーラー) を追加して、HoloLens 2 デバイスに **よりシームレスにアプリケーションをインストールできるように** しています。 この機能は、 **非管理対象デバイスでは既定でオンに**なります。 この時点では、企業が中断されないように、アプリインストーラーを **管理対象デバイスで利用できなく** なります。  
+
+以下の **いずれか** に該当する場合、デバイスは "管理されています" と見なされます。
+- MDM[登録](hololens-enroll-mdm.md)済み
+- [プロビジョニングパッケージ](hololens-provisioning.md)で構成されている
+- ユーザー [id](hololens-identity.md) は AAD です
+
+開発者モードを有効にしたり、Device Portal を使用したりしなくても、アプリをインストールできるようになりました。  Appx バンドルをデバイスにダウンロード (USB 経由またはエッジ経由) するだけで、インストールを開始するように促すメッセージが表示されるように、ファイルエクスプローラーで Appx バンドルに移動できます。  または、 [web ページからインストールを開始](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)します。  Microsoft Store またはサイドローディングで MDM の LOB アプリの展開機能を使用してインストールしたアプリと同様に、アプリを展開するには、アプリを展開する前に、アプリをインストールする前に、 [サインインツール](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) を使ってデジタル署名する必要があります。また、署名に使用する証明書は、HoloLens デバイスで [信頼される必要があり](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) ます   
 
 ## 要件
 
@@ -60,6 +57,7 @@ Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
 
 ## インストール方法
 
+1.  デバイスが管理されていると見なされないようにします。
 1.  HoloLens 2 デバイスの電源が入っていて、サインインしていることを確認します。
 1.  PC でカスタムアプリに移動し、yourapp を yourdevicename\Internal Storage\Downloads. にコピーします。 
     ファイルのコピーが完了したら、デバイスを切断して、後でインストールを完了することができます。
