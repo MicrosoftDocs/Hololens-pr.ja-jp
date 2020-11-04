@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 327e2411f497ff01723b42e9c2d00d26f8c89c7a
-ms.sourcegitcommit: d4eee928a39492b2d2d37e3ebf3a65e7b6f7cb63
+ms.openlocfilehash: 7d9568e6498c9b73fdee7110248a51253540a7eb
+ms.sourcegitcommit: ef25b0470ad789fbf41591be64d737ff7ea43d1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "11146177"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11151119"
 ---
 # HoloLens 開発エディションに関する FAQ
 
@@ -41,6 +41,10 @@ HoloLens 2 の開発エディションには、HoloLens 2、Azure クレジッ�
 
 割引クレジットまたは試用版へのアクセスは、製品出荷の2営業日以内に購入時に使用されたメールに送信されます。
 
+### 「HoloLens 2 (デバイスのみ) デバイスを HoloLens 2 の開発エディションにアップグレードして、試用版のクレジットを取得することはできますか?」
+
+いいえ、デバイス転送プランは提供していません。 どのエディションからも他のエディションに譲渡することはできません。 
+
 ### Unity Pro とは 
 
 Unity Pro は、中小規模のスタジオ/企業向けのリアルタイムの3D プラットフォームです。 これは、技術的スキルと非技術的なスキルを組み合わせた teams 向けに設計されています。 [詳細情報](https://store.unity.com/products/unity-pro)
@@ -61,13 +65,17 @@ HoloLens 2 開発エディションのファイナンスは、2021の初期段�
 
 このデバイスは、mixed reality ソリューションを構築する開発者を対象としています。 顧客取引ごとに1回の購入を制限しています。 会社で複数の開発エディションデバイスを購入する場合は、その企業の代わりに HoloLens 2 開発エディションデバイスを購入するために個別のトランザクションが必要になります。 
 
+### HoloLens 2 開発エディションデバイスをお客様に表示できますか? 
+
+はい、このデバイスは、mixed reality ソリューションのプロトタイピングおよびテストに使用することを目的としています。
+
 ### HoloLens 2 開発エディションはどこで購入できますか? 
 
 HoloLens 2 の開発エディションは、Microsoft Store でのみ販売されています。  
 
 ### HoloLens 2 開発エディションを返すことはできますか?  
 
-いいえ、そうではありません。
+すべての売上は最終版であり、HoloLens 2 開発エディションでは利用可能な払戻はありません。
 
 ### Developer エディションには、HoloLens 2 とは異なるハードウェア要件がありますか?
 
