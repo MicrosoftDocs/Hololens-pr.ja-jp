@@ -12,6 +12,8 @@
 ### [HoloLens 2 クリーニング: よく寄せられる質問](hololens2-maintenance.md)
 ### [HoloLens 2 でサポートされる言語](hololens2-language-support.md)
 ### [HoloLens 2 の操作方法](hololens2-basic-usage.md)
+### [HoloLens 開発エディションに関する FAQ](hololens2-development-edition-faq.md)
+
 
 ## HoloLens (第 1 世代) の概要
 ### [HoloLens (第1世代) のハードウェア](hololens1-hardware.md)
@@ -108,6 +110,7 @@
 ## [Microsoft HoloLens の Insider Preview](hololens-insider.md)
 ### [グローバルに割り当てられたアクセス-キオスク](hololens-global-assigned-access-kiosk.md)
 ### [HoloLens のページ設定 URI](settings-uri-list.md)
+### [アプリ インストーラー](app-deploy-app-installer.md)
 
 ## [HoloLens (第1世代) のリリース ノート](hololens1-release-notes.md)
 # [ご意見ご感想をお寄せください](hololens-feedback.md)
