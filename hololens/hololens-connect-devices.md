@@ -13,14 +13,17 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fef69ee4cd148b82721472436da8dfd627f86ff1
-ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
+ms.openlocfilehash: 0a2bda0c0beb1d8dd42281ecb016f21c08cfdc1f
+ms.sourcegitcommit: 17d55772e03a870a9db2fb792d429817626b9579
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881340"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "11155393"
 ---
 # Bluetooth および USB-C デバイスに接続する
+
+> [!NOTE]
+> 外付けマイクは使用できません。 HoloLens 2 は、内蔵の[マイクロフォン アレイ](hololens2-hardware.md#audio-and-speech)を使用します。
 
 ## Bluetooth デバイスをペアリングする
 
@@ -29,9 +32,6 @@ HoloLens 2 は、次のクラスの Bluetooth デバイスをサポートしま�
 - マウス
 - キーボード
 - Bluetooth オーディオ出力 (A2DP) デバイス
-
-> [!NOTE]
-> 外付けマイクは使用できません。 HoloLens 2 は、内蔵の[マイクロフォン アレイ](hololens2-hardware.md#audio-and-speech)を使用します。
 
 HoloLens （第１世代） は、次のクラスの Bluetooth デバイスをサポートします。
 
