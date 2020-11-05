@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c411811376d34b4399db76c76364cd1254910c4
-ms.sourcegitcommit: a59ce1cf68785c8e08c5ea94046ba04291ee1a55
+ms.openlocfilehash: 8777c64b4d4ca08bf3b103d7d92bbb99d6978bdc
+ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094975"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154198"
 ---
 # グローバルに割り当てられたアクセス-キオスク
 
@@ -64,3 +64,14 @@ ms.locfileid: "11094975"
 
  :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
  
+## 他のグローバルに割り当てられたアクセスの例
+
+これはグローバルに割り当てられたアクセス キオスクです。いずれかのユーザーがサインインすると、設定アプリ、フィードバック Hub、および Microsoft Edge を含むマルチアプリ キオスクが表示されます。
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access.xml":::
+
+これは、デバイスの所有者を除外するグローバルに割り当てられたアクセス キオスクです。他の AAD ユーザーがサインインすると、その他の AAD ユーザーにサインインすると、設定アプリ、フィードバック Hub、および Microsoft Edge を含むマルチアプリ キオスクができます。 このキオスクには、ゲストのアカウントに対するセカンダリキオスク構成も含まれます。これは、ロック画面で誰でもサインイン可能です。 ユーザーがゲストのアカウントにサインインすると、フィードバック Hub アプリのみを含むマルチアプリ キオスクが表示されます。
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access-visitor-exclude.xml":::
+
+
