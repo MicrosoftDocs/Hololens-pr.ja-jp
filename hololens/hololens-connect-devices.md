@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a2bda0c0beb1d8dd42281ecb016f21c08cfdc1f
-ms.sourcegitcommit: 17d55772e03a870a9db2fb792d429817626b9579
+ms.openlocfilehash: 2f2de4d776a0fdb99555687a96719d111ffb6460
+ms.sourcegitcommit: 8bf8e9196c4ea89297f210b5c1d41b31f9edd407
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2020
-ms.locfileid: "11155393"
+ms.locfileid: "11156294"
 ---
 # Bluetooth および USB-C デバイスに接続する
 
@@ -66,6 +66,14 @@ HoloLens （第１世代） は、次のクラスの Bluetooth デバイスを�
    
 1. ペアリング画面で、**[クリッカー]** > **[ペアリング]** を選択します。
 
+## Bluetooth を無効にする
+
+この手順を実行すると、Bluetooth 無線の RF コンポーネントの電源がオフになり、Microsoft HoloLens の Bluetooth 機能がすべて無効になります。
+
+1. ブルーム ジェスチャー (HoloLens (第１世代)) またはスタート ジェスチャー (HoloLens 2) を使用して **[スタート]** に移動し、**[設定]**  > **[デバイス]** を選択します。
+
+1. **Bluetooth** のスライダー スイッチを **[オフ]** の位置に移動します。
+
 ## HoloLens 2: USB-C デバイスに接続する
 
 HoloLens 2 は、次のクラスの USB-C デバイスをサポートします。
@@ -95,11 +103,3 @@ Miracast を使うには、次の手順を実行します。
 1. 表示されたデバイスの一覧で、使用可能なデバイスを選択します。
 
 1. ペアリングを完了させてプロジェクションを開始します。
-
-## Bluetooth を無効にする
-
-この手順を実行すると、Bluetooth 無線の RF コンポーネントの電源がオフになり、Microsoft HoloLens の Bluetooth 機能がすべて無効になります。
-
-1. ブルーム ジェスチャー (HoloLens (第１世代)) またはスタート ジェスチャー (HoloLens 2) を使用して **[スタート]** に移動し、**[設定]**  > **[デバイス]** を選択します。
-
-1. **Bluetooth** のスライダー スイッチを **[オフ]** の位置に移動します。
