@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c4c4b533538ab7998f8438d7cc0c2f3d88143ec6
-ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
+ms.openlocfilehash: b4730029755c71cab5dc00b37ac69cd6ed54be58
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154187"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162970"
 ---
 # HoloLens を Kiosk としてセットアップする
 
@@ -445,8 +445,59 @@ Windows Device Portal を使用してキオスクモードを設定するには�
 
 ## 詳細情報
 
-プロビジョニングパッケージを使用して、キオスクを構成する方法をご覧ください。  
+### プロビジョニングパッケージを使用して、キオスクを構成する方法をご覧ください。  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+
+### グローバル割り当てアクセス–キオスクモード
+- システムレベルでキオスクモードに適用される新しいキオスクメソッドを有効にすることで、キオスク用の Id 管理を削減しました。
+
+この新機能により、IT 管理者は、システムレベルで適用可能な複数のアプリキオスクモード用に HoloLens 2 デバイスを構成できます。また、システム上の id とのアフィニティはありません。また、デバイスにサインインしたすべてのユーザーに適用されます。 この新機能の詳細について [は、こちらをご覧](hololens-global-assigned-access-kiosk.md)ください。
+
+### 複数アプリのキオスクモードでのアプリケーションの自動起動 
+- アプリの自動起動によるフォーカスエクスペリエンス。キオスクモードで選択された UI とアプリの選択範囲をさらに増やしています。
+
+複数のアプリのキオスクモードにのみ適用され、[割り当て済みのアクセス構成] の下の強調表示された属性を使用して、1つのアプリのみを自動起動に指定できます。 
+
+ユーザーがサインインすると、アプリケーションが自動的に起動します。 
+
+```xml
+<AllowedApps>                     
+      <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+</AllowedApps>
+```
+
+
+### 障害処理のためのキオスクモードの動作の変更
+- キオスクモードのエラーで利用可能なアプリを除去することで、より安全なキオスクモードを提供します。 
+
+「キオスクモードの適用時にエラーが発生しました」では、[スタート] メニューのすべてのアプリケーションを表示するために使用されていました。 この時点では、エラーが発生した場合、Windows ホログラフィックバージョン20Hh2 では、[スタート] メニューに次のようなアプリは表示されません。 
+
+![キオスクモードで失敗したときにどのように表示されるかを示した画像。](images/hololens-kiosk-failure-behavior.png )
+
+### オフラインキオスクの AAD グループメンバーシップをキャッシュする
+- 有効になっているオフラインキオスクは、最大60日間の AAD グループで使用できます。
+
+このポリシーは、サインインしたユーザーの AAD グループを対象とした割り当て済みのアクセス構成に対して、AAD グループメンバーシップキャッシュを使用できる日数を管理します。 このポリシー値が0より大きい値に設定された場合は、キャッシュが使用されます。  
+
+名前: AADGroupMembershipCacheValidityInDays URI 値:./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+
+最小-0 日  
+最大60日 
+
+このポリシーを正しく使用するための手順: 
+1. キオスクターゲットの AAD グループ用のデバイス構成プロファイルを作成し、それを HoloLens デバイスに割り当てます。 
+1. このポリシーの値を必要な日数 (> 0) に設定し、それを HoloLens デバイスに割り当てる、カスタム OMA URI ベースのデバイス構成を作成します。 
+    1. URI 値は、/Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays のように、OMA-URI のテキストボックスに入力する必要があります。
+    1. 指定できる値は、最小値と最大値の間で指定できます。
+1. HoloLens デバイスを登録し、両方の構成がデバイスに適用されることを確認します。 
+1. AAD ユーザー1のサインインを許可するインターネットが利用可能な場合、ユーザーがサインインして AAD グループメンバーシップが正常に確認されると、キャッシュが作成されます。 
+1. この時点で、AAD user 1 は HoloLens をオフラインにして、ポリシー値が X 日で許可されている限り、キオスクモードで使用することができます。 
+1. 手順4と5は、他の AAD ユーザー N に対して繰り返すことができます。重要なポイントは、どの AAD ユーザーもインターネット経由でデバイスにサインインする必要があります。そのため、少なくとも1回は、そのユーザーがキオスクの構成の対象となる AAD グループのメンバーであることを確認できます。 
+ 
+> [!NOTE]
+> AAD ユーザーに対して手順4を実行するまで、"接続されていない" 環境で説明した失敗の動作が発生します。 
+
 
 ## HoloLens 用 XML Kiosk コードサンプル
 

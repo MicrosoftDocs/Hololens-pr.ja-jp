@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4da70e73cd5949c77bc77a73f57f788ed51eff90
-ms.sourcegitcommit: 973b0e71ebceeb2c614aea3dd3a1fbb90d7daed9
+ms.openlocfilehash: 452164caaad09f2caecf7c4a51cda6242d805d7f
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100272"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163115"
 ---
 # Mixed Reality の写真とビデオを作成する
 
@@ -155,8 +155,18 @@ Mixed reality の写真やビデオをキャプチャすると、プレビュー
 ## Mixed reality キャプチャの制限事項
 
 - Mixed reality キャプチャを使う場合、HoloLens のフレームレートは 30 Hz に半減します。
-- ビデオの最大文字数は5分です。
 - 写真/ビデオカメラが別のアプリケーションで既に使用されている場合、ライブストリーミング中、またはシステムリソースが少ない場合は、写真やビデオの解像度が低くなることがあります。
+
+### レコーディングの最大長
+
+HoloLens 2 デバイスでは、Windows ホログラフィックの前に、デバイスに記録されているバージョン20H2 ビデオは最大5分に制限されていました。
+
+お客様からのフィードバックのため、「 [mixed reality キャプチャ](holographic-photos-and-videos.md)」の録音時間が延長されました。 Mixed reality キャプチャは既定で5分に制限されることはありませんが、使用可能なディスク領域に基づいて、最大レコーディング長が計算されます。 デバイスは、ディスクの空き領域の最大80% に基づいて、利用可能なディスク領域に基づいて、最大ビデオ録画時間を推定します。
+
+> [!NOTE]
+> HoloLens では、次のいずれかが発生した場合に、既定のビデオ録画長 (5 分) が使用されます。
+> - 予想される最大記録期間は、既定の5分よりも小さくなっています。
+> - 使用可能なディスク領域は、合計ディスク領域の20% 未満です。
 
 ## 既定のファイル形式と解像度
 

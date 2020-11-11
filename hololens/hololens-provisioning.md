@@ -10,18 +10,18 @@ ms.custom:
 - CI 115190
 - CSSTroubleshooting
 ms.localizationpriority: medium
-ms.date: 03/10/2020
+ms.date: 10/13/2020
 ms.reviewer: Teresa-Motiv
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c10f07a6caeae6f2e8ace41d345c3ad11901621a
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: f6b715a6a43a403ec56119188db0121e0731af37
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052646"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162989"
 ---
 # プロビジョニングパッケージを使用して HoloLens を構成する
 
@@ -46,7 +46,7 @@ HoloLens ウィザードでは、プロビジョニングパッケージで次�
     > これは、HoloLens 第1世代のデバイスに対してのみ使用する必要があります。 プロビジョニングパッケージの設定は、プロビジョニングパッケージに Windows ホログラフィック for Business のエディションアップグレードライセンスが含まれている場合、または [デバイスが既に Windows ホログラフィック For business にアップグレードされて](hololens1-upgrade-enterprise.md)いる場合にのみ適用されます。
 
 - HoloLens の first experience (OOBE) を構成する
-- Wi-fi ネットワークを構成する
+- Wi-Fi ネットワークを構成する
 - Azure Active Directory にデバイスを登録するか、ローカルアカウントを作成する
 - 証明書を追加する
 - 開発者モードを有効にする
@@ -88,12 +88,12 @@ Windows 構成デザイナー ツールを使用して、プロビジョニン�
 ### 設定の構成
 
 <table>
-<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>HoloLens エディションをアップグレードするエンタープライズライセンスファイルを参照して選びます。</br></br><strong>また、[はい] </strong> または [ <strong> いいえ] </strong> を切り替えて、最初のエクスペリエンスの一部を非表示にすることもできます。</br></br>Wi-fi ネットワークに接続しなくてもデバイスをセットアップするには、 <strong> [wi-fi のセットアップ </strong> をスキップします] をオンに切り替え <strong> </strong> ます。</br></br>デバイスが使用される地域とタイムゾーンを選択します。 </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>このセクションでは、デバイスが自動的に接続する Wi-fi ワイヤレスネットワークの詳細を入力できます。 これを行うには、[ <strong> オン] を選び </strong> 、SSID、ネットワーク <strong> の種類 ([オープン] </strong> または [ <strong> wpa2-パーソナル] </strong> )、および [ <strong> </strong> ワイヤレスネットワークのパスワード] (wpa2-個人用) を入力します。</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>HoloLens エディションをアップグレードするエンタープライズライセンスファイルを参照して選びます。</br></br><strong>また、[はい] </strong> または [ <strong> いいえ] </strong> を切り替えて、最初のエクスペリエンスの一部を非表示にすることもできます。</br></br>Wi-Fi ネットワークに接続する必要なくデバイスをセットアップするには、 <strong> [スキップ Wi-Fi セットアップ] </strong> を <strong> 切り替え </strong> ます。</br></br>デバイスが使用される地域とタイムゾーンを選択します。 </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>このセクションでは、デバイスが自動的に接続する Wi-Fi ワイヤレスネットワークの詳細を入力することができます。 これを行うには、[ <strong> オン] を選び </strong> 、SSID、ネットワーク <strong> の種類 ([オープン] </strong> または [ <strong> wpa2-パーソナル] </strong> )、および [ <strong> </strong> ワイヤレスネットワークのパスワード] (wpa2-個人用) を入力します。</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>Azure Active Directory にデバイスを登録するか、デバイスにローカルアカウントを作成することができます。</br></br>Windows 構成デザイナー ウィザードを使って Azure AD の登録を一括で構成する前に、<a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">組織での Azure AD 参加の設定</a>を行います。 Azure AD テナントの <strong>[ユーザーあたりのデバイスの最大数]</strong> の設定は、ウィザードで利用できる一括トークンを使用できる回数を決定します。 Azure AD にデバイスを登録するには、そのオプションを選択して、ウィザードを使って取得する一括トークンのフレンドリ名を入力します。 トークンの有効期限を設定します (最大、トークンの取得日から 30 日間)。 [ <strong> バルクトークンの取得] を選び </strong> ます。 <strong>[&#39;s にサインインします </strong> ] ウィンドウで、Azure AD にデバイスを参加するためのアクセス許可を持つアカウントを入力し、その後、パスワードを入力します。 [同意する] を選択し <strong> </strong> て、Windows 構成デザイナーに必要なアクセス許可を付与します。 </br></br>ローカルアカウントを作成するには、このオプションを選択し、ユーザー名とパスワードを入力します。 </br></br><strong>重要:</strong> <br />(Windows 10 バージョン1607のみ)プロビジョニングパッケージでローカルアカウントを作成する場合は、[設定] アプリで42日ごとにパスワードを変更する必要があり <strong> </strong> ます。 その期間内にパスワードを変更しない場合、アカウントがロックされてサインインできなくなる可能性があります。  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="four"></a><img src="images/four.png" alt="step four"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>証明書を使ってデバイスをプロビジョニングするには、<strong>[証明書の追加]</strong> をクリックします。 証明書の名前を入力し、使用する証明書を表示して選択します。</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
 <tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br><strong> </strong> <strong> </strong> HoloLens で開発者モードを有効にするには、[はい] または [いいえ] をオンにします。 <a href="https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">開発者モードの詳細をご覧ください。</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finish"/></br></br>プロビジョニングパッケージを保護するためにパスワードを設定しないでください。 プロビジョニングパッケージがパスワードで保護されている場合、HoloLens デバイスのプロビジョニングは失敗します。</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>プロビジョニングパッケージを保護するためにパスワードを設定しないでください。 プロビジョニングパッケージがパスワードで保護されている場合、HoloLens デバイスのプロビジョニングは失敗します。</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
 完了したら、[ **作成**] を選択します。 これは数秒で終わります。 パッケージがビルドされると、ページの下部に、パッケージの格納場所がハイパーリンクで表示されます。
@@ -152,7 +152,13 @@ Windows 構成デザイナー ツールを使用して、プロビジョニン�
 
 ## セットアップ中に HoloLens にプロビジョニングパッケージを適用する
 
-HoloLens 2 デバイス (ビルド [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) 以降) では、USB ドライブを使用してプロビジョニングパッケージを適用することができます。 ファイルを USB ドライブのルートにコピーします。 プロビジョニングパッケージは、USB ドライブのルートにある場合にのみ適用されます。 複数のプロビジョニングパッケージが順番に適用されます。
+Windows ホログラフィック、バージョン2004、またはビルド [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) 以降の HoloLens 2 デバイスでは、USB ドライブを使用してプロビジョニングパッケージを適用することができます。 ファイルを USB ドライブのルートにコピーします。 プロビジョニングパッケージは、USB ドライブのルートにある場合にのみ適用されます。 複数のプロビジョニングパッケージが順番に適用されます。
+
+[Windows ホログラフィックバージョン 20Hh2](hololens-release-notes.md#windows-holographic-version-20h2)以降の HoloLens 2 デバイスには、このプロセスを自動化するための合理化と簡素化のための新機能が含まれています。 次のセクションを確認してください。
+
+- [USB からの自動起動プロビジョニング](hololens-provisioning.md#auto-launch-provisioning-from-usb)
+- [OOBE でプロビジョニングパッケージを自動確認する](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
+- [UI を使用しない自動プロビジョニング](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
 1. USB ケーブルを使用して、デバイスを PC (上記で説明した HoloLens 2 の USB ドライブ) に接続してから、デバイスを起動します。 OOBE の **最初の押さモーメント** ページ以降は続行しないでください。   
     - HoloLens (第1世代) では、このページには青色のボックスが含まれています。 
@@ -172,6 +178,39 @@ HoloLens 2 デバイス (ビルド [19041.1103](hololens-release-notes.md#window
 
 > [!NOTE]
 > 2016年8月より前にデバイスを購入した場合は、Microsoft アカウントを使用してデバイスにサインインし、最新のオペレーティングシステム更新プログラムを入手して、プロビジョニングパッケージを適用するためにオペレーティングシステムをリセットする必要があります。
+
+### USB からの自動起動プロビジョニング
+
+- プロビジョニングパッケージ付きの USB ドライブが OOBE 中に使用されるときに、ユーザーの操作が少なくなる自動プロセス。
+
+このリリースを使用する前に、OOBE 中にボタンの組み合わせを使ってプロビジョニング画面を手動で起動する必要がありました。 これで、ユーザーは USB ストレージドライブ上のプロビジョニングパッケージを使用して、ボタンの組み合わせをスキップできます。 
+
+1. OOBE の最初の押さモーメントの間にプロビジョニングパッケージを使って USB ドライブを接続する
+1. デバイスをプロビジョニングする準備ができたら、自動的に [プロビジョニング] ページでプロンプトが開きます。 
+
+注: デバイスの起動中に USB ドライブが電源に接続されている場合は、OOBE によって既存の USB ストレージデバイスが列挙されます。また、接続されている追加のデバイスを監視することもできます。
+
+OOBE 中のプロビジョニングパッケージの適用の詳細について [は、こちら](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)を参照してください。
+
+### OOBE でプロビジョニングパッケージを自動確認する
+- ユーザー操作が少なくなるように自動化されたプロセス。プロビジョニングパッケージページが表示されると、一覧表示されているすべてのパッケージが自動的に適用されます。
+
+プロビジョニングのメイン画面が表示されると、すべてのプロビジョニングパッケージの適用が自動的に開始されるまで、OOBE は10秒後にカウントされます。 ユーザーは、予期したパッケージを確認した後、この10秒以内に確認または取り消しを行うことができます。
+
+### UI を使用しない自動プロビジョニング
+- プロビジョニングのためのデバイス操作を減らした自動プロセス。 
+
+USB デバイスからのプロビジョニングの自動起動とプロビジョニングパッケージの自動確認を組み合わせることで、ユーザーはデバイスの UI を使わずに、またはデバイスを装着しなくても、HoloLens 2 デバイスを自動的にプロビジョニングできます。 複数のデバイスに同じ USB ドライブとプロビジョニングパッケージを引き続き使用することができます。 これは、同じ領域に複数のデバイスを一度に展開する場合に便利です。 
+
+1. [Windows 構成デザイナー](https://www.microsoft.com/store/productId/9NBLGGH4TX22)を使用して[プロビジョニングパッケージを作成](hololens-provisioning.md)します。 
+1. パッケージを USB ストレージドライブにコピーします。
+1. [HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) を [19041.1361 以降のビルド](https://aka.ms/hololens2previewdownload)にフラッシュします。 
+1. [アドバンスト回復コンパニオン](https://www.microsoft.com/store/productId/9P74Z35SFRS8)のフラッシュが完了すると、USB デバイスのプラグが切断されます。 
+1. USB ドライブをデバイスに接続します。
+1. HoloLens 2 デバイスが OOBE にブートすると、USB ドライブのプロビジョニングパッケージが自動的に検出され、プロビジョニングページが起動します。
+1. 10秒後、デバイスはプロビジョニングパッケージを自動的に適用します。 
+
+これでデバイスが構成され、プロビジョニングが成功したことを表示します。
 
 ## セットアップ後に HoloLens にプロビジョニングパッケージを適用する
 

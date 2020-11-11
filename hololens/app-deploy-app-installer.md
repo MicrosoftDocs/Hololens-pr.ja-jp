@@ -5,7 +5,7 @@ keywords: アプリ管理、アプリ、hololens、アプリインストーラ�
 author: evmill
 ms.author: v-evmill
 ms.reviewer: qizho
-ms.date: 10/26/2020
+ms.date: 11/10/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,17 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 415733bb2809b7ae2808edc097423f8928910c57
-ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
+ms.openlocfilehash: eba1fd00215ef197f9e32949e958bdbded089d6d
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "11150918"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162889"
 ---
 # アプリインストーラーを使用して HoloLens 2 にアプリをインストールする
 
+
+Windows ホログラフィック、バージョン20H2 の更新プログラムをインストールした後、すぐにアプリのインストーラー機能が提供されます。 お客様が HoloLens 2 デバイスで **シームレスにアプリケーションをインストールできるように、新しい機能 (アプリのインストーラー) を追加** しています。 この機能は、 **非管理対象デバイスでは既定でオンに**なります。 この時点では、企業が中断されないように、アプリインストーラーを **管理対象デバイスで利用できなく** なります。  
+
 > [!IMPORTANT]
-> この機能は、現時点では、Windows Insider ビルド 19041.1377 + でのみ avalible になっています。 [詳細については、「Windows Insider ビルドに登録する」を参照して](hololens-insider.md)ください。
+> この機能は現在、Windows Insider ビルドでのみ利用可能です。  [詳細については、「Windows Insider ビルドに登録する」を参照して](hololens-insider.md)ください。
 
 Windows Insider のリリースでは、新しい機能 (アプリのインストーラー) を追加して、HoloLens 2 デバイスに **よりシームレスにアプリケーションをインストールできるように** しています。 この機能は、 **非管理対象デバイスでは既定でオンに**なります。 この時点では、企業が中断されないように、アプリインストーラーを **管理対象デバイスで利用できなく** なります。  
 
@@ -38,8 +41,7 @@ Windows Insider のリリースでは、新しい機能 (アプリのインス�
 ## 要件
 
 ### デバイスの場合: 
-> [!NOTE]
-> この機能は、現時点では、Windows Insider ビルド 19041.1377 + でのみ avalible になっています。 [詳細については、「Windows Insider ビルドに登録する」を参照して](hololens-insider.md)ください。
+これは、現在 HoloLens 2 デバイス用の [Windows Insider ビルド](hololens-insider.md) で avalible されています。 この方法を使用しているデバイスが [更新](hololens-update-hololens.md)されていることを確認してください。 
 
 ### アプリの場合: 
 アプリのインストーラーでストアからの依存関係が使用されるため、アプリのソリューション構成は **Master** または **Release** のいずれかである必要があります。 詳細については、「 [アプリパッケージの作成](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)」を参照してください。
@@ -53,7 +55,7 @@ Windows Insider のリリースでは、新しい機能 (アプリのインス�
 **証明書の展開方法を選択します。** 
 - [プロビジョニングパッケージ](hololens-provisioning.md) はローカルデバイスに適用できます。
 - MDM を使って、 [デバイスの構成に証明書を適用](https://docs.microsoft.com/mem/intune/protect/certificates-configure)することができます。
-- デバイス [証明書マネージャー](hololens-insider.md#certificate-manager)を使用します。 
+- デバイス [証明書マネージャー](certificate-manager.md)を使用します。 
 
 ## インストール方法
 

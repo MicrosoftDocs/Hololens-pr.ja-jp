@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e1302a3d482648b1ebbf7fee71ceec3ca4261d23
-ms.sourcegitcommit: 87d503434339fc6c9b41aa9473e35ddfde845cac
+ms.openlocfilehash: b0a068bb50d033544b4bf44100d005dfedc1d94d
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120148"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162941"
 ---
 # HoloLens デバイスから診断情報を収集する
 
@@ -123,9 +123,17 @@ IT 管理者は、DiagnosticLog CSP を使用して、次のことを管理す�
 これは、USB ケーブルを使って PC に接続した後、デバイスがエクスプローラーに表示される場合に有効です。 
 
 > [!NOTE]
-> オフライン診断は、ユーザーが OOBE または [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) ポリシー値が full に設定されている場合にのみ有効になります (Hololens では基本は既定値です)。 
+> オフライン診断の生成と管理は、OS のバージョンによって異なります。 これは、以前はテレメトリ設定によって制御されていましたが、ポリシーによって直接制御されるようになりました。 
 
-デバイスがロックされていると、ログは表示されません。 オフライン診断機能を無効にするには、[**設定] アプリ >** の [プライバシー] ページに移動し、[**診断データ**] で [**基本**] を選択します。 オフライン診断がテレメトリ設定に依存するビルドでは、ログが収集されるかどうかにのみ影響します。 収集されるファイルには影響しません。
+[Windows ホログラフィックの前の動作、Verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2):
+ - オフライン診断は、ユーザーが OOBE または [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) ポリシー値が full に設定されている場合にのみ有効になります (HoloLens では基本は既定値です)。 
+- オフライン診断機能を無効にするには、[**設定] アプリ >** の [プライバシー] ページに移動し、[**診断データ**] で [**基本**] を選択します。 オフライン診断がテレメトリ設定に依存するビルドでは、ログが収集されるかどうかにのみ影響します。 収集されるファイルには影響しません。
+- デバイスがロックされていると、ログは表示されません。
+
+ビルド [Windows ホログラフィック、Verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 以降:
+- フォールバック診断が有効になっている場合は、対応する設定の[MixedReality/FallbackDiagnostics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)で特定の MDM ポリシーによって制御されます。
+- デバイスがロックされていると、ログは表示されません。
+
 
 詳細については、このビデオをご覧ください。 
 
