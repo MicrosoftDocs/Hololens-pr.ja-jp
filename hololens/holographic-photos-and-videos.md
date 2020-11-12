@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 452164caaad09f2caecf7c4a51cda6242d805d7f
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: df67fe8c5b29eea317a0d00a1ebdcf7331fb0936
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163115"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165007"
 ---
 # Mixed Reality の写真とビデオを作成する
 
@@ -140,7 +140,7 @@ HoloLens に接続された PC で mixed reality の写真やビデオを表示�
 ヒント: 
 - ファイルが表示されない場合は、HoloLens にサインインしてデータへのアクセスを有効にしていることを確認してください。
 - [ドキュメント] フォルダーの [診断ファイル](hololens-diagnostic-logs.md#offline-diagnostics) など、他のフォルダーにある他のファイルを取得することができます。
-- PC のエクスプローラーから、[デバイスのプロパティ] を選択して、Windows ホログラフィック OS のバージョン番号 (ファームウェアバージョン) とデバイスのシリアル番号とバッテリの割合を確認できます。
+- PC のエクスプローラーから、[デバイスのプロパティ] を選択して、Windows ホログラフィック OS のバージョン番号 (ファームウェアバージョン)、デバイスのシリアル番号、バッテリの割合を確認できます。
 - 組織で MDM を使用して [接続/AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) を無効にしている場合、デバイスに接続することはできません。
 
 ## Mixed reality の写真とビデオを共有する

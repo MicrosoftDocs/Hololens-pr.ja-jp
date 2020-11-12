@@ -8,23 +8,23 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/13/2020
+ms.date: 11/10/2020
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0825e3fd2d0a4e6328eaa617e4233639f481e8cb
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: df8d6e2c00bd8ff8507be4a2fd58c773d8833c11
+ms.sourcegitcommit: 20ff249e3570c74f62cdf6339c8be76c401d9f4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163154"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165970"
 ---
 # HoloLens 2 のリリース ノート
 
-HoloLens デバイスで生産性を向上させるには、引き続き機能、バグ、およびセキュリティの更新プログラムをリリースします。 このページでは、HoloLens の各月の新機能を確認できます。 最新の HoloLens 2 フルフラッシュ更新プログラム (FFU) を取得するには、 [アドバンスト回復コンパニオンでデバイスをフラッシュ](hololens-recovery.md#clean-reflash-the-device)するには、 [こちらからダウンロードして](https://aka.ms/hololens2download)ください。 ダウンロードは最新の状態に維持され、最新の一般的なビルドが提供されます。
+HoloLens デバイスで生産性を向上させるには、引き続き機能、バグ、およびセキュリティの更新プログラムをリリースします。 このページでは、HoloLens の各月の新機能を確認できます。 最新の HoloLens 2 の更新プログラムを取得するには、 [更新プログラムを確認して](hololens-update-hololens.md#check-for-updates-and-manually-update) 、完全なフラッシュ更新プログラム (ffu) を手動で更新または取得して、 [アドバンスト回復コンパニオンでデバイスをフラッシュ](hololens-recovery.md#clean-reflash-the-device)するか、 [こちらからダウンロードして](https://aka.ms/hololens2download)ください。 ダウンロードは最新の状態に維持され、最新の一般的なビルドが提供されます。
 
 >[!NOTE]
 > HoloLens エミュレーターのリリースノートを読むには、 [アーカイブにアクセスして](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)ください。
@@ -40,13 +40,13 @@ Windows ホログラフィック、バージョン20H2 が利用できるよう�
 
 | 機能                                              | 説明                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [オートアイポジションのサポート](hololens-release-notes.md#auto-eye-position-support) | ユーザーがアクティブな調整を行っていない状態で、目の位置を積極的に計算します。   |
+| [視線の自動調整サポート](hololens-release-notes.md#auto-eye-position-support) | ユーザーがアイトラッキングの調整を通過することなく、目の位置を積極的に計算します。   |
 | [証明書マネージャー](hololens-release-notes.md#certificate-manager)   | 新しい簡単な方法で、設定アプリから証明書をインストールしたり、削除したりすることができます。     |
 | [USB からの自動起動プロビジョニング](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | USB ドライブでパッケージをプロビジョニングすると、OOBE のプロビジョニングページが自動的に表示されます。                                                         |
 | [OOBE でプロビジョニングパッケージを自動確認する](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | プロビジョニングパッケージは、プロビジョニングページから OOBE 中に自動的に適用されます。                                                         |
 | [UI を使用しない自動プロビジョニング](hololens-release-notes.md#automatic-provisioning-without-using-ui) | プロビジョニング自動起動と自動確認を組み合わせる方法。 |
 | [Wi-Fi 接続で自動操縦を使用する](hololens-release-notes.md#using-autopilot-with-wi-fi-connection) | イーサネットアダプターを必要とせずに、デバイス Wi-Fi から自動操縦を使用します。 |
-| [Tenantlockdown CSP と自動操縦](hololens-release-notes.md#tenantlockdown-csp-and-autopilot)                     | テナントの登録後、ポリシーが適用されると、デバイスがリセットまたは再アップデートされるたびに、そのテナントにのみデバイスを登録できます。 |
+| [Tenantlockdown CSP と Autopilot](hololens-release-notes.md#tenantlockdown-csp-and-autopilot)                     | テナントの登録後、ポリシーが適用されると、デバイスがリセットまたは再アップデートされるたびに、そのテナントにのみデバイスを登録できます。 |
 | [グローバルに割り当てられた](hololens-release-notes.md#global-assigned-access--kiosk-mode)                               | 複数のアプリキオスクモードの新しい構成方法により、システムレベルでキオスクが適用され、すべてに適用されます。                  |
 | [マルチアプリキオスクでアプリを自動起動する](hololens-release-notes.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                | 複数アプリのキオスクモードにサインインしたときに自動的に起動するようにアプリケーションを設定します。                                                        |
 | [障害処理のためのキオスクモードの動作の変更](hololens-release-notes.md#kiosk-mode-behavior-changes-for-handling-of-failures) | キオスクモードのエラーにより、フォールバックが制限されるようになりました。                                                                                                |
@@ -60,24 +60,24 @@ Windows ホログラフィック、バージョン20H2 が利用できるよう�
 | [レコーディングの長さの増加](hololens-release-notes.md#recording-length-increased) | MRC レコーディングは、5分間では利用できなくなりました。 |
 | [更新プログラムの機能強化と修正](hololens-release-notes.md#improvements-and-fixes-in-the-update)                 | 更新プログラムのその他の解決策。   |
 
-### オートアイポジションのサポート
+### 視線の自動調整サポート
 
-- 自動視線の表示品質を向上させるために、オートアイポジションの精度を高めることができるようになりました。 
+HoloLens 2 では、視線により、正確なホログラムの位置決め、快適な表示エクスペリエンス、および表示品質の向上が可能になります。 アイポジションは、アイトラッキング計算の一部として内部的に計算されます。 ただし、そのためには、各ユーザーが目に目を通した入力を必要としない場合でも、各ユーザーがアイトラッキングの調整を行う必要があります。
 
-HoloLens 2 では、目の位置によって正確なホログラムの配置が可能になり、表示品質が向上しました。 目の位置は、目の追跡結果の一部として計算されます。 ただし、そのためには、各ユーザーがアイ見つめ入力を必要としない場合でも、各ユーザーが目のトラッキングの調整を行う必要があります。
+**視線の自動調整 (AEP)** は、ユーザーの目の位置を計算するための操作のない方法でこれらのシナリオを可能にします。 視線の自動調整は、ユーザーがデバイスを装着した瞬間から自動的にバックグラウンドで動作を開始します。 ユーザーが前目のトラッキング調整を持っていない場合は、処理時間が 20-30 秒続いた後に、ユーザーの視点がディスプレイシステムに提供されるようになります。 ユーザー データはデバイスに保持されないため、ユーザーがデバイスを外して装着した場合、またはデバイスが再起動したりスリープ状態から復帰したりすると、このプロセスが繰り返されます。
 
-**オートアイポジション (AEP)** では、これらのシナリオを対話式の方法でユーザーの視点を計算できます。  自動目の位置は、ユーザーがデバイスを配置した瞬間から自動的にバックグラウンドで作業を開始します。 ユーザーが前に目を通したトラッキングの調整を行っていない場合は、処理時間が短いときにユーザーの視点がディスプレイシステムに提供されるようになります。 通常、この処理時間は 20-60 秒以内に行われます。 ユーザーデータはデバイス上で保持されないため、ユーザーが停止し、デバイスを再起動するか、デバイスをスリープ状態に戻した場合は、このプロセスを繰り返します。  
+調整されていないユーザーがデバイスを装着した場合、視線の自動調整機能によるシステム動作の変更がいくつかあります。 このコンテキストでは、uncalibrated ユーザーは、デバイスの目のトラッキング調整プロセスを経ていないユーザーを指します。
 
-Uncalibrated ユーザーがデバイスに配置したときに、オートアイ位置機能によって、システムの動作がいくつか変更されます。 Uncalibrated ユーザーは、以前にデバイスの目のトラッキング調整プロセスを経ていないユーザーを参照しています。
+| アクティブなアプリケーション | 以前の動作 | Windows ホログラフィック、バージョン20H2 更新プログラムの動作 |
+|:-------------------|:-----------------|:-----------------------------------|
+| 非視線対応アプリまたはホログラフィック シェル |アイトラッキング調整プロンプトダイアログが表示されます。 | プロンプトは表示されません。 |
+| 視線対応アプリ | アイトラッキング調整プロンプトダイアログが表示されます。 | アイトラッキング調整プロンプトは、アプリケーションがアイ見つめストリームにアクセスしたときにのみ表示されます。 |
 
-|     アクティブなアプリケーション                           |     以前の動作                                   |     Windows ホログラフィックバージョン20Hh2 以降の動作                                                     |
-|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|     見つめ対応でないアプリまたはホログラフィックシェル    |     アイトラッキング調整のプロンプトが表示されます。    |     プロンプトは表示されません。                                                                                |
-|     宝石対応アプリ                             |     アイトラッキング調整のプロンプトが表示されます。    |     アイトラッキング調整プロンプトは、アプリケーションがアイ見つめストリームにアクセスしたときにのみ表示されます。     |
+ユーザーが非視線対応アプリケーションから視線データにアクセスするアプリケーションに移行すると、調整プロンプトが表示されます。 
 
- ユーザーが、見つめデータにアクセスするアプリケーションから、または見つめ対応のアプリケーションに切り替えた場合、調整のプロンプトが表示されます。 ボックスのエクスペリエンスフローの廃止には変更されません。 
- 
-視力のデータを必要とするエクスペリエンスや、非常に正確なホログラムの配置が必要な場合は、ユーザーがアイトラッキングの調整プロンプトからアイトラッキングの調整を実行するか、[スタート] メニューから設定アプリを起動して、[ **システム > 調整] >** 目の調整 > 実行することをお勧めします。
+その他のすべてのシステム動作は、現在のユーザーがアクティブなアイトラッキングの調整を行っていない場合に似ています。 たとえば、一ききの開始ジェスチャは有効になりません。 初期設定のための既定の操作は変更されません。
+
+視力によるデータまたは非常に正確なホログラムの配置が必要なエクスペリエンスの場合は、ユーザーがアイトラッキングの調整を実行することを uncalibrated することをお勧めします。 [アイトラッキングの調整] プロンプトからアクセスするか、[スタート] メニューから設定アプリを起動して、[ **システム > 調整] >**[目の調整] を選択 > ます。
 
 この情報については、後で [他のキャリブレーション情報](hololens-calibration.md#auto-eye-position-support)を参照してください。 
 
@@ -164,51 +164,51 @@ USB デバイスからのプロビジョニングの自動起動とプロビジ�
 
 これで、OOBE 中に HoloLens 2 を Wifi で接続すると、OOBE はデバイスの自動操縦プロファイルを確認します。 検出された場合は、AAD の参加と登録フローの残りの部分を使用します。 つまり、イーサネットから USB への接続を使用する場合、または USB-C アダプターへの Wi-Fi を使うことは必須ではありませんが、OOBE の開始時に提供された場合は引き続き動作します。 [HoloLens 2 デバイスの自動操縦の](hololens2-autopilot.md)詳細については、こちらを参照してください。
 
-### Tenantlockdown CSP と自動操縦
-- デバイスのリセットまたは reflash を通じても、テナントにデバイスをロックすることで、組織のテナントにデバイスを保持します。 セキュリティを強化するには、プロビジョニング経由でのアカウントの作成を禁止します。 
+### Tenantlockdown CSP と Autopilot
+- デバイスのリセットまたは再フラッシュを行っても、デバイスをテナントにロックすることにより、デバイスを組織のテナントに保持します。 プロビジョニングを介したアカウントの作成を禁止することにより、セキュリティを強化します。 
 
 HoloLens 2 デバイスでは、 [Windows ホログラフィックバージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2)での TENANTLOCKDOWN CSP がサポートされるようになりました。 
 
-[Tenantlockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP は、HoloLens 2 が自動操縦のみを使用して MDM 登録に関連付けられるようにします。 RequireNetworkInOOBE ノードが HoloLens 2 の true または false (初期設定) の値に設定されると、その値は再フラッシュ、OS の更新などのデバイスに残ります。 
+[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP は、HoloLens 2 が Autopilot のみを使用して MDM 登録に関連付けられるようにします。 TenantLockdown CSP の RequireNetworkInOOBE ノードが HoloLens 2 で true または false (最初に設定された) 値に設定されると、その値は、再フラッシュ、OS 更新プログラムなどにもかかわらずデバイスに残ります。 
 
-HoloLens で、RequireNetworkInOOBE ノードが HoloLens 2 で true に設定されると、OOBE は、ネットワーク接続後に自動操縦プロファイルが正常にダウンロードされ、適用されるまで無期限に待機します。 
+HoloLens 2 で TenantLockdown CSP の RequireNetworkInOOBE ノードが true に設定されると、OOBE は、ネットワーク接続後、Autopilot プロファイルが正常にダウンロードおよび適用されるまで無期限に待機します。 
 
-HoloLens での RequireNetworkInOOBE ノードが HoloLens 2 で true に設定されると、次の操作は OOBE で許可されません。 
-- ランタイムプロビジョニングを使用したローカルユーザーの作成 
-- ランタイムプロビジョニングによる AAD 参加操作の実行 
+HoloLens 2 で TenantLockdown CSP の RequireNetworkInOOBE ノードが true に設定されると、OOBE では次の操作が許可されなくなります。 
+- ランタイム プロビジョニングを使用したローカル ユーザーの作成 
+- ランタイム プロビジョニングによる AAD 参加操作の実行 
 - OOBE エクスペリエンスでデバイスの所有者を選択する 
 
-#### Intune を使ってこれを設定するにはどうすればよいですか? 
-1. カスタムの OMA URI デバイス構成プロファイルを作成し、次に示すように、RequireNetworkInOOBE ノードに true を指定します。
-OMA-URI 値は/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE である必要があります。
+#### Intune を使用してこれを設定する方法 
+1. 以下に示すように、カスタム OMA URI デバイス構成プロファイルを作成し、RequireNetworkInOOBE ノードに true を指定します。
+OMA-URI 値は ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE である必要があります
 
    > [!div class="mx-imgBorder"]
    > ![OMA-URI によるテナントのロックダウンの設定](images/hololens-tenant-lockdown.png)
 
-1. グループを作成し、デバイス構成プロファイルをそのデバイスグループに割り当てます。 
+1. グループを作成し、デバイス構成プロファイルをそのデバイス グループに割り当てます。 
 
-1. 前の手順で作成したグループの HoloLens 2 デバイスメンバーを、同期をトリガーするように設定します。  
+1. 前の手順で作成したグループの HoloLens 2 デバイス メンバーを作成し、同期をトリガーします。  
 
-デバイス構成が正常に適用されたことを Intune ポータルで確認します。 このデバイスの構成が Hololens 2 デバイスに正常に適用されると、TenantLockdown の効果がアクティブになります。
+Intune ポータルで、デバイス構成が正常に適用されていることを確認します。 このデバイスの構成が HoloLens 2 デバイスに正常に適用されると、TenantLockdown の効果がアクティブになります。
 
-#### Intune を使用して HoloLens 2 で TenantLockdown の RequireNetworkInOOBE を解除する方法 
-1. 上で作成したデバイス構成が以前に割り当てられていたデバイスグループから HoloLens 2 を削除します。 
+#### Intune を使用して HoloLens 2 で TenantLockdown の RequireNetworkInOOBE の設定を解除する方法 
+1. 上で作成したデバイス構成が以前に割り当てられていたデバイス グループから HoloLens 2 を削除します。 
 
-1. 次に示すように、カスタムの OMA URI ベースのデバイス構成プロファイルを作成し、RequireNetworkInOOBE に false を指定します。 OMA-URI 値は/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE である必要があります。
+1. 以下に示すように、カスタム OMA URI ベースのデバイス構成プロファイルを作成し、RequireNetworkInOOBE に false を指定します。 OMA-URI 値は ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE である必要があります
 
    > [!div class="mx-imgBorder"]
-   > ![Intune の OMA URI 経由で RequireNetworkInOOBE を false に設定する画面のスクリーンショット](images/hololens-tenant-lockdown-false.png)
+   > ![Intune の OMA URI を介して RequireNetworkInOOBE を false に設定するスクリーンショット](images/hololens-tenant-lockdown-false.png)
 
-1. グループを作成し、デバイス構成プロファイルをそのデバイスグループに割り当てます。 
+1. グループを作成し、デバイス構成プロファイルをそのデバイス グループに割り当てます。 
 
-1. 前の手順で作成したグループの HoloLens 2 デバイスメンバーを、同期をトリガーするように設定します。
+1. 前の手順で作成したグループの HoloLens 2 デバイス メンバーを作成し、同期をトリガーします。
 
-デバイス構成が正常に適用されたことを Intune ポータルで確認します。 このデバイスの構成が Hololens 2 デバイスに正常に適用されると、TenantLockdown の効果は非アクティブになります。 
+Intune ポータルで、デバイス構成が正常に適用されていることを確認します。 このデバイスの構成が HoloLens 2 デバイスに正常に適用されると、TenantLockdown の効果は非アクティブになります。 
 
-#### TenantLockdown が true に設定された後に、HoloLens で自動操縦プロファイルが割り当てられていない場合は、OOBE 中に何が起こりますか? 
-OOBE は、自動操縦プロファイルがダウンロードされるまで無期限に待機し、次のダイアログが表示されます。 TenantLockdown の効果を削除するには、まず自動操縦のみを使用するようにデバイスを元のテナントに登録する必要があります。前の手順で説明したように、TenantLockdown CSP によって導入された制限は削除されます。 
+#### TenantLockdown が true に設定された後、HoloLens で Autopilot プロファイルが割り当て解除された場合、OOBE 中にどうなりますか? 
+OOBE は、Autopilot プロファイルがダウンロードされるのを無期限に待機し、次のダイアログが表示されます。 TenantLockdown の影響を取り除くには、最初に Autopilot のみを使用してデバイスを元のテナントに登録し、TenantLockdown CSP によって導入された制限を取り除く前に、前の手順で説明したように RequireNetworkInOOBE の設定を解除する必要があります。 
 
-![デバイスでポリシーが適用されている場合のデバイス内表示。](images/hololens-autopilot-lockdown.png)
+![ポリシーがデバイスに適用されるタイミングのデバイス内ビュー。](images/hololens-autopilot-lockdown.png)
 
 この情報は、 [Tenantlockdown CSP と自動操縦](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot)の残りの自動操縦の横にあります。
 
@@ -284,7 +284,7 @@ HoloLens 2 デバイスの管理オプションを強化するための、新し
 
 この2つの新しいポリシーは、Allowaddのパッケージと Allowremoveのパッケージについて、 [一般的なデバイスの制限](hololens-common-device-restrictions.md)に追加されています。
 
-### Hololens 2 の新しい power policies
+### HoloLens 2 の新しい power policies
 - HoloLens を電源ポリシーでスリープまたはロックする場合のその他のオプション。 
 
 新しく追加されたポリシーにより、管理者はアイドルタイムアウトなどの電源状態を制御することができます。 個々のポリシーの詳細を確認するには、ポリシーのリンクをクリックしてください。
