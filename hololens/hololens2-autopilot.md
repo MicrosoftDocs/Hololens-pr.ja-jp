@@ -1,9 +1,9 @@
 ---
 title: Windows Autopilot for HoloLens 2 (プライベート プレビュー)
-description: ''
+description: HoloLens 2 デバイスで Autopilot を設定する方法を説明します。
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 4/10/2020
+ms.date: 10/13/2020
 ms.prod: hololens
 ms.topic: article
 ms.custom:
@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: 6851249ab9ed79e7dcdea6afc853fee66fdddf19
-ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
+ms.openlocfilehash: 5f887d7321c391ea9d67833373b39b3c9feeaf2c
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "11145658"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163097"
 ---
 # Windows Autopilot for HoloLens 2
 
@@ -64,12 +64,20 @@ Windows Autopilot プログラムに HoloLens 2 デバイスをセットアッ�
 > [!IMPORTANT]  
 > HoloLens 2 の Windows Autopilotには、オペレーティングシステム固有の要件があります。 Autopilot は、HoloLens デバイスにプレインストールされている Windows Holographic バージョン 2004 (ビルド 19041.1103 以降) に依存します。 2020 年 9 月下旬までに出荷されたデバイスには、Windows Holographic バージョン 1903 がプレインストールされています。 Autopilot 対応デバイスをいつ出荷できるかについては、販売代理店にお問い合わせください。 プライベート プレビューに参加する場合は、以下の手順と要件を確認してください。
 
+HoloLens OS リリースごとの Autopilot の情報です。
+- Autopilot を使用するには、デバイスに [Windows ホログラフィック バージョン 2004](hololens-release-notes.md#windows-holographic-version-2004) リリース以降がインストールされている必要があります。
+- Wi-Fi を使用して Autopilot を使用するには、デバイスに [Windows ホログラフィック バージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2) リリース以降が必要です。 ただし、これらのビルドでは引き続きイーサネット アダプターを使用できます。 
+- ビルド [Windows ホログラフィック バージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2) では、新しいデバイス管理オプションの [Tenantlockdown CSP と Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot) が有効になっています。  
+
+デバイスのビルド バージョンを確認または更新する場合は、デバイスを Windows 10 PC に接続して、[高度な回復コンパニオン](https://www.microsoft.com/store/productId/9P74Z35SFRS8)を起動してください。 
+
 **Autopilot プレビューを試す場合は、OOBE とプロビジョニング プロセスを開始する前に、HoloLens デバイスが次の要件を満たしていることを確認します:**
 
 - デバイスが Windows Holographic、バージョン 2004 (ビルド19041.1103 以降) であることを確認します。 最新の OS がプレインストールされていない場合は、 [Advanced Recovery コンパニオン (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab)を使用して手動で更新する必要があります。 手順は [ここに](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device) あります。 
-- Windows Autopilot にデバイスを登録する必要があります。 デバイスを登録する方法については、[「4. Windows Autopilot にデバイスを登録する」](#4-register-devices-in-windows-autopilot) を参照してください。 推奨されるパスは、リセラーまたはディストリビューターがデバイスを登録するときに使用します。     
-- 現在のリリースでは、HoloLens をオンにし、Autopilot プロビジョニング プロセスを開始する前に、デバイスをインターネットに接続する必要があります。 有線インターネット接続用の「USB-C to Ethernet」アダプターを使用して、デバイスをイーサネットに接続します。 
-- デバイスは、まだ Azure AD のメンバーではなく、Intune (または別の MDM システム) に登録されていません。 Autopilot の自己展開プロセスが、次の手順を実行します。 デバイス関連のすべての情報がクリーン アップされていることを確認するには、Azure AD および Intune Portal の両方の **[デバイス]** ページを確認します。
+- Windows Autopilot にデバイスを登録する必要があります。 デバイスを登録する方法については、[「4. Windows Autopilot にデバイスを登録する」](#4-register-devices-in-windows-autopilot) を参照してください。 推奨されるパスは、リセラーまたはディストリビューターがデバイスを登録するときに使用します。  
+- [Windows ホログラフィック バージョン 2004](hololens-release-notes.md#windows-holographic-version-2004) リリースでは、HoloLens をオンにし、Autopilot プロビジョニング プロセスを開始する前に、デバイスをインターネットに接続する必要があります。 有線インターネット接続用の「USB-C to Ethernet」アダプターを使用して、デバイスをイーサネットに接続します。
+- [Windows ホログラフィック バージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2) リリースでは、デバイスが OOBE の Wi-Fi に接続して、Autopilot を検出する場合があります。 
+- デバイスはまだ Azure AD のメンバーではなく、Intune (または別の MDM システム) に登録されていません。 Autopilot の自己展開プロセスが、次の手順を実行します。 デバイス関連のすべての情報がクリーン アップされていることを確認するには、Azure AD および Intune Portal の両方の **[デバイス]** ページを確認します。
 - Autopilot の自己展開モードプロファイルを構成および管理するには、[Microsoft エンドポイント マネージャー管理センター](https://endpoint.microsoft.com)にアクセスできることをご確認ください。
 
 
@@ -96,7 +104,7 @@ Windows Autopilot プログラムに HoloLens 2 デバイスをセットアッ�
 1. **[デバイス]**  >  **[Windows]**  >  **[Windows の登録]**  >  **[Windows Autopilot 展開プロファイル]**  >  **[プロファイルの作成 **]の順に選択します。  
    
    ![[プロファイルの作成] ドロップダウンには、HoloLens 項目が含まれています。](./images/hololens-ap-enrollment-profiles.png)
-  **HoloLens** を含む一覧が表示されます。 このオプションが表示されない場合は、[[フィードバック]](#feedback) オプションのいずれかを使用してお問い合わせください。
+  **HoloLens** を含む一覧が表示されます。 このオプションが表示されない場合は、[[フィードバック]](hololens2-autopilot.md#feedback-for-autopilot) オプションのいずれかを使用してお問い合わせください。
 
 ### 4. Windows Autopilot にデバイスを登録する
 
@@ -112,7 +120,8 @@ Windows Autopilot プログラムに HoloLens 2 デバイスをセットアッ�
 デバイスは、OOBE プロセスの間に、またはデバイスの所有者が診断ログの収集プロセスを開始するときに、CSV ファイルにハードウェア ハッシュを 記録できます (次の手順を参照)。 通常、デバイスの所有者がデバイスにサインインする最初のユーザーです。
 
 1. HoloLens 2 デバイスを起動します。
-1. デバイスで、[電源] ボタンと [音量を下げる] ボタンを同時に押して離します。 デバイスは診断ログとハードウェア ハッシュを収集し、それらを一連の .zip ファイルに保存します。
+1. デバイスで、[電源] ボタンと [音量を下げる] ボタンを同時に押して離します。 デバイスは診断ログとハードウェア ハッシュを収集し、それらを一連の .zip ファイルに保存します。 
+   1. 詳細とこれを実行する方法の説明ビデオについては、[オフライン診断](hololens-diagnostic-logs.md#offline-diagnostics)を参照してください。 
 1. USB-C ケーブルを使用して、コンピューターにデバイスを接続します。
 1. コンピューターで、エクスプローラーを開きます。 **この PC\\\<*HoloLens device name*>\\Internal Storage\\Documents** を開き、AutopilotDiagnostics.zip ファイルを見つけます。  
 
@@ -200,15 +209,20 @@ Windows Autopilot プログラムに HoloLens 2 デバイスをセットアッ�
 
 ## Windows Autopilot for HoloLens 2 のユーザー エクスペリエンス
 
-上記の手順が完了すると、HoloLens 2 のユーザーは、次のようにして HoloLens デバイスをプロビジョニングします:  
+上記の手順が完了すると、HoloLens 2 ユーザーは次のエクスペリエンスを実行して HoloLens デバイスをプロビジョニングします。  
 
-> [!NOTE]
-> Autopilot を使用すると、[デバイスの所有者](security-adminless-os.md#device-owner)に影響があります。
+1. Autopilot のエクスペリエンスには、インターネット アクセスが必要です。 インターネットにアクセスするには、次のいずれかのオプションを使用してください。
+    - デバイスを OOBE の Wi-Fi ネットワークに接続し、Autopilot エクスペリエンスを自動的に検出できるようにします。 これは、Autopilot エクスペリエンスが自動的に完了するまで、OOBE を操作する必要がある唯一の場合です。 既定では、HoloLens 2 は、インターネットを検出した後、Autopilot を検出するために 10 秒間待機することに注意してください。 Autopilot プロファイルが 10 秒以内に検出されない場合は、OOBE に EULA が表示されます。 このシナリオが発生した場合は、デバイスを再起動して、Autopilot の検出をもう一度試行できるようにしてください。 また、デバイスに TenantLockdown ポリシーが設定されている場合にのみ、OOBE が Autopilot を無期限に待機する場合があることにも注意してください。
+    - 有線インターネット接続用の「USB-C to Ethernet」アダプターを使用してデバイスをイーサネットに接続し、HoloLens 2 に Autopilot エクスペリエンスを自動的に完了させます。
+    - 無線インターネット接続用の「USB-C to Wifi」アダプターを使用してデバイスを接続し、HoloLens 2 に Autopilot エクスペリエンスを自動的に完了させます。
 
-1. 前述のように、現在のリリースでは、HoloLens をオンにし、Autopilot プロビジョニング プロセスを開始する前に、デバイスをインターネットに接続する必要があります。 有線インターネット接続には「USB-C to Ethernet」アダプターを、無線インターネット接続には「USB-C to Wifi」アダプターを使用して、デバイスを Ethernet に接続します。
+       > [!NOTE]
+       > Autopilot を使用すると、[デバイスの所有者](security-adminless-os.md#device-owner)に影響があります。
    
-   > [!IMPORTANT]  
-   > Out-of-the-Box-Experience (OOBE) を開始する前に、ネットワークにデバイスを接続する必要があります。 デバイスは、最初の OOBE 画面で、Autopilot デバイスとしてプロビジョニングされているかどうかを判断します。 デバイスがネットワークに接続できない場合、またはデバイスを Autopilot デバイスとしてプロビジョニングしないことを選択した場合、後で Autopilot プロビジョニングに変更することはできません。 代わりに、デバイスを Autopilot デバイスとしてプロビジョニングするには、この手順を最初からやり直す必要があります。
+       > [!IMPORTANT]  
+       > Autopilot 用の OOBE で Wi-Fi ネットワークを使用しようとするデバイスは、[Windows ホログラフィック バージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 上にある必要があります。
+       >
+       > イーサネット アダプターを使用するデバイスの場合、Out-of-the-Box-Experience (OOBE) を開始する前に、デバイスをネットワークに接続する必要があります。 デバイスは、最初の OOBE 画面で、Autopilot デバイスとしてプロビジョニングされているかどうかを判断します。 デバイスがネットワークに接続できない場合、またはデバイスを Autopilot デバイスとしてプロビジョニングしないことを選択した場合、後で Autopilot プロビジョニングに変更することはできません。 代わりに、デバイスを Autopilot デバイスとしてプロビジョニングするには、この手順を最初からやり直す必要があります。
 
 1. デバイスは OOBE を自動的に起動します。 OOBE を使って操作しないでください。 何もせずにリラックスしてください。 HoloLens 2 にネットワーク接続を検出させ、OOBE が自動的に完了するようにします。 OOBE 中にデバイスが再起動される場合があります。 OOBE 画面は次のようになります。
    
@@ -219,13 +233,59 @@ Windows Autopilot プログラムに HoloLens 2 デバイスをセットアッ�
 
 1. OOBE の最後に、ユーザー名とパスワードを使用してデバイスにサインインできます。
 
-  ![OOBE 手順 5](./images/hololens-ap-uex-5.png)
+   ![OOBE 手順 5](./images/hololens-ap-uex-5.png)
 
 ## 既知の問題
 
 - デバイス セキュリティ コンテキストを使うアプリケーションをインストールすることはできません。
 
-## フィードバック
+## Tenantlockdown CSP と Autopilot
+- デバイスのリセットまたは再フラッシュを行っても、デバイスをテナントにロックすることにより、デバイスを組織のテナントに保持します。 プロビジョニングを介したアカウントの作成を禁止することにより、セキュリティを強化します。 
+
+HoloLens 2 デバイスは、Windows ホログラフィック バージョン 20H2 以降、TenantLockdown CSP をサポートするようになりました。 
+
+[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP は、HoloLens 2 が Autopilot のみを使用して MDM 登録に関連付けられるようにします。 TenantLockdown CSP の RequireNetworkInOOBE ノードが HoloLens 2 で true または false (最初に設定された) 値に設定されると、その値は、再フラッシュ、OS 更新プログラムなどにもかかわらずデバイスに残ります。 
+
+HoloLens 2 で TenantLockdown CSP の RequireNetworkInOOBE ノードが true に設定されると、OOBE は、ネットワーク接続後、Autopilot プロファイルが正常にダウンロードおよび適用されるまで無期限に待機します。 
+
+HoloLens 2 で TenantLockdown CSP の RequireNetworkInOOBE ノードが true に設定されると、OOBE では次の操作が許可されなくなります。 
+- ランタイム プロビジョニングを使用したローカル ユーザーの作成 
+- ランタイム プロビジョニングによる AAD 参加操作の実行 
+- OOBE エクスペリエンスでデバイスの所有者を選択する 
+
+### Intune を使用してこれを設定する方法 
+1. 以下に示すように、カスタム OMA URI デバイス構成プロファイルを作成し、RequireNetworkInOOBE ノードに true を指定します。
+OMA-URI 値は ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE である必要があります
+
+   > [!div class="mx-imgBorder"]
+   > ![OMA-URI によるテナントのロックダウンの設定](images/hololens-tenant-lockdown.png)
+
+1. グループを作成し、デバイス構成プロファイルをそのデバイス グループに割り当てます。 
+
+1. 前の手順で作成したグループの HoloLens 2 デバイス メンバーを作成し、同期をトリガーします。  
+
+Intune ポータルで、デバイス構成が正常に適用されていることを確認します。 このデバイス構成が Hololens 2 デバイスに正常に適用されると、TenantLockdown の効果がアクティブになります。
+
+### Intune を使用して HoloLens 2 で TenantLockdown の RequireNetworkInOOBE の設定を解除する方法 
+1. 上で作成したデバイス構成が以前に割り当てられていたデバイス グループから HoloLens 2 を削除します。 
+
+1. 以下に示すように、カスタム OMA URI ベースのデバイス構成プロファイルを作成し、RequireNetworkInOOBE に false を指定します。 OMA-URI 値は ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE である必要があります
+
+   > [!div class="mx-imgBorder"]
+   > ![Intune の OMA URI を介して RequireNetworkInOOBE を false に設定するスクリーンショット](images/hololens-tenant-lockdown-false.png)
+
+1. グループを作成し、デバイス構成プロファイルをそのデバイス グループに割り当てます。 
+
+1. 前の手順で作成したグループの HoloLens 2 デバイス メンバーを作成し、同期をトリガーします。
+
+Intune ポータルで、デバイス構成が正常に適用されていることを確認します。 このデバイス構成が Hololens 2 デバイスに正常に適用されると、TenantLockdown の効果が非アクティブになります。 
+
+### TenantLockdown が true に設定された後、HoloLens で Autopilot プロファイルが割り当て解除された場合、OOBE 中にどうなりますか? 
+OOBE は、Autopilot プロファイルがダウンロードされるのを無期限に待機し、次のダイアログが表示されます。 TenantLockdown の影響を取り除くには、最初に Autopilot のみを使用してデバイスを元のテナントに登録し、TenantLockdown CSP によって導入された制限を取り除く前に、前の手順で説明したように RequireNetworkInOOBE の設定を解除する必要があります。 
+
+![ポリシーがデバイスに適用されるタイミングのデバイス内ビュー。](images/hololens-autopilot-lockdown.png)
+
+## Autopilot のフィードバック
 
 フィードバックを提供する、または問題を報告する場合は、次のいずれかの方法を使用します。
 
