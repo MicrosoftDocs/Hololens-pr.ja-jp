@@ -71,8 +71,10 @@
 ### [MDM を使用して HoloLens デバイスを管理する](hololens-mdm-configure.md)
 ### [一般的なデバイスの制限](hololens-common-device-restrictions.md)
 ### [HoloLens を Kiosk としてセットアップする](hololens-kiosk.md)
+### [グローバルに割り当てられたアクセス - キオスク](hololens-global-assigned-access-kiosk.md)
 ### [Windows Defender アプリケーション制御 - WDAC](windows-defender-application-control-wdac.md)
-## Identity
+### [HoloLens 用のページ設定 CSP と URI](settings-uri-list.md)
+## ID
 ### [HoloLens のユーザー ID とサインインを管理する](hololens-identity.md)
 ### [複数のユーザーによる HoloLens の共有](hololens-multiple-users.md)
 ## ネットワークと接続
@@ -81,7 +83,7 @@
 ### [HoloLens 2 証明書とネットワーク プロファイルを準備する](hololens-certificates-network.md)
 ### [HoloLens の接続エンドポイントの管理](hololens-offline.md)
 ### [Bluetooth および USB-C デバイスに接続する](hololens-connect-devices.md)
-
+## [証明書マネージャー](certificate-manager.md)
 
 # 展開
 ## 登録
@@ -108,9 +110,7 @@
 # HoloLens のリリース ノート
 ## [HoloLens 2 のリリース ノート](hololens-release-notes.md)
 ## [Microsoft HoloLens の Insider Preview](hololens-insider.md)
-### [グローバルに割り当てられたアクセス-キオスク](hololens-global-assigned-access-kiosk.md)
-### [HoloLens のページ設定 URI](settings-uri-list.md)
 ### [アプリ インストーラー](app-deploy-app-installer.md)
-
 ## [HoloLens (第1世代) のリリース ノート](hololens1-release-notes.md)
+
 # [ご意見ご感想をお寄せください](hololens-feedback.md)

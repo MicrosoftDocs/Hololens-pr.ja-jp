@@ -13,12 +13,12 @@ audience: ITPro
 manager: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 460b6f42de7413e77eaec041a5ab6141ed959cf4
-ms.sourcegitcommit: 9944fd2040fc1267ace1da1bd62ef36b68c7f318
+ms.openlocfilehash: b5fe64a1843db5ba8dc31f3c17776f0717264fe1
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015525"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162987"
 ---
 # HoloLens 2 の証明書とネットワーク プロファイルを準備する
 
@@ -45,18 +45,20 @@ SCEP や PKCS インフラストラクチャを介して証明書を展開する
 1.  ルート証明書と中間証明書のそれぞれにプロファイルを作成します (「[Create trusted certificate profiles (信頼された証明書プロファイルを作成する)](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)」を参照してください)。各プロファイルには、DD/MM/YYYY 形式による有効期限を含む説明が必要です。 **有効期限のない証明書プロファイルは、展開されません。**
 1.  SCEP 証明書または PKCS 証明書のそれぞれにプロファイルを作成します (「[Create a SCEP certificate profile or Create a PKCS certificate profile (SCEP 証明書プロファイルの作成または PKCS 証明書プロファイルの作成)](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)」を参照してください)。各プロファイルには、DD/MM/YYYY 形式による有効期限を含む説明が必要です。 **有効期限のない証明書プロファイルは、展開されません。**
 
-> [!NOTE]
-> HoloLens 2 は共有デバイスであり、デバイスごとに複数のユーザーがいると多くの方が認識されているように、可能であれば Wi-Fi 認証にはユーザー証明書ではなくデバイス証明書を展開することをお勧めします
+    > [!NOTE]
+    > HoloLens 2 は共有デバイスであり、デバイスごとに複数のユーザーがいると多くの方が認識されているように、可能であれば Wi-Fi 認証にはユーザー証明書ではなくデバイス証明書を展開することをお勧めします
 
 3.  企業の Wi-Fi ネットワークのそれぞれにプロファイルを作成します (「[Wi-Fi settings for Windows 10 and later devices (Windows 10 以降のデバイス向けの Wi-Fi 設定)](https://docs.microsoft.com/intune/wi-fi-settings-windows)」を参照してください)。 
-> [!NOTE]
-> Wi-Fi プロファイルは、可能であればユーザー グループではなくデバイス グループに[割り当てる](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)ことをお勧めします。 
+    > [!NOTE]
+    > Wi-Fi プロファイルは、可能であればユーザー グループではなくデバイス グループに[割り当てる](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)ことをお勧めします。 
 
-> [!TIP]
-> また、企業ネットワーク上の Windows 10 PC から実行中の Wi-Fi プロファイルをエクスポートすることもできます。 このエクスポートでは、現在のすべての設定を含む XML ファイルが作成されます。 次に、このファイルを Intune にインポートして、HoloLens 2 デバイスの Wi-Fi プロファイルとして使用します。 「[Export and import Wi-Fi settings for Windows devices (Windows デバイスの Wi-Fi 設定のエクスポートとインポート)](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)」を参照してください。
+    > [!TIP]
+    > また、企業ネットワーク上の Windows 10 PC から実行中の Wi-Fi プロファイルをエクスポートすることもできます。 このエクスポートでは、現在のすべての設定を含む XML ファイルが作成されます。 次に、このファイルを Intune にインポートして、HoloLens 2 デバイスの Wi-Fi プロファイルとして使用します。 「[Export and import Wi-Fi settings for Windows devices (Windows デバイスの Wi-Fi 設定のエクスポートとインポート)](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)」を参照してください。
 
 4.  企業 VPN のそれぞれにプロファイルを作成します (「[Windows 10 and Windows Holographic device settings to add VPN connections using Intune (Windows 10 と Windows Holographic デバイスの設定で Intune を使用して VPN 接続を追加する)](https://docs.microsoft.com/intune/vpn-settings-windows-10)」を参照してください)。
 
+## 証明書のトラブルシューティング
 
+証明書が正しく展開されていることを確認する必要がある場合は、デバイスの[証明書マネージャー](certificate-manager.md)を使用して、証明書が存在することを確認してください。  
 
 

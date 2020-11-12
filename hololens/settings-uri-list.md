@@ -3,7 +3,7 @@ title: ページ設定の可視性
 description: PageVisibilityList およびガイドで HoloLens に対応している URI の一覧
 author: evmill
 ms.author: v-evmill
-ms.date: 09/16/2020
+ms.date: 10/13/2020
 ms.topic: article
 keywords: hololens、hololens 2、割り当てられたアクセス、キオスク、設定ページ
 ms.prod: hololens
@@ -13,19 +13,19 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7a24d64b0b60be9f922260b7145d04c2c13951ed
-ms.sourcegitcommit: 8b5e349990ba5566bcc6a2a72ff83d1a21b099b8
+ms.openlocfilehash: 8cd336ce64cf7d4549b031a7977f592ca82dd6e4
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11026940"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163147"
 ---
 # ページ設定の可視性
 
 HoloLens デバイスの管理可能な機能の 1 つに、[Settings/PageVisibilityList ポリシー](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)を使用した設定アプリ内で閲覧されるページの制限があります。 PageVisibilityList は、IT 管理者がシステム設定アプリの特定のページを表示またはアクセスできないようにしたり、または指定されたページ以外のすべてのページで同様に行うことを許可するポリシーです。 
 
-> [!IMPORTANT]
-> この機能は現在、[Windows Insider ビルド](hololens-insider.md)でのみ利用可能です。 これに使用しようとしているデバイスをビルド 19041.1349+ にしてください。
+> [!NOTE]
+> この機能は、HoloLens 2 デバイスの [Windows Holographic バージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2) でのみ使用できます。 この機能を使用するデバイスが更新されていることを確認してください。
 
 次の例では、情報ページと Bluetooth ページにのみアクセスを許可するポリシーを示しています。これには、それぞれ URI "ms-settings:network-wifi" と "ms-settings:bluetooth" があります。
 - showonly:network-wifi;network-proxy;bluetooth

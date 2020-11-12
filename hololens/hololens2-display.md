@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 80ac6348dd2cba932316b690cafc4c5dc0331353
-ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
+ms.openlocfilehash: 0001ff627b150a9ba79e76f8d995231186c46917
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "10940207"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163018"
 ---
 # HoloLens 2 ディスプレイ
 
@@ -59,7 +59,7 @@ HoloLens 2 のディスプレイは、人間の目で見ることを前提に設
 
 HoloLens 2 ディスプレイは、ユーザーの目の位置に応じて画像を積極的に色補正します。 [目の調整](hololens-calibration.md) は、2 つの重要な入力を提供します。(1) ユーザーの瞳孔間距離 (IPD) と、(2) それぞれの目が見ている方向です。 目の調整を行わないと、システムは目の動きを考慮せず、決まった目の位置を規定のものにします。 積極的に色補正をするかしないかの違いは、ユーザーの生理機能そのものに依存します。 たとえば、システムの規定と同じ IPD を持つユーザーは、見るときの色補正の改善が少なくなります。 システムの規定よりもはるかに狭い、または広い IPD を持っているユーザーは、画像を表示するためにより変化させて見ることになります。
 
-将来のオペレーティング システムの更新プログラムで予定されている新機能は、[目の位置を自動的に検出する](hololens-insider.md#auto-eye-position-support) が開始されます。 この機能を今すぐ試すには、 [Insider Preview](hololens-insider.md) に登録してください。
+[Windows Holographic バージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2) の新機能は、[目の位置](hololens-calibration.md#auto-eye-position-support)の自動検出を開始することに注意してください。 
 
 ### HoloLens (第 1 世代) と HoloLens 2 の表示の違いは何ですか?
 
