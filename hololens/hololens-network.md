@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 0db64ffb4113ff948651c708c28b91da535cb09b
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 7932ba493f8434c0fa5fc7a0efdd4d43eedd51bd
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009525"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163039"
 ---
 # HoloLens をネットワークに接続する
 
@@ -54,6 +54,97 @@ Wi-Fi への接続で問題が発生した場合は、「[Wi-Fi に接続でき�
 
 デバイスのエンタープライズ アカウントまたは組織アカウントにサインインするときに、ポリシーが IT 管理者によって構成されている場合、モバイル デバイス管理 (MDM) ポリシーも適用される場合があります。
 
+## HoloLens をエンタープライズ Wi-Fi ネットワークに接続する
+
+エンタープライズ Wi-Fi プロファイルは、拡張認証プロトコル (EAP) を使って Wi-Fi 接続を認証します。 HoloLens エンタープライズ Wi-Fi プロファイルは、[Windows 構成デザイナー](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages)によって作成された MDM またはプロビジョニング パッケージを介して構成できます。
+
+Microsoft Intune 管理対象デバイスの場合、構成手順については [Intune](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) を参照してください。
+
+WCD で Wi-Fi プロビジョニング パッケージを作成するには、事前に構成された Wi-Fi プロファイルの .xml ファイルが必要です。 以下は、EAP-TLS 認証を使用した WPA2-Enterprise の Wi-Fi プロファイルの例です。
+
+``` xml
+<?xml version="1.0"?> 
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1"> 
+    <name>SampleEapTlsProfile</name> 
+    <SSIDConfig> 
+        <SSID> 
+            <hex>53616d706c65</hex> 
+            <name>Sample</name> 
+        </SSID> 
+        <nonBroadcast>true</nonBroadcast> 
+    </SSIDConfig> 
+    <connectionType>ESS</connectionType> 
+    <connectionMode>auto</connectionMode> 
+    <autoSwitch>false</autoSwitch> 
+    <MSM> 
+        <security> 
+            <authEncryption> 
+                <authentication>WPA2</authentication> 
+                <encryption>AES</encryption> 
+                <useOneX>true</useOneX> 
+                <FIPSMode xmlns="http://www.microsoft.com/networking/WLAN/profile/v2">false</FIPSMode> 
+            </authEncryption> 
+            <PMKCacheMode>disabled</PMKCacheMode> 
+            <OneX xmlns="http://www.microsoft.com/networking/OneX/v1"> 
+                <authMode>machine</authMode> 
+                <EAPConfig> 
+                    <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"> 
+                        <EapMethod> 
+                            <Type xmlns="http://www.microsoft.com/provisioning/EapCommon">13</Type> 
+                            <VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId> 
+                            <VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType> 
+                            <AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId> 
+                        </EapMethod> 
+                        <Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig"> 
+                            <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"> 
+                                <Type>13</Type> 
+                                <EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1"> 
+                                    <CredentialsSource><CertificateStore><SimpleCertSelection>true</SimpleCertSelection> 
+                                        </CertificateStore> 
+                                    </CredentialsSource> 
+                                    <ServerValidation> 
+                                        <DisableUserPromptForServerValidation>false</DisableUserPromptForServerValidation> 
+                                        <ServerNames></ServerNames> 
+                                        <TrustedRootCA>00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11 12 13</TrustedRootCA> 
+                                    </ServerValidation> 
+                                    <DifferentUsername>false</DifferentUsername> 
+                                    <PerformServerValidation xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">true</PerformServerValidation> 
+                                    <AcceptServerName xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</AcceptServerName> 
+                                </EapType> 
+                            </Eap> 
+                        </Config> 
+                    </EapHostConfig> 
+                </EAPConfig> 
+            </OneX> 
+        </security> 
+    </MSM> 
+</WLANProfile> 
+```
+
+
+サーバー ルート CA 証明書とクライアント証明書は、EAP の種類に応じて、デバイスにプロビジョニングされている必要があります。
+
+その他のリソース:
+
+- WLANv1Profile Schema: [[MS-GPWL]: ワイヤレス LAN プロファイル V1 スキーマ | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
+- EAP-TLS スキーマ: [[MS-GPWL]: Microsoft EAP TLS スキーマ | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
+
+### EAP のトラブルシューティング
+
+1. Wi-Fi プロファイルの設定が正しいかを再確認するには、次の操作を行います。
+   1. EAP の種類が正しく構成されています。一般的な EAP の種類は、EAP-TLS (13)、EAP-TTLS (21)、および PEAP (25) です。
+   1. Wi-Fi SSID 名は正しく、HEX 文字列と一致します。
+   1. EAP-TLS の場合、TrustedRootCA には、サーバーの信頼されたルート CA 証明書の SHA-1 ハッシュが含まれます。 Windows PC &quot;certutil.exe -dump cert\_file\_name&quot; コマンドには、証明書の SHA-1 ハッシュ文字列が表示されます。
+1. アクセス ポイントまたはコントローラーまたは AAA サーバー ログでネットワーク パケット キャプチャを収集して、EAP セッションが失敗した場所を確認します。
+   1. HoloLens によって提供される EAP ID が想定されていない場合は、Wi-Fi プロファイルまたはクライアント証明書を通じて、ID が正しくプロビジョニングされているかどうかを確認します。
+   1. サーバーが HoloLens クライアント証明書を拒否した場合は、必要なクライアント証明書がデバイスでプロビジョニングされているかどうかを確認します。
+   1. HoloLens がサーバー証明書を拒否した場合は、サーバー ルート CA 証明書が HoloLens でプロビジョニングされているかどうかを確認します。
+1. エンタープライズ プロファイルが Wi-Fi プロビジョニング パッケージによってプロビジョニングされている場合は、Windows 10 PC にプロビジョニング パッケージを適用することを検討してください。 Windows 10 PC でもエラーが発生する場合は、「[Windows クライアント 802.1X 認証に関する認証](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication)」に従ってください。
+1. [フィードバック Hub](https://docs.microsoft.com/hololens/hololens-feedback)からフィードバックを送信してください。
+
+### その他のリソース:
+- [Windows デバイスから Wi-Fi 設定をエクスポートする](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
+
 ## VPN
 VPN 接続を使用すると、より安全な接続と会社のネットワークやインターネットへのアクセスを提供できます。 HoloLens 2 は、組み込み VPN クライアントおよびユニバーサル Windows プラットフォーム (UWP) VPN プラグインをサポートしています。 
 
@@ -62,11 +153,143 @@ VPN 接続を使用すると、より安全な接続と会社のネットワー�
 - L2TP
 - PPTP
 
-組み込みのVPN クライアントの認証に証明書を使用している場合は、必要なクライアント証明書をユーザー証明書ストアに追加する必要があります。 サードパーティの VPN プラグインが HoloLens 2 をサポートしているかどうかを確認するには、[VPN アプリ] がある [ストア] に移動し、 ARM または ARM64 アーキテクチャ をサポートしているアプリの [システム要件ページ] に [HoloLens] が表示されているかどうかを確認します。 HoloLens は、サードパーティ VPN 用のユニバーサル Windows プラットフォームアプリケーションのみをサポートしています。
+組み込みのVPN クライアントの認証に証明書を使用している場合は、必要なクライアント証明書をユーザー証明書ストアに追加する必要があります。 サードパーティの VPN プラグインが HoloLens 2 をサポートしているかどうかを確認するには、[VPN アプリ] がある [ストア] に移動し、 ARM または ARM64 アーキテクチャ をサポートしているアプリの [システム要件ページ] に [HoloLens] が表示されているかどうかを確認します。 HoloLens は、サードパーティ VPN 用のユニバーサル Windows プラットフォーム アプリケーションのみをサポートしています。
 
-VPN は既定で有効になっていませんが、 **設定** アプリを開き、 **ネットワーク & インターネット -> VPN** に移動して、手動で有効にすることができます。 VPN は、[Settings/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)経由で MDM によって管理され、  [Vpnv2-csp ポリシー](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp)を使用して設定できます。
-詳細については、[これらのガイド](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide)を使用して[how to configure VPNを構成する方法](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn)を参照してください。  
+ VPN は、[Settings/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) 経由で MDM によって管理され、[Vpnv2-csp ポリシー](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp)を使用して設定できます。
 
+[これらのガイド](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn)を使用して [VPN を構成する方法](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide)の詳細をご覧ください。  
+
+### UI 経由の VPN
+
+VPN は既定で有効になっていませんが、**設定** アプリを開き、**[ネットワークとインターネット]、[VPN]** の順に移動して、手動で有効にすることができます。
+1. VPN プロバイダーを選択します。
+1. 接続名を作成します。 
+1. サーバー名またはアドレスを入力します。
+1. VPN の種類を選択します。
+1. サインイン情報の種類を選択します。 
+1. 必要に応じて、ユーザー名とパスワードを追加します。
+1. VPN 設定を適用します。 
+
+![HoloLens VPN の設定](./images/vpn-settings-ui.jpg)
+
+### プロビジョニング パッケージによる VPN の設定
+
+> [!TIP] 
+> Windows Holographic バージョン 20H2 では、VPN 接続のプロキシ構成の問題を修正しました。 このフローを使う場合は、このビルドにデバイスをアップグレードすることを検討してください。
+
+1. Windows 構成デザイナーを起動します。
+1. **[HoloLens デバイスのプロビジョニング]** をクリックして対象のデバイスを選択してから **[次へ]** を選択します。
+1. パッケージ名とパスを入力します。
+1. **[詳細エディターに切り替える]** をクリックします。
+1. **[ランタイム設定]** -> **[ConnectivityProfiles]** -> **[VPN]** -> **[VPNSettings]** の順に開きます。
+1. VPNProfileName を構成する
+1. ProfileType を **[ネイティブ]** または **[サードパーティ]** から選択します。
+    1. ネイティブ プロファイルの場合、**[NativeProtocolType]** を選択し、サーバー、ルーティング ポリシー、認証の種類、その他の設定を構成します。
+    1. 「サードパーティ」プロファイルの場合、サーバー URL、VPN プラグイン アプリ パッケージ ファミリ名 (事前に定義されている 3 つのみ) およびカスタム構成を構成します。
+1. パッケージをエクスポートします。
+1. HoloLens を接続して、.ppkg ファイルをデバイスにコピーします。 
+1. HoloLens では、[スタート] メニューを開き、**[設定]** -> **[アカウント]** -> **[職場または学校にアクセスする]** -> **[プロビジョニング パッケージを追加または削除する]** の順に選択して、VPN パッケージを選択します。
+
+
+### Intune を使用した VPN のセットアップ
+Intune のドキュメントに従って、作業を開始します。 これらの手順を実行するときは、HoloLens デバイスがサポートする組み込みの VPN プロトコルに注意してください。 
+
+[Intune で VPN サーバーに接続するための VPN プロファイルを作成します](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure)。
+
+[Intune を使用して VPN 接続を追加するための Windows 10 および Windows Holographic デバイスの設定](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-windows-10)。
+
+完了したら、[プロファイルを割り当てる](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)ことを忘れないでください。
+
+### サードパーティ MDM ソリューションを使用した VPN
+サードパーティ VPN 接続の例:
+```xml
+<!-- Configure VPN Server Name or Address (PhoneNumber=) [Comma Separated]-->
+      <Add>
+        <CmdID>10001</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/PluginProfile/ServerUrlList</LocURI>
+          </Target>
+          <Data>selfhost.corp.contoso.com</Data>
+        </Item>
+      </Add>
+
+      <!-- Configure VPN Plugin AppX Package ID (ThirdPartyProfileInfo=) -->
+      <Add>
+        <CmdID>10002</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/PluginProfile/PluginPackageFamilyName</LocURI>
+          </Target>
+          <Data>TestVpnPluginApp-SL_8wekyb3d8bbwe</Data>
+        </Item>
+      </Add>
+
+      <!-- Configure Microsoft's Custom XML (ThirdPartyProfileInfo=) -->
+      <Add>
+        <CmdID>10003</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/PluginProfile/CustomConfiguration</LocURI>
+          </Target>          <Data><pluginschema><ipAddress>auto</ipAddress><port>443</port><networksettings><routes><includev4><route><address>172.10.10.0</address><prefix>24</prefix></route></includev4></routes><namespaces><namespace><space>.vpnbackend.com</space><dnsservers><server>172.10.10.11</server></dnsservers></namespace></namespaces></networksettings></pluginschema></Data>
+        </Item>
+      </Add>
+```
+
+ネイティブ IKEv2 VPN の例:
+```xml
+      <Add>
+        <CmdID>10001</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Servers</LocURI>
+          </Target>
+          <Data>Selfhost.corp.contoso.com</Data>
+        </Item>
+      </Add>
+
+      <Add>
+        <CmdID>10002</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/RoutingPolicyType</LocURI>
+          </Target>
+          <Data>ForceTunnel</Data>
+        </Item>
+      </Add>
+
+      <!-- Configure VPN Protocol Type (L2tp, Pptp, Ikev2) -->
+      <Add>
+        <CmdID>10003</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/NativeProtocolType</LocURI>
+          </Target>
+          <Data>Ikev2</Data>
+        </Item>
+      </Add>
+
+      <!-- Configure VPN User Method (Mschapv2, Eap) -->
+      <Add>
+        <CmdID>10004</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Authentication/UserMethod</LocURI>
+          </Target>
+          <Data>Eap</Data>
+        </Item>
+      </Add>
+
+      <Add>
+        <CmdID>10004</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Authentication/Eap/Configuration</LocURI>
+          </Target>
+          <Data>EAP_configuration_xml_content</Data>
+        </Item>
+      </Add>
+```
 ## HoloLens (第 1 世代) での Wi-Fi の無効化
 
 ### HoloLens での設定アプリの使用
