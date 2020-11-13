@@ -8,7 +8,7 @@ ms.author: v-tea
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 07/09/2020
+ms.date: 10/13/2020
 ms.reviewer: jarrettr
 manager: jarrettr
 ms.custom:
@@ -16,12 +16,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 384d33e72effd298e1874e5723e9c418061c3287
-ms.sourcegitcommit: 0d4e67d8e21d34885e0eaee08646e28426c4f641
+ms.openlocfilehash: 3a2246296c5ab8aa86dfaa419ed02aa5a961dbfc
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "10861910"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163128"
 ---
 # HoloLens の更新プログラムの管理
 
@@ -76,6 +76,21 @@ Intune を使用して Windows Update for Business を構成する方法の詳�
   - Values: 0–23 (0 = 午前 0:00、23 = 午後 11:00)
   - 既定値: 午後 3:00
 
+#### アクティブ時間の構成
+[Windows Holographic、Verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2)以降では、IT 管理者は HoloLens 2 デバイスのアクティブ時間の範囲を指定できます。
+
+アクティブ時間 には、デバイスを使用している可能性の高い時間帯を指定します。 更新後の自動再起動は、アクティブ時間を除く時間帯に行われます。 指定された範囲は、アクティブ時間の開始時刻からカウントされます。 MDM を使って設定できます。詳しくは、「[MDM を使ったアクティブ時間の構成](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm)」で説明します。 MDM は、ポリシー CSP で Update/Activehours Send および Update/ActiveHoursMaxRange の設定を使用して、アクティブ時間を構成します。
+
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) - この値は終了時刻を設定します。 開始時刻から最大 12 時間まで設定できます。
+    -   サポートされている値は 0 - 23 です。0は夜中の 12 時、1 は午前 1 時のようになります。
+    -   既定値は 17 (午後 5 時) です。
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) -この値は、開始時刻からのアクティブ時間の最大数を設定します。
+    -   サポートされている値は 8 - 18 です。
+    -   既定値は 18 (時間) です。
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) -この値は開始時刻を設定します。 終了時刻から最大 12 時間まで設定できます。
+    -   サポートされている値は 0 - 23 です。0は夜中の 12 時、1 は午前 1 時のようになります。
+    -   既定値は 8 (午後 8 時) です。
+
 #### Windows 10 バージョン 1607 を実行するデバイスのみ
 
 以下の更新ポリシーを使用して、Windows Update からではなく Windows Server Update Services (WSUS) から更新プログラムを取得するようにデバイスを構成することができます。
@@ -116,6 +131,15 @@ Windows Updates for Business は繰延ポリシーをサポートしています
 | --- | --- | --- |
 |機能更新プログラム |DeferFeatureUpdatesPeriodInDays |365 日 |
 |品質更新プログラム |DeferQualityUpdatesPeriodInDays |30 日 |
+
+#### デバイス経由で更新プログラムを一時停止する
+
+ユーザーが MDM にアクセスできない場合は、ビルド [Windows Holographic version 2004](hololens-release-notes.md#windows-holographic-version-2004) 以降の HoloLens 2 デバイスで最大 35 日間手動で更新を個別に一時停止できます。 ユーザーは、**[設定]、[更新とセキュリティ]、[詳細オプション]** の順に移動して **[更新を一時停止]** まで下にスクロールし、更新を一時停止する日付を選択すると、この設定にアクセスできます。 ユーザーが一時停止の制限に達すると、デバイスを再び一時停止できるようにするには、新しい更新を取得する必要があります。 
+
+[Windows Holographic verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 以降、この一時停止更新機能は HoloLens 2 デバイスで管理できます。 
+- [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)。
+    - 0 (既定) – 有効
+    - 1– 無効
 
 #### HoloLens でサポートされている Intune 更新プログラム管理機能
 
