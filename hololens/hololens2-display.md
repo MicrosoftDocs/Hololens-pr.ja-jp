@@ -59,7 +59,7 @@ HoloLens 2 のディスプレイは、人間の目で見ることを前提に設
 
 HoloLens 2 ディスプレイは、ユーザーの目の位置に応じて画像を積極的に色補正します。 [目の調整](hololens-calibration.md) は、2 つの重要な入力を提供します。(1) ユーザーの瞳孔間距離 (IPD) と、(2) それぞれの目が見ている方向です。 目の調整を行わないと、システムは目の動きを考慮せず、決まった目の位置を規定のものにします。 積極的に色補正をするかしないかの違いは、ユーザーの生理機能そのものに依存します。 たとえば、システムの規定と同じ IPD を持つユーザーは、見るときの色補正の改善が少なくなります。 システムの規定よりもはるかに狭い、または広い IPD を持っているユーザーは、画像を表示するためにより変化させて見ることになります。
 
-[Windows Holographic バージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2) の新機能は、[目の位置](hololens-calibration.md#auto-eye-position-support)の自動検出を開始することに注意してください。 
+[Windows Holographic バージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2) の新機能により、[目の位置の自動検出](hololens-calibration.md#auto-eye-position-support)が開始されます。 
 
 ### HoloLens (第 1 世代) と HoloLens 2 の表示の違いは何ですか?
 
