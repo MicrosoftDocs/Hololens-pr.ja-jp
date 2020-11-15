@@ -126,20 +126,20 @@ WCD で Wi-Fi プロビジョニング パッケージを作成するには、�
 
 その他のリソース:
 
-- WLANv1Profile Schema: [[MS-GPWL]: ワイヤレス LAN プロファイル V1 スキーマ | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
+- WLANv1プロファイル スキーマ: [[MS-GPWL]: ワイヤレス LAN プロファイル V1 スキーマ | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS スキーマ: [[MS-GPWL]: Microsoft EAP TLS スキーマ | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
 ### EAP のトラブルシューティング
 
-1. Wi-Fi プロファイルの設定が正しいかを再確認するには、次の操作を行います。
-   1. EAP の種類が正しく構成されています。一般的な EAP の種類は、EAP-TLS (13)、EAP-TTLS (21)、および PEAP (25) です。
-   1. Wi-Fi SSID 名は正しく、HEX 文字列と一致します。
-   1. EAP-TLS の場合、TrustedRootCA には、サーバーの信頼されたルート CA 証明書の SHA-1 ハッシュが含まれます。 Windows PC &quot;certutil.exe -dump cert\_file\_name&quot; コマンドには、証明書の SHA-1 ハッシュ文字列が表示されます。
+1. Wi-Fi プロファイルが正しく設定されているかどうかを再確認します。
+   1. EAP の種類が正しく構成されているか。一般的な EAP の種類は、EAP-TLS (13)、EAP-TTLS (21)、および PEAP (25) です。
+   1. Wi-Fi SSID 名は正しく、HEX 文字列と一致しているか。
+   1. EAP-TLS の場合、TrustedRootCA に、サーバーの信頼されたルート CA 証明書の SHA-1 ハッシュが含まれるかどうか。 Windows PC で &quot;certutil.exe -dump cert\_file\_name&quot; コマンドを実行すると、証明書の SHA-1 ハッシュ文字列が表示されます。
 1. アクセス ポイントまたはコントローラーまたは AAA サーバー ログでネットワーク パケット キャプチャを収集して、EAP セッションが失敗した場所を確認します。
    1. HoloLens によって提供される EAP ID が想定されていない場合は、Wi-Fi プロファイルまたはクライアント証明書を通じて、ID が正しくプロビジョニングされているかどうかを確認します。
    1. サーバーが HoloLens クライアント証明書を拒否した場合は、必要なクライアント証明書がデバイスでプロビジョニングされているかどうかを確認します。
    1. HoloLens がサーバー証明書を拒否した場合は、サーバー ルート CA 証明書が HoloLens でプロビジョニングされているかどうかを確認します。
-1. エンタープライズ プロファイルが Wi-Fi プロビジョニング パッケージによってプロビジョニングされている場合は、Windows 10 PC にプロビジョニング パッケージを適用することを検討してください。 Windows 10 PC でもエラーが発生する場合は、「[Windows クライアント 802.1X 認証に関する認証](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication)」に従ってください。
+1. エンタープライズ プロファイルが Wi-Fi プロビジョニング パッケージによってプロビジョニングされている場合は、Windows 10 PC にプロビジョニング パッケージを適用することを検討してください。 Windows 10 PC でもエラーが発生する場合は、「[Windows クライアント 802.1X 認証に関するトラブルシューティング ガイド](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication)」に従ってください。
 1. [フィードバック Hub](https://docs.microsoft.com/hololens/hololens-feedback)からフィードバックを送信してください。
 
 ### その他のリソース:
@@ -153,11 +153,11 @@ VPN 接続を使用すると、より安全な接続と会社のネットワー�
 - L2TP
 - PPTP
 
-組み込みのVPN クライアントの認証に証明書を使用している場合は、必要なクライアント証明書をユーザー証明書ストアに追加する必要があります。 サードパーティの VPN プラグインが HoloLens 2 をサポートしているかどうかを確認するには、[VPN アプリ] がある [ストア] に移動し、 ARM または ARM64 アーキテクチャ をサポートしているアプリの [システム要件ページ] に [HoloLens] が表示されているかどうかを確認します。 HoloLens は、サードパーティ VPN 用のユニバーサル Windows プラットフォーム アプリケーションのみをサポートしています。
+組み込みのVPN クライアントの認証に証明書を使用している場合は、必要なクライアント証明書をユーザー証明書ストアに追加する必要があります。 サードパーティの VPN プラグインが HoloLens 2 をサポートしているかどうかを確認するには、[VPN アプリ] がある [ストア] に移動し、 ARM または ARM64 アーキテクチャ をサポートしているアプリの [システム要件ページ] に [HoloLens] が表示されているかどうかを確認します。 HoloLens は、サード パーティ VPN 用のユニバーサル Windows プラットフォーム アプリケーションのみをサポートしています。
 
  VPN は、[Settings/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) 経由で MDM によって管理され、[Vpnv2-csp ポリシー](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp)を使用して設定できます。
 
-[これらのガイド](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn)を使用して [VPN を構成する方法](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide)の詳細をご覧ください。  
+[これらのガイド](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide)を使用して [VPN を構成する方法](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn)の詳細をご覧ください。  
 
 ### UI 経由の VPN
 
@@ -175,7 +175,7 @@ VPN は既定で有効になっていませんが、**設定** アプリを開�
 ### プロビジョニング パッケージによる VPN の設定
 
 > [!TIP] 
-> Windows Holographic バージョン 20H2 では、VPN 接続のプロキシ構成の問題を修正しました。 このフローを使う場合は、このビルドにデバイスをアップグレードすることを検討してください。
+> Windows Holographic バージョン 20H2 では、VPN 接続のプロキシ構成の問題が修正されました。 このフローを使う場合は、このビルドにデバイスをアップグレードすることを検討してください。
 
 1. Windows 構成デザイナーを起動します。
 1. **[HoloLens デバイスのプロビジョニング]** をクリックして対象のデバイスを選択してから **[次へ]** を選択します。
@@ -196,12 +196,12 @@ Intune のドキュメントに従って、作業を開始します。 これら
 
 [Intune で VPN サーバーに接続するための VPN プロファイルを作成します](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure)。
 
-[Intune を使用して VPN 接続を追加するための Windows 10 および Windows Holographic デバイスの設定](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-windows-10)。
+[Intune を使用して VPN 接続を追加するための Windows 10 および Windows Holographic デバイスを設定します](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-windows-10)。
 
 完了したら、[プロファイルを割り当てる](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)ことを忘れないでください。
 
-### サードパーティ MDM ソリューションを使用した VPN
-サードパーティ VPN 接続の例:
+### サード パーティ MDM ソリューションを使用した VPN
+サード パーティ VPN 接続の例:
 ```xml
 <!-- Configure VPN Server Name or Address (PhoneNumber=) [Comma Separated]-->
       <Add>
