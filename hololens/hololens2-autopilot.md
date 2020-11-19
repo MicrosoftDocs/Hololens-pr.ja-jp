@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: be9da0ec2f301705a0691bcfc9dcf9d75eac8922
-ms.sourcegitcommit: cfbcdf562f949eef9cd797bbb08dfdf9f29e8fcd
+ms.openlocfilehash: 429f955777eae5cbe94c710ca4c17e03091fb99e
+ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "11168540"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "11176899"
 ---
 # Windows Autopilot for HoloLens 2
 
@@ -325,8 +325,8 @@ OOBE は、Autopilot プロファイルがダウンロードされるのを無�
 
 ## 既知の問題
 
-- Intune で構成されているデバイス コンテキスト ベースのアプリケーション インストールは、まだ機能しません。
-- Wi-Fi で Autopilot を設定する際、インターネット接続が最初に確立され、エンド ユーザー ライセンス契約 (EULA) が表示され、ユーザーが Autopilot 以外のセットアップ エクスペリエンスを続行するオプションを使用しているときに、Autopilot プロファイルがダウンロードされない場合があります。 Autopilot による設定を再試行するには、デバイスをスリープ状態にしてから電源を入れます。または、デバイスを再起動して、もう一度お試しください。
+- Intune で構成されているデバイス コンテキスト ベースのアプリケーション インストールは、まだ機能しません。 [デバイス コンテキストとユーザー コンテキストのインストールの詳細をご覧ください。](https://docs.microsoft.com/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
+-   Wi-Fi 経由で Autopilot を設定しているときに、インターネット接続が最初に確立されたときに Autopilot プロファイルがダウンロードされない場合があります。 この場合、使用許諾契約書 (EULA) が提示され、ユーザーは Autopilot 以外のセットアップを続行することができます。 Autopilot による設定を再試行するには、デバイスをスリープ状態にしてから電源を入れます。または、デバイスを再起動して、もう一度お試しください。
 
 ### トラブルシューティング
 
