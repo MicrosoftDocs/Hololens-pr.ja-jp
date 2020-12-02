@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: 5090a433b3d06e92cd36bdadbfbae3758432bb41
-ms.sourcegitcommit: 8656379a4871e118b9e06e72eab1dbcc8eb3cd42
+ms.openlocfilehash: f5405e0ae5096d23b791f18f04b842b2a577a9d5
+ms.sourcegitcommit: c77b2704e87f13b8513d198ce7df7dc0da6075b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182448"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "11192447"
 ---
 # Windows Autopilot for HoloLens 2
 
@@ -223,10 +223,7 @@ HoloLens デバイスを登録する主な方法は 2 つあります。
     
     - 無線インターネット接続用の「USB-C to Wifi」アダプターを使用してデバイスを接続し、HoloLens 2 に Autopilot エクスペリエンスを自動的に完了させます。
 
-       > [!NOTE]
-       > Autopilot を使用すると、[デバイスの所有者](security-adminless-os.md#device-owner)に影響があります。
-   
-       > [!IMPORTANT]  
+        > [!IMPORTANT]  
        > Autopilot 用の OOBE で Wi-Fi ネットワークを使用しようとするデバイスは、[Windows ホログラフィック バージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 上にある必要があります。
        >
        > イーサネット アダプターを使用するデバイスの場合、Out-of-the-Box-Experience (OOBE) を開始する前に、デバイスをネットワークに接続する必要があります。 デバイスは、最初の OOBE 画面で、Autopilot デバイスとしてプロビジョニングされているかどうかを判断します。 デバイスがネットワークに接続できない場合、またはデバイスを Autopilot デバイスとしてプロビジョニングしないことを選択した場合、後で Autopilot プロビジョニングに変更することはできません。 代わりに、デバイスを Autopilot デバイスとしてプロビジョニングするには、この手順を最初からやり直す必要があります。
