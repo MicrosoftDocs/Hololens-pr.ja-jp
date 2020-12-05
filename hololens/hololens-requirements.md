@@ -10,13 +10,13 @@ ms.reviewer: aboeger
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/30/2020
-ms.openlocfilehash: b7523b8ab38cfc37795ea6c99f9b22953baffe47
-ms.sourcegitcommit: 30e910348f5d5b68e914219c8eadb34d93770eab
+ms.date: 11/04/2020
+ms.openlocfilehash: 5f24d62193f083f96144b7e8c3518dc97c14be68
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11099806"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195590"
 ---
 # HoloLens 2 のエンタープライズ展開と管理
 
@@ -48,7 +48,7 @@ HoloLens 2 は、特に企業環境のモバイルデバイス管理 (MDM) シ�
 Windows Update for Business は、IT 管理者に対して Windows Update を中心とした追加の管理機能を提供するように設計されています。これには、更新プログラムをデバイスのグループに展開する機能や、更新プログラムをインストールするためのメンテナンス ウィンドウを定義する機能などが含まれています。 HoloLens 2 更新プログラムの管理の詳細については、 [こちら](https://docs.microsoft.com/hololens/hololens-updates)を参照してください。
 
 ### 証明書
-HoloLens 2 は、企業の Wi-fi ネットワーク認証または他のリソースへのアクセス用の証明書が必要な環境の場合に、MDM による証明書の展開をサポートします。 一部の MDM インフラストラクチャ構成では、HoloLens 2 への証明書の展開を有効にする必要があります。 [HoloLens 2 用の証明書とネットワークプロファイルを準備](https://docs.microsoft.com/hololens/hololens-certificates-network)する方法について説明します。 Intune の詳細については、 [こちら](https://docs.microsoft.com/mem/intune/protect/certificates-configure)を参照してください。
+HoloLens 2 は、企業 Wi-Fi ネットワーク認証のための証明書または他のリソースへのアクセスを必要とする環境の場合に、MDM による証明書の展開をサポートします。 一部の MDM インフラストラクチャ構成では、HoloLens 2 への証明書の展開を有効にする必要があります。 [HoloLens 2 用の証明書とネットワークプロファイルを準備](https://docs.microsoft.com/hololens/hololens-certificates-network)する方法について説明します。 Intune の詳細については、 [こちら](https://docs.microsoft.com/mem/intune/protect/certificates-configure)を参照してください。
 
 ## 構成
 
@@ -75,7 +75,7 @@ HoloLens 2 はクラウドの最初のデバイスであるため、すべての
 
 ### 証明書の展開
 
-組織内の企業の Wi-fi ネットワークや他のサービスにアクセスするために証明書が必要な場合、HoloLens 2 は MDM によるユーザーとデバイスの証明書の展開をサポートします。 注: MDM ソリューションでは、Windows 10 デバイスに証明書を展開するために、追加のインフラストラクチャ構成が必要になる場合があります。
+組織内の企業 Wi-Fi ネットワークやその他のサービスにアクセスするために証明書が必要な場合、HoloLens 2 は MDM によるユーザーとデバイスの証明書の展開をサポートします。 注: MDM ソリューションでは、Windows 10 デバイスに証明書を展開するために、追加のインフラストラクチャ構成が必要になる場合があります。
 
 ### セキュリティレビュー
 
@@ -88,8 +88,8 @@ Hololens 2 デバイスを企業のエンタープライズ環境に展開する
 | デバイスの設定 | 簡単な説明。                                                                              |
 |----------------|-------------------------------------------------------------------------------------------------|
 | [ハードウェアの制限](hololens-requirements.md#hardware-restrictions)               | ハードウェア制限により、接続性が低下し、データ保護がサポートされます。                        |
-| [Wi-Fi プロファイル](hololens-requirements.md#wi-fi-profiles)               | ユーザーの介入や操作なしで Wi-fi プロファイルを構成します。                              |
-| [証明書](hololens-requirements.md#certificates-1)               | アカウントまたは Wi-fi 認証、VPN 暗号化、web コンテンツの SSL 暗号化を提供します。 |
+| [Wi-Fi プロファイル](hololens-requirements.md#wi-fi-profiles)               | ユーザーの介入や操作なしで Wi-Fi プロファイルを構成します。                              |
+| [証明書](hololens-requirements.md#certificates-1)               | アカウントまたは Wi-Fi 認証、VPN 暗号化、および web コンテンツの SSL 暗号化を提供します。 |
 | [プロキシ](hololens-requirements.md#proxy)              | 内部トラフィックを管理する。                                                                        |
 |  [VPN](hololens-requirements.md#vpn)              | 会社のイントラネット上のアプリとリソースへのアクセスを制御します。                               |
 | [Kiosk Mode (キオスク モード)](hololens-requirements.md#kiosk-mode) | UI 経由でユーザーに表示されるアプリケーションを制限します。 |
@@ -100,7 +100,7 @@ HoloLens 2 は、カメラ、マイク、スピーカー、USB インターフ�
 
 以下は、HoloLens 2 でハードウェアの制限を構成するために、一般的に使用される MDM 設定の一覧です。 これらのハードウェアの制限の中には、接続の提供とデータ保護をサポートするものもあります。
 
-- [**WiFi を許可:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi) ユーザーがデバイスで Wi-fi 無線を有効にして使用できるかどうか
+- [**WiFi を許可:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi) ユーザーがデバイスで Wi-Fi 無線を有効にして使用できるかどうか
 - [**USB 接続を許可する:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) USB 接続が有効になっているかどうか (&#39;は USB 充電に影響しません)
 - [**Bluetooth を許可する:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) ユーザーがデバイスで Bluetooth 無線を有効にして使用できるかどうか
 
@@ -108,19 +108,19 @@ HoloLens 2 は、カメラ、マイク、スピーカー、USB インターフ�
 
 #### Wi-Fi プロファイル
 
-多くの企業の Wi-Fi ネットワークは、ユーザー アクセスの制限とセキュリティ保護のため、証明書とその他の複雑な情報を必要とします。 この高度な Wi-fi 情報は、一般的なユーザーが構成するのは困難ですが、MDM システムでは、ユーザーの介入なしでこれらの Wi-fi プロファイルを完全に構成できます。 複数の Wi-Fi プロファイルを MDM システムで作成できます。
+多くの企業の Wi-Fi ネットワークは、ユーザー アクセスの制限とセキュリティ保護のため、証明書とその他の複雑な情報を必要とします。 この高度な Wi-Fi 情報は、一般的なユーザーが構成するのは困難ですが、MDM システムでは、ユーザーの操作なしでこれらの Wi-Fi プロファイルを完全に構成できます。 複数の Wi-Fi プロファイルを MDM システムで作成できます。
 
-Windows 10 の Wi-fi 設定の詳細については、「 [エンタープライズプロファイルの WiFi 設定](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)」を参照してください。
+Windows 10 の Wi-Fi の設定の詳細については、「 [エンタープライズプロファイルの WiFi 設定](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)」を参照してください。
 
 #### 証明書
 
-[証明書] では、アカウント認証、Wi-fi 認証、VPN 暗号化、および web コンテンツの SSL 暗号化を提供して、セキュリティを向上させることができます。 管理者は、プロビジョニングパッケージを通じて手動でデバイスの証明書を管理することができますが、ベストプラクティスとしては、MDM システムを使用して、登録から更新と失効までの間に、それらの証明書を管理することをお&#39;します。 Mdm システムでは、デバイスの登録後に、これらの証明書をデバイス&#39; 証明書ストアに自動的に展開することができます (MDM システムで Simple Certificate Enrollment Protocol (SCEP) または公開キー暗号化標準 #12 (PKCS # 12) をサポートしている限り)。 MDM では、現在の証明書の有効期限が切れる前に、登録されているクライアント証明書を照会して削除したり、新しい登録要求をトリガーすることもできます。
+[証明書] では、アカウント認証、Wi-Fi 認証、VPN 暗号化、web コンテンツの SSL 暗号化などを提供して、セキュリティを向上させることができます。 管理者は、プロビジョニングパッケージを通じて手動でデバイスの証明書を管理することができますが、ベストプラクティスとしては、MDM システムを使用して、登録から更新と失効までの間に、それらの証明書を管理することをお&#39;します。 Mdm システムでは、デバイスの登録後に、これらの証明書をデバイス&#39; 証明書ストアに自動的に展開することができます (MDM システムで Simple Certificate Enrollment Protocol (SCEP) または公開キー暗号化標準 #12 (PKCS # 12) をサポートしている限り)。 MDM では、現在の証明書の有効期限が切れる前に、登録されているクライアント証明書を照会して削除したり、新しい登録要求をトリガーすることもできます。
 
 「 [HoloLens 2 用の証明書とネットワークプロファイルを準備](https://docs.microsoft.com/hololens/hololens-certificates-network)する」を参照してください。
 
 #### プロキシ
 
-ほとんどの企業のイントラネットネットワークは、内部トラフィックを管理するためにプロキシを利用します。 HoloLens 2 では、イーサネット接続と Wi-fi 接続用にプロキシサーバーを構成できます。 これらの設定は、VPN 接続には適用されません。
+ほとんどの企業のイントラネットネットワークは、内部トラフィックを管理するためにプロキシを利用します。 HoloLens 2 では、イーサネットと Wi-Fi 接続用にプロキシサーバーを構成できます。 これらの設定は、VPN 接続には適用されません。
 
 Windows 10 のプロキシ設定の詳細については、「 [NETWORKPROXY CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp)」を参照してください。
 
@@ -169,7 +169,7 @@ Microsoft は Windows 製品のエンジニアリングとリリースのサイ�
 
 企業のお客様は、MDM システムを使用して、HoloLens 2s の更新エクスペリエンスとプロセスを管理できます。 ほとんどの場合、更新プロセスを管理するポリシーは、機能更新プログラムと品質更新プログラムの両方に適用されます。 詳細については、「 [HoloLens 更新プログラムの MDM を構成する](https://docs.microsoft.com/hololens/hololens-updates)」をご覧ください。
 
-### アプリケーションを管理する 
+### アプリケーションを管理する
 
 IT 管理者は、HoloLens 2 にどのアプリをインストールできるかを制御し、それらのアプリを最新の状態に維持する方法を管理できます。
 
@@ -188,3 +188,6 @@ HoloLens 2 では、デバイスをワイプする3つの方法がサポート�
 **設定内でのデバイスのリセット:** エンドユーザーは、デバイスの設定アプリ内で HoloLens 2 を手動でリセットできます。 デバイス上の保存されているデータをすべて消去します。
 
 **高度な回復コンパニオン (弧):** ARC ツールを実行している PC から、ユーザーまたは管理者は、USB ケーブル経由で PC に接続された HoloLens 2 をフラッシュすることができます。 デバイス上の保存されているデータをすべて消去します。
+
+> [!div class="nextstepaction"]
+> [一般的な展開シナリオ](common-scenarios.md)
