@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d64d0a18fbbf6570173c4bd80bc4f036f4408e08
-ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
+ms.openlocfilehash: 06768203459827a83d8b6e891dfc8c46e33c3da2
+ms.sourcegitcommit: 1f37a06cde037f3acdc4ef3767a9384953d97c33
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "11145638"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11194867"
 ---
 # Microsoft Store のアプリケーションの検索、インストール、アンインストール
 
@@ -37,7 +37,12 @@ HoloLens は、HoloLens 用に特別に作られた新しいアプリだけで�
 **スタート** メニューの Microsoft Store を開きます。 アプリやゲームを参照します。 [音声コマンド](hololens-cortana.md)を使用し、"検索"と声に出して検索できます。検索ウィンドウが表示されたら、"ディクテーションを開始"と声に出し、プロンプトが表示されたら、検索語句を読み上げます。
 
 > [!NOTE]
-> 2021年1月12日に、以下のアプリが HoloLens デバイスでサポートが終了するようになります。 アプリの web バージョンを使用するには、デバイスで次のリンクを使用することをお勧めします。
+> HoloLens デバイスのシステム要件は、アプリのビルドのアーキテクチャに基づいています。 HoloLens (第 1 世代) のアプリのビルドが、ARM アーキテクチャ パッケージを含めるようにストアの新しい UWP に更新されていない場合、HoloLens 2 デバイスでは使用できません。 同様に、HoloLens 2 アプリに x86 アーキテクチャパッケージが含まれていない場合は、HoloLens (第 1 世代) デバイスでは使用できません。 HoloLens デバイス アーキテクチャ:
+> - x86 = HoloLens (第 1 世代)
+> - ARM = HoloLens 2
+
+> [!NOTE]
+> 2021 年 1 月 12 日に、以下のアプリが HoloLens デバイスでサポートが終了します。 アプリの web バージョンを使用するには、デバイスで次のリンクを使用することをお勧めします。
 
 | アプリ        | Link                                          |
 |------------|-----------------------------------------------|
