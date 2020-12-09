@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
-ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
+ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996415"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195600"
 ---
 # HoloLens 2 を再起動、リセット、または回復する
 
@@ -57,7 +57,7 @@ ms.locfileid: "10996415"
 
 4. デバイスをホスト PC に接続し、デバイス マネージャーを開きます。 (Windows 10 の場合は、**Windows キー**を押し、次に**X キー**を押して、**デバイス マネージャー**を選択します)。次の図に示すように、デバイスが *Microsoft HoloLens* として正しく列挙されていることを確認します。
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery デバイス マネージャー](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### ハード リセット手順
 
@@ -70,7 +70,7 @@ ms.locfileid: "10996415"
 4. デバイスをホスト PC に接続します。
 5. デバイス マネージャーを開きます (Windows 10 の場合は、**Windows キー**を押し、次に**X キー**を押して、**デバイス マネージャー**を選択します)。 次の図に示すように、デバイスが *Microsoft HoloLens* として正しく列挙されていることを確認します。
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery デバイス マネージャー 2](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## デバイスをきれいに再フラッシュする
 
@@ -81,12 +81,12 @@ ms.locfileid: "10996415"
 - [オーバーヒート](hololens-environment-considerations.md#temperature-and-regulatory-information) 
 - OS のクラッシュ (アプリケーションのクラッシュとは異なります)
 
-デバイスを再フラッシュするには 2 つの方法があります。 両方の場合、まず、[Windows ストアから高度な回復コンパニオン](https://www.microsoft.com/store/productId/9P74Z35SFRS8)をインストールする必要があります。
+デバイスを再フラッシュするには 2 つの方法があります。 どちらの場合も、最初に [Windows ストアから Advanced Recovery Companion をインストール](https://www.microsoft.com/store/productId/9P74Z35SFRS8)する必要があります。
 
 >[!WARNING]
 >デバイスを再フラッシュすると、TPM リセットを含むすべての個人データ、アプリ、設定が消去されます。
 
-基本的に高度な回復コンパニオンは、現在 [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004) の機能リリース ビルドをダウンロードするように設定されています。 高度な回復コンパニオンを介してデバイスを再フラッシュするための最新の HoloLens 2 Full Flash Update (FFU) パッケージを取得するには、[ここからダウンロード](https://aka.ms/hololens2download)してください。 このバージョンは、一般的に利用可能な最新のビルドです。
+既定では、Advanced Recovery Companion は最新の機能リリース ビルドをダウンロードするように設定されています。最新の機能リリースについては、[リリース ノート](hololens-release-notes.md#)を参照してください。 最新の HoloLens 2 フル フラッシュ更新プログラム (FFU) パッケージを取得して Advanced Recovery Companion を介してデバイスを更新するには、[こちらをクリックして最新の月次 HoloLens 2 イメージをダウンロード](https://aka.ms/hololens2download)してください。 このバージョンは、一般的に利用可能な最新のビルドです。
 
 再フラッシュ手順を開始する前に、アプリが Windows 10 PC にインストールされて実行されており、デバイスを検出する準備ができていることを確認してください。
 
@@ -134,8 +134,8 @@ IT 環境が Windows Store アプリの使用を妨げたり、小売店への�
 1. [ビジネス向け Microsoft Store](https://businessstore.microsoft.com) に移動し、Azure Active Directory ID を使用してサインインします。
 
 1. **[管理]、[設定]** の順に移動します。 **[買い物エクスペリエンス]** で **[オフライン アプリの表示]** をオンにします。 
-1. [**グループで買い物**] に移動し、[***高度な回復コンパニオン***](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8) アプリを検索します。
-1. [**ライセンスの種類**] を***オフライン***に変更し、**[管理]** を選択します。
+1. **[グループで買い物]** に移動して、[**_Advanced Recovery Companion_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8) を検索します。
+1. _*[ライセンスの種類]** を **_オフライン_*_ に変更し、_*[管理]** を選択します。
 1. **[オフラインで使用するためのパッケージをダウンロードする]** で、2 番目の青い **[ダウンロード]** ボタンを選択します。 ファイル拡張子が *.appxbundle* であることを確認します。
 
     - この段階で、デスクトップ PC がインターネットにアクセスできる場合は、パッケージをダブルクリックしてアプリをインストールします。
