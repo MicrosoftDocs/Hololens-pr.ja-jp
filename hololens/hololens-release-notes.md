@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3cf2797d4c01f66b6433aaf327e31061a8dd2f3e
-ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
+ms.openlocfilehash: fcc13150df796290cac3f9397a9ec6bda120037b
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "11176909"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201381"
 ---
 # HoloLens 2 のリリース ノート
 
@@ -28,6 +28,52 @@ HoloLens デバイスで生産性を向上させるには、引き続き機能�
 
 >[!NOTE]
 > HoloLens エミュレーターのリリースノートを読むには、 [アーカイブにアクセスして](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)ください。
+
+
+## Windows ホログラフィック、バージョン20H2 –2020年12月更新プログラム
+- ビルド19041.1131
+
+### アプリインストーラーを使用して HoloLens 2 にアプリをインストールする
+
+お客様が HoloLens 2 デバイスで **シームレスにアプリケーションをインストールできるように、新しい機能 (アプリのインストーラー) を追加** しています。 この機能は、 **非管理対象デバイスでは既定でオンに**なります。 この時点では、企業が中断されないように、アプリインストーラーを **管理対象デバイスで利用できなく** なります。  
+
+以下の **いずれか** に該当する場合、デバイスは "管理されています" と見なされます。
+- MDM[登録](hololens-enroll-mdm.md)済み
+- [プロビジョニングパッケージ](hololens-provisioning.md)で構成されている
+- ユーザー [id](hololens-identity.md) は Azure AD
+
+開発者モードを有効にしたり、Device Portal を使用したりしなくても、アプリをインストールできるようになりました。  Appx バンドルをデバイスにダウンロード (USB 経由またはエッジ経由) するだけで、インストールを開始するように促すメッセージが表示されるように、ファイルエクスプローラーで Appx バンドルに移動できます。  または、 [web ページからインストールを開始](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)します。  Microsoft Store またはサイドローディングで MDM の LOB アプリの展開機能を使用してインストールしたアプリと同様に、アプリを展開するには、アプリを展開する前に、アプリをインストールする前に、 [サインインツール](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) を使ってデジタル署名する必要があります。また、署名に使用する証明書は、HoloLens デバイスで [信頼される必要があり](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) ます
+
+**アプリケーションのインストール手順。**
+
+1.  デバイスが管理されていると見なされないようにします。
+1.  HoloLens 2 デバイスの電源が入っていて、PC に接続されていることを確認する
+1.  HoloLens 2 デバイスにサインインしていることを確認する
+1.  PC でカスタムアプリに移動し、yourapp を yourdevicename\Internal Storage\Downloads. にコピーします。   ファイルのコピーが完了したら、デバイスを切断することができます。
+1.  HoloLens 2 デバイスから [スタート] メニューを開き、[すべてのアプリ] を選択して、エクスプローラーアプリを起動します。
+1.  [ダウンロード] フォルダーに移動します。 アプリの左側のパネルで、[このデバイス] を選択してから、[ダウンロード] に移動することが必要な場合があります。
+1.  Yourapp ファイルを選びます。
+1.  アプリのインストーラーが起動します。 アプリをインストールするには、[インストール] ボタンを選択します。
+インストールされたアプリは、インストールの完了時に自動的に起動します。
+
+このフローをテストするには、 [Windows Universal Sample GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) のサンプルアプリを参照してください。
+
+[アプリインストーラーで HoloLens 2 にアプリをインストールする](app-deploy-app-installer.md)方法については、こちらを参照してください。  
+
+![App Installer による MRTK の例のインストール](images/hololens-app-installer-picture.jpg)
+
+### 更新プログラムの改善と修正:
+
+- 手作業によるトラッキングでは、以前は紛失した多くの新しいケースでトラッキングが維持されるようになりました。  このような新しいケースでは、ユーザーの実際の手に基づいて palm の位置のみが更新され、その他の関節は以前のポーズに基づいて推測されます。  この変更により、slapping、フランカ、scooping、clapping などのトラッキングの一貫性が向上します。  また、手が平らに近いときや、オブジェクトを保持している場合にも役立ちます。  手持関節が推論されている場合、 [結合精度](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) の値が "高" ではなく "概算" に設定されます。
+- Azure AD アカウントの PIN のリセットでエラー "問題が発生しました" が表示される問題が修正されました。
+- ユーザーは、ET を起動すると、設定アプリ、新規ユーザー、または通知トーストから起動すると、起動後の OOBE クラッシュを大幅に削減できます。
+- ユーザーは、OOBE から適切なタイムゾーンを取得する必要があります。
+
+## Windows ホログラフィックバージョン1903–2020年12月更新プログラム
+- ビルド18362.1088
+
+この毎月の品質更新プログラムには、注目すべき変更内容が含まれていません。最新の Windows ホログラフィック、バージョン20Hh2 –2020年12月の更新プログラム、およびビルドに追加された新しいアプリインストーラー機能を試すことをお勧めします。
+
 
 ## Windows ホログラフィック、バージョン20H2
 - ビルド19041.1128
@@ -208,7 +254,7 @@ Intune ポータルで、デバイス構成が正常に適用されているこ�
 #### TenantLockdown が true に設定された後、HoloLens で Autopilot プロファイルが割り当て解除された場合、OOBE 中にどうなりますか? 
 OOBE は、Autopilot プロファイルがダウンロードされるのを無期限に待機し、次のダイアログが表示されます。 TenantLockdown の影響を取り除くには、最初に Autopilot のみを使用してデバイスを元のテナントに登録し、TenantLockdown CSP によって導入された制限を取り除く前に、前の手順で説明したように RequireNetworkInOOBE の設定を解除する必要があります。 
 
-![ポリシーがデバイスに適用されるタイミングのデバイス内ビュー。](images/hololens-autopilot-lockdown.png)
+![ポリシーがデバイスに適用される時のデバイス内ビュー。](images/hololens-autopilot-lockdown.png)
 
 この情報は、 [Tenantlockdown CSP と自動操縦](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot)の残りの自動操縦の横にあります。
 

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cb8ac3b6b74fd6998cde4d32df12dcbd84556597
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 260b195a18ecb7fe05d819fcd3e86d56fc2022bf
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162949"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201341"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -29,33 +29,7 @@ HoloLens 用の最新の Insider Preview ビルドへようこそ! HoloLens 向�
 
 ## Windows Insider リリース ノート
 
-### アプリインストーラーを使用して HoloLens 2 にアプリをインストールする
-Windows ホログラフィック、バージョン20H2 の更新プログラムをインストールした後、すぐにアプリのインストーラー機能が提供されます。 お客様が HoloLens 2 デバイスで **シームレスにアプリケーションをインストールできるように、新しい機能 (アプリのインストーラー) を追加** しています。 この機能は、 **非管理対象デバイスでは既定でオンに**なります。 この時点では、企業が中断されないように、アプリインストーラーを **管理対象デバイスで利用できなく** なります。  
-
-以下の **いずれか** に該当する場合、デバイスは "管理されています" と見なされます。
-- MDM[登録](hololens-enroll-mdm.md)済み
-- [プロビジョニングパッケージ](hololens-provisioning.md)で構成されている
-- ユーザー [id](hololens-identity.md) は AAD です
-
-開発者モードを有効にしたり、Device Portal を使用したりしなくても、アプリをインストールできるようになりました。  Appx バンドルをデバイスにダウンロード (USB 経由またはエッジ経由) するだけで、インストールを開始するように促すメッセージが表示されるように、ファイルエクスプローラーで Appx バンドルに移動できます。  または、 [web ページからインストールを開始](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)します。  Microsoft Store またはサイドローディングで MDM の LOB アプリの展開機能を使用してインストールしたアプリと同様に、アプリを展開するには、アプリを展開する前に、アプリをインストールする前に、 [サインインツール](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) を使ってデジタル署名する必要があります。また、署名に使用する証明書は、HoloLens デバイスで [信頼される必要があり](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) ます
-
-**アプリケーションのインストール手順。**
-
-1.  デバイスが管理されていると見なされないようにします。
-1.  HoloLens 2 デバイスの電源が入っていて、PC に接続されていることを確認する
-1.  HoloLens 2 デバイスにサインインしていることを確認する
-1.  PC でカスタムアプリに移動し、yourapp を yourdevicename\Internal Storage\Downloads. にコピーします。   ファイルのコピーが完了したら、デバイスを切断することができます。
-1.  HoloLens 2 デバイスから [スタート] メニューを開き、[すべてのアプリ] を選択して、エクスプローラーアプリを起動します。
-1.  [ダウンロード] フォルダーに移動します。 アプリの左側のパネルで、[このデバイス] を選択してから、[ダウンロード] に移動することが必要な場合があります。
-1.  Yourapp ファイルを選びます。
-1.  アプリのインストーラーが起動します。 アプリをインストールするには、[インストール] ボタンを選択します。
-インストールされたアプリは、インストールの完了時に自動的に起動します。
-
-このフローをテストするには、 [Windows Universal Sample GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) のサンプルアプリを参照してください。
-
-[アプリインストーラーで HoloLens 2 にアプリをインストールする](app-deploy-app-installer.md)方法については、こちらを参照してください。  
-
-![App Installer による MRTK の例のインストール](images/hololens-app-installer-picture.jpg)
+最近リリースされた Windows Insider の全機能。 これらのすべての機能が通常利用可能になったため、最新の機能をすべて表示するには、 [リリースノート](hololens-release-notes.md) を読むことをお勧めします。 ここで確認しておくと、新しい魅力的な機能を試してみることができます。
 
 ## Insider ビルドの受信の開始
 

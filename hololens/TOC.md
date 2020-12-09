@@ -39,11 +39,16 @@
 ## [HoloLens を更新する方法](hololens-update-hololens.md)
 
 # 準備
-## HoloLens 2 のエンタープライズ展開の計画
-### [商用環境での HoloLens の展開](hololens-requirements.md)
-### [一般的なインフラストラクチャの展開シナリオ](common-scenarios.md)
-## 一般的なシナリオ
-### [Offline セキュリテイ保護](hololens-common-scenarios-offline-secure.md)
+## [商用環境での HoloLens の展開](hololens-requirements.md)
+## 一般的な展開シナリオ
+### [インフラストラクチャの展開シナリオ](common-scenarios.md)
+### クラウド接続された HoloLens 2 のリモート アシストを使用した展開
+#### [クラウド接続 - 展開の概要](hololens2-cloud-connected-overview.md)
+#### [クラウド接続 - 準備](hololens2-cloud-connected-prepare.md)
+#### [クラウド接続 - 構成](hololens2-cloud-connected-configure.md)
+#### [クラウド接続 - 展開](hololens2-cloud-connected-deploy.md)
+#### [クラウド接続 - 管理](hololens2-cloud-connected-maintain.md)
+### [オフライン セキュリテイ保護](hololens-common-scenarios-offline-secure.md)
 ## セキュリティ
 ### [セキュリティの概要](security-overview.md)
 ### [アーキテクチャ](security-architecture.md)

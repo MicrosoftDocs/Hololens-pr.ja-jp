@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5963e71bd6fdd084ca442995b02d99fc40da9d43
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 818f6c2be594b1d709acf7daef1d124c6b410ea4
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102336"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201361"
 ---
 # HoloLens のユーザー ID とサインインを管理する
 
@@ -36,11 +36,14 @@ HoloLens は、いくつかの種類のユーザー id をサポートしてい�
 
 | Id 型 | デバイスあたりのアカウント数 | 認証オプション |
 | --- | --- | --- |
-| [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Azure web credential provider</li><li>Azure Authenticator アプリ</li><li>バイオメトリクス (虹彩) &ndash; HoloLens 2 のみ</li><li>Hololens &ndash; (最初の gen) での PIN (第1世代)、hololens 2 には必須</li><li>パスワード</li></ul> |
+| [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Azure web credential provider</li><li>Azure Authenticator アプリ</li><li>バイオメトリクス (虹彩) &ndash; HoloLens 2 のみ <sup> 1</sup> </li><li>Hololens &ndash; (最初の gen) での PIN (第1世代)、hololens 2 には必須</li><li>パスワード</li></ul> |
 | [Microsoft アカウント (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 件 | <ul><li>バイオメトリクス (虹彩) &ndash; HoloLens 2 のみ</li><li>Hololens &ndash; (最初の gen) での PIN (第1世代)、hololens 2 には必須</li><li>パスワード</li></ul> |
 | [ローカルアカウント](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 件 | パスワード |
 
 クラウドに接続されたアカウント (AAD および MSA) には、Azure サービスを使うことができる機能が用意されています。  
+
+> [!NOTE]
+> 1-HoloLens 2 デバイスは、最大64の Azure AD アカウントをサポートしていますが、そのうちの10個のアカウントのみを虹彩認証に登録できます。 これは、Windows Hello for Business のその他の生体認証オプションと一致しています。 [詳細はこちらをご覧ください。](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
 
 ## ユーザーのセットアップ
 
