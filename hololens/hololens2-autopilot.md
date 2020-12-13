@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: f5405e0ae5096d23b791f18f04b842b2a577a9d5
-ms.sourcegitcommit: c77b2704e87f13b8513d198ce7df7dc0da6075b5
+ms.openlocfilehash: 95f187b2a4b6a86b59e05f3b12414c84ca0f6460
+ms.sourcegitcommit: fac3e62c1fd4dd531c2c8620870213cd570980dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "11192447"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "11205769"
 ---
 # Windows Autopilot for HoloLens 2
 
@@ -93,13 +93,12 @@ Surface デバイスの場合と同様に、お客様が Microsoft[クラウド 
 
 HoloLens デバイスを登録する主な方法は 2 つあります。 
 
-1. **販売業者は、注文時にパートナー センターにデバイスを登録できます。** 
- > [!NOTE]  
-   > これは、デバイスを Autopilot サービスに追加する際に推奨されるパスです。 [詳しくはこちらをご覧ください](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration)。  
+ - **販売業者は、注文時にパートナー センターにデバイスを登録できます。** 
 
-   または
+   > [!NOTE]  
+   > これは、デバイスを Autopilot サービスに追加する際に推奨されるパスです。 [詳しくはこちらをご覧ください](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration)。  
    
-2. **ハードウェア ハッシュ (ハードウェア ID とも呼ばれます) を取得し、MEM 管理センターにデバイスを手動で登録します**。 
+ - **ハードウェア ハッシュ (ハードウェア ID とも呼ばれます) を取得し、MEM 管理センターにデバイスを手動で登録します**。 
 
 **ハードウェア ハッシュを取得する**
 
@@ -134,11 +133,13 @@ HoloLens デバイスを登録する主な方法は 2 つあります。
 
 1. **[Windows Autopilot デバイスの追加]** の下で、[DeviceHash CSV ファイル]、**[開く]** の順に選択して、**[インポート]** を選択します。  
    
-   ![インポート コマンドを使用して、ハードウェア ハッシュをインポートします。](./images/hololens-ap-hash-import.png)
+   > [!div class="mx-imgBorder"]
+   > ![インポート コマンドを使用して、ハードウェア ハッシュをインポートします。](./images/hololens-ap-hash-import.png)
    
 1. インポートが完了したら、**[デバイス]**  >  **[Windows]**  >  **[Windows の登録]**  >  **[デバイス]**  >  **[同期]**] の順に選択します。同期するデバイスの数によっては、プロセスが完了するまでに数分かかる場合があります。 登録済みのデバイスを表示するには、**[更新]** を選択し ます。  
    
-   ![[同期] および [更新] コマンドを使用して、デバイスの一覧を表示します。](./images/hololens-ap-devices-sync.png)  
+   > [!div class="mx-imgBorder"]
+   > ![[同期] および [更新] コマンドを使用して、デバイスの一覧を表示します。](./images/hololens-ap-devices-sync.png)  
 
 ### 3. デバイスグループを作成する
 
@@ -168,7 +169,9 @@ HoloLens デバイスを登録する主な方法は 2 つあります。
 1. プロファイル名 と説明を入力し、**[次へ]** を選択します。  
    **HoloLens** を含む一覧が表示されます。 このオプションが表示されない場合は、[[フィードバック]](hololens2-autopilot.md#feedback-and-support-for-autopilot) オプションのいずれかを使用してお問い合わせください。
 
-   ![プロファイルの名前と説明を追加する](./images/hololens-ap-profile-name.png)
+   > [!div class="mx-imgBorder"]
+   > ![プロファイルの名前と説明を追加する](./images/hololens-ap-profile-name.png)
+   
 1. **[Out-of-box experience (OOBE)]** ページでは、ほとんどの設定が、この評価のために OOBE を合理化するように構成されています。 オプションで、次の設定を構成できます。  
 
    - **言語 (地域)**: OOBE の言語を選択します。 [[HoloLens 2 でサポートされている言語]](hololens2-language-support.md) の一覧から言語を選択することをお勧めします。
@@ -177,7 +180,9 @@ HoloLens デバイスを登録する主な方法は 2 つあります。
      > [!NOTE]  
      > デバイス名テンプレートを使用する場合、OOBE プロセスは、デバイス名を適用した後、Azure AD にデバイスを参加させる前に、デバイスをさらに 1 回再起動します。 この再起動により、新しい名前が有効になります。  
 
-   ![OOBE の設定を構成する](./images/hololens-ap-profile-oobe.png)
+   > [!div class="mx-imgBorder"]
+   > ![OOBE の設定を構成する](./images/hololens-ap-profile-oobe.png)
+   
 1. 設定を構成したら、**[次へ]** を選択します。
 1. **[スコープ タグ]** ページで、オプションで、このプロファイルに適用するスコープ タグを追加します。 スコープ タグの詳細については、「[分散型 IT に役割ベースのアクセス制御とスコープ タグを使用する](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags.md)」をご覧ください。 完了したら、**[次へ]** を選択します。
 1. **[割り当て]** ページで、**[割り当て先]** に **[選択したグループ]** を選択します。
@@ -186,11 +191,13 @@ HoloLens デバイスを登録する主な方法は 2 つあります。
   
    グループを除外する場合は、**[除外するグループを選択]** を選択し、除外するグループを選択します。
 
-   ![プロファイルにデバイス グループを割り当てます。](./images/hololens-ap-profile-assign-devicegroup.png)
+   > [!div class="mx-imgBorder"]
+   > ![プロファイルにデバイス グループを割り当てます。](./images/hololens-ap-profile-assign-devicegroup.png)
    
 1. **[レビュー + 作成]** ページで、設定を確認し、**[作成]** を作成してプロファイルを作成します。  
    
-   ![レビュー + 作成](./images/hololens-ap-profile-summ.png)
+   > [!div class="mx-imgBorder"]
+   > ![レビュー + 作成](./images/hololens-ap-profile-summ.png)
 
 ### 5. ESP 構成を確認する
 

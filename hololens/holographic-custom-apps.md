@@ -1,10 +1,10 @@
 ---
 title: HoloLens 用のカスタム アプリを管理する
-description: HoloLens でカスタムアプリを読み込みます。 ホログラフィックアプリのインストールとアンインストールの詳細については、こちらを参照してください。
+description: HoloLens でのカスタム アプリのサイド ロード。 ホログラフィック アプリのインストールとアンインストールについて詳しくは、以下をご覧ください。
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
-ms.date: 07/01/2019
+ms.date: 12/10/2020
 manager: v-miegge
-keywords: hololens、サイドローディング、サイドロード、サイドロード、ストア、uwp、アプリ、インストール
+keywords: hololens, サイドロード, サイドロード, サイドロード, ストア, UWP, アプリ, インストール
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
@@ -16,47 +16,53 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 12c5eedfab580be8acea48c1fc19b56c1ead08ac
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 67a857eb35126435f5642ee60168128300401394
+ms.sourcegitcommit: cd2071c12eaabe46c829b53c22d13e21b8af5b53
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828862"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "11218634"
 ---
 # HoloLens 用のカスタム アプリを管理する
 
-HoloLens では、Microsoft Store の既存のアプリケーションのほか、HoloLens 専用に構築された新しいアプリがサポートされています。 この記事では、カスタムのホログラフィックアプリケーションについて説明します。  
+HoloLens は、HoloLens 用に特別に作られた新しいアプリだけでなく、Microsoft ストアにある既存のアプリケーションの多くもサポートします。 この記事では、カスタム ホログラフィック アプリケーションについて説明します。  
 
-ストアアプリの詳細については、「[ストアを使用してアプリを管理する](holographic-store-apps.md)」を参照してください。
+ストア アプリの詳細については、「ストアでアプリ [を管理する」を参照してください](holographic-store-apps.md)。
 
-## カスタムアプリをインストールする
+> [!IMPORTANT]
+> 次の情報は、HoloLens (第 1 世代) (HoloLens Developer Edition とも呼ばれる) 用に作成されました。 そのため、デバイス ポータル経由でアプリをサイドローディングし、デバイス ポータルを使Visual Studioアプリをインストールする方法は一般的でした。 エンタープライズ展開では、両方の方法で使用する開発者モードを有効にすることをお勧めしません。 セキュリティで保護されたアプリの展開方法に関心がある場合は、「アプリ管理: 概要」を [確認してください](app-deploy-overview.md)。
+>
+> HoloLens 2 デバイス用のアプリインストールの開発者向け方法をお探しの場合は、以下を参照してください。
+> - [Device Portal: アプリのインストール](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
+> - [アプリVisual Studioを使用してアプリを展開およびデバッグする](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
 
-HoloLens に独自のアプリケーションをインストールするには、Device Portal を使用するか、Visual Studio からアプリを展開します。
+## カスタム アプリをインストールする
 
-### Device Portal でアプリケーションパッケージをインストールする
+HoloLens に独自のアプリケーションをインストールするには、Device Portal を使用するか、デバイス ポータルからアプリを展開Visual Studio。
 
-1. [Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)からターゲット HoloLens への接続を確立します。
-1. 左側のナビゲーションで、[**アプリ**] ページに移動します。
-1. [**アプリパッケージ**] で、アプリケーションに関連付けられている .appx ファイルを参照します。
+### Device Portal でのアプリケーション パッケージのインストール
+
+1. Device Portal から [ターゲット HoloLens](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) への接続を確立します。
+1. 左側のナビゲーションで、[アプリ] ページ **に移動** します。
+1. [ **アプリ パッケージ]** で、アプリケーションに関連付けられている .appx ファイルを参照します。
    > [!IMPORTANT]
-   > 関連する依存関係と証明書ファイルを必ず参照してください。
+   > 関連付けられている依存関係ファイルと証明書ファイルを参照してください。
 
-1. [**移動**] を選びます。
-   ![Microsoft HoloLens の Windows Device Portal でアプリフォームをインストールする](images/deviceportal-appmanager.jpg)
+1. [移動 **] を選択します**。
+   ![Microsoft HoloLens の Windows Device Portal にアプリ フォームをインストールする](images/deviceportal-appmanager.jpg)
 
 ### Microsoft Visual Studio 2015 からの展開
 
-1. アプリの Visual Studio ソリューション (.sln ファイル) を開きます。
-1. プロジェクトの**プロパティ**を開きます。
-1. 次のビルド構成を選択します: **Master/x86/リモートコンピューター**
-1. [**リモートコンピューター**] を選択すると、次のようになります。
-   - アドレスが HoloLens の Wi-fi IP アドレスを指していることを確認します。
-   - 認証を**ユニバーサル (暗号化**されていないプロトコル) に設定します。
-1. ソリューションを構築します。
-1. 開発用 PC から HoloLens にアプリを展開するには、[**リモートコンピューター**] を選びます。 既存のビルドが HoloLens に既にある場合は、[**はい]** を選んで新しいバージョンをインストールします。  
+1. アプリの新しいソリューションVisual Studio (.sln ファイル) を開きます。
+1. プロジェクトのプロパティを開 **きます**。
+1. 次のビルド構成を選択します **:Master/x86/Remote Machine**。
+1. リモート コンピューターを **選択した場合**:
+   - アドレスが HoloLens の Wi-Fi IP アドレスをポイントしている必要があります。
+   - 認証を **ユニバーサル (暗号化されていないプロトコル) に設定します**。
+1. ソリューションをビルドします。
+1. 開発用 PC から HoloLens にアプリを展開するには、[リモート コンピューター] **を選択します**。 HoloLens に既存のビルドが既にある場合は、[ **は** い] を選択してこの新しいバージョンをインストールします。  
 
-   ![Visual Studio でのアプリのリモートコンピューターによる Microsoft HoloLens への展開](images/vs2015-remotedeployment.jpg)  
-1. アプリは、HoloLens にインストールされ、自動起動します。
+   ![Microsoft HoloLens へのアプリのリモート コンピューター Visual Studio](images/vs2015-remotedeployment.jpg)  
+1. アプリケーションが HoloLens にインストールされ、自動起動されます。
 
-アプリをインストールすると、[**すべて**のアプリ] の一覧にアプリが表示されます (すべてのアプリを**起動**  >  **All apps**します)。
+アプリをインストールすると、[すべてのアプリ] の一覧 ([**** すべてのアプリを起動] )**に**  >  **表示されます**。
