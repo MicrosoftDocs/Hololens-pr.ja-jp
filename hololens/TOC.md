@@ -100,6 +100,7 @@
 ### [Intune と会社のポータル](app-deploy-intune.md)
 ### [ビジネス向け Microsoft Store](app-deploy-store-business.md)
 ### [プロビジョニング パッケージ](app-deploy-provisioning-package.md)
+### [アプリ インストーラー](app-deploy-app-installer.md)
 
 # 保守
 ## [HoloLens の更新プログラムの管理](hololens-updates.md)
@@ -115,7 +116,6 @@
 # HoloLens のリリース ノート
 ## [HoloLens 2 のリリース ノート](hololens-release-notes.md)
 ## [Microsoft HoloLens の Insider Preview](hololens-insider.md)
-### [アプリ インストーラー](app-deploy-app-installer.md)
 ## [HoloLens (第1世代) のリリース ノート](hololens1-release-notes.md)
 
 # [ご意見ご感想をお寄せください](hololens-feedback.md)
