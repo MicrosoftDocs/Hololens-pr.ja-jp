@@ -1,7 +1,7 @@
 ---
 title: プロビジョニング パッケージ
-description: アプリ、アプリの展開、エンタープライズアプリの demployment、プロビジョニング
-keywords: アプリ、アプリの展開、エンタープライズアプリの demployment、プロビジョニング
+description: アプリ, アプリの展開, エンタープライズ アプリ, プロビジョニング
+keywords: アプリ, アプリの展開, エンタープライズ アプリ, プロビジョニング
 author: evmill
 ms.author: v-evmill
 ms.date: 6/22/2020
@@ -14,40 +14,46 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0803b5f1b77ac7f123d534d101cd24903b87094c
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: 60efc454f9e1221372279401da9f8ee918e061e7
+ms.sourcegitcommit: efa3fb7e353c5e56ee467cc7fd94ffdfaf46e2e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052584"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "11219224"
 ---
 # プロビジョニング パッケージ
 
-プロビジョニングパッケージを使用すると、エンドポイントの管理にアクセスせずに、環境内のデバイスを準備して構成することができます。 また、ユーザーの id、登録状態、不在時のエクスペリエンス (OOBE) 中にデバイスに展開したり、 [セットアップ時にプロビジョニングパッケージを適用](https://docs.microsoft.com/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup)したりすることもできます。
+プロビジョニング パッケージを使用すると、エンドポイント管理にアクセスすることなく、環境内のデバイスを準備および構成できます。 また、ユーザーの ID、登録状態、Out of Box Experience (OOBE) の間、またはセットアップ中にプロビジョニング パッケージを適用することで、デバイスに展開 [することもできます](https://docs.microsoft.com/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup)。
 
-## プロビジョニングパッケージに関する考慮事項:
-* 非パブリックアプリ
+## プロビジョニング パッケージに関する考慮事項:
+* 非パブリック アプリ
 * USB サイドロードのみ
-* 自動更新なし (PPKGs 経由で手動で更新する必要があります)
+* 自動更新なし (PPKG による手動更新が必要)
 
-> [!NOTE] 
-> HoloLens デバイスのプロビジョニングパッケージの作成の基本については、「 [Hololens プロビジョニング](https://docs.microsoft.com/hololens/hololens-provisioning)」を参照してください。 アプリを展開するには、advanced provisioning から始める必要があります。 
+プロビジョニング パッケージ経由でインストールされたアプリは、ローカル コンピューター ストアの証明書で署名する必要があります。 プロビジョニング パッケージは証明書をデバイス (ローカル コンピューター) ストアにのみインストールできます。そのため、アプリと証明書は同じプロビジョニング パッケージ経由でインストールできます。 MDM から証明書を展開する場合、または証明書マネージャーを使用[](certificate-manager.md)してインストールする場合は、ローカル コンピューター ストアに証明書を展開して、この方法でインストールされたアプリに署名してください。
 
-> [!NOTE] 
-> HoloLens (第1世代) では、プロビジョニングパッケージを使用して、アプリのインストール (**UniversalAppInstall**) のサポートが制限されています。 HoloLens (第1世代) デバイスでは、OOBE 中のみ、ユーザーコンテキストによってインストールされるアプリのインストールのみがサポートされています。
+HoloLens デバイス向けプロビジョニング パッケージの作成の基本については [、HoloLens のプロビジョニングに関するページをご覧ください](https://docs.microsoft.com/hololens/hololens-provisioning)。 アプリを展開するには、まず高度なプロビジョニングを行う必要があります。
+
+> [!NOTE]
+> HoloLens (第 1 世代) では、プロビジョニング パッケージを使用したアプリのインストール **(UniversalAppInstall)** のサポートが制限されています。 HoloLens (第 1 世代) デバイスは、OOBE 中のみ、およびユーザー コンテキストインストールでのみ PPKG 経由のアプリのインストールをサポートします。
 
 ## セットアップ
 
-[Windows 構成デザイナー](https://www.microsoft.com/store/productId/9NBLGGH4TX22)では、次の4つの手順を実行します。
+[Windows 構成デザイナー内では、次](https://www.microsoft.com/store/productId/9NBLGGH4TX22)の 4 つの手順を実行します。
 
-1. ApplicationManagement/AllowAllTrustedApps を "Yes" に設定します。 「 [Applicationmanagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)」を参照してください。
-2. **UniversalAppInstall**  >  **UserContextAppLicense**の下で、[**パッケージ efamilyname**] を入力してください。 「 [UniversalAppInstall](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall)」をご覧ください。 「 [UserContextAppLicense](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense)」も参照してください。
-    - この情報がわからない場合は、既にアプリをインストールしているデバイスで Device Portal を使うことができます。 [アプリ] ページにアクセスして、"!" の前にあるすべての情報を PackageRelativeID の行で確認します。は、整理された **名前**です。
-3. これにより、新しいセクションの **Applicationfile**が表示されます。 この領域を使用して、appx バンドルをアップロードします。 
-4. アプリを購入したか、独自の LOB アプリを作成したかに応じて、ライセンスファイルまたはセキュリティ証明書をアップロードする必要があります。
-    - ライセンスファイルの場合: [ **UniversalAppInstall**  >  **usercontext]** の下で、ライセンスの場所を参照してアップロードします。 
-    - セキュリティファイルの場合 [ **証明書** ] に移動し、証明書を選択して、.appx バンドルと共にインストールします。 
+1. ApplicationManagement/AllowAllTrustedApps を "Yes" に設定します。 [ApplicationManagement/AllowAllTrustedApps を参照してください](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)。
 
-セキュリティで保護された場所にプロジェクトを保存してください。 次に、**プロビジョニングパッケージ**として**エクスポート**します。  
+2. **[UniversalAppInstall**  >  **UserContextAppLicense] で****、PackageFamilyName を入力してください**。 [UniversalAppInstall を参照してください](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall)。 [「UserContextAppLicense」も参照してください](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense)。
+
+   既にアプリをインストールしているデバイスで Device Portal を使用できます。 [アプリ] ページにアクセスし、PackageRelativeID 行 ("!" の前のすべての情報) を確認します。Is your **PackageFamilyName**.
     
-「 [HoloLens にパッケージを適用する](https://docs.microsoft.com/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup)」もご覧ください。
+3. You will then see that you have a new section, **ApplicationFile**. この領域を使って appx バンドルをアップロードします。
+
+4. アプリを購入したのか、独自の LOB アプリを構築したのかによって、ライセンス ファイルまたはセキュリティ証明書をアップロードする必要があります。
+
+    - ライセンス ファイルの場合: **UniversalAppInstall**  >  **UserContextAppLience の**下で、ライセンスの場所を参照してアップロードします。 
+    - セキュリティ ファイルの場合は、[ **証明書** ] に移動し、.appx バンドルと共にインストールする証明書を選択します。
+
+プロジェクトは安全な場所に保存してください。 次 **に、** プロビジョニング パッケージ **としてエクスポートします**。  
+    
+関連: [HoloLens にプロビジョニング パッケージを適用します](https://docs.microsoft.com/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup)。
