@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d14d33ea01a3fe649f7125e050dd1b0a16426e6c
-ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
+ms.openlocfilehash: 748475cb3e3c51e36904109ecfe03e65bdad6c1e
+ms.sourcegitcommit: 6446a80bece77d67077f36a390f13b8ce59af26e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165033"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252524"
 ---
 # 視覚効果と快適性の向上
 
@@ -42,7 +42,7 @@ HoloLens 2 では、次のようなときに、デバイスの調整がユーザ
 
 ![目に合わせるための調整プロンプト。](./images/07-et-adjust-for-your-eyes.png)
 
-このプロセスでは、一連のターゲット (ジェム) を目視します。 調整中にまばたきしても問題はありませんが、室内の他のオブジェクトではなく宝石に集中するようにしてください。  HoloLens はこのプロセスにより、ホログラフィックの世界をレンダリングできるように、ユーザーの眼球位置を学習します。
+このプロセスでは、一連のターゲット (ジェム) を目視します。 調整中にまばたきしても問題はありませんが、室内の他のオブジェクトではなく宝石に集中するようにしてください。  ジェムに焦点を当てると、HoloLens はホログラフィックの世界をレンダリングするための目の位置を学習できます。
 
 ![頭を動かさずにドットを目で追うようにユーザーに指示する調整プロンプト。](./images/07-et-hold-head-still.png)
 
