@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51cbef57cc3384b7026ae5d0b1ea98fdd942291f
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 72b976560664c89b7ae3cd9270c57ead438679cd
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865576"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253124"
 ---
 # HoloLens デバイスおよびホログラムについてよく寄せられる質問
 
@@ -256,7 +256,7 @@ HoloLens を Wi-Fi ネットワークに接続できない場合は、次の点�
 
 ### Active Directory Domain Services (AD DS) を使用して HoloLens ユーザー アカウントを管理できますか?
 
-いいえ、そうではありません。 HoloLens デバイスのユーザー アカウントを管理するには、Azure Active Directory (AAD) を使用する必要があります。
+いいえ、そうではありません。 HoloLens デバイスのユーザー アカウントを管理するには、Azure Active Directory (Azure AD) を使用する必要があります。
 
 ### HoloLens は自動データキャプチャシステム (ADCS) 自動登録をサポートしていますか?
 
@@ -271,7 +271,7 @@ HoloLens を Wi-Fi ネットワークに接続できない場合は、次の点�
 いいえ、そうではありません。 ただし、次のいずれかの方法で、この問題を回避することができます。
 
 - カスタム アプリを作成し、[キオスク モードを有効にします](hololens-kiosk.md)。 カスタム アプリはブランド化に対応しており、他のアプリ (リモートアシストなど) を起動することができます。  
-- AAD 内のすべてのユーザー プロファイル画像を会社のロゴに変更します。 ただし、この方法は、すべてのシナリオに適しているわけではありません。
+- Azure ADのすべてのユーザー プロファイル画像を会社のロゴに変更します。 ただし、この方法は、すべてのシナリオに適しているわけではありません。
 
 ### HoloLens (第 1 世代) および HoloLens 2 のロギング機能はどのようなものですか?
 
@@ -281,8 +281,8 @@ HoloLens を Wi-Fi ネットワークに接続できない場合は、次の点�
 
 ## HoloLens デバイスの保護に関する質問
 
-[HoloLens 2 のセキュリティ情報](security-overview.md)を参照してください。
-HoloLens 第1世代のデバイスでは、[この FAQ](hololens1-faq-security.md)を確認してください。
+[HoloLens 2 のセキュリティ情報を参照してください](security-overview.md)。
+HoloLens 第 1 世代デバイスの場合は、この FAQ を [確認してください](hololens1-faq-security.md)。
 
 [リストに戻る](#list)
 

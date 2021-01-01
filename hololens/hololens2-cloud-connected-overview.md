@@ -1,7 +1,7 @@
 ---
-title: 展開ガイド–リモートアシストによるクラウド接続の HoloLens 2-概要
-description: クラウドに接続されたネットワーク経由で HoloLens デバイスを登録する
-keywords: HoloLens、管理、クラウド接続、リモートアシスト、AAD、Azure AD、MDM、モバイルデバイス管理
+title: 展開ガイド - リモート アシスト付きのクラウド接続 HoloLens 2 - 概要
+description: クラウド接続ネットワークを使用して HoloLens デバイスを登録する
+keywords: HoloLens, 管理, クラウド接続, リモート アシスト, AAD, Azure AD, MDM, モバイル デバイス管理
 author: evmill
 ms.author: v-evmill
 ms.reviewer: aboeger
@@ -14,75 +14,75 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ba3f826360f999a72e671166af7a19d19ce9c567
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 7d954347c7c274b844d436c0d6fc96e8bbc59f10
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196342"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253184"
 ---
-# 展開ガイド–リモートアシスタンスによるクラウド接続の HoloLens 2 –概要
+# 展開ガイド - リモート アシスト付きのクラウド接続 HoloLens 2 – 概要
 
-このガイドは、IT 担当者が組織に Microsoft HoloLens 2 デバイスを計画して展開する際の全体的な目標 (Dynamics 365 リモートアシスタンスを使用するために、それらのデバイスクラウドを組織に接続することを目的としています。 これは、さまざまな HoloLens 2 のユースケースを通じて、組織の概念実証の展開のモデルとして機能するという点に注意してください。
+このガイドは、Dynamics 365 リモート アシストを使用してこれらのデバイスを組織に接続する全体的な目標を達成し、IT 担当者が Microsoft HoloLens 2 デバイスを計画して組織に展開する場合に役立ちます。 これは、さまざまな HoloLens 2 の使用事例にわたって組織に概念実証を展開するモデルとして機能します。
 
-このガイドでは、デバイスをデバイス管理に登録する方法、必要に応じてライセンスを適用する方法、エンドユーザーがデバイスのセットアップ時にリモートアシスタンスを直ちに使用できることを検証する方法について説明します。 これを行うには、セットアップして実行するために必要なインフラストラクチャの重要な要素を把握します。これには、HoloLens 2 を使用して展開を実現します。
+このガイドでは、デバイスをデバイス管理に登録し、必要に応じてライセンスを適用し、エンド ユーザーがデバイスのセットアップ時にリモート アシストをすぐに使用できるのを検証する方法について説明します。 これを行うには、HoloLens 2 を使用して大規模な展開を実現するために、セットアップと実行に必要な重要なインフラストラクチャについて説明します。
 
-## このガイドの内容
+## このガイドの情報
 
-このガイドには、HoloLens デバイスで組織内のリモートアシスタンスを設定するための具体的な目標があります。 その目標を達成するために必要な necessities について説明します。 この目標にフォーカスを維持するために、この展開の最適化または構成が必要な項目の削減のために、特定の準備と構成が事前に選択されます。 これらの選択肢の情報が表示され、ビジネスニーズに合わせて展開をカスタマイズできます。
+このガイドには、組織内で HoloLens デバイスにリモート アシストをセットアップする具体的な目標があります。 その目標を達成するために必要な情報を扱います。 この目標に集中するために、この展開を最適化したり、構成に必要な項目を減らしたりするために、特定の準備と構成を事前に選択します。 これらの選択肢が通知され、ビジネス ニーズに基づいて展開をカスタマイズできます。
 
-これは、 [シナリオ a: クラウド接続デバイスへの展開](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)に似ています。これは、次のようなさまざまな概念展開の検証に最適なオプションです。
+これは、シナリオ [A:](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)クラウド接続デバイスへの展開に似た設定です。これは、概念実証の多くの展開に最適なオプションです。これには、次のものが含まれます。
 
-- 通常、インターネットとクラウドサービスへの Wi-Fi ネットワークは完全に開かれます。
-- MDM の自動登録による Azure AD の参加--MDM (Intune) 管理
-- ユーザーは独自の企業アカウント (AAD) でサインインする
-  - デバイスごとに1つまたは複数のユーザーがサポートされる
-- 特定の用途に応じてさまざまなレベルのデバイスロックダウン構成が適用されます。これは、完全に開いて単一のアプリキオスクにする場合です。
+- Wi-Fiネットワークは、通常、インターネットサービスとクラウド サービスに完全に開いている
+- Azure AD MDM 自動登録を使用した参加 - MDM (Intune) 管理
+- ユーザーが自分の会社のアカウントでサインインする (Azure AD)
+  - サポートされているデバイスごとに 1 人または複数のユーザー
+- さまざまなレベルのデバイス ロックダウン構成が、完全に開いているアプリからシングル アプリ キオスクまで、特定の使用例に基づいて適用されます。
 
-![クラウド接続のシナリオ](./images/cloud-connected-deployment-chart.png)
+![クラウド接続シナリオ](./images/cloud-connected-deployment-chart.png)
 
-このガイドでは、追加のデバイス制限や構成は適用されませんが、これらのオプションをご確認いただくことをお勧めします。
+このガイドでは、他のデバイスの制限や構成は適用されませんが、終了後にこれらのオプションを確認してください。
 
-## リモートアシストについて
+## リモート アシストについて
 
-リモートアシスタンスでは、共同作業と修理、リモート検査、知識共有、トレーニングを行うことができます。 さまざまな役割や場所のユーザーを接続することによって、リモートアシスタンスを使用する技術者は、Microsoft Teams のリモートコラボレーターとつながることができます。 ビデオ、スクリーンショット、注釈を組み合わせて、同じ場所に&#39;していないときでも、リアルタイムで問題を解決することができます。 リモートのコラボレーターは、技術者&#39;s の物理スペースを挿入して、お客様が登録を行っているときに、または HoloLens で作業しているときに、その他の役に立つ情報を挿入できます。
+リモート アシストを使用すると、共同作業による保守と修復、リモート検査、知識の共有とトレーニングが可能になります。 リモート アシストを使用して技術者と異なる役割や場所のユーザーを接続すると、Microsoft Teams のリモート共同作業者と接続できます。 ビデオ、スクリーンショット、注釈を組み合わせて、問題が同じ場所になくても&#39;をリアルタイムで解決できます。 リモート共同作業者は、HoloLens でヘッドアップとハンズフリーの作業を行っている間に、技術者&#39;の物理空間に参照イメージ、概略図、その他の有用な情報を挿入できます。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## このガイドでは、次の操作を行います。
+## このガイドでは、次の方法を行います。
 
-備える
-
-> [!div class="checklist"]
-> - [HoloLens 2 デバイスのインフラストラクチャの基礎について説明します。](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [AAD について詳しくは、「所有している&#39;」を参照してください。](hololens2-cloud-connected-prepare.md#azure-active-directory)
-> - [Id 管理と AAD アカウントを最適に設定する方法について説明します。](hololens2-cloud-connected-prepare.md#identity-management)
-> - [MDM の詳細については、「準備が完了しているかどうかを&#39;する」を参照してください。](hololens2-cloud-connected-prepare.md#mobile-device-management)
-> - [リモートアシストのネットワーク要件について説明します。](hololens2-cloud-connected-prepare.md#network)
-> - [必要に応じて: 組織のリソースに接続する VPN](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
-
-設定
+準備:
 
 > [!div class="checklist"]
-> - [ユーザーとグループを作成する方法について説明します。](hololens2-cloud-connected-configure.md#azure-users-and-groups)
-> - [AAD で自動登録を設定する方法を説明します。](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
-> - [アプリケーションライセンスを割り当てる方法。](hololens2-cloud-connected-configure.md#application-licenses)
+> - [HoloLens 2 デバイスのインフラストラクチャの基本について学習します。](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
+> - [Azure ADについてAD、必要ない場合はセットアップ&#39;確認してください。](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [ID 管理と、Azure アカウントを最適にセットアップする方法ADします。](hololens2-cloud-connected-prepare.md#identity-management)
+> - [MDM について詳しく知り、まだ準備ができていない場合は Intune&#39;セットアップしてください。](hololens2-cloud-connected-prepare.md#mobile-device-management)
+> - [リモート アシストのネットワーク要件について説明します。](hololens2-cloud-connected-prepare.md#network)
+> - [オプション: 組織のリソースに接続するための VPN](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
 
-Deploy
-
-> [!div class="checklist"]
-> - [HoloLens 2 をセットアップし、登録を確認します。](hololens2-cloud-connected-deploy.md#enrollment-validation)
-> - [リモートアシスタンス通話を発信できることを確認します。](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
-
-維持
+次の構成を行います。
 
 > [!div class="checklist"]
-> - [Microsoft Store アプリを使ってリモートアシスタンスを更新する方法を説明します。](hololens2-cloud-connected-maintain.md#updates)
-> - [サポート計画を作成します。](hololens2-cloud-connected-maintain.md#support-plan)
+> - [ユーザーとグループを作成する方法。](hololens2-cloud-connected-configure.md#azure-users-and-groups)
+> - [Azure AD 内で自動登録をセットアップする方法。](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
+> - [アプリケーション ライセンスを割り当てる方法。](hololens2-cloud-connected-configure.md#application-licenses)
+
+展開:
+
+> [!div class="checklist"]
+> - [HoloLens 2 をセットアップし、登録を検証します。](hololens2-cloud-connected-deploy.md#enrollment-validation)
+> - [リモート アシスト呼び出しを行う可能性を検証します。](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
+
+次の保守を行います。
+
+> [!div class="checklist"]
+> - [Microsoft Store アプリを使ってリモート アシストを更新する方法。](hololens2-cloud-connected-maintain.md#updates)
+> - [サポート計画の作成。](hololens2-cloud-connected-maintain.md#support-plan)
 > - [開発計画。](hololens2-cloud-connected-maintain.md#development-plan)
 
 ## 次のステップ
 
 > [!div class="nextstepaction"]
-> [クラウド接続の展開-準備](hololens2-cloud-connected-prepare.md)
+> [クラウド接続展開 - 準備](hololens2-cloud-connected-prepare.md)
 
