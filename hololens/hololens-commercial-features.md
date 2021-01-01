@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 254c1048d2a1c7b63dfe87ead4585c21153fa8bb
-ms.sourcegitcommit: fc2ce4d843229bcc9ae6c7a42da559c0f6f558b7
+ms.openlocfilehash: 51d50f863e379baffee4e44c44e3ab467b517359
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "10882987"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253174"
 ---
 # 商用機能
 
@@ -64,7 +64,7 @@ HoloLens (第 1 世代) には、ライセンス オプションとして開発�
 |Microsoft Store (コンシューマー) |コンシューマー |MDM を使用してフィルター処理 |MDM を使用してフィルター処理 |
 |[ビジネス向け Microsoft Store ポータル](https://docs.microsoft.com/microsoft-store/working-with-line-of-business-apps) | |✔️ |✔️ |
 |**セキュリティと ID** | | | |
-|Azure Active Directory (AAD) アカウントを使用したサインイン |✔️ |✔️ |✔️ |
+|Azure Active Directory (Azure AD) アカウントを使用してサインインする |✔️ |✔️ |✔️ |
 |Microsoft アカウント (MSA) を使用したサインイン |✔️ |✔️ |✔️ |
 |Next Generation Credentials と PIN ロック解除 |✔️ |✔️ |✔️ |
 |[セキュア ブート](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot) |✔️ |✔️ |✔️ |

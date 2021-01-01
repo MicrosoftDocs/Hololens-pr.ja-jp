@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: 95f187b2a4b6a86b59e05f3b12414c84ca0f6460
-ms.sourcegitcommit: fac3e62c1fd4dd531c2c8620870213cd570980dc
+ms.openlocfilehash: 23a850022a686389669e96e987274cc6481b936e
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "11205769"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253244"
 ---
 # Windows Autopilot for HoloLens 2
 
@@ -255,7 +255,7 @@ HoloLens 2 で TenantLockdown CSP の RequireNetworkInOOBE ノードが true に
 
 HoloLens 2 で TenantLockdown CSP の RequireNetworkInOOBE ノードが true に設定されると、OOBE では次の操作が許可されなくなります。 
 - ランタイム プロビジョニングを使用したローカル ユーザーの作成 
-- ランタイム プロビジョニングによる AAD 参加操作の実行 
+- ランタイム プロビジョニングによる Azure AD への参加操作の実行 
 - OOBE エクスペリエンスでデバイスの所有者を選択する 
 
 #### Intune を使用してこれを設定する方法 

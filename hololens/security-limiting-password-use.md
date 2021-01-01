@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d577bc23089650e47159a8a77004a984059b095e
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009515"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11252974"
 ---
 # パスワードの使用制限
 
@@ -52,7 +52,7 @@ Windows Hello の資格情報の作成時には、ID プロバイダとの信頼
 
 詳しくは、次のインフォグラフィックをご覧ください。
 
-  ![Winows Hello のサインイン](images/security-hello-sign-in.png)
+  ![Windows Hello のサインイン](images/security-hello-sign-in.png)
   
 上記のグラフィックで、「nonce」 は "一度きりの数字" を表し、ランダムまたはセミランダムに生成された数であることに注意してください。 Windows Hello 生体認証または PIN の資格情報が一度設定されると、それがプロビジョニングされているデバイスを離れることはありません。 フィッシング攻撃などでユーザーの Windows Hello PIN が盗まれた場合でも、それは [ユーザーの物理デバイスがなければ役に立ちません](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password)。 
 
@@ -62,17 +62,17 @@ Windows Hello の資格情報の作成時には、ID プロバイダとの信頼
 
 ## Web アカウント マネージャーでのシングル サインオン 
 
-シングルサインオン (SSO) では、ユーザーの個人、職場または学校アカウントを使用して、ユーザーがパスワードを使用することなくデバイスにサインインできるようになります。 ユーザーは、「[Web アカウント マネージャー API](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041)」 を介して、すべての統合されたアプリやサービスに SSO で自動的に承認されます。
+シングルサインオン (SSO) では、ユーザーの個人、職場または学校アカウントを使用して、ユーザーがパスワードを使用することなくデバイスにサインインできるようになります。 ユーザーは、「[Web アカウント マネージャー API](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true)」 を介して、すべての統合されたアプリやサービスに SSO で自動的に承認されます。
 
 1つのアプリケーションを使用して ID を追加した後は、ユーザーの同意があれば、システム レベルの統合を使用してすべてのアプリとサービスで利用できるようになります。 これにより、アプリにサインインする負担が大幅に軽減され、シームレスな ID 体験を提供します。
 
 Web アカウント マネージャー API の実装の詳細については、「[Web アカウント マネージャー API の実装](https://docs.microsoft.com/windows/uwp/security/web-account-manager)」 を参照してください。
 
-  ![Winows Hello のサインイン](images/security-api-img.png)
+  ![セキュリティ API](images/security-api-img.png)
   
 特殊な認証要件を持つアプリ スイートの場合、Web アカウント マネージャー (WAM) フレームワークは、カスタム ID プロバイダーにも拡張できます。 ユーザーは、Microsoft Store からユニバーサル Windows プラットフォーム (UWP) アプリとしてパッケージ化されたカスタム ID プロバイダーをダウンロードし、その ID プロバイダーと統合された他のアプリで SSO を有効にできます。 
 
-カスタムの WAM ID プロバイダーの実装の詳細については、「[カスタム WAM ID プロバイダーの API リファレンス](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041)」 を参照してください。
+カスタムの WAM ID プロバイダーの実装の詳細については、「[カスタム WAM ID プロバイダーの API リファレンス](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true)」 を参照してください。
 
 ## WebAuthn を使用した Windows Hello および FIDO2 のサインイン
 
@@ -83,7 +83,7 @@ HoloLens 2は、パスワードを使用しないユーザーの資格情報 （
 
 Windows Hello の場合と同様に、ユーザーが FIDO2 資格情報を作成して登録すると、デバイス (HoloLens 2 または FIDO2 セキュリティ キー) によってデバイス上に秘密キーと公開キーが生成されます。 秘密キーはデバイスに安全に保存され、生体認証や PIN などのローカル ジェスチャを使用してロックを解除した後にのみ使用できます。 秘密キーが保存される場合は、公開キーがクラウドの Microsoft アカウントシステムに送信され、関連付けられているユーザー アカウントで登録されます。
 
-MSA および AAD アカウントを使用してサインインすると、システムは、生成された数字またはデータ変数を HoloLens 2 または FIDO2 デバイスに送信します。 HoloLens 2 またはデバイスは、秘密キーを使用して ID に署名します。 署名済みの ID とメタデータは、Microsoft アカウント システムに返送され、公開キーを使用して確認されます。
+MSA および Azure AD アカウントでサインインすると、システムは生成された番号またはデータ変数を HoloLens 2 または FIDO2 デバイスに送信します。 HoloLens 2 またはデバイスは、秘密キーを使用して ID に署名します。 署名済みの ID とメタデータは、Microsoft アカウント システムに返送され、公開キーを使用して確認されます。
 
 Windows Hello および FIDO2 デバイスは、HoloLens デバイス、特に組み込みのトラステッド プラットフォーム モジュールの安全な孤立領域に基づいて、資格情報を実装します。 TPM の孤立領域には秘密キーが格納され、ロックを解除するには生体認証または PIN が必要です。 同様に、FIDO2セキュリティ キーは、秘密キーを格納する安全な孤立領域を内蔵した小型の外部デバイスであり、ロックを解除するには生体認証または PIN が必要です。
 
@@ -91,7 +91,7 @@ Windows Hello および FIDO2 デバイスは、HoloLens デバイス、特に�
 
   ![FIDO img](images/security-fido2-whfb.png)
 
-MSA と AAD は、WebAuthn を実装することで、パスワードレス認証をサポートする最初の依拠当事者です。 
+MSA と Azure AD は、WebAuthn を実装してパスワードレス認証をサポートする最初の証明書利用者の 1 つです。 
 
 アプリケーションや SDK で WebAuthn を使用する方法の詳細については、「[WebAuthn API を使用して Windows 10のパスワードレス認証を行う](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/webauthnapis)」 を参照してください。
 

@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 79429c960b065e401ef18520350a199704981938
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102316"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253084"
 ---
 # 管理者不要のオペレーティング システム
 
@@ -34,9 +34,9 @@ Windows コンポーネントは、システム UWP を介して AppContainer �
 
 最後に、デバイスのテナントへの参加やユーザーの管理など、特定のデバイス全体の操作の実行は、"デバイス オーナー" にのみ許可されます。 デバイス上のユーザーは、次のいずれかの手順でこのグループに入ることができます。
   * デバイスの最初のユーザーは、常にオーナーとして指定されます。 
-    * このルールの例外は、デバイスが AAD 結合されている場合、結合を実行したユーザーがデバイス オーナーになることです。 たとえば、デバイスが自動操縦によって AAD 結合されている場合、デバイスに最初にサインインしているユーザーはデバイスに対して AAD 結合を行わないので、デバイス オーナーにはなりません。 AAD 結合しているデバイスのデバイス オーナーについての詳細については、["ローカル管理者に割り当てる" の](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin)ドキュメントをご覧ください。(ただし、HoloLens には管理者が存在しないため、「ローカル管理者」を「デバイス オーナー」とみなします)。
+    * このルールの例外は、デバイスが Azure AD に参加している場合、参加を実行したユーザーがデバイスの所有者になることです。 これは、たとえば、デバイスが Autopilot 経由で Azure AD に参加している場合に適用されます。この場合、デバイスにサインインした最初のユーザーは Azure AD デバイスに参加していないので、デバイスの所有者にはなれません。 Azure AD に参加しているデバイスでデバイスの所有者になるユーザーの詳細については、[「ローカル管理者の割り当て」のドキュメント](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin)を参照してください (ただし、管理者は HoloLens に存在しないので、「ローカル管理者」を「デバイスの所有者」としてお読みください)。
   * ユーザーがデバイス上の別のオーナーによって設定 UX からオーナーに昇格された場合。
-  * デバイス オーナーが利用できなくなった場合 (会社を退職した場合など)、デバイスが AAD 結合されている場合、テナント管理者は、Azure ポータルでデバイス オーナーを新しいユーザーに変更できます。
+  * デバイスの所有者が利用できなくなった場合 (会社を離れるなど)、かつデバイスが Azure AD に参加している場合、テナント管理者は Azure Portal でデバイスの所有者を新しいユーザーに変更できます。
 Azure AD テナントのグローバル管理者は、前の手順を必要とせずに、デバイスの所有者として暗黙の内にサインインされます。 
 
 IT 管理者は [プライバシー](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy) ポリシーを使用して、アクセスできるアプリを管理できます。 

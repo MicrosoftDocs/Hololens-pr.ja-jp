@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2b0ed266389ccc5a21117a604a6eb0abd214d4d1
-ms.sourcegitcommit: 1793f53f9e1cc63ac40edc09e65bb4beb80a4575
+ms.openlocfilehash: 3e06540dd7dca8892cd69abaf9a318d46ca0f3f2
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "11093240"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253144"
 ---
 # MAC アドレスが制限された Wi-Fi 環境での HoloLens デバイスのエンタープライズ登録
 
@@ -26,7 +26,7 @@ ms.locfileid: "11093240"
 
 ## シナリオ例
 
-安全な環境にいる多くの顧客は、(MACアドレスに基づいて) 承認されたデバイスのみが正常に接続できる (ワイヤレスアクセスポイントまたはDHCPサーバーでのMACアドレスフィルタリングを使用) ようにするワイヤレスまたは有線ネットワークに制限があります。 さらに、一部のワイヤレスネットワークは PEAP で保護できます。これには、ワイヤレスネットワークを正常に認証する前に、デバイスに証明書を適用する必要があります。
+セキュリティで保護された環境の多くのお客様は、ワイヤレス ネットワークまたはワイヤード (有線) ネットワークに制限があります。承認されたデバイス (MAC アドレスに基づく) のみが正常に接続できます (ワイヤレス アクセス ポイントまたは DHCP サーバーの MAC アドレス フィルターを使用)。 さらに、一部のワイヤレス ネットワークは PEAP で保護できます。PEAP では、ワイヤレス ネットワークを正常に認証する前に、デバイスに証明書を適用する必要があります。
 
 HoloLens デバイスでは、2 つの重要な問題が発生する可能性があります。これにより、HoloLens デバイスをネットワークに参加させる際に遅延や手作業が発生する可能性があります。
 
@@ -41,13 +41,13 @@ HoloLens デバイスでは、2 つの重要な問題が発生する可能性が
 
 ## 解決策
 
-環境内で利用可能なインフラストラクチャに応じて、この状況を改善する方法はいくつかあります。
+環境内で使用可能なインフラストラクチャに応じて、この状況を改善する方法は多数あります。
 
 | 解決策 | メリット | 要件 |
 | --- | --- | --- |
-| イーサネット アダプターを使用したプロビジョニング パッケージ | OOBE エクスペリエンスを向上させ、より迅速な技術者エクスペリエンスを可能にします。 | HoloLens と互換性のある USBC HubTechnician は、MAC キャプチャと OOBE のファイナライズのために引き続きデバイスと通信する必要があります |
-| イーサネット経由の Intune 登録による Autopilot | シングルステップ接続と顧客環境へのデバイスの登録 MACキ ャプチャは、デバイスとの通信なしで完了できます | お客様の AAD Tenant HoloLens 互換 USB-C ネットワーク アダプターで Intune が有効になっています |
-| MAC アドレスの自動レポート | デバイスが Intune テナント内に登録されたら、技術者への MAC アドレスのレポートをスクリプト化します。 | Intune Powershell コマンドレット |
+| イーサネット アダプターを使用したプロビジョニング パッケージ | OOBE エクスペリエンスを向上させ、より迅速な技術者エクスペリエンスを可能にします。 | HoloLens と互換性のある USB C HubTechnician は、MAC キャプチャと OOBE の最終処理のためにデバイスとやり取りする必要があります |
+| イーサネット経由の Intune 登録による Autopilot | シングルステップ接続と顧客環境へのデバイスの登録 MACキ ャプチャは、デバイスとの通信なしで完了できます | 顧客 Azure AD TenantHoloLens 互換 USB-C ネットワーク アダプターに対して Intune が有効 |
+| MAC アドレスの自動レポート | デバイスが Intune テナント内に登録されたら、技術者への MAC アドレスのレポートをスクリプト化します。 | Intune PowerShell Commandlets |
 
 ## イーサネット アダプターを使用したプロビジョニング パッケージ
 
@@ -60,7 +60,7 @@ HoloLens デバイスでは、2 つの重要な問題が発生する可能性が
 - イーサネット アダプターを含む HoloLens 互換の USB-C ハブ – 追加のドライバーやアプリケーションのインストールを必要としないハブが適しています。
 - 以下を含むプロビジョニング パッケージ：
   - ワイヤレス ネットワーク情報と証明書が含まれている
-  - オプションで、組織の AzureAD の登録情報が含まれている
+  - オプションで、組織の &#39;s Azure AD の登録情報が含まれている
   - その他の必要なプロビジョニング設定が含まれている
 
 ### Process
@@ -89,7 +89,7 @@ HoloLens デバイスでは、2 つの重要な問題が発生する可能性が
 
 これにより、デバイスの&quot;シングル タッチ&quot;で正しいプロビジョニング パッケージを適用し、デバイスの MAC アドレスを収集できます。 [プロビジョニングパッケージは、こちらのガイダンスに従って作成できます。](https://docs.microsoft.com/hololens/hololens-provisioning)
 
-## Intune Enrolment を使用した Autopilot
+## Intune の登録を使用した Autopilot
 
 ### 要件
 
@@ -117,7 +117,7 @@ HoloLens デバイスでは、2 つの重要な問題が発生する可能性が
 3. デバイスは、イーサネットアダプターを介して OOBE でインターネットに自動的に接続し、自動操縦構成を検出し、AzureAD と Intune に自動的に登録する必要があります
 4. デバイスは、必要に応じて Intune を介して必要な Wi-Fi 証明書とその他の構成を適用します
 5. 完了すると、技術者は Intune (エンドポイント マネージャー) ポータルをロードし、**[ホーム]-> [デバイス] -> [デバイス名] -> [ハードウェア]** にある デバイス プロパティ ページを表示できるようになります。
-6. Wif iMAC アドレスは Intune ポータル内に表示されます
+6. Wi-Fi MAC アドレスが Intune Portal 内に表示されます
 
 ![Intune 経由の MAC アドレス](images/mac-address-intune.jpg)
 
@@ -125,14 +125,14 @@ HoloLens デバイスでは、2 つの重要な問題が発生する可能性が
 
 ### メリット
 
-これにより、技術者がデバイスを装着したり、HoloLens 環境を手動で操作したりしなくても、デバイスをボックスから AAD および Intune に登録できるため、技術者は&quot;ヘッドオフ&quot;展開を体験できます。
+これにより、技術者がデバイスを装着したり、HoloLens 環境を手動で操作したりすることなく、デバイスをボックスから Azure AD および Intune に登録できる、技術者の&quot;ヘッドオフ&quot;展開エクスペリエンスが可能になります。
 
 ## 技術者への MAC アドレスの報告
 
 ### 要件
 
-- 顧客テナントに対する &quot;Intune Graph Powershell&quot; の承認
-- 技術者のコンピューターへの Intune Graph Powershell のインストール。
+- 顧客テナントに対する &quot;Intune Graph PowerShell&quot; の承認
+- 技術者のコンピューターへの Intune Graph PowerShell のインストール。
 - [https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0)
 - Intune の &quot;管理対象デバイス&quot; 要素への読み取りアクセス。 (ヘルプデスクオペレーター以上、またはカスタムロール)
 

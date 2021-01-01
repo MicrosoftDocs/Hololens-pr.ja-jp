@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f8434ffe2442f270d6360018bea4b64064168d0c
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: d8e68f73d05db397a7ee088382e82dfa762177b0
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009555"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253254"
 ---
 # セキュリティの概要とアーキテクチャ
 
@@ -32,7 +32,7 @@ Windows HoloLens 2 とオペレーティング システムのアーキテクチ
   
   * **データ保護**: ユーザーのデバイスが紛失または盗難があった場合、HoloLens 2 はデータの BitLocker 暗号化によって、認証されていないアプリケーションが機密情報を読み取ることを防ぎます。 
   
-  * **パスワードなしのオペレーティング システム**: 以前のパスワード ベースのオペレーティング システムでは、ユーザーが不注意によるフィッシング詐欺にさらされる可能性があったため、アカウントが侵害される原因となることがしばしばありました。 Windows Holographic for Business では、MSA および AAD のサインインのパスワードの使用を排除し、Windows Hello™ と FIDO2 のサインインを使用してユーザー ID 保護を強化します。 
+  * **パスワードなしのオペレーティング システム**: 以前のパスワード ベースのオペレーティング システムでは、ユーザーが不注意によるフィッシング詐欺にさらされる可能性があったため、アカウントが侵害される原因となることがしばしばありました。 Windows Holographic for Business は、MSA および Azure AD サインインのパスワードの使用を排除し、Windows Hello™ および FIDO2 サインインによるユーザー ID 保護を強化します。 
   
     > [!NOTE]
     > FIDO2 のサポートを受けるには、デバイスがビルド 19041 以降である必要があります。 
