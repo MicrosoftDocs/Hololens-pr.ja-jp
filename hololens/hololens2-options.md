@@ -1,7 +1,7 @@
 ---
-title: HoloLens 2 エディションのセットアップ
-description: 各 HoloLens 2 オプションが同じか異なるか、取得した後に何をするか。
-keywords: Hololens 2 購入オプション、HoloLens オプション、開発エディション
+title: HoloLens 2 エディション
+description: HoloLens 2 の各オプションが同じか異なるか、取得後の対応方法。
+keywords: Hololens 2 の購入オプション、HoloLens オプション、Developer Edition
 author: evmill
 ms.author: v-evmill
 ms.reviewer: sekerawa
@@ -14,41 +14,40 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 796fee002bd9ca4a67c3ce938aaf01295f406249
-ms.sourcegitcommit: d4eee928a39492b2d2d37e3ebf3a65e7b6f7cb63
+ms.openlocfilehash: d15dddc36a733adb3af2a0c2ae1fc8859c7a0d1e
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "11146147"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253571"
 ---
 # HoloLens 2 の概要
 
-HoloLens は、 *ホログラムによって* 処理される mixed reality デバイスであり、コラボレーションを強化するアプリとソリューションを提供します。 HoloLens 2 では、より高度な生産性と革新性が実現されています。
+HoloLens は、ホログラムを利用した** Mixed Reality デバイスで、コラボレーションを強化するアプリとソリューションを提供します。 HoloLens 2 では、生産性と技術革新の新しい高さを、目的を持って、よりスマートに機能します。
 
-お客様が次の業界の解決策を探している場合、または、新しい現実のためのエクスペリエンスを作成しようとしている[IT プロフェッショナル](https://www.microsoft.com/hololens/apps)、または次のような[ビジネス意思決定](https://www.microsoft.com/hololens/apps)[者](https://www.microsoft.com/hololens/developers)にとっては、HoloLens 2 は、コンピューティングのための新しい現実です。 
+次の業界ソリューションを求めている[IT](https://www.microsoft.com/hololens/apps)プロフェッショナル、新しい現実のための[](https://www.microsoft.com/hololens/developers)エクスペリエンスを生み出す開発者、次の技術革新について考[](https://www.microsoft.com/hololens/apps)えるビジネス意思決定者など、HoloLens 2 はコンピューティングの新しい現実です。 
 
-|                                                         | リモートアシストを使用した HoloLens 2 | HoloLens 2 (デバイスのみ) | HoloLens 2 開発エディション |
+|                                                         | HoloLens 2 (リモート アシスト付き) | HoloLens 2 (デバイスのみ) | HoloLens 2 Development Edition |
 |---------------------------------------------------------|:-----------------------------:|:------------------------:|:------------------------------:|
 | HoloLens 2 デバイス <br>(1 つのデバイス)                      |               ✔️               |             ✔️            |                ✔️               |
-| Dynamics 365 Remote Assist<br>(1 人の座席)                |               ✔️               |                          |                                |
+| Dynamics 365 Remote Assist<br>(1 シート)                |               ✔️               |                          |                                |
 | 保証                                                |               ✔️               |             ✔️            |                ✔️               |
-| アプリの開発に使用できる                                 |               ✔️               |             ✔️            |                ✔️               |
-| Azure の $500 クレジット (mixed reality サービスを含む) |                               |                          |                ✔️               |
-| Unity Pro & Pixyz プラグイン <br>(3 ヶ月無料)        |                               |                          |                ✔️               |
-| デバイス購入の上限                                   |              なし             |           なし           |          ユーザーあたり1人          |
+| アプリの開発に使用できます。                                 |               ✔️               |             ✔️            |                ✔️               |
+| 複合現実サービスを含む Azure の 500 ドルのクレジット |                               |                          |                ✔️               |
+| Unity Pro & Pixyz プラグイン <br>(3 か月無料)        |                               |                          |                ✔️               |
+| デバイス購入の制限                                   |              なし             |           なし           |          ユーザーごとに 1 つ          |
 
 ## オプションの概要
 
-**Hololens 2 (デバイスのみ)** : HoloLens 2 には、Microsoft が提供するクラウドと AI サービスの信頼性、セキュリティ、スケーラビリティによって、最も快適でイマーシブな mixed reality エクスペリエンスが提供されます。
+**HoloLens 2 (デバイスのみ) : HoloLens**2 は、Microsoft のクラウドおよび AI サービスの信頼性、セキュリティ、スケーラビリティによって強化された、最も快適で没入型の Mixed Reality エクスペリエンスを提供します。
 
-**Dynamics 365 リモートアシスタンスを使用した hololens 2** : hololens 2 と、Microsoft が提供する究極の mixed reality コミュニケーションアプリを組み合わせて使用することができます。 会社全体の生産性を向上させることで、より多くの目的で革新を実現します。 Dynamics 365 と業界パートナーのソリューションで、mixed reality が登場しました。
+**HoloLens 2 (Dynamics 365 リモート**アシスト付き): HoloLens 2 の 1 日目に開始し、Microsoft から提供される最終的な Mixed Reality コミュニケーション アプリを一緒に利用できます。 会社全体の生産性を高め、より多くの目的に合った革新を行います。 Dynamics 365 と業界パートナーのソリューションで Mixed Reality を体験できます。
 
-**Hololens 2 開発エディション** : hololens 2 を無料試用版の Unity ソフトウェアとクラウドサービスの Azure クレジットと組み合わせることで、mixed reality の構築を開始します。 基礎を超えて、mixed reality の開発を開始する方法について説明します。
+**HoloLens 2 Development Edition:** Mixed Reality 向け構築を開始します。このオファーは、HoloLens 2 と Unity ソフトウェアの無料試用版とクラウド サービス用の Azure クレジットを組み合わせた製品です。 基本を超えて、Mixed Reality の開発を開始する方法について説明します。
 
-さまざまな[HoloLens 2 エディション](https://www.microsoft.com/hololens/buy)について理解する
+[さまざまな HoloLens 2 エディションについて学ぶ](https://www.microsoft.com/hololens/buy)
 
 ## HoloLens 2 オプションの使用を開始する
-HoloLens の旅の詳細については、タブを選択してください。 
+HoloLens への取り込みについて詳しくは、タブを選択してください。
 
 [!INCLUDE[](includes/options-overview.md)]
-
