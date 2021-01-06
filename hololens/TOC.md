@@ -118,6 +118,6 @@
 ## [Microsoft HoloLens の Insider Preview](hololens-insider.md)
 ## [HoloLens (第1世代) のリリース ノート](hololens1-release-notes.md)
 
-# [フィードバックの送信]
+# ご意見ご感想をお寄せください
 ## [フィードバック Hub でのフィードバックの送信](hololens-feedback.md)
 ## [HoloLens ドキュメントの投稿ガイド](contributing.md)
