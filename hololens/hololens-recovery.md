@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195600"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253583"
 ---
 # HoloLens 2 を再起動、リセット、または回復する
 
 ## デバイスを充電する
 
-トラブルシューティングの手順を開始する前に、可能であれば、デバイスがバッテリ容量の 20 - 40% に充電されていることを確認してください。 HoloLens 2 デバイスに付属の充電器と USB Type-C ケーブルを使用します。 デバイスに付属している電源アダプターと USB-C-C ケーブルは、HoloLens 2 を充電する最適な方法です。 充電器は、18W の電力 (2A で 9V) を供給します。 これらのアクセサリが使用できない場合は、使用可能な充電器が少なくとも 15W の電力に対応していることを確認してください。
+トラブルシューティングの手順を開始する前に、可能であれば、デバイスがバッテリ容量の 20 - 40% に充電されていることを確認してください。 HoloLens 2 デバイスに付属の充電器と USB Type-C ケーブルを使用します。 デバイスに付属している電源アダプターと USB-C-C ケーブルは、HoloLens 2 を充電する最適な方法です。 充電器は、18W の電力 (2A で 9V) を供給します。 付属のプラグを使用すると、HoloLens 2 デバイスは、デバイスがスタンバイ状態のときに 65 分未満でバッテリーを完全に充電できます。 これらのアクセサリが使用できない場合は、使用可能な充電器が少なくとも 15W の電力に対応していることを確認してください。
 
 > [!NOTE]
 > 可能であれば、PC を使用してデバイスを USB 経由で充電することは避けてください。これは遅いです。

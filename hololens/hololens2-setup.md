@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b2d95839ff394d61eec8f5c76baf9a151855794a
-ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
+ms.openlocfilehash: 44b66d001e7a6f4bcd5fde9261a225f6aa21b666
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996405"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253565"
 ---
 # HoloLens 2 の使用準備
 
@@ -25,7 +25,7 @@ ms.locfileid: "10996405"
 
 ## HoloLens を充電する
 
-USB-C ケーブル (付属) を使って、電源アダプターを充電ポートに接続します。 電源アダプターは電源コンセントに差し込みます。 デバイスに付属している電源アダプターと USB-C-C ケーブルは、HoloLens 2 を充電する最適な方法です。 充電器は、18W の電力 (2A で 9V) を供給します。
+USB-C ケーブル (付属) を使って、電源アダプターを充電ポートに接続します。 電源アダプターは電源コンセントに差し込みます。 デバイスに付属している電源アダプターと USB-C-C ケーブルは、HoloLens 2 を充電する最適な方法です。 充電器は、18W の電力 (2A で 9V) を供給します。 付属のプラグを使用すると、HoloLens 2 デバイスは、デバイスがスタンバイ状態のときに 65 分未満でバッテリーを完全に充電できます。
 
 充電率と速度は、デバイスが実行されている環境によって異なる場合があります。
 
