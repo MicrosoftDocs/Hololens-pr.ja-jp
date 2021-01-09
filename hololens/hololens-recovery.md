@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 7845a00d1141fb721683c4e3f2a884ed0c37c735
+ms.sourcegitcommit: 33911e3b405732d0d31a27039c8f590d52b647c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253583"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "11254834"
 ---
 # HoloLens 2 を再起動、リセット、または回復する
 
@@ -49,6 +49,7 @@ ms.locfileid: "11253583"
 状況によっては、ソフトウェアの UI を使用せずにデバイスを手動でリセットする必要がある場合があります。
 
 ### 標準手順
+
 1. Type-C ケーブルを抜いて、デバイスを電源またはホスト PC から切断します。
 
 2. **電源**ボタンを 15 秒間押し続けます。 すべての LED がオフになるはずです。
@@ -88,9 +89,9 @@ ms.locfileid: "11253583"
 
 既定では、Advanced Recovery Companion は最新の機能リリース ビルドをダウンロードするように設定されています。最新の機能リリースについては、[リリース ノート](hololens-release-notes.md#)を参照してください。 最新の HoloLens 2 フル フラッシュ更新プログラム (FFU) パッケージを取得して Advanced Recovery Companion を介してデバイスを更新するには、[こちらをクリックして最新の月次 HoloLens 2 イメージをダウンロード](https://aka.ms/hololens2download)してください。 このバージョンは、一般的に利用可能な最新のビルドです。
 
-再フラッシュ手順を開始する前に、アプリが Windows 10 PC にインストールされて実行されており、デバイスを検出する準備ができていることを確認してください。
+再フラッシュ手順を開始する前に、アプリが Windows 10 PC にインストールされて実行されており、デバイスを検出する準備ができていることを確認してください。 また、HoloLens の充電が少なくとも 40％ 以上になっていることをご確認ください。
 
-![HoloLens 2 クリーン再フラッシュ スクリーンショット](images/ARC1.png)
+![HoloLens 2 クリーン再フラッシュのスクリーンショット](images/ARC1.png)
 
 ### 通常の手順
 
@@ -126,22 +127,21 @@ HoloLens 2 が正常に起動しない場合は、デバイスを回復モード
 
 IT 環境が Windows Store アプリの使用を妨げたり、小売店へのアクセスを制限したりする場合、IT 管理者は「オフライン」展開パスを通じてこのアプリを利用可能にすることができます。
 
- >[!NOTE] 
+ >[!NOTE]
  > - IT 管​​理者は、System Center Configuration Manager (SCCM) または Intune を介してこのアプリを配布することもできます。
  > - このガイドでは高度な回復コンパニオンに焦点を当てますが、プロセスは、他の「オフライン」アプリにも使用できます。
 
 展開パスを有効にする手順は、次のとおりです。
 1. [ビジネス向け Microsoft Store](https://businessstore.microsoft.com) に移動し、Azure Active Directory ID を使用してサインインします。
 
-1. **[管理]、[設定]** の順に移動します。 **[買い物エクスペリエンス]** で **[オフライン アプリの表示]** をオンにします。 
+1. **[管理]、[設定]** の順に移動します。 **[買い物エクスペリエンス]** で **[オフライン アプリの表示]** をオンにします。
 1. **[グループで買い物]** に移動して、[**_Advanced Recovery Companion_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8) を検索します。
 1. _*[ライセンスの種類]** を **_オフライン_*_ に変更し、_*[管理]** を選択します。
 1. **[オフラインで使用するためのパッケージをダウンロードする]** で、2 番目の青い **[ダウンロード]** ボタンを選択します。 ファイル拡張子が *.appxbundle* であることを確認します。
 
     - この段階で、デスクトップ PC がインターネットにアクセスできる場合は、パッケージをダブルクリックしてアプリをインストールします。
 
-
-    - 接続先 PC にインターネット接続がない場合は、次の手順を実行します。 
+    - 接続先 PC にインターネット接続がない場合は、次の手順を実行します。
        1. エンコードされていないライセンスを選択して、**[ライセンスを生成]** を選択します。
        2. **[必要なフレームワーク]** で **[ダウンロード]** を選択します。
        3. DISM を使用して、依存関係とライセンスを持つパッケージを適用します。 管理者のコマンド プロンプトから次のコマンドを実行します。
@@ -153,7 +153,7 @@ IT 環境が Windows Store アプリの使用を妨げたり、小売店への�
             > このコード例のバージョン番号は、現在利用可能なバージョンと一致しない場合があります。 例とは異なるダウンロード場所を選択した可能性もあります。 必要に応じてコマンドを変更します。
 
 > [!TIP]
-> 高度な回復コンパニオンを使用して FFU をオフラインでインストールする場合は、フラッシュ イメージをダウンロードすると便利です。 [**HoloLens 2**](https://aka.ms/hololens2download) の現在の画像をダウンロードします。 
+> 高度な回復コンパニオンを使用して FFU をオフラインでインストールする場合は、フラッシュ イメージをダウンロードすると便利です。 [**HoloLens 2**](https://aka.ms/hololens2download) の現在の画像をダウンロードします。
 
 その他のリソース:
 - [オフライン アプリの配布](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 
