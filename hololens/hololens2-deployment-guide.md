@@ -1,26 +1,26 @@
 ---
-title: 展開ガイド
-description: HoloLens 2 の展開ガイド (例としてリモート アシスト付き)
+title: 外部クライアント展開ガイド
+description: 外部クライアント用 HoloLens 2 の展開ガイド (例としてリモート アシスト付き)
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
 ms.author: pawinfie
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 1/7/2021
+ms.date: 1/12/2021
 ms.custom: ''
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0cd75fdbe5f6a4e6da87770768ce9f22bce491c0
-ms.sourcegitcommit: 58bffba63ed581351d80d13b1437aca74d7ed64a
+ms.openlocfilehash: c0ea468df2188700af408803ae1c55b9d0e4c763
+ms.sourcegitcommit: ea5fa6c970756025b77c00b4ea600d60ce033106
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "11266374"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "11268003"
 ---
-# リモート アシストによる外部クライアントへの HoloLens 2 の展開
+# リモート アシストを使用した外部クライアントへの HoloLens 2 の展開
 
 このドキュメントは、リモート アシストに重点を置いて HoloLens 2 デバイスを計画および展開する IT 専門職に役立ちます。 [リモート アシストについて詳しくは、次のリンクを参照してください](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)。
 
@@ -42,11 +42,11 @@ ms.locfileid: "11266374"
 - [クライアントが会社のリソースにアクセスできないか確認する方法](#how-to-ensure-that-clients-do-not-have-access-to-company-resources)
 - [アプリを制限する方法](#how-to-restrict-apps)
 - [パスワードを管理する方法](#how-to-manage-passwords)
-- [クライアントがチャット履歴にアクセスできないか確認する方法](#how-to-ensure-that-clients-do-not-have-access-to-chat-history)
+- [クライアントがチャット履歴にアクセスできないのを確認する方法](#how-to-ensure-that-clients-do-not-have-access-to-chat-history)
 
 ### 外部クライアントが相互に通信する機能を持たなことを確認する方法
 
-HoloLens から HoloLens へのリモート アシスト呼び出しはサポートされていないので、クライアントは互いに通信を検索できますが、相互に通信できません。 クライアントが検索および通話できるユーザーをさらに制限するために、[](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide)情報バリアはクライアントが通信できるユーザーを制限できます。 もう 1 つの検討すべきオプションは [、スコープ指定ディレクトリ検索の使用です。](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)
+HoloLens へのリモート アシスト HoloLens 呼び出しはサポートされていないので、クライアントは互いに通信を検索できますが、相互に通信できません。 クライアントが検索および通話できるユーザーをさらに制限するために、[](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide)情報バリアはクライアントが通信できるユーザーを制限できます。 もう 1 つの検討すべきオプションは [、スコープ指定ディレクトリ検索の使用です。](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)
 
  > [!NOTE]
 > シングル サインオンが有効になっているので [**、WDAC**](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac)を使用してブラウザーを無効にすることが重要です。 外部クライアントがブラウザーを開き、Web バージョンの Teams を使用する場合、クライアントは通話/チャット履歴にアクセスできます。
@@ -69,16 +69,16 @@ HoloLens から HoloLens へのリモート アシスト呼び出しはサポー
 
 ### アプリを制限する方法
 
-[キオスク モード](https://docs.microsoft.com/hololens/hololens-kiosk) や [WDAC (Windows Defender アプリケーション制御)](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) は、アプリケーションを制限するためのオプションです。
+[キオスク モード](https://docs.microsoft.com/hololens/hololens-kiosk) や [WDAC (Windows Defender Application Control)](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) は、アプリケーションを制限するためのオプションです。
 
 ### パスワードを管理する方法
 
 1. パスワードの有効期限を削除します。 ただし、これにより、アカウントが侵害される可能性が高くなっています。 NIST パスワードの推奨事項は、30 ~ 90 日ごとにパスワードを変更する方法です。
 1. HoloLens 2 デバイスのパスワードの有効期限を 90 日を超えるまで延長します。
-1. パスワードを変更するには、デバイスを Contoso に戻す必要があります。 ただし、デバイスがクライアントの工場に 90 日以上稼働すると予想される場合は、問題が発生する可能性があります。  
+1. パスワードを変更するには、デバイスを Contoso に戻す必要があります。 ただし、デバイスがクライアントの工場に 90 日間以上含まれると予想される場合は、問題が発生する可能性があります。  
 1. 複数のクライアントに送信されるデバイスの場合は、デバイスをクライアントに出荷する前にパスワードをリセットします。
 
-### クライアントがチャット履歴にアクセスできないか確認する方法
+### クライアントがチャット履歴にアクセスできないのを確認する方法
 
 リモート アシストは、セッションごとにチャット履歴をクリアします。 ただし、チャット履歴は Microsoft Teams ユーザーが利用できます。
 
@@ -115,5 +115,5 @@ HoloLens 2 の展開手順では、次の手順を実行することをお勧め
     1. もう 1 つの方法は、自動更新のために HoloLens 2 を夜間に接続したままにしておく方法です。
 1. [ネットワーク設定以外のすべての設定](https://docs.microsoft.com/hololens/settings-uri-list) ページを無効にして、ユーザーがクライアント サイトのゲスト ネットワークに接続できます。
 1. [HoloLens の更新プログラムの管理](https://docs.microsoft.com/hololens/hololens-updates)
-    1. OS の更新 [を制御するか、自由](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) にフローを許可するオプション。
+    1. OS の更新 [を制御するオプション、](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) または自由にフローを許可するオプション。
 1. [一般的なデバイスの制限](https://docs.microsoft.com/hololens/hololens-common-device-restrictions)。

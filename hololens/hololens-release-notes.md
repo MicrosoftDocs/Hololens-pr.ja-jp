@@ -8,27 +8,41 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 11/10/2020
+ms.date: 1/12/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e1bdc6292dc016dde78c781db79505e2b64b0d6d
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 7c93f567921a634e5a75c274304819ec9e81b933
+ms.sourcegitcommit: e26aa9059a7d8e73914205e80a89ea9637926e74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253064"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "11269418"
 ---
 # HoloLens 2 のリリース ノート
 
 HoloLens デバイスで生産性の高いエクスペリエンスを提供するために、引き続き機能、バグ、セキュリティ更新プログラムがリリースされます。 このページでは、毎月 HoloLens の新機能を確認できます。 To get the latest HoloLens 2 update, you can [either check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to flash your device via Advanced Recovery [Companion,](hololens-recovery.md#clean-reflash-the-device) [download it here](https://aka.ms/hololens2download). ダウンロードは最新の状態に保たれ、一般に利用可能な最新のビルドが提供されます。
 
+Windows Insider の新機能のフライトを再び開始します。 We will be flighting to the Dev Channel for the latest updates. Windows Insider ビルドに追加された機能や更新プログラムについては [、HoloLens Insider](hololens-insider.md) のメモを引き続きご覧ください。 これらの更新プログラムを実際に組み合わせ、準備を整えます。 
+
 >[!NOTE]
 > HoloLens エミュレーターのリリース ノートを読むには、 [アーカイブにアクセスしてください](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)。
 
+## Windows Holographic バージョン 20H2 - 2021 年 1 月更新プログラム
+- ビルド 19041.1134
+
+更新プログラムの機能強化と修正:
+
+- デバイスに多数のユーザーがいて、起動時、再開時、ユーザー切り替え時のパフォーマンスが向上しました。
+- リサーチ モードの arm32 サポートが [追加されました](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode)。
+
+## Windows Holographic バージョン 1903 - 2021 年 1 月更新プログラム
+- ビルド 18362.1091
+
+この毎月の品質更新プログラムには重要な変更が含まれているのではなく、Windows Holographic バージョン 2004 の最新ビルドを試してみてください。
 
 ## Windows Holographic Version 20H2 – December 2020 Update
 - ビルド 19041.1131
@@ -221,7 +235,7 @@ HoloLens 2 で TenantLockdown CSP の RequireNetworkInOOBE ノードが true に
 
 HoloLens 2 で TenantLockdown CSP の RequireNetworkInOOBE ノードが true に設定されると、OOBE では次の操作が許可されなくなります。 
 - ランタイム プロビジョニングを使用したローカル ユーザーの作成 
-- ランタイム プロビジョニングによる Azure AD参加操作の実行 
+- ランタイム プロビジョニングによる Azure AD への参加操作の実行 
 - OOBE エクスペリエンスでデバイスの所有者を選択する 
 
 #### Intune を使用してこれを設定する方法 
