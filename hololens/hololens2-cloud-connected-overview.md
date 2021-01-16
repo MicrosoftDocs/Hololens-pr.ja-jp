@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d954347c7c274b844d436c0d6fc96e8bbc59f10
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: fe83333c99f8dbf23b211c9b5155db256dcd20b3
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253184"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271677"
 ---
 # 展開ガイド - リモート アシスト付きのクラウド接続 HoloLens 2 – 概要
 
@@ -39,7 +39,7 @@ ms.locfileid: "11253184"
   - サポートされているデバイスごとに 1 人または複数のユーザー
 - さまざまなレベルのデバイス ロックダウン構成が、完全に開いているアプリからシングル アプリ キオスクまで、特定の使用例に基づいて適用されます。
 
-![クラウド接続シナリオ](./images/cloud-connected-deployment-chart.png)
+![クラウド接続シナリオ](./images/cloud-connected-guide-diagram.png)
 
 このガイドでは、他のデバイスの制限や構成は適用されませんが、終了後にこれらのオプションを確認してください。
 

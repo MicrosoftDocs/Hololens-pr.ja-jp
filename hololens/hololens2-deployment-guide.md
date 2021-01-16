@@ -13,20 +13,28 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c0ea468df2188700af408803ae1c55b9d0e4c763
-ms.sourcegitcommit: ea5fa6c970756025b77c00b4ea600d60ce033106
+ms.openlocfilehash: 7658ace4879fef401accabb95ca22e307e5f80a8
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "11268003"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271661"
 ---
 # リモート アシストを使用した外部クライアントへの HoloLens 2 の展開
 
-このドキュメントは、リモート アシストに重点を置いて HoloLens 2 デバイスを計画および展開する IT 専門職に役立ちます。 [リモート アシストについて詳しくは、次のリンクを参照してください](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)。
+このガイドは、次の目標を持つ IT 担当者が組織に Microsoft HoloLens 2 デバイスを展開する場合に役立ちます。
+
+1. クラウド接続 HoloLens 2 デバイス
+1. 使用する外部クライアントへの HoloLens 2 デバイスのローン
+1. セキュリティで保護されたローン付きデバイス
+
+このガイドでは[、HoloLens 2](#general-deployment-recommendations-and-instructions)のほとんどの展開シナリオに適用される HoloLens 2 の[](#common-concerns)一般的な展開に関する推奨事項と、ユーザーがリモート アシストを外部で使用するために展開する際に発生する一般的な問題について説明します。
 
 ## シナリオの説明
 
 このドキュメントの目的上、Contoso Company は、短期的または長期的な使用のために、HoloLens 2 デバイスを外部クライアントの工場に出荷する必要があります。 クライアントがアシスタンス サービス マシンを必要とする場合、クライアントは Contoso Company が提供する資格情報を使用して HoloLens 2 デバイスにログインし、リモート アシストを使用して Contoso Company の専門家に問い合わせています。
+
+リモート アシストの詳細については、こちらを [参照してください](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)。
 
 ### このシナリオの要件
 
@@ -112,7 +120,7 @@ HoloLens 2 の展開手順では、次の手順を実行することをお勧め
 1. [WDAC を使](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac)って、HoloLens 2 デバイスでアプリを許可または黒にします。
 1. セットアップの一環として、リモート アシストを最新バージョンに更新します。 これを行うには、次の 2 つのオプションがあります。
     1. これは、Windows Microsoft Store **--> Remote Assist --> App にアクセスして行います**。
-    1. もう 1 つの方法は、自動更新のために HoloLens 2 を夜間に接続したままにしておく方法です。
+    1. [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) CSP を使用して自動更新を有効にし、更新プログラムを受信するためにデバイスが接続された状態を維持します。
 1. [ネットワーク設定以外のすべての設定](https://docs.microsoft.com/hololens/settings-uri-list) ページを無効にして、ユーザーがクライアント サイトのゲスト ネットワークに接続できます。
 1. [HoloLens の更新プログラムの管理](https://docs.microsoft.com/hololens/hololens-updates)
     1. OS の更新 [を制御するオプション、](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) または自由にフローを許可するオプション。

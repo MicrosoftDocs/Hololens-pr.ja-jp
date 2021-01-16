@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5da96d2838cbe1a02956a3e567c6ecf6da9d6b10
-ms.sourcegitcommit: c93f23fe7c27dfa45fef300a4fc91aa811bc8126
+ms.openlocfilehash: 6df24d3a8640edeb9196834f940500aa51e85af7
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "11269482"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271718"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -29,7 +29,7 @@ HoloLens 用の最新の Insider Preview ビルドへようこそ! HoloLens [の
 
 ## Windows Insider リリース ノート
 
-Windows Insider の新機能のフライトを再び開始します。 We will be flighting to the Dev Channel for the latest updates. このページは、Windows Insider ビルドに追加された機能と更新プログラムが追加され、引き続き更新されます。  これらの更新プログラムを実際に組み合わせ、準備を整えます。 
+Windows Insider の新機能のフライトを再び開始します。 We will be flighting to the Dev Channel for the latest updates. このページは、Windows Insider ビルドに追加された機能と更新プログラムが追加され、引き続き更新されます。  これらの更新プログラムを実際に組み合わせ、準備を整えます。
 
 | 機能名                                              | 簡単な説明                                                                      | ビルドで使用可能 |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
@@ -38,12 +38,16 @@ Windows Insider の新機能のフライトを再び開始します。 We will b
 | [既定のアプリ ピッカー](#default-app-picker)                 | ファイルまたはリンクの種類ごとに起動するアプリを選択する                                      | 20279.1006 |
 | [Office Web アプリ](#office-web-app)                         | 新しい Web アプリOfficeが [すべてのアプリ] に表示されます。                                   | 20279.1006 |
 | [スワイプして入力する](#swipe-to-type)                           | ホログラフィック キーボードで指のヒントを使って単語を "スワイプ" する                        | 20279.1006 |
+| [USB-C 外部マイクのサポート](#usb-c-external-microphone-support) | アプリやリモート アシストには USB-C マイクを使用します。| 20279.1006 |
+| [キオスク モードの新しいアプリの新しい AUMID](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | 新しい設定とエッジ アプリの AUMID | 20279.1006 |
+| [キオスク モードの失敗の手渡しの改善](#kiosk-mode-behavior-changes-for-handling-of-failures) | キオスク モードでは、空のスタート メニューの前にグローバル割り当てられたアクセスが見えます。 | 20279.1006 |
+| [フォールバック診断を構成する](#configuring-fallback-diagnostics-via-settings-app) | 設定アプリでのフォールバック診断動作の設定 | 20279.1006 |
 
 ### 新しい Microsoft Edge の導入
 
 ![従来の Microsoft Edge ロゴから新しい Microsoft Edge ロゴへのアニメーション](images/new-edge.gif)
 
-新しい Microsoft Edge は [Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) オープン ソース プロジェクトを採用して、お客様との互換性を向上し、Web 開発者向けの Web の断片化を減らします。 
+新しい Microsoft Edge は [Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) オープン ソース プロジェクトを採用して、お客様との互換性を向上し、Web 開発者向けの Web の断片化を減らします。
 
 この Insider プレビューでは、HoloLens 2 のお客様が新しい Microsoft Edge を初めて利用できます。 新しい Microsoft Edge は最終的に HoloLens 2 の従来の Microsoft Edge に取って代わる機能ですが、現在、両方のブラウザーが Insider で利用できます。 新しい Microsoft Edge のフィードバック送信**** 機能またはフィードバック Hub を介して、フィードバックやバグをチームと[共有してください](hololens-feedback.md)。
 
@@ -58,9 +62,10 @@ Insider が利用できる Microsoft Edge には、新しい Microsoft Edge の�
 
 #### 新しい Microsoft Edge のポリシー設定の構成
 
-新しい Microsoft Edge は、従来の Microsoft Edge で提供していたよりも、HoloLens 2 のブラウザー ポリシーの広範なセットを IT プロに提供します。 
+新しい Microsoft Edge では、IT 管理者は従来の Microsoft Edge で利用していたよりも、HoloLens 2 のブラウザー ポリシーの広範なセットを提供します。
 
 新しい Microsoft Edge のポリシー設定の管理について詳しく知る上で役立つリソースを次に示します。
+
 - [Microsoft Intune を使って Microsoft Edge ポリシー設定を構成する](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
 - [Microsoft Edge Legacy から Microsoft Edge ポリシーへのマッピング](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
 - [Google Chrome から Microsoft Edge ポリシーへのマッピング](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
@@ -92,8 +97,10 @@ Insider が利用できる Microsoft Edge には、新しい Microsoft Edge の�
 **近日公開予定のシナリオと機能:**
 - WebXR と 360 ビューアー拡張機能
 - 環境内に配置された複数のウィンドウを閲覧する場合の正しいウィンドウに対するコンテンツの復元
-- 同時オーディオ ストリームを使用する複数のウィンドウの空間サウンド
 - ビデオ、Mixed Reality キャプチャ、または画面共有を使用してブラウザー経由で Microsoft Teams 通話に参加する (通話とオーディオの参加がうまく機能)
+
+**動作しないシナリオと機能:**
+- 同時オーディオ ストリームを備え、複数のウィンドウからの空間サウンド
 - "見て、言ってみる"
 - 印刷
 
@@ -134,7 +141,7 @@ Insider が利用できる Microsoft Edge には、新しい Microsoft Edge の�
 
 ### 既定のアプリ ピッカー
 
-ハイパーリンクをアクティブにするか、複数のインストール済みアプリをサポートするファイルの種類を開いた場合は、新しいウィンドウが開き、ファイルまたはリンクの種類を処理するインストール済みアプリを選択するように求めるメッセージが表示されます。 このウィンドウでは、選択したアプリでファイルまたはリンクの種類として "Once" または "Always" を処理することもできます。 
+ハイパーリンクをアクティブにするか、複数のインストール済みアプリをサポートするファイルの種類を開いた場合は、新しいウィンドウが開き、ファイルまたはリンクの種類を処理するインストール済みアプリを選択するように求めるメッセージが表示されます。 このウィンドウでは、選択したアプリでファイルまたはリンクの種類として "Once" または "Always" を処理することもできます。
 
 ![アプリ ピッカー ウィンドウ](images/default-app-picker.png)
 
@@ -149,6 +156,69 @@ If you choose "Always" but later want to change which app handles a particular f
 一部のお客様は、入力する単語の形をスワイプすることで仮想キーボードを "入力" する方が速く見つかり、ホログラフィック キーボード用にこの機能をプレビューします。 ホログラフィック キーボードの平面を指の先端を通して一度に 1 つの単語をスワイプし、単語の形状をスワイプし、キーボードの平面から指の先端を引き出します。 単語間でキーボードから指を外して Space キーを押す必要なく、フォローアップ語をスワイプできます。 キーボードで指が動いた後にスワイプ の証跡が表示される場合は、この機能が動作しているのが分かっています。
 
 この機能は、(携帯電話のディスプレイとは異なり) 指に抵抗を感じないホログラフィック キーボードの性質上、使い方が難しい場合があります。 この機能は一般リリース向けとして評価されています。そのため、お客様からのフィードバックは重要です。この機能が役に立つ場合も、構築的なフィードバックがある場合も、フィードバック Hub でお知 [らせください](hololens-feedback.md)。
+
+### USB-C 外部マイクのサポート
+
+> [!IMPORTANT]
+> USB マイクを **接続すると、自動的に入力デバイスとして設定されません**。 一連の USB-C ヘッドホンを接続すると、ユーザーはヘッドホンのオーディオが自動的にヘッドホンにリダイレクトされるのを確認しますが、HoloLens OS では、他の入力デバイスよりも内部マイク アレイの優先順位が優先されます。 **USB-C マイクを使用するには、次の手順に従います。**
+
+ユーザーは、[サウンドの設定] パネルを使用して、USB-C に接続された外部マイク **を** 選択できます。 これにより、ユーザーは自分のマイクを接続して使用できますが、録音やアプリでは USB を使用できます。 USB-C マイクは、簡単に有効にし、使用できます。
+
+設定アプリ**を開き**、[システム サウンド]**を**  ->  **選択します**。
+
+![サウンド設定](images/usbc-mic-1.jpg)
+
+> [!IMPORTANT]
+> リモート アシストで外部マイクを **使用**するには、ユーザーが [サウンド デバイスの管理] ハイパーリンクをクリックする必要があります。
+>
+> 次に、ドロップダウンを使用して、外部マイクを **Default** または **Communications Default に設定します。** **[Default] を**選択すると、外部マイクがすべての場所で使用されます。
+>
+> Communications **Default を選択** すると、外部マイクはリモート アシストや他の通信アプリで使用されますが、HoloLens Mic Array は他のタスクにも引き続き使用できます。
+
+![サウンド デバイスを管理する](images/usbc-mic-2.png)
+
+<br>
+
+![マイクの既定値を設定する](images/usbc-mic-3.jpg)
+
+#### マイクのBluetoothについて
+
+残念Bluetoothは、HoloLens 2 では現在サポートされていません。
+
+#### USB-C マイクのトラブルシューティング
+
+一部の USB-C マイクは、マイクとスピーカーの両方として誤 *って報告します* 。 これは、HoloLens ではなく、マイクの問題です。 これらのマイクのいずれかを HoloLens に接続すると、サウンドが失われる可能性があります。 幸いなことに、単純な修正プログラムがあります。  
+
+[**設定**  ->  **システム**  ->  **サウンド]** で、組み込みのスピーカー **(アナログ機能オーディオ**ドライバー) を既定のデバイスとして明示的に**設定します**。 HoloLens は、マイクを取り外して後で再接続した場合でも、この設定を記憶する必要があります。
+
+![USB-C マイクのトラブルシューティング](images/usbc-mic-4.png)
+
+### キオスク モードで新しい設定アプリとエッジ アプリを使用する
+
+キオスクにアプリを含 [めた](hololens-kiosk.md)場合、IT 管理者は多くの場合、アプリをキオスクに追加しますが、アプリ ユーザー モデル ID (AUMID) を使用します。 設定アプリと Microsoft Edge アプリはどちらも新しいアプリと見なされ、それらのアプリに AUMID を使用する古いアプリキオスクは、新しい AUMID を使用するために更新する必要があります。
+
+キオスクを変更して新しいアプリを含める場合は、新しい AUMID を追加し、古い AUMID を残することをお勧めします。 これにより、ユーザーが OS を更新するときに簡単に移行が行え、意図した方法でキオスクを使用し続ける新しいポリシーを受け取る必要がなされます。
+
+| アプリ                    | AUMID                                                  |
+|------------------------|--------------------------------------------------------|
+| 古い設定アプリ       | HolographicSystemSettings_cw5n1h2txyewy!App            |
+| 新しい設定アプリ       | BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!App |
+| 古い Microsoft Edge アプリ | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge    |
+| 新しい Microsoft Edge アプリ | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE    |
+
+### 失敗の処理に関するキオスク モードの動作の変更
+
+以前のビルドでは、デバイスにキオスク構成 (グローバル割り当てアクセスと AAD グループ メンバーの割り当てアクセスの両方の組み合わせ) がある場合、AAD グループ メンバーシップの決定に失敗した場合、ユーザーには["スタート](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)" メニューに何も表示されません。
+
+Windows Insider リリースから、キオスク エクスペリエンスは AAD グループ キオスク モード中に障害が発生した場合に、グローバル キオスク構成 (存在する場合) にフォールバックします。
+
+### 設定アプリによるフォールバック診断の構成
+
+設定アプリで、ユーザーはフォールバック診断の動作 [を構成できます](hololens-diagnostic-logs.md)。 設定アプリで、[プライバシーのトラブルシューティング **] ページ**  ->  **に移動**し、この設定を構成します。
+
+> [!NOTE]
+> デバイスに対して MDM ポリシーが構成されている場合、ユーザーはこの動作を上書きできます。  
+
 
 
 
