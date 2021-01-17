@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5299f56429adb6212074c16b67d2f10d418129f4
-ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
+ms.openlocfilehash: 8678e238ca17ad66873d4e4ea72ebef161ee6315
+ms.sourcegitcommit: d261604bf9e7ef04c2a947611715d0bec78b4f92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "11134657"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "11270727"
 ---
 # HoloLens 2 のハードウェア
 
@@ -69,7 +69,12 @@ Microsoft HoloLens 2 は、自立型ホログラフィック コンピュータ�
 | 慣性計測装置 (IMU: Inertial measurement unit) | 加速度計、ジャイロスコープ、磁力計 |
 | カメラ | 静止画 8-MP、1080p30 ビデオ |
 
-### オーディオと音声
+![HoloLens 2 センサー](images/hl2-sensors.png)
+
+> [!NOTE]
+> 写真で呼び出されるセンサーを覆い隠さないでください。 ヘッド トラッキング カメラは非常に幅広い FOV を持っています。覆い隠さないだけでなく、カメラの周囲には何も配置しないでください。
+
+### オーディオと音声認識
 
 |   |   |
 | - | - |
