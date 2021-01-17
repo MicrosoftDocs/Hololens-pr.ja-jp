@@ -12,16 +12,16 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8678e238ca17ad66873d4e4ea72ebef161ee6315
-ms.sourcegitcommit: d261604bf9e7ef04c2a947611715d0bec78b4f92
+ms.openlocfilehash: 41508b8cdc2e8e34545c1e07136b69eea2e3aa48
+ms.sourcegitcommit: e97b2b8f47ac5ec2e3be3e5d69d8e026b6f21111
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "11270727"
+ms.locfileid: "11271176"
 ---
 # <span data-ttu-id="2a09f-104">HoloLens 2 のハードウェア</span><span class="sxs-lookup"><span data-stu-id="2a09f-104">HoloLens 2 hardware</span></span>
 
-![HoloLens 2 の側面図](images/hololens2-exploded-medium.png)
+![HoloLens 2 の側面図](images/hololens2-breakdown.png)
 
 <span data-ttu-id="2a09f-106">Microsoft HoloLens 2 は、自立型ホログラフィック コンピューターです。</span><span class="sxs-lookup"><span data-stu-id="2a09f-106">Microsoft HoloLens 2 is an untethered holographic computer.</span></span>  <span data-ttu-id="2a09f-107">HoloLens (第 1 世代) から始まったホログラフィック コンピューティングをさらに改良し、より快適でイマーシブなエクスペリエンスを実現しています。Mixed Reality でのコラボレーションに必要なオプションも多数追加されています。</span><span class="sxs-lookup"><span data-stu-id="2a09f-107">It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality.</span></span>
 
@@ -69,7 +69,7 @@ ms.locfileid: "11270727"
 | <span data-ttu-id="2a09f-154">慣性計測装置 (IMU: Inertial measurement unit)</span><span class="sxs-lookup"><span data-stu-id="2a09f-154">Inertial measurement unit (IMU)</span></span> | <span data-ttu-id="2a09f-155">加速度計、ジャイロスコープ、磁力計</span><span class="sxs-lookup"><span data-stu-id="2a09f-155">Accelerometer, gyroscope, magnetometer</span></span> |
 | <span data-ttu-id="2a09f-156">カメラ</span><span class="sxs-lookup"><span data-stu-id="2a09f-156">Camera</span></span> | <span data-ttu-id="2a09f-157">静止画 8-MP、1080p30 ビデオ</span><span class="sxs-lookup"><span data-stu-id="2a09f-157">8-MP stills, 1080p30 video</span></span> |
 
-![HoloLens 2 センサー](images/hl2-sensors.png)
+![HoloLens 2 センサー](images/hololens2-front-view.png)
 
 > [!NOTE]
 > <span data-ttu-id="2a09f-159">写真で呼び出されるセンサーを覆い隠さないでください。</span><span class="sxs-lookup"><span data-stu-id="2a09f-159">Do no cover any of the sensors that are called out in the picture.</span></span> <span data-ttu-id="2a09f-160">ヘッド トラッキング カメラは非常に幅広い FOV を持っています。覆い隠さないだけでなく、カメラの周囲には何も配置しないでください。</span><span class="sxs-lookup"><span data-stu-id="2a09f-160">The head tracking cameras have a very wide FOV, nothing should be around them in addition to not covering them.</span></span>
