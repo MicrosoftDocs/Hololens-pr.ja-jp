@@ -1,6 +1,6 @@
 ---
 title: パスワードの使用制限
-description: holoLens でのパスワードの使用を制限する
+description: HoloLens のパスワードの使用を制限する
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 2d9527c9fee2818dfe8aa1f88a2f193415323bb1
+ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11252974"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "11280666"
 ---
 # パスワードの使用制限
 
@@ -97,8 +97,8 @@ MSA と Azure AD は、WebAuthn を実装してパスワードレス認証をサ
 
 ## ローカル アカウント
 
-オフライン モードでの展開のために、単一のローカル アカウントを構成することができます。 ローカル アカウントは既定では有効になっていません。デバイスのプロビジョニング中に構成する必要があります。 これらのユーザーは、パスワードを使用してサインインする必要があり、代替の認証方法をサポートしていません (たとえば、[Windows Hello forBusiness](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) や [windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello))。 
+オフライン モードでの展開のために、単一のローカル アカウントを構成することができます。 ローカル アカウントは既定では有効になっていません。デバイスのプロビジョニング中に構成する必要があります。 パスワードを使用してサインインする必要があります。また、代替認証方法 [(Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) や Windows Hello など) は [サポートされていません](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)。 
 
 HoloLens ユーザー アカウントの詳細については、「[HoloLens Identity](https://docs.microsoft.com/hololens/hololens-identity)」 を参照してください。 
 
-IT管理者は、[AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection) を通じて、ユーザーがメール関連ではない接続の認証とサービスに MSA アカウントを使用できるようにするかどうかを調整します。 [パスワード構成ポリシー]、[アイドリング ポリシー]、および [ロックスクリーン ポリシー] の詳細については、「[デバイス ロック](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock)」 を参照してください。 
+IT管理者は、[AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection) を通じて、ユーザーがメール関連ではない接続の認証とサービスに MSA アカウントを使用できるようにするかどうかを調整します。 パスワード構成ポリシー、idling ポリシー、ロック画面ポリシーについては、「[デバイス ロック](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock)」を参照してください。 
