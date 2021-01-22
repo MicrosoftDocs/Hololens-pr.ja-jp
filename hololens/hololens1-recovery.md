@@ -1,6 +1,6 @@
 ---
 title: HoloLens 1 を再起動、リセット、または回復する
-ms.reviewer: Basic and advanced instructions for rebooting or resetting your HoloLens.
+ms.reviewer: Keep up to date on the basic and advanced instructions for rebooting or resetting your HoloLens mixed reality device.
 description: Windows Device Recovery Tool を使用して HoloLens 第 1 世代に画像をフラッシュする方法。
 keywords: ハウツー、再起動、リセット、回復、ハード リセット、ソフト リセット、電源サイクル、HoloLens、シャットダウン、wdrt、windows device recovery tool
 ms.prod: hololens
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: cd3e7a14ea811f6f3f3086563e7ead3bcd0115ae
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: f0aa400be56d09a843a1b7c9bae78346551ad8af
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915961"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283918"
 ---
 # HoloLens 第 1 世代を再起動、リセット、または回復する
 
