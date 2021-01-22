@@ -13,6 +13,7 @@
 ### [HoloLens 2 でサポートされる言語](hololens2-language-support.md)
 ### [HoloLens 2 の操作方法](hololens2-basic-usage.md)
 ### [HoloLens 2 開発エディションに関する FAQ](hololens2-development-edition-faq.md)
+### [HoloLens 2 用のカスタム アプリを管理する](hololens2-holographic-custom-apps.md)
 
 
 ## HoloLens (第 1 世代) の概要
@@ -24,6 +25,8 @@
 ### [HoloLens (第 1 世代) の操作方法](hololens1-basic-usage.md)
 ### [HoloLens (第1世代) クリッカーの使用](hololens1-clicker.md)
 ### [HoloLens で 3D ビューアーを使う (第 1 世代)](holographic-3d-viewer-beta.md)
+### [HoloLens 用のカスタム アプリを管理する](holographic-custom-apps.md)
+
 
 ## Windows Holographic インターフェイス内を移動する
 ### [スタート メニューと Mixed Reality ホームを使用する](holographic-home.md)
@@ -32,7 +35,6 @@
 ### [Mixed Reality の写真とビデオを作成する](holographic-photos-and-videos.md)
 ## Holographic アプリケーション
 ### [アプリケーションの検索、インストール、およびアンインストール](holographic-store-apps.md)
-### [HoloLens 用のカスタム アプリを管理する](holographic-custom-apps.md)
 ## ホログラム光学と空間内での配置
 ### [視覚効果と快適性の向上](hololens-calibration.md)
 ### [HoloLens を使用して物理的スペースをマッピングする](hololens-spaces.md) 

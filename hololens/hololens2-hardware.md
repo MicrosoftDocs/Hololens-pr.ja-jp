@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 のハードウェア
-description: Windows 10 を実行する、Microsoft の完全自立型ホログラフィック コンピューターの最新版である Microsoft HoloLens 2 を構成するコンポーネントの概要。
+description: Windows 10 を実行する、Microsoft の自立型ホログラフィック コンピューターの最新版である Microsoft HoloLens 2 を構成するコンポーネントについて説明します。
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
 ms.date: 10/20/2020
 keywords: HoloLens
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 41508b8cdc2e8e34545c1e07136b69eea2e3aa48
-ms.sourcegitcommit: e97b2b8f47ac5ec2e3be3e5d69d8e026b6f21111
+ms.openlocfilehash: db8f7774bc3c5718a09a99d8d4137d2ed3271bc1
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "11271176"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283038"
 ---
 # HoloLens 2 のハードウェア
 

@@ -1,6 +1,6 @@
 ---
 title: 新しい HoloLens 2 の準備
-description: このガイドでは、初めてセットアップする場合の手順を説明し、ハードウェア ガイドを提供します。
+description: 正常性と安全性に関するヒントやハードウェア ガイドなど、HoloLens 2 デバイスを初めてセットアップして調整する方法について説明します。
 keywords: HoloLens、ライト、適合性、快適、部品
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 44b66d001e7a6f4bcd5fde9261a225f6aa21b666
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 8b17ad031cfd49ac7a7553765633bc948bafc01d
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253565"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11282908"
 ---
 # HoloLens 2 の使用準備
 

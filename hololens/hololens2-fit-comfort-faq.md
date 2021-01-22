@@ -1,6 +1,6 @@
 ---
 title: 'HoloLens 2 を快適に使用する: よく寄せられる質問'
-description: HoloLens 2 の適合方法に関するよくある質問に対してお答えします。
+description: HoloLens 2 をどのように適合させるかについてのよくある質問への回答を最新の状態に保ち、Mixed Reality エクスペリエンスで快適に過ごしてください。
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 17b55ef165cbb9df47f822f742141f4460cd9c6b
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 158354c23e93abe770875491af1ab559e47557a7
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929843"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283838"
 ---
 # HoloLens 2 を快適に使うためのよくある質問
 

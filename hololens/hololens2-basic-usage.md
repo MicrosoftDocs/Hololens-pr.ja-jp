@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 の操作方法
-description: 手を使って HoloLens 2 を使用するためのガイド
+description: Mixed Reality を探索し、HoloLens 2 デバイスを手で使う方法に関するこのガイドを開始します。
 ms.assetid: 5f791a5c-bdb2-4c5d-bf46-4a198de68f21
 ms.date: 9/17/2019
 keywords: HoloLens
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8c905b53e878b9445ebccd4c4873d91a1d57f5e0
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 8aa4a7a4ca1982ee1877ecad9820a27a4ff9a218
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828859"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11282948"
 ---
 # HoloLens 2 の操作方法
 
