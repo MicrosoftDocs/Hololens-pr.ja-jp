@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 アプリ インストーラーを使用してアプリをサイド ロードしてインストールする方法
-description: UI を使ったアプリのスライドの読み込みとインストール
+description: アプリ インストーラーを使ってアプリをインストールし、トラブルシューティングを行い、UI を使ってアプリをサイド ロードしてインストールする方法について説明します。
 keywords: アプリ管理, アプリ, hololens, アプリ インストーラー
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ab0c58d5a97d5dbaf83adf321d1f9fbc01b3ad03
-ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
+ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
+ms.sourcegitcommit: af4e222a4f83ab82466a383099897986ddf6b8c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "11280656"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "11297292"
 ---
 # アプリ インストーラーを使用して HoloLens 2 にアプリをインストールする
 
@@ -40,9 +40,10 @@ HoloLens 2 デバイスにアプリケーションをシームレスにインス
 
 ### デバイスの場合:
 
- この機能は現在、HoloLens 2 デバイス用の Windows Holographic 20H2 ビルドで利用できます。 この方法を使用しているすべてのデバイスが[更新されます。](hololens-update-hololens.md)
+この機能は現在、HoloLens 2 デバイス用の Windows Holographic 20H2 ビルドで利用できます。 この方法を使用しているすべてのデバイスが[更新されます。](hololens-update-hololens.md)
 
-### アプリの場合: 
+### アプリの場合:
+
 アプリ インストーラーはストアからの依存関係を使**** うの**** で、アプリのソリューション構成はマスターまたはリリースである必要があります。 アプリ パッケージの作成 [について詳しくは、以下をご覧ください](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)。
 
 この方法でインストールされるアプリは、デジタル署名されている必要があります。 アプリに署名するには、証明書を使う必要があります。 MS Trusted [CA List](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)から証明書を取得できます。その場合は、追加の操作を行う必要はありません。 または、独自の証明書に署名することもできますが、証明書をデバイスにプッシュする必要があります。

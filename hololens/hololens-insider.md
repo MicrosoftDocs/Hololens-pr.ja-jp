@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/13/2021
+ms.date: 1/21/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5936f721c1279dce45fa3e92e160f10d880de207
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: c2d79c9cfbca263a507388227304f9d0dcecd9d0
+ms.sourcegitcommit: f30add1d1eb07342e78a6baef87777c4d7123669
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283198"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "11297660"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -33,21 +33,21 @@ Windows Insider の新機能のフライトを再び開始します。 We will b
 
 | 機能名                                              | 簡単な説明                                                                      | ビルドで使用可能 |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
-| [新しい Microsoft Edge](#introducing-the-new-microsoft-edge) | HoloLens 2 で、Chromium ベースの新しい Microsoft Edge を利用できる                         | 20279.1006 |
+| [新しい Microsoft Edge](#introducing-the-new-microsoft-edge) | HoloLens 2 では、Chromium ベースの新しい Microsoft Edge を使用できます。                         | 20279.1006 |
 | [新しい設定アプリ](#new-settings-app)                     | 従来の設定アプリは、新しい機能と設定で更新されたバージョンに置き換えられる | 20279.1006 |
 | [既定のアプリ ピッカー](#default-app-picker)                 | ファイルまたはリンクの種類ごとに起動するアプリを選択する                                      | 20279.1006 |
 | [Office Web アプリ](#office-web-app)                         | 新しい Web アプリOfficeが [すべてのアプリ] に表示されます。                                   | 20279.1006 |
 | [スワイプして入力する](#swipe-to-type)                           | ホログラフィック キーボードで指のヒントを使って単語を "スワイプ" する                        | 20279.1006 |
-| [USB-C 外部マイクのサポート](#usb-c-external-microphone-support) | アプリやリモート アシストには USB-C マイクを使用します。| 20279.1006 |
+| [USB-C 外部マイクのサポート](#usb-c-external-microphone-support) | アプリやリモート アシストには USB-C マイクを使います。| 20279.1006 |
 | [キオスク モードの新しいアプリの新しい AUMID](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | 新しい設定とエッジ アプリの AUMID | 20279.1006 |
 | [キオスク モードの失敗の手渡しの改善](#kiosk-mode-behavior-changes-for-handling-of-failures) | キオスク モードでは、空のスタート メニューの前にグローバル割り当てられたアクセスが見えます。 | 20279.1006 |
 | [フォールバック診断を構成する](#configuring-fallback-diagnostics-via-settings-app) | 設定アプリでのフォールバック診断動作の設定 | 20279.1006 |
 
-### 新しい Microsoft Edge の導入
+### 新しい Microsoft Edge の紹介
 
 ![従来の Microsoft Edge ロゴから新しい Microsoft Edge ロゴへのアニメーション](images/new-edge.gif)
 
-新しい Microsoft Edge は [Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) オープン ソース プロジェクトを採用して、お客様との互換性を向上し、Web 開発者向けの Web の断片化を減らします。
+新しい Microsoft Edge は [Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) オープン ソース プロジェクトを採用して、お客様との互換性を向上し、Web 開発者向けの Web の断片化を減らしています。
 
 この Insider プレビューでは、HoloLens 2 のお客様が新しい Microsoft Edge を初めて利用できます。 新しい Microsoft Edge は最終的に HoloLens 2 の従来の Microsoft Edge に取って代わる機能ですが、現在、両方のブラウザーが Insider で利用できます。 新しい Microsoft Edge のフィードバック送信**** 機能またはフィードバック Hub を介して、フィードバックやバグをチームと[共有してください](hololens-feedback.md)。
 
@@ -114,8 +114,26 @@ Microsoft Edge チームは、Edge Insider コミュニティ (Beta、Dev、Cana
 
 Edge Insider [コミュニティについて詳しくは、Microsoft Edge Insider](https://www.microsoftedgeinsider.com) ホームページをご覧ください。 さまざまな Edge Insider チャネルについて詳しくは、Edge Insider のダウンロード ページ [をご覧ください](https://www.microsoftedgeinsider.com/download)。
 
+HoloLens 2 に Microsoft Edge Insider チャネルをインストールするには、いくつかの方法があります。
+
+**デバイスへの直接インストール (現在、非管理対象デバイスでのみ利用可能)**
+  1. HoloLens 2 で、Edge Insider ダウンロード [ページにアクセスします。](https://www.microsoftedgeinsider.com/download)
+  1. インストールする Edge Insider チャネルの **HoloLens 2** のダウンロード ボタンを選択する
+  1. ダウンロードした .msix ファイルを、Edge のダウンロード キューまたはデバイスの [ダウンロード] フォルダーから起動します (エクスプローラーを使用)
+  1. [アプリ インストーラーが](app-deploy-app-installer.md) 起動する
+  1. [インストール] **ボタンを選択** する
+  1. インストールが成功すると、スタート メニューの [すべてのアプリ] の一覧に Microsoft **** Edge Beta、Dev、Canary が個別のエントリとして表示されます。
+
+**Windows Device Portal を使用して[](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)PC 経由でインストールする (HoloLens 2 で開発者モードを有効にする必要がある)**
+  1. PC で、Edge Insider ダウンロード [ページにアクセスします。](https://www.microsoftedgeinsider.com/download)
+  1. インストールする**** Edge Insider チャネルの [Windows 10 のダウンロード] ボタンの横にあるドロップダウン矢印ボタンを選択します。
+  1. ドロップダウン **メニューで HoloLens 2** を選択する
+  1. .msix ファイルを PC の [ダウンロード] フォルダー (または簡単に見つけられている別のフォルダー) に保存します。
+  1. PC [で Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) を使用して、ダウンロードした .msix ファイルを HoloLens 2 にインストールする
+  1. インストールが成功すると、スタート メニューの [すべてのアプリ] の一覧に Microsoft **** Edge Beta、Dev、Canary が個別のエントリとして表示されます。
+
 > [!NOTE]
-> HoloLens 2 向け Windows Insider プレビューでは、デバイス上の Microsoft Edge のバージョンが、Microsoft Edge Insider チャネルの一部 (またはすべて) で利用可能なバージョンよりも高い場合があります。 これは、HoloLens 2 の Web ブラウザーを特に対象とする新機能と修正プログラムが、可能な限り迅速に Windows Insider に提供されます。 次の Windows 更新プログラムの一般リリースの直後に、Microsoft Edge Insider チャネル ビルドは HoloLens 2 の Microsoft Edge のバージョンを上回り、先に進む予定です。
+> HoloLens 2 向け Windows Insider プレビューでは、デバイス上の Microsoft Edge のバージョンが、Microsoft Edge Insider チャネルの一部 (またはすべて) で利用可能なバージョンよりも高い場合があります。 これは、HoloLens 2 の Web ブラウザーを特に対象とする新機能と修正プログラムが、可能な限り迅速に Windows Insider に提供されます。 次の Windows 更新プログラムの一般リリースの直後に、Microsoft Edge Insider チャネル のビルドは HoloLens 2 の Microsoft Edge のバージョンを上回り、先に進む予定です。
 
 ### 新しい設定アプリ
 
@@ -135,7 +153,7 @@ Edge Insider [コミュニティについて詳しくは、Microsoft Edge Inside
 - システム>バッテリー: バッテリー節約機能モードを手動で有効にするか、バッテリー節約機能モードが自動的に有効になる時点でバッテリーしきい値を設定する
 - USB >: 既定では USB 接続を無効にできます
 - ネットワーク & インターネット:
-  - USB-C イーサネット アダプターは、ネットワーク ネットワーク とインターネット&されます。
+  - USB-C イーサネット アダプターがネットワーク ネットワーク とインターネット&表示される
   - USB-C イーサネット アダプターの設定 (IP アドレスを含む) が使用可能に
   - HoloLens 2 でフライト モードを有効にできる
 - アプリ: ファイルとリンクの種類に使用される既定のアプリをリセットできます。 詳 [しくは、「既定のアプリ ピッカー](#default-app-picker) 」をご覧ください。
@@ -143,7 +161,7 @@ Edge Insider [コミュニティについて詳しくは、Microsoft Edge Inside
 - 簡単操作: テキスト サイズと視覚効果を変更する
 
 **既知の問題**
-- 以前に配置した設定ウィンドウは削除されます (上記の注を参照してください)。
+- 以前に配置した設定ウィンドウは削除されます (上記の注を参照)
 - [通知] ページにアクセスすると、設定アプリがクラッシュする可能性があります (調査中)
 - 現在イーサネット ページが表示されていない (間もなく修正される予定)
 - 新しい Microsoft Edge のバッテリー使用量は、UWP アダプター レイヤーでサポートされる Win32 デスクトップ アプリケーションとしての性質上、正確ではない可能性があります (間もなく修正される予定はありません)
@@ -171,7 +189,7 @@ If you choose "Always" but later want to change which app handles a particular f
 > [!IMPORTANT]
 > USB マイクを **接続すると、自動的に入力デバイスとして設定されません**。 一連の USB-C ヘッドホンを接続すると、ユーザーはヘッドホンのオーディオが自動的にヘッドホンにリダイレクトされるのを確認しますが、HoloLens OS では、他の入力デバイスよりも内部マイク アレイの優先順位が優先されます。 **USB-C マイクを使用するには、次の手順に従います。**
 
-ユーザーは、[サウンドの設定] パネルを使用して、USB-C 接続の外部マイク **を** 選択できます。 USB-C マイクは、通話、録音などに使用できます。
+ユーザーは、[サウンドの設定] パネルを使用して、USB-C に接続された外部マイク **を** 選択できます。 USB-C マイクは、通話、録音などに使用できます。
 
 設定アプリ**を開き**、[システム サウンド]**を**  ->  **選択します**。
 
@@ -215,7 +233,7 @@ If you choose "Always" but later want to change which app handles a particular f
 | 古い Microsoft Edge アプリ | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge    |
 | 新しい Microsoft Edge アプリ | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE    |
 
-### 失敗の処理に関するキオスク モードの動作の変更
+### エラーの処理に関するキオスク モードの動作の変更
 
 以前のビルドでは、デバイスにキオスク構成 (グローバル割り当てアクセスと AAD グループ メンバーの割り当てアクセスの両方の組み合わせ) がある場合、AAD グループ メンバーシップが失敗したと判断すると、ユーザーには[[スタート](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)] メニューに何も表示されません。
 
@@ -246,13 +264,24 @@ HoloLens 2 デバイスで、**[設定]** > **[更新とセキュリティ]** > 
 
 Windows Insider はチャネルに移行しています。 ファスト**リング**は開発チャネル**** になり、**スロー**リングは**ベータ**チャネルになり、**リリース**プレビュー リングはリリース プレビュー**チャネルになります**。 マッピングは次のように表示されます。
 
-![Windows Insider チャネルの説明](images/WindowsInsiderChannels.png)
+![Windows Insider Channels の説明](images/WindowsInsiderChannels.png)
 
 詳しくは [、Windows ブログの「Windows Insider チャネル](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) の紹介」をご覧ください。
 
-次に **、Windows のアクティブな**開発を選択し、開発チャネルビルドまたは**** ベータ チャネル**** ビルドを受け取るかどうかを選択し、プログラムの条件を確認します。
+次に **、Windows のアクティブな**開発を選択し、開発者チャネルビルドまたは**** ベータ チャネル**** ビルドを受け取るかどうかを選択し、プログラムの条件を確認します。
 
-[ **Confirm > Restart Now]** を選び、完了します。 デバイスが再起動したら、[設定] > [更新とセキュリティ] & > **更新** プログラムを確認して最新のビルドを取得します。
+[ **今すぐ>確認] を選択して** 終了します。 デバイスが再起動したら、[設定] > [更新とセキュリティ] & > **更新** プログラムを確認して最新のビルドを取得します。
+
+### 更新エラー 0x80070490 の回避
+Dev チャネルまたは Beta チャネルで更新中に更新エラー 0x80070490 が発生した場合は、次の短期の回避方法を試してください。 Insider チャネルを移動し、更新プログラムを受け取り、Insider チャネルを戻します。
+
+#### ステージ 1 - リリース プレビュー
+1.  設定, 更新プログラム&セキュリティ, Windows Insider Program, select **Release Preview Channel**.
+2.  設定, 更新プログラム&セキュリティ, Windows Update, **更新プログラムの確認**. 更新後、ステージ 2 に進む。
+
+#### ステージ 2 - 開発チャネル
+1. 設定, 更新&セキュリティ, Windows Insider Program, select **Dev Channel**.
+2. 設定, 更新プログラム&セキュリティ, Windows Update, **更新プログラムの確認**.
 
 ## FFU のダウンロードとフラッシュの手順
 フライト署名のある FFU でテストするには、フライト署名のある FFU をフラッシュする前にデバイスのフライト ロックを解除する必要があります。
@@ -262,7 +291,7 @@ Windows Insider はチャネルに移行しています。 ファスト**リン�
     
     1. Microsoft Store ([https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)) から ARC (Advanced Recovery Companion) をインストールします。
     
-1. HoloLens で - [フライトのロック解除]: **Windows**Insider Program &設定の更新を開き、  >  ****  >  **** デバイスを再起動してサインアップします。
+1. HoloLens で -Flight Unlock: Open **Settings**  >  **Update & Security**Windows Insider  >  **Program** then sign up, reboot device.
 
 1. フラッシュ FFU - ARC を使用してフライト署名された FFU をフラッシュできます。
 
