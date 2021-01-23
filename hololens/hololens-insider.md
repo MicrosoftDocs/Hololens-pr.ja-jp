@@ -1,6 +1,6 @@
 ---
 title: Microsoft HoloLens の Insider Preview
-description: 簡単に Insider ビルドを使い始めて、HoloLens の次の主要なオペレーティング システムの更新プログラムに対する貴重なフィードバックをご提供いただけます。
+description: Insider ビルドの使用を開始し、HoloLens の次の主要なオペレーティング システム更新プログラムに関する貴重なフィードバックを提供する方法について説明します。
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6df24d3a8640edeb9196834f940500aa51e85af7
-ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
+ms.openlocfilehash: 5936f721c1279dce45fa3e92e160f10d880de207
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271718"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283198"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -55,16 +55,16 @@ Windows Insider の新機能のフライトを再び開始します。 We will b
 
 #### 新しい Microsoft Edge の起動
 
-Insider が利用できる Microsoft Edge には、新しい Microsoft Edge の新しい Microsoft Edge アイコン (青と緑のスループ アイコンで表される) と従来の Microsoft Edge (白い ![ "e" アイコンで表される) の 2 つのバージョンがあります。 ](images/new_edge_logo.png) 新しい Microsoft Edge はスタート メニューにピン留めされ、Web リンクをアクティブ化すると自動的に起動します。 従来の Microsoft Edge を既定の Web ブラウザーとして使用する場合は、以下の手順を参照して既定のアプリを [リセットしてください](#default-app-picker)。
+Insider が利用できる Microsoft Edge には、新しい Microsoft Edge の新しい Microsoft Edge アイコン (青と緑のスループ アイコンで表される) と従来の Microsoft Edge (白い ![ "e" アイコンで表される) の 2 つのバージョンがあります。 ](images/new_edge_logo.png) 新しい Microsoft Edge はスタート メニューにピン留めされ、Web リンクをアクティブ化すると自動的に起動します。 従来の Microsoft Edge を既定の Web ブラウザーとして使用する場合は、以下の手順に従って既定のアプリ [をリセットしてください](#default-app-picker)。
 
 > [!NOTE]
 > HoloLens 2 で新しい Microsoft Edge を初めて起動すると、設定とデータは従来の Microsoft Edge からインポートされます。 新しい Microsoft Edge を起動した後も従来の Microsoft Edge を使用し続ける場合、その新しいデータは従来の Microsoft Edge から新しい Microsoft Edge に同期されません。
 
 #### 新しい Microsoft Edge のポリシー設定の構成
 
-新しい Microsoft Edge では、IT 管理者は従来の Microsoft Edge で利用していたよりも、HoloLens 2 のブラウザー ポリシーの広範なセットを提供します。
+新しい Microsoft Edge では、IT 管理者は、従来の Microsoft Edge で利用していたよりも、HoloLens 2 のブラウザー ポリシーの広範なセットを提供します。
 
-新しい Microsoft Edge のポリシー設定の管理について詳しく知る上で役立つリソースを次に示します。
+新しい Microsoft Edge のポリシー設定の管理について詳しくは、次のリソースをご覧ください。
 
 - [Microsoft Intune を使って Microsoft Edge ポリシー設定を構成する](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
 - [Microsoft Edge Legacy から Microsoft Edge ポリシーへのマッピング](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
@@ -84,7 +84,7 @@ Insider が利用できる Microsoft Edge には、新しい Microsoft Edge の�
 
 **動作が予想されるシナリオと機能:**
 - 初回実行エクスペリエンス、プロファイルへのサインイン、同期
-- Web サイトが期待どおりにレンダリングされ、動作する必要がある
+- Web サイトは期待どおりにレンダリングされ、動作する必要があります
 - ほとんどのブラウザー機能 (お気に入り、履歴など) は期待通りに動作する必要があります
 - 濃色モード
 - デバイスへの Web アプリのインストール
@@ -96,17 +96,26 @@ Insider が利用できる Microsoft Edge には、新しい Microsoft Edge の�
 
 **近日公開予定のシナリオと機能:**
 - WebXR と 360 ビューアー拡張機能
-- 環境内に配置された複数のウィンドウを閲覧する場合の正しいウィンドウに対するコンテンツの復元
+- 環境内に配置された複数のウィンドウを閲覧する場合の正しいウィンドウへのコンテンツの復元
 - ビデオ、Mixed Reality キャプチャ、または画面共有を使用してブラウザー経由で Microsoft Teams 通話に参加する (通話とオーディオの参加がうまく機能)
 
 **動作しないシナリオと機能:**
-- 同時オーディオ ストリームを備え、複数のウィンドウからの空間サウンド
+- 同時オーディオ ストリームを使用する複数のウィンドウからの空間サウンド
 - "見て、言ってみる"
 - 印刷
 
 **既知のブラウザーの問題の上位:**
 - デバイスをリセットすると、新しい Microsoft Edge が削除されます。
-- ホログラフィック キーボードの拡大鏡のプレビューに誤ったコンテンツが表示される
+- ホログラフィック キーボードの拡大鏡のプレビューに正しくないコンテンツが表示される
+
+#### Microsoft Edge Insider チャネル
+
+Microsoft Edge チームは、Edge Insider コミュニティ (Beta、Dev、Canary) の 3 つのプレビュー チャネルを利用できます。 プレビュー チャネルをインストールしても、HoloLens 2 にリリースされたバージョンの Microsoft Edge はアンインストールされません。また、複数の Microsoft Edge を同時にインストールできます。 
+
+Edge Insider [コミュニティについて詳しくは、Microsoft Edge Insider](https://www.microsoftedgeinsider.com) ホームページをご覧ください。 さまざまな Edge Insider チャネルについて詳しくは、Edge Insider のダウンロード ページ [をご覧ください](https://www.microsoftedgeinsider.com/download)。
+
+> [!NOTE]
+> HoloLens 2 向け Windows Insider プレビューでは、デバイス上の Microsoft Edge のバージョンが、Microsoft Edge Insider チャネルの一部 (またはすべて) で利用可能なバージョンよりも高い場合があります。 これは、HoloLens 2 の Web ブラウザーを特に対象とする新機能と修正プログラムが、可能な限り迅速に Windows Insider に提供されます。 次の Windows 更新プログラムの一般リリースの直後に、Microsoft Edge Insider チャネル ビルドは HoloLens 2 の Microsoft Edge のバージョンを上回り、先に進む予定です。
 
 ### 新しい設定アプリ
 
@@ -120,16 +129,16 @@ Insider が利用できる Microsoft Edge には、新しい Microsoft Edge の�
 **新機能と設定**
 - 設定検索: キーワードまたは設定名を使用して設定ホーム ページから設定を検索する
 - システム > サウンド:
-  - 入力オーディオ デバイスと出力オーディオ デバイス: 入力オーディオ デバイスと出力オーディオ デバイスを個別に選択します (たとえば、Bluetooth ヘッドホンでオーディオを聞く場合や、オーディオ入力に USB-C マイクを使用する場合など)。 注: Bluetooth HoloLens 2 ではサポートされていません。
+  - 入力オーディオ デバイスと出力オーディオ デバイス: 入力オーディオ デバイスと出力オーディオ デバイスを個別に選択します (たとえば、Bluetooth ヘッドホン経由でオーディオを聞く、またはオーディオ入力に USB-C マイクを使用します)。 注: Bluetooth HoloLens 2 ではサポートされていません。
   - アプリのボリューム: 各アプリのボリュームを個別に調整する
 - システム>電源&スリープ: 非アクティブな状態が一時間続くとデバイスがスリープ状態にされる時期を選択する
 - システム>バッテリー: バッテリー節約機能モードを手動で有効にするか、バッテリー節約機能モードが自動的に有効になる時点でバッテリーしきい値を設定する
-- デバイス> USB: 既定で USB 接続を無効にできます
+- USB >: 既定では USB 接続を無効にできます
 - ネットワーク & インターネット:
   - USB-C イーサネット アダプターは、ネットワーク ネットワーク とインターネット&されます。
   - USB-C イーサネット アダプターの設定 (IP アドレスを含む) が使用可能に
   - HoloLens 2 でフライト モードを有効にできる
-- アプリ: ファイルとリンクの種類に使用する既定のアプリをリセットできます。 詳 [しくは、「既定のアプリ ピッカー](#default-app-picker) 」をご覧ください。
+- アプリ: ファイルとリンクの種類に使用される既定のアプリをリセットできます。 詳 [しくは、「既定のアプリ ピッカー](#default-app-picker) 」をご覧ください。
 - 他>ユーザーのアカウント: デバイス所有者は、ユーザーの追加、標準ユーザーのデバイス所有者へのアップグレード、デバイス所有者の標準ユーザーへのダウングレード、ユーザーの削除を行います。
 - 簡単操作: テキスト サイズと視覚効果を変更する
 
@@ -143,17 +152,17 @@ Insider が利用できる Microsoft Edge には、新しい Microsoft Edge の�
 
 ハイパーリンクをアクティブにするか、複数のインストール済みアプリをサポートするファイルの種類を開いた場合は、新しいウィンドウが開き、ファイルまたはリンクの種類を処理するインストール済みアプリを選択するように求めるメッセージが表示されます。 このウィンドウでは、選択したアプリでファイルまたはリンクの種類として "Once" または "Always" を処理することもできます。
 
-![アプリ ピッカー ウィンドウ](images/default-app-picker.png)
+![アプリピッカー ウィンドウ](images/default-app-picker.png)
 
-If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. ページの下部までスクロールし、[ファイルの種類**** 用の既定のアプリ] または [リンクの種類用の既定のアプリ] の下にある [クリア] ボタンを選択します。 デスクトップ PC の同様の設定とは異なり、個々のファイルの種類の既定値をリセットできます。
+If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. ページの下部までスクロールし、[ファイルの種類**** 用の既定のアプリ] や [リンクの種類用の既定のアプリ] の下にある [クリア] ボタンを選択します。 デスクトップ PC の同様の設定とは異なり、個々のファイルの種類の既定値をリセットできます。
 
 ### Office Web アプリ
 
-スタート Officeの [すべてのアプリ] の一覧に、新しい Web アプリが追加されました。 この Web アプリは、スタート画面にピン留めしたりアンインストールしたりすることもできます。 これは Web アプリなので、その機能はアクセスして体験した機能と正確に一致します https://www.office.com 。 Office Web アプリの機能は、HoloLens 2 にアクティブなインターネット接続がある場合にのみ使用できます。
+スタート Officeの [すべてのアプリ] の一覧に、新しい Web アプリが追加されました。 この Web アプリは、スタート画面にピン留めしたりアンインストールしたりすることもできます。 これは Web アプリなので、その機能はアクセスして実際に体験した機能と正確に一致します https://www.office.com 。 Office Web アプリの機能は、HoloLens 2 にアクティブなインターネット接続がある場合にのみ使用できます。
 
 ### スワイプして入力する
 
-一部のお客様は、入力する単語の形をスワイプすることで仮想キーボードを "入力" する方が速く見つかり、ホログラフィック キーボード用にこの機能をプレビューします。 ホログラフィック キーボードの平面を指の先端を通して一度に 1 つの単語をスワイプし、単語の形状をスワイプし、キーボードの平面から指の先端を引き出します。 単語間でキーボードから指を外して Space キーを押す必要なく、フォローアップ語をスワイプできます。 キーボードで指が動いた後にスワイプ の証跡が表示される場合は、この機能が動作しているのが分かっています。
+一部のお客様は、入力する単語の形をスワイプすることで仮想キーボードの "入力" が速くなると考える場合があります。この機能は、ホログラフィック キーボード向けとしてプレビューしています。 ホログラフィック キーボードの平面を指の先端を通して一度に 1 つの単語をスワイプし、単語の形状をスワイプして、キーボードの平面から指の先端を引き出します。 単語間でキーボードから指を外して Space キーを押す必要なく、フォローアップ語をスワイプできます。 キーボードで指が動いた後にスワイプ の証跡が表示される場合は、この機能が動作しているのが分かっています。
 
 この機能は、(携帯電話のディスプレイとは異なり) 指に抵抗を感じないホログラフィック キーボードの性質上、使い方が難しい場合があります。 この機能は一般リリース向けとして評価されています。そのため、お客様からのフィードバックは重要です。この機能が役に立つ場合も、構築的なフィードバックがある場合も、フィードバック Hub でお知 [らせください](hololens-feedback.md)。
 
@@ -162,7 +171,7 @@ If you choose "Always" but later want to change which app handles a particular f
 > [!IMPORTANT]
 > USB マイクを **接続すると、自動的に入力デバイスとして設定されません**。 一連の USB-C ヘッドホンを接続すると、ユーザーはヘッドホンのオーディオが自動的にヘッドホンにリダイレクトされるのを確認しますが、HoloLens OS では、他の入力デバイスよりも内部マイク アレイの優先順位が優先されます。 **USB-C マイクを使用するには、次の手順に従います。**
 
-ユーザーは、[サウンドの設定] パネルを使用して、USB-C に接続された外部マイク **を** 選択できます。 これにより、ユーザーは自分のマイクを接続して使用できますが、録音やアプリでは USB を使用できます。 USB-C マイクは、簡単に有効にし、使用できます。
+ユーザーは、[サウンドの設定] パネルを使用して、USB-C 接続の外部マイク **を** 選択できます。 USB-C マイクは、通話、録音などに使用できます。
 
 設定アプリ**を開き**、[システム サウンド]**を**  ->  **選択します**。
 
@@ -173,7 +182,7 @@ If you choose "Always" but later want to change which app handles a particular f
 >
 > 次に、ドロップダウンを使用して、外部マイクを **Default** または **Communications Default に設定します。** **[Default] を**選択すると、外部マイクがすべての場所で使用されます。
 >
-> Communications **Default を選択** すると、外部マイクはリモート アシストや他の通信アプリで使用されますが、HoloLens Mic Array は他のタスクにも引き続き使用できます。
+> Communications **Default を選択** すると、外部マイクはリモート アシストや他の通信アプリで使用されますが、HoloLens マイク アレイは他のタスクにも引き続き使用できます。
 
 ![サウンド デバイスを管理する](images/usbc-mic-2.png)
 
@@ -187,9 +196,9 @@ If you choose "Always" but later want to change which app handles a particular f
 
 #### USB-C マイクのトラブルシューティング
 
-一部の USB-C マイクは、マイクとスピーカーの両方として誤 *って報告します* 。 これは、HoloLens ではなく、マイクの問題です。 これらのマイクのいずれかを HoloLens に接続すると、サウンドが失われる可能性があります。 幸いなことに、単純な修正プログラムがあります。  
+一部の USB-C マイクは、マイクとスピーカーの両方として誤 *って報告します* 。 これは、HoloLens ではなく、マイクの問題です。 これらのマイクの 1 つを HoloLens に接続すると、サウンドが失われる可能性があります。 幸いなことに、単純な修正プログラムがあります。  
 
-[**設定**  ->  **システム**  ->  **サウンド]** で、組み込みのスピーカー **(アナログ機能オーディオ**ドライバー) を既定のデバイスとして明示的に**設定します**。 HoloLens は、マイクを取り外して後で再接続した場合でも、この設定を記憶する必要があります。
+[**設定**  ->  **システム**  ->  **サウンド]** で、組み込みのスピーカー **(アナログ機能オーディオ**ドライバー) を既定のデバイスとして明示的に**設定します**。 HoloLens では、マイクを後で取り外して再接続した場合でも、この設定を記憶する必要があります。
 
 ![USB-C マイクのトラブルシューティング](images/usbc-mic-4.png)
 
@@ -201,14 +210,14 @@ If you choose "Always" but later want to change which app handles a particular f
 
 | アプリ                    | AUMID                                                  |
 |------------------------|--------------------------------------------------------|
-| 古い設定アプリ       | HolographicSystemSettings_cw5n1h2txyewy!App            |
+| Old Settings App       | HolographicSystemSettings_cw5n1h2txyewy!App            |
 | 新しい設定アプリ       | BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!App |
 | 古い Microsoft Edge アプリ | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge    |
 | 新しい Microsoft Edge アプリ | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE    |
 
 ### 失敗の処理に関するキオスク モードの動作の変更
 
-以前のビルドでは、デバイスにキオスク構成 (グローバル割り当てアクセスと AAD グループ メンバーの割り当てアクセスの両方の組み合わせ) がある場合、AAD グループ メンバーシップの決定に失敗した場合、ユーザーには["スタート](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)" メニューに何も表示されません。
+以前のビルドでは、デバイスにキオスク構成 (グローバル割り当てアクセスと AAD グループ メンバーの割り当てアクセスの両方の組み合わせ) がある場合、AAD グループ メンバーシップが失敗したと判断すると、ユーザーには[[スタート](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)] メニューに何も表示されません。
 
 Windows Insider リリースから、キオスク エクスペリエンスは AAD グループ キオスク モード中に障害が発生した場合に、グローバル キオスク構成 (存在する場合) にフォールバックします。
 
@@ -228,10 +237,10 @@ Windows Insider リリースから、キオスク エクスペリエンスは AA
 
 > [!NOTE]
 > 最近更新していない場合は、デバイスを再起動して状態を更新し、最新のビルドを取得してください。
-> - "再起動デバイス" 音声コマンドは正常に動作します。 
+> - "再起動デバイス" 音声コマンドが正常に動作します。 
 > - [設定] /[Windows Insider Program] で再起動ボタンを選択することもできます。
 >
-> 発生した可能性があるバック エンドにバグが発生しました。これにより、追跡が可能です。
+> 発生した可能性があるバック エンドにバグが発生しました。これにより、追跡が戻されます。
 
 HoloLens 2 デバイスで、**[設定]** > **[更新とセキュリティ]** > **[Windows Insider Program]** の順に移動し、**[開始する]** を選択します。 Windows Insider として登録するために使用したアカウントをリンクします。
 
@@ -243,7 +252,7 @@ Windows Insider はチャネルに移行しています。 ファスト**リン�
 
 次に **、Windows のアクティブな**開発を選択し、開発チャネルビルドまたは**** ベータ チャネル**** ビルドを受け取るかどうかを選択し、プログラムの条件を確認します。
 
-[ **Confirm > Restart Now]** を選び、完了します。 デバイスが再起動したら、[設定] > [更新とセキュリティ&] > **最新** のビルドを取得するための更新プログラムを確認する] に移動します。
+[ **Confirm > Restart Now]** を選び、完了します。 デバイスが再起動したら、[設定] > [更新とセキュリティ] & > **更新** プログラムを確認して最新のビルドを取得します。
 
 ## FFU のダウンロードとフラッシュの手順
 フライト署名のある FFU でテストするには、フライト署名のある FFU をフラッシュする前にデバイスのフライト ロックを解除する必要があります。

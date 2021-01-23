@@ -1,6 +1,6 @@
 ---
 title: CSP の構成とデバイス管理の概要
-description: CSP、ポリシー、デバイス管理を構成する方法。
+description: モバイル デバイス管理とプロビジョニング パッケージを使用して、CSP、ポリシー、デバイス管理を構成する方法について説明します。
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,16 +13,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c6da29506035525b1b1b5141a04603f63de1ef24
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 60e73a9a70a70c5c583edc73a0add2f0f502ef80
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252778"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283248"
 ---
 # CSP の構成とデバイス管理の概要
 
-IT 管理者は、HoloLens 2 でポリシー設定を定義および実装できます。 使用する構成設定は展開シナリオによって異なり、企業のデバイスは幅広い制御機能を IT 部門に提供します。 Windows 10 では、構成サービス プロバイダー (CSP) は、デバイスの構成設定を読み取り、設定、変更、または削除するインターフェイスです。 これらの設定は、レジストリ キーまたはファイルにマップされます。 一部の構成サービス プロバイダーは WAP 形式をサポートし、一部は SyncML をサポートし、一部は両方をサポートします。
+IT 管理者は、HoloLens 2 でポリシー設定を定義して実装できます。 使用する構成設定は展開シナリオによって異なり、企業のデバイスは幅広い制御機能を IT 部門に提供します。 Windows 10 では、構成サービス プロバイダー (CSP) は、デバイスの構成設定を読み取り、設定、変更、または削除するインターフェイスです。 これらの設定は、レジストリ キーまたはファイルにマップされます。 一部の構成サービス プロバイダーは WAP 形式をサポートし、一部は SyncML をサポートし、一部は両方をサポートします。
 
 Windows 10 Holographic デバイス管理の CSP について詳しくは [、HoloLens](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)デバイスでサポートされている CSP の一覧をご覧ください。
 IT 管理者はデバイスでポリシー CSP を管理することもできます [。HoloLens 2](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-hololens2)でサポートされているポリシー CSP の完全な一覧をご覧ください。
@@ -35,7 +35,7 @@ CSP とポリシーは、MDM システムに登録されている個人または
 
 ### プロビジョニング パッケージを使用して構成する
 
-HoloLens 2 は、カスタム プロビジョニング パッケージによる HoloLens 2 デバイスの CSP 構成の制限されたセットの設定もサポートしています。 プロビジョニング パッケージは、通常、MDM 以外の管理対象デバイスで利用され、各デバイスに手動で適用する必要があります。 [HoloLens 用のカスタム プロビジョニング パッケージの構築に関する情報を読み取る](https://docs.microsoft.com/hololens/hololens-provisioning)。
+HoloLens 2 では、カスタム プロビジョニング パッケージによる HoloLens 2 デバイスの CSP 構成の制限付きセットの設定もサポートされています。 プロビジョニング パッケージは、通常、MDM 以外の管理対象デバイスで利用され、各デバイスに手動で適用する必要があります。 [HoloLens 用のカスタム プロビジョニング パッケージの構築に関する情報を読み取る](https://docs.microsoft.com/hololens/hololens-provisioning)。
 
 ## 構成
 
@@ -45,13 +45,13 @@ HoloLens 2 は、カスタム プロビジョニング パッケージによる 
 
 ### キオスク モード
 
-キオスク モードを使って、既定でどのアプリにアクセスできる ID を制御します。 キオスクは、1 つのアプリまたは複数のアプリの UI エクスペリエンスに使用できます。 キオスク構成は、デバイスを使うユーザー向け 1 つのアプリから、グループごとに異なる選択のアプリまでです。 キオスク モードでは、"許可されたアプリ" が他のアプリの起動を停止するのではなく、これまで意図された動作ではありません。 詳しくは、 [キオスク モードと使い方をご覧ください](hololens-kiosk.md)。
+キオスク モードを使って、既定でどのアプリにアクセスできる ID を制御します。 キオスクは、1 つのアプリまたは複数のアプリの UI エクスペリエンスに使用できます。 キオスク構成は、デバイスを使うユーザー向け 1 つのアプリから、グループごとに異なる選択のアプリまでです。 キオスク モードでは、"許可されたアプリ" が他のアプリの起動を停止するのではなく、これまで意図された動作ではありません。 詳しくは、 [キオスク モードと使い方に関する記事をご覧ください](hololens-kiosk.md)。
 
 ### [設定] ページの可視性
 
 設定アプリ ポリシーを使って、既定で設定にアクセスできる ID を制御します。 このポリシーを使って、選択したページのみを表示するか、選択したページを非表示にするように設定アプリを構成できます。 [使用可能なページを構成する方法についてお読みください](settings-uri-list.md)。
 
-この機能は現在 [、Windows Insider ビルドでのみ利用できます](hololens-insider.md)。 この機能を使用するデバイスがビルド 19041.1349 以上のデバイスにインストールされている必要があります。
+この機能は現在 [、Windows Insider ビルドでのみ使用できます](hololens-insider.md)。 この機能を使用するデバイスがビルド 19041.1349 以上のデバイスにインストールされている必要があります。
 
 ### WDAC
 

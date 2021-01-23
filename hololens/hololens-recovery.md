@@ -1,6 +1,6 @@
 ---
 title: HoloLens を再起動、リセット、または回復する
-ms.reviewer: Basic and advanced instructions for rebooting or resetting your HoloLens.
+ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: 高度な回復コンパニオンを使用してイメージを HoloLens 2 にフラッシュする方法。
 keywords: ハウツー、再起動、リセット、回復、ハード リセット、ソフト リセット、電源サイクル、HoloLens、シャットダウン、アーク、高度な回復コンパニオン
 ms.prod: hololens
@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 7845a00d1141fb721683c4e3f2a884ed0c37c735
-ms.sourcegitcommit: 33911e3b405732d0d31a27039c8f590d52b647c4
+ms.openlocfilehash: 025ba8508eb930cdad6d502c381e5a07d9efc6e0
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "11254834"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284088"
 ---
 # HoloLens 2 を再起動、リセット、または回復する
 

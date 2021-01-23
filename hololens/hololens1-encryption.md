@@ -1,6 +1,6 @@
 ---
 title: HoloLens BitLocker の暗号化
-description: Bitlocker デバイスの暗号化を有効にして、HoloLens に保存されたファイルを保護する
+description: Bitlocker デバイスの暗号化を有効にして、HoloLens Mixed Reality デバイスに保存されているファイルを保護する方法について説明します。
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,26 +11,26 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-ms.openlocfilehash: 5ab35f0804c6a906cb0bb262211e8ae5ab017459
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 268c3650b85e7e7f102618ccc5a94c25de54dcfe
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865777"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284028"
 ---
-# HoloLens (第1世代) BitLocker 暗号化
+# HoloLens (第1世代) ドライブ BitLocker 暗号化
 
-HoloLens (第1世代) と HoloLens 2 のどちらでも、BitLocker を使ったデバイスの暗号化がサポートされますが、HoloLens 2 では常に BitLocker を有効にします。
+HoloLens (第 1 世代) と HoloLens 2 はどちらも BitLocker を使用したデバイスの暗号化をサポートしますが、BitLocker は HoloLens 2 で常に有効です。
 
-この記事では、HoloLens (第1世代) で BitLocker を有効にして管理する方法について説明します。
+この記事は、HoloLens (第 1 世代) での BitLocker の有効化と管理に役立ちます。
 
-HoloLens (第1世代) では、BitLocker デバイス暗号化を手動で有効にするか、モバイルデバイス管理 (MDM) を使用することができます。 次の手順に従って、 [BitLocker デバイスの暗号化](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)を有効にして、HoloLens に保存されているファイルと情報を保護します。 デバイスの暗号化は、AES-CBC 128 暗号化メソッドを使用してデータを保護するのに役立ちます。これは、BitLocker 構成サービスプロバイダー (CSP) の[Encryptionmethodbydrivetype メソッド 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype)と同じです。 適切な暗号化キー (パスワードなど) を持っているユーザーは、暗号化を解除したり、データの回復を実行したりできます。
+HoloLens (第 1 世代) では、BitLocker デバイスの暗号化を手動で有効にするか、モバイル デバイス管理 (MDM) を使用できます。 次の手順に従って [、BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) デバイスの暗号化を有効にして、HoloLens に保存されているファイルと情報を保護します。 デバイスの暗号化は、BitLocker 構成サービス プロバイダー (CSP) の [EncryptionMethodByDriveType](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) メソッド 3 と同等の AES-CBC 128 暗号化方法を使用してデータを保護するのに役立ちます。 適切な暗号化キー (パスワードなど) を持つ担当者は、暗号化を解除したり、データ回復を実行できます。
 
 ## MDM を使ってデバイスの暗号化を有効にする
 
-モバイルデバイス管理 (MDM) プロバイダーを使用して、デバイスの暗号化を必要とするポリシーを適用できます。 使用するポリシーは、ポリシー CSP の[Security/RequireDeviceEncryption 設定](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption)です。
+モバイル デバイス管理 (MDM) プロバイダーを使用して、デバイスの暗号化を必要とするポリシーを適用できます。 使用するポリシーは、ポリシー CSP の [Security/RequireDeviceEncryption](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) 設定です。
 
-[「Microsoft Intune を使ってデバイスの暗号化を有効にする」の手順を参照してください。](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
+[Microsoft Intune を使用してデバイスの暗号化を有効にする手順を参照してください。](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
 他の MDM ツールについては、MDM プロバイダーのドキュメントで手順をご覧ください。 MDM プロバイダーでデバイスの暗号化にカスタム URI が必要な場合は、次の構成を使用します。
 
@@ -44,14 +44,14 @@ HoloLens (第1世代) では、BitLocker デバイス暗号化を手動で有効
 
 プロビジョニング パッケージは、Windows 構成デザイナー ツールにより作成された、指定された構成をデバイスに適用するファイルです。 
 
-### Windows ホログラフィック edition をアップグレードして暗号化を有効にするプロビジョニングパッケージを作成する
+### Windows Holographic エディションをアップグレードし、暗号化を有効にするプロビジョニング パッケージを作成する
 
 1. [HoloLens 用プロビジョニング パッケージを作成します。](hololens-provisioning.md)
 1. **[実行時設定]** > **[ポリシー]** > **[セキュリティ]** に移動し、**[RequireDeviceEncryption]** を選びます。
 
     ![[はい] に構成されているデバイスの暗号化の設定が必要](images/device-encryption.png)
 
-1. 商用製品を購入したときに提供された XML ライセンスファイルを見つけます。
+1. Commercial Suite の購入時に提供された XML ライセンス ファイルを見つける。
 
 1. Commercial Suite の購入時に提供された XML ライセンス ファイルを参照して選びます。
     > [!NOTE]
@@ -59,10 +59,10 @@ HoloLens (第1世代) では、BitLocker デバイス暗号化を手動で有効
 
 1. **[ファイル]** メニューの **[上書き保存]** をクリックします。 
 
-1. プロジェクトファイルに機密情報が含まれている可能性があることを説明する警告を読み、[ **OK]** をクリックします。
+1. プロジェクト ファイルに機密情報が含まれている可能性があるという警告を読み **、[OK]** をクリックします。
 
     > [!IMPORTANT]
-    > プロビジョニングパッケージを作成する場合は、プロジェクトファイルとプロビジョニングパッケージ (ppkg) ファイルに機密情報を含めることができます。 .ppkg ファイルは暗号化するかどうかを選べますが、プロジェクト ファイルは暗号化されません。 プロジェクトファイルは安全な場所に保存して、不要になった時点でプロジェクトファイルを削除する必要があります。
+    > プロビジョニング パッケージをビルドするときに、プロジェクト ファイルとプロビジョニング パッケージ (.ppkg) ファイルに機密情報を含めることもできます。 .ppkg ファイルは暗号化するかどうかを選べますが、プロジェクト ファイルは暗号化されません。 安全な場所にプロジェクト ファイルを保存し、不要になったらプロジェクト ファイルを削除する必要があります。
 
 1. **[エクスポート]** メニューの **[プロビジョニング パッケージ]** をクリックします。
 1. **[所有者]** を **[IT 管理者]** に変更して、このプロビジョニング パッケージの優先順位を他のソースからこのデバイスに適用されるプロビジョニング パッケージよりも高くします。次に、**[次へ]** を選択します。
@@ -97,6 +97,6 @@ HoloLens (第1世代) では、BitLocker デバイス暗号化を手動で有効
 
 暗号化は、HoloLens で自動的に行われます。 デバイスの暗号化の状態を確認するには
 
-- HoloLens で、**[設定]** > **[システム]** > **[バージョン情報]** に移動します。 デバイスが暗号化されている場合、 **BitLocker**は**有効に**なります。 
+- HoloLens で、**[設定]** > **[システム]** > **[バージョン情報]** に移動します。 デバイスが暗号化**されている場合****、BitLocker**は有効になります。 
 
-    ![BitLocker が有効になっていることを示す [バージョン情報] 画面](images/about-encryption.png)
+    ![BitLocker が有効になっている画面について](images/about-encryption.png)

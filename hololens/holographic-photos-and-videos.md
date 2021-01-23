@@ -1,7 +1,7 @@
 ---
-title: Mixed reality の写真とビデオをキャプチャして管理する
-description: HoloLens を使って、mixed reality 写真とビデオのキャプチャ、表示、共有を行う方法について説明します。
-keywords: hololens、写真、ビデオ、キャプチャ、mrc、mixed reality キャプチャ、写真、カメラ、ストリーム、livestream、デモ
+title: Mixed Reality の写真とビデオのキャプチャと管理
+description: HoloLens Mixed Reality デバイスを使って Mixed Reality の写真やビデオをキャプチャ、表示、共有する方法について学習します。
+keywords: hololens, 写真, ビデオ, キャプチャ, mrc, Mixed Reality キャプチャ, 写真, カメラ, ストリーム, ライブストリーム, デモ
 ms.assetid: 1b636ec3-6186-4fbb-81b2-71155aef0593
 ms.prod: hololens
 ms.sitesec: library
@@ -15,158 +15,158 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: df67fe8c5b29eea317a0d00a1ebdcf7331fb0936
-ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
+ms.openlocfilehash: 6b7bb29ab76a16aa518ca38ee04f434dfd0cf0c7
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165007"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283508"
 ---
 # Mixed Reality の写真とビデオを作成する
 
-HoloLens は、現実世界とデジタル世界との混合のエクスペリエンスをユーザーに提供します。  複合現実キャプチャ (MRC) を使用すると、そのエクスペリエンスを写真やビデオとしてキャプチャしたり、他のユーザーとリアルタイムで共有したりすることができます。
+HoloLens は、現実世界とデジタル世界を混在するエクスペリエンスをユーザーに提供します。  Mixed Reality キャプチャ (MRC) を使うと、そのエクスペリエンスを写真やビデオとしてキャプチャしたり、見た情報をリアルタイムで他のユーザーと共有することができます。
 
-Mixed reality キャプチャでは、他のユーザーが表示しているホログラムを他のユーザーが見ることができるように、最初のユーザーの視点を使います。 視点が3人の場合は、 [spectator view](https://docs.microsoft.com/windows/mixed-reality/spectator-view)を使用します。 Spectator view は、デモに特に便利です。
+Mixed Reality キャプチャでは、一人一人の視点を使用して、他のユーザーがホログラムを見て見る可能性があります。 第三者視点の場合は、視点 [ビューを使用します](https://docs.microsoft.com/windows/mixed-reality/spectator-view)。 Spectator ビューは、デモに特に役立ちます。
 
-ビデオは、友達や同僚とビデオを共有するのに便利ですが、ビデオは、他のユーザーがアプリを使用したり、アプリやエクスペリエンスの問題を伝えたりするために役立つこともあります。
+友人や同僚の間でビデオを共有するのも楽しい一方で、ビデオは他のユーザーにアプリの使用やアプリやエクスペリエンスの問題の伝達を教えるのに役立ちます。
 
 > [!NOTE]
-> Mixed reality キャプチャエクスペリエンスを起動できず、HoloLens が作業デバイスである場合は、システム管理者に確認してください。 カメラへのアクセスは、会社のポリシーを通じて制限することができます。
+> Mixed Reality キャプチャ エクスペリエンスを起動できない場合、HoloLens が作業デバイスである場合は、システム管理者に確認してください。 会社のポリシーを通じてカメラへのアクセスを制限できます。
 
-## Mixed reality 写真をキャプチャする
+## Mixed Reality の写真をキャプチャする
 
-HoloLens で mixed reality の写真を撮影するには、いくつかの方法があります。ハードウェアボタン、音声、または [スタート] メニューを使用できます。
+HoloLens で Mixed Reality の写真を撮影する方法は複数あります。ハードウェア ボタン、音声、またはスタート メニューを使用できます。
 
-### 写真を撮るためのハードウェアボタン
+### 写真を撮影するハードウェア ボタン
 
-現在のビューの写真を撮影するには、[音量を上げる] ボタンと [音量を下げる] ボタンを同時に押します。  これは、HoloLens バージョンのスクリーンショットまたは印刷画面に似ています。
+現在のビューの簡単な写真を撮影するには、音量を上げ、音量を下げボタンを同時に押します。  これは、スクリーンショットや印刷画面の HoloLens バージョンと少し似たものになります。
 
 - [HoloLens 2 のボタンの場所](hololens2-hardware.md)
-- [HoloLens 上のボタンの場所 (第1世代)](hololens1-hardware.md#hololens-components)
+- [HoloLens (第 1 世代) 上のボタンの場所](hololens1-hardware.md#hololens-components)
 
 > [!NOTE]
-> [ **音量を上げる** ] ボタンと [ **音量を下げる** ] ボタンを3回押すと、写真を撮影するのではなく、ビデオの録画が開始されます。 記録を停止するには、[ **音量を上げる** ] と [ **音量を下げる** ] の両方のボタンを同時にタップします。
+> 音量を**上げ、****音量を下**げボタンを 3 秒間押すと、写真を撮影するのではなく、ビデオの録画が開始されます。 録音を停止するには、音量を**上げ下げ****ボタンと音量を下げボタンの両方を**同時にタップします。
 
-### 写真を撮るための音声コマンド
+### 写真を撮影する音声コマンド
 
-HoloLens 2、バージョン 2004 (以降) では、「写真を撮る」と言ってください。
+HoloLens 2 バージョン 2004 (以降) では、「写真を撮る」と言います。
 
-HoloLens (第1世代) または HoloLens 2、バージョン1903では、「コルタナさん、写真を撮影してください」と言っています。
+HoloLens (第 1 世代) または HoloLens 2 バージョン 1903 では、「コルタナさん、写真を撮って」と言います。
 
-### [スタート] メニューで写真を撮る
+### 写真を撮影するスタート メニュー
 
-開始ジェスチャを使用して [ **スタート**] に移動し、[ **カメラ** ] アイコンを選択します。
+スタート ジェスチャを使ってスタート画面に移動 **し、** カメラ アイコンを **選択** します。
 
-キャプチャする内容の向きをポイントして、 [エアタップ](hololens2-basic-usage.md#touch-holograms-near-you) して写真を撮ります。 引き続き、空中でタップして追加の写真をキャプチャすることができます。 キャプチャした写真は、お使いのデバイスに保存されます。
+キャプチャする画像の方向に頭を向け、エアタップで [写真を](hololens2-basic-usage.md#touch-holograms-near-you) 撮影します。 引き続きエアタップして、追加の写真をキャプチャできます。 キャプチャした写真は、デバイスに保存されます。
 
-もう一度開始ジェスチャを使って写真のキャプチャを終了します。  
+写真のキャプチャを終了するには、もう一度スタート ジェスチャを使います。  
 
-## Mixed reality ビデオをキャプチャする
+## Mixed Reality ビデオをキャプチャする
 
-HoloLens で mixed reality のビデオを録画するには、いくつかの方法があります。ハードウェアボタン、音声、または [スタート] メニューを使用できます。
+HoloLens で Mixed Reality のビデオを録画する方法は複数あります。ハードウェア ボタン、音声、またはスタート メニューを使用できます。
 
-### ビデオを録画するためのハードウェアボタン
+### ビデオを記録するハードウェア ボタン
 
-ビデオを録画する最も簡単な方法は、[ **音量を上げる** ] ボタンと [ **音量を下げる** ] ボタンを同時に押して、3秒のカウントダウンが開始されるようにすることです。 記録を停止するには、両方のボタンを同時にタップします。
-
-> [!NOTE]
-> [ **音量を上げる** ] ボタンと [ **音量を下げる** ] ボタンを同時に押すと、ビデオを録画するのではなく写真が撮影されます。
-
-### 音声を録音してビデオを録画する
-
-HoloLens 2、バージョン 2004 (以降) では、「レコーディングの開始」と言ってください。 記録を停止するには、「記録を停止」と発声します。
-
-HoloLens (第1世代) または HoloLens 2、バージョン1903では、"コルタナさん、レコーディングを開始します" と言います。 記録を停止するには、「コルタナさん、レコーディングを停止」と発声します。
-
-### ビデオを録画するためのスタートメニュー
-
-開始ジェスチャを使用して [ **スタート**] に移動し、[ **ビデオ** ] アイコンを選択します。 キャプチャするものの向きをポイントして、[ [エアタップ](hololens2-basic-usage.md#touch-holograms-near-you) ] をクリックして録音を開始します。 3秒間のカウントダウンが表示され、レコーディングが開始されます。
-
-記録を停止するには、開始ジェスチャを使用して、強調表示された **ビデオ** アイコンを選択します。 ビデオがデバイスに保存されます。
+ビデオを記録する最も簡単な方法は、音量を上**** げ、音量**** を下げ、3 秒のカウントダウンが始まるまでボタンを同時に長押しする方法です。 レコーディングを停止するには、両方のボタンを同時にタップします。
 
 > [!NOTE]
-> **HoloLens (第1世代) のみに適用されます**  
-> [2018 年10月の更新プログラム](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018)は、HoloLens (第1世代) で開始ジェスチャと Windows ボタンが動作する方法を変更します。 更新する前に、開始ジェスチャまたは Windows ボタンをクリックすると、ビデオ録画が停止します。 ただし、更新後、[スタート] または [Windows] ボタンをクリックすると、[ **スタート** ] メニュー (または [ **クイック操作] メニュー** ) が開きます。これは、強調表示された **ビデオ** アイコンを選択して記録を停止することができます。
+> 音量を上**げ、****音量を下**げボタンを同時にすばやく押すと、ビデオを録画するのではなく、写真を撮影できます。
 
-## 表示される内容をリアルタイムで共有する
+### 音声によるビデオの録音
 
-HoloLens での表示内容は、お友達や同僚とリアルタイムで共有できます。 次のような方法があります。
+HoloLens 2 バージョン 2004 (以降) で、「記録を開始する」と言います。 レコーディングを停止するには、「記録を停止する」と言います。
 
-1. Miracast を有効にしたデバイスまたはアダプターに接続して、テレビで見ることができます。
-1. [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)を使って PC を監視する
-1. [Microsoft HoloLens コンパニオンアプリ](https://www.microsoft.com/store/productId/9NBLGGH4QWNX)を使って PC を監視します。
-1. [Microsoft Dynamics 365 リモート](https://dynamics.microsoft.com/en-us/mixed-reality/remote-assist)アシスタンスアプリを展開して、フロントラインワーカーがリモートエキスパートに表示される内容をストリーミングできるようにします。 次に、リモートの専門家は、フロントラインワーカーのコミュニケーションとるを案内するか、または世界で注釈を付けることができます。
+HoloLens (第 1 世代) または HoloLens 2 バージョン 1903 では、「コルタナさん、レコーディングを開始してください」と言います。 レコーディングを停止するには、「Hey Cortana, stop recording」と言います。
 
-> [!NOTE]
-> Windows Device Portal または Microsoft HoloLens コンパニオンアプリでの表示内容を共有するには、HoloLens が [開発者モード](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)になっている必要があります。
+### ビデオを録画するスタート メニュー
 
-### Miracast を使用したビデオのストリーミング
+スタート ジェスチャを使ってスタート画面に移動 **し、** ビデオ アイコンを **選択** します。 キャプチャする情報の方向に頭を向け、エア [タップ](hololens2-basic-usage.md#touch-holograms-near-you) でレコーディングを開始します。 3 秒のカウントダウンが行い、レコーディングが開始されます。
 
-開始ジェスチャを使用して [ **スタート**] に移動し、[ **接続** ] アイコンを選択します。 表示されるピッカーで、接続する Miracast 対応デバイスまたはアダプターを選択します。
-
-共有を停止するには、開始ジェスチャを使用し、強調表示されている **接続** アイコンを選択します。 ストリーミングを行っているため、デバイスに何も保存されません。
+記録を停止するには、スタート ジェスチャを使って、強調表示されているビデオ アイコン **を選択** します。 ビデオはデバイスに保存されます。
 
 > [!NOTE]
-> Miracast のサポートは、 [Windows 10 年 2018 10 月の更新プログラム](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018)以降、HoloLens (第1世代) で有効にされています。
+> **HoloLens (第 1 世代) にのみ適用されます。**  
+> [Windows 10 October 2018 Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018)は、HoloLens (第 1 世代) でのスタート ジェスチャと Windows ボタンの動作を変更します。 更新の前に、スタート ジェスチャまたは Windows ボタンはビデオ録画を停止します。 ただし、更新後、スタート ジェスチャまたは Windows ボタンによってスタート メニュー (**** イマーシブ アプリの場合はクイック アクション メニュー) が開き、**** 強調表示されたビデオ アイコンを選択して録画を停止できます。 ****
 
-### Windows Device Portal を使ったリアルタイムビデオ
+## 表示される情報をリアルタイムで共有する
 
-Windows Device Portal で共有するには、HoloLens で開発者モードが有効になっている必要があるため、開発者向けドキュメントの指示に従って [開発者モードを設定し、Windows Device portal に移動](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)します。
+HoloLens で表示される情報を、友人や同僚とリアルタイムで共有できます。 いくつかの方法を使用できます。
 
-### Microsoft HoloLens コンパニオンアプリ
+1. Miracast 対応デバイスまたはアダプターに接続してテレビで視聴する。
+1. [Windows Device Portal を使用](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)して PC で視聴する
+1. Microsoft [HoloLens コンパニオン アプリを使って](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) PC で視聴する。
+1. [Microsoft Dynamics 365 リモート](https://dynamics.microsoft.com/en-us/mixed-reality/remote-assist)アシスト アプリを展開すると、フロント ライン ワーカーはリモートの専門家に表示される情報をストリーミングできます。 リモートの専門家は、フロント ライン ワーカーを言葉で、または自分の世界で注釈を付ける方法で案内できます。
 
-Microsoft HoloLens コンパニオンアプリで共有するには、HoloLens で開発者モードが有効になっている必要があるため、開発者向けドキュメントの指示に従って [開発者モードを設定](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)してください。 次に、 [Microsoft HoloLens コンパニオンアプリ](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) をダウンロードして、アプリ内の指示に従って HoloLens に接続します。
+> [!NOTE]
+> Windows Device Portal または Microsoft HoloLens コンパニオン アプリで表示される情報を共有するには、HoloLens が開発者モードである [必要があります](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)。
 
-アプリが HoloLens で設定されたら、アプリのメインメニューから [ **ライブストリーム** ] オプションを選びます。
+### Miracast を使ったストリーム ビデオ
 
-## Mixed reality の写真とビデオを表示する
+スタート ジェスチャを使ってスタート画面に移動 **し、** 接続アイコンを **選択** します。 表示されるピッカーから、接続する Miracast 対応デバイスまたはアダプターを選択します。
 
-Mixed reality の写真とビデオは、デバイスの "カメラロール" に保存されます。 HoloLens でこのフォルダーの内容を参照するには、エクスプローラーアプリを使用します ([ピクチャ > カメラロール] に移動します)。
+共有を停止するには、スタート ジェスチャを使って、強調表示されている接続アイコン **を選択** します。 ストリーミングしていたため、デバイスには何も保存されません。
 
-また、mixed reality の写真やビデオを、HoloLens にプレインストールされている写真アプリで表示することもできます。 世界中の写真をピン留めするには、写真アプリで写真を選択し、[ **混合世界で配置**] を選択します。 世界中の写真は、配置後に移動することができます。
+> [!NOTE]
+> Miracast のサポートは [、Windows 10 October 2018 Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018)から HoloLens (第 1 世代) で有効にされました。
 
-HoloLens に接続された PC で mixed reality の写真やビデオを表示したり保存したりするには、 [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) または [pc のエクスプローラーを MTP 経由](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens)で使うことができます。
+### Windows Device Portal を使ったリアルタイム ビデオ
 
-### エクスプローラーを使用して、画像、ビデオ、ファイルを取得する
+Windows Device Portal を使用して共有するには、HoloLens で開発者モードを有効にする必要があります。開発者向けドキュメントの指示に従って、開発者モードをセットアップし [、Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)に移動します。
 
-他のモバイルデバイスと同様に、HoloLens を PC に接続して、ファイルエクスプローラーを使って、簡単に転送できる HoloLens ライブラリ (写真、ビデオ、ドキュメント) にアクセスできます。 この方法は使いやすいため、device portal または Wi-fi を使用する必要はありません。
+### Microsoft HoloLens コンパニオン アプリ
+
+Microsoft HoloLens コンパニオン アプリを使って共有するには、HoloLens で開発者モードを有効にする必要があります。開発者向けドキュメントの指示に従って、開発者モードを [設定します](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)。 次に [、Microsoft HoloLens コンパニオン](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) アプリをダウンロードし、アプリ内の指示に従って HoloLens に接続します。
+
+アプリを HoloLens でセットアップしたら、アプリのメイン メニューから **Live ストリーム** オプションを選択します。
+
+## Mixed Reality の写真とビデオを表示する
+
+Mixed Reality の写真とビデオは、デバイスの "カメラ ロール" に保存されます。 エクスプローラー アプリを使って、HoloLens でこのフォルダーの内容を参照できます ([ピクチャ] > [カメラ ロール] に移動します)。
+
+HoloLens にプレインストールされているフォト アプリで、Mixed Reality の写真やビデオを表示することもできます。 自分の世界で写真をピン留めするには、フォト アプリで写真を選択し、[混在世界で **配置] を選択します**。 写真を配置した後で、世界中に写真を移動できます。
+
+HoloLens に接続された PC で Mixed Reality の写真やビデオを表示または保存するには [、MTP](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) を使って Windows Device Portal または PC の [エクスプローラーを使います](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens)。
+
+### エクスプローラーを使って画像、ビデオ、ファイルを取得する
+
+他のモバイル デバイスと同様に、HoloLens を PC に接続してエクスプローラーを表示し、HoloLens ライブラリ (写真、ビデオ、ドキュメント) にアクセスして簡単に転送できます。 この方法は使いやすく、デバイス ポータルや Wi-Fi の使用は必要とされません。
 
 1. デバイスのロックを解除します。
 1. USB 経由でデバイスを PC に接続します。
-1. PC 上でファイルエクスプローラーが開きます。
-1. 移動先: この PC\ \*yourhololensname*\ Storage\Pictures\Camera ロール
+1. エクスプローラーが PC で開きます。
+1. [Navigate to]: This PC\\*yourhololensname*\Internal Storage\Pictures\Camera Roll
 1. 必要なファイルを PC にコピーします。
 
 ヒント: 
-- ファイルが表示されない場合は、HoloLens にサインインしてデータへのアクセスを有効にしていることを確認してください。
-- [ドキュメント] フォルダーの [診断ファイル](hololens-diagnostic-logs.md#offline-diagnostics) など、他のフォルダーにある他のファイルを取得することができます。
-- PC のエクスプローラーから、[デバイスのプロパティ] を選択して、Windows ホログラフィック OS のバージョン番号 (ファームウェアバージョン)、デバイスのシリアル番号、バッテリの割合を確認できます。
-- 組織で MDM を使用して [接続/AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) を無効にしている場合、デバイスに接続することはできません。
+- ファイルが表示されていない場合は、HoloLens にサインインしてデータへのアクセスを有効にしてください。
+- [ドキュメント] フォルダーから診断ファイルなど、他のフォルダー内の [他](hololens-diagnostic-logs.md#offline-diagnostics) のファイルを取得できます。
+- PC のエクスプローラーで[デバイスのプロパティ] を選択すると、Windows Holographic OS のバージョン番号 (ファームウェアバージョン)、デバイスのシリアル番号、バッテリの割合を確認できます。
+- 組織が MDM を使用して [Connectivity/AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) を無効にしている場合、デバイスに接続できません。
 
-## Mixed reality の写真とビデオを共有する
+## Mixed Reality の写真とビデオを共有する
 
-Mixed reality の写真やビデオをキャプチャすると、プレビューが表示されます。 プレビューの上にある [ **共有** ] アイコンを選択して、共有アシスタントを表示します。 そこから、写真やビデオを共有するエンドポイントを選択できます。
+Mixed Reality の写真やビデオをキャプチャすると、プレビューが表示されます。 プレビューの **上にある** 共有アイコンを選択して、共有アシスタントを表示します。 そこから、その写真またはビデオを共有するエンド ポイントを選択できます。
 
-また、mixed reality 写真とビデオを自動的にアップロードすることで、OneDrive から mixed reality 写真とビデオを共有することもできます。 HoloLens で OneDrive アプリを開き、個人の [Microsoft アカウント](https://account.microsoft.com) でサインインします (まだインストールしていない場合)。 [ **設定** ] アイコンを選択し、[ **カメラアップロード**] を選択します。 カメラのアップロードをオンにします。 Mixed reality の写真とビデオは、HoloLens でアプリを起動するたびに OneDrive にアップロードされるようになりました。
-
-> [!NOTE]
-> 個人用の Microsoft アカウントで OneDrive にサインインしている場合のみ、OneDrive でカメラアップロードを有効にすることができます。 HoloLens または学校のアカウントを使用して HoloLens をセットアップした場合は、OneDrive アプリで個人用の Microsoft アカウントを追加して、この機能を有効にすることができます。
-
-## Mixed reality キャプチャの制限事項
-
-- Mixed reality キャプチャを使う場合、HoloLens のフレームレートは 30 Hz に半減します。
-- 写真/ビデオカメラが別のアプリケーションで既に使用されている場合、ライブストリーミング中、またはシステムリソースが少ない場合は、写真やビデオの解像度が低くなることがあります。
-
-### レコーディングの最大長
-
-HoloLens 2 デバイスでは、Windows ホログラフィックの前に、デバイスに記録されているバージョン20H2 ビデオは最大5分に制限されていました。
-
-お客様からのフィードバックのため、「 [mixed reality キャプチャ](holographic-photos-and-videos.md)」の録音時間が延長されました。 Mixed reality キャプチャは既定で5分に制限されることはありませんが、使用可能なディスク領域に基づいて、最大レコーディング長が計算されます。 デバイスは、ディスクの空き領域の最大80% に基づいて、利用可能なディスク領域に基づいて、最大ビデオ録画時間を推定します。
+Mixed Reality の写真やビデオを自動的にアップロードすることで、OneDrive から Mixed Reality の写真やビデオを共有することもできます。 HoloLens で OneDrive アプリを開き、まだサインインしていない場合は、個人用 [の Microsoft](https://account.microsoft.com) アカウントでサインインします。 設定アイコンを **選択し** 、[カメラのアップロード **] を選択します**。 カメラのアップロードを有効にする。 HoloLens でアプリを起動するごとに、Mixed Reality の写真とビデオが OneDrive にアップロードされます。
 
 > [!NOTE]
-> HoloLens では、次のいずれかが発生した場合に、既定のビデオ録画長 (5 分) が使用されます。
-> - 予想される最大記録期間は、既定の5分よりも小さくなっています。
-> - 使用可能なディスク領域は、合計ディスク領域の20% 未満です。
+> OneDrive でカメラのアップロードを有効にできるのは、個人用の Microsoft アカウントで OneDrive にサインインしている場合のみです。 HoloLens を仕事または学校のアカウントでセットアップする場合は、OneDrive アプリで個人用の Microsoft アカウントを追加して、この機能を有効にできます。
+
+## Mixed Reality キャプチャの制限事項
+
+- Mixed Reality キャプチャを使用している間、HoloLens のフレームレートは 30 Hz に半分になります。
+- 写真/ビデオ カメラが別のアプリケーションで既に使用されている場合、ライブ ストリーミング中、またはシステム リソースが低い場合は、写真やビデオの解像度が低下する可能性があります。
+
+### 最大録音長
+
+Windows Holographic より前の HoloLens 2 デバイスでは、デバイスに記録されたバージョン 20H2 のビデオは、最大で 5 分の長さに制限されました。
+
+お客様からのフィードバックにより、Mixed Reality キャプチャの記録 [の長さが長くなっています](holographic-photos-and-videos.md)。 Mixed Reality キャプチャは既定で 5 分に制限されず、使用可能なディスク領域に基づいて最大記録長が計算されます。 デバイスは、利用可能なディスク領域に基づいてビデオ録画の最大再生時間を、合計ディスク領域の 80% まで推定します。
+
+> [!NOTE]
+> 次のいずれかの場合、HoloLens は既定のビデオ録画の長さ (5 分) を使用します。
+> - 推定最大記録時間は、既定の 5 分よりも小さくてす。
+> - 使用可能なディスク領域は、ディスク領域全体の 20% 未満です。
 
 ## 既定のファイル形式と解像度
 
@@ -175,11 +175,11 @@ HoloLens 2 デバイスでは、Windows ホログラフィックの前に、デ�
 |  デバイス  |  形式  |  拡張機能  |  解決方法  |
 |----------|----------|----------|----------|
 | HoloLens 2 | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 3904x2196px |
-| HoloLens (第1世代) | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 1408x79 2px |
+| HoloLens (第 1 世代) | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 1408x792px |
 
-### 記録されたビデオ形式と解像度
+### 録画されたビデオの形式と解像度
 
 | デバイス | 形式 | 拡張機能 | 解決方法 | 速度 | オーディオ |
 |----------|----------|----------|----------|----------|----------|
-| HoloLens 2 | [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1920x1080px | 30fps | 48 Khz ステレオ |
-| HoloLens (第1世代) |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1216x684px | 24fps | 48 Khz ステレオ |
+| HoloLens 2 | [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1920x1080px | 30fps | 48kHz ステレオ |
+| HoloLens (第 1 世代) |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1216x684px | 24fps | 48kHz ステレオ |
