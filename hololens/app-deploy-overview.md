@@ -1,6 +1,6 @@
 ---
 title: 概要 - アプリ管理
-description: アプリ, 管理, アプリの管理
+description: モバイル デバイス管理、ビジネス向け Microsoft Store、プロビジョニング パッケージを使用した Mixed Reality アプリ管理の概要について説明します。
 keywords: HoloLens、ユーザー、アカウント、アプリ、アプリケーション管理、
 author: evmill
 ms.author: v-evmill
@@ -14,16 +14,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2ca0b05b6ed61ddce327a44fedbbcf280b33a106
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 951c79e49d67c1a0308e236e4283ffa498a7139f
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252668"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283708"
 ---
 # アプリ管理の概要
 
-アプリは、モバイル デバイス管理 **(MDM)、** ビジネス向け **Microsoft Store、Microsoft** **Store**の 4 つの異なるパスに展開するか、プロビジョニングを使用してアプリを **インストールすることで展開できます**。
+アプリは、モバイル デバイス管理 **(MDM)、****ビジネス向け Microsoft Store、Microsoft** **Store**の 4 つの異なるパスに展開するか、プロビジョニングを使用してアプリを**インストールすることで展開できます**。
 
 ## モバイル デバイス管理 (MDM)
 
@@ -65,7 +65,7 @@ Microsoft Store では、企業の IT 意思決定者と管理者がパブリッ
 
 ## プロビジョニング パッケージを使用してインストールする
 
-[プロビジョニング パッケージを](app-deploy-provisioning-package.md) 使用すると、カスタム アプリまたは Line of Business アプリをインストールでき、IT 管理者は USB 経由でローカル デバイスにアプリをすばやくインストールできます。 このインストールは、インターネットに接続せずに、任意の ID の種類に対して実行できます。
+[プロビジョニング パッケージを](app-deploy-provisioning-package.md) 使用すると、カスタム アプリまたは Line of Business アプリをインストールできます。IT 管理者は、USB 経由でローカル デバイスにアプリをすばやくインストールできます。 このインストールは、インターネットに接続せずに、任意の ID の種類に対して実行できます。
 
 プロビジョニング パッケージを使用したインストールは、次の場合に適用されます。
 
@@ -76,7 +76,7 @@ Microsoft Store では、企業の IT 意思決定者と管理者がパブリッ
 
 ## アプリ インストーラーを使用して HoloLens 2 にアプリをインストールする
 
-アプリ[](app-deploy-app-installer.md)インストーラーを使用すると、ローカル デバイスにアプリをインストールしたり、HoloLens 上の他のアプリのインストール方法に慣れていない他のユーザーとアプリを共有したりする操作が簡単になります。 これは、開発者モードを有効にしたり、Device Portal を使用したりすることなく実行できます。 これは、完全にビルドされたアプリを配布する簡単な方法です。 HoloLens を使って他のユーザーにアプリをデモする場合や、アプリを展開する場合に関係なく、このメソッドは簡単に機能します。
+アプリ[](app-deploy-app-installer.md)インストーラーを使用すると、ローカル デバイスにアプリをインストールしたり、HoloLens 上の他のアプリのインストール方法に慣れていない他のユーザーとアプリを共有したりする操作が簡単になります。 これは、開発者モードを有効にしたり、Device Portal を使用したりすることなく実行できます。 これは、完全に構築されたアプリを配布する簡単な方法です。 HoloLens を使って他のユーザーにアプリをデモする場合や、アプリを展開する場合に関係なく、このメソッドは簡単に機能します。
 
 アプリ インストーラーを使用したインストールは、次の場合に適用されます。
 
