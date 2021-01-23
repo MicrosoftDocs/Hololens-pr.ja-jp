@@ -1,6 +1,6 @@
 ---
 title: Windows Defender アプリケーション制御 - WDAC
-description: WDAC の概要と、HoloLens デバイスの管理方法について説明します。
+description: アプリケーション コントロールWindows Defender概要と、それを使って HoloLens Mixed Reality デバイスを管理する方法について説明します。
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -12,16 +12,16 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d337f9856eaeac433524d7bb8b60e9a24e264b80
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 23c9a274387424e8f084a4729ee621e130820716
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252648"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284138"
 ---
 # Windows Defender アプリケーション制御 - WDAC
 
-WDAC を使うと、IT 管理者はデバイス上のアプリの起動をブロックするデバイスを構成できます。 これは、キオスク モードなどのデバイス制限の方法とは異なります。キオスク モードでは、ユーザーにはデバイス上のアプリを非表示にする UI が表示されますが、起動は可能です。 WDAC が実装されている間、アプリは [すべてのアプリ] の一覧に表示されますが、WDAC はそれらのアプリとプロセスをデバイス ユーザーが起動できないのを停止します。
+WDAC を使うと、IT 管理者はデバイス上のアプリの起動をブロックするデバイスを構成できます。 これは、キオスク モードなどのデバイス制限の方法とは異なります。キオスク モードでは、ユーザーにデバイス上のアプリを非表示にする UI が表示されますが、起動は可能です。 WDAC が実装されている間、アプリは [すべてのアプリ] の一覧に表示されますが、WDAC はそれらのアプリとプロセスをデバイス ユーザーが起動できないのを停止します。
 
 1 つのデバイスに複数の WDAC ポリシーを割り当てることができます。 システムに複数の WDAC ポリシーが設定されている場合、最も制限の厳しいポリシーが有効になります。 
 
@@ -36,7 +36,7 @@ Microsoft Intune で [HoloLens 2](https://docs.microsoft.com/mem/intune/configur
 $package1 = Get-AppxPackage -name *<applicationname>*
 ``` 
 
-パッケージの完全な名前が分からない場合は、'Get-AppxPackage -name \*YourBestGuess\*' を数回実行して検索する必要があります。 その後、'$package 1 = Get-AppxPackage -name Actual.PackageName' を実行します。
+パッケージの完全な名前が分からない場合は、'Get-AppxPackage -name \*YourBestGuess\*' を数回実行して検索する必要があります。 名前を実行すると、'$package 1 = Get-AppxPackage -name Actual.PackageName' が実行されます。
 
 たとえば、Microsoft Edge で次のコマンドを実行すると、複数の結果が返されますが、その一覧から、必要な完全な名前が Microsoft.MicrosoftEdge である必要があります。
 
@@ -46,7 +46,7 @@ Get-AppxPackage -name *edge*
 
 ## HoloLens 上のアプリのパッケージ ファミリ名
 
-上記のガイドでは、HoloLens にのみインストールされているアプリケーションのnewPolicy.xmlを手動で編集し、パッケージ ファミリ名を使用してルールを追加できます。 場合によっては、ポリシーに追加するデスクトップ PC にはないアプリを使う場合があります。
+上記のガイドでは、HoloLens にのみインストールされているアプリケーションのnewPolicy.xmlを手動で編集し、パッケージ ファミリ名で規則を追加できます。 場合によっては、ポリシーに追加するデスクトップ PC にはないアプリを使う場合があります。
 
 HoloLens 2 デバイス用の一般的In-Boxアプリの一覧を次に示します。
 
