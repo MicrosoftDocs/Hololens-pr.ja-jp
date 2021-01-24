@@ -1,6 +1,6 @@
 ---
 title: ページ設定の可視性
-description: PageVisibilityList およびガイドで HoloLens に対応している URI の一覧
+description: PageVisibilityList および HoloLens Mixed Reality デバイスのガイドでサポートされている URI のリストを最新の状態に保ちます。
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8cd336ce64cf7d4549b031a7977f592ca82dd6e4
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: e4d4936595144f82a468883f26dae6e19eef4f84
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163147"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284118"
 ---
 # ページ設定の可視性
 
@@ -42,7 +42,8 @@ HoloLens デバイスの管理可能な機能の 1 つに、[Settings/PageVisibi
 1. 選択したデータを選ぶときは、**文字列**を選択します。
 1. 値を入力する時は、次のように使います: **showonly:network-wifi;network-proxy;bluetooth**
 1. デバイスが使用されるグループにカスタム デバイス構成が割り当てられていることを確認します。
-Intune グループとデバイス構成の詳細については、[こちらを確認](hololens-mdm-configure.md)を参照してください。
+
+Intune グループとデバイス構成の詳細については、「[HoloLens MDM 構成](hololens-mdm-configure.md)」を参照してください。
 
 方法の選択に関係なく、デバイスは変更を受信するようになり、ユーザーには次の設定アプリが表示されます。 
 
@@ -126,4 +127,4 @@ HoloLens デバイスと Windows 10 デバイスでは、設定アプリ内に�
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
-Windows 10 の設定に関する URI の完全な一覧については、[こちら](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)を参照してください。 
+Windows 10 設定 URI の完全なリストについては、[起動設定](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)のドキュメントをご覧ください。 

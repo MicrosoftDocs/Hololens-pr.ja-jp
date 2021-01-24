@@ -1,6 +1,6 @@
 ---
 title: HoloLens (第 1 世代) の操作方法
-description: HoloLens (第 1 世代) インターフェイスに関する簡単なツアー
+description: HoloLens (第 1 世代) インターフェイス、ハンド トラッキング機能、およびホログラフィック アプリケーションの使用について簡単に説明します。
 ms.assetid: 064f7eb0-190e-4643-abeb-ed3b09312042
 ms.date: 9/16/2019
 ms.reviewer: jarrettr
@@ -14,12 +14,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 5f21e89b395dc277299aeec1fd19c9c936d6a248
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 5beb3e333634dfbe5080c9d36a7df3f38b0a5f37
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829403"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284068"
 ---
 # HoloLens (第 1 世代) の操作方法
 
