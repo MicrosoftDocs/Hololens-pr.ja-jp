@@ -1,6 +1,6 @@
 ---
 title: 新しい HoloLens の準備
-description: このガイドでは、初めてセットアップする場合の手順を説明します。
+description: HoloLens (第 1 世代) Mixed Reality デバイスの準備、調整、およびセットアップを初めて行う方法について説明します。
 ms.prod: hololens
 ms.sitesec: library
 author: JesseMcCulloch
@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: 03e6353500342a03d14955991cd73acbc5d2f261
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 0361af22fa6d84f636b841f6a311edcdace5a937
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829383"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283168"
 ---
 # HoloLens (第 1 世代) の使用準備
 

@@ -1,6 +1,6 @@
 ---
 title: HoloLens をネットワークに接続する
-description: HoloLens でインターネットに接続する方法と、デバイスの IP アドレスを識別する方法について説明します。
+description: HoloLens を使用してインターネットを設定して接続する方法と、デバイスの IP アドレスを識別する方法について説明します。
 ms.assetid: 0895606e-96c0-491e-8b1c-52e56b00365d
 author: mattzmsft
 ms.author: mazeller
@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 7932ba493f8434c0fa5fc7a0efdd4d43eedd51bd
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 6d11ae0907aa82df71d7c86bb37996dcce71d845
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163039"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283978"
 ---
 # HoloLens をネットワークに接続する
 

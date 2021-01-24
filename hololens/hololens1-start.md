@@ -1,6 +1,6 @@
 ---
 title: HoloLens (第 1 世代) のセットアップ
-description: このガイドでは、初めてセットアップする場合の手順を説明します。  Wi-Fi ネットワークと、Microsoft アカウント (MSA) または Azure Active Directory (Azure AD) アカウントが必要になります。
+description: Microsoft (MSA) アカウントまたは Azure Active Directory (AAD) アカウントを使用して、Wi-Fi ネットワーク上で初めて HoloLens (第 1 世代) をセットアップする方法について説明します。
 ms.assetid: 0136188e-1305-43be-906e-151d70292e87
 ms.prod: hololens
 author: Teresa-Motiv
@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9a20a2ddd52c08a2b44dad452aac07ad9e69de85
-ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
+ms.openlocfilehash: aca7b287b3d26ab37ddb90e4245a1e0b3adc17e2
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "10903233"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283928"
 ---
 # HoloLens (第 1 世代) のセットアップ
 

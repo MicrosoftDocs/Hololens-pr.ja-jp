@@ -1,7 +1,6 @@
 ---
 title: 商用機能
-description: Microsoft HoloLens Commercial Suite には、企業で HoloLens デバイスを簡単に管理するための機能が含まれています。 HoloLens 2 デバイスには、既定で商用機能が装備されています。
-keywords: HoloLens, 商用, 機能, MDM, モバイル デバイス管理, キオスク モード
+description: 企業による HoloLens デバイスの管理を容易にする Microsoft HoloLens Commercial Suite 機能について説明します。
 author: scooley
 ms.author: scooley
 ms.date: 08/26/2019
@@ -18,12 +17,13 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51d50f863e379baffee4e44c44e3ab467b517359
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+keywords: HoloLens, 商用, 機能, MDM, モバイル デバイス管理, キオスク モード
+ms.openlocfilehash: 5aef764b1d7937832e162ab219131d8c3d768e68
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253174"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283448"
 ---
 # 商用機能
 
