@@ -1,6 +1,6 @@
 ---
 title: 展開ガイド - リモート アシストによるクラウド接続 HoloLens 2 の大規模な展開 - 準備
-description: クラウド接続ネットワークを使用して HoloLens デバイスを登録する準備をする方法
+description: Azure Active Directory と ID 管理を使用して、クラウドに接続されたネットワーク上で HoloLens デバイスを登録する準備をする方法について説明します。
 keywords: HoloLens, 管理, クラウド接続, リモート アシスト, AAD, Azure AD, MDM, モバイル デバイス管理
 author: evmill
 ms.author: v-evmill
@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4e99740d985a709683595cd5afef76094faaf76
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 067917396631f9a89a50b13ef1b7dcca8b631f52
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253054"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283868"
 ---
 # 準備 - クラウド接続ガイド
 
-この記事の終わりまでに、Azure AD、MDM をセットアップし、Azure AD アカウントとネットワーク要件の使用について理解する必要があります。 このガイドのセクションでは、ユーザーと組織が HoloLens 2 をクラウドに展開し、Dynamics 365 リモート アシストを使用する準備を行うのに役立ちます。 インフラストラクチャの各部分の重要性に加え、必要に応じてこれらの部分を設定するのに役立つガイドへのリンクを提供します。
+この記事の終わりまでに、Azure AD、MDM をセットアップし、Azure AD アカウントとネットワーク要件の使用について理解する必要があります。 このガイドのセクションでは、ユーザーと組織が HoloLens 2 をクラウドに展開し、Dynamics 365 リモート アシストを使用する準備を行うのに役立ちます。 インフラストラクチャの各部分の重要性に加え、必要に応じてこれらの部分をセットアップするのに役立つガイドへのリンクを提供します。
 
 ## Infrastructure Essentials
 
@@ -31,7 +31,7 @@ ms.locfileid: "11253054"
 
 ### Azure Active Directory
 
-Azure AD は、ID とアクセス管理を提供する、クラウド ベースのディレクトリ サービスです。 Microsoft Office 365 または Intune を使用している組織は、既に Azure AD を使用しています。このエディションには、Free、Premium P1、Premium P2 の 3 つのエディションがあります [(Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-editions)エディションを参照してください)。すべてのエディションで Azure AD デバイスの登録がサポートされますが、このガイドで後で使用する MDM 自動登録を有効にするには Premium P1 が必要です。
+Azure AD は、ID とアクセス管理を提供する、クラウド ベースのディレクトリ サービスです。 Microsoft Office 365 または Intune を使用している組織は、既に Azure AD を使用しています。このエディションには、Free、Premium P1、Premium P2 の 3 つのエディションがあります [(Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-editions)エディションをご覧ください)。すべてのエディションで Azure AD デバイスの登録がサポートされますが、このガイドで後で使用する MDM 自動登録を有効にするには Premium P1 が必要です。
 
 > [!IMPORTANT]
 > HoloLens デバイスはオンプレミスのデバイスへの参加をサポートしていないので、Azure Active Directory をADです。 Azure Active Directory&#39;まだセットアップしていない場合は、このリンクの指示に従って [、Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)で新しいテナントを作成します。
@@ -40,7 +40,7 @@ Azure AD は、ID とアクセス管理を提供する、クラウド ベース�
 
 従業員は 1 つのアカウントのみを使用してデバイスを初期化できます。そのため&#39;アカウントを最初に制御する必要が生じません。 選択したアカウントによって、デバイスを制御するユーザーが決まり、管理機能に影響があります。
 
-このガイドでは、使用する [ID](https://docs.microsoft.com/hololens/hololens-identity) に対して、Azure AD アカウント、または Azure Active Directory アカウントを使用するように選択しました。 Azure アカウントには、次AD使用する複数の利点があります。
+このガイドでは、使用する [ID](https://docs.microsoft.com/hololens/hololens-identity) に Azure AD アカウント、または Azure Active Directory アカウントを使用するように選択しました。 Azure アカウントには、次AD使用する複数の利点があります。
 
 - 従業員は Azure AD アカウントを使用して Azure AD にデバイスを登録し、組織&#39;の MDM ソリューションに自動的に登録します (Azure AD + MDM – Azure AD Premium が必要)。
 - Azure AD アカウントはシングル [サインオンをサポートしています](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)。 ユーザーがリモート アシストにサインインすると、サインインしている Azure AD ユーザーの ID が認識され、ユーザーはアプリにサインインして効率的なエクスペリエンスを得る。
@@ -58,7 +58,7 @@ Enterprise Mobility + Security の一部である Microsoft [Intune](https://doc
 
 ## ネットワーク
 
-このセットアップでは、利用可能な開いているネットワークからインターネットに接続する HoloLens 2 デバイスWi-Fiしています。 ユーザーは場所に基づいてネットワーク接続を変更する必要がある可能性があるから[、HoloLens](https://docs.microsoft.com/hololens/hololens-network)デバイスを Wi-Fi に接続する方法を学習する必要があります。
+このセットアップでは、HoloLens 2 デバイスが、利用可能な開いているネットワークからインターネットに接続Wi-Fiしています。 ユーザーは場所に基づいてネットワーク接続を変更する必要がある可能性があるから[、HoloLens](https://docs.microsoft.com/hololens/hololens-network)デバイスを Wi-Fi に接続する方法を学習する必要があります。
 
 Dynamics 365 リモート アシストには、帯域幅、待機時間、ジッター、パケット損失など、ビデオ通話のエクスペリエンスに影響を与える可能性があるさまざまなネットワーク条件があります。 帯域幅が少ない環境では音声通話やビデオ通話が可能な場合でも、機能低下が発生する可能性があります。 HoloLens で Dynamics 365 リモート アシストを使用する場合は、次のネットワーク要件に注意してください。
 

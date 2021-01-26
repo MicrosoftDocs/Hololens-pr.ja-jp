@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 311da6bc52098d5ba16e4684f68fec9a01e7c23b
-ms.sourcegitcommit: 8cea4c04c6d2e22225f4de43e10c05dab840736a
+ms.openlocfilehash: dd205ab1fe399d6612be982136c80733a5eb087e
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253847"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283664"
 ---
 # HoloLens ドキュメントへの貢献
 
@@ -31,7 +31,7 @@ HoloLens のドキュメントは、GitHub docs.microsoft.com Markdig 機能を�
 
 ## 開始する前に
 
-まだ持ってない場合は [、GitHub アカウントを作成する必要があります](https://github.com/join)。
+まだお持ちでない場合は [、GitHub アカウントを作成する必要があります](https://github.com/join)。
 
 >[!NOTE]
 >Microsoft の従業員の場合は、Microsoft オープン ソース ポータルで GitHub アカウントを Microsoft エイリアス [にリンクします](https://repos.opensource.microsoft.com/)。 **"Microsoft" 組織と** **"MicrosoftDocs" 組織に参加**します。
@@ -61,12 +61,12 @@ GitHub アカウントをセットアップする場合は、次のセキュリ�
 
 4. 各記事の上部にあるメタデータを更新します。
 
-   * **title**: 記事が表示されているときにブラウザー タブに表示されるページ タイトル。 ページ タイトルは SEO とインデックス作成に使用されます。そのため、必要な場合を使用しない限り、タイトルを変更する必要はありません (ドキュメントが公開される前に、これはそれほど重要ではありません)。
+   * **title**: 記事が表示されているときにブラウザー タブに表示されるページ タイトル。 ページ タイトルは SEO とインデックス作成に使われるので、必要ない限りタイトルを変更しない (ドキュメントが公開される前はそれほど重要ではない)。
    * **description**: 記事のコンテンツの簡単な説明を記述します。SEO と検出が向上します。
-   * **author**: ページのプライマリ所有者である場合は、GitHub エイリアスをここに追加します。
+   * **author**: ページのプライマリ所有者である場合は、ここに GitHub エイリアスを追加します。
    * **ms.author**: ページのプライマリ所有者である場合は、ここに Microsoft エイリアスを追加します (@microsoft.com は不要で、エイリアスだけです)。
-   * **ms.date**: ページに主要なコンテンツを追加する場合は日付を更新しますが、説明、書式設定、文章校正、スペルチェックのような修正には更新しない。
-   * **keywords**: Keywords aid in SEO (search engine optimization). 記事に固有のキーワードをコンマとスペースで区切って追加しますが、リスト内の最後のキーワードの後に句読点を追加する必要はありません。 すべての記事に適用されるグローバル キーワードを追加する必要は、他の場所で管理されます。 
+   * **ms.date**: ページに主要なコンテンツを追加する場合は日付を更新しますが、説明、書式設定、文章校正、スペルチェックなど、修正は行う必要はありません。
+   * **keywords**: Keywords aid in SEO (search engine optimization). 記事に固有のコンマとスペースで区切られたキーワードを追加しますが、リスト内の最後のキーワードの後に句読点を追加する必要はありません。 すべての記事に適用されるグローバル キーワードを追加する必要は、他の場所で管理されます。 
    
 5. 記事の編集が完了したら、下にスクロールして [ファイル変更の提案] **を選択します**。
 
@@ -94,7 +94,7 @@ GitHub アカウントをセットアップする場合は、次のセキュリ�
 
 - これは `redirect_url` 、古い記事から新しい記事への相対パブリック URL です。 この **URL** には、リポジトリ パスではなくパブリック URL を参照する URL が含まれているか、含 `mixed-reality-docs` `.md` まれている必要があります。 新しい記事内のセクションへのリンクは `#section` 使用できます。 必要に応じて、別のサイトへの絶対パスを使用できます。
 
-- `redirect_document_id` は、前のファイルのドキュメント ID を保持するかどうかを示します。 既定値は次の値です `false` 。 リダイレクト `true` された記事の属性値 `ms.documentid` を保持する場合に使用します。 ドキュメント ID を保持すると、ページ ビューやランク付けなどのデータが対象の記事に転送されます。 リダイレクトが主に名前の変更であり、同じコンテンツの一部のみをカバーする別の記事へのポインターではない場合は、これを行います。
+- `redirect_document_id` は、前のファイルのドキュメント ID を保持するかどうかを示します。 既定値は次の値です `false` 。 リダイレクト `true` された記事の属性値を `ms.documentid` 保持する場合に使用します。 ドキュメント ID を保持すると、ページ ビューやランク付けなどのデータが対象の記事に転送されます。 リダイレクトが主に名前の変更であり、同じコンテンツの一部のみをカバーする別の記事へのポインターではない場合は、これを行います。
 
 リダイレクトを追加する場合は、必ず古いファイルも削除してください。
 
@@ -102,7 +102,7 @@ GitHub アカウントをセットアップする場合は、次のセキュリ�
 
 以下のワークフローを使用して *、Web* ブラウザーの GitHub を介してドキュメント リポジトリに新しい記事を作成します。
 
-1. MicrosoftDocs/mixed-Reality 'master' 分岐からフォークを作成します (上部 **の [フォーク** ] ボタンを使用)。
+1. MicrosoftDocs/mixed-Reality 'master' 分岐からフォークを作成します (上部の **[フォーク** ] ボタンを使用)。
 
    ![マスター分岐をフォークします。](images/forkbranch.png)
    
@@ -133,7 +133,7 @@ GitHub アカウントをセットアップする場合は、次のセキュリ�
 
 6. Markdown の基本を使用 [して記事のコンテンツを記述します](#markdown-basics)。
 
-7. 記事の `## See also` 下部にセクションを追加し、関連する他の記事へのリンクを追加します。
+7. 記事の `## See also` 下部に、他の関連記事へのリンクを含むセクションを追加します。
 
 8. 完了したら、[新しいファイルの **コミット] を選択します**。
 
@@ -152,7 +152,7 @@ GitHub アカウントをセットアップする場合は、次のセキュリ�
 
 スタイル テーブルをdocs.microsoft.com、インライン CSS を試しても、罫線やカスタム スタイルを持つ必要がなされません。 これは短時間動作する場合に表示されますが、最終的にプラットフォームは表からスタイルを削除します。 そのため、前もって計画を立て、テーブルをシンプルにしてください。 [Markdown テーブルを簡単に使用できるサイトを次に示します](https://www.tablesgenerator.com/markdown_tables)。
 
-ドキュメント [Markdown Extension for Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) では、ドキュメントの編集に Visual Studio コード (下記参照 [)](#using-visual-studio-code) を使用している場合でも、テーブルの生成が容易になります。
+ドキュメント [の Markdown Extension for Visual Studio コード](https://docs.microsoft.com/teamblog/docs-extension) は、ドキュメントの編集に Visual Studio コード (下記参照 [)](#using-visual-studio-code) を使用している場合にも、テーブルの生成を容易にします。
 
 ### 画像の追加
 
@@ -164,16 +164,16 @@ GitHub アカウントをセットアップする場合は、次のセキュリ�
 >1. MicrosoftDocs/mixed-Reality レポをフォークしました。
 >2. フォーク内の記事を編集しました。
 >3. 記事で参照している画像をフォークの "mixed-reality-docs/images" フォルダーにアップロードしました。
->4. フォークを**** MicrosoftDocs/mixed-Reality 'master' 分岐にマージするプル要求を作成しました。
+>4. フォークを**** MicrosoftDocs/Mixed-Reality 'master' 分岐にマージするプル要求を作成しました。
 >
 >フォークされた独自のレポを設定する方法については、新しい記事を作成する手順 [に従ってください](#creating-a-new-article)。
 
 ## 作業のプレビュー
 
-GitHub で Web ブラウザーを使用して編集している間**** は、コミットする前にページの上部にある [プレビュー] タブを選択して作業をプレビューできます。 
+Web ブラウザーを使用して GitHub で編集している間**** は、ページの上部にある [プレビュー] タブを選択して、コミットする前に作業をプレビューできます。 
 
 >[!NOTE]
->ユーザーの変更をプレビューreview.docs.microsoft.com Microsoft の従業員だけが利用できます。
+>変更のプレビューは、review.docs.microsoft.com Microsoft の従業員だけが利用できます。
 
 Microsoft の従業員: 投稿が 'master' ブランチにマージされた後、公開前にコンテンツを確認できます https://review.docs.microsoft.com/hololens?branch=master 。 左側の列の目次を使用して記事を見つける。
 
@@ -193,7 +193,7 @@ Microsoft の従業員: 投稿が 'master' ブランチにマージされた後�
 
 ### セットアップ
 
-次の手順に従って、このVisual Studioを使用するためのコードを構成します。
+次の手順に従って、このVisual Studioを使用するコードを構成します。
 
 1. Web ブラウザーの場合:
     1. お [使いの PC 用に Git をインストールします](https://git-scm.com/downloads)。
@@ -212,7 +212,7 @@ Microsoft の従業員: 投稿が 'master' ブランチにマージされた後�
 以下のワークフローを使用して、コードを使用してドキュメントをVisual Studioします。
 
 >[!NOTE]
->上記の記事の [編集](#editing-an-existing-article) と [作成](#creating-a-new-article) に関するガイダンス、 [および Markdown](#markdown-basics)の編集の基本はすべて、このコードを使用する場合にもVisual Studio適用されます。
+>記事の編集と[](#editing-an-existing-article)作成に[](#creating-a-new-article)関するガイダンス、および[上記の Markdown](#markdown-basics)の編集の基本は、このコードを使用する場合にもVisual Studio適用されます。
 
 1. 複製されたフォークが公式リポジトリで最新の情報を得たか確認します。
 
@@ -233,12 +233,14 @@ Microsoft の従業員: 投稿が 'master' ブランチにマージされた後�
       ![エクスプローラーで [すべて保存] を選択する](images/explorer-save.png)
       
    3. **ソース管理のすべての** 変更を **コミット** します (メッセージが表示されたらコミット メッセージを書き込む)。
+   
+      ![ソース管理で [すべて確定] を選択する](images/source-control-commit.png)
       
    4. 同期ボタン **を選択** して、変更内容を元の状態 (GitHub のフォーク) に同期します。
       
       ![[同期] ボタンをクリックする](images/sync-back.png)
       
-3. Web ブラウザーで、フォークの新しい変更を MicrosoftDocs/mixed-Reality 'master' に同期するプル要求を作成します (矢印が正しい方向を指していることを確認してください)。
+3. Web ブラウザーで、フォークの新しい変更を MicrosoftDocs/Mixed-Reality 'master' に同期するプル要求を作成します (矢印が正しい方向を指していることを確認してください)。
 
    ![フォークから MicrosoftDocs/mixed-Reality へのプル要求を作成する](images/pr-to-master.png)
 

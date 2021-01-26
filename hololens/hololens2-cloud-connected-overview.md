@@ -1,6 +1,6 @@
 ---
-title: 展開ガイド - リモート アシスト付きのクラウド接続 HoloLens 2 - 概要
-description: クラウド接続ネットワークを使用して HoloLens デバイスを登録する
+title: リモート アシスト付きのクラウド接続 HoloLens 2 の概要
+description: Dynamics 365 リモート アシストを使用して、クラウド接続ネットワーク上で HoloLens 2 デバイスを登録する方法について学習します。
 keywords: HoloLens, 管理, クラウド接続, リモート アシスト, AAD, Azure AD, MDM, モバイル デバイス管理
 author: evmill
 ms.author: v-evmill
@@ -14,29 +14,29 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: fe83333c99f8dbf23b211c9b5155db256dcd20b3
-ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
+ms.openlocfilehash: 835b4be101b665d2b86c2170a65c04697686e403
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271677"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283078"
 ---
 # 展開ガイド - リモート アシスト付きのクラウド接続 HoloLens 2 – 概要
 
-このガイドは、Dynamics 365 リモート アシストを使用してこれらのデバイスを組織に接続する全体的な目標を達成し、IT 担当者が Microsoft HoloLens 2 デバイスを計画して組織に展開する場合に役立ちます。 これは、さまざまな HoloLens 2 の使用事例にわたって組織に概念実証を展開するモデルとして機能します。
+このガイドは、Dynamics 365 リモート アシストを使用してそれらのデバイスクラウドを組織に接続する準備を行うという全体的な目標を持ち、IT 担当者が Microsoft HoloLens 2 デバイスを計画して組織に展開する場合に役立ちます。 これは、さまざまな HoloLens 2 の使用事例にわたって組織に概念実証を展開するモデルとして機能します。
 
 このガイドでは、デバイスをデバイス管理に登録し、必要に応じてライセンスを適用し、エンド ユーザーがデバイスのセットアップ時にリモート アシストをすぐに使用できるのを検証する方法について説明します。 これを行うには、HoloLens 2 を使用して大規模な展開を実現するために、セットアップと実行に必要な重要なインフラストラクチャについて説明します。
 
-## このガイドの情報
+## このガイドのページ
 
-このガイドには、組織内で HoloLens デバイスにリモート アシストをセットアップする具体的な目標があります。 その目標を達成するために必要な情報を扱います。 この目標に集中するために、この展開を最適化したり、構成に必要な項目を減らしたりするために、特定の準備と構成を事前に選択します。 これらの選択肢が通知され、ビジネス ニーズに基づいて展開をカスタマイズできます。
+このガイドには、HoloLens デバイスで組織内にリモート アシストをセットアップする具体的な目標があります。 その目標を達成するために必要な情報を扱います。 この目標に集中するために、この展開を最適化したり、構成に必要な項目を減らしたりするために、特定の準備と構成を事前に選択します。 これらの選択肢が通知され、ビジネス ニーズに基づいて展開をカスタマイズできます。
 
 これは、シナリオ [A:](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)クラウド接続デバイスへの展開に似た設定です。これは、概念実証の多くの展開に最適なオプションです。これには、次のものが含まれます。
 
 - Wi-Fiネットワークは、通常、インターネットサービスとクラウド サービスに完全に開いている
 - Azure AD MDM 自動登録を使用した参加 - MDM (Intune) 管理
 - ユーザーが自分の会社のアカウントでサインインする (Azure AD)
-  - サポートされているデバイスごとに 1 人または複数のユーザー
+  - サポートされるデバイスごとに 1 人または複数のユーザー
 - さまざまなレベルのデバイス ロックダウン構成が、完全に開いているアプリからシングル アプリ キオスクまで、特定の使用例に基づいて適用されます。
 
 ![クラウド接続シナリオ](./images/cloud-connected-guide-diagram.png)
@@ -55,7 +55,7 @@ ms.locfileid: "11271677"
 
 > [!div class="checklist"]
 > - [HoloLens 2 デバイスのインフラストラクチャの基本について学習します。](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [Azure ADについてAD、必要ない場合はセットアップ&#39;確認してください。](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [Azure アプリの詳細AD、必要な場合はセットアップ&#39;確認してください。](hololens2-cloud-connected-prepare.md#azure-active-directory)
 > - [ID 管理と、Azure アカウントを最適にセットアップする方法ADします。](hololens2-cloud-connected-prepare.md#identity-management)
 > - [MDM について詳しく知り、まだ準備ができていない場合は Intune&#39;セットアップしてください。](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [リモート アシストのネットワーク要件について説明します。](hololens2-cloud-connected-prepare.md#network)

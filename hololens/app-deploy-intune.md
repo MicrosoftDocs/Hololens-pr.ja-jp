@@ -1,6 +1,6 @@
 ---
 title: Intune とポータル サイト
-description: Intune, アプリ管理, アプリ, ポータル ポータル, ポータル
+description: Intune、モバイル デバイス管理、およびポータル サイトで快適なユーザー エクスペリエンスをセットアップ、割り当て、作成する方法について説明します。
 keywords: intune, アプリ管理, アプリ, ポータル, ポータル, hololens
 author: evmill
 ms.author: v-evmill
@@ -17,12 +17,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7871d5113b6803a3f702bf8d64f16fabc1c5a9bb
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: f91f97b6cddf678b20d0bdb3f381e01809b10f3f
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252658"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283718"
 ---
 # Intune と会社のポータル
 
@@ -35,7 +35,7 @@ ms.locfileid: "11252658"
 2. [アプリをグループに割り当てる](https://docs.microsoft.com/mem/intune/apps/apps-deploy)。 選択した割り当ての種類に基づいて、アプリを自動的に配信したり、選択したアプリがある場合は簡単に取得できます。
 
 > [!NOTE]
-> appx バンドルを構築する場合は、展開するデバイスのアーキテクチャを含む必要があります。 HoloLens 2 は ARM64、HoloLens (第 1 世代) は x86 です。 混在するデバイス環境を計画している場合は、両方を単一の appx バンドルに含めできます。
+> appx バンドルを構築する場合は、展開するデバイスのアーキテクチャを含めて考慮する必要があります。 HoloLens 2 は ARM64、HoloLens (第 1 世代) は x86 です。 混在するデバイス環境を計画している場合は、両方を単一の appx バンドルに含めできます。
 
 ## 割り当ての種類
 
@@ -46,9 +46,9 @@ ms.locfileid: "11252658"
 
 Intune で構成を設定すると、エンド ユーザーが選択したアプリを受け取る準備が整います。
 
-アプリを自動的に取得するには、次の手順を実行します。
+アプリを自動的に取得するには、次の手順に従います。
 
-1. デバイスをテナントに登録します。
+1. テナントにデバイスを登録します。
 2. デバイスの登録が完了したら、デバイスでアプリを受け取る必要があります。
 3. If you are not see you app immediately, go to **Settings**  >  **Accounts**  >  **Work or School**your  >  *account* Info, and scroll down to see information on installed app status.
 

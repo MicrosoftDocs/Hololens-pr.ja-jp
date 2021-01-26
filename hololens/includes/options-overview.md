@@ -11,7 +11,7 @@ ms.locfileid: "11253929"
 ## 1. 使用を開始する
 これらのデバイスは、業務用の商用環境で使用できます。 これらのデバイスは、開発者や組織に対して強力なデバイスをセットアップできます。 
 
-すべての HoloLens 2 エディションには、同じ [](../hololens2-hardware.md#hololens-components)ハードウェア、ボックス内の同じコンテンツ、および同じプレインストールされたソフトウェア[が付属しています](../hololens2-hardware.md#pre-installed-software)。
+すべての HoloLens 2 エディションには、同じ [](../hololens2-hardware.md#hololens-components)ハードウェア、ボックス内の同じコンテンツ、および同じプレインストール済みのソフトウェア[が付属しています](../hololens2-hardware.md#pre-installed-software)。
 
 ## 2. 組織内に HoloLens デバイスを展開する
 このセクションでは、ユーザーと組織が HoloLens デバイスを展開する準備を整えます。 
@@ -73,15 +73,15 @@ ms.locfileid: "11253929"
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-すべての HoloLens 2 エディションには、同じ [](../hololens2-hardware.md#hololens-components)ハードウェア、ボックス内の同じコンテンツ、および同じプレインストールされたソフトウェア[が付属しています](../hololens2-hardware.md#pre-installed-software)。
+すべての HoloLens 2 エディションには、同じ [](../hololens2-hardware.md#hololens-components)ハードウェア、ボックス内の同じコンテンツ、および同じプレインストール済みのソフトウェア[が付属しています](../hololens2-hardware.md#pre-installed-software)。
 
 ## 2. HoloLens 2 Dynamics 365 リモート アシスト エディションの次の操作方法
 
-Azure Active Directory のセットアップからリモート アシスト呼び出しの検証まで、エンドツーエンドのセットアップにより、HoloLens デバイスを大規模に展開するためのガイドを作成しました。 Please check out this ** [Deployment Guide – Cloud connected HoloLens 2 with Remote Assist](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview).**
+Azure Active Directory のセットアップからリモート アシスト呼び出しの検証まで、エンドツーエンドのセットアップにより、HoloLens デバイスを大規模に展開するためのガイドを作成しました。 この展開ガイド (リモート アシスト付 **[きのクラウド接続 HoloLens 2) をご覧ください](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview)。**
 
 | チェックポイント  | 結果                                |
 |-------------|----------------------------------------|
-| [使ってみる](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens) | リモート アシストの使用を開始します。        |
+| [概要](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens) | リモート アシストの使用を開始します。        |
 | [ライセンス](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | リモート アシストのライセンスを引き換える。      |
 | [接続](https://docs.microsoft.com/hololens/hololens-network)     | デバイスを Wi-Fi に接続します。       |
 | [登録](https://docs.microsoft.com/hololens/hololens-enroll-mdm)      | デバイスを組織に登録します。 |
@@ -107,7 +107,7 @@ Azure Active Directory のセットアップからリモート アシスト呼�
 | チェックポイント  | 結果  |
 |---|---|
 | [デバイス](../hololens-enroll-mdm.md) を登録します。   | デバイスを登録する方法を理解している。   |
-| アプリケーションを [展開します](../app-deploy-overview.md)。  | 使用できるすべてのアプリケーション展開方法を理解し、選択します。  |
+| アプリケーションを [展開します](../app-deploy-overview.md)。  | 使用できるすべてのアプリケーション展開方法を理解し、それを選択します。  |
 
 ### 保守
 | チェックポイント  |  結果  |
@@ -140,7 +140,7 @@ HoloLens 2 Development Edition には、HoloLens 2、Azure クレジット 500 �
 |  [Unity 用 Pixyz プラグイン](https://www.pixyz-software.com/plugin/) | エンジニアリング CAD の世界と開発の世界 &amp; を結び付けするためのブリッジ。   |
 | [Azure サービスの Azure クレジットで 500 ドル](https://azure.microsoft.com/resources/) | HoloLens 2 Development Edition に含まれる Azure クレジットは、Azure での Mixed Reality アプリケーションの構築とテストをすぐに開始します。 |
 
-すべての HoloLens 2 エディションには、同じ [](../hololens2-hardware.md#hololens-components)ハードウェア、ボックス内の同じコンテンツ、および同じプレインストールされたソフトウェア[が付属しています](../hololens2-hardware.md#pre-installed-software)。
+すべての HoloLens 2 エディションには、同じ [](../hololens2-hardware.md#hololens-components)ハードウェア、ボックス内の同じコンテンツ、および同じプレインストール済みのソフトウェア[が付属しています](../hololens2-hardware.md#pre-installed-software)。
 
 ## 2. クレジットを引き換える
 
@@ -149,7 +149,7 @@ HoloLens 2 Development Edition には、HoloLens 2、Azure クレジット 500 �
 1. 次の [ページid.unity.com](http://id.unity.com/)
 1. Unity ID でサインインするか、作成します。
 1. [製品 **コードの引き換え] をクリックします。**
-1. 製品コードを入力し、[製品コード **の引き換え] をクリックする**
+1. 製品コードを入力し、[製品コード **の引き換え] をクリックします。**
 
 Unity ライセンスを [アクティブ化する方法について詳しくは、以下をご覧ください](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-)。 必要に [応じて Unity サポート](https://support.unity3d.com/hc) にお問い合わせください。  
 
@@ -163,7 +163,7 @@ Unity ライセンスを [アクティブ化する方法について詳しくは
 
 ### Azure
 次に [、Azure](https://azure.microsoft.com/topic/mixed-reality/) クレジットの引き換えに必要な Mixed Reality 用の一般的な Azure 製品を示します。
-Azure クレジットの引き換え方法: $500 Azure クレジットを引き換えるには、Azure Pass プロモーション コードを引き換え、サブスクリプションをアクティブ化します。 [詳しい情報をご覧ください。](../hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
+Azure クレジットを引き換える方法: $500 Azure クレジットを引き換えるには、Azure Pass プロモーション コードを引き換え、サブスクリプションをアクティブ化します。 [詳しい情報をご覧ください。](../hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
 
 - [Azure Spatial Anchors が、3D コンテンツのマップ、共有、永続化を行うアプリの構築に役立つ方法について説明します。](https://azure.microsoft.com/services/spatial-anchors/)
 - [Azure リモート レンダリングで高品質で対話型の 3D コンテンツをレンダリングし、リアルタイムでデバイスにストリーミングする方法について説明します。](https://azure.microsoft.com/services/remote-rendering/)

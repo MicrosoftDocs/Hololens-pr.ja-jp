@@ -1,6 +1,6 @@
 ---
 title: 展開ガイド - リモート アシストによるクラウド接続 HoloLens 2 の大規模な展開 - 構成
-description: クラウド接続ネットワークを使用して HoloLens デバイスを登録する構成を設定する方法
+description: リモート アシストを使用して、クラウド接続ネットワークを使用して HoloLens デバイスを大規模に登録する構成を設定する方法について説明します。
 keywords: HoloLens, 管理, クラウド接続, リモート アシスト, AAD, Azure AD, MDM, モバイル デバイス管理
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 042a29fe436b21ca37a2fcd7921fc53d6a9686d5
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 00cc3f9df1fefafc9c4c084ff642364ae3ccb85c
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253044"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283888"
 ---
 # 構成 - クラウド接続ガイド
 
@@ -44,7 +44,7 @@ Azure と Intune をその拡張機能で使用すると、ユーザーとグル
 
 Microsoft Endpoint [Manager を使用](https://endpoint.microsoft.com/#home)すると、サービスを選択し、[プレミアム評価版を取得] を選択できるまで、いくつかのページを移動できます。 自動登録 P1 では Azure Active Directory Premium 1 と Azure Active Directory Premium 2 で十分です。 Intune を選択し、自動登録のユーザー スコープを選択し、以前に作成したグループを選択できます。
 
-詳細と手順については、Intune の自動登録を有効にする [方法に関するガイドを参照してください](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment)。
+詳細と手順については、Intune の自動登録を有効にする方法 [に関するガイドを参照してください](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment)。
 
 ## アプリケーション ライセンス
 

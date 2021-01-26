@@ -1,6 +1,6 @@
 ---
 title: 展開ガイド - リモート アシストによるクラウド接続 HoloLens 2 の大規模な展開 - 保守
-description: クラウド接続ネットワーク上で HoloLens デバイスを維持するためのヒント
+description: クラウド接続ネットワーク上で HoloLens デバイスを保守およびサポートするためのヒントを常に最新の状態に保つ。
 keywords: HoloLens, 管理, クラウド接続, リモート アシスト, AAD, Azure AD, MDM, モバイル デバイス管理
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8117c73516d2775ec67f37bad524bcf377ece2e5
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: bc34c4e41c5a6cee8f3f9a0a97407ee38d419bbc
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252698"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283898"
 ---
 # 保守 - クラウド接続ガイド
 
@@ -33,7 +33,7 @@ Windows Update for Business は、IT 管理者に対して Windows Update を中
 
 ## サポート プラン
 
-サポート プランは、この計画に取り入れるのに便利です。 HoloLens デバイスでの登録プロセスのトラブルシューティングや、組織内での HoloLens デバイスの一般的な使用に関するトレーニングを受けたユーザーやグループが役に立ちます。 ユーザーが問題をより迅速に解決するために、エスカレーション プロセスは次の順序と同様の方法で処理されます。
+サポート プランは、この計画に含め非常に優れたものです。 HoloLens デバイスでの登録プロセスのトラブルシューティングや組織内での HoloLens デバイスの一般的な使用に関するトレーニングを受けたユーザーやグループが役に立ちます。 ユーザーが問題をより迅速に解決するために、エスカレーション プロセスは次の順序と同様の方法で処理されます。
 
 1. サポート デスク。
 2. HoloLens エキスパート チーム
@@ -46,7 +46,7 @@ Windows Update for Business は、IT 管理者に対して Windows Update を中
 
 既に業務アプリがある場合は、MDM&#39;展開 [する準備が整っている必要があります](https://docs.microsoft.com/hololens/app-deploy-intune)。 別の&#39;方法が必要な場合は [、HoloLens 2](https://docs.microsoft.com/hololens/app-deploy-overview) のアプリケーション展開の概要を確認して、LOB アプリをデバイスに展開する方法の詳細を確認してください。
 
-まだ独自&#39;LOB アプリを作成していない場合や、まだ作成中の場合は、Mixed Reality 開発ドキュメントを参照して、[](https://docs.microsoft.com/windows/mixed-reality/design/design)設計とプロトタイプの作成を開始したり[、Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr)開発を開始する中心概念を学習したりします。
+まだ独自&#39;LOB アプリを作成していない場合や、まだ作成中の場合は、Mixed Reality 開発ドキュメントを確認して、[](https://docs.microsoft.com/windows/mixed-reality/design/design)設計とプロトタイプの作成を開始したり[、Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr)開発を開始する中心概念を学ぶ必要があります。
 
 ## デバイス管理 
 
@@ -54,7 +54,7 @@ Windows Update for Business は、IT 管理者に対して Windows Update を中
 
 多くの場合、デバイスは Bluetooth、VPN、USB などの接続制限を持つ場合や、カメラやマイクへのアクセスをオフにすることもできます。 これらの関心がある場合は、一般的なデバイス制限の [ページをお読み](hololens-common-device-restrictions.md)ください。
 
-使用できるその他のより複雑なデバイス制限があります。 次に例を示します。
+使用できる他のより複雑なデバイス制限があります。 次に例を示します。
 
 - [SettingsPageVisibility](settings-uri-list.md)を使用して設定アプリで表示できるページを制限し、ユーザーが調整する必要がある設定 (ユーザーの接続の変更など) にのみアクセスWi-Fiします。
 - キオスク [モードを使](hololens-kiosk.md) って、デバイス上のユーザーに表示される UI を制限します。 キオスクは、1 つのアプリを表示するか、カスタムのスタート ページを持つ複数のアプリを表示するために設定できます。 キオスクでは、さまざまなユーザーに異なるエクスペリエンスを表示できます。  
