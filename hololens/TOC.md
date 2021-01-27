@@ -114,7 +114,7 @@
 ### [よく寄せられる質問](hololens-faq.md)
 ### [Hololens で発生する既知の問題](hololens-known-issues.md)
 ### [HoloLens デバイスから診断情報を収集する](hololens-diagnostic-logs.md)
-### [サポートを受ける](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
+### [テクニカル サポートを受ける](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 # HoloLens のリリース ノート
 ## [HoloLens 2 のリリース ノート](hololens-release-notes.md)
