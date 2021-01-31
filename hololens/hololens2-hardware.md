@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: db8f7774bc3c5718a09a99d8d4137d2ed3271bc1
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: a339470e0c8be2b1cdf492bd14bad1ab724fdc3e
+ms.sourcegitcommit: c72a3c60d4105c77407e6d04c95fadd08f102775
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283038"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304970"
 ---
 # HoloLens 2 のハードウェア
 
@@ -29,8 +29,10 @@ Microsoft HoloLens 2 は、自立型ホログラフィック コンピュータ�
 
 - **バイザー**。 HoloLens のセンサーとディスプレイが含まれます。 バイザーは、HoloLens を装着した状態で、上に回転させて持ち上げることができます。
 - **ヘッドバンド**。 HoloLens を装着するには、調整ノブを回してヘッドバンドを広げます。 HoloLens を装着したら、ヘッドバンドが快適にフィットするまで、調整ノブを右に回して締めます。
-- **明るさ調整ボタン**。 HoloLens を装着した状態では、明るさ調整ボタンがデバイスの左側になります。
-- **音量ボタン**。 HoloLens を装着した状態では、音量ボタンがデバイスの右側になります。
+- **明るさ調整ボタン**。 HoloLens を装着している状態では、明るさボタンはバイザーの左側にあります。
+- **音量ボタン**。 HoloLens を装着している状態では、ボリューム ボタンはバイザーの右側にあります。
+- **電源ボタン**。 HoloLens を装着している状態では、電源ボタンは背面の外側のカバーの右側にあります。
+- **USB-C ポート**。 HoloLens を装着している状態では、USB-C ポートは背面の外側のカバーの右側の電源ボタンの下にあります。
 
 ## 付属品
 
