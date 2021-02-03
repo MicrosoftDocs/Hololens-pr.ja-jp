@@ -12,8 +12,9 @@
 ### [HoloLens 2 クリーニング: よく寄せられる質問](hololens2-maintenance.md)
 ### [HoloLens 2 でサポートされる言語](hololens2-language-support.md)
 ### [HoloLens 2 の操作方法](hololens2-basic-usage.md)
-### [HoloLens 2 開発エディションに関する FAQ](hololens2-development-edition-faq.md)
-### [HoloLens 2 用のカスタム アプリを管理する](hololens2-holographic-custom-apps.md)
+### [HoloLens 2 Development Edition に関する FAQ](hololens2-development-edition-faq.md)
+### [HoloLens 2 Industrial Edition に関する FAQ](hololens2-industrial-edition-faq.md)
+
 
 
 ## HoloLens (第 1 世代) の概要
@@ -35,6 +36,7 @@
 ### [Mixed Reality の写真とビデオを作成する](holographic-photos-and-videos.md)
 ## Holographic アプリケーション
 ### [アプリケーションの検索、インストール、およびアンインストール](holographic-store-apps.md)
+### [HoloLens 2 用のカスタム アプリを管理する](hololens2-holographic-custom-apps.md)
 ## ホログラム光学と空間内での配置
 ### [視覚効果と快適性の向上](hololens-calibration.md)
 ### [HoloLens を使用して物理的スペースをマッピングする](hololens-spaces.md) 
