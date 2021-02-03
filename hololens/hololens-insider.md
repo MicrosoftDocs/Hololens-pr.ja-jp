@@ -1,6 +1,6 @@
 ---
 title: Microsoft HoloLens の Insider Preview
-description: Insider ビルドを使い始め、HoloLens の次の主要なオペレーティング システム更新プログラムに関する貴重なフィードバックを提供する方法について説明します。
+description: Insider ビルドの使用を開始し、HoloLens の次の主要なオペレーティング システム更新プログラムに関する貴重なフィードバックを提供する方法について説明します。
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/21/2021
+ms.date: 2/2/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7cc08396925368be5230a078de6fb4c7cd0a8b24
-ms.sourcegitcommit: 063aa10baa190429b7248f7f1384afba7975861e
+ms.openlocfilehash: e36d25a31495b09e2e9f08f8ea5a8bf34fadafeb
+ms.sourcegitcommit: 12d96e5d0c733e733f6ff7da2f4efb8e0f96c27b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "11297767"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11311835"
 ---
 # Microsoft HoloLens の Insider Preview
 
@@ -33,7 +33,8 @@ Windows Insider の新機能のフライトを再び開始します。 We will b
 
 | 機能名                                              | 簡単な説明                                                                      | ビルドで使用可能 |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
-| [新しい Microsoft Edge](#introducing-the-new-microsoft-edge) | HoloLens 2 で、Chromium ベースの新しい Microsoft Edge を利用できる                         | 20279.1006 |
+| [新しい Microsoft Edge](#introducing-the-new-microsoft-edge) | HoloLens 2 では、Chromium ベースの新しい Microsoft Edge を使用できます。                         | 20279.1006 |
+| [WebXR と 360 ビューアー](#webxr-and-360-viewer)             | イマーシブな Web エクスペリエンスと 360 のビデオ再生を試す                                           | 20289.1000 |
 | [新しい設定アプリ](#new-settings-app)                     | 従来の設定アプリは、新しい機能と設定で更新されたバージョンに置き換えられる | 20279.1006 |
 | [既定のアプリ ピッカー](#default-app-picker)                 | ファイルまたはリンクの種類ごとに起動するアプリを選択する                                      | 20279.1006 |
 | [Office Web アプリ](#office-web-app)                         | 新しい Web アプリOfficeが [すべてのアプリ] に表示されます。                                   | 20279.1006 |
@@ -43,11 +44,11 @@ Windows Insider の新機能のフライトを再び開始します。 We will b
 | [キオスク モードの失敗の手渡しの改善](#kiosk-mode-behavior-changes-for-handling-of-failures) | キオスク モードでは、空のスタート メニューの前にグローバル割り当てられたアクセスが見えます。 | 20279.1006 |
 | [フォールバック診断を構成する](#configuring-fallback-diagnostics-via-settings-app) | 設定アプリでのフォールバック診断動作の設定 | 20279.1006 |
 
-### 新しい Microsoft Edge の導入
+### 新しい Microsoft Edge の紹介
 
 ![従来の Microsoft Edge ロゴから新しい Microsoft Edge ロゴへのアニメーション](images/new-edge.gif)
 
-新しい Microsoft Edge は [Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) オープン ソース プロジェクトを採用して、お客様との互換性を向上し、Web 開発者向けの Web の断片化を減らします。
+新しい Microsoft Edge は [Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) オープン ソース プロジェクトを採用して、お客様との互換性を向上し、Web 開発者向けの Web の断片化を減らしています。
 
 この Insider プレビューでは、HoloLens 2 のお客様が新しい Microsoft Edge を初めて利用できます。 新しい Microsoft Edge は最終的に HoloLens 2 の従来の Microsoft Edge に取って代わる機能ですが、現在、両方のブラウザーが Insider で利用できます。 新しい Microsoft Edge のフィードバック送信**** 機能またはフィードバック Hub を介して、フィードバックやバグをチームと[共有してください](hololens-feedback.md)。
 
@@ -55,16 +56,16 @@ Windows Insider の新機能のフライトを再び開始します。 We will b
 
 #### 新しい Microsoft Edge の起動
 
-Insider が利用できる Microsoft Edge には、新しい Microsoft Edge の新しい Microsoft Edge アイコン (青と緑のスループ アイコンで表される) と従来の Microsoft Edge (白い ![ "e" アイコンで表される) の 2 つのバージョンがあります。 ](images/new_edge_logo.png) 新しい Microsoft Edge はスタート メニューにピン留めされ、Web リンクをアクティブ化すると自動的に起動します。 従来の Microsoft Edge を既定の Web ブラウザーとして使用する場合は、以下の手順を参照して既定のアプリを [リセットしてください](#default-app-picker)。
+Insider が利用できる Microsoft Edge には、新しい Microsoft Edge の新しい Microsoft Edge アイコン (青と緑のスループ アイコンで表される) と従来の Microsoft Edge (白い ![ "e" アイコンで表される) の 2 つのバージョンがあります。 ](images/new_edge_logo.png) 新しい Microsoft Edge はスタート メニューにピン留めされ、Web リンクをアクティブ化すると自動的に起動します。 従来の Microsoft Edge を既定の Web ブラウザーとして使用する場合は、以下の手順に従って既定のアプリ [をリセットしてください](#default-app-picker)。
 
 > [!NOTE]
 > HoloLens 2 で新しい Microsoft Edge を初めて起動すると、設定とデータは従来の Microsoft Edge からインポートされます。 新しい Microsoft Edge を起動した後も従来の Microsoft Edge を使用し続ける場合、その新しいデータは従来の Microsoft Edge から新しい Microsoft Edge に同期されません。
 
 #### 新しい Microsoft Edge のポリシー設定の構成
 
-新しい Microsoft Edge では、IT 管理者は従来の Microsoft Edge で利用していたよりも、HoloLens 2 のブラウザー ポリシーの広範なセットを提供します。
+新しい Microsoft Edge では、IT 管理者は、従来の Microsoft Edge で利用していたよりも、HoloLens 2 のブラウザー ポリシーの広範なセットを提供します。
 
-新しい Microsoft Edge のポリシー設定の管理について詳しく知る上で役立つリソースを次に示します。
+新しい Microsoft Edge のポリシー設定の管理について詳しくは、次のリソースをご覧ください。
 
 - [Microsoft Intune を使って Microsoft Edge ポリシー設定を構成する](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
 - [Microsoft Edge Legacy から Microsoft Edge ポリシーへのマッピング](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
@@ -96,7 +97,7 @@ Insider が利用できる Microsoft Edge には、新しい Microsoft Edge の�
 
 **近日公開予定のシナリオと機能:**
 - WebXR と 360 ビューアー拡張機能
-- 環境内に配置された複数のウィンドウを閲覧する場合の正しいウィンドウへのコンテンツの復元
+- 環境内に配置された複数のウィンドウを閲覧する場合の正しいウィンドウに対するコンテンツの復元
 
 **動作しないシナリオと機能:**
 - 同時オーディオ ストリームを備え、複数のウィンドウからの空間サウンド
@@ -105,23 +106,23 @@ Insider が利用できる Microsoft Edge には、新しい Microsoft Edge の�
 
 **既知のブラウザーの問題の上位:**
 - デバイスをリセットすると、新しい Microsoft Edge が削除されます。
-- ホログラフィック キーボードの拡大鏡のプレビューに誤ったコンテンツが表示される
+- ホログラフィック キーボードの拡大鏡のプレビューに正しくないコンテンツが表示される
 
 #### Microsoft Edge Insider チャネル
 
-Microsoft Edge チームは、Edge Insider コミュニティ (ベータ、開発、Canary) の 3 つのプレビュー チャネルを利用できます。 プレビュー チャネルをインストールしても、HoloLens 2 にリリースされたバージョンの Microsoft Edge はアンインストールされません。また、複数の Microsoft Edge を同時にインストールできます。 
+Microsoft Edge チームは、Edge Insider コミュニティ (Beta、Dev、Canary) の 3 つのプレビュー チャネルを利用できます。 プレビュー チャネルをインストールしても、HoloLens 2 にリリースされたバージョンの Microsoft Edge はアンインストールされません。また、複数の Microsoft Edge を同時にインストールできます。 
 
 Edge Insider [コミュニティについて詳しくは、Microsoft Edge Insider](https://www.microsoftedgeinsider.com) ホームページをご覧ください。 さまざまな Edge Insider チャネルについて詳しくは、Edge Insider のダウンロード ページ [をご覧ください](https://www.microsoftedgeinsider.com/download)。
 
-HoloLens 2 に Microsoft Edge Insider チャネルをインストールするには、次の 2 つの方法があります。
+HoloLens 2 に Microsoft Edge Insider チャネルをインストールするには、いくつかの方法があります。
 
-**デバイスへの直接インストール (現在は非管理対象デバイスでのみ利用可能)**
+**デバイスへの直接インストール (現在、非管理対象デバイスでのみ利用可能)**
   1. HoloLens 2 で、Edge Insider ダウンロード [ページにアクセスします。](https://www.microsoftedgeinsider.com/download)
   1. インストールする Edge Insider チャネルの **HoloLens 2** のダウンロード ボタンを選択する
   1. ダウンロードした .msix ファイルを、エッジ のダウンロード キューまたはデバイスの [ダウンロード] フォルダーから起動します (エクスプローラーを使用)
-  1. [アプリ インストーラーが](app-deploy-app-installer.md) 起動する
+  1. [アプリ インストーラーが](app-deploy-app-installer.md) 起動します
   1. [インストール] **ボタンを選択** する
-  1. インストールが成功すると、スタート メニューの [すべてのアプリ] の一覧に Microsoft **** Edge Beta、Dev、Canary が個別のエントリとして表示されます。
+  1. インストールが成功すると、スタート メニューの [すべてのアプリ] の一覧に Microsoft **** Edge Beta、Dev、Canary が別のエントリとして表示されます。
 
 **Windows Device Portal を使用して[](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)PC 経由でインストールする (HoloLens 2 で開発者モードを有効にする必要がある)**
   1. PC で、Edge Insider ダウンロード [ページにアクセスします。](https://www.microsoftedgeinsider.com/download)
@@ -132,7 +133,58 @@ HoloLens 2 に Microsoft Edge Insider チャネルをインストールするに
   1. インストールが成功すると、スタート メニューの [すべてのアプリ] の一覧に Microsoft **** Edge Beta、Dev、Canary が別のエントリとして表示されます。
 
 > [!NOTE]
-> HoloLens 2 向け Windows Insider プレビューでは、デバイス上の Microsoft Edge のバージョンが、Microsoft Edge Insider チャネルの一部 (またはすべて) で利用可能なバージョンよりも高い場合があります。 これは、HoloLens 2 の Web ブラウザーを特に対象とする新機能と修正プログラムが、可能な限り迅速に Windows Insider に提供されます。 次の Windows 更新プログラムの一般リリースの直後に、Microsoft Edge Insider チャネル ビルドは HoloLens 2 の Microsoft Edge のバージョンを上回り、先に進む予定です。
+> HoloLens 2 向け Windows Insider プレビューでは、デバイス上の Microsoft Edge のバージョンが、Microsoft Edge Insider チャネルの一部 (またはすべて) で利用可能なバージョンよりも高い場合があります。 これは、HoloLens 2 の Web ブラウザーを特に対象とする新機能と修正プログラムが、可能な限り迅速に Windows Insider に提供されます。 次の Windows 更新プログラムの一般リリースの直後に、Microsoft Edge Insider チャネル のビルドは HoloLens 2 の Microsoft Edge のバージョンを上回り、先に進む予定です。
+
+### WebXR と 360 ビューアー
+
+*Windows Insider ビルド 20289.1000 で追加*
+
+新しい Microsoft Edge には、イマーシブな Web エクスペリエンスを作成するための新しい標準である WebXR のサポートが含まれています (WebVR に置き換わる)。 多くのイマーシブ Web エクスペリエンスは VR を念頭に置いて設計されました (ユーザーの視野を仮想環境に置き換えます)、これらのエクスペリエンスは HoloLens 2 でもサポートされています。 WebXR 標準では、物理環境を活用する拡張現実と Mixed Reality のイマーシブ Web エクスペリエンスも可能になります。 開発者が WebXR でより多くの時間を費やすと、HoloLens 2 のお客様が試す新しい拡張および Mixed Reality イマーシブ エクスペリエンスが提供される予定です。
+
+360 Viewer 拡張機能は WebXR 上に構築され、HoloLens 2 の新しい Microsoft Edge と共に自動的にインストールされます。 この Web 拡張機能を使用すると、360 度のビデオを体験できます。 YouTube では、最大で 360 のビデオが提供されています。そのため、最初に開始してください。
+
+#### WebXR の使い方
+
+1. WebXR がサポートされている Web サイトに移動します。
+1. Web サイトの **[ENTER VR]** ボタンを選択します。 このボタンの場所と視覚的な表現は、Web サイトごとに異なる場合がありますが、次のように表示される場合があります。
+
+    ![ENTER VR ボタンの例](images/75px-enter-vr.png)
+
+1. 特定のドメインで WebXR エクスペリエンスを初めて起動しようとすると、ブラウザーはイマーシブ ビューに入る同意を求め、許可を選択 **します**。
+1. [HoloLens 2 ジェスチャを使ってエクスペリエンス](hololens2-basic-usage.md#the-hand-tracking-frame)を操作します。
+1. エクスペリエンスに [終了] ボタン**** が表示できない場合は、スタート ジェスチャを使[って](hololens2-basic-usage.md#start-gesture)戻ります。
+
+**推奨 WebXR サンプル**
+- 360 ビューアー (次のセクションを参照)
+- [XR 恐竜](https://www.xrdinosaurs.com/)
+- [バリタ エクスプレス](https://constructarca.de/game/barista-express/)
+- [WebXR ペイント](https://threejs.org/examples/webxr_vr_paint.html)
+
+#### 360 ビューアーの使い方
+
+1. YouTube で 360 度のビデオに移動します。
+1. ビデオ フレームで、Mixed Reality ヘッドセット ボタンを選択します。
+
+    ![360 ビューアーをアクティブ化するボタン](images/enter-360-viewer.jpg)
+
+1. 特定のドメインで 360 ビューアーを初めて起動しようとすると、ブラウザーはイマーシブ ビューに入る同意を求めます。 [許可 **] を選択します**。
+1. [エアタップ](hololens2-basic-usage.md#select-using-air-tap) を使って再生コントロールを表示します。 ハンド [レイと](hololens2-basic-usage.md#select-using-air-tap) エア タップを使用して、再生/一時停止、前方/戻るスキップ、キャプションのオン/オフ、エクスペリエンスの停止 (イマーシブ ビューを終了) します。 再生コントロールは、数秒間非アクティブ状態が続くと消えます。
+
+#### WebXR と 360 ビューアーの既知の問題
+- WebXR エクスペリエンスでは、ホログラムは、頭を傾けるか、環境内を移動するときにシフトまたは傾く可能性があります。
+- WebXR エクスペリエンスの複雑さによっては、フレームレートが低下したり、引きつまずく場合があります。
+- WebXR では、連結された手のジョイントはまだ使用できません。
+- WebXR または 360 ビューアー エクスペリエンスを終了すると、Mixed Reality ホーム内のホログラムが再表示されるのに 30 秒以上かかる場合があります。
+- YouTube 以外の Web サイトから 360 のビデオが期待通り動作しない場合があります。
+- 360 のビデオがイマーシブ ビューに入らない (または Mixed Reality ヘッドセット ボタンが表示されない) 場合は、ページを更新してみてください。
+- キャプションは、HoloLens 2 の 360 Viewer では表示されません。
+- 360 ビューアーでビデオを一時停止すると、ビデオのレンダリングが停止します (ただし、再生ボタンを選択すると、再生が正しく再開されます)。
+- 360 ビューアーの [次のビデオ] ボタンは、現在は機能しません。
+- 2D ビデオはイマーシブな "theater" モードで再生できますが、フレームレートは 30 fps 未満です。
+
+#### WebXR と 360 ビューアーに関するフィードバックの提供
+
+新しい Microsoft Edge のフィードバック送信**** 機能を使用して、フィードバックやバグをチームと共有してください。
 
 ### 新しい設定アプリ
 
@@ -146,21 +198,21 @@ HoloLens 2 に Microsoft Edge Insider チャネルをインストールするに
 **新機能と設定**
 - 設定検索: キーワードまたは設定名を使用して設定ホーム ページから設定を検索する
 - システム > サウンド:
-  - 入力オーディオ デバイスと出力オーディオ デバイス: 入力オーディオ デバイスと出力オーディオ デバイスを個別に選択します (たとえば、Bluetooth ヘッドホンでオーディオを聞く場合や、オーディオ入力に USB-C マイクを使用する場合など)。 注: Bluetooth HoloLens 2 ではサポートされていません。
+  - 入力オーディオ デバイスと出力オーディオ デバイス: 入力オーディオ デバイスと出力オーディオ デバイスを個別に選択します (たとえば、Bluetooth ヘッドホン経由でオーディオを聞く、またはオーディオ入力に USB-C マイクを使用します)。 注: Bluetooth HoloLens 2 ではサポートされていません。
   - アプリのボリューム: 各アプリのボリュームを個別に調整する
 - システム>電源&スリープ: 非アクティブな状態が一時間続くとデバイスがスリープ状態にされる時期を選択する
 - システム>バッテリー: バッテリー節約機能モードを手動で有効にするか、バッテリー節約機能モードが自動的に有効になる時点でバッテリーしきい値を設定する
 - USB >: 既定では USB 接続を無効にできます
 - ネットワーク & インターネット:
-  - USB-C イーサネット アダプターは、ネットワーク ネットワーク とインターネット&されます。
+  - USB-C イーサネット アダプターがネットワーク ネットワーク とインターネット&表示される
   - USB-C イーサネット アダプターの設定 (IP アドレスを含む) が使用可能に
   - HoloLens 2 でフライト モードを有効にできる
-- アプリ: ファイルとリンクの種類に使用される既定のアプリをリセットできます。 詳 [しくは、「既定のアプリ ピッカー](#default-app-picker) 」をご覧ください。
+- アプリ: ファイルとリンクの種類に使用する既定のアプリをリセットできます。 詳 [しくは、「既定のアプリ ピッカー](#default-app-picker) 」をご覧ください。
 - 他>ユーザーのアカウント: デバイス所有者は、ユーザーの追加、標準ユーザーのデバイス所有者へのアップグレード、デバイス所有者の標準ユーザーへのダウングレード、ユーザーの削除を行います。
 - 簡単操作: テキスト サイズと視覚効果を変更する
 
 **既知の問題**
-- 以前に配置した設定ウィンドウは削除されます (上記の注を参照)
+- 以前に配置した設定ウィンドウは削除されます (上記の注を参照してください)。
 - [通知] ページにアクセスすると、設定アプリがクラッシュする可能性があります (調査中)
 - 現在イーサネット ページが表示されていない (間もなく修正される予定)
 - 設定アプリを使ってデバイスの名前を変更できなくなりました (IT 管理者はプロビジョニング パッケージまたは MDM を使ってデバイスの名前を変更できます)。
@@ -172,11 +224,11 @@ HoloLens 2 に Microsoft Edge Insider チャネルをインストールするに
 
 ![アプリ ピッカー ウィンドウ](images/default-app-picker.png)
 
-If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. ページの下部までスクロールし、[ファイルの種類**** 用の既定のアプリ] または [リンクの種類用の既定のアプリ] の下にある [クリア] ボタンを選択します。 デスクトップ PC の同様の設定とは異なり、個々のファイルの種類の既定値をリセットできます。
+If you choose "Always" but later want to change which app handles a particular file or link type, you can reset your saved defaults in **Settings > Apps**. ページの下部までスクロールし、[ファイルの種類**** 用の既定のアプリ] や [リンクの種類用の既定のアプリ] の下にある [クリア] ボタンを選択します。 デスクトップ PC の同様の設定とは異なり、個々のファイルの種類の既定値をリセットできます。
 
 ### Office Web アプリ
 
-スタート Officeの [すべてのアプリ] の一覧に、新しい Web アプリが追加されました。 この Web アプリは、スタート画面にピン留めしたりアンインストールしたりすることもできます。 これは Web アプリなので、その機能はアクセスして体験した機能と正確に一致します https://www.office.com 。 Office Web アプリの機能は、HoloLens 2 にアクティブなインターネット接続がある場合にのみ使用できます。
+スタート Officeの [すべてのアプリ] の一覧に、新しい Web アプリが追加されました。 この Web アプリは、スタート画面にピン留めしたりアンインストールしたりすることもできます。 これは Web アプリなので、その機能はアクセスして実際に体験した機能と正確に一致します https://www.office.com 。 Office Web アプリの機能は、HoloLens 2 にアクティブなインターネット接続がある場合にのみ使用できます。
 
 ### スワイプして入力する
 
@@ -189,7 +241,7 @@ If you choose "Always" but later want to change which app handles a particular f
 > [!IMPORTANT]
 > USB マイクを **接続すると、自動的に入力デバイスとして設定されません**。 一連の USB-C ヘッドホンを接続すると、ユーザーはヘッドホンのオーディオが自動的にヘッドホンにリダイレクトされるのを確認しますが、HoloLens OS では、他の入力デバイスよりも内部マイク アレイの優先順位が優先されます。 **USB-C マイクを使用するには、次の手順に従います。**
 
-ユーザーは、[サウンドの設定] パネルを使用して、USB-C に接続された外部マイク **を** 選択できます。 USB-C マイクは、通話、録音などに使用できます。
+ユーザーは、[サウンドの設定] パネルを使用して、USB-C 接続の外部マイク **を** 選択できます。 USB-C マイクは、通話、録音などに使用できます。
 
 設定アプリ**を開き**、[システム サウンド]**を**  ->  **選択します**。
 
@@ -258,7 +310,7 @@ Windows Insider リリースから、キオスク エクスペリエンスは AA
 > - "再起動デバイス" 音声コマンドは正常に動作します。 
 > - [設定] /[Windows Insider Program] で再起動ボタンを選択することもできます。
 >
-> 発生した可能性があるバック エンドにバグが発生しました。これにより、追跡が可能です。
+> 発生した可能性があるバック エンドにバグが発生しました。これにより、追跡が戻されます。
 
 HoloLens 2 デバイスで、**[設定]** > **[更新とセキュリティ]** > **[Windows Insider Program]** の順に移動し、**[開始する]** を選択します。 Windows Insider として登録するために使用したアカウントをリンクします。
 
@@ -268,12 +320,12 @@ Windows Insider はチャネルに移行しています。 ファスト**リン�
 
 詳しくは [、Windows ブログの「Windows Insider チャネル](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) の紹介」をご覧ください。
 
-次に **、Windows のアクティブな**開発を選択し、開発チャネルビルドまたは**** ベータ チャネル**** ビルドを受け取るかどうかを選択し、プログラムの条件を確認します。
+次に **、Windows のアクティブな**開発を選択し、開発者チャネルビルドまたは**** ベータ チャネル**** ビルドを受け取るかどうかを選択し、プログラムの条件を確認します。
 
 [ **今すぐ>確認] を選択して** 終了します。 デバイスが再起動したら、[設定] > [更新とセキュリティ] & > **更新** プログラムを確認して最新のビルドを取得します。
 
-### 更新エラー 0x80070490 の回避
-Dev または Beta チャネルで更新中に更新エラー 0x80070490 が発生した場合は、次の短期の回避方法を試してください。 Insider チャネルを移動し、更新プログラムを受け取り、Insider チャネルを戻します。
+### 更新エラー 0x80070490回避
+Dev または Beta チャネルで更新0x80070490更新エラーが発生した場合は、次の短期的な問題を回避してください。 Insider チャネルを移動し、更新プログラムを受け取り、Insider チャネルを戻します。
 
 #### ステージ 1 - リリース プレビュー
 1.  設定, 更新プログラム&セキュリティ, Windows Insider Program, select **Release Preview Channel**.
