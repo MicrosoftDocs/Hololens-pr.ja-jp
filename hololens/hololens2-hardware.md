@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a339470e0c8be2b1cdf492bd14bad1ab724fdc3e
-ms.sourcegitcommit: c72a3c60d4105c77407e6d04c95fadd08f102775
+ms.openlocfilehash: 8e0b5732c6dd2eba0a318a2b72694aacd404c68f
+ms.sourcegitcommit: a5b6e9fdc0fa61a93cb23a89348f5b49316e2748
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "11304970"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "11306925"
 ---
 # HoloLens 2 のハードウェア
 
@@ -132,22 +132,23 @@ Microsoft HoloLens 2 は、自立型ホログラフィック コンピュータ�
 
 ## プレインストール済みソフトウェア
 
-- Windows Holographic オペレーティング システム
-- 3D ビューアー
-- カレンダー
-- Cortana
-- Dynamics 365 Guides
-- Dynamics 365 Remote Assist
-- フィードバック Hub
-- エクスプローラー
-- メール
-- Microsoft Edge
-- Microsoft Store
-- 映画 & テレビ
-- OneDrive
-- フォト
-- 設定
-- ヒント
+|   |   |
+| - | - |
+| Windows Holographic オペレーティング システム | Windows Holographic により、Windows 10 ユーザーは HoloLens 2 を使用して、アプリやゲームの一部を Mixed Reality 環境で使用できます。
+| 3D ビューアー | [3D ビューアー](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab)では、3D モデルやアニメーションをリアルタイムで簡単に見ることができます。|
+| Cortana | パーソナル生産性アシスタントの [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab) は、重要なことを常に把握し、必要なものを見つける時間を短縮します。  |
+| Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) は、従業員が HoloLens デバイスでより早く新しいスキルを習得できるよう支援します。 |
+| Dynamics 365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) を使用すると、技術者は Microsoft Teams または Dynamics 365 Remote Assist を使用してリモートの共同作業者と協力し、問題を解決できます。  |
+| フィードバック Hub | [フィードバック Hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) では、提案や問題を共有することで、Windows とアプリに関するフィードバックを提供できます。  |
+| エクスプローラー | エクスプローラーには、ファイル システムにアクセスするためのグラフィカル ユーザー インターフェイスが用意されています。 |
+| メールとカレンダー | [メールとカレンダー](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) アプリを使用すると、メールの最新情​​報を入手し、スケジュールを管理し、連絡先に連絡を取り合うことができます。 |  
+| Microsoft Edge | Microsoft Edge は、閲覧時のプライバシー、生産性、価値の向上を実現する国際的レベルのパフォーマンスを提供します。 |
+| Microsoft Store | [Microsoft ストア](https://www.microsoft.com)は、HoloLens で動作するアプリやゲーム用のソースです。|
+| 映画 & テレビ | [映画 & テレビ](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab)は、最新のエンターテインメントを 1 つのシンプルで高速かつエレガントなアプリでお届けします。 |
+| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) を使用すると、すべてのデバイスからどこからでもファイルにアクセスし、編集できます。  |
+| フォト| [フォト](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab)では、写真やビデオの表示と編集、ムービーの作成、アルバムの作成が可能です。  |
+| 設定 | 設定アプリでは、Windows Holographic の動作を詳細にカスタマイズできます。  |
+| ヒント | [ヒント](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab)を使用すると、Windows Holographic で実行できる驚きの操作やあまり知られていない操作をマスターできます。 |
 
 ## デバイスの認定規格
 
@@ -174,9 +175,9 @@ Microsoft HoloLens 2 は、自立型ホログラフィック コンピュータ�
 |     出荷時の外装の深さ     |     172.01mm          |     6.772 インチ        |
 |     出荷時の外装の重量    |     3.284kg           |     7.240 ポンド           |
 
-注意:
-- ユニット: 黒い小売スタイル ボックスの HoloLens 2 が販売されています。
-- 出荷時の外装: ユニットを包んで保護する出荷用のパッケージ。
+> [!NOTE]
+> - ユニット: 黒い小売スタイル ボックスの HoloLens 2 が販売されています。
+> - 出荷時の外装: ユニットを包んで保護する出荷用のパッケージ。
 
 ## シリアル番号を見つける
 
@@ -186,18 +187,18 @@ HoloLens 2 デバイスのシリアル番号はバイザーの下に印刷され
 1. ヒンジの近くにあるシリアル番号を見つけることができます。 
 
 
-<img src="images/serial-number-diagram-hl2.png" width="625" height="903" />
+<img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
 シリアル番号は、接続されている PC でも確認できます。
 
 1. デバイスを接続します
 1. ファイル エクスプローラーで **[PC]** に移動します
 1. HoloLens デバイスを右クリックして、**[プロパティ]** を選択します
-1. これにより、デバイスのシリアル番号が表示されます。 次のスクリーンショットを参照してください。
+1. これにより、以下のスクリーンショットに示すように、デバイスのシリアル番号が表示されます。
 
-<img src="images/ResetRecovery2.png" width="400" height="600" />
+<img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
-## 次のステップ
+## 次の手順
 
 > [!div class="nextstepaction"]
 > [HoloLens 2 のセットアップと起動](hololens2-setup.md)
