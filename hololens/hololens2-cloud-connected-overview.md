@@ -14,22 +14,24 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 835b4be101b665d2b86c2170a65c04697686e403
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 69b31657a7efaebd5b25b742023dc8767f9c5038
+ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283078"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312638"
 ---
-# 展開ガイド - リモート アシスト付きのクラウド接続 HoloLens 2 – 概要
+# 展開ガイド - HoloLens 2 (Remote Assist 付き) のクラウド接続 – 概要
 
-このガイドは、Dynamics 365 リモート アシストを使用してそれらのデバイスクラウドを組織に接続する準備を行うという全体的な目標を持ち、IT 担当者が Microsoft HoloLens 2 デバイスを計画して組織に展開する場合に役立ちます。 これは、さまざまな HoloLens 2 の使用事例にわたって組織に概念実証を展開するモデルとして機能します。
+このガイドは、Dynamics 365 リモート アシストを使用してこれらのデバイスを組織に接続する全体的な目標を達成し、IT 担当者が Microsoft HoloLens 2 デバイスを計画して組織に展開する場合に役立ちます。 これは、さまざまな HoloLens 2 の使用事例にわたって組織に概念実証を展開するモデルとして機能します。
 
 このガイドでは、デバイスをデバイス管理に登録し、必要に応じてライセンスを適用し、エンド ユーザーがデバイスのセットアップ時にリモート アシストをすぐに使用できるのを検証する方法について説明します。 これを行うには、HoloLens 2 を使用して大規模な展開を実現するために、セットアップと実行に必要な重要なインフラストラクチャについて説明します。
 
+![クラウドに接続されたバナー](./images/cloud-connected-hololens-large.png)
+
 ## このガイドのページ
 
-このガイドには、HoloLens デバイスで組織内にリモート アシストをセットアップする具体的な目標があります。 その目標を達成するために必要な情報を扱います。 この目標に集中するために、この展開を最適化したり、構成に必要な項目を減らしたりするために、特定の準備と構成を事前に選択します。 これらの選択肢が通知され、ビジネス ニーズに基づいて展開をカスタマイズできます。
+このガイドには、組織内で HoloLens デバイスにリモート アシストをセットアップする具体的な目標があります。 その目標を達成するために必要な情報を扱います。 この目標に集中するために、この展開を最適化したり、構成に必要な項目を減らしたりするために、特定の準備と構成を事前に選択します。 これらの選択肢が通知され、ビジネス ニーズに基づいて展開をカスタマイズできます。
 
 これは、シナリオ [A:](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)クラウド接続デバイスへの展開に似た設定です。これは、概念実証の多くの展開に最適なオプションです。これには、次のものが含まれます。
 
@@ -45,7 +47,7 @@ ms.locfileid: "11283078"
 
 ## リモート アシストについて
 
-リモート アシストを使用すると、共同作業による保守と修復、リモート検査、知識の共有とトレーニングが可能になります。 リモート アシストを使用して技術者と異なる役割や場所のユーザーを接続すると、Microsoft Teams のリモート共同作業者と接続できます。 ビデオ、スクリーンショット、注釈を組み合わせて、問題が同じ場所になくても&#39;をリアルタイムで解決できます。 リモート共同作業者は、HoloLens でヘッドアップとハンズフリーの作業を行っている間に、技術者&#39;の物理空間に参照イメージ、概略図、その他の有用な情報を挿入できます。
+リモート アシストを使用すると、共同作業による保守と修復、リモート検査、知識の共有とトレーニングが可能になります。 リモート アシストを使用して技術者と異なる役割や場所のユーザーを接続すると、Microsoft Teams のリモート共同作業者と接続できます。 ビデオ、スクリーンショット、注釈を組み合わせて、問題が同じ場所になくても&#39;をリアルタイムで解決できます。 リモート共同作業者は、HoloLens でヘッドアップとハンズフリーの作業を行っている間に、技術者&#39;の物理空間に参照イメージ、図版、その他の有用な情報を挿入できます。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -55,7 +57,7 @@ ms.locfileid: "11283078"
 
 > [!div class="checklist"]
 > - [HoloLens 2 デバイスのインフラストラクチャの基本について学習します。](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [Azure アプリの詳細AD、必要な場合はセットアップ&#39;確認してください。](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [Azure ADについてAD、必要ない場合はセットアップ&#39;確認してください。](hololens2-cloud-connected-prepare.md#azure-active-directory)
 > - [ID 管理と、Azure アカウントを最適にセットアップする方法ADします。](hololens2-cloud-connected-prepare.md#identity-management)
 > - [MDM について詳しく知り、まだ準備ができていない場合は Intune&#39;セットアップしてください。](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [リモート アシストのネットワーク要件について説明します。](hololens2-cloud-connected-prepare.md#network)
@@ -77,11 +79,11 @@ ms.locfileid: "11283078"
 次の保守を行います。
 
 > [!div class="checklist"]
-> - [Microsoft Store アプリを使ってリモート アシストを更新する方法。](hololens2-cloud-connected-maintain.md#updates)
+> - [Microsoft Store アプリを使ってリモート アシストを更新する方法について説明します。](hololens2-cloud-connected-maintain.md#updates)
 > - [サポート計画の作成。](hololens2-cloud-connected-maintain.md#support-plan)
 > - [開発計画。](hololens2-cloud-connected-maintain.md#development-plan)
 
-## 次のステップ
+## 次の手順
 
 > [!div class="nextstepaction"]
 > [クラウド接続展開 - 準備](hololens2-cloud-connected-prepare.md)

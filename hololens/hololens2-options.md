@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d4275d8fe71e469eee3f8c63576794e6ea5adf3c
-ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
+ms.openlocfilehash: 1348e6f33f5ea64c6fd3572b09c18fdcb6ae63e6
+ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "11306676"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312652"
 ---
 # HoloLens 2 の概要
 
@@ -106,7 +106,7 @@ HoloLens 2 Industrial Edition は、新しい素材と認定によって強化�
 
 HoloLens 2 Industrial Edition には、アップグレードされたデバイスに加えて、2 年間の保証と迅速な交換プログラムが含まれます。
 
-「[HoloLens 2 Industrial Edition に関する FAQ](https://github.com/MicrosoftDocs/Hololens-pr/blob/evmill-industrial-edition/hololens/hololens2-industrial-edition-faq.md)」をご確認ください。
+「[HoloLens 2 Industrial Edition に関する FAQ](hololens2-industrial-edition-faq.md)」をご確認ください。
 
 #### HoloLens 2 のクリーニングと取り扱い
 HoloLens 2 Industrial Edition は、"70%" のイソプロピル アルコールと水の溶液で、バイザー、ブロー パッド、ヘッド ストラップなどのデバイスの硬質表面を洗浄できます。 詳細については、「[HoloLens 2 のクリーニングに関する FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance)」をご覧ください。 
