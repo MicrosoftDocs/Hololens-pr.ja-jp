@@ -1,6 +1,6 @@
 ---
 title: 'HoloLens 2 クリーニング: よく寄せられる質問'
-description: HoloLens 2 デバイスのクリーニングとメンテナンスに関してよく尋ねらたすべての質問に対する最新の回答を取得します。
+description: HoloLens 2 デバイスのクリーニングとメンテナンスに関してよく尋ねらえたすべての質問に対する最新の回答を取得します。
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 4/14/2020
@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ea6e4f32e804ee6c2f2f155da1f4290e1116bb74
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: c9016be7bba8f795e43339c2c93d3fe3b44d2c8c
+ms.sourcegitcommit: 1d44907cb7454ff96f1a9badb90db4cdc958e784
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283088"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "11313796"
 ---
 # HoloLens 2 クリーニング: よく寄せられる質問
 
@@ -28,6 +28,10 @@ ms.locfileid: "11283088"
 > Microsoft は、COVID-19 などの反撃に特定の指定された生産物の有効性を判断することはできません。 感染の可能性から安全を確保する方法については、地域の公的保健機関のガイダンスを参照してください。  
 
 ## HoloLens 2 デバイスの一般的なクリーニング手順は何ですか?
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
+## HoloLens 2 デバイスの一般的なクリーニング手順は何ですか?
+<!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
 
 **デバイスをクリーンアップするには**
 
@@ -56,7 +60,7 @@ ms.locfileid: "11283088"
 はい(ワイプに表面が含まれている場合)。 HoloLens サーフェスを優しくワイプするために、ワイプを取り外さ [ないワイプを使用できます](#what-are-the-general-cleaning-instructions-for-hololens-2-devices)。  
 
 > [!CAUTION]  
-> HoloLens サーフェスをクリーニングするために、取り除きワイプを使用しないでください。 他に何も使用できない重大な状況では、ワイプを使用できます。 ただし、HoloLens バイザーまたは他のサーフェスが破損する可能性があります。
+> HoloLens サーフェスをクリーンアップするために、取り除きワイプを使用しないでください。 他に何も使用できない重大な状況では、ワイプを使用できます。 ただし、HoloLens バイザーまたは他のサーフェスが破損する可能性があります。
 
 ## デバイスのクリーンに過ごして使用できますか?
 
@@ -70,7 +74,7 @@ ms.locfileid: "11283088"
 
 ## ロー パッドを取り出す方法
 
-ウォーターパッドをクリーンアップするには、水と水でつながれたせっしろを使用して、そのパッドをワイプします。 もう一度使用する前に、ロー パッドを完全にドライにしてください。
+ウォーター パッドをクリーンアップするには、水と軽いせっけいを使用して、水でつながれた米を使用して、そのパッドをワイプします。 もう一度使用する前に、ロー パッドを完全にドライにしてください。
 
 ## サニテット (UV) ライトを使用してデバイスをサニタイズできますか。
 
@@ -84,6 +88,6 @@ ms.locfileid: "11283088"
 > 1. 欠陥はバイザーの基本素材とセンサー ウィンドウに表示されます。
 > 1. 表示パフォーマンスが低下します。
 
-## 背面パッドは取り外し可能ですか?
+## 背面パッドは交換できますか?
 
 いいえ、そうではありません。
