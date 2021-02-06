@@ -15,22 +15,22 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c9016be7bba8f795e43339c2c93d3fe3b44d2c8c
-ms.sourcegitcommit: 1d44907cb7454ff96f1a9badb90db4cdc958e784
+ms.openlocfilehash: bc46ffd4c980ae14f010a3b45533f8081845c946
+ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/05/2021
-ms.locfileid: "11313796"
+ms.locfileid: "11313998"
 ---
 # HoloLens 2 クリーニング: よく寄せられる質問
 
 > [!IMPORTANT]  
-> Microsoft は、COVID-19 などの反撃に特定の指定された生産物の有効性を判断することはできません。 感染の可能性から安全を確保する方法については、地域の公的保健機関のガイダンスを参照してください。  
+> Microsoft は、COVID-19 などの環境に対するいかなる破壊的な製品の有効性も判断できません。 感染の可能性から安全を確保する方法については、地域の公的保健機関のガイダンスを参照してください。  
 
 ## HoloLens 2 デバイスの一般的なクリーニング手順は何ですか?
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
-## HoloLens 2 デバイスの一般的なクリーニング手順は何ですか?
+
 <!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
 
 **デバイスをクリーンアップするには**
@@ -44,14 +44,14 @@ ms.locfileid: "11313796"
 
 **ロー パッドをクリーンアップする方法**
 
-1. 水と日用の水を使用し、水をふき取る場合は水を使用し、水をふき取る場合は、水でつながれた水を使用します。
+1. 水と日用の水を使用し、水をふき取り、水をふき取る水をふき取ります。
 1. ブロー パッドを完全にドライにしてください。
 
 ## HoloLens バイザーのクリーニングに、レンズ クリーンを使用できますか?
 
 いいえ、そうではありません。 レンズ のクリーニングは、バイザーの表面に取り付けできます。 バイザーをクリーンアップするには、次の手順を実行します。  
 
-1. ドライななじみ付きマイクロファイバーを使用して、バイザーを軽くワイプして、くずれを取り除きます。
+1. ドライなしなびきを使用して、バイザーを軽くワイプして、さりごを取り除きます。
 1. 医療用の 「70%」の等量体を使用して軽く光を当て、バイザーを軽くワイプします。
 1. バイザーを完全にドライにしてください。
 
@@ -74,7 +74,7 @@ ms.locfileid: "11313796"
 
 ## ロー パッドを取り出す方法
 
-ウォーター パッドをクリーンアップするには、水と軽いせっけいを使用して、水でつながれた米を使用して、そのパッドをワイプします。 もう一度使用する前に、ロー パッドを完全にドライにしてください。
+ウォーターパッドをクリーンアップするには、水と水でつながれたせっしろを使用して、そのパッドをワイプします。 もう一度使用する前に、ロー パッドを完全にドライにしてください。
 
 ## サニテット (UV) ライトを使用してデバイスをサニタイズできますか。
 
@@ -88,6 +88,6 @@ ms.locfileid: "11313796"
 > 1. 欠陥はバイザーの基本素材とセンサー ウィンドウに表示されます。
 > 1. 表示パフォーマンスが低下します。
 
-## 背面パッドは交換できますか?
+## 背面パッドは取り外し可能ですか?
 
 いいえ、そうではありません。
