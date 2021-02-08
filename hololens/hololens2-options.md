@@ -4,7 +4,7 @@ description: HoloLens 2 デバイスの各エディションの共通点と相�
 keywords: HoloLens 2 の購入オプション、HoloLens オプション、Developer Edition
 author: evmill
 ms.author: v-evmill
-ms.reviewer: sekerawa
+ms.reviewer: evmill
 ms.date: 1/01/2021
 ms.prod: hololens
 ms.topic: article
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9de0bbe4cc8d3056a1f34647c0779ebdff1476aa
-ms.sourcegitcommit: f122e2c0c7c0366d88fa3efa3590e9e237eaf925
+ms.openlocfilehash: df3fa8ba3fbf65fa0b59f2ba9a6ace2ea489308b
+ms.sourcegitcommit: c58747f312cf1fea2de146501ea2473e93bd8300
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313554"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314280"
 ---
 # HoloLens 2 の概要
 
@@ -106,6 +106,8 @@ HoloLens 2 Industrial Edition は、新しい素材と認定によって強化�
 
 HoloLens 2 Industrial Edition には、アップグレードされたデバイスに加えて、2 年間の保証と迅速な交換プログラムが含まれます。
 
+![クリーン ルームで使用される Industrial Edition](./images/ie-small-pic.png)
+
 「[HoloLens 2 Industrial Edition に関する FAQ](hololens2-industrial-edition-faq.md)」をご確認ください。
 
 #### HoloLens 2 のクリーニングと取り扱い
@@ -115,6 +117,8 @@ HoloLens 2 Industrial Edition は、"70%" のイソプロピル アルコール�
 
 #### Trimble XR10 について
 HoloLens 2 搭載の Trimble XR10 は、Microsoft HoloLens Customization プログラムで初めて作成されたデバイスです。最新の空間コンピューティング テクノロジを認定済みのソリューションに統合して、労働者の安全のためにヘルメットと一緒に使用します。
+
+![Trimble SKU](./images/trimble-ed.png)
 
 詳細については、「[Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2)」をご覧ください。
 
@@ -132,6 +136,8 @@ HoloLens 2 Development Edition には、HoloLens 2、500 ドルの Azure クレ�
 |  [Unity](https://unity.com/) | リアルタイムの 3D 開発プラットフォーム。   |
 |  [Unity 用 Pixyz プラグイン](https://www.pixyz-software.com/plugin/) | エンジニアリング &amp; CAD の世界を開発の世界とつなぐ架け橋。   |
 | [Azure サービスで使える 500 ドルの Azure クレジット](https://azure.microsoft.com/resources/) | HoloLens 2 Development Edition に含まれる Azure クレジットは、Azure での Mixed Reality アプリケーションの構築とテストをすぐに開始するためのものです。 |
+
+![HoloLens 2 Development Edition](./images/hololens-2-dev-ed.png)
 
 #### クレジットを使用する
 
