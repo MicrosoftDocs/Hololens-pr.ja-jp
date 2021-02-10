@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df3fa8ba3fbf65fa0b59f2ba9a6ace2ea489308b
-ms.sourcegitcommit: c58747f312cf1fea2de146501ea2473e93bd8300
+ms.openlocfilehash: 2c1cc7fb2ec362fde96df5f0cea23aab132b62ef
+ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "11314280"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11324770"
 ---
 # HoloLens 2 の概要
 
@@ -73,7 +73,8 @@ HoloLens は、*ホログラムを利用した* Mixed Reality デバイスであ
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### HoloLens 2 で次に行うこと
-1. [デバイスを使用する準備をして](https://docs.microsoft.com/hololens/hololens2-setup)、次に[セットアップします](https://docs.microsoft.com/hololens/hololens2-start)。
+1. このビデオの [HoloLens 2 の使用と注意](https://docs.microsoft.com/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care)を見ます。
+1. [デバイスを使用する準備](https://docs.microsoft.com/hololens/hololens2-setup)をしてから[設定](https://docs.microsoft.com/hololens/hololens2-start)します
 1. [HoloLens 2 の操作環境について学習します](https://docs.microsoft.com/hololens/holographic-home)。
 1. 慣れてきたら、[Mixed Reality の写真やビデオを撮影します](https://docs.microsoft.com/hololens/holographic-photos-and-videos)。
 1. すべての利用可能な [HoloLens 2 用アプリを Microsoft アプリ ストアで確認します](https://docs.microsoft.com/hololens/holographic-store-apps)。
@@ -111,7 +112,7 @@ HoloLens 2 Industrial Edition には、アップグレードされたデバイ�
 「[HoloLens 2 Industrial Edition に関する FAQ](hololens2-industrial-edition-faq.md)」をご確認ください。
 
 #### HoloLens 2 のクリーニングと取り扱い
-HoloLens 2 Industrial Edition は、"70%" のイソプロピル アルコールと水の溶液で、バイザー、ブロー パッド、ヘッド ストラップなどのデバイスの硬質表面を洗浄できます。 詳細については、「[HoloLens 2 のクリーニングに関する FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance)」をご覧ください。 
+HoloLens 2 Industrial Edition は、"70%" のイソプロピル アルコールと水の溶液で、バイザー、ブロー パッド、ヘッド ストラップなどのデバイスの硬質表面を洗浄できます。 詳細については、「[HoloLens 2 のクリーニングに関する FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance)」をご覧ください。
 
 ### **HoloLens 2 搭載の Trimble XR10**
 

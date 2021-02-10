@@ -64,9 +64,10 @@
 ### [暗号化とデータ保護](security-encryption-data-protection.md)
 ### [ネットワーク セキュリティ](security-network-security.md)
 ### [セキュリティ エンジニアリング ](security-engineering.md)
-### HoloLens 第 1 世代のセキュリティ
+### HoloLens 第 1 世代のセキュリティ 
 #### [HoloLens (第 1 世代) のセキュリティに関するよく寄せられる質問](hololens1-faq-security.md)
 #### [HoloLens (第1世代) ドライブ BitLocker 暗号化](hololens1-encryption.md)
+### [HoloLens 2 のプライバシーに関する声明](hololens2-compliance.md)
 ## [ライセンス要件](hololens-licenses-requirements.md)
 ## 環境
 ### [HoloLens 環境に関する考慮事項](hololens-environment-considerations.md)

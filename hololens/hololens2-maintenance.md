@@ -15,19 +15,19 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 65144a8c209b80ac32361933f94dd51447e095a6
-ms.sourcegitcommit: 17ad2c127ac9586e7644e6898585cbe4efa34bc1
+ms.openlocfilehash: 0d44a985d7f8a0ca7707e6471700320b832b0826
+ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/09/2021
-ms.locfileid: "11319281"
+ms.locfileid: "11324786"
 ---
 # HoloLens 2 クリーニング: よく寄せられる質問
 
 > [!IMPORTANT]  
 > Microsoft は、COVID-19 などの環境に対するいかなる破壊的な製品の有効性も判断できません。 感染の可能性から安全を確保する方法については、地域の公的保健機関のガイダンスを参照してください。  
 
-## HoloLens 2 デバイスの一般的なクリーニング手順は何ですか?
+## HoloLens 2 の使用と注意
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
 
@@ -36,8 +36,12 @@ ms.locfileid: "11319281"
 **デバイスをクリーンアップするには**
 
 1. ドライななげないマイクロファイバーを使用して、デバイスの表面を軽くワイプすることで、すべての表面を取り除きます。
-1. 医療用の 「70%」の等量体を使用して軽く光を当て、その後、光り気の付いた医学を使ってデバイスの表面を軽くワイプします。
-1. デバイスを完全にドライにします。
+
+   ![ブロー パッドを押しながらクリーン](images/hl2-cleaning.png)
+
+2. 医療用の 「70%」の等量体を使用して軽く光を当て、その後、光り気の付いた医学を使ってデバイスの表面を軽くワイプします。
+
+3. デバイスを完全にドライにします。
 
 **ロー パッドをクリーンアップする方法**
 
@@ -54,7 +58,7 @@ ms.locfileid: "11319281"
 
 ## ワイプを使用してデバイスをクリーンアップできますか。
 
-はい(ワイプに表面が含まれている場合)。 HoloLens サーフェスを優しくワイプするために、ワイプを取り外さ [ないワイプを使用できます](#what-are-the-general-cleaning-instructions-for-hololens-2-devices)。  
+はい(ワイプに表面が含まれている場合)。 HoloLens サーフェスを優しくワイプするために、ワイプを取り外さ [ないワイプを使用できます](#hololens-2-use-and-care)。  
 
 > [!CAUTION]  
 > HoloLens サーフェスをクリーンアップするために、取り除きワイプを使用しないでください。 他に何も使用できない重大な状況では、ワイプを使用できます。 ただし、HoloLens バイザーまたは他のサーフェスが破損する可能性があります。
