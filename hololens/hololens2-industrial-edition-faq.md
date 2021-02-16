@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ece60949c998f0388bbd6bbcb235ae9f02340247
-ms.sourcegitcommit: 9a5e101fad8627042b552872d5de7320c09552ac
+ms.openlocfilehash: 11ce1af46189605cbac898f69647bdca28c573dc
+ms.sourcegitcommit: 0d16c7dc4d18d550023da9f6b3cc942eb915a2c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "11311751"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "11328101"
 ---
 # HoloLens 2 - Industrial Edition に関する FAQ
 
@@ -44,6 +44,10 @@ HoloLens 2 Industrial Edition は、厳格な要件を持つ規制された環�
 HoloLens 2 Industrial Edition は、可燃性ガス、蒸気または液体が存在する可能性のある UL Class I、Division 2-Groups A、B、C、および D HAZLOC 環境での使用が認定されています。
 
 詳細については、[UL 認証](https://www.ul.com/services/ul-and-c-ul-hazardous-areas-certification-north-america?csrf-token=CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz&amp;Search=UL+Class+I%2C+Dev+2+&amp;search-submit=Search)を参照してください。
+
+### HoloLens 2 Industrial Edition は ATEX 認定を取得していますか?
+
+いいえ、 HoloLens 2 Industrial Edition は、ATEX 認定を取得していません。 HoloLens 2 Industrial Edition は、US/CAN Class 1、Division 2-Groups A、B、C、D 認定を取得しています。
 
 ### このデバイスは半導体および医薬品環境で使用できますか?
 
