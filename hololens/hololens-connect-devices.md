@@ -13,19 +13,19 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1b4f95f43fc60dffa2ca75322466857a0a20a0a7
-ms.sourcegitcommit: 145bbabc390f626ba6633fa49423c38656cd2224
+ms.openlocfilehash: 728bf8547315be96f879ff94a1290c1e2b3e7bf8
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "11302271"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385488"
 ---
-# Bluetooth および USB-C デバイスに接続する
+# <a name="connect-to-bluetooth-and-usb-c-devices"></a>Bluetooth および USB-C デバイスに接続する
 
 > [!NOTE]
 > 外付けマイクは使用できません。 HoloLens 2 は、内蔵の[マイクロフォン アレイ](hololens2-hardware.md#audio-and-speech)を使用します。
 
-## Bluetooth デバイスをペアリングする
+## <a name="pair-bluetooth-devices"></a>Bluetooth デバイスをペアリングする
 
 HoloLens 2 は、次のクラスの Bluetooth デバイスをサポートします。
 
@@ -37,12 +37,12 @@ HoloLens （第１世代） は、次のクラスの Bluetooth デバイスを�
 
 - マウス
 - キーボード
-- HoloLens (第1世代) クリッカー
+- [HoloLens (第1世代) クリッカー](https://docs.microsoft.com/hololens/hololens1-clicker)
 
 > [!NOTE]
 > スピーカー、ヘッドセット、スマートフォン、ゲーム パッドなど、他の種類の Bluetooth デバイスは、HoloLens の [設定] で使用できるように表示されます。 ただし、これらのデバイスは HoloLens (第１世代) にはサポートされていません。 詳細については、[HoloLens の設定には使用可能なデバイスが表示されるが、デバイスが機能しない](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work) を参照してください。
 
-### Bluetooth キーボードまたはマウスをペアリングする
+### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Bluetooth キーボードまたはマウスをペアリングする
 
 1. キーボードまたはマウスの電源をオンにして、検出可能にします。 デバイスを検出可能にする方法については、デバイス (またはそのドキュメント) に記載されている情報を検索するか、製造元の web サイトにアクセスしてください。
 
@@ -52,21 +52,7 @@ HoloLens （第１世代） は、次のクラスの Bluetooth デバイスを�
 
 1. デバイス名が表示されたら、**[ペアリング]** を選び、指示に従います。
 
-### HoloLens （第１世代） : クリッカーをペアリング
-
-1. ブルーム ジェスチャを使用して **[スタート]** に移動し、**[設定]** を選択します。
-
-1. **[デバイス]** を選択し、Bluetooth がオンになっていることを確認します。
-
-1. ペンのヒントを使用して、クリッカー ステータスが白色に点滅するまでクリッカーのペアリング ボタンを押し続けます。 ライトが点滅するまで、ボタンを押したままにします。  
-
-   ペアリング ボタンはクリッカーの下側、フィンガー ループの隣にあります。
-
-   ![ペアリング ボタンは、フィンガー ループの隣にあります。](images/use-hololens-clicker-1.png)
-
-1. ペアリング画面で、**[クリッカー]** > **[ペアリング]** を選択します。
-
-## Bluetooth を無効にする
+## <a name="disable-bluetooth"></a>Bluetooth を無効にする
 
 この手順を実行すると、Bluetooth 無線の RF コンポーネントの電源がオフになり、Microsoft HoloLens の Bluetooth 機能がすべて無効になります。
 
@@ -74,7 +60,7 @@ HoloLens （第１世代） は、次のクラスの Bluetooth デバイスを�
 
 1. **Bluetooth** のスライダー スイッチを **[オフ]** の位置に移動します。
 
-## HoloLens 2: USB-C デバイスに接続する
+## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2: USB-C デバイスに接続する
 
 HoloLens 2 は、次のクラスの USB-C デバイスをサポートします。
 
@@ -87,11 +73,9 @@ HoloLens 2 は、次のクラスの USB-C デバイスをサポートします�
 - 複合 PD ハブ （USB-A + PD 充電器）
 
 > [!NOTE]
-> USB-C 接続を使用しているモバイル デバイスの中には、イーサネット アダプターとして HoloLens に直接表示されるため、Windows ホログラフィックのバージョン2004からテザリング構成で使用することができます。 別のドライバーが必要な USB LTE モデムと、構成用にインストールされるアプリケーションはサポートされません。
+> お客様からのフィードバックに応えて、USB-C を使用して HoloLens に直接テザリングされたセルラー接続の限定的なサポートを有効にしました。 詳細については、「[セルラーおよび 5G への接続](hololens-cellular.md)」を参照してください。
 
-お客様からのフィードバックに応えて、USB-C を使用して HoloLens に直接テザリングされた Cellular 接続の限定的なサポートを有効にしました。  テザリング接続 は、汎用 Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) ドライバーの実装をサポートし、追加のドライバーやアプリケーションのインストールを必要としないデバイスでのみ機能します。  このようなデバイスが接続されると、HoloLens 2 のネットワーク設定 UI に新しいイーサネット接続として自動的に表示されます。 汎用 Microsoft RNDIS ドライバーをサポートしているかどうかの詳細については、デバイスの製造元にお問い合わせください。
-
-### USB-C ハブ
+### <a name="usb-c-hubs"></a>USB-C ハブ
 
 一部のユーザーは、複数のデバイスを同時に接続する必要がある場合があります。 Insider の機能をプレビューし、別の接続されたデバイスと共に [USB-C マイクを使用する](hololens-insider.md#usb-c-external-microphone-support)場合は、USB-C ハブがユーザーのニーズに合う場合があります。 Microsoft は、これらのデバイスをテストしていないので、特定のブランドをお勧めできません。
 
@@ -100,7 +84,7 @@ HoloLens 2 は、次のクラスの USB-C デバイスをサポートします�
 - 接続されているデバイスでは、ドライバーをインストールする必要はありません。
 - 接続されているすべてのデバイスの総消費電力は、4.5 ワット未満である必要があります。
 
-## Miracast に接続する
+## <a name="connect-to-miracast"></a>Miracast に接続する
 
 Miracast を使うには、次の手順を実行します。
 

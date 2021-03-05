@@ -12,20 +12,20 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9824de1d81fd6ba9ccafc8627d660aebefeaed15
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 31c2c9ed7b2a35c759a0e1d86b89a2f0ab75d965
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283878"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385609"
 ---
-# HoloLens 2 のセットアップ
+# <a name="set-up-your-hololens-2"></a>HoloLens 2 のセットアップ
 
 初めて HoloLens の電源を入れたときは、デバイスのセットアップ、ユーザー アカウントによるサインイン、ユーザーの目に合わせた HoloLens の調整の手順を案内するガイドが表示されます。  このセクションでは、HoloLens 2 の初期セットアップ エクスペリエンスについて説明します。
 
 次のセクションでは、HoloLens とホログラムの操作方法を学びます。 直接この記事に進むには、「[HoloLens 2 の概要](hololens2-basic-usage.md)」をご覧ください。
 
-## 開始する前に
+## <a name="before-you-start"></a>開始する前に
 
 始める前に、以下が利用可能であることを確認してください。
 
@@ -37,7 +37,7 @@ ms.locfileid: "11283878"
 
 **快適さを高めるオプションのアクセサリ**。HoloLens には、より快適なフィット感を得られるように、オプションのアクセサリが付属しています。 [快適に使うための詳しい情報をご覧ください](hololens2-setup.md#adjust-fit)。
 
-## Windows のセットアップ
+## <a name="set-up-windows"></a>Windows のセットアップ
 
 HoloLens 2 を初めて起動する場合、最初のタスクは Windows Holographic をセットアップすることです。  HoloLens を起動すると、音楽が再生され、Windows ロゴが表示されます。
 
@@ -91,7 +91,10 @@ HoloLens 2 に、以下の手順が表示されます。
 
 お疲れさまでした。  セットアップは完了です。HoloLens の使用準備ができました。
 
-## 次のステップ
+## <a name="next-steps"></a>次の手順
+
+1. すぐに Mixed Reality の操作を開始し、HoloLens で Windows 10 をナビゲートします。手の操作に関する実践的なチュートリアルについては、**ヒント** アプリを確認してください。 スタート ジェスチャを使用して [スタート] に移動するか、「スタートに移動」と言って [ヒント] を選択します。 
+1. HoloLens 2 の操作方法について読み続けるには、以下をクリックしてください。
 
 > [!div class="nextstepaction"]
 > [HoloLens 2 の概要](hololens2-basic-usage.md)

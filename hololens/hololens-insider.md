@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 2/23/2021
+ms.date: 3/4/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ac408f100fb6e421a0ed0c85563ed920f1a25a83
-ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
+ms.openlocfilehash: 327701c2f618fc8958704cef5f174efed08fff3a
+ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11385561"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "11388782"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens の Insider Preview
 
@@ -155,10 +155,8 @@ Insiders には、新しい Microsoft Edge の新しい Microsoft Edge アイコ
 - 1 つのブラウザー ウィンドウからの空間サウンド
 - ブラウザーの自動および手動更新
 - [印刷] メニューから PDF を保存する ([PDF に保存] オプションを使用)
-
-**近日公開予定のシナリオと機能:**
 - WebXR および 360 ビューアー拡張機能
-- 環境内に配置された複数のウィンドウをブラウズするときにウィンドウを修正するコンテンツの復元
+- 環境内に配置された複数のウィンドウ間で参照する場合に、正しいウィンドウにコンテンツを復元する
 
 **予期しないシナリオと機能:**
 - 複数のウィンドウからの空間サウンドと同時オーディオ ストリーム
@@ -168,6 +166,9 @@ Insiders には、新しい Microsoft Edge の新しい Microsoft Edge アイコ
 **既知のブラウザーの上位の問題:**
 - デバイスをリセットすると、新しい Microsoft Edge が削除されます
 - ホログラフィック キーボードの拡大鏡のプレビューに正しくないコンテンツが表示される
+- スクロールが時として吃音を引き出す場合があります
+- Microsoft Store アプリの Web リンクがブラウザーを起動しない場合があります
+- 以前に別のブラウザー ウィンドウからオーディオを再生した場合、間違ったブラウザー ウィンドウからオーディオが再生される可能性があります。
 
 #### <a name="microsoft-edge-insider-channels"></a>Microsoft Edge Insider チャネル
 
@@ -330,6 +331,7 @@ HoloLens 2 に保存されたカスタム カラー プロファイルに不満�
     - 回避策: 別の [設定] ページを選択し、[調整] ページを再選択します。
 - HoloLens 2 が表示色調整の実行中にスリープ状態になる場合、後で複合現実ホームに戻り、ディスプレイの明るさレベルは引き続き淡色表示されます。
 - デバイスの左側にある明るさボタンを何度か上下に押してから、期待通りに動作する必要がある場合があります。
+- ローカリゼーションがすべての市場で完了しているとは言え
 
 ### <a name="default-app-picker"></a>既定のアプリピッカー
 
@@ -350,6 +352,9 @@ HoloLens 2 に保存されたカスタム カラー プロファイルに不満�
 ### <a name="office-web-app"></a>Office Web アプリ
 
 [Office] メニューの [すべてのアプリ] リストに Web アプリが追加されました。 この Web アプリは、スタート画面またはアンインストール画面にピン留めすることもできます。 これは Web アプリなので、その機能は、訪れたユーザーが体験した機能と完全に一致します https://www.office.com 。 Office Web アプリの機能は、HoloLens 2 がアクティブなインターネット接続を持つ場合にのみ使用できます。
+
+**既知の問題**
+- デバイスをリセットすると、Web アプリOffice削除されます
 
 ### <a name="swipe-to-type"></a>スワイプして入力する
 

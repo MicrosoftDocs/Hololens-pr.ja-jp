@@ -11,12 +11,12 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 196162764a236ef2b4d7a6d1337b86066dde7469
-  ms.sourcegitcommit: 5b0f0b5930f138afc6cc0e0b9869c3239f1352b2
+  ms.openlocfilehash: a2c1e27a22525366c4d5ffc4bc06e9931412a54a
+  ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 01/26/2021
-  ms.locfileid: "11301535"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "11385450"
 landingContent:
 - title: HoloLens の概要
   linkLists:
@@ -26,8 +26,8 @@ landingContent:
       url: hololens2-options.md
     - text: HoloLens 2 のハードウェア
       url: hololens2-hardware.md
-    - text: HoloLens (第1世代) のハードウェア
-      url: hololens1-hardware.md
+    - text: Microsoft Mesh (プレビュー)
+      url: /mesh/overview
     - text: スタート メニューと Mixed Reality ホームを使用する
       url: holographic-home.md
     - text: アプリケーションの検索、インストール、およびアンインストール

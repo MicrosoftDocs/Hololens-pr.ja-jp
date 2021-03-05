@@ -41,6 +41,7 @@
 ### [視覚効果と快適性の向上](hololens-calibration.md)
 ### [HoloLens を使用して物理的スペースをマッピングする](hololens-spaces.md) 
 ## [HoloLens を更新する方法](hololens-update-hololens.md)
+## [Microsoft Mesh (プレビュー)](/mesh/overview)
 
 # 準備
 ## [商用環境での HoloLens の展開](hololens-requirements.md)
@@ -94,6 +95,7 @@
 ### [HoloLens 2 証明書とネットワーク プロファイルを準備する](hololens-certificates-network.md)
 ### [HoloLens の接続エンドポイントの管理](hololens-offline.md)
 ### [Bluetooth および USB-C デバイスに接続する](hololens-connect-devices.md)
+### [携帯電話と 5G に接続する](hololens-cellular.md)
 ## [証明書マネージャー](certificate-manager.md)
 
 # 展開
