@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 327701c2f618fc8958704cef5f174efed08fff3a
-ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
+ms.openlocfilehash: 7c11dfbdb78e59493d648fb3a172d3e1f73048c8
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "11388782"
+ms.locfileid: "11393881"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens の Insider Preview
 
@@ -283,8 +283,8 @@ WDAC ポリシーを更新して新しい[](windows-defender-application-control
 
 **既知の問題**
 - 以前に配置した [設定] ウィンドウは削除されます (上記の注意を参照)。
-- イーサネット ページには、仮想イーサネット デバイス ("UsbNcm") が表示されます (調査中)。 この仮想イーサネット デバイスは、デバイスセットアップの [ネットワーク] ページにも表示されますが、無視できます (調査中)。
-- 設定アプリを使用してデバイスの名前を変更できなくなりました (IT 管理者はプロビジョニング パッケージまたは MDM を使用してデバイスの名前を変更できます)。
+- 設定アプリを使用してデバイスの名前を変更できなくなりました。 IT 管理者は [、Windows Autopilot for HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) デバイス名テンプレートまたは MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName ノードを使用してデバイスの名前を変更できます。
+- イーサネット ページには、仮想イーサネット デバイス ("UsbNcm") が表示されます。
 - 新しい Microsoft Edge のバッテリー使用量は、UWP アダプター層でサポートされる Win32 デスクトップ アプリケーションとしての性質上、正確ではない場合があります (すぐには修正されません)。
 
 ### <a name="display-color-calibration"></a>色の調整を表示する

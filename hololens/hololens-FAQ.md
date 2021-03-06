@@ -18,20 +18,20 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51058ddcba10a285b91d7fffedccf19d052d4e04
-ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
+ms.openlocfilehash: 918ffe42ae23c6b7e0e91c6d365c80eee487660b
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "11388770"
+ms.locfileid: "11393861"
 ---
 # <a name="frequently-asked-questions-about-hololens-devices-and-holograms"></a>HoloLens デバイスおよびホログラムについてよく寄せられる質問
 
 この記事では、ホログラムの配置方法、スペースの操作方法など、HoloLens の使用方法に関するいくつかの質問に回答します。
 
-問題が発生した場合は、HoloLens が[充電されていること](https://support.microsoft.com/help/12627/hololens-charge-your-hololens)を確認してください。 [再起動](hololens-restart-recover.md)して、問題が解決するかどうかを確認してください。 フィードバック アプリを使用して、問題に関する情報を送信してください。 フィードバック アプリは、[**[スタート]** メニュー](holographic-home.md)にあります。
+問題が発生した場合は、HoloLens が課金 [されます](https://support.microsoft.com/help/12627/hololens-charge-your-hololens)。 [再起動](hololens-restart-recover.md)して、問題が解決するかどうかを確認してください。 フィードバック アプリを使用して、問題に関する情報を送信してください。 フィードバック アプリは、[**[スタート]** メニュー](holographic-home.md)にあります。
 
-HoloLens の装着方法に関するヒントについては、「[HoloLens (第 1 世代) を快適に使うためのよくある質問](hololens1-fit-comfort-faq.md)」を参照してください。
+HoloLens の装着方法に関するヒントについては [、「HoloLens (第 1](hololens1-fit-comfort-faq.md)世代) のフィット感と快適さについてよく寄せられる質問」を参照してください。
 
 この記事では、次の質問と問題について説明します。
 <a id="list"></a>
@@ -210,7 +210,7 @@ Bluetooth デバイスの使用中に問題が発生した場合は、デバイ�
 
 ## <a name="im-having-problems-using-the-hololens-clicker"></a>HoloLens クリッカーを使用するときに問題が発生する
 
-[クリッカー](hololens1-clicker.md)を使用して、ホログラムを選択、スクロール、移動、サイズ変更します。 個々のアプリは、追加のクリッカー ジェスチャをサポートする場合があります。
+[クリッカー](hololens1-clicker.md)を使用して、ホログラムを選択、スクロール、移動、サイズ変更します。 個々のアプリは、追加のクリック操作をサポートする場合があります。
 
 クリッカーの使用中に問題が発生した場合は、クリッカーが充電され、HoloLens とペアリングされていることを確認してください。 バッテリーが少なくなると、インジケータ ライトがオレンジ色に点滅します。 クリッカーがペアリングされているかどうかを確認するには、**[設定]** > **[デバイス]** に移動し、そこに表示されるかどうかを確認します。 詳細については、「[クリッカーのペアリング](hololens1-clicker.md)」を参照してください。
 
