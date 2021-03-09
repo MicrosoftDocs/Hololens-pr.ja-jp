@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c8d9aa9fecff74a04e3f7cb395bffe5d239e18cf
-ms.sourcegitcommit: 7791e470fc2e03bdf51b19a816d7215018772860
+ms.openlocfilehash: 4a360e99a45b855957e36dd6ba31ede3da9631ba
+ms.sourcegitcommit: b5f1b7c197cb58b746efc3809c61cf7a2e8c08ef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387515"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11399809"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>HoloLens デバイスから診断情報を収集する
 
@@ -102,6 +102,10 @@ HoloLens ユーザーは、デバイスの設定アプリを使用して問題�
 
 モバイル デバイス管理 (MDM) 環境では、IT 管理者は DiagnosticLog 構成サービス プロバイダー [(CSP)](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp) を使用して、登録済み HoloLens デバイスの診断設定を構成できます。 IT 管理者は、登録されたデバイスからログを収集するためにこれらの設定を構成できます。
 
+詳細については、次の情報を参照してください。
+- [Windows デバイスから診断を収集する](https://docs.microsoft.com/mem/intune/remote-actions/collect-diagnostics)
+- [Intune パブリック プレビュー - Windows 10 デバイス診断](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
+
 ### <a name="prerequisites"></a>前提条件
 
 - デバイスはネットワークに接続されています。
@@ -125,12 +129,12 @@ IT 管理者は、DiagnosticLog CSP を使用して、次のポリシーを管�
 > [!NOTE]
 > オフライン診断の生成と管理は、OS のバージョンに応じて異なる方法で制御されます。 以前はテレメトリ設定によって制御されましたが、MDM ポリシーによって直接制御されました。 設定または MDM ポリシーを使用して無効にした場合、このメカニズムを使用して診断ログを収集できません。
 
-[Windows Holographic より前の動作、verison 20H2:](hololens-release-notes.md#windows-holographic-version-20h2)
+[Windows Holographic バージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2)より前の動作:
  - オフライン診断は、ユーザーが OOBE または [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) ポリシー値が Full に設定されている場合にのみ有効になります (HoloLens の既定値は Basic です)。 
 - オフライン診断を無効にするには、[アプリの設定] ページ **>、[** 診断データ] で [ **基本** ] **を選択します**。 オフライン診断がテレメトリ設定に依存するビルドでは、ログが収集されるかどうかにのみ影響します。 収集されるファイルには影響はありません。
 - デバイスがロックされている場合、ログは表示されません。
 
-ビルド時 [の Windows Holographic、verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 以降:
+Windows [Holographic バージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 以降をビルドする場合:
 - フォールバック診断が有効になっている場合は、対応する[MixedReality/フォールバックDiagnostics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)の設定を使用して特定の MDM ポリシーによって制御されます。
 - デバイスがロックされている場合、ログは表示されません。
 
