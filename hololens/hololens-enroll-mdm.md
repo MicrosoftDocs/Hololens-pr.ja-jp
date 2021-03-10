@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5613c69bda8bbf70722a050ac5ce4ebeab95d332
-ms.sourcegitcommit: 771e53feefbcc6bce18577515ad7d3f6a7f33840
+ms.openlocfilehash: 4042cce40bea2c3d52d6ffc5d2908f6fde7cf222
+ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399385"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11400677"
 ---
 # <a name="enroll-hololens-in-mdm"></a>MDM での HoloLens の登録
 
@@ -34,12 +34,15 @@ Microsoft Intune のようなソリューションを使用して、複数の Mi
  
 ## <a name="different-ways-to-enroll"></a>さまざまな登録方法
 
-OOBE またはサインイン後に選択される ID の種類に応じて、登録方法は異なります。 HoloLens の ID の各種類の詳細については、このページを [参照してください](hololens-identity.md)。
+OOBE またはサインイン後に選択された [ID](hololens-identity.md) の種類に応じて、登録方法は異なります。
 
 - Identity が Azure AD場合は、OOBE または **[** 設定] アプリ アクセス作業時間または学校接続  ->  ****  ->  ボタン**のどちらか**です。
-    - Azure の場合AD MDM の自動登録は、Azure サーバーが登録 URL AD構成されている場合にのみ発生します。
-- Identity が Azure AD で、デバイスが特定の構成プロファイルが割り当てられた Intune MDM サーバーに事前登録されている場合、Azure AD-Join と登録は OOBE 中に自動的に発生します。
+    - Azure AD、 [自動 MDM](hololens-enroll-mdm.md#auto-enrollment-in-mdm) 登録は、Azure サーバーが登録 URL AD構成されている場合にのみ発生します。 
+     
+- Identity が Azure AD であり、デバイスが特定の構成プロファイルが割り当てられた Intune MDM サーバーに事前登録されている場合、Azure AD-Join および [自動 MDM](hololens-enroll-mdm.md#auto-enrollment-in-mdm) 登録は OOBE 中に行われます。
     - また [、Autopilot flow Available in](hololens2-autopilot.md) [19041.1103+ ビルドとも呼ばれる](hololens-release-notes.md#windows-holographic-version-2004)。
+    
+
 - Identity が MSA の場合は、[設定]**アプリ**アクセス作業時間または学校  ->  **接続ボタン**  ->  **を使用**します。
     - 作業アカウントの追加 (AWA) フローとも呼ばれる。
 - Id がローカル ユーザーの場合は、[設定]**アプリ**アクセス作業時間または学校登録のみをデバイス管理  ->  ****  ->  **リンクで使用**します。
@@ -49,7 +52,7 @@ OOBE またはサインイン後に選択される ID の種類に応じて、�
 
 ## <a name="auto-enrollment-in-mdm"></a>MDM への自動登録
 
-組織で Azure Active Directory (Azure AD) と認証用に Azure AD トークンを受け入れる MDM ソリューション (現在は Microsoft Intune と AirWatch でのみサポート) を使用している場合、IT 管理者は、ユーザーが Azure AD アカウントでサインインした後に MDM 登録を自動的に許可するように Azure AD を構成できます。 [Azure AD の登録を構成する方法をご覧ください。](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+組織に Azure [](https://azure.microsoft.com/overview/)Premium サブスクリプションがある場合は、Azure Active Directory (Azure AD) と認証用の Azure AD トークンを受け入れる MDM ソリューション (現在は Microsoft Intune と AirWatch でのみサポート) を使用している場合、IT 管理者は、ユーザーが Azure AD アカウントでサインインした後に MDM 登録を自動的に許可するように Azure AD を構成できます。 [Azure AD の登録を構成する方法をご覧ください。](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
 自動登録が有効な場合、追加の手動登録は必要ありません。 ユーザーが Azure AD アカウントでサインインすると、最初の実行エクスペリエンスを完了した後デバイスが MDM に登録されます。
 
