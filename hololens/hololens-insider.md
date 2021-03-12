@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 33e16d75a95d62e2c8b881f298acdf692874ef94
-ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
+ms.openlocfilehash: 26fa6bfbbb1d9ec0408208513a4cd54b8ba93117
+ms.sourcegitcommit: b1362ab822d1cba97fe0b3fb4e666d9b68b6adbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "11400707"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "11406773"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens の Insider Preview
 
@@ -93,7 +93,7 @@ Windows Insiders に新しい機能のフライトを再度開始するのを楽
 
 #### <a name="enable-new-endpoints-for-edge"></a>エッジの新しいエンドポイントを有効にする
 
-プロキシやファイアウォールなどのネットワーク エンドポイントを構成するインフラストラクチャがある場合は、新しい Microsoft Ege アプリでこれらの新しいエンドポイント [を有効にしてください。](#managing-endpoints-for-the-new-microsoft-edge)
+プロキシやファイアウォールなどのネットワーク エンドポイントを構成するインフラストラクチャがある場合は、新しい Microsoft Edge アプリでこれらの新しいエンドポイント [を有効にしてください。](#managing-endpoints-for-the-new-microsoft-edge)
 
 #### <a name="newly-configurable-items"></a>新しく構成可能なアイテム
 
