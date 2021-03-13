@@ -15,24 +15,24 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 06768203459827a83d8b6e891dfc8c46e33c3da2
-ms.sourcegitcommit: 1f37a06cde037f3acdc4ef3767a9384953d97c33
+ms.openlocfilehash: 44c79a41d7864cd6000ffed1bdd32dab8ffabc39
+ms.sourcegitcommit: b437c738f101ac870a29bbdb7fd642eda3d67f00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "11194867"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "11406269"
 ---
-# Microsoft Store のアプリケーションの検索、インストール、アンインストール
+# <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Microsoft Store のアプリケーションの検索、インストール、アンインストール
 
 Microsoft ストアは、HoloLens で動作するアプリやゲーム用のソースです。 HoloLens のストアに移動すると、そこに表示されているアプリはすべてその上で動作します。
 
 HoloLens 上のアプリは、2D ビューとホログラフィック ビューのどちらかを使用しています。 2D ビューを利用したアプリは窓のように見えて、周り全体に配置されます。 ホログラフィック ビューを使用しているアプリでは、見えるのは周り一面アプリの画面だけになります。
 
-HoloLens は、HoloLens 用に特別に作られた新しいアプリだけでなく、Microsoft ストアにある既存のアプリケーションの多くもサポートします。  この記事では、Microsoft ストアの ホログラフィック アプリケーションについて説明します。
+HoloLens は、Microsoft Store の多くの既存のアプリケーションと、HoloLens 専用に構築された新しいアプリをサポートしています。  この記事では、Microsoft Store の ホログラフィック アプリケーションについて説明します。
 
 カスタム アプリのインストールと実行の詳細については、「[ホログラフィック アプリケーションのカスタム設計](holographic-custom-apps.md)」を参照してください。
 
-## アプリの検索
+## <a name="find-apps"></a>アプリの検索
 
 **スタート** メニューの Microsoft Store を開きます。 アプリやゲームを参照します。 [音声コマンド](hololens-cortana.md)を使用し、"検索"と声に出して検索できます。検索ウィンドウが表示されたら、"ディクテーションを開始"と声に出し、プロンプトが表示されたら、検索語句を読み上げます。
 
@@ -50,24 +50,25 @@ HoloLens は、HoloLens 用に特別に作られた新しいアプリだけで�
 | Word Mobile       | https://office.live.com/start/Word.aspx       |
 | PowerPoint Mobile | https://office.live.com/start/PowerPoint.aspx |
 
-## アプリのインストール
+## <a name="install-apps"></a>アプリのインストール
 
-アプリをダウンロードするには、Microsoft アカウントでサインインする必要があります。 無料のアプリもあり、すぐにダウンロードできます。 購入が必要なアプリには、Microsoft アカウントを使用してストアにサインインし、有効な支払い方法があることが必要です。
+アプリをダウンロードするには、Microsoft アカウントでサインインする必要があります。 無料のアプリもあり、すぐにダウンロードできます。 購入が必要なアプリには、Microsoft アカウントを使用してストアにサインインし、有効な支払い方法をお持ちであることが必要です。
 > [!NOTE]
-> Microsoft ストアで使用するアカウントは、サインインに使用しているアカウントと同じである必要はありません。 職場または学校用の HoloLens アカウントを使用している場合、購入するには、ストア アプリの個人用アカウントでサインインする必要がある場合があります。
+> Microsoft Store で使用するアカウントは、サインインに使用するアカウントと同一のものである必要はありません。 職場または学校用の HoloLens アカウントを使用している場合、購入するには、ストア アプリの個人用アカウントでサインインする必要がある場合があります。
 
-支払い方法を設定するには、[account.microsoft.com](https://account.microsoft.com/) に移動し、**[支払いと請求]** > **[支払オプション]** > **[支払オプションの追加]** を選択します。
+> [!TIP]
+> 支払い方法を設定するには、[account.microsoft.com](https://account.microsoft.com/) に移動し、**[支払いと請求]** > **[支払オプション]** > **[支払オプションの追加]** を選択します。
 
 1. [**[スタート]** メニューを開くには](holographic-home.md)、HoloLens (第1世代) の [[スタート ジェスチャ]](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) または [[ブルーム]](hololens1-basic-usage.md) ジェスチャを実行します。
-1. Microsoft Store アプリを選択する。 ストアアプリが表示されます。
-   1. 検索バーを使用して、目的のアプリケーションを探します。 
-   1. まとまったカテゴリのいずれかから、HoloLens 専用の必須アプリやその他のアプリを選びます。
+1. Microsoft Store アプリを選択する。 ストア アプリが開いたら、次の手順を実行します。
+   1. 検索バーを使用してアプリケーションを検索します。 
+   1. 整理されたカテゴリのいずれかの中から、必須アプリや HoloLens 専用に作成されたアプリを選択します。
    1. ストア アプリの右上で、[**...**] ボタンを選択し、[**マイライブラリ**] を選択して、以前購入したアプリを表示します。
 1. アプリケーションのページで、[**取得**] または [**インストール**] (購入が必要になる場合があります) を選びます。
 
-## アプリの更新
-Microsoft ストア アプリからインストールしたアプリを更新したい場合、Microsoft ストア アプリから同じアプリを更新することもできます。 これは、ビジネス向け Microsoft Store にインストールされているアプリにも適用されます。 
-1. [**[スタート]** メニューを開くには](holographic-home.md)、HoloLens (第1世代) の [[スタート ジェスチャ]](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) または [[ブルーム]](hololens1-basic-usage.md) ジェスチャを実行します。
+## <a name="update-apps"></a>アプリの更新
+Microsoft Store からインストールしたアプリを更新するには、Microsoft Store アプリからアプリを更新できます。 ビジネス向け Microsoft Store 用にインストールされたアプリの場合には、ビジネス向け Microsoft Store からそれらのアプリを更新することもできます。 
+1. [[**スタート**] メニュー](holographic-home.md)を開くには、HoloLens (第1世代) で [[スタート ジェスチャ](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture)] または [[ブルーム](hololens1-basic-usage.md)] ジェスチャを実行します。
 1. [ストア] アプリを選択します。
 1. ストア アプリの右上に表示されます。 
 1. [**...**] または [詳細を表示] ボタンを選択します。
@@ -76,7 +77,7 @@ Microsoft ストア アプリからインストールしたアプリを更新し
    > ![Microsoft ストア アプリのスクリーンショット。](images/store-update-1.png)
 
 1. [**ダウンロードと更新プログラム**] を選択します。
-    1. デバイスに以前に更新プログラムを識別している場合、下方向キーと番号が表示されることがありますが、これは保留中の更新プログラムを表しています。
+    1. ご利用のデバイスが以前に更新プログラムを特定している場合には、下向きの矢印と保留中の更新プログラムを表す数字が表示されます。
 1. [**更新プログラムを取得する**] を選択します。 デバイスが更新プログラムを検索するので、ダウンロードしてインストールするように設定します。 
  
    > [!div class="mx-imgBorder"]
@@ -87,14 +88,14 @@ Microsoft ストア アプリからインストールしたアプリを更新し
 >
 > サイドロードまたは導入されているカスタム アプリを更新する場合は、更新されたバージョンのアプリで同じ方法を使用する必要があります。 カスタム アプリのインストールと実行の詳細については、「[ホログラフィック アプリケーションのカスタム設計](holographic-custom-apps.md)」を参照してください。
 
-## アプリのアンインストール
+## <a name="uninstall-apps"></a>アプリのアンインストール
 
 アプリケーションをアンインストールするには、2つの方法があります。  アプリケーションをアンインストールするには、Microsoft ストアまたは [スタート] メニューを使用します。
 
-### [スタート] メニューからアンインストールする場合
+### <a name="uninstall-from-the-start-menu"></a>[スタート] メニューからアンインストールする場合
 
 [**スタート**] メニューまたは [**すべてのアプリ**] リストから、アプリを参照します。 メニューが表示されるまで選択して長押しし、[**アンインストール**] を選択します。
 
-### Microsoft Store からアンインストールする
+### <a name="uninstall-from-the-microsoft-store"></a>Microsoft Store からアンインストールする
 
-[**スタート**] メニューから Microsoft ストアを開き、アンインストールするアプリケーションを参照します。  [ストア] ページでは、インストールされている各アプリケーションに **アンインストール** ボタンがあります。
+[**スタート**] メニューから Microsoft Store を開き、アンインストールするアプリケーションを表示します。  [ストア] ページでは、インストールされている各アプリケーションに [**アンインストール**] ボタンが表示されています。
