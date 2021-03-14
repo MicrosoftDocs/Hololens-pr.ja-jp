@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 025ba8508eb930cdad6d502c381e5a07d9efc6e0
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: b5b9568bab5afebe4ac3e9d57645c18837c71cb6
+ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284088"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408427"
 ---
-# HoloLens 2 を再起動、リセット、または回復する
+# <a name="restart-reset-or-recover-hololens-2"></a>HoloLens 2 を再起動、リセット、または回復する
 
-## デバイスを充電する
+## <a name="charge-the-device"></a>デバイスを充電する
 
-トラブルシューティングの手順を開始する前に、可能であれば、デバイスがバッテリ容量の 20 - 40% に充電されていることを確認してください。 HoloLens 2 デバイスに付属の充電器と USB Type-C ケーブルを使用します。 デバイスに付属している電源アダプターと USB-C-C ケーブルは、HoloLens 2 を充電する最適な方法です。 充電器は、18W の電力 (2A で 9V) を供給します。 付属のプラグを使用すると、HoloLens 2 デバイスは、デバイスがスタンバイ状態のときに 65 分未満でバッテリーを完全に充電できます。 これらのアクセサリが使用できない場合は、使用可能な充電器が少なくとも 15W の電力に対応していることを確認してください。
+トラブルシューティングの手順を開始する前に、可能であれば、デバイスのバッテリ容量が 20 - 40% 残っていることを確認してください。 HoloLens 2 デバイスに付属の[充電器と USB Type-C ケーブル](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1)を使用します。 デバイスに付属している AC アダプターと USB ケーブル (C to C) は、HoloLens 2 を充電する最適な方法です。 充電器は、18W の電力 (2A で 9V) を供給します。 付属のプラグを使用すると、HoloLens 2 デバイスは、デバイスがスタンバイ状態のときに 65 分未満でバッテリーを完全に充電できます。 これらのアクセサリが使用できない場合は、使用可能な充電器が少なくとも 15W の電力に対応していることを確認してください。
 
 > [!NOTE]
 > 可能であれば、PC を使用してデバイスを USB 経由で充電することは避けてください。これは遅いです。
@@ -44,11 +44,11 @@ ms.locfileid: "11284088"
 
 デバイスが起動メニューから起動できない場合は、ホスト PC の LED の外観とデバイスの一覧を確認します。 次に、[トラブルシューティング ガイド](https://docs.microsoft.com/hololens/hololens-troubleshooting)に従います。 デバイスの状態がトラブルシューティング ガイドに記載されている状態と一致しない場合は、ホスト PC ではなく、電源に接続されたデバイスで[ハード リセット手順](hololens-recovery.md#hard-reset-procedure)を実行してください。 デバイスが充電されるまで少なくとも 1 時間待ちます。
 
-## デバイスをリセットする
+## <a name="reset-the-device"></a>デバイスをリセットする
 
 状況によっては、ソフトウェアの UI を使用せずにデバイスを手動でリセットする必要がある場合があります。
 
-### 標準手順
+### <a name="standard-procedure"></a>標準手順
 
 1. Type-C ケーブルを抜いて、デバイスを電源またはホスト PC から切断します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "11284088"
 
    ![HoloLens 2 MicrosoftHoloLensRecovery デバイス マネージャー](images/MicrosoftHoloLens_DeviceManager.png)
 
-### ハード リセット手順
+### <a name="hard-reset-procedure"></a>ハード リセット手順
 
 標準のリセット手順が機能しない場合は、ハード リセット手順を使用します。
 
@@ -73,7 +73,7 @@ ms.locfileid: "11284088"
 
    ![HoloLens 2 MicrosoftHoloLensRecovery デバイス マネージャー 2](images/MicrosoftHoloLens_DeviceManager.png)
 
-## デバイスをきれいに再フラッシュする
+## <a name="clean-reflash-the-device"></a>デバイスをきれいに再フラッシュする
 
 異常な状況では、HoloLens 2 のクリーン フラッシュが必要になることがあります。 なお、以下の問題については、クリーン再フラッシュの実行によって解決することは期待できません。
 - [画面の色の均一性](hololens2-display.md)
@@ -93,7 +93,7 @@ ms.locfileid: "11284088"
 
 ![HoloLens 2 クリーン再フラッシュのスクリーンショット](images/ARC1.png)
 
-### 通常の手順
+### <a name="normal-procedure"></a>通常の手順
 
 1. HoloLens デバイスの実行中に、以前に高度な回復コンパニオン アプリを開いた Windows 10 PC に接続します。
  
@@ -103,7 +103,7 @@ ms.locfileid: "11284088"
 
 3. 高度な回復コンパニオン アプリの UI で HoloLens 2 デバイスを選択し、指示に従って再フラッシュを完了します。
 
-### 手動の手順
+### <a name="manual-procedure"></a>手動の手順
 
 HoloLens 2 が正常に起動しない場合は、デバイスを回復モードにする必要があります。
 
@@ -123,7 +123,7 @@ HoloLens 2 が正常に起動しない場合は、デバイスを回復モード
 
 6. 高度な回復コンパニオン アプリの UI で HoloLens 2 デバイスを選択し、指示に従って再フラッシュを完了します。
 
-## アプリ ストアを使用せずに ARC をダウンロードする
+## <a name="download-arc-without-using-the-app-store"></a>アプリ ストアを使用せずに ARC をダウンロードする
 
 IT 環境が Windows Store アプリの使用を妨げたり、小売店へのアクセスを制限したりする場合、IT 管理者は「オフライン」展開パスを通じてこのアプリを利用可能にすることができます。
 
@@ -135,8 +135,8 @@ IT 環境が Windows Store アプリの使用を妨げたり、小売店への�
 1. [ビジネス向け Microsoft Store](https://businessstore.microsoft.com) に移動し、Azure Active Directory ID を使用してサインインします。
 
 1. **[管理]、[設定]** の順に移動します。 **[買い物エクスペリエンス]** で **[オフライン アプリの表示]** をオンにします。
-1. **[グループで買い物]** に移動して、[**_Advanced Recovery Companion_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8) を検索します。
-1. _*[ライセンスの種類]** を **_オフライン_*_ に変更し、_*[管理]** を選択します。
+1. **[グループで買い物]** に移動して、[**_Advanced Recovery Companion_**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8) を検索します。
+1. **[ライセンスの種類]** を **_[オフライン]_*_ に変更し、_*[管理]** を選択します。
 1. **[オフラインで使用するためのパッケージをダウンロードする]** で、2 番目の青い **[ダウンロード]** ボタンを選択します。 ファイル拡張子が *.appxbundle* であることを確認します。
 
     - この段階で、デスクトップ PC がインターネットにアクセスできる場合は、パッケージをダブルクリックしてアプリをインストールします。

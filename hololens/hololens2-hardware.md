@@ -12,18 +12,18 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: feedb0093b8766de75079a61c286c99817ab18f9
-ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
+ms.openlocfilehash: e48e596f46aaad1b2fc79abd0fe60bd2f44bab6d
+ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "11400697"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408417"
 ---
 # <a name="hololens-2-hardware"></a>HoloLens 2 のハードウェア
 
 ![HoloLens 2 の側面図](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 は、自立型ホログラフィック コンピューターです。  HoloLens (第 1 世代) から始まったホログラフィック コンピューティングをさらに改良し、より快適でイマーシブなエクスペリエンスを実現しています。Mixed Reality でのコラボレーションに必要なオプションも多数追加されています。
+Microsoft HoloLens 2 は、自立型ホログラフィック コンピューターです。  HoloLens (第 1 世代) から始まったホログラフィック コンピューティングをさらに改良し、より快適でイマーシブなエクスペリエンスを実現しています。Mixed Reality でのコラボレーションに必要なオプションも多数追加されています。 HoloLens 2 を使用するには、ユーザー アカウントが必要です。
 
 ## <a name="hololens-components"></a>HoloLens のコンポーネント
 
@@ -165,9 +165,12 @@ Microsoft HoloLens 2 は、自立型ホログラフィック コンピュータ�
 
 Microsoft HoloLens 2 には、標準の限定[保証](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5)が付属しています。 
 
-購入は、[Microsoft Store の使用条件と販売](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1)の対象です。 
 
-HoloLens 2 を購入すると、[ソフトウェア使用許諾契約書](https://www.microsoft.com/Useterms/)に同意したものとします。
+購入は、[Microsoft Store の使用条件と販売](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1)の対象です。 すべての販売は、 払い戻しできません。
+
+HoloLens 2 を購入すると、[ソフトウェア使用許諾契約](https://www.microsoft.com/Useterms/)に同意したものとします。
+
+13 歳未満の子供が使用するものではありません。
 
 ## <a name="package-dimensions"></a>パッケージのサイズ
 

@@ -14,14 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2c1cc7fb2ec362fde96df5f0cea23aab132b62ef
-ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
+ms.openlocfilehash: 7e8e333471df139ced3613801d07a5bfaafd8d30
+ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "11324770"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408407"
 ---
-# HoloLens 2 の概要
+# <a name="hololens-2-overview"></a>HoloLens 2 の概要
 
 HoloLens は、*ホログラムを利用した* Mixed Reality デバイスであり、コラボレーションを強化するアプリとソリューションを提供します。 目的を持って、よりスマートに仕事をするために、HoloLens 2 を使用して、向上した生産性と革新性を体験してください。
 
@@ -41,14 +41,14 @@ HoloLens は、*ホログラムを利用した* Mixed Reality デバイスであ
 | 開発者資格 <sup> 1</sup>                             |            |                               |                               |                                                  |                              |                ✔️               |
 | Rapid Replacement Program <sup> 2</sup>                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | 商用使用権                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| 保証                                             |   1 年   |             1 年            |             2 年            |                      2 年                      |            1 - <sup> 3 年</sup>            |             1 年             |
+| [保証](hololens2-hardware.md#warranty-information)                                             |   1 年   |             1 年            |             2 年            |                      2 年                      |            1 - <sup> 3 年</sup>            |             1 年             |
 | デバイス購入の制限                                |    なし    |              なし             |              なし             |                       なし                       |             なし             |       1 回の購入につき 1 台      |
 
 - <sup>1</sup> - 500 ドルの Azure クレジット、および Unity Pro と Pixyz プラグインの 3 か月の試用版が含まれています。
 - <sup>2</sup> - Microsoft が欠陥のあるデバイスを受け取る前に、翌日配送または迅速な配送 (利用可能なオプションの高速化) で交換デバイスを受け取ります。
 - <sup>3</sup> - HoloLens 2 搭載の Trimble XR10 エディションの保証、サポート、認定に関する質問については、[Trimble にお問い合わせください](https://fieldtech.trimble.com/en/contact-support)。
 
-## オプションの概要
+## <a name="options-overview"></a>オプションの概要
 
 **[HoloLens 2 (デバイスのみ)](hololens2-options.md#hololens-2-device-only)**: HoloLens 2 は、Microsoft のクラウドおよび AI サービスの信頼性、セキュリティ、スケーラビリティによって強化された、利用可能な最も快適でイマーシブな Mixed Reality エクスペリエンスを提供します。
 
@@ -62,32 +62,32 @@ HoloLens は、*ホログラムを利用した* Mixed Reality デバイスであ
 
 広範な [HoloLens 2 のポートフォリオ](https://www.microsoft.com/hololens/buy)をご覧ください。
 
-## HoloLens 2 のオプションの使用を開始する
+## <a name="get-started-with-hololens-2-options"></a>HoloLens 2 のオプションの使用を開始する
 
-### **HoloLens 2 デバイス (デバイスのみ)**
-#### HoloLens 2 について
+### **<a name="hololens-2-device-only"></a>HoloLens 2 デバイス (デバイスのみ)**
+#### <a name="learn-about-hololens-2"></a>HoloLens 2 について
 商用環境で HoloLens 2 デバイスを使用すると、ビジネスや組織の強力なツールになります。 開発者として任意の HoloLens 2 を使用して、Mixed Reality アプリを作成することもできます。 
 
 <br>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### HoloLens 2 で次に行うこと
+#### <a name="heres-what-to-do-next-with-the-hololens-2"></a>HoloLens 2 で次に行うこと
 1. このビデオの [HoloLens 2 の使用と注意](https://docs.microsoft.com/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care)を見ます。
 1. [デバイスを使用する準備](https://docs.microsoft.com/hololens/hololens2-setup)をしてから[設定](https://docs.microsoft.com/hololens/hololens2-start)します
 1. [HoloLens 2 の操作環境について学習します](https://docs.microsoft.com/hololens/holographic-home)。
 1. 慣れてきたら、[Mixed Reality の写真やビデオを撮影します](https://docs.microsoft.com/hololens/holographic-photos-and-videos)。
 1. すべての利用可能な [HoloLens 2 用アプリを Microsoft アプリ ストアで確認します](https://docs.microsoft.com/hololens/holographic-store-apps)。
 
-### **HoloLens 2 (Remote Assist 付き)**
+### **<a name="hololens-2-with-remote-assist"></a>HoloLens 2 (Remote Assist 付き)**
 
-#### HoloLens 2 (Remote Assist 付き) について
+#### <a name="learn-about-hololens-2-with-remote-assist"></a>HoloLens 2 (Remote Assist 付き) について
 - これらのデバイスは、ビジネスの商用環境で使用できます。 必要な数の注文を行います。
 - HoloLens のエンタープライズ環境で最も一般的な用途の 1 つは、シートごとに (デバイスごとに) 1 つのライセンスが提供される**Remote Assist** です。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### HoloLens 2 (Dynamics 365 Remote Assist 付き) エディションで次に行うこと
+#### <a name="heres-what-to-do-next-with-the-hololens-2-with-dynamics-365-remote-assist-edition"></a>HoloLens 2 (Dynamics 365 Remote Assist 付き) エディションで次に行うこと
 HoloLens デバイスの大規模な展開に役立つ特定のガイドが作成されました。 このガイドには、Remote Assist 呼び出しを検証するための Azure Active Directory のエンドツーエンドのセットアップが含まれています。。 詳細については、「[展開ガイド - HoloLens 2 (Remote Assist 付き) のクラウド接続](hololens2-cloud-connected-overview.md)」をご覧ください。
 
 | チェックポイント  | 結果                                |
@@ -97,9 +97,9 @@ HoloLens デバイスの大規模な展開に役立つ特定のガイドが作�
 | [接続](https://docs.microsoft.com/hololens/hololens-network)     | デバイスを Wi-Fi に接続します。       |
 | [登録](https://docs.microsoft.com/hololens/hololens-enroll-mdm)      | デバイスを組織に登録します。 |
 
-### **HoloLens 2 Industrial Edition**
+### **<a name="hololens-2-industrial-edition"></a>HoloLens 2 Industrial Edition**
 
-#### HoloLens 2 Industrial Edition について
+#### <a name="learn-about-hololens-2-industrial-edition"></a>HoloLens 2 Industrial Edition について
 HoloLens 2 Industrial Edition は、新しい素材と認定によって強化、および再設計され、次に示す幅広い種類の産業環境をサポートしています。
 
 - **クリーン ルーム環境:** HoloLens 2 Industrial Edition は、異物粒子の量が制限および制約されている ISO 14644-1 Class 5 クリーン ルームの基準をサポートしてます。これらのスペース内では、物質の脱落、ガス放出、および汚染物質の保持に制限があります。
@@ -111,21 +111,21 @@ HoloLens 2 Industrial Edition には、アップグレードされたデバイ�
 
 「[HoloLens 2 Industrial Edition に関する FAQ](hololens2-industrial-edition-faq.md)」をご確認ください。
 
-#### HoloLens 2 のクリーニングと取り扱い
+#### <a name="cleaning-and-handling-hololens-2"></a>HoloLens 2 のクリーニングと取り扱い
 HoloLens 2 Industrial Edition は、"70%" のイソプロピル アルコールと水の溶液で、バイザー、ブロー パッド、ヘッド ストラップなどのデバイスの硬質表面を洗浄できます。 詳細については、「[HoloLens 2 のクリーニングに関する FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance)」をご覧ください。
 
-### **HoloLens 2 搭載の Trimble XR10**
+### **<a name="trimble-xr10-with-hololens-2"></a>HoloLens 2 搭載の Trimble XR10**
 
-#### Trimble XR10 について
+#### <a name="learn-about-trimble-xr10"></a>Trimble XR10 について
 HoloLens 2 搭載の Trimble XR10 は、Microsoft HoloLens Customization プログラムで初めて作成されたデバイスです。最新の空間コンピューティング テクノロジを認定済みのソリューションに統合して、労働者の安全のためにヘルメットと一緒に使用します。
 
 ![Trimble SKU](./images/trimble-ed.png)
 
 詳細については、「[Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2)」をご覧ください。
 
-### **HoloLens 2 Development Edition**
+### **<a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition**
 
-#### Development Edition について
+#### <a name="learn-about-the-development-edition"></a>Development Edition について
 
 > [!NOTE]
 > Development Edition は、商用配布ソリューションとともに展開することは許可されていません。 Development Edition は、商用環境でのアプリケーションの開発および/またはテストを支援する目的で展開できます。  
@@ -140,9 +140,9 @@ HoloLens 2 Development Edition には、HoloLens 2、500 ドルの Azure クレ�
 
 ![HoloLens 2 Development Edition](./images/hololens-2-dev-ed.png)
 
-#### クレジットを使用する
+#### <a name="redeem-your-credits"></a>クレジットを使用する
 
-##### Unity
+##### <a name="unity"></a>Unity
 一意のコードを受け取ります。 Unity Pro 試用版を利用する方法:
 1. [id.unity.com](http://id.unity.com/) にアクセスします
 1. Unity ID でサインインするか、作成します
@@ -151,7 +151,7 @@ HoloLens 2 Development Edition には、HoloLens 2、500 ドルの Azure クレ�
 
 [Unity ライセンスをアクティブ化する方法の詳細をご覧ください](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-)。 必要に応じて [Unity サポート](https://support.unity3d.com/hc)にお問い合わせください。  
 
-##### Pixyz
+##### <a name="pixyz"></a>Pixyz
 一意のコードを受け取ります。 Pixyz プラグイン試用版を利用する方法:
 1. [id.unity.com](http://id.unity.com/) にアクセスします
 1. **[Redeem a product code]** (製品コードを利用する) をクリックします。
@@ -159,14 +159,14 @@ HoloLens 2 Development Edition には、HoloLens 2、500 ドルの Azure クレ�
 
 [Pixyz ライセンスを利用する方法の詳細をご覧ください](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html)。 必要に応じて [Pixyz サポート](https://www.pixyz-software.com/support/)にお問い合わせください。
 
-#### Azure
+#### <a name="azure"></a>Azure
 Azure クレジットを利用したい一般的な [Mixed Reality 用の Azure 製品](https://azure.microsoft.com/topic/mixed-reality/)を参照してください。
 Azure クレジットを利用する方法: 500 ドルの Azure クレジットを利用するには、Azure Pass プロモーション コードを使用してサブスクリプションをアクティブ化します。 [詳細情報。](hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
 
 - [Azure Spatial Anchors を、3D コンテンツのマップ、共有、永続化を行うアプリの構築に利用する方法](https://azure.microsoft.com/services/spatial-anchors/)
 - [Azure Remote Rendering で、高品質で対話型の 3D コンテンツをレンダリングし、デバイスにリアルタイムでストリーミングする方法](https://azure.microsoft.com/services/remote-rendering/)
 
-#### 開発を開始する
+#### <a name="get-started-developing"></a>開発を開始する
 
 エンジンを選択し、ツールをダウンロードして、キーボードからほこりを払います。 Mixed Reality エコシステムへようこそ - 作成する時が来ました。
 
@@ -176,7 +176,7 @@ Azure クレジットを利用する方法: 500 ドルの Azure クレジット�
 |     [Mixed Reality の開発を開始する](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     エンジンを選択し、ツールをダウンロードし、主要な構成要素を追加して、今すぐ構築を開始します。                                  |
 |     [Azure クラウド サービスを探索する](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Azure Remote Rendering と Azure Spatial Anchors を使用して魅力的なイマーシブなエクスペリエンスを構築します。                                 |
 
-#### Developer Edition のその他のリソース
+#### <a name="developer-edition-additional-resources"></a>Developer Edition のその他のリソース
 
 - [HoloLens 開発用のツールをインストールする。](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Unity を使った HoloLens 2 の開発に関する詳細](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)。
@@ -186,7 +186,7 @@ Azure クレジットを利用する方法: 500 ドルの Azure クレジット�
 - [Unreal を使った HoloLens 2 の開発に関する詳細。](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [HoloDevelopers Slack チャネルの他の開発者に情報を提供する](https://holodevelopersslack.azurewebsites.net/)。
 
-## 組織に HoloLens デバイスを展開する
+## <a name="deploy-hololens-devices-for-your-organization"></a>組織に HoloLens デバイスを展開する
 
 HoloLens 2 デバイスは、組織にソリューションを展開できる強力な Mixed Reality デバイスです。 デバイスを組織に効率的に展開して Azure クラウドのすべてのメリットを活用するには、組織のインフラストラクチャを確認することをお勧めします。
 
@@ -197,7 +197,7 @@ HoloLens 2 デバイスは、組織にソリューションを展開できる強
 - [展開ガイド - HoloLens 2 (Remote Assist 付き) のクラウド接続 – 概要](hololens2-cloud-connected-overview.md)
 - [一般的なシナリオ – オフラインの安全な HoloLens 2](hololens-common-scenarios-offline-secure.md)
 
-## ソリューションを探索する
+## <a name="explore-solutions"></a>ソリューションを探索する
 
 HoloLens Mixed Reality デバイス用に構築されたその他のソリューションを確認します。
 
