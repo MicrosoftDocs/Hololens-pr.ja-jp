@@ -11,29 +11,29 @@ ms.sitesec: library
 author: v-miegge
 ms.author: v-miegge
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 5beb3e333634dfbe5080c9d36a7df3f38b0a5f37
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: a1ed1b900f255da9f8db66577f1e88f6bd6881e8
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284068"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439073"
 ---
-# HoloLens (第 1 世代) の操作方法
+# <a name="getting-around-hololens-1st-gen"></a>HoloLens (第 1 世代) の操作方法
 
 ホログラムの世界に入る準備はできていますか?  ここでは、開始にあたって必要な情報をお伝えします。
 
 このガイドでは、Mixed Reality の概要とホログラムを操作するためのジェスチャについて説明し、Windows Holographic を紹介します。
 
-## Mixed Reality について
+## <a name="discover-mixed-reality"></a>Mixed Reality について
 
 HoloLens では、ホログラムが物理環境と一体化して、現実世界の一部であるかのような見た目やサウンドを生み出します。 ホログラムが自分の周囲にあっても、自分の周りに実在するものを見て、自由に動き、他の人々や物体とやり取りすることができます。 このエクスペリエンスを "Mixed Reality" と呼びます。
 
 ホログラフィック フレームによって、ユーザーの目が細部に最も敏感になる位置にホログラムが配置されます。レンズが透明であるため、ユーザーの周辺視野が妨害されません。 立体音響により、ホログラムが自分の背後にある場合でもホログラムを特定できます。 HoloLens はユーザーの環境を認識して理解するため、実際の物体の上および周囲にホログラムを配置できます。アプリやゲームでも同様のことができます。 そのため、ゲームのキャラクターがソファに座ったり、[宇宙ロボットが突然壁から出てきたりすることもあり得ます](https://www.microsoft.com/store/apps/9nblggh5fv3j)。
 
-## 手を使って HoloLens を操作する
+## <a name="use-hololens-with-your-hands"></a>手を使って HoloLens を操作する
 
 HoloLens の操作は、スマートフォンの使用によく似ています。 Holographic のウィンドウ、メニュー、およびボタンは、手を使って操作できます。  ポイント、クリック、タップの代わりに、視線入力、[声](hololens-cortana.md)、手の動きを使用してアプリやホログラムを選択し、HoloLens を操作できます。
 
@@ -41,13 +41,13 @@ HoloLens の操作は、スマートフォンの使用によく似ています�
 
 ここでは、初めて HoloLens を使用する場合の基本事項について説明します。 **スタート** メニューにもジェスチャのチュートリアルがあります。ジェスチャの詳細アプリを探してください。
 
-### ハンド トラッキング フレーム
+### <a name="the-hand-tracking-frame"></a>ハンド トラッキング フレーム
 
 HoloLens には、ユーザーの左右を数フィートずつ見ることのできるセンサーが搭載されています。 手を使用する場合は、手の位置をこのフレーム内に収める必要があります。そうしないと、HoloLens では認識できません。 ユーザーが動くと、フレームも一緒に動きます。  
 
 ![HoloLens のハンド トラッキング フレームを示す画像](./images/hololens-2-gesture-frame.png)
 
-### ブルームでスタート メニューを開く
+### <a name="open-the-start-menu-with-bloom"></a>ブルームでスタート メニューを開く
 
 **スタート** メニューを開くには:
 
@@ -55,7 +55,7 @@ HoloLens には、ユーザーの左右を数フィートずつ見ることの�
 1. ブルーム: すべての指をすぼめてから、手を開きます。
   ![ブルーム ジェスチャを示すアニメーション](./images/hololens-bloom.gif)
 
-### 視線入力とエアタップでホログラムを選択する
+### <a name="select-holograms-with-gaze-and-air-tap"></a>視線入力とエアタップでホログラムを選択する
 
 アプリまたはその他のホログラムを選択するには、選択するホログラムを直接見ながらエアタップします。 これを行うには、次の手順に従います。
 
@@ -64,13 +64,13 @@ HoloLens には、ユーザーの左右を数フィートずつ見ることの�
 1. エアタップ: 指先を下げてから、またすばやく上げます。
    ![エアタップ ジェスチャのアニメーション](./images/hololens-air-tap.gif)
 
-### 声を使用してホログラムを選択する
+### <a name="select-a-hologram-by-using-your-voice"></a>声を使用してホログラムを選択する
 
 1. 視線カーソルは、頭を動かすことで移動するドットです。 これを使用すると、音声コマンドの対象を高い精度で指定できます。
 1. 選択対象のホログラムを見つめます。
 1. ホログラムを選択するには、「選択」と言います。
 
-## ホログラムとアプリ
+## <a name="holograms-and-apps"></a>ホログラムとアプリ
 
 それではジェスチャを試してみましょう。
 
@@ -82,14 +82,14 @@ HoloLens でのアプリの使用は、PC での場合と少し異なります�
 
 アプリ ウィンドウまたはアプリ起動ツールを配置すると、削除するまで保持されます。 Mixed Reality ホームにあるホログラムは、いつでも移動またはサイズ変更できます。
 
-## アプリの移動、サイズ変更、回転
+## <a name="move-resize-and-rotate-apps"></a>アプリの移動、サイズ変更、回転
 
 HoloLens でのアプリの移動とサイズ変更は、PC の場合と少し異なります。 アプリをドラッグする代わりに、見つめる動作と共に[ジェスチャ](https://support.microsoft.com/help/12644/hololens-use-gestures)または[クリッカー](hololens1-clicker.md)を使用します。 アプリ ウィンドウを 3D 空間内で回転させることもできます。
 
 > [!TIP]
 > 音声を使ってアプリの位置やサイズを調節することもできます。アプリを見つめて、「正面から見る」、「もっと大きく」、「もっと小さく」と言います。 または、Cortana を使ってアプリを動かすには、「Hey Cortana, move \**app name\** here」 (コルタナさん、"アプリ名" をここに移動して) と言います。
 
-### アプリを移動する
+### <a name="move-an-app"></a>アプリを移動する
 
 アプリ (アプリ ウィンドウのタイトル バーの部分) を見つめ、次のいずれかの操作を行います。
 
@@ -100,7 +100,7 @@ HoloLens でのアプリの移動とサイズ変更は、PC の場合と少し�
 > [!TIP]
 > アプリを移動するときにドロップする場合は、自分の手を視線で追い、手がジェスチャ フレームから出ないようにしてください。
 
-### アプリのサイズを変更する
+### <a name="resize-an-app"></a>アプリのサイズを変更する
 
 アプリを見つめて、次のいずれかの操作を行います。
 
@@ -111,19 +111,19 @@ HoloLens でのアプリの移動とサイズ変更は、PC の場合と少し�
 > [!TIP]
 > 調節モードでは、任意のホログラムを移動またはサイズ変更できます。
 
-### アプリを回転させる
+### <a name="rotate-an-app"></a>アプリを回転させる
 
 アプリを見つめ、両手で長押しして選択します。 アプリを回転させるには、一方の手を固定し、それを中心にもう一方の手で円弧を描きます。 操作を終えたら、両手の人差し指を上げます。
 
-### アプリ ウィンドウのコンテンツをスクロールする
+### <a name="scroll-content-in-an-app-window"></a>アプリ ウィンドウのコンテンツをスクロールする
 
 アプリ ウィンドウのコンテンツを見つめます。 タップして長押しし、手を少し上方向または下方向へ動かして、コンテンツをスクロールします。
 
-## HoloLens (第 1 世代) クリッカーについて
+## <a name="meet-the-hololens-1st-gen-clicker"></a>HoloLens (第 1 世代) クリッカーについて
 
 [HoloLens (第 1 世代) クリッカー](hololens1-clicker.md)は、ホログラムを操作するもう 1 つの方法です。 HoloLens と[ペアリング](hololens-connect-devices.md)し、見つめる動作と共に使用して、選択、スクロールなどを行います。
 
-## 次のステップ
+## <a name="next-steps"></a>次のステップ
 
 お疲れさまでした。 HoloLens (第 1 世代) を使用する準備ができました。
 
@@ -133,7 +133,7 @@ HoloLens でのアプリの移動とサイズ変更は、PC の場合と少し�
 
 [音声と Cortana について](hololens-cortana.md)
 
-### トラブルシューティング:  ホログラムが見つからない
+### <a name="help-i-dont-see-my-holograms"></a>トラブルシューティング:  ホログラムが見つからない
 
 HoloLens の使用中に配置したホログラムが見つからない場合には、次の方法を試すことができます。
 

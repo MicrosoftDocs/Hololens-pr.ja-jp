@@ -12,18 +12,18 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f0aa400be56d09a843a1b7c9bae78346551ad8af
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: f50a885f6cc82256d146d7f4914aca934e81c0c0
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283918"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439043"
 ---
-# HoloLens 第 1 世代を再起動、リセット、または回復する
+# <a name="restart-reset-or-recover-hololens-1st-gen"></a>HoloLens 第 1 世代を再起動、リセット、または回復する
 
 HoloLens で問題が発生している場合は、再起動、リセット、またはデバイスの回復を使用してデバイスを再フラッシュしてみてください。 この記事では、推奨される回復手順を順に説明します。
 
@@ -32,9 +32,9 @@ HoloLens 2 を復元したい場合は、プロセスが異なるので [RHoloLe
 > [!NOTE]
 > この記事では、HoloLens デバイスとソフトウェアに焦点を当てています。 ホログラムが正しく表示されない場合、ホログラムの品質を改善する要因の詳細については、「**[HoloLens 環境の考慮事項](hololens-environment-considerations.md)**」 を参照してください。
 
-## 再起動
+## <a name="restart"></a>再起動
 
-### Cortana を使用して安全に再起動する
+### <a name="do-a-safe-restart-by-using-cortana"></a>Cortana を使用して安全に再起動する
 
 HoloLens を再起動する最も安全な方法は、Cortana を使用することであり、通常、HoloLens に問題が発生した場合に最初に試みることになります。
 
@@ -48,7 +48,7 @@ HoloLens を再起動する最も安全な方法は、Cortana を使用するこ
 2. 「コルタナさん、再起動して」または「コルタナさん、再起動して」と言います。
 3. Cortana が反応し、確認を求めます。 質問の後に音が鳴るのを待ってから、"はい" と音声で指示します。 デバイスが再起動します。
 
-### 電源ボタンを使って安全に再起動する
+### <a name="use-the-power-button-to-do-a-safe-restart"></a>電源ボタンを使って安全に再起動する
 
 それでもデバイスを再起動できない場合は、**電源** ボタンを使用して再起動してみてください。
 
@@ -59,14 +59,14 @@ HoloLens を再起動する最も安全な方法は、Cortana を使用するこ
 1. 完全にシャットダウンされるまで 1 分待ちます。 ディスプレイが消灯した後もシャットダウンが進行中の場合があります。
 2. **電源** ボタンを 1 秒間押し続けて、デバイスの電源を再度オンにします。
 
-### Windows デバイス ポータルを使用して安全な再起動を行う
+### <a name="do-a-safe-restart-by-using-windows-device-portal"></a>Windows デバイス ポータルを使用して安全な再起動を行う
 
 > [!NOTE]
 > これを行うには、HoloLens を開発者デバイスとして構成する必要があります。 詳細については、[Windows デバイス ポータル](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) をご参照ください。
 
 前の手順が機能しない場合は、[Windows デバイス ポータル](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) を使用してデバイスを再起動してみてください。 右上隅に、デバイスを再起動またはシャットダウンするオプションがあります。
 
-### 安全でない強制再起動を行う
+### <a name="do-an-unsafe-forced-restart"></a>安全でない強制再起動を行う
 
 前の方法でも HoloLens が再起動しない場合は、強制的に再起動させます。 この方法は、バッテリーを取り出して再インストールするのと同じです。 デバイスが破損する可能性があるため、危険です。 その場合は、HoloLens をフラッシュする必要があります。  
 
@@ -80,7 +80,7 @@ HoloLens を再起動する最も安全な方法は、Cortana を使用するこ
 1. **電源** ボタンを 1 秒間押し続けます。
 1. それでも問題が解決しない場合は、すべてのバッテリー インジケーターが消え、画面にホログラムが表示されなくなるまで、**電源** ボタンを 4 秒間押します。 1 分間待ってから、もう一度 **電源** ボタンを押してデバイスの電源を入れます。
 
-## 工場出荷時の設定にリセット
+## <a name="reset-to-factory-settings"></a>工場出荷時の設定にリセット
 
 > [!NOTE]
 > リセットするには、バッテリーを最低 40% 充電する必要があります。
@@ -95,7 +95,7 @@ HoloLens にまだ問題がある場合は、それを工場出荷時の状態�
 1. リセットを確認します。 デバイスが再起動し、回転する歯車とプログレス バーのセットが表示されます。
 1. このプロセスが完了するまで約 30 分待ちます。 リセットが完了し、デバイスは 「すぐに使用可能」 な状態で再起動します。
 
-## オペレーティング システムを再インストールする
+## <a name="reinstall-the-operating-system"></a>オペレーティング システムを再インストールする
 
 再起動してリセットした後もデバイスに問題がある場合は、コンピューターの回復ツールを使用して、HoloLens のオペレーティング システムとファームウェアを再インストールできます。  
 
@@ -107,7 +107,7 @@ Windows Device Recovery Tool を使用して、HoloLens (第 1 世代) に新し
 
 このツールを使用するには、Windows 10 以降を実行し、4 GB 以上の空き容量があるコンピューターが必要です。 このツールを仮想マシンで実行することはできません。
 
-### HoloLens を回復する
+### <a name="recover-your-hololens"></a>HoloLens を回復する
 
 1. コンピューターに [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) をダウンロードしてインストールします。
 1. HoloLens に付属の Micro USB ケーブルを使用して、HoloLens (第 1 世代) をコンピューターに接続します。
@@ -115,7 +115,7 @@ Windows Device Recovery Tool を使用して、HoloLens (第 1 世代) に新し
 
 HoloLens (1 番目の世代) が自動的に検出されない場合は、[**デバイスが検出されませんでした**] を選びます。 次に、指示に従ってデバイスを回復モードにします。
 
-### 手動フラッシュ モード
+### <a name="manual-flashing-mode"></a>手動フラッシュ モード
 
 デバイスが検出されない場合は、次の手順に従って、フラッシュ モードにします。
 

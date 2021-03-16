@@ -6,24 +6,24 @@ ms.sitesec: library
 author: JesseMcCulloch
 ms.author: jemccull
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 8/12/2019
 ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: 0361af22fa6d84f636b841f6a311edcdace5a937
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: 30912fda53d5d8b9ea5e60f29eeb93ea29cca2d2
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283168"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439083"
 ---
-# HoloLens (第 1 世代) の使用準備
+# <a name="get-your-hololens-1st-gen-ready-to-use"></a>HoloLens (第 1 世代) の使用準備
 
 初めて HoloLens (第1世代) をセットアップする場合の手順を説明します。
 
-## HoloLens (第 1 世代) を充電する
+## <a name="charge-your-hololens-1st-gen"></a>HoloLens (第 1 世代) を充電する
 
 HoloLens を充電するには、付属の Micro USB ケーブルを使って、電源アダプターを充電ポートに接続します。 次に、電源アダプターを電源コンセントに差し込みます。 デバイスの充電中は、バッテリー インジケーターが波状に光ります。
 
@@ -38,7 +38,7 @@ HoloLens の電源が入っているときは、バッテリー インジケー�
 
 充電率と速度は、デバイスが実行されている環境によって異なる場合があります。
 
-## フィット調整
+## <a name="adjust-fit"></a>フィット調整
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/be3cb527-f2f1-4f85-b4f7-a34fbaba980d]
 
@@ -50,7 +50,7 @@ HoloLens の電源が入っているときは、バッテリー インジケー�
 |4. デバイスのデバイス アーム部分を持って、頭に装着します。 ヘッドバンドが額の最上部にあることを確認してから、調整ノブを回して締めます。|![手順 4、デバイスを装着してヘッドバンドを調整する](./images/FitGuideStep4.png)|
 |5. バイザーをスライドして元の状態に戻し、デバイスのフィット感を確認します。 ヘッドバンドは、スピーカーが耳より上になるように、額の最上部 (生え際のすぐ下) に固定します。 レンズが両目に対して中央になるように調整します。|![手順 5、バイザーを後ろへスライドして、フィット感を確認する](./images/FitGuideSetep5.png)|
 
-## HoloLens の電源を入れる
+## <a name="turn-on-your-hololens"></a>HoloLens の電源を入れる
 
 HoloLens のオン/オフを切り替える場合や、スタンバイ モードにする場合は、電源ボタンを使用します。
 
@@ -63,25 +63,25 @@ HoloLens がオフになっているかスタンバイ状態のときは、電�
 > [!TIP]
 > HoloLens を再起動するには、「Hey Cortana, reboot the device」 (コルタナさん、デバイスを再起動) と言います。
 
-### HoloLens をスタンバイ状態にする
+### <a name="put-hololens-in-standby"></a>HoloLens をスタンバイ状態にする
 
 HoloLens がオンであるときにスタンバイ状態にするには、電源ボタンを 1 回押します。 バッテリー インジケーターが消えます。 スタンバイから復帰するには、電源ボタンをもう一度押します。
 
 HoloLens は、非アクティブな状態が 3 分間続くと自動的にスタンバイ状態に移行します。 スタンバイ状態で、4 時間が経過するかバッテリー レベルが 10% 低下すると、自動的にシャットダウンします。
 
-### HoloLens をシャットダウンする
+### <a name="shut-down-hololens"></a>HoloLens をシャットダウンする
 
 HoloLens をシャットダウンする (電源を切る) には、電源ボタンを 4 秒間押し続けます。 バッテリー インジケーターが 1 つずつ消え、デバイスがシャットダウンします。
 
 HoloLens は、バッテリー レベルが 1% まで低下すると、電源に接続されている状態であっても自動的にシャットダウンします。 バッテリーを 3% まで充電すると、HoloLens をもう一度オンにすることができます。
 
-## 音量と明るさを調整する
+## <a name="adjust-volume-and-brightness"></a>音量と明るさを調整する
 
 デバイスのアーム上部に、明るさボタンと音量ボタンがあります。右側が音量ボタン、左側が明るさボタンです。
 
 ![HoloLens の各ボタンを示す画像](./images/hololens-buttons.jpg)
 
-## HoloLens のインジケーター ライト
+## <a name="hololens-indicator-lights"></a>HoloLens のインジケーター ライト
 
 ![HoloLens のインジケーター ライトを示す画像](./images/hololens-lights.png)
 
@@ -97,13 +97,13 @@ HoloLens のインジケーター ライトの意味がわからない場合、 
 |すべて点灯して 1 つが短時間点滅し、すべてオフになる。 |バッテリーが極度に不足しています。 HoloLens を充電する必要があります。 |
 |すべてスクロールして 1 つが点滅し、すべてスクロールする。 |バッテリーが極度に不足しています。 HoloLens が充電中です。 |
 
-## 安全性と快適性
+## <a name="safety-and-comfort"></a>安全性と快適性
 
-### 安全な環境で使用する
+### <a name="use-in-safe-surroundings"></a>安全な環境で使用する
 
 HoloLens は、障害物やつまずく危険性のない安全な場所でお使いください。 乗り物の運転中や、その他危険を伴う可能性のある行為を行っているときなど、視野に障害物があってはならない場合や、細心の注意を払う必要がある場合は、使用しないでください。
 
-### 快適性を保つ
+### <a name="stay-comfortable"></a>快適性を保つ
 
 HoloLens を使用する最初の数セッションは短時間にとどめ、必ず休憩を取りましょう。 不快感を覚えた場合は使用を中止し、気分が良くなるまで休んでください。 考えられる症状には、一時的な吐き気、乗り物酔い、目まい、方向感覚障害、頭痛、疲労、疲れ目、ドライ アイなどがあります。
 

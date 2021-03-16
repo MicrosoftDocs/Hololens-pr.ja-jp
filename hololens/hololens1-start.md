@@ -8,23 +8,23 @@ ms.author: v-tea
 ms.topic: article
 ms.date: 8/12/2019
 manager: jarrettr
-ms.localizationpriority: high
+ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: aca7b287b3d26ab37ddb90e4245a1e0b3adc17e2
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: f0ec62e55f15fda6d5a8304ea2bb77039d644b9e
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283928"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439063"
 ---
-# HoloLens (第 1 世代) のセットアップ
+# <a name="set-up-your-hololens-1st-gen"></a>HoloLens (第 1 世代) のセットアップ
 
 初めて HoloLens の電源を入れたときは、デバイスの調整、デバイスのセットアップ、サインインの手順を案内するガイドが表示されます。  この記事では、HoloLens (第 1 世代) の初回起動時とセットアップ時のエクスペリエンスについて説明します。
 
 次のセクションでは、HoloLens とホログラムの操作方法を学びます。 直接この記事に進むには、「[HoloLens (第 1 世代) の概要](hololens1-basic-usage.md)」をご覧ください。
 
-## 開始する前に
+## <a name="before-you-start"></a>開始する前に
 
 始める前に、以下が利用可能であることを確認してください。
 
@@ -41,7 +41,7 @@ ms.locfileid: "11283928"
 > - HoloLens を初めて使うときは、[Cortana](hololens-cortana.md) が既定でオンになり、ガイドが提供されます (ただし、デバイスのセットアップが完了するまでユーザーの質問に答えることはできません)。 Cortana の使用は、Cortana の設定を使用して、いつでもオフに変更できます。
 > - HoloLens の中国語版または日本語版に切り替えるには、その言語のビルドを PC にダウンロードしてから HoloLens にインストールする必要があります。 詳細については、「[HoloLens (第 1 世代) のローカライズされたバージョンをインストールする](hololens1-install-localized.md)」を参照してください。
 
-## Hololens の起動と Windows のセットアップ
+## <a name="start-your-hololens-and-set-up-windows"></a>Hololens の起動と Windows のセットアップ
 
 初めて HoloLens を起動する場合は、最初の作業として、デバイスで Windows Holographic をセットアップする必要があります。
 
@@ -59,7 +59,7 @@ ms.locfileid: "11283928"
 
 1. Wi-Fi ネットワークから取得された情報に基づいて、デバイスでタイム ゾーンが設定されます。
 
-## 調整
+## <a name="calibration"></a>調整
 
 Cortana の紹介後、次のセットアップ手順は調整です。 HoloLens のエクスペリエンスを最適化するには、セットアップ中に調整プロセスを完了する必要があります。
 
@@ -73,7 +73,7 @@ HoloLens の調整では、片目ごとに 6 つのターゲットに指を合�
 
 お疲れさまでした。 セットアップは完了です。HoloLens の使用を開始できます。
 
-## 次のステップ
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [HoloLens (第 1 世代) の概要](hololens1-basic-usage.md)
