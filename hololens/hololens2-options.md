@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7e8e333471df139ced3613801d07a5bfaafd8d30
-ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
+ms.openlocfilehash: f34517a74a7a47f4687c094e63b1550a7d3ff4fb
+ms.sourcegitcommit: 257720deb27f3bbc301175ce2a4afa79001862d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408407"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "11440348"
 ---
 # <a name="hololens-2-overview"></a>HoloLens 2 の概要
 
@@ -46,7 +46,19 @@ HoloLens は、*ホログラムを利用した* Mixed Reality デバイスであ
 
 - <sup>1</sup> - 500 ドルの Azure クレジット、および Unity Pro と Pixyz プラグインの 3 か月の試用版が含まれています。
 - <sup>2</sup> - Microsoft が欠陥のあるデバイスを受け取る前に、翌日配送または迅速な配送 (利用可能なオプションの高速化) で交換デバイスを受け取ります。
-- <sup>3</sup> - HoloLens 2 搭載の Trimble XR10 エディションの保証、サポート、認定に関する質問については、[Trimble にお問い合わせください](https://fieldtech.trimble.com/en/contact-support)。
+- <sup>3</sup> - HoloLens 2 Edition 搭載の Trimble XR10 の保証、サポート、認定に関する質問については、[Trimble にお問い合わせください](https://fieldtech.trimble.com/en/contact-support)。
+
+## <a name="countries-where-hololens-2-is-available"></a>HoloLens 2 が利用可能な国
+
+<br>
+
+| HoloLens 2 Edition                  | サポートされる市場               |
+|-------------------------------------------| ----------------------------------------| 
+| HoloLens 2 | 米国、カナダ、ドイツ、フランス、英国、アイルランド、中国、日本、オーストラリア、イタリア、ニュージーランド、オランダ、スイス、スペイン、オーストリア、スウェーデン、フィンランド、ノルウェー、デンマーク、ベルギー、ポルトガル、ポーランド、シンガポール、香港、台湾、韓国 |
+| HoloLens 2 (Remote Assist 付き) | オーストラリア、日本、カナダ、米国、オーストリア、ベルギー、デンマーク、フィンランド、フランス、ドイツ、イタリア、オランダ、ノルウェー、スペイン、スウェーデン、スイス、英国、アイルランド <sup>1</sup> 
+| HoloLens 2 Industrial Edition *(発売時)* | 米国、カナダ、ドイツ、フランス、英国、アイルランド、中国、日本、オーストラリア、イタリア、ニュージーランド、オランダ、スイス、スペイン、オーストリア、スウェーデン、フィンランド、ノルウェー、デンマーク、ベルギー、ポルトガル、ポーランド、シンガポール、香港、台湾、韓国 |
+| HoloLens 2 Development Edition | カナダ、ドイツ、フランス、英国、アイルランド、日本、オーストラリア、イタリア、スイス、ニュージーランド |
+- <sup>1</sup> このリストは動的です。更新プログラムを確認してください
 
 ## <a name="options-overview"></a>オプションの概要
 
