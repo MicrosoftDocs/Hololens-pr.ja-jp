@@ -13,14 +13,14 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: a5c86a5420f3a9b0705667161e6b9440134731d7
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 972bbc689505d42993cf47d82351ceeb79a0606b
+ms.sourcegitcommit: 257720deb27f3bbc301175ce2a4afa79001862d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284128"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "11440338"
 ---
-# 管理者不要のオペレーティング システム
+# <a name="admin-less-operating-system"></a>管理者不要のオペレーティング システム
 
 HoloLens 2 は、管理者グループのサポートを無効にして、すべてのサードパーティ UWP アプリケーション コードを AppContainer サンドボックス内で標準ユーザーとしてのみ実行できるようにすることで、特権昇格の対象領域を最小化します。 このコードには、すべての AppContainers がアクセスできるリソースだけでなく、昇格されていないユーザーに対する、アプリケーションで明示的に指定された機能によって保護されたリソースへのアクセス権のみが許可されます。
 これらのアプリケーション機能には、引き続き 3 階層の分類モデルがあります。
@@ -28,15 +28,19 @@ HoloLens 2 は、管理者グループのサポートを無効にして、すべ
   * 制限されます
   * Windows
 
-Windows コンポーネントは、システム UWP を介して AppContainer サンドボックスを利用することもできます。 ユニバーサル Windows プラットフォーム (UWP) の詳細については、「[UWP ドキュメント](https://docs.microsoft.com/windows/uwp/)」を参照してください。 また、特権を削減する必要がある Windows コンポーネント (ブラウザーのコンテンツ ページ、パーサーなど) は、すべての AppContainers がアクセスできるリソースのセットへのアクセスを遮断する、Less Privileged AppContainer (LPAC) サンドボックスを使用します。
+Windows コンポーネントは、システム UWP を介して AppContainer サンドボックスを利用することもできます。 ユニバーサル Windows プラットフォーム (UWP) の詳細については、「[UWP ドキュメント](https://docs.microsoft.com/windows/uwp/)」を参照してください。 また、特権を削減する必要がある Windows コンポーネント (ブラウザーのコンテンツ ページ、またはパーサーなど) は、すべての AppContainers がアクセスできるリソースのセットへのアクセスを遮断する、Less Privileged AppContainer (LPAC) サンドボックスを使用します。
 
-## デバイスの所有者
+## <a name="device-owner"></a>デバイスの所有者
 
 最後に、デバイスのテナントへの参加やユーザーの管理など、特定のデバイス全体の操作の実行は、"デバイス オーナー" にのみ許可されます。 デバイス上のユーザーは、次のいずれかの手順でこのグループに入ることができます。
   * デバイスの最初のユーザーは、常にオーナーとして指定されます。 
-    * このルールの例外は、デバイスが Azure AD に参加している場合、参加を実行したユーザーがデバイスの所有者になることです。 これは、たとえば、デバイスが Autopilot 経由で Azure AD に参加している場合に適用されます。この場合、デバイスにサインインした最初のユーザーは Azure AD デバイスに参加していないので、デバイスの所有者にはなれません。 Azure AD に参加しているデバイスでデバイスの所有者になるユーザーの詳細については、[「ローカル管理者の割り当て」のドキュメント](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin)を参照してください (ただし、管理者は HoloLens に存在しないので、「ローカル管理者」を「デバイスの所有者」としてお読みください)。
-  * ユーザーがデバイス上の別のオーナーによって設定 UX からオーナーに昇格された場合。
-  * デバイスの所有者が利用できなくなった場合 (会社を離れるなど)、かつデバイスが Azure AD に参加している場合、テナント管理者は Azure Portal でデバイスの所有者を新しいユーザーに変更できます。
-Azure AD テナントのグローバル管理者は、前の手順を必要とせずに、デバイスの所有者として暗黙の内にサインインされます。 
+> [!IMPORTANT]
+>Azure AD ユーザーの場合、このルールの例外は、デバイスが Azure AD でオートパイロットまたは非実ユーザーを使用するバルク Azure AD を介して参加している場合です。 この場合、Azure portal で"グローバル管理者"または"デバイス管理者"の役割が割り当てられていない限り、デバイスにサインインする最初の AAD ユーザーを自動的にデバイスの所有者にすることはできません。 詳細については、次の表をご覧ください。  
 
-IT 管理者は [プライバシー](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy) ポリシーを使用して、アクセスできるアプリを管理できます。 
+  * ユーザーがデバイス上の別のオーナーによって設定 UX からオーナーに昇格された場合。
+  * デバイスの所有者が利用できなくなった場合 (会社を離れた)、かつデバイスが Azure AD に参加している場合、テナント管理者は Azure portal でデバイスの所有者を新しいユーザーに変更できます。 Azure AD テナントのグローバル管理者とデバイス管理者は、前の手順を必要とせずに、デバイスの所有者として暗黙の内にサインインされます。  
+
+ IT 管理者は [プライバシー](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy) ポリシーを使用して、アクセスできるアプリを管理できます。 
+
+> [!NOTE]
+> Azure AD に参加しているデバイスでデバイスの所有者になるユーザーの詳細については、[「ローカル管理者の割り当て」のドキュメント](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin)を参照してください (ただし、管理者は HoloLens に存在しないので、「ローカル管理者」を「デバイスの所有者」としてお読みください)。
