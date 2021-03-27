@@ -54,6 +54,12 @@
 #### [クラウド接続 - 展開](hololens2-cloud-connected-deploy.md)
 #### [クラウド接続 - 管理](hololens2-cloud-connected-maintain.md)
 ### [リモート アシストを使用した外部クライアントへの HoloLens 2 の展開](hololens2-deployment-guide.md)
+### Dynamic 365 Guides を使用した企業接続 HoloLens 2 の展開
+#### [企業接続 - 展開の概要](hololens2-corp-connected-overview.md)
+#### [企業接続 - 準備](hololens2-corp-connected-prepare.md)
+#### [企業接続 - 構成](hololens2-corp-connected-configure.md)
+#### [企業接続 - 展開](hololens2-corp-connected-deploy.md)
+#### [企業接続 - メンテナンス](hololens2-corp-connected-maintain.md)
 ### [オフライン セキュリテイ保護](hololens-common-scenarios-offline-secure.md)
 ## セキュリティ
 ### [セキュリティの概要](security-overview.md)
