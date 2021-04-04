@@ -10,29 +10,32 @@ ms.localizationpriority: high
 ms.date: 9/15/2020
 ms.reviewer: v-evmill
 audience: ITPro
-manager: ''
+manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1bfac948b493c2e55207e45042d6b022c1818969
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: de9f2c4f136a26a5956ba8a8f3b9faba1e90ea66
+ms.sourcegitcommit: 86dba9e8a5e25f0bf29f4c0580970c25c44b7359
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283438"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "11470055"
 ---
-# HoloLens 2 の証明書とネットワーク プロファイルを準備する
+# <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>HoloLens 2 の証明書とネットワーク プロファイルを準備する
 
 証明書ベースの認証は、HoloLens 2 を使用するお客様の共通の要件です。 Wi-Fi にアクセスしたり、VPN ソリューションに接続したり、組織内の内部リソースにアクセスしたりするために証明書が必要となる可能性があります。
 
-HoloLens 2 デバイスは通常、Azure Active Directory (Azure AD) に参加し、Intune やその他の MDM プロバイダーによって管理されるため、ご利用の MDM ソリューションに統合されているネットワーク デバイス登録サービス (SCEP) や公開キー暗号化標準 (PKCS) 証明書インフラストラクチャを使用して、そのような証明書を展開する必要があります。
+HoloLens 2 デバイスは通常、Azure Active Directory (Azure AD) に参加し、Intune やその他の MDM プロバイダーによって管理されるため、ご利用の MDM ソリューションに統合されているネットワーク デバイス登録サービス (SCEP) や公開キー暗号化標準 (PKCS) 証明書インフラストラクチャを使用して、そのような証明書を展開する必要があります。 
 
-## 証明書の要件
+>[!NOTE]
+> MDM プロバイダーがない場合でも、**[設定] > [更新とセキュリティ] > [証明書マネージャー]** に移動して、[Windows 構成デザイナー](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab)の[プロビジョニング パッケージ](https://docs.microsoft.com/hololens/hololens-provisioning#steps-for-creating-provisioning-packages)または[証明書マネージャー](https://docs.microsoft.com/hololens/certificate-manager)を介して証明書を展開できます。
+
+## <a name="certificate-requirements"></a>証明書の要件
 SCEP や PKCS インフラストラクチャを介して証明書を展開するには、ルート証明書が必要です。 組織内のその他のアプリケーションやサービスでは、HoloLens 2 デバイスにもルート証明書を展開する必要がある可能性があります。 
 
-## Wi-Fi 接続要件
+## <a name="wi-fi-connectivity-requirements"></a>Wi-Fi 接続要件
 企業ネットワークに必要な Wi-Fi 構成をデバイスに自動的に提供できるようにするには、Wi-Fi 構成プロファイルが必要です。 Intune やその他の MDM プロバイダーを構成して、これらのプロファイルをデバイスに展開することができます。 ネットワーク セキュリティによりデバイスをローカル ドメインの一部にする必要がある場合は、ご利用の Wi-Fi ネットワーク インフラストラクチャを評価し、HoloLens 2 デバイスとの互換性があることを確認する必要がある可能性があります (HoloLens 2 デバイスは Azure AD 参加済みのもののみ)。
 
-## 証明書インフラストラクチャを展開する
+## <a name="deploy-certificate-infrastructure"></a>証明書インフラストラクチャを展開する
 既存の SCEP や PKCS インフラストラクチャが存在しない場合は、1 つ用意する必要があります。 認証に SCEP や PKCS 証明書の使用をサポートするために、Intune では[証明書コネクタ](https://docs.microsoft.com/mem/intune/protect/certificate-connectors)の使用が必要になります。
 
 > [!NOTE]
@@ -40,7 +43,7 @@ SCEP や PKCS インフラストラクチャを介して証明書を展開する
 
 詳細については、「[Configure a certificate profile for your devices in Microsoft Intune (Microsoft Intune でデバイスの証明書プロファイルを構成する)](https://docs.microsoft.com/intune/certificates-configure)」を参照してください。
 
-## 証明書と Wi-Fi/VPN プロファイルを展開する
+## <a name="deploy-certificates-and-wi-fivpn-profile"></a>証明書と Wi-Fi/VPN プロファイルを展開する
 証明書とプロファイルを展開するには、次の手順に従います。
 1.  ルート証明書と中間証明書のそれぞれにプロファイルを作成します (「[Create trusted certificate profiles (信頼された証明書プロファイルを作成する)](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)」を参照してください)。各プロファイルには、DD/MM/YYYY 形式による有効期限を含む説明が必要です。 **有効期限のない証明書プロファイルは、展開されません。**
 1.  SCEP 証明書または PKCS 証明書のそれぞれにプロファイルを作成します (「[Create a SCEP certificate profile or Create a PKCS certificate profile (SCEP 証明書プロファイルの作成または PKCS 証明書プロファイルの作成)](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)」を参照してください)。各プロファイルには、DD/MM/YYYY 形式による有効期限を含む説明が必要です。 **有効期限のない証明書プロファイルは、展開されません。**
@@ -57,7 +60,7 @@ SCEP や PKCS インフラストラクチャを介して証明書を展開する
 
 4.  企業 VPN のそれぞれにプロファイルを作成します (「[Windows 10 and Windows Holographic device settings to add VPN connections using Intune (Windows 10 と Windows Holographic デバイスの設定で Intune を使用して VPN 接続を追加する)](https://docs.microsoft.com/intune/vpn-settings-windows-10)」を参照してください)。
 
-## 証明書のトラブルシューティング
+## <a name="troubleshooting-certificates"></a>証明書のトラブルシューティング
 
 証明書が正しく展開されていることを検証する必要がある場合は、デバイスの[証明書マネージャー](certificate-manager.md)を使用して、証明書が存在することを確認してください。  
 
