@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 04/01/2021
+ms.date: 3/4/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ebd3992458daa94726e73742b1fba4d7fa97a48b
-ms.sourcegitcommit: ad725427c2c88e73df2e5753001a26502b2327de
+ms.openlocfilehash: 9b4ce7d05849191ae242396f50df740f25a2cdfe
+ms.sourcegitcommit: 86dba9e8a5e25f0bf29f4c0580970c25c44b7359
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474842"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "11470065"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens の Insider Preview
 
@@ -167,15 +167,12 @@ Insiders には、新しい Microsoft Edge の新しい Microsoft Edge アイコ
 - "見て、言う"
 - 印刷
 
-**トップ ブラウザーの既知の問題:**
-- Wi-Fi接続を対象とするプロキシ ポリシーであるWi-Fi構成は、現在、新しい Microsoft Edge では動作しません。 OS 更新プログラムの公開前に、この問題のブロックを解除するために積極的に取り組み中です。
-- 新しい Microsoft Edge では、ホログラフィック キーボードの拡大鏡プレビューが無効になっています。 倍率が正しく動作したら、今後の更新でこの機能を再び有効にしてください。
-- 新しい Microsoft Edge では、日本語キーボードの 2 つの文字が期待通り動作しません。 この問題は根本原因であり、近日修正する必要があります。
+**既知のブラウザーの上位の問題:**
+- デバイスをリセットすると、新しい Microsoft Edge が削除されます
+- ホログラフィック キーボードの拡大鏡のプレビューに正しくないコンテンツが表示される
+- スクロールが時として吃音を引き出す場合があります
 - Microsoft Store アプリの Web リンクがブラウザーを起動しない場合があります
-- 別のブラウザー ウィンドウを開いてアクティブにしている場合、間違ったブラウザー ウィンドウからオーディオが再生される場合があります。 この問題を回避するには、オーディオを再生しているはずの他のアクティブ ウィンドウを閉じます。
-- "フォローする" モードでブラウザー[](hololens2-basic-usage.md#follow-me-stop-following)ウィンドウからオーディオを再生すると、"フォローする" モードを無効にした場合、オーディオは再生を続行します。 この問題を回避するには、「フォローする」モードを無効にする前にオーディオ再生を停止するか **、X** ボタンでウィンドウを閉じます。
-- アクティブな Microsoft Edge ウィンドウを操作すると、他の 2D アプリ ウィンドウが予期せず非アクティブになる可能性があります。 これらのウィンドウは、もう一度操作して再アクティブ化できます。
-- 別のアプリまたは PDF のような特定の種類のドキュメントから Web リンクを開いた場合、ブラウザーで 2 番目の空白のタブが開く場合があります (Web リンクまたはファイル リンクの内容で作成された新しいタブに加えて)。 この問題を回避するには、追加の空白のタブを閉じてください。
+- 以前に別のブラウザー ウィンドウからオーディオを再生した場合、間違ったブラウザー ウィンドウからオーディオが再生される可能性があります。
 
 #### <a name="microsoft-edge-insider-channels"></a>Microsoft Edge Insider チャネル
 
@@ -252,14 +249,16 @@ WDAC ポリシーを更新して新しい[](windows-defender-application-control
 1. [エア タップ](hololens2-basic-usage.md#select-using-air-tap) で再生コントロールを表示します。 手 [線とエア](hololens2-basic-usage.md#select-using-air-tap) タップを使用して、再生/一時停止、前方/背面のスキップ、キャプションのオン/オフの切り替え、エクスペリエンスの停止 (イマーシブ ビューを終了) を行います。 再生コントロールは、数秒の非アクティブ状態の後に消えます。
 
 #### <a name="top-webxr-and-360-viewer-known-issues"></a>WebXR と 360 ビューアーの既知の問題
+- WebXR エクスペリエンスでは、頭を傾けるか、環境の周りを移動するときにホログラムがシフトまたは傾く場合があります。
 - WebXR エクスペリエンスの複雑さによっては、フレームレートが低下したり、吃音が発生したりする場合があります。
-- WebXR での多関節手関節のサポートは、既定では有効になっていません。 開発者は、"WebXR ハンド入力" `edge://flags` をオンにしてサポートを有効にできます。
+- 連結された手の関節は、WebXR ではまだ使用できません。
 - WebXR または 360 ビューアー エクスペリエンスを終了する場合、複合現実ホーム内のホログラムが再表示するには 30 秒以上かかる場合があります。
 - YouTube 以外の Web サイトから 360 のビデオが期待通り動作しない場合があります。
-- 現在、HoloLens 2 の 360 ビューアーではキャプションが無効になっています。 今後の更新プログラムでこの機能を有効にする予定です。
+- 360 ビデオがイマーシブ ビューに入らない場合 (または複合現実ヘッドセット ボタンが表示されない) 場合は、ページを更新してみてください。
+- HoloLens 2 の 360 ビューアーでは、キャプションはまだ表示されません。
 - 360 ビューアーでビデオを一時停止すると、ビデオのレンダリングが停止します (ただし、再生ボタンを正しく選択すると、再生が再開されます)。
 - 360 ビューアーの [次のビデオ] ボタンは現在機能しません。
-- 2D ビデオはイマーシブな "シアター" モードで再生できますが、フレームレートは 30 fps 未満になる場合があります。
+- 2D ビデオはイマーシブな "シアター" モードで再生できますが、フレームレートは 30 fps 未満になります。
 
 #### <a name="providing-feedback-on-webxr-and-360-viewer"></a>WebXR と 360 ビューアーに関するフィードバックの提供
 
@@ -338,8 +337,11 @@ HoloLens 2 に保存されたカスタム カラー プロファイルに不満�
 
 #### <a name="top-display-color-calibration-known-issues"></a>トップディスプレイの色の調整に関する既知の問題
 
-- [設定] ページで、カラー プロファイルが最後に変更された日時を示す状態文字列は、[設定] のページを再読み込みするまで、最新の状態になります。
+- [設定] ページで、カラー プロファイルが最後に変更された日時を示す状態文字列は、[設定] のページを再読み込みするまで、最新の状態になります。 
     - 回避策: 別の [設定] ページを選択し、[調整] ページを再選択します。
+- HoloLens 2 が表示色調整の実行中にスリープ状態になる場合、後で複合現実ホームに戻り、ディスプレイの明るさレベルは引き続き淡色表示されます。
+- デバイスの左側にある明るさボタンを何度か上下に押してから、期待通りに動作する必要がある場合があります。
+- ローカリゼーションがすべての市場で完了しているとは言え
 
 ### <a name="default-app-picker"></a>既定のアプリピッカー
 
@@ -358,9 +360,6 @@ HoloLens 2 に保存されたカスタム カラー プロファイルに不満�
  <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
 ### <a name="office-web-app"></a>Office Web アプリ
-
->[!NOTE]
->Windows Insider ビルド 20325.1000 では、Office Web アプリはプレインストールされなくなりました (今後の OS 更新プログラムの公開リリースでは事前インストールされません)。 Web アプリをOfficeするには、アドレス バーの [利用可能なアプリ] または [Officeインストール https://www.office.com ] ボタンをクリックします。 **** **** [インストール **] を** 選択して確認します。
 
 [Office] メニューの [すべてのアプリ] リストに Web アプリが追加されました。 この Web アプリは、スタート画面またはアンインストール画面にピン留めすることもできます。 これは Web アプリなので、その機能は、訪れたユーザーが体験した機能と完全に一致します https://www.office.com 。 Office Web アプリの機能は、HoloLens 2 がアクティブなインターネット接続を持つ場合にのみ使用できます。
 
@@ -586,15 +585,9 @@ HoloLens Insider ビルド 20279.1006+を実行している PC と他の HoloLen
 
 - [オフライン診断には、](hololens-diagnostic-logs.md#offline-diagnostics) シリアル番号と OS バージョンの追加のデバイス情報も含まれます。
 
-### <a name="known-issues-and-work-around"></a>既知の問題と回避方法
 
-#### <a name="pairing-hololens-to-pc"></a>HoloLens と PC のペアリング
 
-Windows Insider ビルド 20325.1000 より前に、ユーザーが Windows [Holographic、バージョン 20H2、](hololens-release-notes.md#windows-holographic-version-20h2) または [Windows Holographic バージョン 2004](hololens-release-notes.md#windows-holographic-version-2004) でペアリング資格情報を設定し、Windows Insider ビルドに更新した場合、holoLens と PC をペアリングするための以前のセット資格情報は、Visual Studio 経由などのアプリの展開とデバッグを行う目的で動作しなくなりました。 Windows Insider ビルド 20325.1000 では、この問題が修正され、デバイス ポータルの使用を再開するための追加のアクションは必要とされません。
 
-[Insider](#ffu-download-and-flash-directions)ビルドでデバイスをフラッシュしたユーザーは、デバイスを PC とペアリングするために、デバイスを (20325.1000 以上または GA ビルドに) 再フラッシュする必要があります。
-
-Windows Insiders に登録していないユーザーで、一般に利用可能な場合に機能更新プログラムを利用するユーザーは影響を受けられません。
 
 
 ## <a name="start-receiving-insider-builds"></a>Insider ビルドの受信の開始
