@@ -1,6 +1,6 @@
 ---
-title: Windows Defender アプリケーション制御 - WDAC
-description: アプリケーション コントロールWindows Defender概要と、それを使って HoloLens Mixed Reality デバイスを管理する方法について説明します。
+title: Windows Defender アプリケーション制御-WDAC
+description: Windows Defender アプリケーション制御の概要と、それを使用して HoloLens mixed reality デバイスを管理する方法について説明します。
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,74 +13,74 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 23c9a274387424e8f084a4729ee621e130820716
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284138"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309404"
 ---
-# Windows Defender アプリケーション制御 - WDAC
+# <a name="windows-defender-application-control---wdac"></a>Windows Defender アプリケーション制御-WDAC
 
-WDAC を使うと、IT 管理者はデバイス上のアプリの起動をブロックするデバイスを構成できます。 これは、キオスク モードなどのデバイス制限の方法とは異なります。キオスク モードでは、ユーザーにデバイス上のアプリを非表示にする UI が表示されますが、起動は可能です。 WDAC が実装されている間、アプリは [すべてのアプリ] の一覧に表示されますが、WDAC はそれらのアプリとプロセスをデバイス ユーザーが起動できないのを停止します。
+WDAC を使用すると、IT 管理者は、デバイスでのアプリの起動をブロックするようにデバイスを構成できます。 これは、キオスクモードなどのデバイス制限の方法とは異なり、デバイス上のアプリを非表示にする UI がユーザーに表示されますが、それでも起動できます。 WDAC が実装されている場合でも、アプリはすべてのアプリの一覧に表示されますが、WDAC はデバイスユーザーがこれらのアプリとプロセスを起動できなくなります。
 
-1 つのデバイスに複数の WDAC ポリシーを割り当てることができます。 システムに複数の WDAC ポリシーが設定されている場合、最も制限の厳しいポリシーが有効になります。 
+1つのデバイスに複数の WDAC ポリシーを割り当てることができます。 システムに複数の WDAC ポリシーが設定されている場合、最も制限の厳しいポリシーが有効になります。 
 
 > [!NOTE]
-> エンド ユーザーが WDAC によってブロックされているアプリを起動しようとすると、HoloLens では、そのアプリを起動できないという通知は表示されません。
+> HoloLens でブロックされているアプリをエンドユーザーが起動しようとすると、そのアプリを起動できないことを知らせる通知を受信しません。
 
-Microsoft Intune で [HoloLens 2](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)デバイス上のアプリを許可またはブロックするために WDAC と Windows PowerShell を使用する方法について説明するガイドを次に示します。
+次に、 [WDAC および Windows PowerShell を使用して、Microsoft Intune で HoloLens 2 デバイス上のアプリを許可またはブロック](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)する方法について説明します。
 
-ユーザーが最初の例の手順を使って Windows 10 PC にインストールされているアプリを検索する場合、結果を絞り込むには、いくつかの試行が必要な場合があります。
+最初の例の手順を使用して Windows 10 PC にインストールされているアプリをユーザーが検索する場合、結果を絞り込むためにいくつかの試行が必要になることがあります。
 
 ```powershell
 $package1 = Get-AppxPackage -name *<applicationname>*
 ``` 
 
-パッケージの完全な名前が分からない場合は、'Get-AppxPackage -name \*YourBestGuess\*' を数回実行して検索する必要があります。 名前を実行すると、'$package 1 = Get-AppxPackage -name Actual.PackageName' が実行されます。
+パッケージの完全な名前がわからない場合は、' Get-appxpackage-name \* YourBestGuess ' を何回か実行しなければならないことがあり \* ます。 名前を指定すると、' $package 1 = Get-AppxPackage-name PackageName ' という名前になります。
 
-たとえば、Microsoft Edge で次のコマンドを実行すると、複数の結果が返されますが、その一覧から、必要な完全な名前が Microsoft.MicrosoftEdge である必要があります。
+たとえば、Microsoft Edge に対して次のコードを実行すると複数の結果が返されますが、その一覧から、必要な完全な名前が MicrosoftEdge であることを確認できます。
 
 ```powershell
 Get-AppxPackage -name *edge*
 ``` 
 
-## HoloLens 上のアプリのパッケージ ファミリ名
+## <a name="package-family-names-for-apps-on-hololens"></a>HoloLens でのアプリのパッケージファミリ名
 
-上記のガイドでは、HoloLens にのみインストールされているアプリケーションのnewPolicy.xmlを手動で編集し、パッケージ ファミリ名で規則を追加できます。 場合によっては、ポリシーに追加するデスクトップ PC にはないアプリを使う場合があります。
+上記のガイドでは、手動で newPolicy.xml を編集し、HoloLens にのみインストールされているアプリケーションのパッケージファミリ名を使用してルールを追加することができます。 場合によっては、ポリシーに追加するデスクトップ PC 上にないアプリが使用されることがあります。
 
-HoloLens 2 デバイス用の一般的In-Boxアプリの一覧を次に示します。
+HoloLens 2 デバイス用の一般的に使用されるアプリと In-Box アプリの一覧を次に示します。
 
 | アプリ名                   | パッケージ ファミリ名                                |
 |----------------------------|----------------------------------------------------|
 | 3D ビューアー                  | Microsoft.Microsoft3DViewer_8wekyb3d8bbwe          |
-| アプリ インストーラー              | Microsoft.DesktopAppInstaller_8wekyb3d8bbwe <sup> 1</sup>         |
-| カレンダー                   | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
+| アプリ インストーラー              | Microsoft.DesktopAppInstaller_8wekyb3d8bbwe <sup>1</sup>         |
+| Calendar                   | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
 | カメラ                     | HoloCamera_cw5n1h2txyewy                           |
 | Cortana                    | Microsoft.549981C3F5F10_8wekyb3d8bbwe              |
 | Dynamics 365 Guides        | Microsoft.Dynamics365.Guides_8wekyb3d8bbwe         |
 | Dynamics 365 Remote Assist | Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe      |
 | フィードバック Hub               | Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe         |
-| エクスプローラー              | c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy |
-| メール                       | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
+| エクスプローラー              | c5e2524a-ea46-4f67-84 1f-6a9465d9d515_cw5n1h2txyewy |
+| Mail                       | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
 | Microsoft Store            | Microsoft.WindowsStore_8wekyb3d8bbwe               |
 | 映画 & テレビ                | Microsoft.ZuneVideo_8wekyb3d8bbwe                  |
 | OneDrive                   | microsoft.microsoftskydrive_8wekyb3d8bbwe          |
-| フォト                     | Microsoft.Windows.Photos_8wekyb3d8bbwe             |
+| Photos                     | Microsoft.Windows.Photos_8wekyb3d8bbwe             |
 | 設定                   | HolographicSystemSettings_cw5n1h2txyewy            |
 | ヒント                       | Microsoft.HoloLensTips_8wekyb3d8bbwe               |
 
-- 1 - アプリ インストーラーをブロックすると、アプリ インストーラー アプリだけがブロックされ、Microsoft Store などの他のソースや MDM ソリューションからインストールされたアプリはブロックされません。
+- 1-ブロックしているアプリのインストーラーは、アプリインストーラーアプリをブロックするだけで、Microsoft Store などの他のソースや MDM ソリューションからインストールされたアプリはブロックしません。
 
-### パッケージ ファミリ名を見つける方法
+### <a name="how-to-find-a-package-family-name"></a>パッケージファミリ名を検索する方法
 
-アプリがこの一覧に表示されていない場合、ユーザーは Device Portal を使って、アプリをインストールした HoloLens 2 に接続し、ブロックする必要がある場合に PackageRelativeID を特定し、そこから PackageFamilyName を取得できます。
+アプリがこの一覧にない場合、ユーザーは、ブロックされるアプリがインストールされている HoloLens 2 に接続されているデバイスポータルを使用して、PackageRelativeID を特定し、その中にパッケージ化 Efamilyname を取得することができます。
 
 1. HoloLens 2 デバイスにアプリをインストールします。 
-1. Open Settings -> Updates & Security -> For developers, and enable **Developer mode** and then **Device portal**. 
-    1. 詳しくは、デバイス ポータルのセットアップと使用 [に関する詳細をご覧ください](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)。
-1. Device Portal に接続したら、[ビュー] の [ **アプリ]** に **移動します**。 
-1. [インストールされたアプリ] パネルで、ドロップダウンを使用してインストール済みアプリを選択します。 
-1. PackageRelativeID を探します。 
-1. !の前にアプリの文字をコピーします。これらの文字は PackageFamilyName になります。
+1. [設定] を開き、開発者向けのセキュリティ > & 更新を >、 **開発者モード** と **デバイスポータル** を有効にします。 
+    1. 詳細について [は、こちらのデバイスポータルのセットアップと使用](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)に関するページを参照してください。
+1. デバイスポータルが接続されたら、[ **ビュー** ]、[ **アプリ**] の順に移動します。 
+1. [インストールされているアプリ] パネルで、ドロップダウンを使用して、インストールされているアプリを選択します。 
+1. PackageRelativeID を見つけます。 
+1. の前にアプリ文字をコピーします。これらの文字は、整理 Efamilyname になります。
 
 

@@ -1,6 +1,6 @@
 ---
-title: HoloLens 2 開発エディションに関する FAQ
-description: HoloLens 2 Development Edition Mixed Reality デバイスに関する最も一般的な質問を最新の情報に更新します。
+title: HoloLens 2 Development Edition に関してよく寄せられる質問
+description: HoloLens 2 Development Edition mixed reality デバイスに関してよく寄せられる質問を確認してください。
 keywords: Hololens 2 購入オプション、HoloLens オプション、Developer Edition
 author: evmill
 ms.author: v-evmill
@@ -15,173 +15,173 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 1ce1ec05e0eb3c17b6b79a8cdae009c5d917e21e
-ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "11306656"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309095"
 ---
-# HoloLens 2 開発エディションに関する FAQ
+# <a name="hololens-2-development-edition-faq"></a>HoloLens 2 Development Edition に関してよく寄せられる質問
 
-## 一般的な質問
+## <a name="general-questions"></a>一般的な質問
 
-### HoloLens 2 Development Edition は何を利用できますか?
+### <a name="what-do-i-get-with-the-hololens-2-development-edition"></a>HoloLens 2 Development Edition では、どのようなことができますか。
 
-HoloLens 2 Development Edition には、HoloLens 2、Azure クレジット 500 ドル、3 か月の Unity Pro 試用版、3 か月の Pixyz プラグイン試用版が含まれています。
+HoloLens 2 の開発エディションには、HoloLens 2、$500 for Azure クレジット、3か月の Unity Pro 試用版、3か月の Pixyz プラグイン試用版が含まれています。
 
-### HoloLens 2 と HoloLens 2 Development Edition の違いは何ですか?
+### <a name="what-is-the-difference-between-hololens-2-and-hololens-2-development-edition"></a>HoloLens 2 と HoloLens 2 の開発エディションの違いは何ですか。
 
-HoloLens 2 Development Edition は、実稼働環境で HoloLens 2 (商用エディション) で使用する内部エンタープライズ アプリケーションの構築とテストにのみ使用できます。 Development Edition の購入の一環として、Microsoft は単独の裁量により、チェックアウト プロセス中に特定された特定の権利をお客様に提供することがあります。 これらの権利には、特定の割引クレジットまたは試用版を特定の Microsoft またはサード パーティのサービスまたはツールに一定の期間引き換える権利が含まれます。 [詳細情報](hololens2-options.md#learn-about-the-development-edition)
+HoloLens 2 Development Edition のみを使用して、運用環境設定で HoloLens 2 (商用エディション) と共に使用する内部エンタープライズアプリケーションを構築およびテストすることができます。 Microsoft では、開発エディションの購入の一環として、その裁量で、チェックアウトプロセス中に特定の権利を提供することがあります。 これらの権利には、特定の割引クレジットまたは特定のマイクロソフトまたはサードパーティのサービスやツールへの試用アクセスを限定された期間に利用する権利が含まれます。 [詳細情報](hololens2-options.md#learn-about-the-development-edition)
 
-### HoloLens 2 の任意のエディションを使用して開発できますか。
+### <a name="can-any-edition-of-hololens-2-be-used-to-develop"></a>HoloLens 2 の任意のエディションを開発に使用できますか。
 
-はい、できます。 HoloLens 2 の任意のエディションを使用して、アプリを開発できます。
+はい。 HoloLens 2 の任意のエディションを使用して、アプリを開発できます。
 
-### Azure クレジット、3 か月の Unity Pro 試用版、3 か月の Pixyz プラグイン試用版で 500 ドルを受け取る方法と方法
+### <a name="how-and-will-i-receive-my-500-in-azure-credits-3-month-unity-pro-trial-and-3-month-pixyz-plugin-trial"></a>Azure クレジット、3か月の Unity Pro 試用版、3か月の Pixyz プラグイン試用版で $500 を受け取るにはどうすればよいですか?
 
-割引クレジットまたは試用版アクセスは、製品の出荷から 2 営業日以内に購入時に使用されるメールに送信されます。
+割引クレジットまたは試用版へのアクセスは、2営業日以内に購入された電子メールに送信されます。
 
-### HoloLens 2 (デバイスのみ) デバイスを HoloLens 2 Development Edition に "アップグレード" して、試用版クレジットを取得できますか?
+### <a name="can-i-upgrade-my-hololens-2-device-only-device-to-the-hololens-2-development-edition-to-get-the-trial-credits"></a>"HoloLens 2 (デバイスのみ)" デバイスを HoloLens 2 開発エディションに "アップグレード" して、試用クレジットを取得することはできますか。
 
-いいえ、デバイス転送プランは提供しています。 どのエディションから他のエディションにも転送する機能はありません。
+いいえ、デバイス転送プランは提供されていません。 任意のエディションから他のエディションに転送することはできません。
 
-### Unity Pro とは
+### <a name="what-is-unity-pro"></a>Unity Pro とは
 
-Unity Pro は、小規模/中規模のスタジオ/企業向けリアルタイムの 3D プラットフォームです。 技術的なスキルと技術的でないスキルが混在するチーム向けです。 [詳細情報](https://store.unity.com/products/unity-pro)
+Unity Pro は、小規模/中規模のスタジオ/企業向けのリアルタイム3D プラットフォームです。 技術的なスキルと技術面以外のスキルを組み合わせたチーム向けに設計されています。 [詳細情報](https://store.unity.com/products/unity-pro)
 
-### Pixyz プラグインとは
+### <a name="what-is-pixyz-plugin"></a>Pixyz プラグインとは
 
-Pixyz プラグインは、ほぼすべての形式を読み取って変換し、最適化して Unity に置き、リアルタイム アプリケーション用のすぐに使用できるアセットを提供するためにそれをステージします。 [詳細情報](https://unity.com/products/pixyz)
+Pixyz プラグインは、ほぼすべての形式の読み取りと変換を行い、Unity に最適化して格納し、リアルタイムアプリケーション用にすぐに使用できるアセットを提供するようにステージングします。 [詳細情報](https://unity.com/products/pixyz)
 
-### HoloLens 2 Development Edition の資金提供を受け取るのは、いつですか?
+### <a name="when-will-financing-for-the-hololens-2-development-edition-be-available"></a>HoloLens 2 開発エディションの資金調達を利用できるようになるのはいつですか?
 
-HoloLens 2 Development Edition の提供は、2021 年初めに利用可能になります。
+HoloLens 2 Development Edition のファイナンスは2021年1時に提供されます。
 
-### HoloLens 2 Development Edition の資格に関する質問は、誰に問い合わせできますか?
+### <a name="who-do-i-contact-with-questions-about-my-hololens-2-development-edition-entitlements"></a>HoloLens 2 の開発エディションの権利について質問がありますか?
 
-資格に関する質問がある場合は、営業スペシャリスト (866-425-4709、月から金、午前 6 時から午後 6 時、PST) にお問い合わせください。
+権利に関連するご質問がある場合は、営業担当者に866-425-4709、月曜日から金曜日、午前から午後6時 (太平洋標準時) に連絡してください。
 
-### 会社で複数の HoloLens 2 Development Edition デバイスを購入できますか? 
+### <a name="can-my-company-buy-multiple-hololens-2-development-edition-devices"></a>会社は複数の HoloLens 2 Development Edition デバイスを購入できますか? 
 
-このデバイスは、Mixed Reality ソリューションを構築する開発者向けです。 お客様の取引ごとに 1 つの購入を制限します。 会社が複数の Development Edition デバイスを購入する場合は、会社の代わりに HoloLens 2 Development Edition デバイスを購入するために個別のトランザクションが必要です。 
+このデバイスは、混合現実ソリューションを構築する開発者を対象としています。 顧客トランザクションごとに1つの購入を制限します。 企業で複数の開発エディションのデバイスを購入する場合は、会社の代理として HoloLens 2 の開発エディションのデバイスを購入するために別のトランザクションが必要になります。 
 
-### HoloLens 2 Development Edition デバイスをユーザーに表示できますか? 
+### <a name="can-i-show-my-hololens-2-development-edition-device-to-my-customers"></a>HoloLens 2 の開発エディションデバイスを顧客に表示できますか。 
 
-はい。このデバイスは、Mixed Reality ソリューションのプロトタイプ作成とテストに使用することを目的とします。
+はい。このデバイスは、混合現実ソリューションのプロトタイプとテストに使用することを目的としています。
 
-### HoloLens 2 Development Edition はどこで購入できますか? 
+### <a name="where-can-i-buy-the-hololens-2-development-edition"></a>HoloLens 2 Development Edition はどこで購入できますか? 
 
-HoloLens 2 Development Edition は、Microsoft Store 専用で販売されています。  
+HoloLens 2 Development Edition は Microsoft Store のみで販売されています。  
 
-### HoloLens 2 Development Edition を返す方法  
+### <a name="can-i-return-my-hololens-2-development-edition"></a>HoloLens 2 Development Edition を返すことはできますか。  
 
-すべての売り上げは最終版であり、HoloLens 2 Development Edition では払い戻しはありません。
+すべての売上は最終的なものであり、HoloLens 2 開発エディションでは返金を受けられません。
 
-### Developer Edition には、HoloLens 2 とは異なるハードウェア要件がありますか?
+### <a name="does-developer-edition-have-different-hardware-requirements-that-differ-from-the-hololens-2"></a>Developer Edition には HoloLens 2 とは異なるハードウェア要件がありますか。
 
-いいえ。このデバイスは、ハードウェア要件の観点から見ると同じです。 Development Edition は、商用環境でのアプリケーションの開発および/またはテストを支援する目的で展開できます。 
+いいえ、このデバイスはハードウェア要件の観点と同じです。 開発エディションは、商用の設定でのアプリケーションの開発やテストを支援するためにデプロイすることが許可されています。 
 
-### Mixed Reality Toolkit Unity を HoloLens 2 Development Edition での開発に使用する方法
+### <a name="how-can-i-use-mixed-reality-toolkit--unity-for-developing-on-my-hololens-2-development-edition"></a>HoloLens 2 Development Edition での開発に Mixed Reality Toolkit – Unity を使用するにはどうすればよいですか。
 
-MRTK-Unityは、Unity でのクロスプラットフォーム MR アプリ開発を加速するために使用される、一連のコンポーネントと機能を提供する Microsoft が推進するプロジェクトです。 [詳細情報](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+MRTK-Unity は、一連のコンポーネントと機能を提供する Microsoft 主導のプロジェクトで、Unity でクロスプラットフォームの MR アプリの開発時間を短縮するために使用されます。 [詳細情報](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 
-### HoloLens 2 Development Edition での開発に Mixed Reality Toolkit Unreal UXT を使用する方法
+### <a name="how-can-i-use-mixed-reality-toolkit--unreal-uxt-for-developing-on-my-hololens-2-development-edition"></a>HoloLens 2 Development Edition での開発に Mixed Reality Toolkit – Unreal UXT を使用するにはどうすればよいですか。
 
-MRTK-Unrealはリリースされた最初の UX ツール コンポーネントであり、現在 HoloLens 2 でのみサポートされています。 コンポーネント プラグインには、入力シミュレーション、手操作アクター、押し可能なボタン コンポーネント、コンポーネントコンポーネント、動作コンポーネントのフォローのための一般的な UX 機能のコード、ブループリント、サンプル アセットが含まれています。 [詳細情報](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
+MRTK-Unreal は、最初にリリースされる UX ツールコンポーネントであり、現在は HoloLens 2 でのみサポートされています。 コンポーネント プラグインには、入力シミュレーション、ハンド インタラクション アクター、押しボタン コンポーネント、マニピュレーター コンポーネント、動作追従コンポーネントに対応した一般的な UX 機能のコード、ブループリント、サンプル資産が含まれています。 [詳細情報](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
 
-### HoloLens 2 Development Edition の OS リリースは HoloLens 2 と同じですか?
+### <a name="are-os-releases-for-the-hololens-2-development-edition-the-same-as-hololens-2"></a>HoloLens 2 開発エディションの OS リリースは HoloLens 2 と同じですか?
 
-はい、できます。
+はい。
 
-### HoloLens 2 Development Edition デバイスでリリース済み (サイドロードまたはストア) アプリケーションを実行できますか。
+### <a name="can-i-run-released-sideload-or-store-applications-on-my-hololens-2-development-edition-device"></a>HoloLens 2 Development Edition デバイスでは、リリースされた (サイドロードまたはストアの) アプリケーションを実行できますか。
 
-HoloLens 2 Development Edition の使用条件に従う場合は、Developer Edition でリリース済みアプリケーションを実行できます。 この SKU でサイドロードまたは保存されたアプリケーションの使用は制限されません。
+HoloLens 2 Development Edition の使用条件について clauses している場合は、開発者エディションでリリースされたアプリケーションを実行できます。 この SKU では、サイドロードまたは保存されているアプリケーションの使用を制限しません。
 
-### HoloLens 2 Development Edition の詳細はどこで確認できますか?
+### <a name="where-can-i-learn-more-about-the-hololens-2-development-edition"></a>HoloLens 2 Development Edition の詳細については、こちらを参照してください。
 
-HoloLens 2 Development Edition のドキュメント ページにアクセスします。 [詳細情報](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+HoloLens 2 Development Edition のドキュメントページを参照してください。 [詳細情報](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
 
-### Mixed Reality ソリューションの開発に関する詳細はどこで学習できますか?
+### <a name="where-can-i-learn-more-about-developing-mixed-reality-solutions"></a>Mixed Reality ソリューションの開発の詳細については、どこで学習できますか。
 
-Mixed Reality 開発の概要に関するドキュメントを参照してください。 [詳細情報](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unityhttps://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity)
+Mixed Reality 開発ドキュメントの概要に関するページを参照してください。 [詳細情報](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unityhttps://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity)
 
-### Mixed Reality ソリューションの設計に関する詳細はどこで学習できますか?
+### <a name="where-can-i-learn-more-about-designing-mixed-reality-solutions"></a>Mixed Reality ソリューションの設計の詳細については、どこで学習できますか。
 
-Mixed Reality 設計の概要に関するドキュメントを参照してください。 [詳細情報](https://docs.microsoft.com/windows/mixed-reality/design/design)
+Mixed Reality の設計ドキュメントの概要に関するページを参照してください。 [詳細情報](https://docs.microsoft.com/windows/mixed-reality/design/design)
 
-### HoloLens Developer Edition のサポートはどこで取得できますか?
+### <a name="where-can-i-get-support-for-hololens-developer-edition"></a>HoloLens Developer Edition のサポートはどこで入手できますか。
 
-ここでサポートを受 [け取る。](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=96bfb202-bc79-741b-bf7a-774d8b767782)
+こちらからサポートを受けることが [できます。](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=96bfb202-bc79-741b-bf7a-774d8b767782)
 
-## Unity
+## <a name="unity"></a>Unity
 
-### Unity 試用版には何が含まれていますか?
+### <a name="what-is-included-with-my-unity-trial"></a>Unity の試用版には何が含まれていますか?
 
-3 か月の Unity Pro 試用版では、Unity&#39;ソリューションにアクセスして、プロフェッショナルが作成、運用、収益化を行います。 関連する Unity Pro 試用版には、引き換えの期限はありません。
+3か月間の Unity Pro 試用版では、Unity&#39;s の完全なソリューションにアクセスして、プロフェッショナルが作成、運用、収益化することができます。 関連する Unity Pro 試用版には、引き換えの期限がありません。
 
-このサービスは新規ユーザー向けであり、確立された Unity Pro サブスクリプションには適用されません。 Unity Pro 試用版には、引き換えに利用できる追加の条件が適用される場合があります。 適用される使用条件[と &amp; プライバシー ポリシー](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0)[を確認します](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)。
+このオファリングは新規ユーザー向けであり、確立された Unity Pro サブスクリプションには適用されません。 Unity Pro 試用版には、引き換えに利用可能になる追加の条項が適用される場合があります。 該当する[条件 &amp; と](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0)[プライバシーポリシー](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)を確認します。
 
-### Unity Pro 試用版を引き換える方法
+### <a name="how-can-i-redeem-my-unity-pro-trial"></a>Unity Pro 試用版を利用するにはどうすればよいですか?
 
-引き換えのルート案内
+利用を継続するための指示
 
-1. 次のページid.unity.com
-2. Unity ID でサインインするか、アカウントを作成する
-3. [製品&#39;コードを引き換える] を&#39;
-4. 製品コードを入力し、[製品コード&#39;引き換える] を選択&#39;
+1. Id.unity.com にアクセスする
+2. Unity ID でサインインするか、アカウントを作成します
+3. 製品コードを選択 &#39;には&#39;
+4. 製品コードを入力し、[製品コードを利用 &#39;] を選択し&#39;
 
-HoloLens 2 Development Edition のドキュメントで詳細 [を確認する](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+[詳細につい](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)ては、HoloLens 2 Development Edition のドキュメントを参照してください。
 
-### PRO ライセンス以外のバージョンの Unity を使用してアプリケーションをビルドできますか。
+### <a name="can-i-build-applications-with-versions-of-unity-other-than-pro-license"></a>PRO ライセンス以外のバージョンの Unity でアプリケーションを構築することはできますか。
 
-はい、Unity のすべての互換性のあるバージョンのアプリケーションを構築できます。
+はい、互換性のあるすべてのバージョンの Unity でアプリケーションを構築できます。
 
-### Unity サポートに問い合わせ方法
+### <a name="how-do-i-contact-unity-support"></a>操作方法 Unity サポートにお問い合わせください。
 
-Unity ID、アカウント、組織、サブスクリプションに関する質問については、次のページsupport.unity3d.com。
+Unity ID、アカウント、組織、およびサブスクリプションに関する質問については、support.unity3d.com を参照してください。
 
-## Pixyz
+## <a name="pixyz"></a>Pixyz
 
-### Pixyz プラグインの試用版には何が含まれていますか?
+### <a name="what-is-included-with-my-pixyz-plugin-trial"></a>Pixyz Plugin 試用版には何が含まれていますか?
 
-Pixyz へのアクセスを可能にする 3 か月の Pixyz プラグイン試用版。完全なテセセルメッシュ、限られた多角形数、自動 UV を使用してすぐに使用できるアセットを作成できます。 関連する Pixyz プラグインの試用版には、引き換えの期限はありません。
+Pixyz へのアクセスを可能にして、完全なテセレーションメッシュ、限られたポリゴン数、および自動 UV ですぐに使用できるアセットを作成できるようにする、3つのカレンダー月 Pixyz プラグイン試用版。 関連する Pixyz plugin 試用版には、引き換えの期限がありません。
 
-このサービスは新規ユーザー向けであり、確立された Pixyz サブスクリプションに重なって表示されません。 Pixyz プラグインは、引き換えに行う追加の条件の対象となる場合があります。 適用される使用条件[と &amp; プライバシー ポリシー](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0)[を確認します](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)。
+このオファリングは新規ユーザー向けであり、確立された Pixyz サブスクリプションにはありません。 Pixyz プラグインには、引き換えに追加の条件が適用される場合があります。 該当する[条件 &amp; と](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0)[プライバシーポリシー](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)を確認します。
 
-### Pixyz プラグインの試用版を引き換える方法
+### <a name="how-can-i-redeem-my-pixyz-plugin-trial"></a>Pixyz プラグインの試用版を利用するにはどうすればよいですか?
 
-引き換えのルート案内
+利用を継続するための指示
 
-1. 次のページid.unity.com
-2. Pixyz でサインインするか、アカウントを作成する
-3. [製品コード&#39;引き換える] をクリック&#39;
-4. 製品コードを入力し、[製品コード&#39;引き換える] をクリック&#39;
+1. Id.unity.com にアクセスする
+2. Pixyz を使用してサインインするか、アカウントを作成します。
+3. [製品コードを &#39;利用する] をクリックし&#39;
+4. 製品コードを入力し、[製品コードを利用 &#39;] をクリックし&#39;
 
-詳細については、HoloLens 2 Development Edition のドキュメント [を参照してください。](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+[詳細につい](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)ては、HoloLens 2 Development Edition のドキュメントを参照してください。
 
-### Pixyz サポートへの問い合わせ方法
+### <a name="how-do-i-contact-pixyz-support"></a>Pixyz サポートにお問い合わせ操作方法
 
-Unity ID、アカウント、組織、サブスクリプションに関する質問については、以下を参照support.unity3d.com
+Unity ID、アカウント、組織、およびサブスクリプションに関する質問については、support.unity3d.com をご覧ください。
 
-Pixyz 固有のサポート (試用版の引き換え後) については、お問い [合Pixyz-software.com/support](http://pixyz-software.com/support)
+Pixyz 固有のサポート (試用版の適用後) については、 [Pixyz-software.com/support](http://pixyz-software.com/support)を参照してください。
 
 
-## Azure
+## <a name="azure"></a>Azure
 
-### 500 ドルの Azure クレジットを引き換える方法
+### <a name="how-can-i-redeem-my-500-azure-credit"></a>$500 の Azure クレジットを利用するにはどうすればよいですか?
 
-500 ドルの Azure クレジットを引き換える場合は、Azure Pass プロモーション コードを引き換え、サブスクリプションをアクティブ化します。 [詳細情報](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+$500 の Azure クレジットを利用するには、Azure Pass プロモーションコードを利用し、サブスクリプションをアクティブ化します。 [詳細情報](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
-Azure Pass サブスクリプション契約を [確認し、](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) プラン [の詳細を確認します](https://azure.microsoft.com/en-us/offers/azure-pass/)。
+Azure Pass [サブスクリプション契約](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) とプランの [詳細](https://azure.microsoft.com/en-us/offers/azure-pass/)を確認します。
 
-### 500 ドルの Azure クレジットの有効期限が切れるのはいつですか?
+### <a name="when-does-my-500-azure-credit-expire"></a>$500 Azure クレジットの有効期限はいつですか?
 
-500 ドルの Azure クレジットは、Azure キー コードをアクティブ化した 90 日後に期限切れになります。
+Azure キーコードをアクティブ化した後、$500 Azure クレジットの有効期限は90日になります。
 
-### Azure クレジットで何ができますか?
+### <a name="what-can-i-do-with-my-azure-credits"></a>Azure クレジットでできること
 
-Azure クレジットを使用すると、Microsoft&#39;一連のクラウド サービスの構築を開始できます。 HoloLens 2 Development Edition に含まれる Azure クレジットを使用すると、お客様は Azure で Mixed Reality アプリケーションの構築とテストをすばやく開始できます。 Azure での構築の詳細については、Azure のリソース [にアクセスしてください。](https://azure.microsoft.com/en-us/resources/)
+Azure クレジットを使用すると、Microsoft&#39;によるクラウドサービスの拡張セットを使用して構築を開始できます。 HoloLens 2 Development Edition に含まれている Azure クレジットは、お客様が Azure で mixed reality アプリケーションの構築とテストをすぐに開始できるようにすることを目的としています。 Azure での構築の詳細については、 [azure リソース](https://azure.microsoft.com/en-us/resources/)に関するページを参照してください。
 
-### Azure Mixed Reality サービスの詳細はどこで確認できますか?
+### <a name="where-can-i-learn-more-about-azure-mixed-reality-services"></a>Azure mixed reality サービスの詳細については、どこで学習できますか?
 
-Microsoft では、開発者が Mixed Reality ソリューションをビルドしてテストできる Mixed Reality サービスのセットを提供しています。 [詳細情報](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)
+Microsoft は、開発者が mixed reality ソリューションを構築してテストできるようにするための、一連の mixed reality サービスを提供しています。 [詳細情報](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)

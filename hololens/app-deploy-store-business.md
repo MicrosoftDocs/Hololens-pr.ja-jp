@@ -1,7 +1,7 @@
 ---
 title: ビジネス向け Microsoft Store
-description: ビジネス向け Microsoft Store を使用して Mixed Reality アプリケーションをビジネスに公開する方法について説明します。
-keywords: ビジネス向け Microsoft Store, msfb, アプリの展開, ストア
+description: Microsoft Store for Business を使用して、mixed reality アプリケーションをビジネスに発行する方法について説明します。
+keywords: ビジネス、msfb、アプリの展開、ストアの Microsoft Store
 author: evmill
 ms.author: v-evmill
 ms.date: 6/22/2020
@@ -12,29 +12,29 @@ ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
 ms.openlocfilehash: 52036b9e17fe6685bd05693b06e3120b4655c863
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283678"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309265"
 ---
-# ビジネス向け Microsoft Store
+# <a name="microsoft-store-for-business"></a>ビジネス向け Microsoft Store
 
-ビジネス向け Microsoft Store は、主に企業や組織の IT 意思決定者と管理者を対象として設計され、一部の市場で無料アプリと有料アプリを検索、取得、管理、配布するための柔軟な方法が、ボリューム内の Windows 10 デバイスに提供されます。 
+ビジネス向け Microsoft Store は、主に IT の意思決定者と企業や組織の管理者向けに設計されており、選択した市場での無料および有料のアプリの検索、取得、管理、配布を、ボリューム内の Windows 10 デバイスに対する柔軟な方法で行うことができます。 
 
-Microsoft Store アプリとプライベートな業務アプリを 1 つのインベントリで管理し、必要に応じてライセンスを割り当て、再使用できます。 組織に最適な配布方法を選択することもできます。アプリを個人やチームに直接割り当てる、Microsoft Store のプライベート ページにアプリを公開する、管理ソリューションに接続してその他のオプションを利用できます。
+1つのインベントリで Microsoft Store アプリとプライベート基幹業務アプリを管理し、必要に応じてライセンスを割り当てて再利用することができます。 また、組織に最適な配布方法を選択することもできます。個人やチームにアプリを直接割り当てる方法、Microsoft Store のプライベートページにアプリを発行する方法、さらに多くのオプションを使用する場合は管理ソリューションに接続する方法などがあります。
 
-ビジネス向け Microsoft Store をエンド ユーザーが使用すると、Microsoft Store アプリが起動します。 起動すると、ユーザーは組織名のタブを選択し、利用可能なアプリまたはデバイスが表示されます。
+エンドユーザーが Microsoft Store for Business を使用すると、Microsoft Store アプリが起動されます。 起動すると、ユーザーは組織名を含むタブを選択できるようになります。その後、使用可能なアプリまたはデバイスが表示されます。
 
 > [!Note] 
-> ビジネス向け Microsoft Store は、デバイスにアプリを自動的にダウンロード (プッシュ) する機能ではありません。 ただし、ビジネス向け Microsoft Store のアプリをデバイス管理 (MDM) サーバーに関連付け、アプリをターゲットにし、デバイスに同期することができます。
+> Microsoft Store for Business は、アプリをデバイスに自動的にダウンロード (プッシュ) しません。 ただし、ビジネス向け Microsoft Store のアプリをデバイス管理 (MDM) サーバーに関連付けて、アプリを対象としてデバイスに同期することができます。
 
-ビジネス向け Microsoft Store の使い方について詳しくは、次のページをご覧ください。
+Microsoft Store for Business の使用方法の詳細については、次のページを参照してください。
 * [アプリケーションのインストールに使用されるアクセス許可のレベル](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-holographic#app-store)
 * [ビジネス向けストアにアプリを追加する方法](https://docs.microsoft.com/mem/intune/apps/store-apps-windows)
 * [従業員のグループにアプリを割り当てる方法](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business)
 
-ビジネス向け Microsoft Store を関連付ける場合は、「ビジネス向け Microsoft Store と Intune の関連付け」をご [覧ください](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business#associate-your-microsoft-store-for-business-account-with-intune)。
+ビジネスに Microsoft Store を関連付けるには、「 [Microsoft Store For business を Intune に関連付ける](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business#associate-your-microsoft-store-for-business-account-with-intune)」を参照してください。
 
 > [!Tip] 
-> Advanced Recovery [](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) Companion (ARC) や Windows 構成デザイナー (WCD) などのアプリを使用する場合のオフライン アプリの配布について説明します。
+> 高度な回復コンパニオン (ARC)、Windows 構成デザイナー (WCD) などのアプリを使用する場合の [オフラインアプリの配布](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) について説明します。

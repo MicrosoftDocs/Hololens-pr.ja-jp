@@ -1,7 +1,7 @@
 ---
-title: HoloLens 2 アプリ インストーラーを使用してアプリをサイド ロードしてインストールする方法
-description: アプリ インストーラーを使ってアプリをインストールし、トラブルシューティングを行い、UI を使ってアプリをサイド ロードしてインストールする方法について説明します。
-keywords: アプリ管理, アプリ, hololens, アプリ インストーラー
+title: HoloLens 2 アプリインストーラーを使用してアプリをサイドロードしてインストールする方法
+description: アプリのインストーラーを使用してアプリをインストールおよびトラブルシューティングする方法と、UI を使用してアプリをサイドロードしてインストールする方法について説明します。
+keywords: アプリ管理, アプリ, hololens, アプリインストーラー
 author: evmill
 ms.author: v-evmill
 ms.reviewer: qizho
@@ -15,100 +15,100 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
-ms.sourcegitcommit: af4e222a4f83ab82466a383099897986ddf6b8c4
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "11297292"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309273"
 ---
-# アプリ インストーラーを使用して HoloLens 2 にアプリをインストールする
+# <a name="install-apps-on-hololens-2-via-app-installer"></a>アプリインストーラーを使用して HoloLens 2 にアプリをインストールする
 
 > [!NOTE]
-> この機能は [、Windows Holographic バージョン 20H2 ~ December 2020 Update で利用できます](hololens-release-notes.md)。 この機能を使用 [するためにデバイスが](hololens-update-hololens.md) 更新されていないことを確認します。
+> この機能は [、Windows Holographic、バージョン20H2 –2020年12月の更新プログラム](hololens-release-notes.md)で利用可能になりました。 この機能を使用するようにデバイスが [更新](hololens-update-hololens.md) されていることを確認してください。
 
-HoloLens 2 デバイスにアプリケーションをシームレスにインストールできる新しい機能 (アプリ インストーラー **)** が追加されました。 この機能は、非 **管理対象デバイスに対して既定で有効になります**。 企業の中断を防ぐため、現時点では管理対象デバイスでアプリ **インストーラーを** 利用できません。  
+HoloLens 2 デバイスに **アプリケーションをシームレスにインストールできる新しい機能 (アプリインストーラー) が追加され** ました。 この機能は、管理されていない **デバイスに対しては既定でオンに** なります。 企業が中断されないように、現時点では、 **管理対象デバイス** でアプリインストーラーを使用できなくなります。  
 
-次の条件に当てはまる場合、デバイス**** は "管理対象" と見なされます。
+次の **いずれか** に該当する場合、デバイスは "管理されている" と見なされます。
 
-- MDM [の登録](hololens-enroll-mdm.md)
-- プロビジョニング パッケージ [で構成](hololens-provisioning.md)
-- ユーザー [ID は](hololens-identity.md) Azure AD
+- MDM[登録](hololens-enroll-mdm.md)済み
+- [プロビジョニングパッケージ](hololens-provisioning.md)で構成済み
+- ユーザー [id](hololens-identity.md) が Azure AD
 
-開発者モードを有効にしたり、Device Portal を使用したりすることなく、アプリをインストールできます。  (USB 経由または Microsoft Edge 経由で) Appx バンドルをデバイスにダウンロードし、エクスプローラーで Appx バンドルに移動して、インストールを開始するように求めるメッセージが表示されます。  または、Web [ページからインストールを開始します](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  Microsoft Store からインストールしたアプリや MDM の LOB アプリ展開機能を使ってサイドロードするアプリと同様に、[](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)アプリは署名ツール[](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations)でデジタル署名する必要があります。また、アプリを展開する前に、署名に使用する証明書が HoloLens デバイスによって信頼されている必要があります。
+開発者モードを有効にしたり、デバイスポータルを使用したりすることなく、アプリをインストールできるようになりました。  Appx バンドルをデバイスに (USB 経由または Microsoft Edge 経由で) ダウンロードし、エクスプローラーで Appx バンドルに移動して、インストールを開始するように求められるようにします。  または、 [web ページからインストールを開始](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)します。  MDM の LOB アプリのデプロイ機能を使用して Microsoft Store またはサイドロードからインストールするアプリと同様に、アプリは [署名ツール](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) でデジタル署名する必要があり、 [署名に使用する証明書](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) は、アプリを展開する前に HoloLens デバイスによって信頼されている必要があります。
 
-## 要件
+## <a name="requirements"></a>要件
 
-### デバイスの場合:
+### <a name="for-your-devices"></a>デバイスの場合:
 
-この機能は現在、HoloLens 2 デバイス用の Windows Holographic 20H2 ビルドで利用できます。 この方法を使用しているすべてのデバイスが[更新されます。](hololens-update-hololens.md)
+この機能は現在、HoloLens 2 デバイス用の Windows Holographic 20H2 ビルドで使用できます。 この方法を使用しているデバイスがすべて [更新](hololens-update-hololens.md)されていることを確認します。
 
-### アプリの場合:
+### <a name="for-your-apps"></a>アプリの場合:
 
-アプリ インストーラーはストアからの依存関係を使**** うの**** で、アプリのソリューション構成はマスターまたはリリースである必要があります。 アプリ パッケージの作成 [について詳しくは、以下をご覧ください](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)。
+アプリのインストーラーがストアからの依存関係を使用するため、アプリのソリューション構成は **マスター** または **リリース** のいずれかである必要があります。 詳細については、「 [アプリパッケージの作成](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)」を参照してください。
 
-この方法でインストールされるアプリは、デジタル署名されている必要があります。 アプリに署名するには、証明書を使う必要があります。 MS Trusted [CA List](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)から証明書を取得できます。その場合は、追加の操作を行う必要はありません。 または、独自の証明書に署名することもできますが、証明書をデバイスにプッシュする必要があります。
+この方法でインストールされるアプリには、デジタル署名が必要です。 アプリに署名するには、証明書を使用する必要があります。 [MS 信頼さ](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)れた CA の一覧から証明書を取得することができます。この場合、特別な操作を行う必要はありません。 または、証明書をデバイスにプッシュする必要がありますが、独自の証明書に署名することもできます。
 
-- 署名ツールを使って [アプリに署名する方法。](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
+- [署名ツールを使用して](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)アプリに署名する方法。
 
-**証明書オプション:**
+**証明書のオプション:**
 
-- [MS Trusted CA List](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)
+- [MS 信頼された CA の一覧](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)
 
 **証明書の展開方法を選択します。**
 
-- [プロビジョニング パッケージは](hololens-provisioning.md) 、ローカル デバイスに適用できます。
-- MDM を使って、デバイス [構成で証明書を適用できます](https://docs.microsoft.com/mem/intune/protect/certificates-configure)。
-- デバイス証明書マネージャーを [使用します](certificate-manager.md)。
+- [プロビジョニングパッケージ](hololens-provisioning.md) は、ローカルデバイスに適用できます。
+- MDM を使用し [て、デバイス構成を含む証明書を適用](https://docs.microsoft.com/mem/intune/protect/certificates-configure)できます。
+- デバイス [証明書マネージャー](certificate-manager.md)でを使用します。
 
-## インストール方法
+## <a name="installation-method"></a>インストール方法
 
 1. デバイスが管理対象と見なされていないことを確認します。
-1. HoloLens 2 デバイスの電源がオンで、サインイン中です。
-1. PC でカスタム アプリに移動し、app.appxbundle をdevicename\Internal Storage\Downloads にコピーします。
-    ファイルのコピーが完了したら、デバイスを切断して後でインストールを完了できます。
-1. HoloLens 2 デバイスから [スタート]**** メニューを**開**き、[すべてのアプリ] を選択し、エクスプローラー アプリ**を起動**します。
-1. [ダウンロード] フォルダーに移動します。 アプリの左側のパネルで、最初に [この**** デバイス] を選択し、[ダウンロード] に移動する必要があります。
-1. yourapp.appxbundle ファイルを選択します。
-1. アプリ インストーラーが起動します。 [インストール **] ボタン** を選択してアプリをインストールします。
+1. HoloLens 2 デバイスの電源が入っていて、サインインしていることを確認します。
+1. お使いの PC でカスタムアプリに移動し、yourapp を yourdevicename\Internal Storage\Downloads. にコピーします。
+    ファイルのコピーが完了したら、デバイスを切断し、後でインストールを完了することができます。
+1. HoloLens 2 デバイスから [ **スタート] メニュー** を開き、[ **すべてのアプリ** ] を選択して、 **エクスプローラー** アプリを起動します。
+1. ダウンロードフォルダーに移動します。 アプリの左側のパネルで [ **このデバイス** を最初に選択する] をクリックし、[ダウンロード] に移動します。
+1. Yourapp ファイルを選択します。
+1. アプリのインストーラーが起動します。 [ **インストール** ] ボタンを選択して、アプリをインストールします。
 
-インストールが完了すると、インストールされたアプリが自動的に起動します。
+インストールの完了時に、インストールされているアプリが自動的に起動します。
 
-![アプリ インストーラーによる MRTK の例のインストール](images/hololens-app-installer-picture.jpg)
+![アプリインストーラーを使用した MRTK の例のインストール](images/hololens-app-installer-picture.jpg)
 
-### インストールのトラブルシューティング
+### <a name="troubleshooting-installs"></a>インストールのトラブルシューティング
 
-アプリのインストールに失敗した場合は、以下を確認してトラブルシューティングを行います。
+アプリをインストールできなかった場合は、次のことを確認してトラブルシューティングを行います。
 
-- アプリは、マスター ビルドまたはリリース ビルドのいずれかです。
-- デバイスは、この機能が利用可能なビルドに更新されます。
-- インターネット [に接続されています](hololens-network.md)。
-- [Microsoft Store のエンドポイントが正しく](hololens-offline.md)構成されている。  
+- アプリは、マスタービルドまたはリリースビルドのいずれかです。
+- この機能が使用可能なビルドにデバイスが更新されます。
+- [インターネットに接続](hololens-network.md)されています。
+- [Microsoft Store のエンドポイント](hololens-offline.md)が正しく構成されています。  
 
-## Web インストーラー
+## <a name="web-installer"></a>Web インストーラー
 
-ユーザーは、Web サーバーから直接アプリをインストールできます。 このフローでは、アプリ インストーラーと簡単なダウンロードとインストールの配布方法を組み合わせて使用します。
+ユーザーは、web サーバーから直接アプリをインストールできます。 このフローでは、簡単なダウンロードとインストールの配布方法を組み合わせて、アプリインストーラーを使用します。
 
-### Web インストールをセットアップする方法:
+### <a name="how-to-set-up-web-install"></a>Web インストールのセットアップ方法:
 
 1. アプリがインストールするように正しく構成されていることを確認します。
-1. Web ページから [インストールを有効にするには、次の手順を実行します](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web#how-to-enable-this-on-a-webpage)。
+1. [Web ページからのインストールを有効にするには、次の手順に](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web#how-to-enable-this-on-a-webpage)従います。
 
-### エンド ユーザー エクスペリエンス:
+### <a name="end-user-experience"></a>エンドユーザーエクスペリエンス:
 
-1. ユーザーは、上記で選択した方法を使用して、デバイスに証明書を受信してインストールします。
-1. ユーザーは、上記の手順で作成した URL にアクセスします。
+1. ユーザーは、前に選択した方法を使用して、デバイスに証明書を受信してインストールします。
+1. ユーザーは、前の手順で作成した URL にアクセスします。
 
-アプリがデバイスにインストールされます。 アプリを見つけるには、スタート メニュー**を開**き****、[すべてのアプリ] ボタンを選択してアプリを探します。
+これで、アプリがデバイスにインストールされます。 アプリを検索するには、[ **スタート] メニュー** を開き、[ **すべてのアプリ** ] ボタンをクリックしてアプリを検索します。
 
-- アプリ インストーラーのインストール方法のトラブルシューティングについて詳しくは、アプリ インストーラーの問題 [のトラブルシューティングに関するページをご覧ください](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)。
+- アプリインストーラーのインストール方法のトラブルシューティングに関する詳細については、「 [アプリインストーラーの問題のトラブルシューティング](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)」を参照してください。
 
 > [!NOTE]
-> 更新プロセス中の UI はサポートされていません。 したがって、このページの ShowPrompt [オプションと](https://docs.microsoft.com/windows/msix/app-installer/update-settings) 関連オプションはサポートされていません。
+> 更新プロセス中の UI はサポートされていません。 [このページ](https://docs.microsoft.com/windows/msix/app-installer/update-settings)の showprompt オプションと関連するオプションはサポートされていません。
 
-## サンプル アプリ
+## <a name="sample-apps"></a>サンプル アプリ
 
-いくつかのサンプル アプリでアプリ インストーラーを試す場合は、利用可能なサンプルを確認してください。
+いくつかのサンプルアプリを使用してアプリインストーラーを試すには、使用可能なサンプルをいくつか確認してください。
 
-- [MRTK の例ハブ](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html)
-- [サーフェス](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
-- [テストに使用できる UWP サンプル アプリ](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples)
+- [MRTK Examples Hub](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html)
+- [Surfaces](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
+- [テストに使用できる UWP サンプルアプリ](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples)

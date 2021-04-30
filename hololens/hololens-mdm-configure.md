@@ -1,6 +1,6 @@
 ---
-title: Microsoft のエンドポイント マネージャー Intune を使用して HoloLens デバイスを管理する
-description: MDM を使用して Intune を使用して大規模な HoloLens Mixed Reality デバイスの CSP、ポリシー、管理を構成する方法について説明します。
+title: Microsoft のエンドポイントマネージャー Intune を使用して HoloLens デバイスを管理する
+description: MDM を使用して、Intune を使用して大規模な HoloLens 混合現実デバイスを構成する方法について説明します。
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -14,62 +14,62 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: ce288afdcb112c17ffde75078d641f3637a8448c
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283958"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309553"
 ---
-# Microsoft のエンドポイント マネージャー Intune を使用して HoloLens デバイスを管理する
+# <a name="using-microsofts-endpoint-manager-intune-to-manage-hololens-devices"></a>Microsoft のエンドポイントマネージャー Intune を使用して HoloLens デバイスを管理する
 
-MDM で管理できるさまざまな設定があります。 Intune デバイスを使用してグループ化し、ユーザーまたはデバイスのグループに構成を展開できます。 アプリを展開および管理し、ネットワークに接続するデバイスを設定し、必要な時間と更新リングで発生する更新プログラムを構成することもできます。 
+MDM を使用して管理できるさまざまな設定があります。 Intune デバイスを使用すると、グループ化して、ユーザーまたはデバイスのグループに構成を展開することができます。 また、アプリを展開および管理したり、ネットワークに接続するようにデバイスを設定したり、必要な時点で更新プログラムが必要になったときに実行するように構成したりすることもできます。 
 
-## Intune を使用して管理する方法
+## <a name="how-to-manage-via-intune"></a>Intune を使用して管理する方法
 
-### デバイスのカテゴリとグループ
-Intune を使用すると、デバイス カテゴリを作成して、エンジニアリング、医療、開発者など、作成したカテゴリに基づいてグループにデバイスを自動的に追加できます。 Windows Holographic for Business を実行しているデバイスの管理を容易にするためのアイデアです。
-続きを読む: [デバイスをグループに分類する](https://docs.microsoft.com/mem/intune/enrollment/device-group-mapping)
+### <a name="device-categories-and-groups"></a>デバイスのカテゴリとグループ
+Intune を使用すると、デバイスカテゴリを作成して、作成したカテゴリ (エンジニアリング、医療、開発者など) に基づいてデバイスを自動的にグループに追加することができます。 このようにカテゴリを利用することで、Windows Holographic for Business を実行しているデバイスの管理が簡単になります。
+詳細:[デバイスをグループに分類](https://docs.microsoft.com/mem/intune/enrollment/device-group-mapping)する
 
-### デバイス構成プロファイル
-Intune には、組織内の異なるデバイスで有効または無効にできる設定と機能が含まれています。 これらの設定と機能は、プロファイルを使用して管理されます。 たとえば、Cortana を有効にするプロファイルを作成したり、Windows Holographic for Business を実行しているデバイスで Microsoft Defender Smart Screen を使用したりすることができます。
-プロファイルでは、OMA-URI を使用して、一部の設定のカスタマイズ、デバイス制限の作成、仮想プライベート ネットワーク (VPN) と Wi-Fi の構成を行います。
-[構成プロファイルとプロファイルの概要](https://docs.microsoft.com/mem/intune/configuration/device-profiles)について [説明します](https://docs.microsoft.com/mem/intune/configuration/device-profile-create)。
+### <a name="device-configuration-profiles"></a>デバイスの構成プロファイル
+Intune には、組織内のさまざまなデバイスで有効または無効にできる設定と機能が含まれています。 これらの設定と機能は、プロファイルを使用して管理されます。 たとえば、Cortana を有効にするプロファイルや、Windows Holographic for Business を実行しているデバイスで Microsoft Defender SmartScreen を使用するプロファイルを作成できます。
+プロファイルでは、OMA-URI を使用し、一部の設定をカスタマイズしたり、デバイス制限を作成したり、VPN (仮想プライベート ネットワーク) や Wi-Fi を構成したりできます。
+まず、[構成プロファイル](https://docs.microsoft.com/mem/intune/configuration/device-profiles)とプロファイルの[概要](https://docs.microsoft.com/mem/intune/configuration/device-profile-create)を確認します。
 
-## 管理と構成が可能な例
+## <a name="examples-of-what-can-be-managed-and-configured"></a>管理および構成できるものの例
 
-MDM を使ってデバイスを管理すると、さまざまな項目を選択できます。 
+MDM を使用してデバイスを管理すると、さまざまな項目を選択できます。 
 
-### Wi-Fi
-[Wi-Fi 設定は、](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure) ワイヤレス ネットワーク設定をユーザーとデバイスに割り当てる。 ユーザー プロファイルを割り当Wi-Fi、ユーザーは自分で構成することなくWi-Fi企業のサイトにアクセスできます。
-[HoloLens 用のネットワークの構成について詳しくは、次のリンクをご覧ください。](hololens-commercial-infrastructure.md)
+### <a name="wi-fi"></a>Wi-Fi
+[Wi-Fi 設定](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure)は、ユーザーとデバイスにワイヤレス ネットワーク設定を割り当てます。 Wi-Fi プロファイルを割り当てると、ユーザーは自分で構成しなくても、会社の Wi-Fi にアクセスできるようになります。
+[HoloLens 用にネットワークを構成する](hololens-commercial-infrastructure.md)方法について説明します。
 
-### 証明書
-証明書は、Web コンテンツのアカウント認証、Wi-Fi認証、VPN 暗号化、および SSL 暗号化を提供することで、セキュリティを向上させるのに役立ちます。 管理者はプロビジョニング パッケージを使用してデバイス上の証明書を手動で管理することができますが、MDM システムを使用して、登録から更新、失効まで、ライフサイクル全体にわたってそれらの証明書を管理するベスト プラクティスです。 MDM システムは、デバイスの登録後にこれらの証明書をデバイスの証明書ストアに自動的に展開できます (MDM システムが簡易証明書登録プロトコル (SCEP) または公開キー暗号化標準 #12 (PKCS#12) をサポートしている場合)。 MDM では、現在の証明書の有効期限が切る前に、登録済みクライアント証明書を照会して削除したり、新しい登録要求をトリガーしたりすることもできます。 
+### <a name="certificates"></a>証明書
+証明書は、アカウント認証、Wi-Fi 認証、VPN 暗号化、web コンテンツの SSL 暗号化を提供することで、セキュリティを強化するのに役立ちます。 管理者はパッケージをプロビジョニングすることによってデバイスの証明書を手動で管理できますが、ベストプラクティスとして、MDM システムを使用して、証明書をライフサイクル全体にわたって管理することをお勧めします。これは、更新と失効による登録からです。 Mdm システムは、デバイスを登録した後に、デバイスの証明書ストアにこれらの証明書を自動的に展開できます (MDM システムが Simple Certificate Enrollment Protocol (SCEP) または公開キー暗号化標準 #12 (PKCS # 12)) をサポートしている必要があります。 また、MDM では、登録されているクライアント証明書を照会して削除したり、現在の証明書の有効期限が切れる前に新しい登録要求をトリガーしたりできます。 
 
-### プロキシ
-ほとんどの企業イントラネット ネットワークは、プロキシを利用して内部トラフィックを管理します。 HoloLens 2 を使用すると、イーサネット接続およびネットワーク接続用のプロキシ Wi-Fi構成できます。 これらの設定は、VPN 接続には適用されません。 Windows 10 のプロキシ設定について詳しくは [、「NetworkProxy CSP」をご覧ください](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp)。
+### <a name="proxy"></a>プロキシ
+ほとんどの企業イントラネットネットワークは、プロキシを利用して内部トラフィックを管理します。 HoloLens 2 では、イーサネットおよび Wi-Fi 接続用のプロキシサーバーを構成できます。 これらの設定は、VPN 接続には適用されません。 Windows 10 のプロキシ設定の詳細については、「 [Networkproxy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp)」を参照してください。
 
-### VPN
-多くの場合、組織では VPN を使用して、企業のイントラネット上のアプリとリソースにアクセスします。 HoloLens 2 は SSL VPN 接続をサポートしています。SSL VPN 接続には、Microsoft Store からダウンロード可能なプラグインが必要であり、選択した VPN ベンダーに固有のプラグインが必要です。 
-- [HoloLens の VPN について詳しくは、以下を参照してください](hololens-network.md#vpn)。
-- VPN プロファイルの詳細については [、VPNv2 CSP を参照してください](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp)。
+### <a name="vpn"></a>VPN
+多くの場合、組織では VPN を使用して、企業のイントラネット上のアプリとリソースにアクセスします。 HoloLens 2 では、SSL VPN 接続をサポートしています。この接続には、Microsoft Store からダウンロード可能なプラグインが必要であり、選択した VPN ベンダーに固有のものです。 
+- [HoloLens の VPN の](hololens-network.md#vpn)詳細については、こちらを参照してください。
+- VPN プロファイルの詳細については、「 [VPNV2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp)」を参照してください。
 
-### アプリの展開と管理
-Intune を使用すると、Windows Holographic for Business を実行しているデバイスにアプリを追加できます。 MDM ソリューションを使用すると、IT の意思決定者と管理者は、企業内アプリ、業務アプリをプライベートに自動インストール (プッシュ) したり、ユーザー グループのストアを通じてアプリを購入することができます。 アプリを展開するには、次の多くの方法があります。
--   [Intune とポータル サイト]( app-deploy-intune.md)
--   [ビジネス向け Microsoft Store]( app-deploy-store-business.md)
+### <a name="deploy-and-manage-apps"></a>アプリの展開と管理
+Intune を使用し、Windows Holographic for Business を実行しているデバイスにアプリを追加できます。 MDM ソリューションを使用すると、IT の意思決定者および管理者は、社内の基幹業務アプリをプライベートに自動インストール (プッシュ) したり、ストアを介してユーザーのグループに対してアプリを購入したりすることができます。 アプリは次のようなさまざまな方法でデプロイできます。
+-   [Intune とポータルサイト]( app-deploy-intune.md)
+-   [ビジネス向け Microsoft ストア]( app-deploy-store-business.md)
 
-Intune によるアプリ管理の詳細について説明します。
--   [Intune へのアプリの追加](https://docs.microsoft.com/mem/intune/apps/apps-add)
--   [Microsoft Store アプリを追加する](https://docs.microsoft.com/mem/intune/apps/store-apps-windows)
--   [作成するアプリを追加する](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows)
+Intune を使用したアプリ管理の詳細については、こちらをご覧ください。
+-   [Intune にアプリを追加する](https://docs.microsoft.com/mem/intune/apps/apps-add)
+-   [Microsoft Store のアプリを追加する](https://docs.microsoft.com/mem/intune/apps/store-apps-windows)
+-   [自分で開発したアプリを追加する](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows)
 - [アプリをグループに割り当てる](https://docs.microsoft.com/mem/intune/apps/apps-deploy)
 
-### ソフトウェア更新プログラム
-Intune には、Windows 10 デバイスの更新リングと呼ばれる機能が含まれています。 これらの更新リングには、更新プログラムのインストール方法を決定する設定のグループが含まれます。 たとえば、更新プログラムをインストールするためのメンテナンス期間を作成することも、更新プログラムのインストール後に再起動することもできます。 更新リングは、Windows Holographic for Business を実行している複数のデバイスに適用できます。
-Intune で [HoloLens の更新プログラムを管理する](hololens-updates.md) 方法とソフトウェア更新 [プログラムを管理する方法について詳しくは、以下をご覧ください](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。
+### <a name="software-updates"></a>ソフトウェア更新プログラム
+Intune には、Windows 10 デバイス用に、更新プログラム リングと呼ばれている機能があります。 更新プログラム リングには、更新プログラムのインストール方法を決定する一連の設定が含まれています。 たとえば、更新プログラムをインストールするためのメンテナンス期間を作成したり、更新プログラムのインストール後に再起動を選択したりできます。 更新プログラム リングは、Windows Holographic for Business を実行している複数のデバイスに適用できます。
+[HoloLens の更新プログラムを管理](hololens-updates.md)し、Intune を使用して[ソフトウェア更新プログラムを管理](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)する方法の詳細については、こちらをご覧ください。
 
-### キオスク モードを構成する
-Intune で利用可能な共有またはゲスト PC の機能を使用して、キオスクとして実行される Windows Holographic for Business デバイスを構成できます。 これらのデバイスは、1 つのアプリ (単一アプリキオスク モード) を実行するか、複数のアプリ (複数アプリキオスク モード) を実行できます。 キオスク モードは、既定でどのアプリにアクセスできる ID を制御するための UI です。
-[HoloLens をキオスクとしてセットアップする方法について説明します。]( hololens-kiosk.md)
+### <a name="configure-kiosk-mode"></a>キオスク モードを構成する
+Intune で利用できる共有またはゲスト PC 機能を利用し、キオスクとして実行されるように Windows Holographic for Business デバイスを構成できます。 キオスクとして構成したデバイスでは、1 つのアプリを実行するか (シングルアプリ キオスク モード)、複数のアプリを実行できます (マルチアプリ キオスク モード)。 キオスクモードは、どの id が既定でどのアプリにアクセスできるかを制御するための UI です。
+[HoloLens をキオスクとしてセットアップ]( hololens-kiosk.md)する方法について説明します。
 

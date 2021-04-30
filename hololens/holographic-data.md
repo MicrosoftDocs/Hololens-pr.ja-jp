@@ -1,7 +1,7 @@
 ---
 title: HoloLens でファイルを検索して保存する
-description: HoloLens のエクスプローラーを使用して、Mixed Reality デバイス上のファイルを開き、表示、管理する方法について説明します。
-keywords: 使い方, ファイル ピッカー, ファイル, 写真, ビデオ, 画像, OneDrive, ストレージ, エクスプローラー, hololens
+description: HoloLens でファイルエクスプローラーを使用して、mixed reality デバイス上のファイルを開いて表示し、管理する方法について説明します。
+keywords: 方法, ファイルピッカー, ファイル, 写真, ビデオ, 画像, OneDrive, ストレージ, ファイルエクスプローラー, hololens
 ms.assetid: 77d2e357-f65f-43c8-b62f-6cd9bf37070a
 author: mattzmsft
 ms.author: mazeller
@@ -17,88 +17,88 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 2d979b2cffd20589ddef7f11db5c7206eaea23cb
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283528"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309185"
 ---
-# HoloLens でファイルを検索し、開いて保存する
+# <a name="find-open-and-save-files-on-hololens"></a>HoloLens でファイルを検索して開き、保存する
 
-写真やビデオなど、HoloLens で作成したファイルは、HoloLens デバイスに直接保存されます。 Windows 10 でファイルを管理するのと同じ方法でファイルを表示および管理します。
+HoloLens で作成したファイル (写真やビデオを含む) は、HoloLens デバイスに直接保存されます。 Windows 10 でファイルを管理するのと同じ方法で、それらを表示して管理します。
 
-- エクスプローラー アプリを使ってローカル フォルダーにアクセスする。
+- ファイルエクスプローラーアプリを使用してローカルフォルダーにアクセスする。
 - アプリのストレージ内。
-- 特別なフォルダー (ビデオや音楽ライブラリなど) 内。
-- アプリとファイル ピッカー (OneDrive など) を含むストレージ サービスの使用。
-- USB ケーブルを使用して HoloLens に接続されたデスクトップ PC を使い、MTP (メディア転送プロトコル) サポートを使用します。
+- 特別なフォルダー (ビデオや音楽ライブラリなど)。
+- アプリとファイルピッカー (OneDrive など) を含むストレージサービスを使用する。
+- USB ケーブルを使用して HoloLens に接続されているデスクトップ PC を使用する (MTP (Media Transfer Protocol) のサポート)。
 
-## エクスプローラーを使用して HoloLens 上のファイルを表示する
+## <a name="view-files-on-hololens-using-file-explorer"></a>ファイルエクスプローラーを使用して HoloLens のファイルを表示する
 
-> [HoloLens 用の Windows 10 April 2018 Update (RS4)](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018)の現在、すべての HoloLens 2 デバイスと HoloLens (第 1 世代) に適用されます。
+> Hololens [用の Windows 10 April 2018 Update (RS4)](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018)の時点で、すべての hololens 2 デバイスと hololens (第1世代) に適用されます。
 
-HoloLens のエクスプローラーを使って、3D オブジェクト、ドキュメント、画像など、デバイス上のファイルを表示および管理します。 [すべてのアプリ**を**   >  **起動]**   >  **エクスプローラーに移動して**開始します。
+HoloLens のファイルエクスプローラーを使用して、3D オブジェクト、ドキュメント、画像など、デバイス上のファイルを表示および管理します。 開始するには、[すべてのアプリの **起動**] [エクスプローラー] に移動   >     >  します。
 
 > [!TIP]
-> エクスプローラーに一覧表示されるファイルがない場合は、左上のウィンドウで **[このデバイス** ] を選択します。
+> ファイルエクスプローラーにファイルが表示されていない場合は、左上のウィンドウで [ **このデバイス** ] を選択します。
 
-エクスプローラーにファイルが表示されなかっていない場合は、"最近使用した" フィルターがアクティブである可能性があります (左側のウィンドウで時計アイコンが強調表示されています)。 これを修正するには、左側の**** ウィンドウ (時計アイコンの下) で [このデバイス ドキュメント] アイコンを選択するか、メニューを開いて [このデバイス]**を選択します**。
+ファイルエクスプローラーにファイルが表示されない場合は、"最近" のフィルターがアクティブになっている可能性があります (時計のアイコンは左のウィンドウで強調表示されています)。 この問題を解決するには、左側のウィンドウ (時計のアイコンの下) で **このデバイス** ドキュメントアイコンを選択するか、メニューを開いて [ **このデバイス**] を選択します。
 
-## 写真とビデオを検索して表示する
+## <a name="find-and-view-your-photos-and-videos"></a>写真やビデオを検索して表示する
 
-[Mixed Reality キャプチャを](holographic-photos-and-videos.md) 使うと、HoloLens で Mixed Reality の写真やビデオを撮影できます。  これらの写真とビデオは、デバイスのカメラ ロール フォルダーに保存されます。
+[Mixed reality キャプチャ](holographic-photos-and-videos.md) を使用すると、HoloLens で mixed reality の写真とビデオを取得できます。  これらの写真とビデオは、デバイスのカメラロールフォルダーに保存されます。
 
 HoloLens で撮影した写真やビデオには、次の方法でアクセスできます。
 
-- フォト アプリを通じてカメラ ロールに [直接アクセスする](holographic-photos-and-videos.md)。
-- 写真とビデオを OneDrive に同期して、写真やビデオをクラウド ストレージにアップロードします。
-- Using the Mixed Reality Capture page of the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture).
+- カメラのロールへのアクセスは、 [写真アプリ](holographic-photos-and-videos.md)から直接行うことができます。
+- 写真やビデオを OneDrive に同期して、写真やビデオをクラウドの記憶域にアップロードします。
+- [Windows デバイスポータル](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture)の [Mixed Reality Capture] ページを使用します。
 
-### フォト アプリ
+### <a name="photos-app"></a>フォト アプリ
 
-フォト アプリはスタート メニューの既定のアプリ**** の 1 つで、HoloLens に組み込されています。 フォト アプリを使 [ってコンテンツを表示する方法について詳しくは、以下をご覧ください](holographic-photos-and-videos.md)。
+Photos アプリは、[ **スタート** ] メニューの既定のアプリの1つであり、HoloLens が組み込まれています。 [写真アプリを使用してコンテンツを表示する](holographic-photos-and-videos.md)方法について説明します。
 
-Microsoft Store から [OneDrive アプリ](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) をインストールして、写真を他のデバイスと同期することもできます。
+Microsoft Store から [OneDrive アプリ](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) をインストールして、写真を他のデバイスと同期させることもできます。
 
-### OneDrive アプリ
+### <a name="onedrive-app"></a>OneDrive アプリ
 
-[OneDrive を](https://onedrive.live.com/) 使用すると、写真やビデオにアクセスし、管理し、任意のデバイスやユーザーと共有できます。 HoloLens でキャプチャした写真やビデオにアクセスするには、HoloLens の Microsoft Store から [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) アプリをダウンロードします。 ダウンロードしたら、OneDrive アプリを開き、[**カメラ**の設定のアップロード] を選択し、[  >  **** カメラのアップロード]**をオンにします**。
+[OneDrive](https://onedrive.live.com/) では、任意のデバイスと任意のユーザーとの写真やビデオのアクセス、管理、共有を行うことができます。 HoloLens でキャプチャされた写真やビデオにアクセスするには、HoloLens の Microsoft Store から [OneDrive アプリ](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) をダウンロードします。 ダウンロードしたら、OneDrive アプリを開き、[**設定**] [カメラのアップロード] の順に選択し、[  >  **カメラのアップロード**] をオンにします。
 
-### PC に接続する
+### <a name="connect-to-a-pc"></a>PC に接続する
 
-HoloLens で Windows [10 April 2018](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) 更新プログラム以降を実行している場合は、USB ケーブルを使って MTP (メディア転送プロトコル) を使ってデバイス上の写真やビデオを参照することにより、HoloLens を Windows 10 PC に接続できます。 デバイスに PIN またはパスワードが設定されている場合は、ファイルを参照するためにデバイスのロックが解除されていないことを確認する必要があります。  
+HoloLens で [windows 10 April 2018 update](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) 以降を実行している場合は、USB ケーブルを使用して WINDOWS 10 PC に hololens を接続し、MTP (media transfer protocol) を使用してデバイス上の写真とビデオを参照することができます。 デバイスに PIN またはパスワードを設定している場合は、ファイルを参照するためにデバイスのロックが解除されていることを確認する必要があります。  
 
-[Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)を有効にしている場合は、それを使ってデバイスに保存されている写真やビデオを参照、取得、管理できます。
+[Windows デバイスポータル](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)を有効にしている場合は、デバイスに保存されている写真やビデオを参照、取得、および管理するために使用できます。
 
-## アプリ内のファイルにアクセスする
+## <a name="access-files-within-an-app"></a>アプリ内のファイルにアクセスする
 
-アプリケーションがデバイスにファイルを保存する場合は、そのアプリケーションを使用してファイルにアクセスできます。
+アプリケーションがデバイスにファイルを保存する場合、そのアプリケーションを使用してファイルにアクセスできます。
 
-### 別のアプリからファイルを要求する
+### <a name="requesting-files-from-another-app"></a>別のアプリからのファイルの要求
 
-アプリケーションは、ファイル ピッカーを使用して、ファイルを保存するか、別のアプリからファイル [を開くことを要求できます](https://docs.microsoft.com/windows/mixed-reality/app-model#file-pickers)。
+アプリケーションは、ファイル [ピッカー](https://docs.microsoft.com/windows/mixed-reality/app-model#file-pickers)を使用して、ファイルを保存したり、別のアプリからファイルを開いたりするように要求できます。
 
-### 既知のフォルダー
+### <a name="known-folders"></a>既知のフォルダー
 
-HoloLens は、アプリがアクセス許可 [を要求](https://docs.microsoft.com/windows/mixed-reality/app-model#known-folders) できる多くの既知のフォルダーをサポートしています。
+HoloLens では、アプリがアクセス許可を要求できる [既知のフォルダー](https://docs.microsoft.com/windows/mixed-reality/app-model#known-folders) がいくつかサポートされています。
 
-## PC で HoloLens ファイルを表示する
+## <a name="view-hololens-files-on-your-pc"></a>PC での HoloLens ファイルの表示
 
-他のモバイル デバイスと同様に、MTP (メディア転送プロトコル) を使って HoloLens をデスクトップ PC に接続し、PC でエクスプローラーを開いて HoloLens ライブラリにアクセスして簡単に転送できます。
+他のモバイルデバイスと同様に、HoloLens (Media Transfer Protocol) を使用して HoloLens をデスクトップ PC に接続し、PC でファイルエクスプローラーを開いて、簡単に転送できるように HoloLens ライブラリにアクセスします。
 
-PC のエクスプローラーで HoloLens ファイルを表示するには、次の手順を実行します。
+PC のファイルエクスプローラーで HoloLens ファイルを表示するには、次のようにします。
 
-1. HoloLens にサインインし、HoloLens に付属の USB ケーブルを使って PC に接続します。
+1. HoloLens にサインインし、HoloLens に付属の USB ケーブルを使用して PC に接続します。
 
-1. [ **デバイスを開く**] を選択してエクスプローラーでファイルを表示するか、PC でエクスプローラーを開いてデバイスに移動します。
+1. [デバイスを開く] を選択し **てファイルエクスプローラーでファイルを表示する** か、PC のエクスプローラーを開き、デバイスに移動します。
 
-HoloLens に関する情報を表示するには、PC のエクスプローラーでデバイス名を右クリックし、[プロパティ] を選択 **します**。
+HoloLens に関する情報を表示するには、PC のエクスプローラーでデバイス名を右クリックし、[ **プロパティ**] を選択します。
 
 > [!NOTE]
-> HoloLens (第 1 世代) では、外部ハード ドライブまたは SD カードへの接続はサポートされていません。
+> HoloLens (第1世代) では、外部ハードドライブまたは SD カードへの接続はサポートされていません。
 
-## クラウドへの同期
+## <a name="sync-to-the-cloud"></a>クラウドへの同期
 
-写真などのファイルを HoloLens からクラウドに同期するには、HoloLens に OneDrive をインストールしてセットアップします。 OneDrive を取得するには、HoloLens の Microsoft Store で OneDrive を検索します。
+HoloLens からクラウドに写真やその他のファイルを同期するには、HoloLens に OneDrive をインストールしてセットアップします。 OneDrive を取得するには、HoloLens の Microsoft Store で検索します。
 
-HoloLens はアプリのファイルとデータをバックアップしないので、重要なファイルを OneDrive に保存すると良い方法です。 そうすることで、デバイスをリセットしたり、アプリをアンインストールしたりすると、情報がバックアップされます。
+HoloLens では、アプリファイルとデータはバックアップされないため、重要なものを OneDrive に保存することをお勧めします。 このようにして、デバイスをリセットしたり、アプリをアンインストールしたりすると、情報がバックアップされます。

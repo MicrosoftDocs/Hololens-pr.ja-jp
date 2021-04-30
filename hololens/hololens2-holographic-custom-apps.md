@@ -1,10 +1,10 @@
 ---
-title: HoloLens 2 用のカスタム アプリを管理する
-description: Device Portal と Visual Studio を使って、HoloLens 2 デバイスにカスタム ホログラフィック アプリをインストール、アンインストール、サイド ロードする方法について説明します。
+title: HoloLens 2 のカスタムアプリを管理する
+description: デバイスポータルと Visual Studio を使用して、カスタム holographic アプリを HoloLens 2 デバイスにインストール、アンインストール、およびサイドロードする方法について説明します。
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
 ms.date: 01/21/2021
 manager: yannisle
-keywords: hololens, hololens 2, サイドロード, ストア, UWP, アプリ, インストール
+keywords: hololens、hololens 2、サイドロード、サイドロード、サイドロード、ストア、uwp、アプリ、インストール
 ms.prod: hololens
 ms.sitesec: library
 author: joyjaz
@@ -17,23 +17,23 @@ ms.custom:
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: e3ae180697c889a426108992ba345dc23b96505c
-ms.sourcegitcommit: 4c6d982bee72195bef955532738711f2b00ac8be
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "11297006"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309292"
 ---
-# HoloLens 2 用のカスタム アプリを管理する
+# <a name="manage-custom-apps-for-hololens-2"></a>HoloLens 2 のカスタムアプリを管理する
 
-HoloLens は、HoloLens 用に特別に作られた新しいアプリだけでなく、Microsoft ストアにある既存のアプリケーションの多くもサポートします。 
+HoloLens は、Microsoft Store からの多くの既存アプリケーションと、HoloLens 専用に構築された新しいアプリをサポートしています。 
 
-ストア アプリの詳細については、「ストアでアプリ [を管理する」を参照してください](holographic-store-apps.md)。
+ストアアプリの詳細については、「 [ストアアプリを使用したアプリの管理](holographic-store-apps.md)」を参照してください。
 
 > [!IMPORTANT]
-> エンタープライズ展開では、両方の方法で使用する開発者モードを有効にすることをお勧めしません。 セキュリティで保護されたアプリの展開方法に関心がある場合は、「アプリ管理: 概要」を [確認してください](app-deploy-overview.md)。
+> 企業の展開では、開発者モードを有効にすることはお勧めしません。どちらの方法でも使用できます。 セキュリティで保護されたアプリのデプロイ方法に関心がある場合は、 [アプリ管理の概要](app-deploy-overview.md)に関する記事を参照してください。
 
-HoloLens 2 デバイス用のアプリのインストール方法を探している場合は、次を参照してください。
-- [Device Portal: アプリのインストール](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
-- [アプリVisual Studioを使用してアプリを展開およびデバッグする](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
+HoloLens 2 デバイスに対して開発者向けのアプリのインストール方法をお探しの場合は、以下を参照してください。
+- [デバイスポータル: アプリのインストール](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
+- [Visual Studio を使用したアプリの配置とデバッグ](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
 
-HoloLens (第 1 世代) にカスタム アプリを展開する場合は、このガイドをご覧ください。 [](holographic-custom-apps.md)
+HoloLens (第1世代) にカスタムアプリをデプロイする場合は、この [ガイド](holographic-custom-apps.md) を参照してください。

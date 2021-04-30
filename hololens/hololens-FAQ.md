@@ -1,7 +1,7 @@
 ---
-title: HoloLens デバイスおよびホログラムについてよく寄せられる質問
-description: HoloLens の問題やホログラムの操作について質問がありますか?  この記事では、簡単な回答とその他のリソースを提供します。
-keywords: HoloLens、FAQ、既知の問題、ヘルプ
+title: HoloLens デバイスとホログラムに関してよく寄せられる質問
+description: HoloLens またはホログラムとの対話に関する簡単な質問がある場合は、  この記事では、迅速な回答とリソースについて説明します。
+keywords: hololens、faq、既知の問題、ヘルプ
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -18,282 +18,283 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 918ffe42ae23c6b7e0e91c6d365c80eee487660b
-ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
+ms.openlocfilehash: 660c3b4d3a35a7794de5e3e2fb18f2a4aba03c0e
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "11393861"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309177"
 ---
-# <a name="frequently-asked-questions-about-hololens-devices-and-holograms"></a>HoloLens デバイスおよびホログラムについてよく寄せられる質問
+# <a name="frequently-asked-questions-about-hololens-devices-and-holograms"></a>HoloLens デバイスとホログラムに関してよく寄せられる質問
 
 この記事では、ホログラムの配置方法、スペースの操作方法など、HoloLens の使用方法に関するいくつかの質問に回答します。
 
-問題が発生した場合は、HoloLens が課金 [されます](https://support.microsoft.com/help/12627/hololens-charge-your-hololens)。 [再起動](hololens-restart-recover.md)して、問題が解決するかどうかを確認してください。 フィードバック アプリを使用して、問題に関する情報を送信してください。 フィードバック アプリは、[**[スタート]** メニュー](holographic-home.md)にあります。
+問題が発生した場合は常に、HoloLens が [課金](https://support.microsoft.com/help/12627/hololens-charge-your-hololens)されていることを確認してください。 [再起動](hololens-restart-recover.md)して問題が解決するかどうかを確認してください。 フィードバックアプリを使用して、問題に関する情報をお送りください。 [ [**スタート** ] メニュー](holographic-home.md)にフィードバックアプリが表示されます。
 
-HoloLens の装着方法に関するヒントについては [、「HoloLens (第 1](hololens1-fit-comfort-faq.md)世代) のフィット感と快適さについてよく寄せられる質問」を参照してください。
+HoloLens を使用する方法に関するヒントについては、「 [hololens (第1世代) の適合性とよく寄せられる質問](hololens1-fit-comfort-faq.md)」を参照してください。
 
-この記事では、次の質問と問題について説明します。
-<a id="list"></a>
+この記事では、次の質問と問題について説明します。 <a id="list"></a>
 
-- [ホログラムが正しく表示されない、または動き回る](#my-holograms-dont-look-right-or-are-moving-around)
-- ["スペースの検索中" というメッセージが表示される](#i-see-a-message-that-says-finding-your-space)
-- [スペースに表示されるはずのホログラムが表示されない](#im-not-seeing-the-holograms-that-i-expect-to-see-in-my-space)
-- [必要な場所にはホログラムを配置できない](#i-cant-place-holograms-where-i-want-to)
-- [ホログラムが消える、または他のホログラムまたはオブジェクトに囲まれている](#holograms-disappear-or-are-encased-in-other-holograms-or-objects)
-- [壁の反対側にホログラムが表示される](#i-can-see-holograms-that-are-on-the-other-side-of-a-wall)
-- [壁にホログラムを配置すると、ホログラムが浮いて見える](#when-i-place-a-hologram-on-a-wall-the-hologram-seems-to-float)
-- [アプリを移動しようとすると、アプリが近くに表示される](#apps-appear-too-close-to-me-when-im-trying-to-move-them)
-- [ディスク領域不足エラーが発生する](#im-getting-a-low-disk-space-error)
-- [HoloLens がジェスチャに応答しない](#hololens-doesnt-respond-to-my-gestures)
+- [ホログラムが正しくないか、移動しています](#my-holograms-dont-look-right-or-are-moving-around)
+- ["スペースを検索しています" というメッセージが表示されます。](#i-see-a-message-that-says-finding-your-space)
+- [スペースに表示される可能性があるホログラムが表示されていません](#im-not-seeing-the-holograms-that-i-expect-to-see-in-my-space)
+- [ホログラムを配置することはできません。](#i-cant-place-holograms-where-i-want-to)
+- [ホログラムが非表示になっているか、他のホログラムまたはオブジェクトで入れされています](#holograms-disappear-or-are-encased-in-other-holograms-or-objects)
+- [壁の反対側にあるホログラムを見ることができます。](#i-can-see-holograms-that-are-on-the-other-side-of-a-wall)
+- [壁にホログラムを配置すると、ホログラムがフロートしているように見えます。](#when-i-place-a-hologram-on-a-wall-the-hologram-seems-to-float)
+- [アプリを移動しようとしているときに、すぐに表示されない](#apps-appear-too-close-to-me-when-im-trying-to-move-them)
+- [ディスク領域が不足しているというエラーが発生する](#im-getting-a-low-disk-space-error)
+- [HoloLens が自分のジェスチャに応答しない](#hololens-doesnt-respond-to-my-gestures)
 - [HoloLens が音声に応答しない](#hololens-doesnt-respond-to-my-voice)
-- [Bluetooth デバイスのペアリングや使用に問題がある](#im-having-problems-pairing-or-using-a-bluetooth-device)
-- [HoloLens の設定には使用可能なデバイスが表示されるが、デバイスが機能しない](#hololens-settings-lists-devices-as-available-but-the-devices-dont-work)
-- [HoloLens クリッカーを使用するときに問題が発生する](#im-having-problems-using-the-hololens-clicker)
-- [Wi-Fi に接続できない](#i-cant-connect-to-wi-fi)
-- [HoloLens が正常に動作していない、反応しない、または起動しない](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
-- [以前に他のユーザーに対して設定されているために HoloLens デバイスにサインインできない](#i-cant-sign-in-to-a-hololens-device-because-it-was-previously-set-up-for-someone-else)
+- [Bluetooth デバイスのペアリングまたは使用に関する問題が発生しています](#im-having-problems-pairing-or-using-a-bluetooth-device)
+- [HoloLens の設定では、使用可能なデバイスが一覧表示されますが、デバイスが動作しません](#hololens-settings-lists-devices-as-available-but-the-devices-dont-work)
+- [HoloLens clicker の使用に関する問題が発生しています](#im-having-problems-using-the-hololens-clicker)
+- [Wi-fi に接続できません](#i-cant-connect-to-wi-fi)
+- [HoloLens が正常に実行されていない、応答していない、または起動しない](#my-hololens-isnt-running-well-is-unresponsive-or-wont-start)
+- [HoloLens デバイスは既に他のユーザーに設定されているため、サインインできません](#i-cant-sign-in-to-a-hololens-device-because-it-was-previously-set-up-for-someone-else)
 - [HoloLens デバイスの管理に関する質問](#questions-about-managing-hololens-devices)
-- [HoloLens デバイスの保護に関する質問](#questions-about-securing-hololens-devices)
-- [すべてのスペースを削除するにはどうすればよいですか?](#how-do-i-delete-all-spaces)
-- [HoloLens 2 エミュレーターで入力用キーボードを見つけたり、使用したりできない](#i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator)
+- [HoloLens デバイスのセキュリティに関する質問](#questions-about-securing-hololens-devices)
+- [すべてのスペースを削除操作方法には](#how-do-i-delete-all-spaces)
+- [HoloLens 2 のエミュレーターにキーボードを入力したり、使用したりすることはできません。](#i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator)
 
-## <a name="my-holograms-dont-look-right-or-are-moving-around"></a>ホログラムが正しく表示されない、または動き回る
+## <a name="my-holograms-dont-look-right-or-are-moving-around"></a>ホログラムが正しくないか、移動しています
 
-ホログラムが正しく表示されない場合 (たとえば、ちらつきや揺れがある場合、またはそれらの上に黒いパッチが表示される場合)、次のいずれかの修正を試してください。
+ホログラムが正しく表示されない場合 (たとえば、ちらつきやぶれがある場合や、黒い修正プログラムが表示されている場合など) は、次のいずれかの修正を試してください。
 
-- [デバイスのバイザーをクリーニングし](hololens1-hardware.md#care-and-cleaning)、センサーがブロックされていないことを確認します。
-- 今いる場所が、直射日光の多くない明るい部屋であるか確認します。
-- HoloLens が周囲をより完全にスキャンできるように、歩き回って周囲を注視してください。
-- 多数のホログラムを配置した場合は、いくつかを削除してみてください。
+- [デバイスバイザーをクリーニング](hololens1-hardware.md#care-and-cleaning) し、センサーをブロックしているものがないことを確認します。
+- 大量の直接日光がない、十分に光のある部屋にいることを確認します。
+- HoloLens がより完全にスキャンできるように、お客様の環境で試してみてください。
+- ホログラムを多数配置している場合は、いくつかを削除してみてください。
 
-それでも問題が解決しない場合は、調整アプリを実行してみてください。 このアプリは、ホログラムを最高の状態に保つために、HoloLens を調整します。 これを行うには、**[設定]** > **[システム]** > **[ユーティリティ]** に移動します。 **[調整]** で、**[調整を開く]** を選択します。
-
-[リストに戻る](#list)
-
-## <a name="i-see-a-message-that-says-finding-your-space"></a>"スペースの検索中" というメッセージが表示される
-
-HoloLens がスペースを学習または読み込み中の場合、"スペースの検索中" という短いメッセージが表示されることがあります。 このメッセージが数秒以上表示される場合は、[スタート] メニューの下に "「まだスペースを検索しています" という別のメッセージが表示されます。
-
-これらのメッセージは、HoloLens にスペースのマッピングの問題があることを意味します。 この問題が発生した場合は、アプリを開くことはできますが、その環境にホログラムを配置することはできません。
-
-メッセージが頻繁に表示される場合は、次の 1 つ以上の修正を試してください。
-
-- 今いる場所が、直射日光の多くない明るい部屋であるか確認します。
-- デバイスのバイザーが汚れていないことを確認します。 [バイザーをクリーニングする方法を学習します](hololens1-hardware.md#care-and-cleaning)。
-- 強力な Wi-Fi 信号があることを確認します。 Wi-Fi がないか、Wi-Fi 信号が弱い新しい環境に入ると、HoloLens はスペースを見つけることができません。 **[設定]** > **[ネットワーク] &amp; [インターネット]** > **[Wi-Fi]** に移動して、Wi-Fi 接続を確認します。
-- もっとゆっくり動かしてみてください。
+問題が解決しない場合は、調整アプリを実行してみてください。 このアプリは、ホログラムを最適な状態に保つためだけに HoloLens を調整します。 これを行うには、[**設定**] [  >  **システム** ユーティリティ] にアクセスし  >  ます。 [ **調整**] で [ **調整を開く**] を選択します。
 
 [リストに戻る](#list)
 
-## <a name="im-not-seeing-the-holograms-that-i-expect-to-see-in-my-space"></a>スペースに表示されるはずのホログラムが表示されない
+## <a name="i-see-a-message-that-says-finding-your-space"></a>"スペースを検索しています" というメッセージが表示されます。
 
-配置したホログラムが表示されない場合、または予期しないものが表示される場合は、次の 1 つ以上の修正を試してください。
+HoloLens がスペースの学習または読み込みを行っているときに、"スペースを検索しています" という短いメッセージが表示される場合があります。 このメッセージが数秒以上表示される場合は、[スタート] メニューに "スペースを検索しています" というメッセージが表示されます。
 
-- いくつかのライトをオンにします。 HoloLens は、明るい領域で最適に動作します。
-- **[設定]** > **[システム]** > **[ホログラム]** > **[近くのホログラムを削除]** に移動して、不要なホログラムを削除します。 または、必要に応じて、**[すべてのホログラムを削除]** を選択します。
+これらのメッセージは、HoloLens がスペースのマッピングで問題を抱えていることを意味します。 このような場合、アプリを開くことはできますが、環境にホログラムを配置することはできません。
+
+これらのメッセージが頻繁に表示される場合は、次の1つまたは複数の修正プログラムを試してください。
+
+- 大量の直接日光がない、十分に光のある部屋にいることを確認します。
+- デバイスバイザーがクリーンであることを確認します。 [バイザーをクリーニングする方法について説明](hololens1-hardware.md#care-and-cleaning)します。
+- 強力な Wi-Fi シグナルがあることを確認します。 Wi-Fi がない新しい環境や脆弱な Wi-Fi 信号を入力すると、HoloLens はスペースを見つけることができなくなります。 [**設定**] [ネットワーク] [インターネット] [wi-fi] の順に移動して、Wi-Fi 接続を確認  >  **&amp;**  >  します。
+- 移動に時間がかかります。
+
+[リストに戻る](#list)
+
+## <a name="im-not-seeing-the-holograms-that-i-expect-to-see-in-my-space"></a>スペースに表示される可能性があるホログラムが表示されていません
+
+配置したホログラムが表示されない場合、または予期しないものが表示されている場合は、次の1つまたは複数の修正プログラムを試してください。
+
+- いくつかのライトをオンにします。 HoloLens は、十分に明るい領域で最適に動作します。
+- **設定** システムのホログラムに移動して、必要のないホログラムを削除  >    >    >  します。 または、必要に応じて、[ **すべてのホログラムを削除** する] を選択します。
 
   > [!NOTE]
-  > スペースのレイアウトや照明が大幅に変化すると、デバイスでスペースを識別してホログラムを表示するのに問題が生じる可能性があります。
+  > 領域のレイアウトまたは光源が大幅に変化した場合、デバイスでは、領域を特定し、ホログラムを表示する際に問題が発生する可能性があります。
 
 [リストに戻る](#list)
 
-## <a name="i-cant-place-holograms-where-i-want-to"></a>必要な場所にはホログラムを配置できない
+## <a name="i-cant-place-holograms-where-i-want-to"></a>ホログラムを配置することはできません。
 
-ホログラムの配置に問題がある場合は、次の操作を行います。
+ホログラムを配置する際に問題が発生した場合は、次の点を試してみてください。
 
-- ホログラムを配置しようとしている場所から 1 ～ 3 メートル離れた場所に立ちます。
-- ホログラムを黒い面や反射のある面に配置しないでください。
-- 今いる場所が、直射日光の多くない明るい部屋であるか確認します。
-- HoloLens が周囲を再スキャンできるように、部屋を歩き回ります。 スキャン済みの内容を確認するには、エアタップしてマッピング メッシュ グラフィックを表示します。
-
-[リストに戻る](#list)
-
-## <a name="holograms-disappear-or-are-encased-in-other-holograms-or-objects"></a>ホログラムが消える、または他のホログラムまたはオブジェクトに囲まれている
-
-ホログラムに近づきすぎると、一時的に表示されなくなります&mdash;ホログラムを復元するには、ホログラムから離れます。 また、複数のホログラムを近づけて配置すると、一部のホログラムが消える場合があります。 いくつか削除してみてください。
-
-ホログラムは、他のホログラムまたは壁などのオブジェクトによって、ブロックしたり、囲んだりすることもできます。 この問題が発生した場合は、次の修正のいずれかを試してください。
-
-- ホログラムが別のホログラムに囲まれている場合は、囲まれたホログラムを別の場所に移動します。 これを行うには、**[調整]** を選択し、タップして長押しして配置します。
-- ホログラムが壁に囲まれている場合は、**[調整]** を選択し、ホログラムが表示されるまで壁に向かって歩きます。 タップして長押しして、ホログラムを前方に引き出し、壁から引き出します。
-- ジェスチャを使用してホログラムを移動できない場合は、音声を使用して削除します。 ホログラムを見つめ、"削除" と言います。 次に、ホログラムをもう一度開き、新しい場所に配置します。
+- ホログラムを配置しようとしている場所から、1 ~ 3 つのメーターを設置します。
+- ブラックまたは反射サーフェスにホログラムを配置しないでください。
+- 大量の直接日光がない、十分に光のある部屋にいることを確認します。
+- HoloLens が環境を再スキャンできるように、部屋を説明します。 既にスキャンされているものを確認するには、エアタップを利用してマッピングメッシュグラフィックを表示します。
 
 [リストに戻る](#list)
 
-## <a name="i-can-see-holograms-that-are-on-the-other-side-of-a-wall"></a>壁の反対側にホログラムが表示される
+## <a name="holograms-disappear-or-are-encased-in-other-holograms-or-objects"></a>ホログラムが非表示になっているか、他のホログラムまたはオブジェクトで入れされています
 
-壁に非常に近い場合、または HoloLens がまだ壁をスキャンしていない場合は、隣の部屋にあるホログラムが表示されることがあります。 壁をスキャンするには、壁から 1 〜 3 メートル離れた場所に立ち、壁を見つめます。
+ホログラムに近すぎると、ホログラムを復元するために一時的に非表示になり &mdash; 、そこから移動するだけです。 また、複数のホログラムを一緒に配置した場合は、一部が非表示になることがあります。 いくつか削除してみてください。
 
-HoloLens が壁をスキャンしようとするとき、壁の近くに黒いオブジェクトまたは反射するオブジェクト (黒いソファやステンレス鋼の冷蔵庫など) が問題を引き起こす可能性があります。 そのようなオブジェクトがある場合は、壁の反対側をスキャンします。
+ホログラムは、他のホログラムや、壁などのオブジェクトによってブロックまたは入れすることもできます。 この問題が発生した場合は、次のいずれかの修正を試してください。
 
-[リストに戻る](#list)
-
-## <a name="when-i-place-a-hologram-on-a-wall-the-hologram-seems-to-float"></a>壁にホログラムを配置すると、ホログラムが浮いて見える
-
-通常、壁に配置するホログラムは壁から 1 インチほど離れているように見えます。 遠くにあるように見える場合は、次の 1 つ以上の修正を試してください。
-
-- ホログラムを壁に配置するときは、壁から 1 〜 3 メートル離れた場所に立ち、壁にまっすぐ向かいます。
-- 壁をエアタップして、マッピング メッシュ グラフィックを表示します。 メッシュが壁に整列して配置されていることを確認します。 そうでない場合は、ホログラムを削除し、壁を再スキャンしてから、もう一度試してください。
-- 問題が解決しない場合は、調整アプリを実行します。 **[設定]** > **[システム]** > **[ユーティリティー]** に表示されます。
+- ホログラムが別のホログラムで入れされている場合は、入れホログラムを別の場所に移動します。 これを行うには、[ **調整**] を選択し、[位置] をタップしたままにします。
+- ホログラムが壁に入れている場合は、[ **調整**] を選択し、ホログラムが表示されるまで壁に移動します。 タップしてホールドした後、壁の上と下にホログラムを引き出します。
+- ジェスチャを使用してホログラムを移動できない場合は、音声を使用して削除します。 ホログラムを見つめ、「Remove」と言います。 次に、ホログラムを再び開き、新しい場所に配置します。
 
 [リストに戻る](#list)
 
-## <a name="apps-appear-too-close-to-me-when-im-trying-to-move-them"></a>アプリを移動しようとすると、アプリが近くに表示される
+## <a name="i-can-see-holograms-that-are-on-the-other-side-of-a-wall"></a>壁の反対側にあるホログラムを見ることができます。
 
-HoloLens がさまざまな角度からエリアをスキャンするように、アプリを配置しているエリアを歩き回って見てみてください。 [デバイス バイザーのクリーニング](hololens1-hardware.md#care-and-cleaning)も役立つ場合があります。
+壁に近づいている場合、または HoloLens でウォールがまだスキャンされていない場合は、次の部屋にあるホログラムを見ることができます。 壁をスキャンするには、1 ~ 3 つのメーターを壁から離れた場所に設置します。
 
-[リストに戻る](#list)
-
-## <a name="im-getting-a-low-disk-space-error"></a>ディスク領域不足エラーが発生する
-
-次の 1 つ以上を実行して、記憶領域を解放します。
-
-- 配置したホログラムの一部を削除するか、アプリ内で保存したデータを削除します。 [データを見つけるにはどうすればよいですか?](holographic-data.md)
-- フォト アプリの画像と動画を削除します。
-- HoloLens からいくつかのアプリをアンインストールします。 **[すべてのアプリ]** リストで、アンインストールするアプリを長押ししてから、**[アンインストール]** を選択します。 (アプリをアンインストールすると、アプリがデバイスに保存しているデータも削除されます)。
+HoloLens が壁をスキャンしようとしたときに、黒色または反射のオブジェクト (たとえば、黒色のソファまたは小さいスチール冷蔵庫) が壁の近くにあると、問題が発生する可能性があります。 そのようなオブジェクトがある場合は、壁の反対側をスキャンします。
 
 [リストに戻る](#list)
 
-## <a name="hololens-doesnt-respond-to-my-gestures"></a>HoloLens がジェスチャに応答しない
+## <a name="when-i-place-a-hologram-on-a-wall-the-hologram-seems-to-float"></a>壁にホログラムを配置すると、ホログラムがフロートしているように見えます。
 
-HoloLens がジェスチャを認識できるようにするには、ジェスチャ フレームに手を入れたままにします。 ジェスチャ フレームは、どちらかの側に数フィートを伸びます。 また、HoloLens は、体の前約 18 インチ保持するときに手を最もよく認識します (ただし、これについて正確する必要はありません)。 HoloLens で手を認識できる場合、カーソルがドットからリングに変わります。 「[HoloLens 2 でのジェスチャの使用](hololens2-basic-usage.md)」または「[HoloLens (第 1 世代) でのジェスチャの使用](hololens1-basic-usage.md)」の詳細をご覧ください。
+壁に置いたホログラムは、通常、壁からインチまたはそれほど離れた場所にあるように見えます。 他にも表示されている場合は、次の1つまたは複数の修正プログラムを試してください。
+
+- 壁にホログラムを配置する場合は、壁から 1 ~ 3 個のメーターを設置し、壁をまっすぐにします。
+- 壁をエアタップして、マッピングメッシュのグラフィックを表示します。 メッシュが壁に沿って配置されていることを確認します。 そうでない場合は、ホログラムを削除し、壁を再スキャンしてから、もう一度やり直してください。
+- 問題が引き続き発生する場合は、調整アプリを実行します。 詳細については、[**設定**] [システムユーティリティ] を参照して  >    >  ください。
+
+[リストに戻る](#list)
+
+## <a name="apps-appear-too-close-to-me-when-im-trying-to-move-them"></a>アプリを移動しようとしているときに、すぐに表示されない
+
+HoloLens がさまざまな角度から領域をスキャンできるように、アプリを配置している領域を調べてみてください。 [デバイスバイザーをクリーニングする](hololens1-hardware.md#care-and-cleaning) こともできます。
+
+[リストに戻る](#list)
+
+## <a name="im-getting-a-low-disk-space-error"></a>ディスク領域が不足しているというエラーが発生する
+
+次の1つまたは複数の操作を行って、記憶域スペースを解放します。
+
+- 配置したホログラムの一部を削除するか、アプリ内から保存されているデータを削除します。 [データを検索操作方法には](holographic-data.md)
+- 写真アプリでいくつかの画像とビデオを削除します。
+- HoloLens から一部のアプリをアンインストールします。 [ **すべてのアプリ** ] 一覧で、アンインストールするアプリをタップしたままにして、[ **アンインストール**] を選択します。 (アプリをアンインストールすると、アプリによってデバイスに保存されるデータもすべて削除されます)。
+
+[リストに戻る](#list)
+
+## <a name="hololens-doesnt-respond-to-my-gestures"></a>HoloLens が自分のジェスチャに応答しない
+
+HoloLens でジェスチャを確認できるようにするには、ジェスチャフレームに手を置いてください。 ジェスチャフレームは、どちら側でも2フィートに拡張されます。 また、HoloLens は、本文の前に約18インチ (ただし、これについては正確である必要はありません) を保持している場合にも最適です。 HoloLens が手に見えると、カーソルがドットからリングに変わります。 [Hololens 2 でジェスチャを使用する](hololens2-basic-usage.md)方法、または[hololens でジェスチャを使用する方法 (第1世代)](hololens1-basic-usage.md)について説明します。
 
 [リストに戻る](#list)
 
 ## <a name="hololens-doesnt-respond-to-my-voice"></a>HoloLens が音声に応答しない
 
-HoloLens (第 1 世代) および HoloLens 2 には音声認識が組み込まれており、Cortana (オンライン音声認識) もサポートしています。
+HoloLens (第1世代) と HoloLens 2 には、音声認識が組み込まれています。また、Cortana (オンライン音声認識) もサポートしています。
 
 ### <a name="built-in-voice-commands-do-not-work"></a>組み込みの音声コマンドが機能しない
 
-HoloLens (第 1 世代) では、組み込み音声認識は構成できません。 常にオンになっています。 HoloLens 2 では、デバイスのセットアップ時に音声認識と Cortana の両方を有効にするかどうかを選択できます。
+HoloLens (第1世代) では、組み込み音声認識は構成できません。 常に有効になっています。 HoloLens 2 では、デバイスのセットアップ中に音声認識と Cortana の両方をオンにするかどうかを選択できます。
 
-HoloLens 2 が音声に応答しない場合は、音声認識がオンになっていることを確認してください。 **[スタート]** > **[設定]** > **[プライバシー]** > **[スピーチ]** に移動し、**[音声認識]** をオンにします。
+HoloLens 2 が音声に応答していない場合は、音声認識が有効になっていることを確認します。 [**スタート**] [設定] [プライバシー] [音声] にアクセス  >    >    >  し、**音声認識** をオンにします。
 
-### <a name="cortana-or-dictation-doesnt-work"></a>Cortana または Dictation が機能しない
+### <a name="cortana-or-dictation-doesnt-work"></a>Cortana またはディクテーションが機能しない
 
-Cortana または Dictation が音声に応答しない場合は、オンライン音声認識がオンになっていることを確認してください。 **[スタート]** > **[設定]** > **[プライバシー]** > **[スピーチ]** に移動し、**[オンライン音声認識]** の設定を確認します。 
+Cortana またはディクテーションが音声に応答していない場合は、オンライン音声認識が有効になっていることを確認します。 [**スタート**] [設定] [プライバシー] [音声] にアクセス  >    >    >  し、**オンライン音声認識** 設定を確認します。 
 
-Cortana がまだ応答しない場合は、次のいずれかの操作を行って、Cortana 自体がオンになっていることを確認します。
+Cortana がまだ応答していない場合は、次のいずれかの操作を行って、Cortana 自体が有効になっていることを確認します。
 
-- **[すべてのアプリ]** で、**[Cortana]** >**[メニュー]** > **[ノートブック]** > **[設定]** を選択し、変更します。
-- HoloLens 2 では、**[スピーチの設定]** ボタンを選択するか、"スピーチ設定" と言います。
+- [**すべてのアプリ**] で、[ **Cortana** >] を選択し、**メニュー** ノートブックの設定を選択して  >    >  変更を行います。
+- HoloLens 2 で、[ **音声設定** ] ボタンを選択するか、[音声設定] をクリックします。
 
-発声できる内容の詳細については、「[HoloLens で音声を使う](hololens-cortana.md)」をご覧ください。
-
-[リストに戻る](#list)
-
-## <a name="im-having-problems-pairing-or-using-a-bluetooth-device"></a>Bluetooth デバイスのペアリングや使用に問題がある
-
-[Bluetooth デバイスのペアリング](hololens-connect-devices.md)に問題がある場合は、次を試してください。
-
-- **[設定]** > **[デバイス]** に移動し、Bluetoothがオンになっていることを確認します。 オンになっている場合は、オフにしてから再度オンにします。
-- Bluetooth デバイスが完全に充電されているか、新しいバッテリーが入っていることを確認してください。
-- それでも接続できない場合は、[HoloLens 再起動します](hololens-recovery.md)。
+説明できることの詳細については、「 [HoloLens での音声の使用](hololens-cortana.md)」を参照してください。
 
 [リストに戻る](#list)
 
-## <a name="hololens-settings-lists-devices-as-available-but-the-devices-dont-work"></a>HoloLens の設定には使用可能なデバイスが表示されるが、デバイスが機能しない
+## <a name="im-having-problems-pairing-or-using-a-bluetooth-device"></a>Bluetooth デバイスのペアリングまたは使用に関する問題が発生しています
 
-HoloLens は、Bluetooth オーディオ プロファイルをサポートしていません。 スピーカーやヘッドセットなどの Bluetooth オーディオ デバイスは、HoloLens の設定で利用可能として表示される場合がありますが、サポートされていません。
+[Bluetooth デバイスのペアリング](hololens-connect-devices.md)で問題が発生している場合は、次の操作を試してください。
 
-Bluetooth デバイスの使用中に問題が発生した場合は、デバイスがサポートされていることを確認します。 サポートされているデバイスは次のとおりです。
+- [**設定**  >  ] [**デバイス**] にアクセスし、Bluetooth が有効になっていることを確認します。 有効になっている場合は、オフにしてから再びオンにします。
+- Bluetooth デバイスが完全に充電されていること、または電池が最新であることを確認します。
+- それでも接続できない場合は、 [HoloLens を再起動](hololens-recovery.md)します。
 
-- 英語の QWERTY Bluetooth キーボード (ホログラフィック キーボードを使用する場所であればどこでも使用できます)。
+[リストに戻る](#list)
+
+## <a name="hololens-settings-lists-devices-as-available-but-the-devices-dont-work"></a>HoloLens の設定では、使用可能なデバイスが一覧表示されますが、デバイスが動作しません
+
+HoloLens (第1世代) では、Bluetooth オーディオプロファイルはサポートされていません。 Bluetooth オーディオデバイス (スピーカーやヘッドセットなど) は、HoloLens の設定で使用できるように見える場合がありますが、サポートされていません。
+
+HoloLens 2 では、ステレオ再生用の Bluetooth A2DP オーディオプロファイルがサポートされています。 Bluetooth 周辺機器からのマイクキャプチャを有効にする Bluetooth ハンドフリープロファイルは、HoloLens 2 ではサポートされていません。
+
+Bluetooth デバイスの使用に問題がある場合は、それがサポートされているデバイスであることを確認してください。 サポートされているデバイスは次のとおりです。
+
+- 英語の QWERTY Bluetooth キーボード (holographic キーボードを使用する任意の場所で使用できます)。
 - Bluetooth マウス。
-- [HoloLens クリッカー](hololens1-clicker.md)。
+- [HoloLens clicker](hololens1-clicker.md)。
 
-他の Bluetooth HID および GATT デバイスを HoloLens とペアリングできます。 ただし、デバイスを実際に使用するには、Microsoft Store から対応する関連するアプリのインストールが必要になる場合があります。
-
-[リストに戻る](#list)
-
-## <a name="im-having-problems-using-the-hololens-clicker"></a>HoloLens クリッカーを使用するときに問題が発生する
-
-[クリッカー](hololens1-clicker.md)を使用して、ホログラムを選択、スクロール、移動、サイズ変更します。 個々のアプリは、追加のクリック操作をサポートする場合があります。
-
-クリッカーの使用中に問題が発生した場合は、クリッカーが充電され、HoloLens とペアリングされていることを確認してください。 バッテリーが少なくなると、インジケータ ライトがオレンジ色に点滅します。 クリッカーがペアリングされているかどうかを確認するには、**[設定]** > **[デバイス]** に移動し、そこに表示されるかどうかを確認します。 詳細については、「[クリッカーのペアリング](hololens1-clicker.md)」を参照してください。
-
-クリッカーが充電されており、ペアリングしても問題が解決しない場合は、メイン ボタンとペアリング ボタンを 15 秒間押してリセットします。 次に、クリッカーを HoloLens と再度ペアリングします。
-
-クリッカーをリセットしても問題が解決しない場合は、「[HoloLens クリッカーを再起動または回復する](hololens1-clicker.md#restart-or-recover-the-clicker)」を参照してください。
+他の Bluetooth HID および GATT デバイスを HoloLens とペアリングできます。 ただし、デバイスを実際に使用するには、Microsoft Store から対応するコンパニオンアプリをインストールすることが必要になる場合があります。
 
 [リストに戻る](#list)
 
-## <a name="i-cant-connect-to-wi-fi"></a>Wi-Fi に接続できない
+## <a name="im-having-problems-using-the-hololens-clicker"></a>HoloLens clicker の使用に関する問題が発生しています
 
-HoloLens を Wi-Fi ネットワークに接続できない場合は、次の点を確認してください。
+[Clicker](hololens1-clicker.md)を使用して、ホログラムの選択、スクロール、移動、およびサイズ変更を行います。 個々のアプリは、追加の clicker ジェスチャをサポートする場合があります。
 
-- Wi-Fi がオンになっていることを確認してください。 確認するには、[開始] ジェスチャを使用し、**[設定]** > **[ネットワーク] &amp; [インターネット]** > **[Wi-Fi]** を選択します。 Wi-Fi がオンになっている場合は、オフにしてからもう一度オンにしてみてください。
-- ルーターまたはアクセスポイントの近くに移動します。
-- Wi-Fi ルーターを再起動し、[HoloLens を再起動します](hololens-recovery.md)。 もう一度接続してみてください。
-- これらのいずれによっても問題が解決しない場合は、ルーターが最新のファームウェアを使用していることを確認します。 この情報は、製造元の Web サイトで確認できます。
+Clicker の使用に問題がある場合は、課金され、HoloLens とペアリングされていることを確認してください。 バッテリが低い場合は、インジケーターライトが黄色で点滅します。 Clicker がペアリングされていることを確認するには、[**設定**] [デバイス] にアクセスし、  >  表示されているかどうかを確認します。 詳細については、「 [Pair the clicker](hololens1-clicker.md)」を参照してください。
 
-[リストに戻る](#list)
+Clicker が課金され、ペアリングされていても問題が発生する場合は、メインボタンを押したまま15秒のペアリングボタンを押してリセットします。 次に、clicker を HoloLens とペアリングします。
 
-## <a name="my-hololens-isnt-running-well-is-unresponsive-or-wont-start"></a>HoloLens が正常に動作していない、反応しない、または起動しない
-
-デバイスが正常に動作しない場合は、「[HoloLens の再起動、リセット、回復](hololens-recovery.md) 」を参照してください。
+Clicker をリセットしても問題が解決しない場合は、「 [HoloLens clicker を再起動または回復する](hololens1-clicker.md#restart-or-recover-the-clicker)」を参照してください。
 
 [リストに戻る](#list)
 
-## <a name="i-cant-sign-in-to-a-hololens-device-because-it-was-previously-set-up-for-someone-else"></a>以前に他のユーザーに対して設定されているために HoloLens デバイスにサインインできない
+## <a name="i-cant-connect-to-wi-fi"></a>Wi-Fi に接続できません
 
-デバイスが以前にクライアントまたは元従業員など、他のユーザーのために設定されていて、デバイスのロックを解除するためのパスワードが不明な場合は、次のいずれかを実行できます。
+HoloLens を Wi-Fi ネットワークに接続できない場合は、次の点を試してみてください。
 
-- Intune モバイルデバイス管理 (MDM) に登録されているデバイスについては、Intune を使用してデバイスをリモートで[ワイプ](https://docs.microsoft.com/intune/remote-actions/devices-wipe)できます。 その後、デバイスはそれ自体を再フラッシュします。  
+- Wi-Fi が有効になっていることを確認します。 確認するには、開始ジェスチャを使用して、[**設定**] [ネットワーク] [  >  **&amp; インターネット** wi-fi] の順に選択し  >  ます。 Wi-Fi がオンになっている場合は、オフにしてから再度有効にしてみてください。
+- ルーターまたはアクセスポイントに近い場所に移動します。
+- Wi-Fi ルーターを再起動し、 [HoloLens を再起動](hololens-recovery.md)します。 接続を再試行してください。
+- これらの問題が解決しない場合は、ルーターが最新のファームウェアを使用していることを確認してください。 この情報については、製造元の web サイトを参照してください。
+
+[リストに戻る](#list)
+
+## <a name="my-hololens-isnt-running-well-is-unresponsive-or-wont-start"></a>HoloLens が正常に実行されていない、応答していない、または起動しない
+
+デバイスが正常に動作していない場合は、「 [HoloLens の再起動、リセット、または回復](hololens-recovery.md)」を参照してください。
+
+[リストに戻る](#list)
+
+## <a name="i-cant-sign-in-to-a-hololens-device-because-it-was-previously-set-up-for-someone-else"></a>HoloLens デバイスは既に他のユーザーに設定されているため、サインインできません
+
+デバイスが以前に別のユーザーに設定されていた場合、クライアントまたは以前の従業員に対して、デバイスのロックを解除するためのパスワードがない場合は、次のいずれかの操作を実行できます。
+
+- Intune モバイルデバイス管理 (MDM) に登録されているデバイスの場合、Intune を使用してデバイスをリモートで [ワイプ](https://docs.microsoft.com/intune/remote-actions/devices-wipe) することができます。 その後、デバイスは自動的に再点滅します。  
    > [!IMPORTANT]  
-   > デバイスをワイプする場合は、必ず **[登録状態とユーザー アカウントを保持する]** のチェックを外したままにしてください。
-- MDM 以外のデバイスの場合は、[デバイスを**フラシュ モード**にして、Advanced Recovery Companion を使用して、](hololens-recovery.md#clean-reflash-the-device)デバイスを回復できます。
+   > デバイスをワイプするときは、 **[登録状態を保持する] と [ユーザーアカウント** ] をオフのままにしておきます。
+- 非 MDM デバイスの場合は、デバイスを [**点滅モード** にし、Advanced Recovery コンパニオンを使用](hololens-recovery.md#clean-reflash-the-device)してデバイスを回復することができます。
 
 [リストに戻る](#list)
 
 ## <a name="questions-about-managing-hololens-devices"></a>HoloLens デバイスの管理に関する質問
 
-### <a name="can-i-use-system-center-configuration-manager-sccm-to-manage-hololens-devices"></a>System Center Configuration Manager (SCCM) を使用して HoloLens デバイスを管理できますか?
+### <a name="can-i-use-system-center-configuration-manager-sccm-to-manage-hololens-devices"></a>System Center Configuration Manager (SCCM) を使用して HoloLens デバイスを管理できますか。
 
-いいえ、そうではありません。 HoloLens デバイスを管理するには MDM システムを使用する必要があります。
+いいえ。 HoloLens デバイスを管理するには、MDM システムを使用する必要があります。
 
-### <a name="can-i-use-active-directory-domain-services-ad-ds-to-manage-hololens-user-accounts"></a>Active Directory Domain Services (AD DS) を使用して HoloLens ユーザー アカウントを管理できますか?
+### <a name="can-i-use-active-directory-domain-services-ad-ds-to-manage-hololens-user-accounts"></a>Active Directory Domain Services (AD DS) を使用して HoloLens ユーザーアカウントを管理できますか。
 
-いいえ、そうではありません。 HoloLens デバイスのユーザー アカウントを管理するには、Azure Active Directory (Azure AD) を使用する必要があります。
+いいえ。 HoloLens デバイスのユーザーアカウントを管理するには、Azure Active Directory (Azure AD) を使用する必要があります。
 
-### <a name="is-hololens-capable-of-automated-data-capture-systems-adcs-auto-enrollment"></a>HoloLens は自動データキャプチャシステム (ADCS) 自動登録をサポートしていますか?
+### <a name="is-hololens-capable-of-automated-data-capture-systems-adcs-auto-enrollment"></a>HoloLens は自動化されたデータキャプチャシステム (ADCS) の自動登録をサポートしていますか?
 
-いいえ、そうではありません。
+いいえ。
 
-### <a name="can-hololens-participate-in-integrated-windows-authentication"></a>HoloLens は統合 Windows 認証に参加できますか?
+### <a name="can-hololens-participate-in-integrated-windows-authentication"></a>HoloLens は統合 Windows 認証に参加できますか。
 
-いいえ、そうではありません。
+いいえ。
 
-### <a name="does-hololens-support-branding"></a>HoloLens はブランド化をサポートしていますか?
+### <a name="does-hololens-support-branding"></a>HoloLens はブランド化をサポートしていますか。
 
-いいえ、そうではありません。 ただし、次のいずれかの方法で、この問題を回避することができます。
+いいえ。 ただし、次のいずれかの方法を使用して、この問題を回避することができます。
 
-- カスタム アプリを作成し、[キオスク モードを有効にします](hololens-kiosk.md)。 カスタム アプリはブランド化に対応しており、他のアプリ (リモートアシストなど) を起動することができます。  
-- Azure のユーザー プロファイル画像を会社ADに変更します。 ただし、この方法は、すべてのシナリオに適しているわけではありません。
+- カスタムアプリを作成し、 [キオスクモードを有効に](hololens-kiosk.md)します。 カスタムアプリにはブランドを設定し、他のアプリ (リモートアシスタンスなど) を起動することができます。  
+- Azure AD のすべてのユーザープロファイル画像を会社のロゴに変更します。 ただし、すべてのシナリオで望ましいとは限りません。
 
-### <a name="what-logging-capabilities-do-hololens-1st-gen-and-hololens-2-offer"></a>HoloLens (第 1 世代) および HoloLens 2 のロギング機能はどのようなものですか?
+### <a name="what-logging-capabilities-do-hololens-1st-gen-and-hololens-2-offer"></a>HoloLens (第1世代) と HoloLens 2 プランにはどのようなログ記録機能がありますか?
 
-ロギングは、開発シナリオまたはトラブルシューティング シナリオでキャプチャできるトレース、またはデバイスが Microsoft サーバーに送信するテレメトリーに限定されます。
-
-[リストに戻る](#list)
-
-## <a name="questions-about-securing-hololens-devices"></a>HoloLens デバイスの保護に関する質問
-
-[HoloLens 2 のセキュリティ情報を参照してください](security-overview.md)。
-HoloLens 1st Gen デバイスについては、この FAQ を [参照してください](hololens1-faq-security.md)。
+ログ記録は、開発またはトラブルシューティングのシナリオ、またはデバイスから Microsoft サーバーに送信されるテレメトリでキャプチャできるトレースに限定されます。
 
 [リストに戻る](#list)
 
-## <a name="how-do-i-delete-all-spaces"></a>すべてのスペースを削除するにはどうすればよいですか?
+## <a name="questions-about-securing-hololens-devices"></a>HoloLens デバイスのセキュリティに関する質問
 
-*近日提供予定*
+[HoloLens 2 のセキュリティ情報](security-overview.md)を参照してください。
+HoloLens ファースト世代デバイスの場合は、こちらの [FAQ](hololens1-faq-security.md)を参照してください。
 
 [リストに戻る](#list)
 
-## <a name="i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator"></a>HoloLens 2 エミュレーターで入力用キーボードを見つけたり、使用したりできない
+## <a name="how-do-i-delete-all-spaces"></a>すべてのスペースを削除操作方法には
 
-*近日提供予定*
+*もうすぐです*
+
+[リストに戻る](#list)
+
+## <a name="i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator"></a>HoloLens 2 のエミュレーターにキーボードを入力したり、使用したりすることはできません。
+
+*もうすぐです*
 
 [リストに戻る](#list)
