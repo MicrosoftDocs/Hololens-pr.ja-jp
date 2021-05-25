@@ -1,7 +1,7 @@
 ---
-title: HoloLens のユーザー id とサインインを管理する
-description: HoloLens デバイスのユーザー id、マルチユーザーサポート、セキュリティ、エンタープライズ認証、およびサインインを管理する方法について説明します。
-keywords: HoloLens、user、account、AAD、Azure AD、adfs、microsoft アカウント、msa、資格情報、リファレンス
+title: HoloLens のユーザー ID とサインインを管理する
+description: HoloLens デバイスのユーザー ID、マルチユーザー サポート、セキュリティ、エンタープライズ認証、サインインを管理する方法について説明します。
+keywords: HoloLens, ユーザー, アカウント, AAD, Azure AD, adfs, microsoft アカウント, msa, 資格情報, リファレンス
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: scooley
 ms.author: scooley
@@ -18,27 +18,27 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2d84658ef76ff2c5d8ef7dabe857892e7129a965
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: f8dcc8619715871db0aaba306dd19d252d73ac47
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309884"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397833"
 ---
-# <a name="manage-user-identity-and-sign-in-for-hololens"></a>HoloLens のユーザー id とサインインを管理する
+# <a name="manage-user-identity-and-sign-in-for-hololens"></a>HoloLens のユーザー ID とサインインを管理する
 
 > [!NOTE]
-> この記事は、IT プロフェッショナルおよびテクニカル愛好家向けのテクニカルリファレンスです。 HoloLens の設定手順については、「HoloLens のセットアップ[(第1世代)](hololens1-start.md)」または「[hololens 2](hololens2-start.md)のセットアップ」を参照してください。
+> この記事は、IT 技術者と技術技術者向けテクニカル リファレンスです。 HoloLens のセットアップ手順をお探しの場合は、「HoloLens (第 1 世代) の設定」または「Set up your HoloLens 2 」[(HoloLens (第 1](hololens1-start.md)世代) の設定) を[参照してください](hololens2-start.md)。
 
-他の Windows デバイスと同様に、HoloLens は常にユーザーコンテキストで動作します。 常にユーザー id が存在します。 HoloLens は、他の Windows 10 デバイスとほとんど同じ方法で id を扱います。 この記事は、HoloLens での id の詳細なリファレンスであり、HoloLens と他の Windows 10 デバイスとの違いに焦点を当てています。
+他の Windows デバイスと同様に、HoloLens は常にユーザー コンテキストで動作します。 常にユーザー ID があります。 HoloLens は、他のデバイスと同じように ID Windows 10扱います。 この記事は HoloLens での ID の詳細なリファレンスであり、HoloLens が他のデバイスとどのように異なるWindows 10されています。
 
-HoloLens では、複数の種類のユーザー id がサポートされています。 1つ以上のユーザーアカウントを使用してサインインできます。 HoloLens の id の種類と認証オプションの概要を次に示します。
+HoloLens では、いくつかの種類のユーザー ID がサポートされています。 1 つ以上のユーザー アカウントを使用してサインインできます。 HoloLens の ID の種類と認証オプションの概要を次に示します。
 
-| ID の種類 | デバイスごとのアカウント数 | 認証オプション |
+| ID の種類 | デバイスあたりのアカウント数 | 認証オプション |
 | --- | --- | --- |
-| [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) (Azure AD Premium が必要) | 64 | <ul><li>Azure web 資格情報プロバイダー</li><li>Azure Authenticator アプリ</li><li>生体認証 (虹彩) &ndash; HoloLens 2 のみ<sup>1</sup> </li><li>Hololens &ndash; (第1世代) の PIN (オプション) (hololens 2 に必須)</li><li>パスワード</li></ul> |
-| [Microsoft アカウント (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>生体認証 (虹彩) &ndash; HoloLens 2 のみ</li><li>Hololens &ndash; (第1世代) の PIN (オプション) (hololens 2 に必須)</li><li>パスワード</li></ul> |
-| [ローカル アカウント](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 1 | パスワード |
+| [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) (必要Azure AD Premium) | 64 | <ul><li>Azure Web 資格情報プロバイダー</li><li>Azure Authenticator アプリ</li><li>生体認証 (あやめ) &ndash; HoloLens 2<sup>1 のみ</sup> </li><li>HoloLens (第 1 世代) の PIN (省略 &ndash; 可能)、HoloLens 2</li><li>Password</li></ul> |
+| [Microsoft アカウント (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>生体認証 (虹彩) &ndash; HoloLens 2 のみ</li><li>Hololens &ndash; (第1世代) の PIN (オプション) (hololens 2 に必須)</li><li>Password</li></ul> |
+| [ローカル アカウント](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 1 | Password |
 
 クラウドに接続されたアカウント (Azure AD と MSA) は、Azure サービスを使用できるため、より多くの機能を提供します。  
 
@@ -59,18 +59,32 @@ HoloLens では、複数の種類のユーザー id がサポートされてい�
 
 Windows のデスクトップバージョンと同様に、追加の web アカウント資格情報を HoloLens アカウントにリンクすることができます。 このようなリンクを使用すると、アプリ間またはアプリ内でのリソースへのアクセスが容易になり (ストアなど)、個人用リソースと職場リソースへのアクセスを組み合わせることができます。 アカウントをデバイスに接続した後、デバイスをアプリに使用するアクセス許可を付与して、各アプリに個別にサインインする必要がないようにすることができます。
 
-アカウントをリンクしても、イメージやダウンロードなど、デバイス上に作成されたユーザーデータは分離されません。  
+アカウントをリンクしても、イメージやダウンロードなど、デバイス上に作成されたユーザー データは分離されません。  
 
-### <a name="setting-up-multi-user-support-azure-ad-only"></a>マルチユーザーサポートを設定する (Azure AD のみ)
+### <a name="setting-up-multi-user-support-azure-ad-only"></a>マルチユーザー サポートの設定 (Azure ADのみ)
 
-HoloLens では、同じ Azure AD テナントからの複数のユーザーがサポートされています。 この機能を使用するには、組織に属しているアカウントを使用してデバイスを設定する必要があります。 その後、同じテナントの他のユーザーは、サインイン画面からデバイスにサインインすることも、[スタート] パネルの [ユーザー] タイルをタップして、デバイスにサインインすることもできます。 一度にサインインできるユーザーは1人だけです。 ユーザーがサインインすると、HoloLens は前のユーザーをサインアウトします。 デバイスの最初のユーザーはデバイスの所有者と見なされますが、Azure AD 参加する場合を除き、 [デバイスの所有](security-adminless-os.md#device-owner)者の詳細を確認してください。
+HoloLens では、同じテナントから複数のユーザー Azure ADできます。 この機能を使用するには、組織に属するアカウントを使用してデバイスを設定する必要があります。 その後、同じテナントの他のユーザーは、サインイン画面から、または [スタート] パネルのユーザー タイルをタップして、デバイスにサインインできます。 一度にサインインできるユーザーは 1 人のみです。 ユーザーがサインインすると、HoloLens は前のユーザーをサインアウトします。 デバイスの最初のユーザーはデバイス所有者と見なされます。ただし、参加の場合を除き、Azure ADの詳細については、デバイスの所有者に関する [ページを参照してください](security-adminless-os.md#device-owner)。
 
-すべてのユーザーは、デバイスにインストールされているアプリを使用できます。 ただし、各ユーザーには独自のアプリデータと設定があります。 デバイスからアプリを削除すると、すべてのユーザーに対して削除されます。  
+すべてのユーザーは、デバイスにインストールされているアプリを使用できます。 ただし、各ユーザーには独自のアプリ データと設定があります。 デバイスからアプリを削除すると、すべてのユーザーに対して削除されます。  
 
-Azure AD アカウントを使用してセットアップしたデバイスでは、Microsoft アカウントを使用してデバイスにサインインすることはできません。 今後使用されるすべてのアカウントは、デバイスと同じテナントのアカウントを Azure AD する必要があります。 [Microsoft アカウントを使用し](hololens-identity.md#setting-up-multi-user-support-azure-ad-only)て、それをサポートするアプリ (Microsoft Store など) にサインインすることもできます。 デバイスへのサインインに Azure AD アカウントを使用して Microsoft アカウントに変更するには、 [デバイスを更新](hololens-recovery.md#clean-reflash-the-device)する必要があります。
+Azure ADアカウントで設定されたデバイスでは、Microsoft アカウントを使用したデバイスへのサインインは許可されません。 以降使用するアカウントはすべて、デバイスAzure AD同じテナントのアカウントに追加する必要があります。 引き続き Microsoft アカウント [を使用して](hololens-identity.md#setting-up-multi-user-support-azure-ad-only) 、それをサポートするアプリ (Microsoft Store など) にサインインできます。 デバイスにサインインするためにAzure ADアカウントを Microsoft アカウントに変更するには、デバイス [を再フラッシュする必要があります](hololens-recovery.md#clean-reflash-the-device)。
 
 > [!NOTE]
-> **HoloLens (第1世代)** は、windows [Holographic for Business](hololens-upgrade-enterprise.md)の一部として、 [Windows 10 April 2018 更新プログラム](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018)で複数の Azure AD ユーザーのサポートを開始しました。
+> **HoloLens (第 1** 世代) は、Azure AD の一 [](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018)部として、Windows 10 April 2018 Updateユーザーのサポート [を開始Windows Holographic for Business。](hololens-upgrade-enterprise.md)
+
+### <a name="multiple-users-listed-on-sign-in-screen"></a>[サインイン] 画面に表示される複数のユーザー
+
+以前は、[サインイン] 画面には、最近サインインしたユーザーと "その他のユーザー" エントリ ポイントだけが表示されました。 複数のユーザーがデバイスにサインインしている場合は、これでは十分ではないというお客様からのフィードバックを受け取っています。 それでも、ユーザー名などを再入力する必要があります。
+
+[Windows Holographic Version 21H1](hololens-release-notes.md#windows-holographic-version-21h1)で導入された [PIN 入力] フィールドの右側にある **他のユーザー** を選択すると、サインイン画面に、以前にデバイスにサインインしている複数のユーザーが表示されます。 これにより、ユーザーは自分のユーザープロファイルを選択し、Windows Hello 資格情報を使用してサインインできます。 新しいユーザーは、[ **アカウントの追加** ] ボタンを使用して、[その他のユーザー] ページからデバイスに追加することもできます。
+
+[その他のユーザー] メニューの [その他のユーザー] ボタンをクリックすると、デバイスに最後にサインインしたユーザーが表示されます。 このボタンを選択すると、このユーザーのサインイン画面に戻ります。
+
+![サインイン画面の既定値](./images/multiusers1.jpg)
+
+<br>
+
+![サインイン画面のその他のユーザー](./images/multiusers2.jpg)
 
 ## <a name="removing-users"></a>ユーザーの削除
 
@@ -86,30 +100,30 @@ Azure AD アカウントを使用してセットアップしたデバイスで�
 
 ## <a name="enterprise-and-other-authentication"></a>エンタープライズ認証とその他の認証
 
-アプリが NTLM、Basic、または Kerberos などの他の種類の認証を使用している場合は、 [Windows 資格情報 UI](https://docs.microsoft.com/uwp/api/Windows.Security.Credentials.UI) を使用してユーザーの資格情報を収集、処理、および保存できます。 これらの資格情報を収集するためのユーザーエクスペリエンスは、他のクラウド駆動型のアカウント割り込みとよく似ており、2D アプリの上に子アプリとして表示されるか、または UI を表示するために Unity アプリを一時的に中断します。
+アプリで NTLM、Basic、Kerberos などの他の種類の認証を使用している場合は [、Windows 資格情報 UI](https://docs.microsoft.com/uwp/api/Windows.Security.Credentials.UI) を使用して、ユーザーの資格情報を収集、処理、保存できます。 これらの資格情報を収集するためのユーザー エクスペリエンスは、他のクラウド駆動型アカウントの割り込みと非常に似ています。2D アプリの上に子アプリとして表示されます。または、UI を表示するために Unity アプリを短時間中断します。
 
 ## <a name="deprecated-apis"></a>非推奨の API
 
-HoloLens 向けの開発は、デスクトップ向けの開発とは異なり、 [Onlineidauthenticator](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator) API は完全にはサポートされていません。 プライマリアカウントが良好な場合、API はトークンを返しますが、この記事で説明されているような割り込みはユーザーの UI を表示せず、アカウントを正しく認証できません。
+HoloLens の開発が Desktop 用の開発と異なる方法の 1 つは [、OnlineIDAuthenticator](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator) API が完全にサポートされていない点です。 プライマリ アカウントが良好な状態にある場合、API はトークンを返しますが、この記事で説明されている割り込みでは、ユーザーの UI は表示されません。また、アカウントを正しく認証できません。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>Windows Hello for Business は HoloLens (第1世代) でサポートされていますか?
+### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>HoloLens Windows Hello for Business (第 1 世代) でサポートされていますか?
 
-HoloLens (第1世代) では、Windows Hello for Business (PIN の使用をサポート) がサポートされています。 HoloLens で Windows Hello for Business の PIN のサインインを許可するには
+Windows Hello for Business (PIN を使用したサインインをサポート) は、HoloLens (第 1 世代) でサポートされています。 HoloLens Windows Hello for Business PIN サインインを許可するには:
 
-1. HoloLens デバイスは [MDM によって管理](hololens-enroll-mdm.md)されている必要があります。
-1. デバイスの Windows Hello for Business を有効にする必要があります。 ([Microsoft Intune については、「」を参照してください。](https://docs.microsoft.com/intune/windows-hello))
-1. HoloLens では、ユーザーは設定の  >  **サインインオプション**[  >  **pin の追加**] を使用して pin を設定できます。
+1. HoloLens デバイスは MDM [で管理する必要があります](hololens-enroll-mdm.md)。
+1. デバイスに対してWindows Hello for Business有効にする必要があります。 ([の手順を参照Microsoft Intune)。](https://docs.microsoft.com/intune/windows-hello)
+1. HoloLens では、ユーザーは [設定] [サインイン オプション] [PIN の追加] を使用して  >    >  **PIN** を設定できます。
 
 > [!NOTE]
-> Microsoft アカウントを使用してサインインしたユーザーは、[**設定**  >  **] [サインインオプション]**[pin の追加] で pin を設定することもでき  >  ます。 この PIN は、windows hello [For business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)ではなく、 [windows hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello)に関連付けられています。
+> アプリを使用してサインインするユーザー Microsoft アカウント、[設定] [サインイン オプション] [PIN の追加] で PIN を  >    >  **設定することもできます**。 この PIN は、 ではなく[Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello)に関連付[Windows Hello for Business。](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)
 
-### <a name="how-is-iris-biometric-authentication-implemented-on-hololens-2"></a>HoloLens 2 では、虹彩認証認証はどのように実装されていますか。
+### <a name="how-is-iris-biometric-authentication-implemented-on-hololens-2"></a>Iris 生体認証は、HoloLens 2 に実装されていますか?
 
-HoloLens 2 では、虹彩認証がサポートされています。 虹彩は Windows Hello テクノロジをベースとしており、Azure Active Directory と Microsoft アカウントの両方で使用できます。 虹彩は他の Windows Hello テクノロジと同じように実装されており、1/10 万以上の生体認証セキュリティを実現します。
+HoloLens 2は Iris 認証をサポートしています。 Iris は、Windows Helloテクノロジに基づいており、Azure Active Directory アカウントと Microsoft アカウントの両方で使用できます。 あやめは、他の Windows Hello テクノロジと同じように実装され、1/100K の生体認証セキュリティ FAR を実現します。
 
-詳細については、「 [Windows Hello の生体認証の要件と仕様](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) 」を参照してください。 [Windows hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)と[Windows hello for business の](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)詳細については、こちらを参照してください。 
+詳細については [、生体認証の要件とWindows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) を参照してください。 [Windows hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)と[Windows hello for business の](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)詳細については、こちらを参照してください。 
 
 ### <a name="how-does-the-type-of-account-affect-sign-in-behavior"></a>アカウントの種類はサインインの動作にどのような影響を与えますか。
 
