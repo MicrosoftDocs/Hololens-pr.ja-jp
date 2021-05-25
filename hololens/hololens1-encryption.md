@@ -1,6 +1,6 @@
 ---
 title: HoloLens BitLocker 暗号化
-description: Bitlocker デバイス暗号化を有効にして、HoloLens mixed reality デバイスに格納されているファイルを保護する方法について説明します。
+description: BitLocker デバイス暗号化を有効にして、HoloLens mixed reality デバイスに格納されているファイルを保護する方法について説明します。
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,12 +11,14 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-ms.openlocfilehash: 268c3650b85e7e7f102618ccc5a94c25de54dcfe
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+appliesto:
+- HoloLens (1st gen)
+ms.openlocfilehash: 2929cbea826e0cc92a72550c7874995506b94257
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309065"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397283"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens (第1世代) BitLocker 暗号化
 
@@ -62,10 +64,10 @@ HoloLens (第1世代) では、BitLocker デバイス暗号化を手動で、ま
 1. プロジェクトファイルに機密情報が含まれている可能性があることを示す警告を確認し、[ **OK]** をクリックします。
 
     > [!IMPORTANT]
-    > プロビジョニングパッケージを作成するときに、プロジェクトファイルとプロビジョニングパッケージ (ppkg) ファイルに機密情報を含めることができます。 .ppkg ファイルは暗号化するかどうかを選べますが、プロジェクト ファイルは暗号化されません。 プロジェクトファイルは安全な場所に保存し、不要になったときにプロジェクトファイルを削除する必要があります。
+    > プロビジョニング パッケージをビルドするときに、プロジェクト ファイルとプロビジョニング パッケージ (.ppkg) ファイルに機密情報を含めることもできます。 .ppkg ファイルは暗号化するかどうかを選べますが、プロジェクト ファイルは暗号化されません。 プロジェクト ファイルは安全な場所に格納し、不要になったらプロジェクト ファイルを削除する必要があります。
 
 1. **[エクスポート]** メニューの **[プロビジョニング パッケージ]** をクリックします。
-1. [ **所有者** ] を **IT 管理** 者に変更します。これにより、このプロビジョニングパッケージの優先順位は、他のソースからこのデバイスに適用されているパッケージのプロビジョニングよりも高くなります。その後、[ **次へ**] を選択します。
+1. [ **所有者]** **を [IT 管理者**] に変更します。これにより、このプロビジョニング パッケージの優先順位が、他のソースからこのデバイスに適用されるプロビジョニング パッケージよりも高く設定され、[次へ] を選択 **します**。
 1. **[パッケージのバージョン]** の値を設定します。
 
     > [!TIP]
@@ -97,6 +99,6 @@ HoloLens (第1世代) では、BitLocker デバイス暗号化を手動で、ま
 
 暗号化は、HoloLens で自動的に行われます。 デバイスの暗号化の状態を確認するには
 
-- HoloLens で、[**設定**] [システム] [  >    >  **バージョン情報**] にアクセスします。 デバイスが暗号化されている場合は、 **BitLocker** が **有効に** なります。 
+- HoloLens で、 [設定] [**システムの概要]**  >  **に移動**  >  **します**。 デバイスが暗号化 **されている場合** は **、BitLocker** が有効になります。 
 
     ![BitLocker が有効になっている画面について](images/about-encryption.png)

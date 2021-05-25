@@ -12,12 +12,12 @@ ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9d221321adcb8062206695e3e610d35dee14523e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: f9dcf98cbd200ac54cd786648fdfe286bff1aa00
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309244"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397453"
 ---
 # <a name="certificate-manager"></a>証明書マネージャー
 
@@ -36,23 +36,26 @@ Windows Holographic バージョン20H2 では、HoloLens 2 設定アプリに�
 ## <a name="to-install-a-certificate"></a>証明書をインストールするには: 
 
 1.  HoloLens 2 を PC に接続します。
-1.  インストールする証明書ファイルを HoloLens 2 の場所に配置します。
-1.  [設定] [アプリ] に移動して **& セキュリティ > 証明書を更新 >**、[証明書のインストール] を選択します。
-1.  [ **ファイルのインポート** ] をクリックし、証明書を保存した場所に移動します。
-1.  [ **ストアの場所**] を選択します。
-1.  [ **証明書ストア**] を選択します。
+1.  インストールする証明書ファイルを、自分の証明書ファイルの場所にHoloLens 2。
+1.  [設定 **] [App > Update & Security > 証明書**] に移動し、[証明書のインストール] を選択します。
+1.  [ **ファイルのインポート]** をクリックし、証明書を保存した場所に移動します。
+1.  [ストア **の場所] を選択します**。
+1.  [証明書 **ストア] を選択します**。
 1.  **[インストール]** をクリックします。
 
 これで、証明書がデバイスにインストールされます。
 
 ## <a name="to-remove-a-certificate"></a>証明書を削除するには: 
-1. **[設定] [アプリ]、[更新とセキュリティ > 証明書**] の順に移動し > ます。
-1. 検索ボックスで、名前を指定して証明書を検索します。
+>[!WARNING]
+> MDM で展開された証明書は証明書マネージャーで表示できます。ただし、証明書マネージャーでアンインストールすることはできません。 MDM を使用してアンインストールする必要があります。
+1. [設定] **[アプリ] > [更新とセキュリティ] >移動します**。
+1. 検索ボックスで名前で証明書を検索します。
 1. 証明書を選択します。
-1. [**削除**] をクリック
+1. [削除] **をクリックします。**
 1. 確認を求められたら、 **[はい]** を選択します。
 
 
-![設定アプリの証明書ビューアー (Ceritifcates](images/certificate-viewer-device.jpg)
 
-![証明書 UI を使用して、[設定] に証明書をインストールする方法を示す画像。](images/certificate-device-install.jpg)
+![[証明書] の下の [設定] アプリの証明書ビューアー](images/certificate-viewer-device.jpg)
+
+![[設定] で証明書 UI を使用して証明書をインストールする方法を示す図。](images/certificate-device-install.jpg)
