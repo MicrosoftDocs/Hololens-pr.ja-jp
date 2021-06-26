@@ -13,14 +13,14 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b17fc134846a66046a819c56755d87206c5643e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 83e5a746b6900c547778c71a0855426563458032
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108310001"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924062"
 ---
-# <a name="use-the-hololens-1st-gen-clicker"></a>HoloLens (第1世代) clicker を使用する
+# <a name="use-the-hololens-1st-gen-clicker"></a>HoloLens (第 1 世代) クリッカーの使用
 
 Clicker は HoloLens (第1世代) 専用に設計されており、ホログラムを操作する別の方法を提供しています。 HoloLens (第1世代) が別のボックスに付属しています。
 
@@ -75,6 +75,15 @@ Clicker ジェスチャは、HoloLens ハンドジェスチャに使用される
 > [!TIP]
 > Microsoft Edge を使用しているときに拡大または縮小するには、ページを見つめ、をダブルクリックします。
 
+## <a name="im-having-problems-using-the-hololens-clicker"></a>HoloLens clicker の使用に関する問題が発生しています
+
+[Clicker](hololens1-clicker.md)を使用して、ホログラムの選択、スクロール、移動、およびサイズ変更を行います。 個々のアプリは、追加の clicker ジェスチャをサポートする場合があります。
+
+Clicker の使用に問題がある場合は、課金され、HoloLens とペアリングされていることを確認してください。 バッテリが低い場合は、インジケーターライトが黄色で点滅します。 Clicker がペアリングされていることを確認するには、[**設定**] [デバイス] にアクセスし、  >  表示されているかどうかを確認します。 詳細については、「 [Pair the clicker](hololens1-clicker.md)」を参照してください。
+
+Clicker が課金され、ペアリングされていても問題が発生する場合は、メインボタンを押したまま15秒のペアリングボタンを押してリセットします。 次に、clicker を HoloLens とペアリングします。
+
+Clicker をリセットしても問題が解決しない場合は、「 [HoloLens clicker を再起動または回復する](hololens1-clicker.md#restart-or-recover-the-clicker)」を参照してください。
 ## <a name="restart-or-recover-the-clicker"></a>Clicker を再起動または回復する
 
 HoloLens clicker が応答していないか、正しく機能していない場合は、次の点を試してみてください。
@@ -100,3 +109,4 @@ Clicker を回復するには:
 1. Windows デバイス回復ツールを実行し、指示に従います。
 
 Clicker が自動的に検出されない場合は、[ **デバイスが検出されませんでした** ] を選択し、指示に従ってデバイスを回復モードにします。
+

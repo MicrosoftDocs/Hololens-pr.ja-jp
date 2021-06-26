@@ -1,6 +1,6 @@
 ---
 title: Microsoft HoloLens の Insider Preview
-description: Insider ビルドの使用を開始し、HoloLens の次の主要なオペレーティング システム更新プログラムに関する貴重なフィードバックを提供する方法について説明します。
+description: 次の主要なオペレーティングシステム更新プログラム (HoloLens) について、Insider ビルドの使用を開始し、貴重なフィードバックを提供する方法について説明します。
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,45 +16,62 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8545b5f23dc81c194b68ea8b40feb83e525dfdf7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: a4949ab68121cb772fdb8a62411ed70868a6ccb6
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397823"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924368"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens の Insider Preview
 
-HoloLens の最新の Insider Preview ビルドへようこそ。 HoloLens [の次](hololens-insider.md#start-receiving-insider-builds) の主要なオペレーティング システム更新プログラムの開始と貴重なフィードバックの提供は簡単です。
+HoloLens 用の最新の Insider Preview ビルドへようこそ。 この機能は簡単に [開始](hololens-insider.md#start-receiving-insider-builds) でき、HoloLens の次の主なオペレーティングシステムの更新に関する貴重なフィードバックを提供します。
 
-## <a name="windows-insider-release-notes"></a>Windows Insider リリース ノート
+## <a name="windows-insider-release-notes"></a>Windows Insider リリースノート
 
-Windows Insider に新しい機能を再び提供し始め、楽しみに思います。 新しいビルドは、最新の更新プログラムのために Dev および Beta チャネルにフライトします。 このページは引き続き更新されます。このページでは、新しいビルドの機能と更新プログラムWindows Insiderします。 これらの更新プログラムを実際に組み合わせ、準備を整えます。 
+Windows Insider の新機能を再び開始します。 新しいビルドは、最新の更新プログラムの開発およびベータチャネルに対して実行されます。 Windows Insider ビルドに機能と更新プログラムを追加すると、このページは引き続き更新されます。 これらの更新プログラムを実際のものに混在させることができます。 
 
-### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>OneDrive for work または school Camera Roll upload
+### <a name="csp-changes-on-hololens"></a>HoloLens での CSP の変更
+ 
+- Windows Insider build 20348.1403 で導入されました
 
-*ビルド 20346.1402 で導入*
+#### <a name="devdetail-csp"></a>DevDetail CSP
 
-HoloLens 2 設定アプリに新しい機能が追加されました。これにより、お客様はデバイスの Pictures > Camera Roll フォルダーから対応する OneDrive for work または school フォルダーに Mixed Reality の写真とビデオを自動的にアップロードできます。 この機能は、HoloLens 2 上の [OneDrive](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) アプリ内の機能のギャップに対応します。これは、(仕事または学校アカウントではなく) 顧客の個人の Microsoft アカウント へのカメラ ロールの自動アップロードのみをサポートします。
+DevDetail CSP は、HoloLens デバイスの空き記憶領域も報告するようになりました。 これは、[設定] [アプリのストレージ] ページに表示される値とほぼ一致している必要があります。 この情報を含む特定のノードを次に示します。
 
-**動作のしくみ**
+- ./DevDetail/Ext/Microsoft/FreeStorage (GET 操作のみ)
 
-- [Settings **> System > Mixed Reality カメラ]** にアクセスして、"カメラのアップロード" を有効にします。
-- この機能を [オン] の位置に設定すると、デバイスにキャプチャされた Mixed Reality の写真またはビデオは、OneDrive for work または School アカウントの Pictures > Camera Roll フォルダーにアップロードするために自動的にキューに登録されます。
-    >[!NOTE]
-    >この機能を有効にする前にキャプチャされた写真とビデオは、アップロード用にキューに登録されるのではなく、引き続き手動でアップロードする必要があります。
-- [設定] ページのステータス メッセージに、アップロード保留中のファイルの数が表示されます (または、保留中のすべてのファイルがアップロードされると "OneDrive が最新の状態" と表示されます)。
-- 帯域幅が気になる場合や、何らかの理由でアップロードを "一時停止" したい場合は、機能を [オフ] の位置に **切り替** えます。 この機能を一時的に無効にすると、新しいファイルをカメラのロールフォルダーに追加してもアップロードキューのサイズが増加し続けますが、この機能を再度有効にするまでファイルはアップロードされません。
-- 最新のファイルが最初にアップロードされます (後入れ先出し)。
-- OneDrive アカウントに問題がある場合 (パスワードの変更後など)、[設定] ページに [ **今すぐ修正** ] ボタンが表示されます。
-- ファイルの最大サイズはありませんが、大きなファイルはアップロードに時間がかかることに注意してください (アップロードの帯域幅が制限されている場合は特に)。 大きなファイルのアップロード中に [一時停止] または [アップロード] をオフにすると、アップロードがすぐにキャンセルされます。 この機能を再度有効にすると、アップロードが再開されます。ファイルは失われませんが、部分的なアップロードは破棄されます。
+#### <a name="devicestatus-csp"></a>DeviceStatus CSP
 
-**既知の問題と注意事項**
+DeviceStatus CSP は、HoloLens がアクティブに接続されている、Wifi ネットワークの SSID と BSSID も報告するようになりました。 この情報を含む特定のノードを次に示します。
 
-- この設定には、現在の使用帯域幅に基づく制限が組み込まれていません。 別のシナリオの帯域幅を最大化する必要がある場合は、設定を手動でオフにします。 アップロードは一時停止されますが、この機能は、新たに追加されたファイルのカメラロールへの監視を継続します。 続行する準備ができたら、アップロードを再度有効にしてください。
-- この機能は、デバイス上のユーザーアカウントごとに有効にする必要があります。また、デバイスに現在サインインしているユーザーのファイルのみをアクティブにアップロードできます。
-- [設定] ページのアップロード回数をリアルタイムで監視しているときに写真やビデオを撮影している場合は、現在のファイルのアップロードが完了するまで保留中のファイルの数が変更されないことに注意してください。
-- デバイスがスリープ状態になった場合、または電源がオフになっている場合、アップロードは一時停止します。 保留中のアップロードが完了したことを確認するには、[設定] ページで "OneDrive が最新の状態" になっているか、 **電源 & スリープ** 設定を調整するまで、デバイスをアクティブに使用します。
+- *Wi-Fi アダプタ/SSID の/Vendor/MSFT/DeviceStatus/NetworkIdentifiers/mac アドレス*
+- *Wi-Fi アダプタ/BSSID の/Vendor/MSFT/DeviceStatus/NetworkIdentifiers/mac アドレス*
+
+ネットワーク識別子を照会するための syncml blob の例 (MDM ベンダー向け)
+
+```xml
+<SyncML>
+<SyncBody>
+    <Get>
+        <CmdID>$CmdID$</CmdID>
+        <Item>
+            <Target>
+            <LocURI>
+                ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers?list=StructData
+            </LocURI>
+            </Target>
+        </Item>
+    </Get>
+    <Final/>
+</SyncBody>
+</SyncML>
+```
+
+### <a name="fixes-and-improvements"></a>修正と改善:
+
+- [ロックされたファイルをダウンロードするプロンプトがないデバイスポータルの既知の問題を修正しました。](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- [ファイルのアップロードとダウンロードのタイムアウトを含むデバイスポータルの既知の問題](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)を修正した。
 
 ## <a name="start-receiving-insider-builds"></a>Insider ビルドの受信を開始します
 > [!NOTE]
@@ -62,20 +79,20 @@ HoloLens 2 設定アプリに新しい機能が追加されました。これに
 > - "デバイスの再起動" 音声コマンドは正常に機能します。 
 > - [設定]/[Windows Insider Program] で [再起動] ボタンを選択することもできます。
 >
-> 発生した可能性があるバック エンドにバグがありました。これにより、追跡が戻されます。
+> バックエンドには、発生した可能性があるバグがあり、これによって追跡が再開されます。
 
-デバイス上HoloLens 2 [設定の **更新]** に移動し&セキュリティ  >  **Windows Insider Program]** を選択  >  **概要。** アカウントとして登録するために使用したアカウントをリンクWindows Insider。
-Windows Insider は現在、チャネルに移行しています。 高速 **リング** は開発チャネルになり、低速リングはベータ チャネル になり、リリース プレビュー リングはリリースプレビュー チャネル **になります**。 マッピングは次のように表示されます。Windows Insider チャネルの説明 については、「Windows ブログでの Windows Insider チャネルの紹介」 ![ ](images/WindowsInsiderChannels.png) を参照してください。 [](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
-次に、 **[Windows のアクティブ** な開発] を選択し、開発チャネルを受け取るのとビルドをベータ チャネル、プログラムの用語を確認します。
-[Confirm **> Restart Now]を選択して** 完了します。 デバイスが再起動したら、[設定] > [更新&セキュリティ] > **更新** プログラムを確認して最新のビルドを取得します。
-### <a name="update-error-0x80070490-work-around"></a>更新エラー 0x80070490回避
-Dev または Beta チャネルで更新0x80070490更新エラーが発生した場合は、次の短期的な回避を試してください。 インサイダー チャネルを移動し、更新プログラムを選択してから、Insider チャネルを戻す必要があります。
-#### <a name="stage-one---release-preview"></a>ステージ 1 - リリース プレビュー
-1.  [設定] 、 [セキュリティ&更新] 、 [Windows Insider Program、 [リリース プレビュー チャネル **] を選択します**。
-2.  設定、更新プログラム&セキュリティ、Windows Update、 **更新プログラムの確認**。 更新後、ステージ 2 に進む。
-#### <a name="stage-two---dev-channel"></a>ステージ 2 - 開発チャネル
-1. [設定] 、 [セキュリティ&更新Windows Insider Program、 [開発チャネル] **を選択します**。
-2. 設定、更新プログラム&セキュリティ、Windows Update、 **更新プログラムの確認**。
+HoloLens 2 デバイスで、[**設定**  >  ] [**更新 & セキュリティ**] [  >  **Windows Insider program** ] に移動し、[**開始**] を選択します。 Windows Insider として登録するために使用したアカウントをリンクします。
+Windows insider がチャネルに移動するようになりました。 **高速** リングが **開発チャネル** になり、**低速** リングが **ベータチャネル** になり、 **release preview** リングが **release preview チャネル** になります。 マッピングは次のようになります。 ![ Windows insider channel の説明 ](images/WindowsInsiderChannels.png) 詳細については、windows ブログの「windows insider Channel の [概要](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) 」を参照してください。
+次に、[ **Windows のアクティブな開発**] を選択し、 **開発チャネル** または **ベータチャネル** のビルドを受信するかどうかを選択して、プログラムの条件を確認します。
+[ **Confirm > Restart Now** ] を選択して終了します。 デバイスが再起動したら、[設定] [& のセキュリティ > 更新プログラムをチェックし、最新のビルドを取得するため **の更新プログラムを確認 >** ます。
+### <a name="update-error-0x80070490-work-around"></a>Update エラー0x80070490 の回避策
+Dev または Beta チャネルで更新するときに更新エラー0x80070490 が発生した場合は、次の短期的な対処を試してください。 これには、insider チャネルを移動し、更新を選択して、Insider channel を戻す必要があります。
+#### <a name="stage-one---release-preview"></a>ステージワンリリースプレビュー
+1.  [設定]、[更新プログラム & セキュリティ]、[Windows Insider Program] を選択し、[ **Release Preview Channel**] を選択します。
+2.  設定、更新 & セキュリティ、Windows Update、 **更新を確認** します。 更新後、段階2に進みます。
+#### <a name="stage-two---dev-channel"></a>ステージ2開発チャネル
+1. [設定]、[更新プログラム & セキュリティ]、[Windows Insider Program] の [ **開発チャネル**] を選択します。
+2. 設定、更新 & セキュリティ、Windows Update、 **更新を確認** します。
 ## <a name="ffu-download-and-flash-directions"></a>FFU のダウンロードとフラッシュの方向
 フライト署名済み ffu を使用してテストするには、フライト署名済み ffu を点滅させる前にデバイスのロックを解除する必要があります。
 1. PC の場合:
@@ -94,10 +111,10 @@ HoloLens の Insider ビルドを使用してアプリケーションを開発�
 ## <a name="stop-receiving-insider-builds"></a>Insider ビルドの受信を停止します
 Windows Holographic の Insider ビルドを受信する必要がなくなった場合は、HoloLens が運用ビルドを実行しているときにオプトアウトできます。または、Advanced Recovery コンパニオンを使用してデバイスを [回復](hololens-recovery.md) し、デバイスを Insider バージョン以外の windows Holographic に回復することもできます。
 > [!CAUTION]
-> 新しいプレビュービルドを手動で再インストールした後に、Insider Preview ビルドから登録を解除したユーザーがブルースクリーンを使用するという既知の問題があります。 その後、デバイスを手動で回復する必要があります。 影響を受け取る可能性がある場合の詳細については、この既知の問題に関するページを [参照してください](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)。
-HoloLens で実稼働ビルドが実行されていないことを確認するには:
-1. [システムの **設定] > [>について**] に移動し、ビルド番号を見つける。
-1. [実稼働ビルド番号については、リリース ノートを参照してください](hololens-release-notes.md)。
-Insider ビルドをオプトアウトするには:
-1. 実稼働ビルドを実行している HoloLens で、[設定] > **[Update & Security**> Windows Insider Program] に移動し、[Stop Insider builds]/(Insider ビルドの停止)を選択 **します**。
+> 新しいプレビュービルドを手動で再インストールした後に、Insider Preview ビルドから登録を解除したユーザーがブルースクリーンを使用するという既知の問題があります。 その後、デバイスを手動で回復する必要があります。 影響を受けるかどうかに関する詳細については、この既知の [問題](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)を参照してください。
+HoloLens で運用ビルドが実行されていることを確認するには、次のようにします。
+1. [設定] にアクセスし、[ **バージョン情報] を > >**、ビルド番号を見つけます。
+1. [実稼働ビルド番号については、リリースノートを参照してください](hololens-release-notes.md)。
+Insider ビルドをオプトアウトするには、次のようにします。
+1. 実稼働ビルドを実行する HoloLens で、[ **設定] [& セキュリティ > Windows Insider program に更新 >**、[ **Insider ビルドの停止**] を選択します。
 1. 指示に従ってデバイスをオプトアウトします。

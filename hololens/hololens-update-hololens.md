@@ -1,7 +1,7 @@
 ---
-title: HoloLens を更新する
-description: HoloLens のビルド番号を確認する方法、デバイスの更新を使用して最新の状態に保つ方法、Insider プログラムに参加する方法、および更新プログラムをロールバックする方法について説明します。
-keywords: 操作方法、更新プログラム、ロールバック、HoloLens、ビルドの確認、ビルド番号
+title: 更新HoloLens 2
+description: HoloLens のビルド番号を確認し、デバイスの更新プログラムを最新の状態に保ち、Insiders Program に参加して、更新プログラムをロールバックする方法について学習します。
+keywords: 方法、更新、ロールバック、HoloLens、ビルドの確認、ビルド番号
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -13,85 +13,72 @@ audience: ITPro
 ms.reviewer: ''
 manager: jarrettr
 appliesto:
-- HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ef1721c60aca82d20e60636cbf4301de81c0177c
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: a27eb1d5eb32a6654f60aac98090cba1aab529d3
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309513"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924113"
 ---
-# <a name="update-hololens"></a>HoloLens を更新する
+# <a name="update-hololens-2"></a>更新HoloLens 2
 
-HoloLens は、他の Windows 10 デバイスと同様に Windows Update を使用します。 HoloLens では、システムの更新プログラムが電源に接続され、インターネットに接続されると常に、システムの更新プログラムが自動的にダウンロードおよびインストールされます。
+HoloLens では、他Windows Updateデバイスと同様に、Windows 10が使用されます。 HoloLens は、電源に接続され、インターネットに接続されている場合でも、スタンバイ状態の場合でも、システム更新プログラムを自動的にダウンロードしてインストールします。
 
-この記事では、次のための HoloLens ツールについて説明します。
+この記事では、以下を行う HoloLens ツールについて詳しい情報を提供します。
 
-- 現在のオペレーティングシステムのバージョンを表示しています (ビルド番号)
+- 現在のオペレーティング システムのバージョン (ビルド番号) の表示
 - 更新プログラムの確認
-- HoloLens の手動更新
+- HoloLens を手動で更新する
 - 古い更新プログラムへのロールバック
 
-## <a name="check-your-operating-system-version-build-number"></a>オペレーティングシステムのバージョンを確認する (ビルド番号)
+## <a name="check-your-operating-system-version-build-number"></a>オペレーティング システムのバージョン (ビルド番号) を確認する
 
-システムのバージョン番号 (ビルド番号) を確認するには、[設定] アプリを開き、[**システム**] を選択し  >  ます。
+システム バージョン番号 (ビルド番号) を確認するには、設定アプリを開き、[ システムバージョン情報 ]**を選択**  >  **します**。
 
 ## <a name="check-for-updates-and-manually-update"></a>更新プログラムを確認し、手動で更新する
 
-更新プログラムは、[設定] でいつでも確認できます。  利用可能な更新プログラムを確認し、新しい更新プログラムを確認するには:
+設定では、いつでも更新プログラムを確認できます。  利用可能な更新プログラムを確認し、新しい更新プログラムを確認するには:
 
 1. **[設定]** アプリを開きます。
-1. [ **Update & Security**  >  **Windows Update** に移動します。
+1. [Update **& Security Windows Update]**  >  **に移動します**。
 1. **[更新プログラムの確認]** をクリックします。
 
-更新プログラムが利用可能な場合は、新しいバージョンのダウンロードが開始されます。 ダウンロードが完了したら、[ **今すぐ再起動** ] ボタンを選択してインストールを開始します。 デバイスが40% 未満で、電源に接続されていない場合、再起動しても更新プログラムのインストールは開始されません。
+更新プログラムが利用可能な場合は、新しいバージョンのダウンロードが開始されます。 ダウンロードが完了したら、[今すぐ再起動 **] ボタンを** 選択してインストールをトリガーします。 デバイスが 40% を下回り、接続されていない場合、再起動によって更新プログラムのインストールは開始されません。
 
-HoloLens が更新プログラムをインストールしている間、スピン歯車と進行状況インジケーターが表示されます。 この期間中は HoloLens をオフにしないでください。 インストールが完了すると、自動的に再起動します。
+HoloLens が更新プログラムをインストールしている間に、回転する歯車と進行状況インジケーターが表示されます。 この期間中は HoloLens をオフにしない。 インストールが完了すると、自動的に再起動されます。
 
-HoloLens は、一度に1つの更新プログラムを適用します。  HoloLens が最新のバージョンより複数のバージョンである場合は、更新プロセスを複数回実行して完全に最新の状態にすることが必要になる場合があります。
+HoloLens では、一度に 1 つの更新プログラムが適用されます。  HoloLens が最新バージョンより複数遅れている場合は、更新プロセスを複数回実行して、完全に最新の情報に更新する必要があります。
 
-## <a name="go-back-to-a-previous-version---hololens-2"></a>前のバージョンに戻る-HoloLens 2
+## <a name="go-back-to-a-previous-version"></a>以前のバージョンに戻る
 
-場合によっては、以前のバージョンの HoloLens ソフトウェアに戻ることが必要になることがあります。 これを行うには、Advanced Recovery コンパニオンを使用して、HoloLens を以前のバージョンにリセットします。
+場合によっては、以前のバージョンの HoloLens ソフトウェアに戻したい場合があります。 推奨される手順は次のとおりです。
 
-> [!NOTE]
-> 以前のバージョンに戻すと、個人用ファイルと設定が削除されます。
+1. サポートに問い合わせ、問題を解決できる場合は、サポートにお問い合わせください。
+    1. 省略可能 **または完全****な** テレメトリが有効になっているのを確認します。これにより、バグのアクションが容易になり、エンジニアが診断しやすくなります。
+    1. [ファイル フィードバックは](hololens-feedback.md) 、可能な限り説明的です。 タイトルをメモするか、共有機能を使用して、バグをサポートと共有できます。
+    1. サポートにお問 [い合わせください](https://aka.ms/hlsupport)。 問題が以前のバージョンに戻って解決する必要がある場合は、デバイスをフラッシュする FFU を提供できます。
 
-以前のバージョンの HoloLens 2 に戻るには、次の手順を実行します。
-
-1. 携帯電話や Windows デバイスが PC に接続されていないことを確認します。
-1. PC で、Microsoft Store から [高度な回復コンパニオン](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) をダウンロードします。
-1. 最新の [HoloLens 2 リリース](https://aka.ms/hololens2download)をダウンロードします。
-1. これらのダウンロードが完了したら、**ファイルエクスプローラー** の  >  **ダウンロード** を開きます。 ダウンロードした zip 形式のフォルダーを右クリックし、[**すべて** 抽出] を選択し  >  て解凍します。
-1. USB-A から USB C ケーブルを使用して HoloLens を PC に接続します。 (他のケーブルを使用して HoloLens に接続している場合でも、これは最適な方法です)。
-1. Advanced Recovery コンパニオンは、自動的に HoloLens を検出します。 [ **Microsoft HoloLens** ] タイルを選択します。
-1. 次の画面で、[ **パッケージの手動選択** ] を選択し、手順 4. で解凍したフォルダーに含まれているインストールファイルを選択します。 (拡張子が ffu のファイルを探します。)
-1. [ **ソフトウェアのインストール**] を選択し、指示に従います。
-
-## <a name="go-back-to-a-previous-version---hololens-1st-gen"></a>以前のバージョン (HoloLens) に戻る (第1世代)
-
-場合によっては、以前のバージョンの HoloLens ソフトウェアに戻ることが必要になることがあります。 これを行うには、Windows デバイス回復ツールを使用して、HoloLens を以前のバージョンにリセットします。
-
-> [!NOTE]
-> 以前のバージョンに戻すと、個人用ファイルと設定が削除されます。
-
-以前のバージョンの HoloLens 1 に戻るには、次の手順を実行します。
-
-1. 携帯電話や Windows デバイスが PC に接続されていないことを確認します。
-1. PC で、 [Windows デバイス回復ツール (WDRT)](https://support.microsoft.com/help/12379)をダウンロードします。
-1. [HoloLens 記念日更新の復旧パッケージ](https://aka.ms/hololensrecovery)をダウンロードします。
-1. ダウンロードが完了したら、**エクスプローラー** の [ダウンロード] を開き  >  ます。 ダウンロードした zip 形式のフォルダーを右クリックし、[**すべて** 抽出] を選択し  >  て解凍します。
-1. HoloLens を、付属のマイクロ USB ケーブルを使用して PC に接続します。 (他のケーブルを使用して HoloLens に接続している場合でも、これは最適な方法です)。
-1. WDRT は、自動的に HoloLens を検出します。 [ **Microsoft HoloLens** ] タイルを選択します。
-1. 次の画面で、[ **パッケージの手動選択** ] を選択し、手順 4. で解凍したフォルダーに格納されているインストールファイルを選択します。 (拡張子が ffu のファイルを探します。)
-1. [ **ソフトウェアのインストール**] を選択し、指示に従います。
+1. それでも問題が生じない場合は、Advanced Recovery Companion を使用してHoloLens 2 [をリセットまたは再フラッシュします](hololens-recovery.md)。
+    1. お使いの PC で、 [[Advanced Recovery Companion]](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) を [Microsoft Store] からダウンロードします。
+    1. PC にスマートフォンや Windows デバイスが接続されていないことを確認します。
+    1. フラッシュするバージョンを選択します。
+        1. 最新のリリース [をダウンロードHoloLens 2できます](https://aka.ms/hololens2download)。
+        1. ARC がホストする既定のビルドを使用できます。 (このオプションを選択した場合は、次の手順をスキップします)。
+        1. 提供されているビルド サポートを使用できます。
+    1. これらのダウンロードが完了したら、[ダウンロード]**をエクスプローラー**  >  **開きます**。 ダウンロードした zip 形式のフォルダーを右クリックし、[すべての抽出] を選択して  >  解凍します。
+    1. USB-A から USB-C ケーブルを使用して HoloLens を PC に接続します。 (他のケーブルを使用して HoloLens を接続している場合でも、これは最適です)。
+    1. Advanced Recovery Companion によって HoloLens が自動的に検出されます。 [新 **しい** Microsoft HoloLens選択します。
+    1. 次の画面で、[手動 **パッケージの** 選択] を選択し、手順 4. で展開したフォルダーに含まれているインストール ファイルを選択します。 (拡張子が .ffu のファイルを探します)。
+    1. [ **ソフトウェアのインストール] を** 選択し、指示に従います。
 
 > [!NOTE]
-> WDRT が HoloLens を検出しない場合は、PC を再起動してみてください。 それでもうまくいかない場合は、[ **デバイスが検出されませんでした**] を選択し、[ **Microsoft HoloLens**] を選択して、指示に従います。
+> 以前のバージョンに戻って、個人用ファイルと設定が削除されます。
 
-## <a name="windows-insider-program-on-hololens"></a>HoloLens の Windows Insider プログラム
+また、現在インストールされているリリースを使用する場合は、更新プログラム を手動で [一時停止することもできます](hololens-updates.md#pause-updates-via-device)。 これにより、エンジニアリング チームは問題を解決する時間が得されます。
 
-HoloLens の最新の機能を確認したい場合は、  その場合は、Windows Insider プログラムに参加してください。HoloLens ソフトウェア更新プログラムのプレビュービルドにアクセスしてから、一般公開されるようになります。
+## <a name="windows-insider-program-on-hololens"></a>Windows Insider Program HoloLens でのインストール
 
-[Microsoft HoloLens の Windows Insider preview を入手](hololens-insider.md)します。
+HoloLens の最新機能を確認したいですか?  その場合は、次のWindows Insider Program。HoloLens ソフトウェア更新プログラムが一般公開される前に、プレビュー ビルドにアクセスできます。
+
+[のWindows Insiderプレビューを取得Microsoft HoloLens。](hololens-insider.md)
