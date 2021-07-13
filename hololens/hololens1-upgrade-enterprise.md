@@ -12,19 +12,19 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 8d42c935e698f156aed894e4fa5012c9f04d8d49
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: b5ae9b0d6859c0f916b5b906e2e9ec54cad6cbd9
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309473"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635196"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>Windows Holographic for Business 機能のロック解除
 
 > [!IMPORTANT]
-> このページは、HoloLens ファースト世代にのみ適用されます。
+> このページは HoloLens 第1世代にのみ適用されます。
 
-Microsoft HoloLens は、Windows Holographic (HoloLens 向けに設計された Windows 10 のエディション) を実行する *Development Edition* と、ビジネス向けに設計された追加機能を提供する [商用スイート](hololens-commercial-features.md)で利用できます。
+Microsoft HoloLens は、Windows Holographic (HoloLens 向けに設計された Windows 10 のエディション)、およびビジネス向けに設計された追加機能を提供する [商用スイート](hololens-commercial-features.md)で実行される *開発エディション* で使用できます。
 
 Commercial Suite を購入すると、Windows Holographic を Windows Holographic for Business にアップグレードするライセンスを受け取ります。 このライセンスは、組織の [モバイルデバイス管理 (MDM) プロバイダー](#edition-upgrade-by-using-mdm) または [プロビジョニングパッケージ](#edition-upgrade-by-using-a-provisioning-package)を使用して、デバイスに適用できます。
 
@@ -35,7 +35,7 @@ Commercial Suite を購入すると、Windows Holographic を Windows Holographi
 
 エンタープライズ ライセンスは、[WindowsLicensing 構成サービス プロバイダー (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn904983.aspx) をサポートする任意の MDM プロバイダーを使って適用できます。 最新バージョンの Microsoft MDM API では、WindowsLicensing CSP がサポートされる予定です。
 
-Microsoft Intune を使用して HoloLens をアップグレードする詳細な手順については、「 [Windows Holographic を実行するデバイスを Windows Holographic For Business にアップグレードする](https://docs.microsoft.com/intune/holographic-upgrade)」を参照してください。
+Microsoft Intune を使用して HoloLens をアップグレードする手順の詳細については、「 [Windows Holographic を実行しているデバイスを Windows Holographic for Business にアップグレードする](/intune/holographic-upgrade)」を参照してください。
 
  他の MDM プロバイダーでは、ポリシーをセットアップして展開する具体的な手順が異なる場合があります。
 
@@ -85,15 +85,15 @@ Microsoft Intune を使用して HoloLens をアップグレードする詳細�
 
 ### <a name="apply-the-provisioning-package-to-hololens"></a>HoloLens へのプロビジョニング パッケージの適用
 
-1. USB ケーブルを使用して、デバイスを PC に接続します。 デバイスを起動しますが、初期セットアップエクスペリエンス (青いボックスの最初のページ) の [ **フィット** ] ページを超えないで続行しないでください。 PC では、HoloLens はエクスプローラーでデバイスとして表示されます。
+1. USB ケーブルを使用して、デバイスを PC に接続します。 デバイスを起動しますが、初期セットアップエクスペリエンス (青いボックスの最初のページ) の [ **フィット** ] ページを超えないで続行しないでください。 PC では、HoloLens はファイルエクスプローラーにデバイスとして表示されます。
 
     > [!NOTE]
-    > HoloLens デバイスで Windows 10 バージョン1607以前が実行されている場合は、デバイス上で **ボリュームダウン** と **電源** ボタンを同時に押すことによって、ファイルエクスプローラーを開きます。
+    > HoloLens デバイスが Windows 10 バージョン1607またはそれ以前のバージョンを実行している場合は、デバイス上の **ボリュームダウン** と **電源** ボタンを同時に押すことで、ファイルエクスプローラーを開きます。
 
 1. エクスプローラーで、プロビジョニング パッケージ (.ppkg) をデバイス ストレージに ドラッグ アンド ドロップします。
 
-1. HoloLens が引き続き [ **適合** ] ページにあるのに対して、 **音量** を簡単に押したまま、[ **電源** ] ボタンをもう一度押します。
+1. HoloLens が [**適合**] ページに残っている場合は、**ボリューム** を簡単に押したままにして、[**電源**] ボタンをもう一度押します。
 
-1. HoloLens を使用すると、パッケージを信頼するかどうかを確認するメッセージが表示され、適用されます。 パッケージが信頼できることを確認します。
+1. パッケージを信頼できるかどうかを確認するメッセージが表示され、それを適用するかどうかが HoloLens ます。 パッケージが信頼できることを確認します。
 
 1. パッケージが正常に適用されたかどうかが表示されます。 正常に適用されなかった場合は、パッケージを修正して、もう一度やり直してください。 成功した場合は、デバイスのセットアップを続行します。

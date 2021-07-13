@@ -1,7 +1,7 @@
 ---
-title: 展開ガイド– Dynamics 365 を使用した企業接続 HoloLens 2 ガイド-メンテナンス
-description: Dynamics 365 ガイドを使用して、企業に接続されたネットワーク経由で HoloLens 2 デバイスを保守する方法について説明します。
-keywords: HoloLens, 管理, 企業接続, Dynamics 365 ガイド, AAD, Azure AD, MDM, モバイルデバイス管理
+title: デプロイ ガイド – 企業接続HoloLens 2 Dynamics 365 Guides - メンテナンス
+description: デバイスを使用して企業の接続HoloLens 2を使用してデバイスを管理する方法Dynamics 365 Guides。
+keywords: HoloLens、管理、企業接続、Dynamics 365 Guides、AAD、Azure AD、MDM、Mobile デバイス管理
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -14,68 +14,68 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f231e65e17ab053e34e7174e1ed7ff6e7a0a56b8
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 0176e816f167499574607bc16c8fbd6bde757daf
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309500"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636998"
 ---
-# <a name="maintain---corporate-connected-guide"></a>保守-企業の接続ガイド
+# <a name="maintain---corporate-connected-guide"></a>メンテナンス - 企業接続ガイド
 
 ## <a name="update-hololens"></a>HoloLens を更新する
 
 Windows Update for Business は、IT 管理者に対して Windows Update を中心とした追加の管理機能を提供するように設計されています。これには、更新プログラムをデバイスのグループに展開する機能や、更新プログラムをインストールするためのメンテナンス ウィンドウを定義する機能などが含まれています。
 
-更新プログラムを管理する一般的な方法の1つは、機能の遅延を30日間にすることです。 これにより、管理者は新しい機能を更新してプレビューし、最初の知識を取得し、新しい変更をサポートデスクに通知することができます。
+更新プログラムを管理する一般的な方法の 1 つは、30 日間の機能の遅延を実行する方法です。 これにより、管理者は新機能を更新してプレビューし、最初の知識を得て、新しい変更についてサポート デスクに通知することができます。
 
-スケジュールされた日、スケジュールされた時刻、デバイスのアクティブ時間の設定など、 [HoloLens の更新を管理](https://docs.microsoft.com/hololens/hololens-updates)する方法について説明します。これにより、勤務時間外に更新されるようになります。
+スケジュールされた日、[スケジュールHoloLens](/hololens/hololens-updates)時間、デバイスのアクティブな時間の設定など、更新プログラムを管理して、作業時間外に更新する方法について学習します。
 
-## <a name="how-to-update-dynamics-365-guides-and-other-store-apps"></a>Dynamics 365 ガイド (およびその他のストアアプリ) を更新する方法
+## <a name="how-to-update-dynamics-365-guides-and-other-store-apps"></a>アプリ (および他Dynamics 365 Guidesアプリ) を更新する方法
 
-Dynamics 365 ガイドは In-Box アプリであり、Microsoft Store アプリを使用して更新できます。 Microsoft Store によってダウンロードされたすべてのアプリについて、Microsoft Store アプリ自体を [使用して](https://docs.microsoft.com/hololens/holographic-store-apps#update-apps) 手動で更新することができます。
+Dynamics 365 GuidesはIn-Boxであり、アプリを使用して更新Microsoft Storeできます。 アプリを使用してダウンロードMicrosoft Storeアプリ自体を使用してMicrosoft Store更新できます。 [](/hololens/holographic-store-apps#update-apps)
 
 ## <a name="how-to-update-lob-apps"></a>LOB アプリを更新する方法
 
-LOB アプリは、Intune に追加したときと同じ方法で更新できます。 Intune でアプリを更新するには、新しいバージョン番号を持つ新しいアプリを既存のアプリ構成にアップロードします。 デバイスが Intune に同期すると、新しいバージョンのアプリがあることが確認され、新しいアプリがダウンロードされて、古いアプリが置き換えられます。
+LOB アプリは、Intune に追加されたのと同じ方法で更新できます。 Intune でアプリを更新するには、バージョン番号が大きい新しいアプリを既存のアプリ構成にアップロードします。 デバイスが Intune と同期すると、新しいバージョンのアプリがインストールされ、新しいアプリがダウンロードされ、古いアプリが置き換えられます。
 
-1. 新しいアプリをアップロードするには、[[メモリポータル](https://endpoint.microsoft.com/#home)  ->  **アプリ**>-すべての **アプリ** の TheNameOfYourApp] プロパティに移動し  ->    ->  **ます。**
-2. [アプリ情報] の横にある [編集] を選択し **ます。**
-3. &quot;[更新するファイルを選択してください] の値とし &quot; て、ファイルを選択します。
-4. ここから、コンテキストメニューを使用してファイルエクスプローラーを開き、新しいバージョンの LOB アプリをアップロードします。 必要に応じて依存関係を含めてください。
+1. 新しいアプリをアップロードするには [、MEM ポータル](https://endpoint.microsoft.com/#home)の [アプリ]  ->   -> [すべての **アプリ**]  ->  *[TheNameOfYourApp の* プロパティ] に移動  ->  **します。**
+2. [アプリ情報] の横にある [編集] を **選択します。**
+3. [更新するファイル &quot; の選択] の値として &quot; 、ファイルを選択します。
+4. ここから、コンテキスト メニューを使用してエクスプローラーを開き、新しいバージョンの LOB アプリをアップロードします。 必要に応じて依存関係を含める必要があります。
 
-詳細については[、「HoloLens の Intune アプリの展開」を](https://docs.microsoft.com/hololens/app-deploy-intune)参照してください。
+詳細については、以下をご覧ください[。Intune App Deployment for HoloLens](/hololens/app-deploy-intune)
 
 ## <a name="development-plan"></a>開発計画
 
-デバイスが正常に登録されたら、より多くの LOB アプリをデバイスにデプロイする準備が整いました。 このガイドの期間中はサンプルアプリを使用していますが、組織のニーズに合わせて構築されたカスタムアプリを使用することが必要になる可能性が高くなります。
+デバイスが正常に登録されると、より多くの LOB アプリをデバイスに展開する準備が完了しました。 このガイドの期間中は、サンプル アプリを使用していますが、組織のニーズに合って構築されたカスタム アプリを使用する可能性が高い可能性があります。
 
-LOB アプリを既にお持ちの場合は、MDM を [使用](https://docs.microsoft.com/hololens/app-deploy-intune)してアプリをデプロイする準備ができています。 別の方法を使用する場合は、 [「HoloLens 2 のアプリケーション展開の概要」](https://docs.microsoft.com/hololens/app-deploy-overview) を参照して、LOB アプリをデバイスにデプロイする方法の詳細を確認してください。
+既に LOB アプリがある場合は、MDM を使用してアプリ [をデプロイする準備が整います](/hololens/app-deploy-intune)。 別の方法を使用する場合は[、HoloLens 2](/hololens/app-deploy-overview)のアプリケーション展開の概要に関するページを参照して、LOB アプリをデバイスに展開する方法の詳細を確認してください。
 
-独自の LOB アプリをまだ作成していない場合、またはまだ作成プロセスが完了している場合は、mixed reality の開発に関するドキュメントを参照して、[設計とプロトタイプ](https://docs.microsoft.com/windows/mixed-reality/design/design)作成を開始するか、または[mixed reality 開発を開始](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr)するための主要な概念を学習してください。
+独自の LOB アプリをまだ作成していない場合、またはまだ作成中の場合は、Mixed Reality 開発に関する[](/windows/mixed-reality/design/design)ドキュメントを参照して、設計とプロトタイプ作成を開始するか、Mixed [Reality](/windows/mixed-reality/discover/get-started-with-mr)開発を開始する主要な概念を学習してください。
 
 ## <a name="support-plan"></a>サポート計画
 
-サポートプランは、適切な場所に配置することをお勧めします。 HoloLens デバイスでの登録プロセスのトラブルシューティングに関するトレーニングを受けているユーザーやグループがあれば、組織内での HoloLens デバイスの一般的な使用が役立ちます。 ユーザーがより迅速に問題を解決できるようにするために、エスカレーションプロセスは次の順序と同様の方法で処理することをお勧めします。
+サポート プランは、優れた機能です。 HoloLens デバイスでの登録プロセスのトラブルシューティングと、組織内の HoloLens デバイスの一般的な使用に関するトレーニングを受けたユーザー(グループ) が役に立ちます。 ユーザーが問題をより迅速に解決するには、エスカレーション プロセスを次の順序と同様の方法で処理してください。
 
-1. サポートデスク。
-2. HoloLens エキスパートチーム
-3. [HoloLens ドキュメント](https://docs.microsoft.com/hololens/)  / [HoloLens のトラブルシューティングに関するドキュメント](https://docs.microsoft.com/hololens/hololens-troubleshooting)
-4. [サポートにお問い合わせください](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f)
+1. サポート デスク。
+2. HoloLensエキスパート チーム
+3. [HoloLens Docs](/hololens/)  / [HoloLensトラブルシューティング ドキュメント](/hololens/hololens-troubleshooting)
+4. [サポートに問い合わせ](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 ## <a name="device-management"></a>デバイス管理
 
-このガイドでは、モバイルデバイス管理 (MDM) を設定し、それを使用して一部のデバイス構成を設定し、Wi-Fi 証明書とプロキシの観点からアクセスを許可する設定を適用する方法について説明します。 ただし、MDM を使用して、Csp とポリシーを使用してデバイスの制限を適用することもできます。
+このガイドでは、Mobile デバイス管理 (MDM) の設定について説明し、それを使用していくつかのデバイス構成を設定し、Wi-Fi 証明書とプロキシの観点からアクセスを許可する設定を適用しました。 ただし、MDM を使用して、CSP とポリシーを介してデバイスの制限を適用することもできます。
 
-多くの場合、デバイスには、Bluetooth、VPN、USB などの接続制限や、カメラやマイクへのアクセスをオフにすることもできます。 これらのいずれかが興味をお持ちの場合は、 [一般的なデバイスの制限に関するページ](https://docs.microsoft.com/hololens/hololens-common-device-restrictions)をお読みになることをお勧めします。
+多くの場合、デバイスには Bluetooth、VPN、USB などの接続制限がある場合や、カメラやマイクへのアクセスをオフにすることもできます。 これらの関心がある場合は、一般的なデバイス制限に関する [ページをお読みください](/hololens/hololens-common-device-restrictions)。
 
-使用できるデバイスには、他にも複雑な制限があります。 例:
+使用できるその他の複雑なデバイス制限があります。 例:
 
-- [Settingspagevisibility](https://docs.microsoft.com/hololens/settings-uri-list)を使用して設定アプリで表示できるページ数を制限することで、ユーザーは Wi-Fi 接続の変更など、調整が必要な設定にのみアクセスできるようになります。
-- [キオスクモード](https://docs.microsoft.com/hololens/hololens-kiosk)を使用して、デバイス上のユーザーに表示される UI を制限します。 キオスクを設定して、1つのアプリ、またはカスタムスタートページを持つ複数のアプリを表示することができます。 キオスクでは、ユーザーごとに異なるエクスペリエンスを提示することもできます。
-- 特定のアプリまたはプロセスを完全に起動しないようにするための[Windows アプリケーション制御 (WDAC)](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) 。
+- [SettingsPageVisibility](/hololens/settings-uri-list)を使用して 設定 アプリで表示できるページを制限すると、ユーザーは、Wi-Fi 接続の変更など、調整する必要がある設定にのみアクセスできます。
+- キオスク [モードを使用](/hololens/hololens-kiosk) して、デバイス上のユーザーに表示される UI を制限します。 キオスクを設定して、1 つのアプリを表示するか、カスタム スタート ページを使用して複数のアプリを表示できます。 キオスクでは、異なるユーザーに異なるエクスペリエンスを表示できます。
+- [Windowsアプリケーション制御 (WDAC)](/hololens/windows-defender-application-control-wdac)を使用して、特定のアプリやプロセスが完全に起動しなきを維持します。
 
-デバイス管理またはデバイスの制限のその他の方法について学習する場合は、次の手順を実行し、 [デバイス管理の概要](https://docs.microsoft.com/hololens/hololens-csp-policy-overview)に関するページを参照してください。
+デバイス管理またはデバイスの制限の追加の方法について学習する場合は、次の手順に進み、「概要」を参照デバイス管理 [してください](/hololens/hololens-csp-policy-overview)。
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: 商用HoloLens 2でのデプロイの計画
-description: インフラストラクチャ、クラウド、モバイル デバイス管理など、エンタープライズ環境での HoloLens のデプロイと管理Azure Active Directory詳細を確認してください。
+title: 一般的な配置シナリオ
+description: インフラストラクチャ、デバイス管理、モバイル デバイス管理HoloLens、エンタープライズ環境でのAzure Active Directoryの展開と管理について説明します。
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
@@ -12,20 +12,20 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2a0933bb754043934621a22ffa7764c9c88d93da
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 72b9e61c52d6f4f08cf5a29baf7b01c29fae7489
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924606"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635468"
 ---
 # <a name="common-deployment-scenarios"></a>一般的な配置シナリオ
 
 ## <a name="overview"></a>概要
 
-このページでは、エンタープライズ内の 2 つのデバイスを展開および管理する場合の 3 つの一般的Microsoft HoloLensアーキテクチャの概要について説明します。
+このページでは、エンタープライズ内の 2 つのデバイスを展開および管理する場合の 3 つの一般的Microsoft HoloLens概要を示します。
 
-多くの場合、デバイスを管理し、組織のリソースにアクセスする方法は、主に既に設定されている要因によって決まります。 既存のインフラストラクチャに基づいて、次のシナリオで一般的なデバイス管理スタイル (MDM) を確認してから、「商用環境での [HoloLens 2](hololens-core-components.md) デプロイの計画」を参照して、ニーズに一致するシナリオを特定してください。 デプロイ中に使用できる対応するガイドも 3 つ用意されています。
+多くの場合、デバイスを管理し、組織のリソースにアクセスする方法は、主に既に設定されている要因によって決まります。 既存のインフラストラクチャに基づいて、次のシナリオで一般的なデバイス管理スタイル (MDM) を確認してから、「商用環境での[HoloLens 2](hololens-core-components.md)展開の計画」を参照して、ニーズに一致するシナリオを判断してください。 デプロイ中に使用できる対応するガイドも 3 つ用意されています。
 
 
  1. [クラウド接続された環境のデプロイ ガイド](hololens2-cloud-connected-overview.md)
@@ -45,11 +45,11 @@ ms.locfileid: "112924606"
    * 1 つ以上のアプリケーションが MDM 経由でデプロイされる
 
 * 一般的な課題
-   * シナリオの要件に基づいて、アプリケーションにHoloLens 2 MDM 構成を決定します。
+   * シナリオの要件に基づいて、アプリケーションに適用HoloLens 2 MDM 構成を決定します。
 
 [![シナリオ A 図 ](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
 
-対応するクラウド接続ガイドでは、デバイス管理に HoloLens 2 を登録し、必要に応じてライセンスを適用し、エンド ユーザーがデバイスのセットアップ時に Remote Assist をすぐに使用できると検証する方法について説明します。 短期的または長期的な外部使用のためにリモート サイトにデバイスを展開するには、外部クライアント ガイドを使用します。
+対応するクラウド接続ガイドでは、HoloLens 2 をデバイス管理に登録し、必要に応じてライセンスを適用し、エンド ユーザーがデバイスのセットアップ時に Remote Assist をすぐに使用できると検証する方法について説明します。 短期的または長期的な外部使用のためにリモート サイトにデバイスを展開するには、外部クライアント ガイドを使用します。
 
 > [!div class="nextstepaction"]
 > [クラウド接続された環境のデプロイ ガイド](hololens2-cloud-connected-overview.md)
@@ -71,8 +71,8 @@ ms.locfileid: "112924606"
    * 1 つ以上のアプリケーションが MDM 経由でデプロイされる
 
  * 一般的な課題
-   * HoloLens 2オンプレミス AD 参加または SCCM はサポートされていません。 MDM Azure AD参加する必要があります。 現在も多くの企業では、このシナリオで Windows 10 PC をオンプレミスの AD 参加済みデバイスとして展開し、System Center 構成マネージャー (SCCM) によって管理され、クラウドベースの MDM ソリューションを介して内部 Windows 10 デバイスを管理するためのインフラストラクチャがデプロイまたは構成されていない可能性があります。
-   * クラウドHoloLens 2デバイスなので、ユーザー認証、OS の更新、MDM 管理などのために、インターネットとクラウドに接続されたサービスに大きく依存しています。 企業ネットワークに接続する場合は、HoloLens 2 と、そのネットワーク上で実行されるアプリケーションへのアクセスを有効にするためのプロキシ/ファイアウォール規則を調整する必要があります。
+   * HoloLens 2 AD 参加または SCCM はサポートされていません。 MDM Azure AD参加する必要があります。 現在、多くの企業では、このシナリオでは、System Center Configuration Manager (SCCM) によって管理されるオンプレミスの AD 参加済みデバイスとして Windows 10 PC をデプロイし、クラウドベースの MDM ソリューションを介して内部 Windows 10 デバイスを管理するためのインフラストラクチャがデプロイまたは構成されていない可能性があります。
+   * クラウドHoloLens 2デバイスなので、ユーザー認証、OS の更新、MDM 管理などのために、インターネットとクラウドに接続されたサービスに大きく依存しています。 企業ネットワークに接続する場合は、HoloLens 2 と、そのネットワーク上で実行されるアプリケーションに対してアクセスを有効にするために、プロキシ/ファイアウォール規則を調整する必要があります。
    * 企業Wi-Fi接続には、通常、ネットワークに対してデバイスまたはユーザーを認証するための証明書が必要です。 MDM を介してデバイスに証明書を展開するためにWindows 10必要なインフラストラクチャまたは設定は、構成が困難な場合があります。
 
 [![シナリオ B1 図 ](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
@@ -102,7 +102,7 @@ ms.locfileid: "112924606"
 
 [![オフライン セキュリティで保護された図 1 ](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
-対応するオフライン セキュリティ ガイドでは、セキュリティで保護された環境で使用するためにアプリケーションをロックダウンするサンプル プロビジョニング HoloLens 2適用する手順を説明します。
+対応するオフライン セキュリティ ガイドでは、セキュリティで保護された環境で使用するためにアプリケーションをロックダウンHoloLens 2プロビジョニング パッケージのサンプルを適用する方法について説明します。
 
 > [!div class="nextstepaction"]
 > [オフラインでの安全な環境展開ガイド](hololens-common-scenarios-offline-secure.md)

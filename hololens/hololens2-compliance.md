@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 のコンプライアンスと GDPR
+title: HoloLens 2コンプライアンスと GDPR
 description: GDPR のドキュメント
 keywords: HoloLens、GDPR、プライバシー、PII
 author: joyjaz
@@ -14,54 +14,54 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b795513d83c9d23f70b8dd8365e703d1fc43a51
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 684a97a4fcdc3aaf830f164c54fb3079e296c78c
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309914"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113637117"
 ---
 # <a name="hololens-2-privacy-statement"></a>HoloLens 2 のプライバシーに関する声明
 
-GDPR の中核となる要素の1つは、"design によるデータ保護" です。 この概念は、モバイルデバイス (HoloLens 2 など) に特に当てはまります。これは、移植性、無制限のインターネット接続、通信チャネルを開くことによるものです。 Resultingly は、Microsoft の[プライバシーと GDPR](https://privacy.microsoft.com/)の両方の方法を採用して、高度で革新的なセキュリティとプライバシー保護をエンドツーエンドで提供するように、HoloLens 2 の[セキュリティ](https://docs.microsoft.com/hololens/security-architecture)を再設計しました。
+GDPR の主要な要素の 1 つは、"設計によるデータ保護" です。 この概念は、移植性、無制限のインターネット接続、オープン通信チャネルにより、HoloLens 2 デバイスなど、モバイル デバイスに特に適用されます。 その結果、HoloLens 2 のセキュリティが再設計[](/hololens/security-architecture)され、高度で革新的なセキュリティとプライバシー保護がエンドツーエンドで提供され、プライバシーと[GDPR](https://privacy.microsoft.com/)規制に対する Microsoft のアプローチの両方が組み込みされました。
 
  >[!NOTE]
-> このドキュメントは HoloLens (第1世代) には適用されません。
+> このドキュメントは、(第 1 世代) HoloLensには適用されません。
 
 ## <a name="privacy-overview"></a>プライバシーの概要
 
-HoloLens 2 は、Windows Holographic を実行する自己完結型の Windows コンピューターであり、イマーシブ mixed reality 環境でアプリとソリューションを実行します。 セキュリティで保護されたオフラインデバイスとして使用することも、組織内の [管理対象デバイス](https://docs.microsoft.com/mem/intune/fundamentals/windows-holographic-for-business) として展開することもできます。 HoloLens 2 と Microsoft がデータを使用して保護する方法については、次のリンクを参照してください。
-1. [Microsoft のプライバシーに関する声明-HoloLens](https://privacy.microsoft.com/privacystatement) –左側のナビゲーションメニューの [ **エンタープライズと開発者** ] セクションを展開し、[ **エンタープライズと開発者のソフトウェアおよびアプライアンス**] を選択します。 **HoloLens** セクションにアクセスします。
-2.  [Windows 10 とオンラインサービス](https://privacy.microsoft.com/windows10privacy)
-3.  [Windows 10 & プライバシー準拠ガイド](https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance)
-4.  [Intune におけるプライバシーと個人データ](https://docs.microsoft.com/mem/intune/protect/privacy-personal-data)
+HoloLens 2は、イマーシブ Mixed Reality 環境でアプリとソリューションを実行する Windows Holographic を実行する自己Windowsコンピューターです。 セキュリティで保護されたオフライン デバイスとして使用するか、組織内のマネージド デバイス [として](/mem/intune/fundamentals/windows-holographic-for-business) 展開することができます。 次のリンクを参照して、HoloLens 2と Microsoft がデータを使用および保護する方法を理解してください。
+
+1. [Microsoft のプライバシー](https://privacy.microsoft.com/privacystatement)に関する声明 - HoloLens – 左側のナビゲーション メニューの [Enterprise **と開発者**] セクションを展開し、[Enterprise と開発者ソフトウェアとアプライアンス]**を選択します**。 次のセクション **にHoloLens** します。
+2. [Windows 10 とオンラインサービス](https://privacy.microsoft.com/windows10privacy)
+3. [Windows 10 & プライバシー コンプライアンス ガイド](/windows/privacy/windows-10-and-privacy-compliance)
+4. [Intune におけるプライバシーと個人データ](/mem/intune/protect/privacy-personal-data)
 
 ## <a name="network-security"></a>ネットワークのセキュリティ
-HoloLens 2 の [一般的なデプロイシナリオ](https://docs.microsoft.com/hololens/common-scenarios)に従うと、データは、法的/規制標準の統合と共に、 [Azure の世界クラスのコンプライアンス](https://docs.microsoft.com/azure/compliance/) によって保護されます。 Azure AD と Dynamics 365 リモートアシスタンスを初めて使用する場合は、 [GDPR の Azure と dynamics 365 のアカウンタビリティの準備チェックリスト](https://docs.microsoft.com/compliance/regulatory/gdpr-arc-azure-dynamics)を参照してください。
+「一[般的HoloLens 2シナリオ](/hololens/common-scenarios)」に従って、データは、法律/規制標準の統合と共に[、Azure](/azure/compliance/)の世界クラスのコンプライアンスによって保護されます。 データの作成と管理をAzure ADするDynamics 365 Remote Assist、GDPR の Azure と[Dynamics 365](/compliance/regulatory/gdpr-arc-azure-dynamics)の説明責任の準備チェックリストを参照してください。
 
-さらに、Windows Defender ファイアウォールは、デバイスの接続をセキュリティで保護するための重要な機能を提供します。 HoloLens 2 では、ファイアウォールは常に有効になっており、プログラムまたは UI を使用して無効にする方法はありません。 HoloLens 2 が [Intune](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started)を使用して管理対象デバイスとして展開されている場合、モバイル脅威防御ソリューションとして [Microsoft Intune を持つエンドポイント](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection) の統合により、より多くのコンプライアンス機能を利用できます。 
+さらに、Windows Defenderファイアウォールは、デバイス接続をセキュリティで保護するための重要な機能を提供します。 このHoloLens 2ファイアウォールは常に有効になっているので、プログラムまたは UI を使用して無効にする方法はありません。 Intune をHoloLens 2マネージド デバイスとして展開すると[、Mobile](/mem/intune/protect/device-compliance-get-started)Threat Defense ソリューションとしてのエンドポイントと[Microsoft Intune](/mem/intune/protect/advanced-threat-protection)の統合により多くのコンプライアンス機能を利用できます。
 
-HoloLens 2 の [セキュリティとアーキテクチャ](https://docs.microsoft.com/hololens/security-architecture)の詳細については、こちらを参照してください。
+セキュリティとアーキテクチャに関するHoloLens 2[詳細を確認してください](/hololens/security-architecture)。
 
 ## <a name="os-security"></a>OS のセキュリティ
-更新プログラムは、既定で自動的に実行されるため、Windows Holographic とインストールされているすべてのアプリの最新リリースによって、HoloLens 2 が常に最新の状態になります。 OS が安全に設計されている方法の詳細については、以下を参照してください。
-1. [状態の分離と分離](https://docs.microsoft.com/hololens/security-state-separation-isolation)
-1. [管理者レスオペレーティングシステム](https://docs.microsoft.com/hololens/security-adminless-os)
-1. [パスワードの使用を制限する](https://docs.microsoft.com/hololens/security-limiting-password-use)
+更新は自動的に (既定で) 行われるので、HoloLens 2 Holographic とインストールされているアプリの最新リリースで、Windowsが常に最新の情報に更新されます。 OS の安全な設計方法の詳細については、次を参照してください。
+
+1. [状態の分割と分離](/hololens/security-state-separation-isolation)
+1. [管理者が使用するオペレーティング システム](/hololens/security-adminless-os)
+1. [パスワードの使用制限](/hololens/security-limiting-password-use)
 
 ## <a name="physical-security"></a>物理的なセキュリティ
-HoloLens 2 には、 [BitLocker 暗号化](https://docs.microsoft.com/hololens/security-encryption-data-protection)によって保護されているフラッシュメモリがあります。 デバイスとそのローカルデータは、 [Advanced Recovery コンパニオン](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8#activetab=pivot:overviewtab) を使用してオフラインで、または管理対象デバイスとしてデプロイされている場合は MDM 経由でリモートでワイプすることができます。
+HoloLens 2 [BitLocker](/hololens/security-encryption-data-protection)暗号化で保護されているフラッシュ メモリがあります。 デバイスとそのローカル データは [、Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8#activetab=pivot:overviewtab) を使用してオフラインでフラッシュするか、マネージド デバイスとして展開されている場合は MDM 経由でリモートワイプできます。
 
 ## <a name="data-protection"></a>データ保護
-Windows の更新プログラムは自動的に (既定で) 実行され、 [Azure 統合](https://docs.microsoft.com/hololens/security-encryption-data-protection#Azure-integration) によって、自身とクラウドの間のデータ移動を保護します。 
+Windows更新プログラムは (既定で) 自動的に実行され[、Azure 統合](/hololens/security-encryption-data-protection#Azure-integration)によって、それ自体とクラウドの間を移動するデータが保護されます。
 
-HoloLens 2 を外部クライアントに展開すると、 [Dynamics 365 リモート](https://docs.microsoft.com/hololens/hololens2-deployment-guide) アシスタンスによって、会社の機密データとリソースの両方が分離され、安全になります。 
+外部クライアントHoloLens 2展開する場合、Dynamics 365 Remote Assist会社の機密[](/hololens/hololens2-deployment-guide)データとリソースの両方が分離され、安全になります。
 
-Microsoft との診断データの共有は、MDM または OOBE 中にユーザーが手動で構成できます。 オプションの診断データと必要な診断データの2つの選択肢があります。 トラブルシューティングのために元の診断設定を後で変更する必要がある場合は、ユーザーが [> 設定]、[ **プライバシー-> 診断 & のフィードバック** ]、または管理対象デバイスの場合は It 管理者 (MDM) で変更できます。 詳細については [、Windows 10 の診断、フィードバック、プライバシー](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-10-28808a2b-a31b-dd73-dcd3-4559a5199319)に関する情報を参照してください。
+Microsoft との診断データの共有は、MDM または OOBE 中にユーザーが手動で構成できます。 オプションの診断データと必要な診断データの 2 つの選択肢があります。 トラブルシューティングの目的で元の診断設定を後で変更する必要がある場合は **、設定 -> Privacy -> Diagnostics & Feedback** のユーザー、またはマネージド デバイスの場合は IT 管理者 (MDM) によって変更できます。 詳細については、「診断[、フィードバック、プライバシー」を参照Windows 10。](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-10-28808a2b-a31b-dd73-dcd3-4559a5199319)
 
 > [!Important]
-> デバイス診断ログには、ユーザーが通常の操作で開始するプロセスやアプリケーションなど、個人を特定できる情報 (PII) が含まれています。 複数のユーザーが HoloLens デバイスを共有している場合 (たとえば、ユーザーが異なる Microsoft Azure Active Directory (Azure AD) アカウントを使用して同じデバイスにサインインした場合)、診断ログには、複数のユーザーに適用される PII 情報が含まれる場合があります。
+> デバイス診断ログには、ユーザーが一般的な操作中に開始するプロセスやアプリケーションなど、個人を特定できる情報 (PII) が含まれます。 複数のユーザーが HoloLens デバイスを共有している場合 (たとえば、ユーザーは異なる Microsoft Azure Active Directory (Azure AD) アカウントを使用して同じデバイスにサインインします)、診断ログには、複数のユーザーに適用される PII 情報が含まれる場合があります。
 
- 
-
-HoloLens 2 から診断データを収集するための [収集方法とデータ保持ポリシーがいくつか](https://docs.microsoft.com/hololens/hololens-diagnostic-logs) あります。  Microsoft が診断データを収集して使用する方法の詳細については、左側のナビゲーションメニューで「 [microsoft のプライバシー](https://privacy.microsoft.com/privacystatement) に関する声明- **Windows** を展開する」および「 **診断**」を参照してください。 [ **診断** ] セクションにアクセスします。
+診断データ[を収集する](/hololens/hololens-diagnostic-logs)コレクション方法とデータ保持ポリシーは、HoloLens 2。  Microsoft が診断データを収集して使用する方法の詳細については [、「Microsoft の](https://privacy.microsoft.com/privacystatement)プライバシーに関する声明 - 診断 - 左側のナビゲーション メニューで Windows を展開し、 [診断] を選択する」を **参照してください**。 [診断] **セクションに移動** します。
