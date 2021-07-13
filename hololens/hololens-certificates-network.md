@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: de9f2c4f136a26a5956ba8a8f3b9faba1e90ea66
-ms.sourcegitcommit: 86dba9e8a5e25f0bf29f4c0580970c25c44b7359
+ms.openlocfilehash: eedb451847757eba02465d7ded4494b9712497ff
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "11470055"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397443"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>HoloLens 2 の証明書とネットワーク プロファイルを準備する
 
@@ -27,7 +27,7 @@ ms.locfileid: "11470055"
 HoloLens 2 デバイスは通常、Azure Active Directory (Azure AD) に参加し、Intune やその他の MDM プロバイダーによって管理されるため、ご利用の MDM ソリューションに統合されているネットワーク デバイス登録サービス (SCEP) や公開キー暗号化標準 (PKCS) 証明書インフラストラクチャを使用して、そのような証明書を展開する必要があります。 
 
 >[!NOTE]
-> MDM プロバイダーがない場合でも、**[設定] > [更新とセキュリティ] > [証明書マネージャー]** に移動して、[Windows 構成デザイナー](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab)の[プロビジョニング パッケージ](https://docs.microsoft.com/hololens/hololens-provisioning#steps-for-creating-provisioning-packages)または[証明書マネージャー](https://docs.microsoft.com/hololens/certificate-manager)を介して証明書を展開できます。
+> MDM プロバイダーがない場合でも、 [Windows 構成デザイナー](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab)の [プロビジョニングパッケージ](https://docs.microsoft.com/hololens/hololens-provisioning#steps-for-creating-provisioning-packages)または [証明書マネージャー](https://docs.microsoft.com/hololens/certificate-manager)を使用して証明書を展開することができます。そのためには、 **[設定] > [アップデートとセキュリティ] > [証明書マネージャー]** の順に移動します。
 
 ## <a name="certificate-requirements"></a>証明書の要件
 SCEP や PKCS インフラストラクチャを介して証明書を展開するには、ルート証明書が必要です。 組織内のその他のアプリケーションやサービスでは、HoloLens 2 デバイスにもルート証明書を展開する必要がある可能性があります。 
@@ -39,29 +39,32 @@ SCEP や PKCS インフラストラクチャを介して証明書を展開する
 既存の SCEP や PKCS インフラストラクチャが存在しない場合は、1 つ用意する必要があります。 認証に SCEP や PKCS 証明書の使用をサポートするために、Intune では[証明書コネクタ](https://docs.microsoft.com/mem/intune/protect/certificate-connectors)の使用が必要になります。
 
 > [!NOTE]
-> Microsoft CA で SCEP を使用する場合、[ネットワーク デバイス登録サービス (NDES)](https://docs.microsoft.com/mem/intune/protect/certificates-scep-configure#set-up-ndes) も構成する必要があります
+> Microsoft CA で SCEP を使用する場合は、[ネットワーク デバイス登録サービス (NDES) ](https://docs.microsoft.com/mem/intune/protect/certificates-scep-configure#set-up-ndes)も構成する必要があります。
 
-詳細については、「[Configure a certificate profile for your devices in Microsoft Intune (Microsoft Intune でデバイスの証明書プロファイルを構成する)](https://docs.microsoft.com/intune/certificates-configure)」を参照してください。
+詳細については、「[Microsoft Intune でデバイスの証明書プロファイルを構成する](https://docs.microsoft.com/intune/certificates-configure)」を参照してください。
 
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>証明書と Wi-Fi/VPN プロファイルを展開する
 証明書とプロファイルを展開するには、次の手順に従います。
-1.  ルート証明書と中間証明書のそれぞれにプロファイルを作成します (「[Create trusted certificate profiles (信頼された証明書プロファイルを作成する)](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)」を参照してください)。各プロファイルには、DD/MM/YYYY 形式による有効期限を含む説明が必要です。 **有効期限のない証明書プロファイルは、展開されません。**
-1.  SCEP 証明書または PKCS 証明書のそれぞれにプロファイルを作成します (「[Create a SCEP certificate profile or Create a PKCS certificate profile (SCEP 証明書プロファイルの作成または PKCS 証明書プロファイルの作成)](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)」を参照してください)。各プロファイルには、DD/MM/YYYY 形式による有効期限を含む説明が必要です。 **有効期限のない証明書プロファイルは、展開されません。**
+1.  ルート証明書と中間証明書のそれぞれにプロファイルを作成します (「[信頼証明書プロファイルの作成](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)」を参照してください)。各プロファイルには、DD/MM/YYYY 形式による有効期限を含む説明が必要です。 **有効期限のない証明書プロファイルは、展開されません。**
+1.  SCEP 証明書または PKCS 証明書のそれぞれにプロファイルを作成します ([「SCEP 証明書プロファイルの作成」または「PKCS 証明書プロファイルの作成」](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)を参照してください)。各プロファイルには、DD/MM/YYYY 形式による有効期限を含む説明が必要です。 **有効期限のない証明書プロファイルは、展開されません。**
 
     > [!NOTE]
     > HoloLens 2 は共有デバイスであり、デバイスごとに複数のユーザーがいると多くの方が認識されているように、可能であれば Wi-Fi 認証にはユーザー証明書ではなくデバイス証明書を展開することをお勧めします
 
-3.  企業の Wi-Fi ネットワークのそれぞれにプロファイルを作成します (「[Wi-Fi settings for Windows 10 and later devices (Windows 10 以降のデバイス向けの Wi-Fi 設定)](https://docs.microsoft.com/intune/wi-fi-settings-windows)」を参照してください)。 
+3.  企業の Wi-Fi ネットワークごとにプロファイルを作成します ([「Windows 10 以降のデバイスの Wi-Fi 設定」](https://docs.microsoft.com/intune/wi-fi-settings-windows)を参照してください)。 
     > [!NOTE]
-    > Wi-Fi プロファイルは、可能であればユーザー グループではなくデバイス グループに[割り当てる](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)ことをお勧めします。 
+    > Wi-Fi プロファイルは、可能であればユーザー グループではなくデバイス グループに[割り当て済み](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)にすることをお勧めします。 
 
     > [!TIP]
-    > また、企業ネットワーク上の Windows 10 PC から実行中の Wi-Fi プロファイルをエクスポートすることもできます。 このエクスポートでは、現在のすべての設定を含む XML ファイルが作成されます。 次に、このファイルを Intune にインポートして、HoloLens 2 デバイスの Wi-Fi プロファイルとして使用します。 「[Export and import Wi-Fi settings for Windows devices (Windows デバイスの Wi-Fi 設定のエクスポートとインポート)](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)」を参照してください。
+    > また、企業ネットワーク上の Windows 10 PC から実行中の Wi-Fi プロファイルをエクスポートすることもできます。 このエクスポートでは、現在のすべての設定を含む XML ファイルが作成されます。 次に、このファイルを Intune にインポートして、HoloLens 2 デバイスの Wi-Fi プロファイルとして使用します。 [Windows デバイスの Wi-Fi 設定のエクスポートとインポート](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)に関するページをご覧ください。
 
-4.  企業 VPN のそれぞれにプロファイルを作成します (「[Windows 10 and Windows Holographic device settings to add VPN connections using Intune (Windows 10 と Windows Holographic デバイスの設定で Intune を使用して VPN 接続を追加する)](https://docs.microsoft.com/intune/vpn-settings-windows-10)」を参照してください)。
+4.  企業 VPN ごとにプロファイルを作成します ([「Windows 10 および Windows Holographic デバイス設定で Intune を使用する VPN 接続を追加」](https://docs.microsoft.com/intune/vpn-settings-windows-10)を参照)。
 
 ## <a name="troubleshooting-certificates"></a>証明書のトラブルシューティング
 
 証明書が正しく展開されていることを検証する必要がある場合は、デバイスの[証明書マネージャー](certificate-manager.md)を使用して、証明書が存在することを確認してください。  
+
+>[!WARNING]
+> MDM によって展開された証明書は証明書マネージャーで表示できますが、証明書マネージャーでアンインストールすることはできません。 MDM を使用してアンインストールする必要があります。
 
 

@@ -4,7 +4,7 @@ description: インフラストラクチャ、デバイス管理、モバイル 
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
-author: bogenera
+author: bgener
 ms.author: bogenera
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 72b9e61c52d6f4f08cf5a29baf7b01c29fae7489
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: ccccdcc7d3188919d02eb5855131137415c12d16
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635468"
+ms.locfileid: "113639830"
 ---
 # <a name="common-deployment-scenarios"></a>一般的な配置シナリオ
 

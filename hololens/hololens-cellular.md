@@ -12,12 +12,12 @@ ms.date: 02/24/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3fd5f6baf05277bcbf2bf4152ba4735ca91e5bd0
-ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
+ms.openlocfilehash: 8318d011d6a593c1036b6bcf6f7973870b0dc294
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11385645"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397493"
 ---
 # <a name="connect-to-cellular-and-5g"></a>携帯電話と 5G に接続する
 
@@ -38,13 +38,13 @@ HoloLens 2 は、携帯電話や 5G ネットワークに接続するための2 
 
 ## <a name="usb-c-tethering"></a>USB-C テザリング
 
-USB-C テザリングを使用すると、それを必要とする高度なワークロードの待機時間が短くなります。 たとえば、[Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering) は、テザリングによるメリットがあります。 テザリングには携帯電話デバイスと HoloLens の間のケーブルが必要であり、テザリングは限られた数のデバイスでサポートされます。
+USB-C テザリングを使用すると、それを必要とする高度なワークロードの待機時間が短くなります。 たとえば、 [Azure リモート レンダリング](https://azure.microsoft.com/services/remote-rendering)では、テザリングの恩恵を受けることができます。 テザリングには携帯電話デバイスと HoloLens の間のケーブルが必要であり、テザリングは限られた数のデバイスでサポートされます。
 
 ### <a name="usb-c-compatibility"></a>USB-C の互換性
 
-イーサネット アダプターとして表示されるデバイスは、Windows Holographic バージョン 2004 以降で使用できます。
+イーサネット アダプターとして表示される限定数のデバイスは、Windows Holographic バージョン 2004 以降で使用できます。
 
-イーサネット アダプターとして表示されないデバイスは、汎用 Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) ドライバーをサポートしている必要があります。 汎用 Microsoft RNDIS ドライバーをサポートしているかどうかの詳細については、デバイスの製造元にお問い合わせください。
+イーサネット アダプターとして表示されないデバイスは、汎用 Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) ドライバーをサポートしている必要があります。 ただし、HoloLens 2 と互換性があるのは、限られた数のデバイスのみです。 汎用 Microsoft RNDIS ドライバーをサポートしているかどうかの詳細については、デバイスの製造元にお問い合わせください。
 
 RNDIS と互換性がないデバイス、またはドライバーやアプリケーションをインストールする必要があるデバイスはサポートされていません。
 

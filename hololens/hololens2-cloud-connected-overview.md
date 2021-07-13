@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 86d36275d5cf1296ca3e9fec90684a188a29f3f0
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 26fd2def8ce1fa8f960ab930e209c74fb37e2e0a
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635128"
+ms.locfileid: "113639762"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>展開ガイド–リモートアシスタンスを使用したクラウド接続 HoloLens 2-概要
 
-このガイドは、IT プロフェッショナルが、リモートアシスタンスを使用する Microsoft HoloLens 2 つのデバイスを組織に計画して展開するのに役立ちます。 これは、さまざまな HoloLens 2 のユースケースにおける、組織への概念実証展開のモデルとして機能します。 セットアップは、 [シナリオ A: クラウド接続デバイスへのデプロイ](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)に似ています。 
+このガイドは、IT プロフェッショナルが、リモートアシスタンスを使用する Microsoft HoloLens 2 つのデバイスを組織に計画して展開するのに役立ちます。 これは、さまざまな HoloLens 2 のユースケースにわたる組織への概念実証展開のモデルとして機能します。 セットアップは、 [シナリオ A: クラウド接続デバイスへのデプロイ](common-scenarios.md#scenario-a)に似ています。 
 
 このガイドでは、デバイスをデバイス管理に登録する方法、必要に応じてライセンスを適用する方法、およびエンドユーザーがデバイスのセットアップ時にすぐにリモートアシスタンスを使用できることを検証する方法について説明します。 これを行うには、セットアップと実行に必要なインフラストラクチャの重要な部分について説明します。 HoloLens 2 による大規模なデプロイを実現します。 このガイドでは、その他のデバイスの制限や構成は適用されませんが、これらのオプションについては、完了後に調査することをお勧めします。
 
@@ -31,10 +31,10 @@ ms.locfileid: "113635128"
 
 HoloLens 2 を展開するには、次のインフラストラクチャが配置されている必要があります。 Azure と Intune を設定していない場合は、次のガイドに記載されています。
 
-これは、 [シナリオ a: クラウド接続デバイスへのデプロイ](/hololens/common-scenarios#scenario-a)に似ています。これは、多くの概念実証展開に適しています。これには、次のようなものが含まれます。
+これは、「 [シナリオ a: クラウド接続デバイスへの展開](/hololens/common-scenarios#scenario-a)」と同様のセットアップです。これは、多くの概念実証展開に適しています。これには、次のようなものが含まれます。
 
 - Wi-Fi ネットワークは、通常、インターネットおよびクラウドサービスに対して完全に開いています。
-- MDM の自動登録による Azure AD 参加--MDM (Intune) で管理
+- MDM の自動登録を使用した Azure AD 参加-MDM 管理 (Intune)
 - ユーザーが自分の会社のアカウントでサインインする (Azure AD)
     - デバイスごとに1つまたは複数のユーザーがサポートされています。
 
@@ -43,14 +43,14 @@ HoloLens 2 を展開するには、次のインフラストラクチャが配置
 
 ## <a name="learn-about-remote-assist"></a>リモートアシスタンスの詳細
 
-リモートアシスタンスを使用すると、共同での保守と修復、リモート検査、知識の共有とトレーニングを行うことができます。 さまざまな役割と場所にいる従業員を接続することで、リモートアシスタンスを使用する技術者は、Microsoft Teams のリモートコラボレーターに接続できます。 ビデオ、スクリーンショット、注釈を組み合わせることにより、同じ場所に t&#39;いなくても、リアルタイムで問題を解決できます。 リモートコラボレーターは、参照イメージ、概略図、およびその他の有用な情報を挿入できます。技術&#39;者は、HoloLens のヘッドアップとハンドフリーを使用して、概略図を参照できます。
+リモートアシスタンスを使用すると、共同での保守と修復、リモート検査、知識の共有とトレーニングを行うことができます。 さまざまな役割と場所にいるユーザーを接続することで、リモートアシスタンスを使用する技術者は Microsoft Teams のリモートコラボレーターに接続できます。 ビデオ、スクリーンショット、注釈を組み合わせて、同じ場所にいなくてもリアルタイムで問題を解決できます。 リモートコラボレーターは、参照イメージ、概略図、その他の役に立つ情報を技術者の物理的な領域に挿入して、HoloLens でのヘッドアップとハンドフリーの作業中に、概略図を参照できます。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="remote-assist-licensing-and-requirements"></a>リモートアシスタンスのライセンスと要件
 
 - Azure AD アカウント (サブスクリプションの購入とライセンスの割り当てに必要)
-- [リモートアシスタンスサブスクリプション](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (または [リモートアシスタンス試用版](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist))
+- [リモートアシスタンスサブスクリプション](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (または [リモートアシスタンス試用版](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
     
 #### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist ユーザー
 
@@ -62,7 +62,7 @@ HoloLens 2 を展開するには、次のインフラストラクチャが配置
 - Microsoft Teams または[Teams フリーミアム](https://products.office.com/microsoft-teams/free)。
 - ネットワーク接続
 
-この [クロステナントシナリオ](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)を実装する予定がある場合は、情報バリアライセンスが必要になることがあります。 情報バリアライセンスが必要かどうかを判断するには、 [この記事](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) をご覧ください。
+この [クロステナントシナリオ](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)を実装する予定がある場合は、情報バリアライセンスが必要になることがあります。 情報バリアライセンスが必要かどうかを判断するには、「[ベンダーと顧客がフル Dynamics 365 Remote Assist 機能を使用する](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)」を参照してください。
 
 ## <a name="in-this-guide-you-will"></a>このガイドで行うこと:
 
