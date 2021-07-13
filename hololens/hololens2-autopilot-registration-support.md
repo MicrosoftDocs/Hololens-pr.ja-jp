@@ -1,0 +1,43 @@
+---
+title: HoloLens 2 の Windows Autopilot 登録サポート
+description: HoloLens 2 デバイスで Autopilot の登録サポートを受ける方法について説明します。
+author: joyjaz
+ms.author: v-jjaswinski
+ms.date: 5/20/2021
+ms.prod: hololens
+ms.topic: article
+ms.custom:
+- CI 116283
+- CSSTroubleshooting
+audience: ITPro
+ms.localizationpriority: high
+keywords: Autopilot
+manager: ylempidakis
+ms.openlocfilehash: cdd2ab68905d5cc82b1c5ccc50640112e857f2f4
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110398908"
+---
+# <a name="hololens-2-registration-support-for-autopilot"></a><span data-ttu-id="5a3a8-104">Autopilot の HoloLens 2 登録のサポート</span><span class="sxs-lookup"><span data-stu-id="5a3a8-104">HoloLens 2 Registration Support for Autopilot</span></span>
+
+<span data-ttu-id="5a3a8-105">お客様と Microsoft クラウド ソリューションプロバイダ－ (CSP) は、Microsoft サポートに直接要求を送信することで、HoloLens 2 デバイスを登録できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-105">Customers and Microsoft Cloud Solution Providers (CSPs) can now register HoloLens 2 devices by directly submitting requests to Microsoft Support.</span></span> <span data-ttu-id="5a3a8-106">このページでは、次のサポートされているAutopilot 登録シナリオの要件について説明します。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-106">This page outlines the requirements for the following supported Autopilot registration scenarios:</span></span>
+
+- <span data-ttu-id="5a3a8-107">**HoloLens 2 デバイスの Autopilot 登録**。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-107">**HoloLens 2 Device Autopilot Registration**.</span></span> <span data-ttu-id="5a3a8-108">HoloLens 2 デバイスを Windows Autopilot に登録する要求を送信します。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-108">Submits request to register HoloLens 2 devices into Windows Autopilot.</span></span>
+- <span data-ttu-id="5a3a8-109">**HoloLens 2 デバイスのハードウェアハッシュ要求** です。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-109">**HoloLens 2 Device Hardware Hash Request**.</span></span> <span data-ttu-id="5a3a8-110">Microsoft サポートに要求を送信し、顧客または CSP が Microsoft Intune または Microsoft パートナーセンターを使用してデバイスを自己登録するために使用できるハードウェア ハッシュを提供します。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-110">Submits request to Microsoft Support to provide you with hardware hashes that customers or CSPs can use to self-register devices via Microsoft Intune or the Microsoft Partner Center.</span></span>
+- <span data-ttu-id="5a3a8-111">**HoloLens 2 デバイスの Autopilot 登録解除**。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-111">**HoloLens 2 Device Autopilot Deregistration**.</span></span> <span data-ttu-id="5a3a8-112">Windows Autopilot からデバイスを削除する要求を送信します。これは通常、デバイスのライフサイクルのシナリオで使用されます。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-112">Submits request to delete devices from Windows Autopilot, typically used in device end of life scenarios.</span></span>
+
+<span data-ttu-id="5a3a8-113">次の表は、登録要求を Microsoft サポートに送信する *前* に収集する必要がある情報について説明します。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-113">The following table details the information you will need to collect *prior* to submitting registration requests to Microsoft Support.</span></span>
+
+| <span data-ttu-id="5a3a8-114">必須情報</span><span class="sxs-lookup"><span data-stu-id="5a3a8-114">Required Information</span></span> | <span data-ttu-id="5a3a8-115">説明</span><span class="sxs-lookup"><span data-stu-id="5a3a8-115">Description</span></span> | <span data-ttu-id="5a3a8-116">Autopilot の登録</span><span class="sxs-lookup"><span data-stu-id="5a3a8-116">Autopilot Registration</span></span>  | <span data-ttu-id="5a3a8-117">ハードウェア ハッシュ要求</span><span class="sxs-lookup"><span data-stu-id="5a3a8-117">Hardware Hash Request</span></span> | <span data-ttu-id="5a3a8-118">Autopilot の登録解除</span><span class="sxs-lookup"><span data-stu-id="5a3a8-118">Autopilot Deregistration</span></span> |
+------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
+|  <span data-ttu-id="5a3a8-119">Azure Active Directory テナント ID</span><span class="sxs-lookup"><span data-stu-id="5a3a8-119">Azure Active Directory Tenant ID</span></span>    |    <span data-ttu-id="5a3a8-120">Azure Active Directory テナント ID は、組織名またはドメインとは異なるグローバル一意識別子 (GUID) です。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-120">Your Azure Active Directory tenant ID is a globally unique identifier (GUID) that is different than your organization name or domain.</span></span>    <span data-ttu-id="5a3a8-121">テナント ID を検索するには、[Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) にサインインします。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-121">To find your Tenant ID sign into the [Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).</span></span>    |     <span data-ttu-id="5a3a8-122">✔️</span><span class="sxs-lookup"><span data-stu-id="5a3a8-122">✔️</span></span>                         |                              |                         <span data-ttu-id="5a3a8-123">✔️</span><span class="sxs-lookup"><span data-stu-id="5a3a8-123">✔️</span></span>                        |
+|  <span data-ttu-id="5a3a8-124">Azure Active Directory ドメイン名</span><span class="sxs-lookup"><span data-stu-id="5a3a8-124">Azure Active Directory Domain Name</span></span>    |   <span data-ttu-id="5a3a8-125">トップレベルドメイン名。たとえば、contoso.com など。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-125">Your top-level domain name; for example, contoso.com.</span></span>    |     <span data-ttu-id="5a3a8-126">✔️</span><span class="sxs-lookup"><span data-stu-id="5a3a8-126">✔️</span></span>                         |                              |                         <span data-ttu-id="5a3a8-127">✔️</span><span class="sxs-lookup"><span data-stu-id="5a3a8-127">✔️</span></span>                        |
+|  <span data-ttu-id="5a3a8-128">所有権の証明</span><span class="sxs-lookup"><span data-stu-id="5a3a8-128">Proof of Ownership</span></span>    |   <span data-ttu-id="5a3a8-129">元の販売明細書または請求書を PDF 形式でアップロードして、所有権の証明を確認します。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-129">Verify proof of ownership by uploading the original bill of sale or invoice in PDF format.</span></span> <span data-ttu-id="5a3a8-130">スクリーンショットは受け入れられません。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-130">Screenshots are not accepted.</span></span> <span data-ttu-id="5a3a8-131">請求書には、次のデバイスのシリアル番号が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-131">The bill of sale or invoice must include the following: Device serial numbers.</span></span> <span data-ttu-id="5a3a8-132">会社名</span><span class="sxs-lookup"><span data-stu-id="5a3a8-132">Company name.</span></span>     |     <span data-ttu-id="5a3a8-133">✔️</span><span class="sxs-lookup"><span data-stu-id="5a3a8-133">✔️</span></span>                         |              <span data-ttu-id="5a3a8-134">✔️</span><span class="sxs-lookup"><span data-stu-id="5a3a8-134">✔️</span></span>                |                         <span data-ttu-id="5a3a8-135">✔️</span><span class="sxs-lookup"><span data-stu-id="5a3a8-135">✔️</span></span>                        |
+|  <span data-ttu-id="5a3a8-136">デバイスのシリアル番号</span><span class="sxs-lookup"><span data-stu-id="5a3a8-136">Device serial numbers</span></span>    |   <span data-ttu-id="5a3a8-137">各デバイスのシリアル番号を新しい行に使用して、CSV 形式で Excel ファイルをアップロードします。</span><span class="sxs-lookup"><span data-stu-id="5a3a8-137">Upload Excel file in CSV format with each device serial number in a new line.</span></span>     |     <span data-ttu-id="5a3a8-138">✔️</span><span class="sxs-lookup"><span data-stu-id="5a3a8-138">✔️</span></span>                         |              <span data-ttu-id="5a3a8-139">✔️</span><span class="sxs-lookup"><span data-stu-id="5a3a8-139">✔️</span></span>                |                         <span data-ttu-id="5a3a8-140">✔️</span><span class="sxs-lookup"><span data-stu-id="5a3a8-140">✔️</span></span>                        |
+
+## <a name="submit-support-requests"></a><span data-ttu-id="5a3a8-141">サポート リクエストの送信</span><span class="sxs-lookup"><span data-stu-id="5a3a8-141">Submit support requests</span></span>
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="5a3a8-142">HoloLens 2 の Autopilot 登録サポート</span><span class="sxs-lookup"><span data-stu-id="5a3a8-142">Submit Autopilot Registration Support for HoloLens 2</span></span>](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f)
