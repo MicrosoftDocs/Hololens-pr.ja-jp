@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: aefb414deb68376ea45e792f21a929fac7cf3969
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 41978c626328903cf480a3315d56841f187bc123
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398885"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640187"
 ---
 # <a name="introducing-the-new-microsoft-edge"></a>新しい Microsoft Edge について
 
@@ -22,7 +22,7 @@ ms.locfileid: "110398885"
 
 新しいMicrosoft Edge[ は、Chromiumオープンソース プロジェクト](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/)を採用して、顧客との互換性を向上し、Web 開発者向けの Web の断片化を減らします。
 
-[Holographic Windowsバージョン 21H1](hololens-release-notes.md#windows-holographic-version-21h1)では、新しい Microsoft Edge を HoloLens 2 顧客が初めて利用できます! 新しい Microsoft Edge の **フィードバック送信** 機能または[フィードバック Hub](hololens-feedback.md) を通じて当社のチームにフィードバックやバグをお知らせください。
+[Holographic Windowsバージョン 21H1](hololens-release-notes.md#windows-holographic-version-21h1)では、新しい Microsoft Edge を HoloLens 2 顧客が初めて利用できます! 新しい Microsoft Edge の **フィードバック送信** 機能または [フィードバック Hub](hololens-feedback.md) を通じて当社のチームにフィードバックやバグをお知らせください。
 
 > [!IMPORTANT]
 > この新しい Microsoft Edge は、新しいリリースでは[サポートされなくなった](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/)レガシの Microsoft Edge を自動的に置き換える機能です。
@@ -42,13 +42,13 @@ ms.locfileid: "110398885"
 
 新しい Microsoft Edge のポリシー設定の管理の詳細については、次のリソースを参照してください。
 
-- [Microsoft Intune で Microsoft Edge ポリシー設定を構成](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
-- [Microsoft Edge ポリシーと Microsoft Edge ポリシーのマッピング](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
-- [Google Chrome と Microsoft Edge ポリシーのマッピング](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
-- 完全な [Microsoft Edge Enterprise ドキュメント](https://docs.microsoft.com/deployedge/)
+- [Microsoft Intune で Microsoft Edge ポリシー設定を構成](/deployedge/configure-edge-with-intune)
+- [Microsoft Edge ポリシーと Microsoft Edge ポリシーのマッピング](/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
+- [Google Chrome と Microsoft Edge ポリシーのマッピング](/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- 完全な [Microsoft Edge Enterprise ドキュメント](/deployedge/)
 
 > [!IMPORTANT]
-> 新しい Microsoft Edge でサポートされているブラウザー ポリシーの量が多いので、チームは新しい各ポリシーが HoloLens 2 で動作することを保証できません。 ただし、以前に HoloLens 2 でサポートされている各レガシの Microsoft Edge ポリシーと同等の新しい Microsoft Edge をテストし期待どおりに機能することを確認しました。 HoloLens 2 で使用していた各レガシ Microsoft Edge ブラウザー ポリシーと同等の新しい Microsoft Edge を確認するには、「[Microsoft Edge レガシと Microsoft Edge ポリシーのマッピング](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)」を参照してください。
+> 新しい Microsoft Edge でサポートされているブラウザー ポリシーの量が多いので、チームは新しい各ポリシーが HoloLens 2 で動作することを保証できません。 ただし、以前に HoloLens 2 でサポートされている各レガシの Microsoft Edge ポリシーと同等の新しい Microsoft Edge をテストし期待どおりに機能することを確認しました。 HoloLens 2 で使用していた各レガシ Microsoft Edge ブラウザー ポリシーと同等の新しい Microsoft Edge を確認するには、「[Microsoft Edge レガシと Microsoft Edge ポリシーのマッピング](/deployedge/microsoft-edge-policy-map-legacy-to-newedge)」を参照してください。
 >
 > 次の 2 つ以上の当社が把握している新しい Microsoft Edge ポリシーは、HoloLens 2 では機能 *しません*。
 > - EnterpriseModeSiteList
@@ -99,12 +99,12 @@ Microsoft Edge Insider チャネルを HoloLens 2 にインストールするに
   1. **[インストール]** ボタンを選択します。
   1. インストールが成功すると、スタートメニューの **[すべてのアプリ]** の一覧に、Microsoft Edge Beta、Dev、または Canary が別のエントリとして表示されます。
 
-**コンピューターを使用してWindows デバイス ポータル(HoloLens 2 で[開発者モード](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)を有効にする必要あり) をインストールします**
+**コンピューターを使用してWindows デバイス ポータル(HoloLens 2 で [開発者モード](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)を有効にする必要あり) をインストールします**
   1. お使いのコンピュータで、[Edge Insider ダウンロード ページ](https://www.microsoftedgeinsider.com/download)にアクセスします。
   1. インストールする Edge Insiderチャネルの [Windows 10 用にダウンロード] ボタンの横にある **ドロップダウン矢印ボタン** を選択します。
   1. ドロップダウンの **[HoloLens 2]** を選択します。
   1. .msix ファイルを PC の "ダウンロード" フォルダー (または簡単に見つけられている別のフォルダー) に保存します。
-  1. PC 上の[Windows デバイス ポータル](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)を使用して、HoloLens 2 上のダウンロードした .msix ファイルをインストールします。
+  1. PC 上の[Windows デバイス ポータル](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)を使用して、HoloLens 2 上のダウンロードした .msix ファイルをインストールします。
   1. インストールが成功すると、スタートメニューの **[すべてのアプリ]** の一覧に、Microsoft Edge Beta、Dev、または Canary が別のエントリとして表示されます。
 
 ## <a name="using-wdac-to-block-new-microsoft-edge"></a>WDAC を使用して新しい Microsoft Edge をブロック
@@ -115,7 +115,7 @@ Microsoft Edge Insider チャネルを HoloLens 2 にインストールするに
 
 ## <a name="managing-endpoints-for-the-new-microsoft-edge"></a>新しい Microsoft Edge のエンドポイントを管理する
 
-一部の環境には、考慮すべきネットワーク制限がある場合があります。 新しい Edge でスムーズなエクスペリエンスを実現するには、[これらの Microsoft エンドポイントを有効にして](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)ください。
+一部の環境には、考慮すべきネットワーク制限がある場合があります。 新しい Edge でスムーズなエクスペリエンスを実現するには、[これらの Microsoft エンドポイントを有効にして](/deployedge/microsoft-edge-security-endpoints)ください。
 
 現在使用可能な[ HoloLens 用エンドポイントの詳細について](hololens-offline.md)参照してください。
 

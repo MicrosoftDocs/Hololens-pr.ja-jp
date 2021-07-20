@@ -2,7 +2,7 @@
 title: HoloLens 2 デバイス単体
 description: HoloLens 2 デバイス単体と、独自のものを取得した後の操作について学習します。
 keywords: HoloLens 2 の購入オプション, HoloLens オプション, Developer Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c4dd6e751c5f178b31bf86c0c8a98c52a1e781a3
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: bbb99b37ab20d6ac8c593045265de29c0481a0d5
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398867"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639609"
 ---
 # <a name="hololens-2-device-only-edition"></a>HoloLens 2 デバイ単体のエディション
 
@@ -32,11 +32,11 @@ HoloLens 2 は、Microsoft のクラウドおよび AI サービスの信頼性�
 
 ## <a name="heres-what-to-do-next-with-the-hololens-2"></a>HoloLens 2 で次に行うこと
 
-1. [HoloLens 2 ご使用上の注意](https://docs.microsoft.com/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care)に関するビデオを視聴します。
-1. [デバイスを使用する準備をして](https://docs.microsoft.com/hololens/hololens2-setup)から[セットアップする](https://docs.microsoft.com/hololens/hololens2-start)
-1. [HoloLens 2 の対処方法について。](https://docs.microsoft.com/hololens/holographic-home)
-1. 快適であれば、[Mixed Reality の写真やビデオを撮影します](https://docs.microsoft.com/hololens/holographic-photos-and-videos)。
-1. Microsoft アプリ ストアで[使用可能なすべての HoloLens 2 用アプリを確認します](https://docs.microsoft.com/hololens/holographic-store-apps)。
+1. [HoloLens 2 ご使用上の注意](/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care)に関するビデオを視聴します。
+1. [デバイスを使用する準備をして](/hololens/hololens2-setup)から[セットアップする](/hololens/hololens2-start)
+1. [HoloLens 2 の対処方法について。](/hololens/holographic-home)
+1. 快適であれば、[Mixed Reality の写真やビデオを撮影します](/hololens/holographic-photos-and-videos)。
+1. Microsoft アプリ ストアで[使用可能なすべての HoloLens 2 用アプリを確認します](/hololens/holographic-store-apps)。
 
 ## <a name="next-steps"></a>次のステップ
 

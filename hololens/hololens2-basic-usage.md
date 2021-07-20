@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8acf5659739d58d24add3f299daeacab7132a086
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: d2804742fdcf9d6562fce0c693552d4a9241398f
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924589"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635213"
 ---
 # <a name="getting-around-hololens-2"></a>HoloLens 2 の基本操作
 
@@ -111,7 +111,7 @@ HoloLens には、ユーザーの左右を数フィートずつ見ることの�
 > 片手のスタート ジェスチャを正しく使用するには:
 >
 > 1. November 2019 Update (ビルド 18363.1039) 以降に更新する必要があります。
-> 1. 視線追跡が正常に動作するように、デバイスでユーザーの目に合わせた調整を行う必要があります。 [スタート] アイコンを見ても周囲にドットが表示されない場合は、デバイスでユーザーの目が[調整](https://docs.microsoft.com/hololens/hololens-calibration#calibrating-your-hololens-2)されていません。
+> 1. 視線追跡が正常に動作するように、デバイスでユーザーの目に合わせた調整を行う必要があります。 [スタート] アイコンを見ても周囲にドットが表示されない場合は、デバイスでユーザーの目が[調整](/hololens/hololens-calibration#calibrating-your-hololens-2)されていません。
 
 スタート ジェスチャは、片手のみで実行することもできます。 これを行うには、手のひらを手前に向けて手を差し出し、手首の内側にある **[開始] アイコン** を見ます。 **アイコンを見ながら**、親指と人差し指をピンチします。
 

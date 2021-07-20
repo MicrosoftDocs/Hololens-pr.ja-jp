@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 96bacd79d559bc0adcd42665c4a8b4af856b58b0
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 548f484043f2b1cb62ce0e0cfb6450a956d412b3
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923620"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636930"
 ---
 # <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 ディスプレイのトラブルシューティング
 
@@ -122,8 +122,8 @@ HoloLens 1を体験したお客様から Microsoft に寄せられた要望の�
 
 開発者は、次の黒のモードの設計ガイダンスに従うことをお勧めします。
 
-* [HoloLens ディスプレイの開発者設計ガイドライン](https://docs.microsoft.com/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
-* [推奨されるフォント サイズ](https://docs.microsoft.com/windows/mixed-reality/typography#recommended-font-size)
+* [HoloLens ディスプレイの開発者設計ガイドライン](/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
+* [推奨されるフォント サイズ](/windows/mixed-reality/typography#recommended-font-size)
 
 ホログラムに白い背景が必要な場合は、ホログラムのサイズをディスプレイの全視野よりも小さくします。 このサイズにより、ユーザーはホログラムをディスプレイの中央に配置できます。
 

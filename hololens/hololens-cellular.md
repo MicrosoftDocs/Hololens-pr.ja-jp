@@ -12,12 +12,12 @@ ms.date: 02/24/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8318d011d6a593c1036b6bcf6f7973870b0dc294
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 6f7da0263e8637486f0151fd2b9da55da8feccc1
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397493"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635842"
 ---
 # <a name="connect-to-cellular-and-5g"></a>携帯電話と 5G に接続する
 
@@ -44,7 +44,7 @@ USB-C テザリングを使用すると、それを必要とする高度なワ�
 
 イーサネット アダプターとして表示される限定数のデバイスは、Windows Holographic バージョン 2004 以降で使用できます。
 
-イーサネット アダプターとして表示されないデバイスは、汎用 Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) ドライバーをサポートしている必要があります。 ただし、HoloLens 2 と互換性があるのは、限られた数のデバイスのみです。 汎用 Microsoft RNDIS ドライバーをサポートしているかどうかの詳細については、デバイスの製造元にお問い合わせください。
+イーサネット アダプターとして表示されないデバイスは、汎用 Microsoft [RNDIS](/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) ドライバーをサポートしている必要があります。 ただし、HoloLens 2 と互換性があるのは、限られた数のデバイスのみです。 汎用 Microsoft RNDIS ドライバーをサポートしているかどうかの詳細については、デバイスの製造元にお問い合わせください。
 
 RNDIS と互換性がないデバイス、またはドライバーやアプリケーションをインストールする必要があるデバイスはサポートされていません。
 

@@ -2,7 +2,7 @@
 title: HoloLens 2 Industrial Edition
 description: Industrial Edition HoloLens 2 と、独自のものを取得した後の操作について学習します。
 keywords: HoloLens 2 の購入オプション, HoloLens オプション, Industrial Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df18c64487645ebe5381d853de7e32780c4fccad
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 686510fdda8bb09182d7e32188bb9eef9022828c
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398866"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639575"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 Industrial Edition
 
@@ -40,7 +40,7 @@ HoloLens 2 Industrial Edition には、アップグレードされたデバイ�
 
 ## <a name="cleaning-and-handling-hololens-2"></a>HoloLens 2 のクリーニングと取り扱い
 
-HoloLens 2 Industrial Edition は、"70%" のイソプロピル アルコールと水の溶液で、バイザー、ブロー パッド、ヘッド ストラップなどのデバイスの硬質表面を洗浄できます。 詳細については、[HoloLens 2 クリーニングに関する FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance) を参照してください。
+HoloLens 2 Industrial Edition は、"70%" のイソプロピル アルコールと水の溶液で、バイザー、ブロー パッド、ヘッド ストラップなどのデバイスの硬質表面を洗浄できます。 詳細については、[HoloLens 2 クリーニングに関する FAQ](/hololens/hololens2-maintenance) を参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 

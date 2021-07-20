@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 8564fb0483226a16722ada345de325577cda77d6
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: c2a2fe1a20a4e9baa194b1037ccb6649d324b990
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923603"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640221"
 ---
 # <a name="connect-hololens-to-a-network"></a>HoloLens をネットワークに接続する
 
@@ -54,9 +54,9 @@ Wi-Fi ネットワークに接続されていることを確認するには、 *
 
 ## <a name="connect-hololens-to-enterprise-wi-fi-network"></a>HoloLens をエンタープライズ Wi-Fi ネットワークに接続する
 
-エンタープライズ Wi-Fi プロファイルは、拡張認証プロトコル (EAP) を使って Wi-Fi 接続を認証します。 HoloLens エンタープライズ Wi-Fi プロファイルは、[Windows 構成デザイナー](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) によって作成された MDM またはプロビジョニング パッケージを介して構成できます。
+エンタープライズ Wi-Fi プロファイルは、拡張認証プロトコル (EAP) を使って Wi-Fi 接続を認証します。 HoloLens エンタープライズ Wi-Fi プロファイルは、[Windows 構成デザイナー](/windows/configuration/provisioning-packages/provisioning-packages) によって作成された MDM またはプロビジョニング パッケージを介して構成できます。
 
-Microsoft Intune 管理対象デバイスの場合、構成手順については [Intune](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) を参照してください。
+Microsoft Intune 管理対象デバイスの場合、構成手順については [Intune](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) を参照してください。
 
 WCD で Wi-Fi プロビジョニング パッケージを作成するには、事前に構成された Wi-Fi プロファイルの .xml ファイルが必要です。 以下は、EAP-TLS 認証を使用した WPA2-Enterprise の Wi-Fi プロファイルの例です。
 
@@ -124,8 +124,8 @@ WCD で Wi-Fi プロビジョニング パッケージを作成するには、�
 
 その他のリソース:
 
-- WLANv1 プロファイル スキーマ: [[MS-GPWL]: ワイヤレス LAN プロファイル v1 スキーマ | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
-- EAP-TLS スキーマ: [[MS-GPWL]: Microsoft EAP TLS スキーマ | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
+- WLANv1 プロファイル スキーマ: [[MS-GPWL]: ワイヤレス LAN プロファイル v1 スキーマ | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
+- EAP-TLS スキーマ: [[MS-GPWL]: Microsoft EAP TLS スキーマ | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
 Wi-fi への接続に問題がある場合は、 [トラブルシューティング](hololens2-enterprise-troubleshooting.md#) のページを確認してください。
 
@@ -161,8 +161,8 @@ Wi-fi への接続に問題がある場合は、 [トラブルシューティン
           1. [適用] をクリックします。
         
  2. **MDM** 
-     1. Intune - Intune でプロキシを構成するには、次の[手順](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)に従います。 セクションの一番下までスクロールする必要があります。
-     1. その他のサードパーティ製 MDM ソリューション- [WiFi CSP](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp)を使用します。
+     1. Intune - Intune でプロキシを構成するには、次の[手順](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)に従います。 セクションの一番下までスクロールする必要があります。
+     1. その他のサードパーティ製 MDM ソリューション- [WiFi CSP](/windows/client-management/mdm/wifi-csp)を使用します。
 
 3. **PPKG** 
     1. Windows 構成デザイナーを開く
@@ -175,12 +175,12 @@ Wi-fi への接続に問題がある場合は、 [トラブルシューティン
     1. [保存して閉じる] をクリックします。
     1. HoloLens へプロビジョニング パッケージを[適用](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup)氏ます。
 
-[CSP](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) は、Microsoft Intune や Microsoft 以外の MDM サービス プロバイダーで、Windows 10 の多くの管理タスクとポリシーを陰で支えています。 [Windows 構成デザイナー](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd)を使用して、[プロビジョニングパッケージ](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages)を作成し、HoloLens 2 に適用することもできます。
+[CSP](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) は、Microsoft Intune や Microsoft 以外の MDM サービス プロバイダーで、Windows 10 の多くの管理タスクとポリシーを陰で支えています。 [Windows 構成デザイナー](/windows/configuration/provisioning-packages/provisioning-install-icd)を使用して、[プロビジョニングパッケージ](/windows/configuration/provisioning-packages/provisioning-packages)を作成し、HoloLens 2 に適用することもできます。
 HoloLens 2 に適用される可能性が最も高い CSP は次のとおりです。
 
-- [WiFi CSP](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp): プロファイルごとの Wi-Fi プロキシ 
+- [WiFi CSP](/windows/client-management/mdm/wifi-csp): プロファイルごとの Wi-Fi プロキシ 
 
-[HoloLens デバイスでサポートされているそのほかの CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
+[HoloLens デバイスでサポートされているそのほかの CSP](/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 
 
 
@@ -196,9 +196,9 @@ VPN 接続を使用すると、より安全な接続と会社のネットワー�
 
 組み込みのVPN クライアントの認証に証明書を使用している場合は、必要なクライアント証明書をユーザー証明書ストアに追加する必要があります。 サードパーティの VPN プラグインが HoloLens 2 をサポートしているかどうかを確認するには、[VPN アプリ] がある [ストア] に移動し、 ARM または ARM64 アーキテクチャ をサポートしているアプリの [システム要件ページ] に [HoloLens] が表示されているかどうかを確認します。 HoloLens は、サード パーティ VPN 用のユニバーサル Windows プラットフォーム アプリケーションのみをサポートしています。
 
- VPN は[設定/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)を使用して MDM で管理し、 [Vpnv2-CSP ポリシー](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp)を使用して設定できます。
+ VPN は[設定/AllowVPN](/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)を使用して MDM で管理し、 [Vpnv2-CSP ポリシー](/windows/client-management/mdm/vpnv2-csp)を使用して設定できます。
 
-[VPN を構成する方法](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn)の詳細については、こちらの[ガイド](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide)を参照してください。  
+[VPN を構成する方法](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn)の詳細については、こちらの[ガイド](/windows/security/identity-protection/vpn/vpn-guide)を参照してください。  
 
 ### <a name="vpn-via-ui"></a>UI 経由の VPN
 
@@ -235,11 +235,11 @@ VPN は既定で有効になっていませんが、 **[設定]** アプリを�
 ### <a name="setting-up-vpn-via-intune"></a>Intune を使用した VPN のセットアップ
 Intune のドキュメントに従って、作業を開始します。 これらの手順を実行するときは、HoloLens デバイスがサポートする組み込みの VPN プロトコルに注意してください。 
 
-[Intune で VPN サーバーに接続するための VPN プロファイルを作成します](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure)。
+[Intune で VPN サーバーに接続するための VPN プロファイルを作成します](/mem/intune/configuration/vpn-settings-configure)。
 
-[Intune を使用して VPN 接続を追加するための Windows 10 デバイスと Windows Holographic デバイスの設定](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-windows-10)。
+[Intune を使用して VPN 接続を追加するための Windows 10 デバイスと Windows Holographic デバイスの設定](/mem/intune/configuration/vpn-settings-windows-10)。
 
-完了したら、忘れずに[プロファイル を割り当ててください](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)。
+完了したら、忘れずに[プロファイル を割り当ててください](/mem/intune/configuration/device-profile-assign)。
 
 ### <a name="vpn-via-3rd-party-mdm-solutions"></a>サード パーティ MDM ソリューションを使用した VPN
 サード パーティ VPN 接続の例:

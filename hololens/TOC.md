@@ -2,6 +2,7 @@
 
 # デバイスの概要
 ## [HoloLens 2 について](hololens2-hardware.md)
+## [HoloLens 2 でできること](hololens-commercial-features.md)
 ## HoloLens 2 のエディションの探索
 ### [HoloLens 2 オプションの比較](hololens2-options.md)
 ### [Device-only エディション](hololens2-options-device-only.md)
@@ -9,7 +10,7 @@
 ### [Industrial エディション](hololens2-options-industrial-edition.md)
 #### [HoloLens 2 Industrial Edition に関する FAQ](hololens2-industrial-edition-faq.md)
 ### [Development エディション](hololens2-options-dev-edition.md)
-#### [HoloLens 2 Development Edition に関する FAQ](hololens2-development-edition-faq.md)
+#### [HoloLens 2 Development Edition に関する FAQ](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 エディション](hololens2-options-trimble-xr10-edition.md)
 ### [Commercial 機能](hololens-commercial-features.md)
 
@@ -114,7 +115,7 @@
 ## [HoloLens 2 のリリース ノート](hololens-release-notes.md)
 ## [Microsoft HoloLens の Insider Preview](hololens-insider.md)
 ## [サポートされている言語](hololens2-language-support.md)
-## [Microsoft Mesh を使用した開発 (プレビュー)](https://docs.microsoft.com/mesh/overview)
+## [Microsoft Mesh を使用した開発 (プレビュー)](/mesh/overview)
 ## HoloLens (第 1 世代)
 ### 初めての使用
 #### [HoloLens について (第 1 世代)](hololens1-hardware.md)
@@ -130,7 +131,7 @@
 #### [Windows Holographic for Business 機能のロック解除](hololens1-upgrade-enterprise.md)
 #### [HoloLens のリセット (第 1 世代)](hololens1-recovery.md)
 ### HoloLens (第 1 世代) のセキュリティ
-#### [HoloLens (第 1 世代) のセキュリティに関するよく寄せられる質問](hololens1-faq-security.md)
+#### [HoloLens (第 1 世代) のセキュリティに関するよく寄せられる質問](hololens1-faq-security.yml)
 #### [HoloLens (第 1 世代) の BitLocker 暗号化](hololens1-encryption.md)
 ### [HoloLens の既知の問題と回避策 (第 1 世代)](hololens-known-issues.md)
 ### [HoloLens (第 1 世代) のリリース ノート](hololens1-release-notes.md)
