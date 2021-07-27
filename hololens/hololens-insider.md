@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 12c5586f931487d871d4b6e98992ca0047b2adbf
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: b7e5a7cbaa746f58fe0344dd8bf5b027e2e8cea7
+ms.sourcegitcommit: dc5d6f3802c997749775be04de522af8cb6d0850
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659201"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114693716"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens の Insider Preview
 
@@ -31,7 +31,7 @@ ms.locfileid: "114659201"
 
 新しい機能のフライトを開始して、Insiders Windows開始します。 新しいビルドは、最新の更新プログラムのために Dev および Beta チャネルにフライトします。 このページは引き続き更新されます。Insider ビルドの機能と更新プログラムWindows追加します。 これらの更新プログラムを実際に組み合わせ、準備を整えます。
 
-| 機能                 | Description                | ユーザーまたはシナリオ | 導入されたビルド |
+| 特徴量                 | 説明                | ユーザーまたはシナリオ | 導入されたビルド |
 |-------------------------|----------------------------|--------------|------------------|
 | [レポートと詳細に関する CSP HoloLens変更](#csp-changes-for-reporting-hololens-details) | データに対してクエリを実行するの新しい CSP | IT 管理者    | 20348.1403                 |
 | [CSP によって制御される自動ログイン ポリシー](#auto-login-policy-controlled-by-csp) | アカウントを自動的にログインするために使用されます | IT 管理者 | 20348.1405 |
@@ -39,6 +39,7 @@ ms.locfileid: "114659201"
 | [詳細な診断レポートは、設定で表示HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | デバイスで MDM 診断ログを表示する | トラブルシューティング | 20348.1405 |
 | [オフライン診断通知](#offline-diagnostics-notifications) | ログ収集に関する視聴覚フィードバック | トラブルシューティング | 20348.1405 |
 | [プライベート ストア アプリのみをプライベート ストア アプリにMicrosoft Store](#use-only-private-store-apps-for-microsoft-store) | 組織のアプリのみを表示するストア アプリを構成する | IT 管理者 | 20348.1408 |
+| [修正と機能強化](hololens-insider.md#fixes-and-improvements) | 更新プログラムの修正とHoloLens。 | All | 20348.1408 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>レポートと詳細に関する CSP HoloLens変更
 
@@ -125,13 +126,13 @@ Insider ビルドWindowsに追加されました。オフライン診断には�
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>プライベート ストア アプリのみを使用してMicrosoft Store
 
-RequirePrivateStoreOnly ポリシーが有効になっているHoloLens。 このポリシーにより、組織Microsoft Storeプライベート ストアのみを表示するようにアプリを構成できます。 使用可能にしたアプリにのみアクセスを制限する。
+RequirePrivateStoreOnly ポリシーが有効になっているHoloLens。 このポリシーにより、組織Microsoft Storeプライベート ストアのみを表示するようにアプリを構成できます。 使用できるようにしたアプリのみにアクセスを制限する。
 
-[ApplicationManagement/RequirePrivateStoreOnly の詳細を確認する](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+[Applicationmanagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)の詳細情報
 
-### <a name="fixes-and-improvements"></a>修正と機能強化:
+### <a name="fixes-and-improvements"></a>修正と改善:
 
-- ロックされた [ファイルをダウンロードするプロンプトデバイス ポータルが表示される場合の既知の問題を修正しました。](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- [ロックされたファイルをダウンロードするプロンプトがないデバイスポータルの既知の問題を修正しました。](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - [ファイルのアップロードとダウンロードのタイムアウトを含むデバイスポータルの既知の問題](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)を修正した。
 - HoloLens デバイスからのコンプライアンスプロパティのレポートに関する問題に対処します。Insider ビルドで適切なレポートをトリガーするには、再起動が必要になることがあります。  
 - 新しい点滅にインストールされているリモートアシスタンスのインボックスバージョンが更新されました。
