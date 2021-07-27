@@ -7,12 +7,12 @@ description: Mixed Reality大企業のお客様向けサポート オプショ�
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: ee75944575cacb75b213fcd9d732e5bd91265061
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 0ddc4eb15036a4f5aa2ecf86893d5f671584f9bf
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636216"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659099"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>サポートオプションとMixed Realityオプションは何ですか?
 
@@ -79,6 +79,7 @@ Stack Overflow に新しい質問を送信する場合は、次のいずれか�
 
 - [購入HoloLens 2](https://www.microsoft.com/hololens/buy)オプションの詳細については、このオプションHoloLens 2使用してください
 - 電話によるサポートが必要な場合は、コマーシャル ストア サポートの同僚と話すビジネス デスク番号の下の一覧を参照してください
+- Microsoft Store の外部での購入については、承認されたHoloLens 2リセラー[](hololens2-purchase.md)と、HoloLens 2利用可能な国の一覧を参照してください。
 
 ### <a name="commercial-store-support-numbers"></a>コマーシャル ストアのサポート番号
 >[!Note]
@@ -105,21 +106,21 @@ Stack Overflow に新しい質問を送信する場合は、次のいずれか�
 | フィンランド | +358 800526136 |    月から金、午前 9 時から午後 6 時 |
 | ポルトガル |    +351 800600087 |    月から金、午前 9 時から午後 6 時 |
 | US |  866-425-4709 |  月から金、午前 6 時から午後 6 時、PST |
-| カナダ |  877-345-2661 |  月曜日 ~ 金曜日、午前から午後6時 (太平洋標準時) |
-| 中国 |   400-805-6783 |  月曜日から金曜日、午前9時から午後6時まで |
-| 日本 |   0120-03-5241 |  月曜日から金曜日、午前9時から 5: 5:30 |
-| オーストラリア |   1800-217-709 |  月曜日から金曜日、午前8時午後8時 |
-| シンガポール |   1800 622-1816 | 月曜日から金曜日、8: 30AM から 5: 5:30 |
-| ニュージーランド | 0800 471 640 |  月曜日から金曜日、午前8時から午後6時まで |
+| カナダ |  877-345-2661 |  月から金、午前 6 時から午後 6 時、PST |
+| 中国 |   400-805-6783 |  月から金、午前 9 時から午後 6 時 |
+| 日本 |   0120-03-5241 |  月から金、午前 9 時から午後 5 時 30 分 |
+| オーストラリア |   1800-217-709 |  月から金、午前 8 時から午後 8 時 |
+| シンガポール |   1800 622-1816 | 月から金、午前 8 時 30 分から午後 5 時 30 分 |
+| ニュージーランド | 0800 471 640 |  月から金、午前 8 時から午後 6 時 |
 
 >[!IMPORTANT]
->完全な VAT 請求書が必要な場合は、商用サポートストアチームに直接連絡して、オンラインでデバイスを購入しないようにする必要があります。 オンラインで行われたすべての購入は、簡略化された VAT 請求書を受信するだけで、後で編集することはできません。
+>完全な VAT 請求書が必要な場合は、コマーシャル サポート ストア チームに直接連絡し、オンラインでデバイスを購入する必要があります。 オンラインで行われたすべての購入では、後で編集できない簡略化された VAT 請求書のみを受け取る。
 
-## <a name="azure-mixed-reality-services-support"></a>Azure mixed reality サービスのサポート
+## <a name="azure-mixed-reality-services-support"></a>Azure Mixed Reality サービスのサポート
 
-### <a name="open-an-azure-portal-technical-support-ticket"></a>Azure portal テクニカルサポートチケットを開く
+### <a name="open-an-azure-portal-technical-support-ticket"></a>テクニカル サポート Azure portalを開く
 
-Azure 空間アンカーの Azure portal でテクニカルサポートチケットを開くには、Azure オブジェクトアンカーまたは Azure リモートレンダリングを使用します。
+Azure Azure portal 用のデバイスでテクニカル サポート チケットを開Spatial Anchors、Azure Object AnchorsまたはAzure Remote Rendering。
 
 1. [Azure portal](https://azure.microsoft.com/account/) を開いたら、上部メニュー バーのヘルプ アイコンを選択し、**[ヘルプとサポート]** ボタンを選択します。
 
@@ -132,36 +133,36 @@ Azure 空間アンカーの Azure portal でテクニカルサポートチケッ
 3. 次のようにサポート チケットのフィールドを入力します。
 
     + [問題の種類]: [技術]
-    + サービス: Azure 空間アンカー、Azure リモートレンダリング、または Azure オブジェクトアンカー
+    + サービス: Azure Spatial Anchors、Azure Remote Rendering、Azure Object Anchors
 
     ![Azure portal サポート チケットのフィールド](../hololens/images/azure-help-support3.png)
 
-    1. ページの下部にある [ **次へ** ] をクリックして詳細を追加し、問題の詳細をお知らせください。
+    1. ページ **の下部にある [次へ** : ソリューション] をクリックして、問題の詳細を表示する詳細情報を追加します。
 
-    2. フォームには、可能な限り正確で詳細な情報を入力します。
+    2. フォームに可能な限り正確かつ詳細な入力を行い、希望する方法を入力してください。
 
-    3. 前のセクションで入力したすべての情報を確認し、サポート要求を送信します。
+    3. 前のセクションで入力した情報を確認し、サポート リクエストを送信します。
 
-### <a name="provide-documentation-content-feedback"></a>ドキュメントコンテンツに関するフィードバックを提供する
+### <a name="provide-documentation-content-feedback"></a>ドキュメントコンテンツのフィードバックを提供する
 
-各コンテンツ記事の下部には、GitHub の問題を開き、あらゆる mixed reality ドキュメントリポジトリのコンテンツに関するフィードバックを提供する機会があります。 
+各コンテンツ記事の下部には、GitHub の問題を開き、Mixed Reality ドキュメント リポジトリ内のコンテンツに関するフィードバックを提供する機会があります。 
 
 ### <a name="provide-product-feedback"></a>製品フィードバックの提供
 
 >[!Note]
->フィードバックの提供は、音声を聞くための優れた方法ですが、フィードバックは応答を受信する方法ではありません。 フィードバックハブは、他のサポートオプションと組み合わせることができます。
+>フィードバックの提供は、音声を聞く優れた方法ですが、フィードバックは応答を受信する方法ではありません。 フィードバック Hub他のサポート オプションと組み合わせて使用できます。
 
-フィードバックを提供したり、Microsoft mixed reality サービスのアイデアや提案を共有したり、他のユーザーが送信したアイデアに投票したりするには、次のサイトを参照してください。 
+フィードバックを提供したり、Microsoft Mixed Reality サービスのアイデアや提案を共有したり、他のユーザーが送信したアイデアに投票したりするには、次のページを参照してください。 
 
 - [HoloLens 2製品のフィードバック](/hololens/hololens-feedback)
-- [Microsoft メッシュアプリの製品フィードバック](/hololens/hololens-feedback)
-- [Azure リモートレンダリングに関するフィードバック](https://feedback.azure.com/forums/928696-azure-remote-rendering)
-- [Azure 空間アンカーのフィードバック](https://feedback.azure.com/forums/919252-azure-spatial-anchors)
+- [Microsoft Mesh アプリの製品フィードバック](/hololens/hololens-feedback)
+- [Azure Remote Renderingフィードバック](https://feedback.azure.com/forums/928696-azure-remote-rendering)
+- [Azure Spatial Anchors フィードバック](https://feedback.azure.com/forums/919252-azure-spatial-anchors)
 
-### <a name="faqs--troubleshooting"></a>Faq & トラブルシューティング
+### <a name="faqs--troubleshooting"></a>FAQ &トラブルシューティング
 
-- HoloLens 2 ては、 [HoloLens のトラブルシューティングに関する](../hololens/hololens-troubleshooting.md)ページを参照してください。
-- Windows Mixed Reality、 [FAQ](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)ページを参照してください。
-- Azure リモートレンダリング、 [FAQ](/azure/remote-rendering/resources/troubleshoot) ページを参照してください。
-- Azure 空間アンカー、 [FAQ](/azure/spatial-anchors/spatial-anchor-faq) ページを参照してください。
-- Azure オブジェクトアンカーの詳細については、 [FAQ](/azure/object-anchors/faq) ページを参照してください。
+- HoloLens 2、トラブルシューティングに[関するHoloLensを参照](../hololens/hololens-troubleshooting.md)してください
+- Windows Mixed Reality FAQ ページを[参照](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)してください。
+- Azure Remote Rendering FAQ ページを [参照](/azure/remote-rendering/resources/troubleshoot) してください。
+- Azure Spatial Anchorsについては、FAQ ページ [を参照](/azure/spatial-anchors/spatial-anchor-faq) してください
+- Azure Object Anchors、FAQ ページ [を参照](/azure/object-anchors/faq) してください

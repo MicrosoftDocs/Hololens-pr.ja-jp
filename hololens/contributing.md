@@ -1,84 +1,89 @@
 ---
-title: 手順の貢献
-description: 新しいフレーバーの Markdown を使用して、HoloLensプラットフォームの docs.microsoft.com ドキュメントにGitHubする方法について説明します。
+title: 関与する指示
+description: GitHub-flavored Markdown を使用して docs.microsoft.com プラットフォーム上の HoloLens docs に投稿する方法について説明します。
 author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 73b6e8bcd634cb4d45171bda0a85f2e991a977c9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635672"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659116"
 ---
-# <a name="contributing-to-the-hololens-documentation"></a>ドキュメントへのHoloLensする
+# <a name="contributing-to-the-hololens-documentation"></a>HoloLens のドキュメントに貢献する
 
-ドキュメントへようこそHoloLens[してください](https://github.com/MicrosoftDocs/Hololens)。 このレポポで作成または編集した記事は **、一般に公開されます。** 
+[HoloLens のドキュメント](https://github.com/MicrosoftDocs/Hololens)へようこそ。 このリポジトリで作成または編集した記事 **は、パブリックに表示されます。** 
 
-HoloLensドキュメントは、Markdig 機能と docs.microsoft.com された Markdown を使用GitHubプラットフォームに表示されます。 このレポジトで編集するコンテンツは、/hololens に表示されるスタイル化されたページに書式設定されます。
+HoloLens docs は、docs.microsoft.com プラットフォームに表示されます。このプラットフォームでは、flavored Markdown を markdig 機能と共に GitHub 使用します。 このリポジトリで編集するコンテンツは、/hololens. に表示される定型ページに書式設定されます。
 
-このページでは、Markdown の基本への貢献とリンクに関する基本的な手順とガイドラインについて説明します。 ご投稿いただきありがとうございます。
+このページでは、Markdown の基本に寄与するための基本的な手順とガイドラインについて説明します。 投稿をお寄せいただき、ありがとうございます。
 
-## <a name="available-repos"></a>使用可能なリポジトリ
+## <a name="available-repos"></a>利用可能なリポジトリ
 
 | リポジトリ名です | [URL] |
 | --- | --- |
-| HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
-| Mixed Reality | [MicrosoftDocs/Mixed-Reality](/windows/mixed-reality) |
-| VR ファンズ ガイド | [MicrosoftDocs/Mixed-Reality/ファンズガイド](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
+| HoloLens | [Microsoft Docs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
+| Mixed Reality | [Microsoft Docs/mixed-現実](/windows/mixed-reality) |
+| VR 愛好家ガイド | [Microsoft Docs/mixed-現実ガイド](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 
 ## <a name="before-you-start"></a>開始する前に
 
-アカウント をまだ作成していない場合は、アカウント を[作成GitHubがあります](https://github.com/join)。
+まだお持ちでない場合は、 [GitHub アカウントを作成](https://github.com/join)する必要があります。
 
 >[!NOTE]
->Microsoft の従業員の場合は、Microsoft オープン ソース ポータルGitHubアカウントを Microsoft エイリアス[にリンクします](https://repos.opensource.microsoft.com/)。 **"Microsoft" および** **"MicrosoftDocs" 組織に参加** します。
+>microsoft の従業員の場合は、GitHub アカウントを microsoft[オープンソースポータル](https://repos.opensource.microsoft.com/)の microsoft エイリアスにリンクします。 **"Microsoft"** と "microsoft **docs"** の組織に参加してください。
 
-お使GitHubアカウントを設定する場合は、次のセキュリティ上の注意事項も推奨されます。
-- 自分の[アカウント の強力なパスワードをGitHubします](https://github.com/settings/admin)。
-- 2 [要素認証 を有効にします](https://github.com/settings/two_factor_authentication/configure)。
-- 回復コード [を安全な](https://github.com/settings/auth/recovery-codes) 場所に保存します。
-- パブリック プロファイルの [設定を更新します](https://github.com/settings/profile)。
-   - 自分の名前を設定し、[パブリック *メール]* を [自分のメール アドレスを表示しない *] に設定します*。
-   - 投稿するドキュメント ページにサムネイルが表示されるので、プロファイル画像をアップロードすることをお勧めします。
-- コマンド ラインを使用する予定の場合は、 に対して Git 資格情報マネージャー[を設定Windows。](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest) そうすることで、投稿を行うたびパスワードを入力する必要はありません。
+GitHub アカウントを設定するときは、次のセキュリティに関する注意事項もお勧めします。
+- [GitHub アカウントの強力なパスワード](https://github.com/settings/admin)を作成します。
+- [2 要素認証](https://github.com/settings/two_factor_authentication/configure)を有効にします。
+- [回復コード](https://github.com/settings/auth/recovery-codes)を安全な場所に保存します。
+- [パブリックプロファイルの設定](https://github.com/settings/profile)を更新します。
+   - 自分の名前を設定し、電子メールアドレスを *表示しない* ように *パブリック電子メール* を設定することを検討してください。
+   - プロフィール画像をアップロードすることをお勧めします。これは、投稿するドキュメントページにサムネイルが表示されるためです。
+- コマンドラインを使用する場合は、 [Windows 用に Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)を設定することを検討してください。 これにより、投稿を行うたびにパスワードを入力する必要がなくなります。
 
-発行システムは、公開システムGitHub関連付けられているので、これらの手順が重要です。 自分のエイリアスを使用して、各記事の作成者または共同作成者GitHubされます。
+発行システムは GitHub に関連付けられているため、これらの手順は重要です。 GitHub エイリアスを使用して、各記事の作成者または共同作成者として一覧表示されます。
 
 ## <a name="editing-an-existing-article"></a>既存の記事の編集
 
-次のワークフローを使用して、Webブラウザーで GitHubを更新します。
+次のワークフローを使用して、web ブラウザーで GitHub を介して *既存の記事* を更新します。
 
-1. "mixed-reality-docs" フォルダーで編集する記事に移動します。
+1. "Mixed-reality" フォルダーで、編集する記事に移動します。
 
-2. 右上にある編集ボタン (鉛筆アイコン) を選択すると、"master" ブランチから使い捨て可能なブランチが自動的にフォークされます。
+2. 右上にある [編集] ボタン (鉛筆アイコン) を選択します。
 
    ![記事を編集します。](images/editpage.png)
+
+   これにより、破棄可能な分岐が既定のブランチである _master_ に自動的にフォークされます。
+
+   > [!NOTE]
+   > この記事には、Microsoft が使用しなくなった、 _マスター_ への参照が含まれています。 ソフトウェアからこの用語が削除された時点で、この記事から削除します。
    
-3. "Markdown の基本" に従って、 [記事の内容を編集します](#markdown-basics)。
+3. [Markdown の基本](#markdown-basics)に従って、記事の内容を編集します。
 
 4. 各記事の上部にあるメタデータを更新します。
 
-   * **title**: 記事を表示するときにブラウザー タブに表示されるページ タイトル。 ページ タイトルは SEO とインデックス作成に使用されます。そのため、必要な場合を限り、タイトルを変更する必要はありません (ドキュメントが公開される前はそれほど重要ではありません)。
-   * **description**: 記事の内容の簡単な説明を記述します。この内容は SEO と検出を向上します。
-   * **author:** ページのプライマリ所有者である場合は、ここに自分のエイリアスGitHub追加します。
-   * **ms.author:** ページのプライマリ所有者である場合は、ここに Microsoft エイリアスを追加します (エイリアスは @microsoft.com 不要です)。
-   * **ms.date:** ページに主要なコンテンツを追加する場合は日付を更新しますが、明確化、書式設定、文法、スペルの修正は行う必要はありません。
-   * **keywords**: キーワードは、SEO (検索エンジンの最適化) を支援します。 記事に固有のコンマとスペースで区切られたキーワードを追加しますが、リスト内の最後のキーワードの後に句読点はありません。 すべての記事に適用されるグローバル キーワードは、他の場所で管理されているので、追加する必要があります。 
+   * **title**: 記事が表示されているときに [ブラウザー] タブに表示されるページタイトル。 ページタイトルは、SEO とインデックス作成に使用されるため、必要な場合以外はタイトルを変更しないでください (ただし、ドキュメントが公開される前には重要度が低くなります)。
+   * **description**: 記事のコンテンツに関する簡単な説明を記述します。これにより、SEO と検出が向上します。
+   * **author**: ページのプライマリ所有者である場合は、ここに GitHub エイリアスを追加します。
+   * **ms. author**: ページのプライマリ所有者である場合は、ここに Microsoft エイリアスを追加します (必要なのはエイリアスではありません @microsoft.com )。
+   * **ms. date**: ページに主要なコンテンツを追加する場合は日付を更新します。ただし、明確、書式設定、文法、スペルなどの修正には使用しません。
+   * **キーワード**: キーワードは、SEO (検索エンジンの最適化) に役立ちます。 コンマとスペースで区切られたキーワードを追加します。これは、記事に固有のものですが、リスト内の最後のキーワードの後には句読点がありません。 すべての記事に適用するグローバルキーワードを追加する必要はありません。他の場所で管理されているためです。 
    
-5. 記事の編集が完了したら、下にスクロールし、[ファイル変更の提案] **を選択します**。
+5. 記事の編集が完了したら、下にスクロールして [ **ファイル変更の提案**] を選択します。
 
-6. 次のページで[作成] **を選択pull request** 自動的に作成されたブランチを 'master' にマージします。
+6. 次のページで、[ **プル要求の作成** ] を選択して、自動的に作成されたブランチを既定のブランチである _master_ にマージします。
 
-7. 編集する次の記事について、上記の手順を繰り返します。
+7. 編集する次の記事に対して上記の手順を繰り返します。
 
-## <a name="renaming-or-deleting-an-existing-article"></a>既存の記事の名前変更または削除
+## <a name="renaming-or-deleting-an-existing-article"></a>既存のアーティクルの名前の変更または削除
 
-変更によって既存の記事の名前が変更または削除される場合は、必ずリダイレクトを追加してください。 そうすることで、既存の記事へのリンクを持つユーザーは、依然として適切な場所に配置されます。 リダイレクトは、repo のルート.openpublishing.redirection.json ファイルで管理されます。
+既存のアーティクルの名前を変更または削除する場合は、必ずリダイレクトを追加してください。 こうすることで、既存の記事へのリンクを持つユーザーは、引き続き適切な場所に配置されます。 リダイレクトは、リポジトリのルートにあるファイルの .openpublishing.redirection.jsによって管理されます。
 
-オンにリダイレクトを追加.openpublishing.redirection.js、配列にエントリを追加 `redirections` します。
+.openpublishing.redirection.jsにリダイレクトを追加するには、次のように、配列にエントリを追加し `redirections` ます。
 
 ```json
 {
@@ -90,32 +95,35 @@ HoloLensドキュメントは、Markdig 機能と docs.microsoft.com された M
         },
 ```
 
-- は `source_path` 、削除する古い記事への相対リポジトリ パスです。 パスが で始まり、 `mixed-reality-docs` で終わる必要があります `.md` 。
+- `source_path`は、削除しようとしている古いアーティクルへの相対リポジトリパスです。 パスがで始まり、で終わることを確認してください `mixed-reality-docs` `.md` 。
 
-- は `redirect_url` 、古い記事から新しい記事への相対パブリック URL です。 この URL は、リポジトリ **パスではなく** パブリック URL を参照しますので、 または `mixed-reality-docs` を含 `.md` めずにしてください。 を使用して、新しい記事内のセクション `#section` にリンクできます。 必要に応じて、ここで別のサイトへの絶対パスを使用できます。
+- は、 `redirect_url` 以前の記事から新しい記事までの相対パブリック URL です。 この URL は、  `mixed-reality-docs` `.md` リポジトリパスではなくパブリック url を参照しているため、またはを含んでいないことを確認してください。 を使用した新しいアーティクル内のセクションへのリンク `#section` は許可されます。 必要に応じて、ここで別のサイトへの絶対パスを使用することもできます。
 
-- `redirect_document_id` は、前のファイルのドキュメント ID を保持するかどうかを示します。 既定では、 `false`です。 リダイレクト `true` された記事の属性値を `ms.documentid` 保持する場合は、 を使用します。 ドキュメント ID を保持すると、ページ ビューやランク付けなどのデータがターゲット記事に転送されます。 これは、リダイレクトが主に名前変更であり、同じコンテンツの一部のみを対象とする別の記事へのポインターではない場合に行います。
+- `redirect_document_id` 前のファイルのドキュメント ID を保持するかどうかを示します。 既定では、 `false`です。 リダイレクトされたアーティクルの属性値を保持する場合は、を使用し `true` `ms.documentid` ます。 ドキュメント ID を保持している場合は、ページビューやランキングなどのデータがターゲットアーティクルに転送されます。 リダイレクトの主な目的が名前変更であり、内容の一部だけが同じである別の記事へのポインターではない場合に、これを行ってください。
 
-リダイレクトを追加する場合は、必ず古いファイルも削除してください。
+リダイレクトを追加する場合は、古いファイルも必ず削除してください。
 
-## <a name="creating-a-new-article"></a>新しい記事の作成
+## <a name="creating-a-new-article"></a>新しい記事を作成しています
 
-次のワークフローを使用して *、Web* ブラウザーでレポートを使用してドキュメント GitHub新しい記事を作成します。
+次のワークフローを使用して、web ブラウザーで GitHub を使用してドキュメントリポジトリに *新しい記事を作成* します。
 
-1. MicrosoftDocs/Mixed-Reality 'master' ブランチからフォークを作成します (上部の [ **フォーク** ] ボタンを使用)。
+1. 右上の [**フォーク**] ボタンを使用して、microsoft docs/mixed reality の既定のブランチである _master_ からフォークを作成します。
 
-   ![マスター ブランチをフォークします。](images/forkbranch.png)
+   ![既定のブランチをフォークします。現在、"master" という名前が付けられています。](images/forkbranch.png)
+
+   > [!NOTE]
+   > この記事には、Microsoft が使用しなくなった、 _マスター_ への参照が含まれています。 ソフトウェアからこの用語が削除された時点で、この記事から削除します。
    
-2. "mixed-reality-docs" フォルダーで、上部の **[新しいファイルの** 作成] を選択します。
+2. "Mixed-reality" フォルダーで、右上にある [ **新しいファイルの作成** ] を選択します。
 
-3. 記事のページ名を作成し (スペースではなくハイフンを使用し、句読点やアポストロフィを使用しない)、".md" を追加します
+3. アーティクルのページ名を作成します (スペースの代わりにハイフンを使用し、句読点やアポストロフィは使用しません)。 "md" を追加します。
 
-   ![新しいページに名前を付け、](images/newpagetitle.png)
+   ![新しいページの名前を指定します。](images/newpagetitle.png)
    
    >[!IMPORTANT]
-   >"mixed-reality-docs" フォルダー内から新しい記事を作成してください。 これを確認するには、新しいファイル名行で "/mixed-reality-docs/" を確認します。
+   >必ず、"mixed-docs" フォルダー内から新しい記事を作成してください。 これを確認するには、新しいファイル名の行で "/mixed-reality-docs/" を確認します。
 
-4. 新しいページの上部に、次のメタデータ ブロックを追加します。
+4. 新しいページの上部に、次のメタデータブロックを追加します。
 
    ```md
    ---
@@ -129,30 +137,30 @@ HoloLensドキュメントは、Markdig 機能と docs.microsoft.com された M
    ---
    ```
 
-5. 上記のセクションの手順に従って、関連するメタデータ フィールド [を入力します](#editing-an-existing-article)。
+5. 「 [既存の記事を編集する](#editing-an-existing-article)」の説明に従って、関連するメタデータフィールドに入力します。
 
-6. Markdown の基本 を使用 [して記事のコンテンツを書き込む](#markdown-basics)。
+6. [Markdown の基礎](#markdown-basics)を使用して、記事の内容を記述します。
 
-7. 他の `## See also` 関連記事へのリンクを含むセクションを記事の下部に追加します。
+7. `## See also`記事の下部に、関連するその他の記事へのリンクが記載されたセクションを追加します。
 
-8. 完了したら、[新しいファイルを **コミットする] を選択します**。
+8. 完了したら、[ **新しいファイルをコミット** する] を選択します。
 
-9. **[新しい** pull request] を選択し、フォークの 'master' ブランチを MicrosoftDocs/Mixed-Reality 'master' にマージします (矢印が正しい方法を指していることを確認してください)。
+9. [ **新しいプル要求** ] を選択し、フォークの _マスター_ ブランチを microsoft docs/mixed reality _マスター_ にマージします (矢印が正しい宛先を指していることを確認します)。
 
-   ![フォークpull request MicrosoftDocs/Mixed-Reality にアプリを作成する](images/pr-to-master.png)
+   ![フォークからのプル要求を作成して、Microsoft Docs/mixed reality に](images/pr-to-master.png)
 
 ## <a name="markdown-basics"></a>Markdown の基本
 
-次のリソースは、Markdown 言語を使用してドキュメントを編集する方法を学習するのに役立ちます。
+Markdown 言語を使用してドキュメントを編集する方法については、次のリソースを参照してください。
 
 - [Markdown の基礎](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Markdown for docs.microsoft.com の記述に関するその他の docs.microsoft.com](/contribute/how-to-write-use-markdown)
+- [Docs.microsoft.com の Markdown を作成するためのその他のリソース](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>テーブルの追加
 
-スタイル テーブルの docs.microsoft.com 方法のため、インライン CSS を試しても、罫線やカスタム スタイルは含め "されません"。 これは短時間動作する可能性がありますが、最終的にプラットフォームによってスタイル設定がテーブルから取り除かれます。 そのため、先に計画を立て、テーブルをシンプルに保つ必要があります。 [Markdown テーブルを簡単にするサイトを次に示します](https://www.tablesgenerator.com/markdown_tables)。
+Docs.microsoft.com スタイルの表では、インライン CSS を試す場合でも、罫線やカスタムスタイルはありません。 これは短時間は機能しているように見えますが、最終的には、プラットフォームによってテーブルからスタイルが除去されます。 そのため、事前に計画し、テーブルを単純にしておきます。 Markdown テーブルを簡単にするためのサイトを次に示します。 [Tables Generator] https://www.tablesgenerator.com/markdown_tables) ] ()
 
-ドキュメント[の編集に](/teamblog/docs-extension)Visual Studio Code Docs Markdown 拡張機能を使用している場合は、Visual Studio Code Markdown 拡張機能を使用すると、テーブル[の](#using-visual-studio-code)生成も簡単になります。
+[Visual Studio Code の Docs Markdown 拡張機能](/teamblog/docs-extension)では、 [Visual Studio Code (下記参照)](#using-visual-studio-code)を使用してドキュメントを編集する場合にも、テーブルの生成を簡単に行うことができます。
 
 ### <a name="adding-images"></a>イメージの追加
 
@@ -164,7 +172,7 @@ HoloLensドキュメントは、Markdig 機能と docs.microsoft.com された M
 >1. MicrosoftDocs/Mixed-Reality レポポをフォークしました。
 >2. フォーク内の記事を編集しました。
 >3. 記事で参照している画像をフォークの "mixed-reality-docs/images" フォルダーにアップロードしました。
->4. フォークをmicrosoftDocs/mixed-reality 'master' ブランチにマージpull requestを作成しました。
+>4. フォークをmicrosoftDocs/mixed-reality マスター ブランチにマージpull requestを作成しました。
 >
 >独自のフォークされたレポポを設定する方法については、新しい記事 を作成する [手順に従ってください](#creating-a-new-article)。
 
@@ -175,7 +183,7 @@ Web ブラウザーをGitHubで編集する場合は、ページの上部付近�
 >[!NOTE]
 >変更のプレビューはreview.docs.microsoft.com Microsoft の従業員だけが利用できます
 
-Microsoft の従業員: 投稿が 'master' ブランチにマージされた後、</hololens?branch=master> で公開される前にコンテンツを確認できます。 左側の列の目次を使用して、記事を見つける。
+Microsoft の従業員: 投稿が既定のブランチ _master_ にマージされている場合は、</hololens?branch=master> で公開される前にコンテンツを確認できます。 左側の列の目次を使用して、記事を見つける。
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>ブラウザーでの編集とデスクトップ クライアントでの編集
 
@@ -216,7 +224,7 @@ Microsoft の従業員: 投稿が 'master' ブランチにマージされた後�
 
 1. 複製したフォークが公式リポジトリで最新の情報に更新されていないことを確認します。
 
-   1. Web ブラウザーで、MicrosoftDocs/Mixed-Reality 'master' の他の共同作成者からの最近の変更をフォークに同期する pull request を作成します (矢印が正しい方法を指している必要があります)。
+   1. Web ブラウザーで pull request を作成し、MicrosoftDocs/Mixed-Reality の既定のブランチである _master_ の他の共同作成者からの最近の変更をフォークに同期します (矢印が正しい宛先を指していることを確認してください)。
       
       ![MicrosoftDocs/Mixed-Reality からフォークへの変更の同期](images/sync-repos.png)
       
@@ -240,7 +248,7 @@ Microsoft の従業員: 投稿が 'master' ブランチにマージされた後�
       
       ![[同期] ボタンをクリックします](images/sync-back.png)
       
-3. Web ブラウザーで、フォークの新しい変更を MicrosoftDocs/Mixed-Reality 'master' に同期する pull request を作成します (矢印が正しい方法を指していることを確認してください)。
+3. Web ブラウザーで、フォークの新しい変更を MicrosoftDocs/Mixed-Reality マスターに同期する pull requestを作成します (矢印が正しい宛先を指していることを確認してください)。
 
    ![フォークpull request MicrosoftDocs/Mixed-Reality にアプリを作成する](images/pr-to-master.png)
 
