@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: dc5e6a731fb02adab9ef8223313cac52710b6272
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 32153fd6f7703347f4fe2f9ad41043fbeb9fab3f
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923501"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640476"
 ---
 # <a name="compare-hololens-2-options"></a>HoloLens 2 オプションの比較
 
@@ -31,17 +31,17 @@ HoloLens は、*ホログラムで強化された* Mixed Reality デバイスで
 
 |                                                      | HoloLens 2 | HoloLens 2 (Remote Assist付き) | HoloLens 2 Industrial Edition | HoloLens 2 Industrial Edition (Remote Assist 付き) | Trimble XR10 と HoloLens 2 | HoloLens 2 Development Edition |
 |------------------------------------------------------|------------|-------------------------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
-| HoloLens 2 デバイス (デバイス単体)                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
-| Dynamics 365 Remote Assist (1 シート)                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
-| ISO 14644-1 Class 5 のクリーン ルームの分類           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| UL Class I、Division 2、Group A、B、C、D の HAZLOC 環境                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| ヘルメット一体型 (40 以上の国で PPE 準拠) |            |                               |                               |                                                  |               ✔️              |                                |
-| ノイズを除去したオーディオ出力                        |            |                               |                               |                                                  |               ✔️              |                                |
-| 開発者の権利 <sup>1</sup>                             |            |                               |                               |                                                  |                              |                ✔️               |
-| 高速置換プログラム <sup>2</sup>                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| 商用使用権                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| [保証](hololens2-hardware.md#warranty-information)                                             |   1 年   |             1 年            |             2 年            |                      2 年                      |            1 年 <sup>3</sup>            |             1 年             |
-| デバイス購入の制限                                |    なし    |              なし             |              なし             |                       なし                       |             なし             |       1 回の購入につき 1 台      |
+| **HoloLens 2 デバイス (デバイス単体)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
+| **Dynamics 365 Remote Assist (1 シート)**                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
+| **ISO 14644-1 Class 5 のクリーン ルームの分類**           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **UL Class I、Division 2、Group A、B、C、D の HAZLOC 環境**                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| **ヘルメット一体型 (40 以上の国で PPE 準拠)** |            |                               |                               |                                                  |               ✔️              |                                |
+| **ノイズを除去したオーディオ出力**                        |            |                               |                               |                                                  |               ✔️              |                                |
+| **開発者の権利 <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
+| **高速置換プログラム <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **商用使用権**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| [**保証**](hololens2-hardware.md#warranty-information)                                             |   1 年   |             1 年            |             2 年            |                      2 年                      |            1 年 <sup>3</sup>            |             1 年             |
+| **デバイス購入の制限**                                |    なし    |              なし             |              なし             |                       なし                       |             なし             |       1 回の購入につき 1 台      |
 
 - <sup>1</sup> - 500 ドルの Azure クレジット、および Unity Pro と Pixyz プラグインの 3 か月の試用版が含まれています。
 - <sup>2</sup> - Microsoft が欠陥のあるデバイスを受け取る前に、翌日配送または迅速な配送 (利用可能なオプションの高速化) で交換デバイスを受け取ります。
@@ -82,8 +82,8 @@ HoloLens Mixed Reality デバイス用に構築されたその他のソリュー
 | [HoloLens 用 Dynamics 365](https://www.microsoft.com//hololens/apps)          | 従業員の支援と運用の最適化を行います。                                                        |
 | [Dynamics 365 Remote Assist](https://dynamics.microsoft.com/mixed-reality/remote-assist/)          | さまざまな場所から協働することにより、技術者がより効率的に共同作業を行えるようにします。 |
 |   [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/)        | トレーニングの効果的なニーズを改善し、従業員のパフォーマンスを把握します。                          |
-|  [Mixed Reality 向け Azure クラウド サービス](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | Azure クラウド サービスを使用してソリューションを開発する方法を確認します。                                       |
-|  [HoloLens 2 向けの開発を開始する](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)         | ニーズに合わせて Mixed Reality ソリューションを構築します。                                                 |
+|  [Mixed Reality 向け Azure クラウド サービス](/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | Azure クラウド サービスを使用してソリューションを開発する方法を確認します。                                       |
+|  [HoloLens 2 向けの開発を開始する](/windows/mixed-reality/develop/development?tabs=unity)         | ニーズに合わせて Mixed Reality ソリューションを構築します。                                                 |
 
 ## <a name="next-steps"></a>次のステップ
 

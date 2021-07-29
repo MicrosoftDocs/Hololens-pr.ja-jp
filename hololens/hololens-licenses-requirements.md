@@ -1,6 +1,6 @@
 ---
-title: ライセンス要件
-description: モバイル デバイス管理、HoloLens、リモート アシストに必要なすべてのライセンス要件とガイドラインを常に最新の状態に保ちます。
+title: ライセンスの要件
+description: モバイル デバイス管理、HoloLens、Remote Assist に必要なすべてのライセンス要件とガイドラインを常に最新の状態に保ちます。
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -12,49 +12,102 @@ ms.date: 1/23/2020
 ms.reviewer: ''
 manager: bradke
 appliesto:
-- HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2f7af532d2172dcaa6514ee11dbb0d6ab5631929
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: bd7a7d03c81dced4fb66d8ebb176887811e823c9
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283968"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640282"
 ---
-# ライセンス要件
+# <a name="license-requirements"></a>ライセンスの要件
 
-## モバイル デバイス管理 (MDM) ライセンス ガイダンス
+## <a name="hololens-2-device-managed"></a>HoloLens 2 デバイス (マネージド)
 
-HoloLens デバイスの管理を計画している場合は、Azure AD と MDM が必要です。 Active Directory (AD) を使用して HoloLens デバイスを管理することはできません。
-Intune 以外の MDM の使用を計画している場合、[Azure Active Directory ライセンス](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)が必要です。
-Intune を MDM として使用する場合は、Intune ライセンスを含む[スイートのリスト](https://docs.microsoft.com/intune/fundamentals/licenses)を確認してください。 **Azure AD はこれらのスイートの大部分に含まれていることにご注意ください。**
+[Azure AD アカウント](/azure/active-directory/)
 
-## シナリオと製品に必要なライセンスを特定する
+> [!IMPORTANT]
+> Active Directory (AD) を使用して HoloLens デバイスを管理することはできません。
 
-### HoloLens (第 1 世代) ライセンスの要件
+[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) または別の MDM。
+- [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) - IT 管理者とエンド ユーザーの両方にとってプロビジョニング エクスペリエンスが簡単になります。 IT 管理者は、HoloLens 2 のポリシーを事前に構成することができます。初回起動時には、エンドユーザーの操作を必要とせず、すぐに仕事ができる状態でデバイスが展開されます。 
 
-HoloLens (第 1 世代) デバイスを Windows Holographic for Business にアップグレードする必要がある場合があります。 (アップグレードが必要かどうかを判断するには、「[HoloLens commercial features (HoloLensの商用機能)](holoLens-commercial-features.md#feature-comparison-between-editions)」を参照してください)。
+  > [!NOTE]
+  > Windows Autopilot を使用する場合、ロータッチの Autopilot フローとデバイスの展開のためには、[Azure P1](/azure/active-directory/fundamentals/active-directory-whatis) と[自動登録](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)を最初に構成する必要があります。 
 
- その場合、次の操作をする必要があります。
+### <a name="business-use-case"></a>ビジネスのユース ケース: 
 
-- HoloLens Enterprise ライセンスの XML ファイルを取得します
-- XML ファイルを HoloLens に適用します。 これは、[プロビジョニング パッケージ](hololens-provisioning.md)または[モバイル デバイス マネージャー](https://docs.microsoft.com/intune/configuration/holographic-upgrade)を使用して実行できます。
+- [展開シナリオ A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) - 概念実証またはパイロット展開。
 
-### リモート アシスト ライセンスの要件
+- [展開シナリオ B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) - 大規模な展開。
 
-必要なライセンスとデバイスを持っていることを確認してください。これらは、[要件](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements)のドキュメントで確認できます。
+## <a name="hololens-2-device-only-non-managed"></a>HoloLens 2 デバイスのみ (非マネージド)
 
-1. [リモート アシスト ライセンス](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
-    1. または、[リモート アシスト試用版](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)をお試しください
-1. [Teams フリーミアム/Teams](https://products.office.com/microsoft-teams/free)
-1. [Azure Active Directory (Azure AD) ライセンス](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+Microsoft アカウント (MSA) またはローカル アカウントのいずれかを使用する場合、これらのアカウント用に追加のライセンスは必要ありません。
 
-**[このクロステナント シナリオ](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)** の実装を計画している場合、情報バリア ライセンスが必要になる場合があります。 情報バリア ライセンスが必要かどうかを確認するには、[この記事](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary)を参照してください。
+[ローカル アカウント](/windows/security/identity-protection/access-control/local-accounts)
 
-### ライセンス要件のガイド
+- このアカウントは、Windows 構成デザイナー (WCD) を使用して事前に[プロビジョニング](hololens-provisioning.md#provisioning-package-hololens-wizard)しておく必要があります。
 
-[更新されたライセンスとデバイスの要件](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements)を確認してください。
+[Microsoft アカウント (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)
 
-1. [Azure Active Directory (Azure AD) ライセンス](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
-1. [Power BI](https://powerbi.microsoft.com/desktop/)
-1. [ガイド](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup)
+> [!WARNING]
+> これらのアカウントのいずれかを使用するデバイスでは、複数のユーザーはサポートされません。
+
+### <a name="business-use-case"></a>ビジネスのユース ケース: 
+
+- [展開シナリオ C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) - オフラインまたはセキュリティで保護された展開。
+ 
+## <a name="dynamics-365-licensing-and-requirements"></a>Dynamics 365 のライセンスと要件
+
+### <a name="dynamics-365-remote-assist"></a>Dynamics 365 Remote Assist 
+
+#### <a name="admin"></a>管理者
+
+- Azure AD アカウント (サブスクリプションの購入とライセンスの割り当てに必要です)
+- [Remote Assist のサブスクリプション](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (または [Remote Assist 試用版](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
+    
+#### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist ユーザー
+
+- Azure AD アカウント
+
+- Remote Assist ライセンス 
+
+  > [!NOTE]
+  > Microsoft Teams は Remote Assist にバンドルされています
+
+- ネットワーク接続
+
+#### <a name="microsoft-teams-user"></a>Microsoft Teams ユーザー
+
+- Azure AD アカウント
+
+- Microsoft Teams または [Teams Freemium](https://products.office.com/microsoft-teams/free)。
+
+- ネットワーク接続
+
+この[クロステナント シナリオ](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)を実装する予定の場合は、Information Barriers ライセンスが必要になる可能性があります。 Information Barriers ライセンスが必要かどうかを判断するには、[この記事](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary)を参照してください。
+
+### <a name="dynamics-365-guides"></a>Dynamics 365 Guides 
+
+#### <a name="admin"></a>管理者
+
+- Azure AD アカウント (サブスクリプションの購入とライセンスの割り当てに必要です)
+- Dynamics 365 [Guides のサブスクリプションまたは無料試用版](/dynamics365/mixed-reality/guides/setup-step-one)
+
+#### <a name="guides-author"></a>Guides 作成者
+
+1. Azure AD アカウント
+1. [Dynamics 365 Guides ライセンス](/dynamics365/mixed-reality/guides/requirements)
+1. PC または HoloLens にインストールされた Dynamics 365 Guides アプリケーション
+1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (Analytics ダッシュボードの表示に使用されます)
+1. 作成者ロール (ガイドの作成用)
+1. ネットワーク接続
+
+#### <a name="guides-user"></a>Guides ユーザー
+
+1. Azure AD アカウント
+1. [Dynamics 365 Guides ライセンス](/dynamics365/mixed-reality/guides/requirements)
+1. HoloLens にインストールされた Dynamics 365 Guides アプリ
+1. オペレーター ロール (Guides のテストまたは使用目的)
+1. ネットワーク接続

@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0d087037e94bcaed2cd79d9cff77ed3039919a09
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: a5c0e28eff9bb71135309ec5e484fc5b88f02d08
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923784"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636677"
 ---
 # <a name="set-up-your-hololens-2"></a>HoloLens 2 のセットアップ
 
@@ -42,6 +42,14 @@ HoloLens に付属する **最適なフィット感のアクセサリ** で、�
 HoloLens 2 を初めて起動する場合、最初のタスクは Windows Holographic をセットアップすることです。  HoloLens を起動すると、音楽が再生され、Windows ロゴが表示されます。
 
 ![初回起動時の最初の画面](images/01-magic-moment.png)
+
+ハチドリが飛び回っているのが見えます。
+
+![飛んでいるハチドリ](images/hummingbird-1.png)
+
+手で追いかけてみましょう。
+
+![飛んでいるハチドリのクローズ アップ](images/hummingbird-2.png)
 
 HoloLens 2 に、以下の手順が表示されます。
 
@@ -88,6 +96,7 @@ HoloLens 2 に、以下の手順が表示されます。
 
 1. お使いのユーザー アカウントにサインインします。 **自分の職場または学校 が所有し**、 **自分が所有している** から 選択します。
 
+    ![ユーザーの設定](images/13-device-owner.png)
     - **[職場または学校が所有しています]** を選んだ場合、Azure AD アカウントを使ってサインインします。 組織で Azure AD Premium を使用しており、MDM への自動登録が構成されている場合は、HoloLens が自動的に MDM に登録されます。 組織で Azure AD Premium が使用されていない場合、MDM への自動登録は使用できません。 その場合は、[デバイス管理で手動で HoloLens を登録する必要があります](hololens-enroll-mdm.md#different-ways-to-enroll)。
 
         1. 組織アカウントの情報を入力します。
@@ -100,8 +109,7 @@ HoloLens 2 に、以下の手順が表示されます。
         1. Microsoft アカウントの情報を入力します。
         2. パスワードを入力します。 Microsoft アカウントで [2 段階認証 (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/) が要求される場合、検証プロセスを実行します。
 
-    ![ユーザーの設定](images/13-device-owner.png)
-
+        
 1. **[次へ**] を選択して虹彩認証サインインを設定します。 目の調整と同様のエクスペリエンスを体験します。 スキャンが完了したら 、 **[完了]** を選択します。 **[スキップ]** を選択 して、この手順をバイパスできます。
     
     ![虹彩認証](images/setup-iris.png) ![虹彩認証のセットアップが完了](images/iris-setup-complete.png) 

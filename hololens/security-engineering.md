@@ -13,25 +13,25 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cecc556841033ee394f36915f4cae8839dad08df
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 1c043b721590e8245f694b3e4f6e5b6ce57f1ecf
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009535"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639354"
 ---
-# セキュリティ エンジニアリング
+# <a name="security-engineering"></a>セキュリティ エンジニアリング
 
 Microsoft には、会社のエンジニアリング プロトコルの最適化、コンプライアンスへの取り組み、顧客の信頼の確保に専念するリソースとチームがいくつかあります。 
 
-  * Microsoft のセキュリティ エンジニアリング開発手法の詳細については、「[セキュリティ開発ライフサイクル (SDL)](https://www.microsoft.com/securityengineering/sdl)」をご覧ください。
-  * Microsoft および HoloLens 2 では、データを収集して使用する方法と理由をお客様が選択できるようにしています。こちらは、[Microsoft のプライバシー ポリシー](https://privacy.microsoft.com/)にて詳しく説明します。 
-  * [Microsoft Security Response Center (MSRC)](https://www.microsoft.com/msrc) は防御側のコミュニティに含まれています。これにより、効果的な脆弱性レポートのエクスペリエンスが提供され、セキュリティバグの効果的な分類や対応が可能になります。 
+  * Microsoft のセキュリティ エンジニアリング開発手法の詳細については、「[Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl)」を参照してください。
+  * Microsoft および HoloLens 2 では、データを収集して使用する方法と理由をお客様が選択できるようにしています。詳細については、[Microsoft のプライバシー ポリシー](https://privacy.microsoft.com/)に関するページを参照してください。 
+  * [Microsoft セキュリティ レスポンス センター (MSRC)](https://www.microsoft.com/msrc) は Defender コミュニティの一部であり、効果的な脆弱性レポートのエクスペリエンス、セキュリティ バグの効果的な分類と対応を実現しています。 
 
-## 更新プログラムと修正プログラム
+## <a name="updates-and-patches"></a>更新プログラムとパッチ
 
-セキュリティ更新プログラムと修正プログラムは、毎月第 2 火曜日にリリースされます。 報告された脆弱性の次の手順を評価するために Microsoft が使用する条件については、Microsoft Security Response Center の「[セキュリティのサービス基準](https://www.microsoft.com/msrc/windows-security-servicing-criteria)」ページをご覧ください。 
+セキュリティ更新プログラムと修正プログラムは、毎月第 2 火曜日にリリースされます。 報告された脆弱性の次の手順を評価するために Microsoft が使用する条件については、Microsoft セキュリティ レスポンス センターの「[セキュリティ サービス提供の基準](https://www.microsoft.com/msrc/windows-security-servicing-criteria)」ページを参照してください。 
 
-MDM を介して HoloLens 2 の更新プログラムを管理する方法については、「[HoloLens の更新プログラムの管理](https://docs.microsoft.com/hololens/hololens-updates)」をご覧ください。 HoloLens 2 のオペレーティング システムの更新タイミングは、Windows 10 と一致しています。2 つの更新プログラムがあります。1 つは春に、もう 1 つは秋に行われます。 OS の更新中におけるデバイスのセキュリティ確保の詳細については、「[状態の分離と隔離](security-state-separation-isolation.md)」をご覧ください。 
+MDM を介して HoloLens 2 の更新プログラムを管理する方法については、「[HoloLens 更新プログラムの管理](hololens-updates.md)」を参照してください。 HoloLens 2 のオペレーティング システムの更新タイミングは、Windows 10 と一致しています。2 回の更新があり、1 回は春に、もう 1 回は秋に行われます。 OS の更新中におけるデバイスのセキュリティ確保の詳細については、「[状態の分割と分離](security-state-separation-isolation.md)」を参照してください。 
 
-IT 管理者は、更新ポリシーの詳細について、「[ポリシー CSP - 更新プログラム](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update)」をご覧ください。 
+IT 管理者の場合は、更新ポリシーの詳細について、「[ポリシー CSP - 更新](/windows/client-management/mdm/policy-csp-update)」を参照してください。 

@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: be33eb5d06ee7d63f1f598792ff75605b0eb4424
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 0124453ef9e3b21722acaf2c6b438ebdfbd65043
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923637"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635944"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>HoloLens 2 を再起動、リセット、または回復する
 
@@ -72,6 +72,7 @@ HoloLens 2 に付属している[充電器と USB タイプ C ケーブル](http
 2. **[ボリューム ダウン]** ボタン +  **[電源]** ボタンを 15 秒間押したままにします。 デバイスが自動的に再起動します。
 
 4. デバイスをホスト PC に接続します。
+
 
 5. デバイス マネージャーを開きます (Windows 10 の場合は **Windows** キー、次に **X** キーを押して、**デバイス マネージャー** を選択します)。 次の図に示すように、デバイスが *Microsoft HoloLens* として正しく列挙されていることを確認します。
 
@@ -131,9 +132,15 @@ HoloLens 2 が正常に起動しない場合、または Advanced Recovery Compa
 
 1. フラッシュを試みる前に、デバイスが 40% 以上に充電されるようにしてください。
 
-2. デバイスのロックが解除されていないことを確認します。
+2. デバイスがロックされていないことを確認します。
 
-3. ARC によってデバイスが検出されない場合は、PC 上のデバイスからデバイスへエクスプローラーから接続できます。 それができない場合、
+1. デバイスがハブではなくホスト PC に直接接続されていることを確認します。
+
+1. デバイスがユニバーサル シリアル バス ドライバーに HoloLens/HoloLens Recovery デバイスと表示されない場合は、次のことを確認します。
+    1. **[ポート]** (Qualcomm HS-USB デバイスの場合)
+    1.   **[その他のデバイス]** (QUSB_BULK デバイスの場合) - HoloLens を検出するために必要なドライバーがホスト PC にありません。 右クリックして [ドライバーの更新] を選択し、オンラインでドライバーを検索するか、[Windows Update の設定で [オプションの更新プログラム] をオンにします](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674)。 ドライバーをダウンロードすると、ARC によって検出できるようになります。
+ 
+1. ARC によってデバイスが検出されない場合は、PC 上のデバイスからデバイスへエクスプローラーから接続できます。 それができない場合、
 
     1.  デバイスに、その接続を無効にする USB ポリシーがある可能性があります。 その場合は、[手動フラッシュ モード](hololens-recovery.md#manual-procedure)を試してください。
     2.  ポリシーがない場合は、別の USB ケーブルを試してください。

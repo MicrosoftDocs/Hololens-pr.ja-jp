@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 88687559310a9abc24f34c416880e02caf535177
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 4c476a2adc8f03c37e17e6324960318b4806534e
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924521"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639745"
 ---
 # <a name="about-hololens-2"></a>HoloLens 2 について
 
@@ -58,22 +58,22 @@ HoloLens 2 を使用するには、ユーザー アカウントが必要です�
 
 ### <a name="display"></a>表示
 
-|   |   |
-| - | - |
-| 光学 | シースルー ホログラフィック レンズ (導波路) |
-| ホログラフィック解像度 | 2 k 3:2 光エンジン |
-| ホログラフィック密度 | 2\.5 k を超える光点 (ラジアンあたりの光点) |
-| 視線ベースのレンダリング | 3 次元での目の位置に対するディスプレイの最適化 |
+|   | &nbsp; |
+|---|---|
+| **光学** | シースルー ホログラフィック レンズ (導波路) |
+| **ホログラフィック解像度** | 2 k 3:2 光エンジン |
+| **ホログラフィック密度** | 2\.5 k を超える光点 (ラジアンあたりの光点) |
+| **視線ベースのレンダリング** | 3 次元での目の位置に対するディスプレイの最適化 |
 
 ### <a name="sensors"></a>センサー
 
-|   |   |
-| - | - |
-| ヘッド トラッキング | 4 台の可視光カメラ |
-| 視線追跡 | 2 台の赤外線 (IR) カメラ |
-| 奥行 | 1-MP ToF (飛行時間) 深度センサー |
-| 慣性測定装置 (IMU) | 加速度計, ジャイロスコープ, 磁力計 |
-| カメラ | 静止画 8-MP, 1080p30 ビデオ |
+|   | &nbsp; |
+|---|---|
+| **ヘッド トラッキング** | 4 台の可視光カメラ |
+| **視線追跡** | 2 台の赤外線 (IR) カメラ |
+| **[奥行]** | 1-MP ToF (飛行時間) 深度センサー |
+| **慣性測定装置 (IMU)** | 加速度計, ジャイロスコープ, 磁力計 |
+| **カメラ** | 静止画 8-MP, 1080p30 ビデオ |
 
 ![HoloLens 2 センサー](images/hololens2-front-view.png)
 
@@ -82,77 +82,77 @@ HoloLens 2 を使用するには、ユーザー アカウントが必要です�
 
 ### <a name="audio-and-speech"></a>オーディオと音声認識
 
-|   |   |
-| - | - |
-| マイクロフォン アレイ | 5 チャネル |
-| Speakers | 空間音響を搭載 |
+|   | &nbsp; |
+|---|---|
+| **マイクロフォン アレイ** | 5 チャネル |
+| **Speakers** | 空間音響を搭載 |
 
 ### <a name="compute-and-connectivity"></a>コンピューティングと接続性
 
-|   |   |
-| - | - |
-| SoC (システム オン チップ) | Qualcomm Snapdragon 850 コンピューティング プラットフォームの[詳細](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
-| ホログラフィック処理装置 | 第 2 世代オーダーメイド ホログラフィック処理装置 |
-| メモリ | 4 GB LPDDR4x システム DRAM |
-| ストレージ | 64 GB UFS 2.1 |
-| WiFi | 802.11ac 2x2 |
-| Bluetooth | 5.0 |
-| USB | USB Type-C DRP |
+|   | &nbsp; |
+|---|---|
+| **SoC (システム オン チップ)** | Qualcomm Snapdragon 850 コンピューティング プラットフォームの[詳細](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
+| **ホログラフィック処理装置** | 第 2 世代オーダーメイド ホログラフィック処理装置 |
+| **[メモリ]** | 4 GB LPDDR4x システム DRAM |
+| **ストレージ** | 64 GB UFS 2.1 |
+| **Wi-Fi** | 802.11ac 2x2 |
+| **Bluetooth** | 5.0 |
+| **USB** | USB Type-C DRP |
 
 ### <a name="power"></a>Power
 
-|   |   |
-| - | - |
-| バッテリー残量 | 2 - 3 時間のアクティブな使用。 最大 2 週間のスタンバイ時間。 |
-| バッテリー技術 | [リチウム バッテリ](https://www.microsoft.com/download/details.aspx?id=43388) |
-| 充電動作 | 充電時に完全に機能 |
-| 冷却の種類 | 受動的に冷却 (ファンなし) |
-| 電力供給 | デバイスがオンになっているときに、内部バッテリー充電率を維持または高めるためには、15W 以上の充電器に接続する必要があります。 |
+|   | &nbsp; |
+|---|---|
+| **バッテリー残量** | 2 - 3 時間のアクティブな使用。 最大 2 週間のスタンバイ時間。 |
+| **バッテリー技術** | [リチウム バッテリ](https://www.microsoft.com/download/details.aspx?id=43388) |
+| **充電動作** | 充電時に完全に機能 |
+| **冷却の種類** | 受動的に冷却 (ファンなし) |
+| **電力供給** | デバイスがオンになっているときに、内部バッテリー充電率を維持または高めるためには、15W 以上の充電器に接続する必要があります。 |
 
 ### <a name="fit"></a>適合性
 
-|   |   |
-| - | - |
-| サイズ変更 | バンドで調整できる単一サイズ。  眼鏡の上から装着可能。 |
-| Weight | 566 g |
+|   | &nbsp; |
+|---|---|
+| **サイズ設定** | バンドで調整できる単一サイズ。  眼鏡の上から装着可能。 |
+| **Weight** | 566 g |
 
 ## <a name="device-capabilities"></a>デバイスの機能
 
 ### <a name="human-understanding"></a>人を理解する
 
-|   |   |
-| - | - |
-| ハンド トラッキング | 両手完全連動モデル, 直接操作 |
-| 視線追跡 | リアルタイム追跡 |
-| 音声 | オンデバイスのコマンドとコントロール、インターネット接続を利用した Cortana 自然言語 |
+|   | &nbsp; |
+|---|---|
+| **ハンド トラッキング** | 両手完全連動モデル, 直接操作 |
+| **視線追跡** | リアルタイム追跡 |
+| **音声** | オンデバイスのコマンドとコントロール、インターネット接続を利用した Cortana 自然言語 |
 
 ### <a name="environment-understanding"></a>環境の認識
 
-|   |   |
-| - | - |
-| 6DoF トラッキング | 世界規模の位置追跡 |
-| 空間マッピング | リアルタイム環境メッシュ |
-| 複合現実キャプチャ | ホログラムと物理環境の複合写真、複合ビデオ |
+|   | &nbsp; |
+|---|---|
+| **6DoF トラッキング** | 世界規模の位置追跡 |
+| **空間マッピング** | リアルタイム環境メッシュ |
+| **複合現実キャプチャ** | ホログラムと物理環境の複合写真、複合ビデオ |
 
 ## <a name="pre-installed-software"></a>プリインストールされているソフトウェア
 
-|   |   |
-| - | - |
-| Windows Holographic オペレーティング システム | [Windows Holographic OS](hololens-release-notes.md) により、Windows 10 ユーザーは HoloLens 2 を使用して、アプリやゲームの一部を Mixed Reality 環境で使用できます。
-| 3D ビューアー | [3D ビューアー](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab)では、3D モデルやアニメーションをリアルタイムで簡単に見ることができます。|
-| Cortana | パーソナル生産性アシスタントの [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab) は、重要なことを常に把握し、必要なものを見つける時間を短縮します。  |
-| Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) は、従業員が HoloLens デバイスでより早く新しいスキルを習得できるよう支援します。 |
-| Dynamics 365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) を使用すると、技術者は Microsoft Teams または Dynamics 365 Remote Assist を使用してリモートの共同作業者と協力し、問題を解決できます。  |
-| フィードバック Hub | [フィードバック Hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) では、提案や問題を共有することで、Windows とアプリに関するフィードバックを提供できます。  |
-| エクスプローラー | エクスプローラーには、ファイル システムにアクセスするためのグラフィカル ユーザー インターフェイスが用意されています。 |
-| メールとカレンダー | [メールとカレンダ](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab)を使用すると、メールの最新の情報を取得し、スケジュールを管理し、連絡先と連絡を取り合うのに役立ちます。 |  
-| Microsoft Edge | Microsoft Edge は、閲覧時のプライバシー、生産性、価値の向上を実現する国際的レベルのパフォーマンスを提供します。 |
-| Microsoft Store | [Microsoft Store](https://www.microsoft.com) は、HoloLens で動作するアプリやゲーム用のソースです。|
-| 映画 & テレビ | [映画 & テレビ](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab)は、最新のエンターテインメントを 1 つのシンプルで高速かつエレガントなアプリでお届けします。 |
-| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) を使用すると、すべてのデバイスからどこからでもファイルにアクセスし、編集できます。  |
-| Photos| [Photos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab)では、写真やビデオの表示と編集、ムービーの作成、アルバムの作成が可能です。  |
-| 設定 | 設定アプリでは、Windows Holographic の動作を詳細にカスタマイズできます。  |
-| ヒント | [ヒント](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab)を使用すると、Windows Holographic で実行できる驚きの操作やあまり知られていない操作をマスターできます。 |
+| &nbsp; | &nbsp; |
+|---|---|
+| **Windows Holographic オペレーティング システム** | [Windows Holographic OS](hololens-release-notes.md) により、Windows 10 ユーザーは HoloLens 2 を使用して、アプリやゲームの一部を Mixed Reality 環境で使用できます。
+| **3D ビューアー** | [3D ビューアー](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab)では、3D モデルやアニメーションをリアルタイムで簡単に見ることができます。|
+| **Cortana** | パーソナル生産性アシスタントの [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab) は、重要なことを常に把握し、必要なものを見つける時間を短縮します。  |
+| **Dynamics 365 Guides** |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) は、従業員が HoloLens デバイスでより早く新しいスキルを習得できるよう支援します。 |
+| **Dynamics 365 Remote Assist** | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) を使用すると、技術者は Microsoft Teams または Dynamics 365 Remote Assist を使用してリモートの共同作業者と協力し、問題を解決できます。  |
+| **フィードバック Hub** | [フィードバック Hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) では、提案や問題を共有することで、Windows とアプリに関するフィードバックを提供できます。  |
+| **エクスプローラー** | エクスプローラーには、ファイル システムにアクセスするためのグラフィカル ユーザー インターフェイスが用意されています。 |
+| **メールとカレンダー** | [メールとカレンダ](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab)を使用すると、メールの最新の情報を取得し、スケジュールを管理し、連絡先と連絡を取り合うのに役立ちます。 |
+| **Microsoft Edge** | Microsoft Edge は、閲覧時のプライバシー、生産性、価値の向上を実現する国際的レベルのパフォーマンスを提供します。 |
+| **Microsoft Store** | [Microsoft Store](https://www.microsoft.com) は、HoloLens で動作するアプリやゲーム用のソースです。|
+| **映画 & テレビ** | [映画 & テレビ](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab)は、最新のエンターテインメントを 1 つのシンプルで高速かつエレガントなアプリでお届けします。 |
+| **OneDrive** | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) を使用すると、すべてのデバイスからどこからでもファイルにアクセスし、編集できます。  |
+| **Photos** | [Photos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab)では、写真やビデオの表示と編集、ムービーの作成、アルバムの作成が可能です。  |
+| **設定** | 設定アプリでは、Windows Holographic の動作を詳細にカスタマイズできます。  |
+| **ヒント** | [ヒント](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab)を使用すると、Windows Holographic で実行できる驚きの操作やあまり知られていない操作をマスターできます。 |
 
 ## <a name="device-certifications"></a>デバイスの認定規格
 
@@ -202,7 +202,7 @@ HoloLens 2 デバイスのシリアル番号はバイザーの下に印刷され
 1. ブロウ パッドの近くを見てください。
 1. ヒンジの近くにあるシリアル番号を見つけることができます。
 
-<img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
+   <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
 シリアル番号は、接続されている PC でも確認できます。
 
@@ -211,7 +211,7 @@ HoloLens 2 デバイスのシリアル番号はバイザーの下に印刷され
 1. 右クリックして HoloLens デバイスの **プロパティ** を選択する
 1. これにより、以下のスクリーンショットに示すように、デバイスのシリアル番号が表示されます。
 
-<img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
+   <br/><img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
 ## <a name="next-steps"></a>次のステップ
 
