@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 32153fd6f7703347f4fe2f9ad41043fbeb9fab3f
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640476"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659031"
 ---
 # <a name="compare-hololens-2-options"></a>HoloLens 2 オプションの比較
 
@@ -47,17 +47,6 @@ HoloLens は、*ホログラムで強化された* Mixed Reality デバイスで
 - <sup>2</sup> - Microsoft が欠陥のあるデバイスを受け取る前に、翌日配送または迅速な配送 (利用可能なオプションの高速化) で交換デバイスを受け取ります。
 - <sup>3</sup> - HoloLens 2 Edition 搭載の Trimble XR10 の保証、サポート、認定に関する質問については、[Trimble にお問い合わせください](https://fieldtech.trimble.com/en/contact-support)。
 
-## <a name="countries-where-hololens-2-is-available"></a>HoloLens 2 が利用可能な国
-
-<br>
-
-| HoloLens 2 Edition                  | サポート対象の市場               |
-|-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | 米国、カナダ、ドイツ、フランス、英国、アイルランド、中国、日本、オーストラリア、イタリア、ニュージーランド、オランダ、スイス、スペイン、オーストリア、スウェーデン、フィンランド、ノルウェー、デンマーク、ベルギー、ポルトガル、ポーランド、シンガポール、香港、台湾、韓国 |
-| HoloLens 2 (Remote Assist付き) | オーストラリア、日本、カナダ、米国、オーストリア、ベルギー、デンマーク、フィンランド、フランス、ドイツ、イタリア、オランダ、ノルウェー、スペイン、スウェーデン、スイス、英国、アイルランド<sup>1</sup> 
-| *HoloLens 2 Industrial Edition (ローンチ時)* | 米国、カナダ、ドイツ、フランス、英国、アイルランド、中国、日本、オーストラリア、イタリア、ニュージーランド、オランダ、スイス、スペイン、オーストリア、スウェーデン、フィンランド、ノルウェー、デンマーク、ベルギー、ポルトガル、ポーランド、シンガポール、香港、台湾、韓国 |
-| HoloLens 2 Development Edition | カナダ、ドイツ、フランス、英国、アイルランド、日本、オーストラリア、イタリア、スイス、ニュージーランド |
-- <sup>1</sup> この一覧は動的です。最新情報を確認してください
 
 ## <a name="options-overview"></a>オプションの概要
 
