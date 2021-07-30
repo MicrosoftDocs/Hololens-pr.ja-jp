@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a5c0e28eff9bb71135309ec5e484fc5b88f02d08
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: ef2f8723868e14beaf19cb057fffbcbd9e9f51f9
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636677"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659350"
 ---
 # <a name="set-up-your-hololens-2"></a>HoloLens 2 のセットアップ
 
@@ -39,41 +39,44 @@ HoloLens に付属する **最適なフィット感のアクセサリ** で、�
 
 ## <a name="set-up-windows"></a>Windows の設定
 
-HoloLens 2 を初めて起動する場合、最初のタスクは Windows Holographic をセットアップすることです。  HoloLens を起動すると、音楽が再生され、Windows ロゴが表示されます。
+HoloLens 2 を初めて起動する場合、最初のタスクは Windows Holographic をセットアップすることです。  HoloLens を起動すると、音楽が再生され、Microsoft ロゴが表示されます。
 
-![初回起動時の最初の画面](images/01-magic-moment.png)
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGGk]
+
+<br/>
+<img src="images/01-magic-moment.png" width="500px" alt="First screen during first boot">
 
 ハチドリが飛び回っているのが見えます。
 
-![飛んでいるハチドリ](images/hummingbird-1.png)
+<img src="images/hummingbird-1.png" width="500px" alt="Hummingbird flying">
 
-手で追いかけてみましょう。
+手のところにやって来ます。
 
-![飛んでいるハチドリのクローズ アップ](images/hummingbird-2.png)
+<img src="images/hummingbird-2.png" width="500px" alt="Hummingbird flying close up">
 
-HoloLens 2 に、以下の手順が表示されます。
+Microsoft ロゴのボタンが表示されます。 ボタンを押すと、HoloLens 2 により、以下の手順が表示されます。
 
 1. 言語を選択します。
 
-    ![言語を選択](images/04-language.png)
+    <img src="images/04-language.png" width="500px" alt="Select language">
 
 1. 自分のリージョンを選択します。
 
-    ![地域を選択](images/05-region.png)
+    <img src="images/05-region.png" width="500px" alt="Select region">
 
 1. HoloLens を自分の目に合わせて調整します。  調整のスキップを選択すると、次回のログイン時にメッセージが表示されます。 
 
     1. まず、バイザーを調整します。
     
-        ![調整の選択画面](images/06-et-corners.png)
-
+    <img src="images/06-et-corners.png" width="500px" alt="Calibration selection screen">
+    
     2. 調整するには、一連のターゲット (「宝石」 と呼ばれます) を目視します。 調整中にまばたきしたり目を閉じたりしても問題はありませんが、室内や物理空間内にある他の物体を見つめないように注意してください。 HoloLens はこのプロセスを使用して、高い精度でホログラフィックの世界をレンダリングできるように、ユーザーの眼球位置を学習します。 
 
-        ![目に合わせて調整する](images/07-adjust-eyes.png)
+        <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes">
 
         調整後は、頭部に装着したバイザーの位置がずれても、ホログラムが正しく表示されます。 調整情報は、デバイスにローカル保存され、アカウント情報には関連付けられません。 詳細については、[「調整データと セキュリティ」](hololens-calibration.md#calibration-data-and-security)を参照してください。
 
-        ![調整が完了しました](images/calibration-complete.png)
+        <img src="images/calibration-complete.png" width="500px" alt="Calibration is complete">
 
 1. インターネットに接続します (Wi-Fi またはイーサネット接続を選択します)。
 
@@ -112,7 +115,10 @@ HoloLens 2 に、以下の手順が表示されます。
         
 1. **[次へ**] を選択して虹彩認証サインインを設定します。 目の調整と同様のエクスペリエンスを体験します。 スキャンが完了したら 、 **[完了]** を選択します。 **[スキップ]** を選択 して、この手順をバイパスできます。
     
-    ![虹彩認証](images/setup-iris.png) ![虹彩認証のセットアップが完了](images/iris-setup-complete.png) 
+    <img src="images/setup-iris.png" width="500px" alt="Iris setup">
+
+    <img src="images/iris-setup-complete.png" width="500px" alt="Iris setup completion">
+
      
   
 1. デバイスにログインする PIN を設定します。 この PIN はデバイス固有です。 
@@ -122,26 +128,30 @@ HoloLens 2 に、以下の手順が表示されます。
     ![Windows Hello PIN の設定](images/windows-hello-pin.png)
 
     ![Windows Hello セットアップが成功しました](images/windows-hello-successful.png) 
+
     
 1. HoloLens 2 で音声を有効にするかどうかを選択します。
 
-    ![Cortana を有効にする](images/22-do-more-with-voice.png)
+    <img src="images/22-do-more-with-voice.png" width="500px" alt="Enable Cortana">
 
 1. HoloLens 2 で位置を有効にするかどうかを選択します。
     
-    ![位置サービスを有効にする](images/setup-location-services.png)
+    <img src="images/setup-location-services.png" width="500px" alt="Enable location services">
 
 1. テレメトリ レベルを選択します。 可能な場合は、オプションのテレメトリを有効にしてください。 この情報は、HoloLens エンジニアリング チームの作業に大きく役立ちます。
 
-     ![テレメトリのレベル](images/24-telemetry.png)
+    <img src="images/24-telemetry.png" width="500px" alt="Telemetry level">
+
 
 1. HoloLens 2 でスタート ジェスチャを使用する方法について説明します。
 
-     ![スタート ジェスチャを使用する方法について説明します (画像 1)](images/26-01-startmenu-learning.png)
+    <img src="images/26-01-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 1">
 
-     ![スタート ジェスチャを使用する方法について説明します (画像 2)](images/26-02-startmenu-learning.png)
-
-おめでとうございます。  セットアップは完了です。HoloLens の使用準備ができました。
+    <img src="images/26-02-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 2">
+    
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
+    
+    おめでとうございます。  セットアップは完了です。HoloLens の使用準備ができました。
 
 ## <a name="next-steps"></a>次のステップ
 
