@@ -18,27 +18,27 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1081ed512183592e66e65f2e69323752b822f1c1
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: e2c5c98eb62f9e8ec19306b2cb460004eb8ae8dd
+ms.sourcegitcommit: 44d5fbee8aa0e2404137484edbeb4653437e79dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659184"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "114991425"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>HoloLens のユーザー ID とサインインを管理する
 
 > [!NOTE]
 > この記事は、IT プロフェッショナルおよびテクニカル愛好家向けのテクニカルリファレンスです。 手順をお探し HoloLens の場合は、「[HoloLens (第1世代)](hololens1-start.md)のセットアップ」または「[HoloLens 2 の](hololens2-start.md)セットアップ」を参照してください。
 
-他の Windows デバイスと同様に、HoloLens は常にユーザーコンテキストで動作します。 常にユーザー id が存在します。 HoloLens は、他の Windows 10 デバイスとほぼ同じ方法で id を扱います。 この記事では HoloLens の id に関する詳細なリファレンスを紹介し、HoloLens が他の Windows 10 デバイスとどのように異なるかについて重点的に説明します。
+他の Windows デバイスと同様に、HoloLens は常にユーザーコンテキストで動作します。 常にユーザー id が存在します。 HoloLens は、他の Windows デバイスとほぼ同じ方法で id を扱います。 この記事では HoloLens の id に関する詳細なリファレンスを紹介し、HoloLens が他の Windows デバイスとどのように異なるかについて重点的に説明します。
 
 HoloLens では、いくつかの種類のユーザー id がサポートされています。 1つ以上のユーザーアカウントを使用してサインインできます。 HoloLens の id の種類と認証オプションの概要を次に示します。
 
 | ID の種類 | デバイスごとのアカウント数 | 認証オプション |
 | --- | --- | --- |
-| [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Azure web 資格情報プロバイダー</li><li>Azure Authenticator アプリ</li><li>生体認証 (虹彩) &ndash; HoloLens 2<sup>2</sup>のみ </li><li>&ndash;HoloLens (第1世代) に対しては省略可能です。 HoloLens 2 には必須です</li><li>Password (パスワード)</li></ul> |
-| [Microsoft アカウント (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>生体認証 (虹彩) &ndash; HoloLens 2 のみ</li><li>&ndash;HoloLens (第1世代) に対しては省略可能です。 HoloLens 2 には必須です</li><li>Password (パスワード)</li></ul> |
-| [ローカル アカウント](/windows/security/identity-protection/access-control/local-accounts) | 1 | Password (パスワード) |
+| [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Azure web 資格情報プロバイダー</li><li>Azure Authenticator アプリ</li><li>生体認証 (虹彩) &ndash; HoloLens 2<sup>2</sup>のみ </li><li>FIDO2 セキュリティキー</li><li>&ndash;HoloLens (第1世代) に対しては省略可能です。 HoloLens 2 には必須です</li><li>パスワード</li></ul> |
+| [Microsoft アカウント (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>生体認証 (虹彩) &ndash; HoloLens 2 のみ</li><li>&ndash;HoloLens (第1世代) に対しては省略可能です。 HoloLens 2 には必須です</li><li>パスワード</li></ul> |
+| [ローカルアカウント](/windows/security/identity-protection/access-control/local-accounts) | 1 | パスワード |
 
 クラウドに接続されたアカウント (Azure AD と MSA) は、Azure サービスを使用できるため、より多くの機能を提供します。  
 > [!IMPORTANT]
@@ -49,11 +49,11 @@ HoloLens では、いくつかの種類のユーザー id がサポートされ�
 
 ## <a name="setting-up-users"></a>ユーザーの設定
 
-新しいユーザーの設定方法として最も一般的なのは、HoloLens の既定のエクスペリエンス (OOBE) です。 セットアップ中に、デバイスで使用するアカウントを使用してサインインするようにユーザーに求めるメッセージが HoloLens されます。 このアカウントは、コンシューマー Microsoft アカウントでも、Azure で構成されているエンタープライズアカウントでもかまいません。 「 [HoloLens (第1世代)](hololens1-start.md) 」または「 [HoloLens 2](hololens2-start.md)のセットアップ」を参照してください。
-
-他のデバイスでの Windows と同様に、セットアップ中にサインインすると、デバイスにユーザープロファイルが作成されます。 ユーザープロファイルには、アプリとデータが格納されます。 また、このアカウントは、Windows account Manager api を使用して、Edge や Microsoft Store などのアプリにシングルサインオンを提供します。  
+HoloLens に新しいユーザーを設定するには、2つの方法があります。 最も一般的な方法は、HoloLens の非インボックスエクスペリエンス (OOBE) 中です。 Azure Active Directory を使用する場合、他のユーザーは、Azure AD の資格情報を使用して OOBE 後[にログインでき](#setting-up-multi-user-support-azure-ad-only)ます。 OOBE 中に MSA またはローカルアカウントで最初に設定されたデバイス HoloLens、複数のユーザーがサポートされません。 「 [HoloLens (第1世代)](hololens1-start.md) 」または「 [HoloLens 2](hololens2-start.md)のセットアップ」を参照してください。
 
 エンタープライズアカウントまたは組織アカウントを使用して HoloLens にサインインすると、組織の IT インフラストラクチャに登録 HoloLens ます。 この登録により、IT 管理者は、HoloLens にグループポリシーを送信するようにモバイルデバイス管理 (MDM) を構成できます。
+
+他のデバイスでの Windows と同様に、セットアップ中にサインインすると、デバイスにユーザープロファイルが作成されます。 ユーザープロファイルには、アプリとデータが格納されます。 また、このアカウントは、Windows account Manager api を使用して、Edge や Microsoft Store などのアプリにシングルサインオンを提供します。 
 
 既定では、他の Windows 10 デバイスと同様に、HoloLens を再起動するか、スタンバイから再開するときに、もう一度サインインする必要があります。 設定アプリを使用してこの動作を変更することも、グループポリシーで動作を制御することもできます。
 
@@ -65,7 +65,10 @@ Windows のデスクトップバージョンと同様に、追加の web アカ�
 
 ### <a name="setting-up-multi-user-support-azure-ad-only"></a>マルチユーザーサポートを設定する (Azure AD のみ)
 
-HoloLens は、同じ Azure AD テナントからの複数のユーザーをサポートしています。 この機能を使用するには、組織に属しているアカウントを使用してデバイスを設定する必要があります。 その後、同じテナントの他のユーザーは、サインイン画面からデバイスにサインインすることも、[スタート] パネルの [ユーザー] タイルをタップして、デバイスにサインインすることもできます。 一度にサインインできるユーザーは1人だけです。 ユーザーがサインインすると、前のユーザーがサインアウト HoloLens ます。 デバイスの最初のユーザーはデバイスの所有者と見なされますが、Azure AD 参加する場合を除き、 [デバイスの所有](security-adminless-os.md#device-owner)者の詳細を確認してください。
+HoloLens は、同じ Azure AD テナントからの複数のユーザーをサポートしています。 この機能を使用するには、組織に属しているアカウントを使用してデバイスを設定する必要があります。 その後、同じテナントの他のユーザーは、サインイン画面からデバイスにサインインすることも、[スタート] パネルの [ユーザー] タイルをタップして、デバイスにサインインすることもできます。 一度にサインインできるユーザーは1人だけです。 ユーザーがサインインすると、前のユーザーがサインアウト HoloLens ます。 
+
+>[!IMPORTANT]
+> デバイスの最初のユーザーはデバイスの所有者と見なされますが、Azure AD 参加する場合を除き、 [デバイスの所有](security-adminless-os.md#device-owner)者の詳細を確認してください。
 
 すべてのユーザーは、デバイスにインストールされているアプリを使用できます。 ただし、各ユーザーには独自のアプリデータと設定があります。 デバイスからアプリを削除すると、すべてのユーザーに対して削除されます。  
 
@@ -110,36 +113,51 @@ HoloLens 用に開発する方法の1つとして、 [onlineidauthenticator](/uw
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>HoloLens (第1世代) でサポートされているビジネスの Windows Hello
+### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>Windows Hello (第 1 世代) では HoloLens for Business はサポートされていますか?
 
-Windows Hello for Business (PIN を使用したサインインをサポート) は HoloLens (第1世代) でサポートされています。 HoloLens で Windows Hello for Business PIN のサインインを許可するには:
+Windows Hello for Business (PIN を使用したサインインをサポート) は、HoloLens (第 1 世代) でサポートされています。 ビジネス PIN Windows Helloサインインを許可するには、次のHoloLens。
 
-1. HoloLens デバイスは[MDM によって管理](hololens-enroll-mdm.md)されている必要があります。
-1. デバイスの Windows Hello for Business を有効にする必要があります。 ([Microsoft Intune については、「」を参照してください。](/intune/windows-hello))
-1. HoloLens では、ユーザーは **設定**  >  **サインインオプション**[  >  **pin の追加**] を使用して pin を設定できます。
-
-> [!NOTE]
-> Microsoft アカウントを使用してサインインしたユーザーは、**設定**  >  **サインインオプション**[pin の追加] で pin を設定することもでき  >  ます。 この PIN は、 [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-overview)ではなく[Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello)に関連付けられています。
-
-### <a name="how-is-iris-biometric-authentication-implemented-on-hololens-2"></a>HoloLens 2 には、虹彩認証認証はどのように実装されていますか。
-
-HoloLens 2 は、虹彩認証をサポートしています。 虹彩は Windows Hello テクノロジに基づいており、Azure Active Directory と Microsoft アカウントの両方で使用できます。 虹彩は他の Windows Hello テクノロジと同じように実装されており、1/10 万以上の生体認証セキュリティを実現します。
-
-詳細については、 [Windows Hello の生体認証の要件と仕様](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)を参照してください。 [Windows Hello](/windows-hardware/design/device-experiences/windows-hello)と[Windows Hello for Business の](/windows/security/identity-protection/hello-for-business/hello-identity-verification)詳細については、こちらを参照してください。 
-
-### <a name="how-does-the-type-of-account-affect-sign-in-behavior"></a>アカウントの種類はサインインの動作にどのような影響を与えますか。
-
-サインイン用のポリシーを適用する場合、ポリシーは常に考慮されます。 サインインのポリシーが適用されていない場合、各アカウントの種類の既定の動作は次のとおりです。
-
-- **Azure AD**: 既定で認証を要求し、**設定** が認証を要求しないように構成できます。
-- **Microsoft アカウント**: ロック動作は、自動ロック解除を許可することとは異なりますが、再起動時にはサインイン認証が必要です。
-- **ローカルアカウント**: 常にパスワードの形式で認証を要求します。で構成することはできません **設定**
+1. デバイスHoloLens MDM で[管理する必要があります](hololens-enroll-mdm.md)。
+1. デバイスに対して Windows Hello for Business を有効にする必要があります。 ([の手順を参照Microsoft Intune)。](/intune/windows-hello)
+1. このHoloLens、ユーザーは [サインイン オプション]**設定** PIN の追加] を使用して  >    >  **PIN** を設定できます。
 
 > [!NOTE]
-> 現在、非アクティブタイマーはサポートされていません。つまり、 **AllowIdleReturnWithoutPassword** ポリシーは、デバイスがスタンバイ状態になったときにのみ尊重されます。
+> サインイン オプションを使用してサインインするMicrosoft アカウントサインイン オプションで PIN 設定PIN を  >    >  **設定できます**。 この PIN は、Business [Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello)ではなく、Windows Hello[に関連付けされます](/windows/security/identity-protection/hello-for-business/hello-overview)。
 
-## <a name="additional-resources"></a>その他の技術情報
+### <a name="how-is-iris-biometric-authentication-implemented-on-hololens-2"></a>Iris 生体認証は、HoloLens 2 に実装されていますか?
 
-ユーザー id の保護と認証の詳細について[は、Windows 10 のセキュリティと id](/windows/security/identity-protection/)に関するドキュメントを参照してください。
+HoloLens 2は Iris 認証をサポートしています。 Iris は、Windows Hello テクノロジに基づいており、Azure Active Directory アカウントと Microsoft アカウントの両方で使用できます。 あやめは、他の Windows Hello テクノロジと同じように実装され[、1/100K](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#has-microsoft-set-any-device-requirements-for-windows-hello)の生体認証セキュリティ FAR を実現します。
 
-ハイブリッド id インフラストラクチャの設定の詳細については、 [Azure ハイブリッド id のドキュメント](/azure/active-directory/hybrid/)を参照してください。
+詳細については[、生体認証の要件とWindows Hello](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)を参照してください。 Business 用[のWindows Hello](/windows-hardware/design/device-experiences/windows-hello)とWindows Hello[詳細を参照してください](/windows/security/identity-protection/hello-for-business/hello-identity-verification)。 
+
+### <a name="where-is-iris-biometric-information-stored"></a>あやめ生体認証情報はどこに格納されますか?
+
+あやめ生体認証情報は、仕様 に基HoloLensローカル[Windows Helloされます](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored)。 これは共有されません。2 つの暗号化レイヤーによって保護されます。 他のユーザー (管理者も含む) にはアクセスできません。管理者アカウントには管理者アカウントHoloLens。
+
+### <a name="do-i-have-to-use-iris-authentication"></a>あやめ認証を使用する必要がありますか?
+いいえ。セットアップ中にこの手順をスキップできます。 
+
+![Iris のセットアップ](./images/setup-iris.png)
+
+HoloLens 2、FIDO2 セキュリティ キーなど、認証に関するさまざまなオプションが提供されます。
+
+### <a name="can-iris-information-be-removed-from-the-hololens"></a>あやめ情報をアプリケーションから削除HoloLens?
+はい、手動で削除できます。設定。
+
+
+### <a name="how-does-the-type-of-account-affect-sign-in-behavior"></a>アカウントの種類はサインインの動作にどのような影響を与えるでしょうか。
+
+サインイン用のポリシーを適用する場合、ポリシーは常に考慮されます。 サインインのポリシーが適用されない場合は、アカウントの種類ごとに既定の動作が次のとおりです。
+
+- **Azure AD:** 既定で認証を要求し、設定 **認証を** 要求しなくなった場合に構成できます。
+- **Microsoft アカウント:** ロック動作が異なって自動ロック解除を許可しますが、再起動時にはサインイン認証が必要です。
+- **ローカル アカウント**: パスワードの形式で認証を常に要求します。パスワードでは構成 **設定**
+
+> [!NOTE]
+> 非アクティブ タイマーは現在サポートされていません。つまり **、AllowIdleReturnWithoutPassword** ポリシーは、デバイスが StandBy に入った場合にのみ適用されます。
+
+## <a name="additional-resources"></a>その他のリソース
+
+ユーザー ID の保護と認証の詳細については、セキュリティと ID に関するWindows 10[ドキュメントを参照してください](/windows/security/identity-protection/)。
+
+ハイブリッド ID インフラストラクチャの設定の詳細については、Azure ハイブリッド ID に関する [ドキュメントを参照してください](/azure/active-directory/hybrid/)。
