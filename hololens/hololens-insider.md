@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 52503c0e1ff8c937211500203b91a30806cd317d
-ms.sourcegitcommit: 74f5b64c67026881c8ae46410f272b22862ff582
+ms.openlocfilehash: e8adb2f796299c99a9152a5b245e8bdd0b768f05
+ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114696327"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "115009342"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens の Insider Preview
 
@@ -31,7 +31,7 @@ ms.locfileid: "114696327"
 
 新しい機能のフライトを開始して、Insiders Windows開始します。 新しいビルドは、最新の更新プログラムのために Dev および Beta チャネルにフライトします。 このページは引き続き更新されます。Insider ビルドの機能と更新プログラムWindows追加します。 これらの更新プログラムを実際に組み合わせ、準備を整えます。
 
-| 特徴量                 | 説明                | ユーザーまたはシナリオ | 導入されたビルド |
+| 機能                 | 説明                | ユーザーまたはシナリオ | 導入されたビルド |
 |-------------------------|----------------------------|--------------|------------------|
 | [レポートと詳細に関する CSP HoloLens変更](#csp-changes-for-reporting-hololens-details) | データに対してクエリを実行するの新しい CSP | IT 管理者    | 20348.1403                 |
 | [CSP によって制御される自動ログイン ポリシー](#auto-login-policy-controlled-by-csp) | アカウントを自動的にログインするために使用されます | IT 管理者 | 20348.1405 |
@@ -39,7 +39,8 @@ ms.locfileid: "114696327"
 | [詳細な診断レポートは、設定で表示HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | デバイスで MDM 診断ログを表示する | トラブルシューティング | 20348.1405 |
 | [オフライン診断通知](#offline-diagnostics-notifications) | ログ収集に関する視聴覚フィードバック | トラブルシューティング | 20348.1405 |
 | [プライベート ストア アプリのみをプライベート ストア アプリにMicrosoft Store](#use-only-private-store-apps-for-microsoft-store) | 組織のアプリのみを表示するストア アプリを構成する | IT 管理者 | 20348.1408 |
-| [修正と機能強化](hololens-insider.md#fixes-and-improvements) | 更新プログラムの修正とHoloLens。 | All | 20348.1408 |
+| [低ストレージ ログ収集の機能強化](#low-storage-log-collection-improvements) | ストレージが少ない状況でのログ収集シナリオの改善。 | IT 管理者 | 20348.1412 |
+| [修正と機能強化](hololens-insider.md#fixes-and-improvements) | 更新プログラムの修正とHoloLens。 | すべて | 20348.1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>レポートと詳細に関する CSP HoloLens変更
 
@@ -122,13 +123,17 @@ Insider ビルドWindowsに追加されました。オフライン診断には�
 
 この新機能は、デバイスが更新された場合に有効になります。有効または管理する必要はない。 この新しいフィードバックを表示または確認できない場合でも、オフライン診断は生成されます。
 
-この新しいオーディオビジュアル フィードバックの追加により、診断データの収集が容易になり、問題をより迅速にトラブルシューティングできると期待しています。
+この新しいオーディオビジュアルフィードバックの追加により、診断データを簡単に収集し、問題のトラブルシューティングをより簡単に行うことができます。
 
-### <a name="use-only-private-store-apps-for-microsoft-store"></a>プライベート ストア アプリのみを使用してMicrosoft Store
+### <a name="use-only-private-store-apps-for-microsoft-store"></a>Microsoft Store の専用ストアアプリのみを使用する
 
-RequirePrivateStoreOnly ポリシーが有効になっているHoloLens。 このポリシーにより、組織Microsoft Storeプライベート ストアのみを表示するようにアプリを構成できます。 使用できるようにしたアプリのみにアクセスを制限する。
+RequirePrivateStoreOnly ポリシーは HoloLens に対して有効になっています。 このポリシーを使用すると、組織用に構成されたプライベートストアのみを表示するように Microsoft Store アプリを構成できます。 使用できるようにしたアプリのみにアクセスを制限する。
 
 [Applicationmanagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)の詳細情報
+
+### <a name="low-storage-log-collection-improvements"></a>低ストレージログ収集の機能強化
+
+診断ログを収集するときにデバイスのディスク領域が不足していると思われる場合は、 **StorageDiagnostics.zip** という名前の追加のレポートが作成されます。 低ストレージのしきい値は、Windows ストレージの[意味](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)で自動的に決定されます。
 
 ### <a name="fixes-and-improvements"></a>修正プログラムと機能強化
 
@@ -136,7 +141,6 @@ RequirePrivateStoreOnly ポリシーが有効になっているHoloLens。 こ�
 - [ファイルのアップロードとダウンロードのタイムアウトを含むデバイスポータルの既知の問題](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)を修正した。
 - HoloLens デバイスからのコンプライアンスプロパティのレポートに関する問題に対処します。Insider ビルドで適切なレポートをトリガーするには、再起動が必要になることがあります。  
 - 新しい点滅にインストールされているリモートアシスタンスのインボックスバージョンが更新されました。
-
 
 ## <a name="start-receiving-insider-builds"></a>Insider ビルドの受信を開始します
 
