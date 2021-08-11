@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 540bdcaefafcc50cc38d5e9a67dea3b9cb596f05
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 24fefeb941fd75e4f6a6b18fbfd8a1c80a7bbf54dcdee233c6513338b44f9ab5
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639473"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658794"
 ---
 # <a name="hololens-2-with-remote-assist"></a>HoloLens 2 (Remote Assist付き)
 
