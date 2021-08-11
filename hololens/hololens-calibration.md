@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: 調整, 快適性, 視覚効果, 品質, ipd, HoloLens, Windows Mixed Reality, VR ヘッドセット
-ms.openlocfilehash: f72bdfb980fc20b3812e0377d9486539d34f437c
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 5ba00d873b8a42c3397315a62492b14ab04ded367ccdd05af8be4f68c56627e2
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635978"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664694"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>視覚効果と快適性の向上
 

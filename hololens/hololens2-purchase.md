@@ -2,10 +2,10 @@
 title: HoloLens 2 の購入先
 description: 利用可能なグローバル ADR 連絡先と国の一覧。
 keywords: HoloLens 2 購入オプション, 国際購入, 国際リセラー, ADR
-author: joyjaz
-ms.author: v-jjaswinski
+author: qianw211
+ms.author: v-qianwen
 ms.reviewer: skerawala
-ms.date: 7/08/2021
+ms.date: 8/03/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 10ba56d68b0272378d958b5a7cd1fd18f581ac33
-ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
+ms.openlocfilehash: b94172ebbfeea55964a055f62707fe0b6d94a97c53eee717e7ec4da7281bad0e
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114661731"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658820"
 ---
 # <a name="where-to-buy-hololens-2"></a>HoloLens 2 の購入先
 
@@ -30,11 +30,12 @@ HoloLens 2 は、イマーシブ エクスペリエンスを実現する業界�
 
 | HoloLens 2 Edition| サポート対象の市場 |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | 米国、カナダ、ドイツ、フランス、英国、アイルランド、中国、日本、オーストラリア、イタリア、ニュージーランド、オランダ、スイス、スペイン、オーストリア、スウェーデン、フィンランド、ノルウェー、デンマーク、ベルギー、ポルトガル、ポーランド、シンガポール、香港、台湾、タイ、ベトナム、マレーシア、韓国 |
-| HoloLens 2 (Remote Assist付き) | オーストラリア、日本、カナダ、米国、オーストリア、ベルギー、デンマーク、フィンランド、フランス、ドイツ、イタリア、オランダ、ノルウェー、スペイン、スウェーデン、スイス、英国、アイルランド<sup>1</sup> 
-| *HoloLens 2 Industrial Edition (ローンチ時)* | 米国、カナダ、ドイツ、フランス、英国、アイルランド、中国、日本、オーストラリア、イタリア、ニュージーランド、オランダ、スイス、スペイン、オーストリア、スウェーデン、フィンランド、ノルウェー、デンマーク、ベルギー、ポルトガル、ポーランド、シンガポール、香港、台湾、タイ、ベトナム、マレーシア、韓国 |
-| HoloLens 2 Development Edition | カナダ、ドイツ、フランス、英国、アイルランド、日本、オーストラリア、イタリア、スイス、ニュージーランド |
-- <sup>1</sup> この一覧は動的です。最新情報を確認してください
+| HoloLens 2 | オーストラリア、オーストリア、ベルギー、カナダ、中国、デンマーク、フィンランド、フランス、ドイツ、香港、アイルランド、イタリア、日本、マレーシア、オランダ、ニュージーランド、ノルウェー、ポーランド、ポルトガル、シンガポール、韓国、スペイン、スウェーデン、スイス、台湾、タイ、英国、米国、ベトナム  |
+| HoloLens 2 (Remote Assist付き) | オーストラリア、オーストリア、ベルギー、カナダ、デンマーク、フィンランド、フランス、ドイツ、香港、アイルランド、イタリア、日本、韓国、マレーシア、オランダ、ニュージーランド、ノルウェー、シンガポール、スペイン、スウェーデン、スイス、台湾、タイ、英国、米国、ベトナム<sup>1</sup> 
+| *HoloLens 2 Industrial Edition (ローンチ時)* | オーストラリア、オーストリア、ベルギー、カナダ、中国、デンマーク、フィンランド、フランス、ドイツ、香港、アイルランド、イタリア、日本、マレーシア、オランダ、ニュージーランド、ノルウェー、ポーランド、ポルトガル、シンガポール、韓国、スペイン、スウェーデン、スイス、台湾、タイ、英国、米国、ベトナム  |
+| HoloLens 2 Development Edition | オーストラリア、カナダ、フランス、ドイツ、アイルランド、イタリア、日本、ニュージーランド、スイス、英国 |
+
+&nbsp;&nbsp;&nbsp;<sup>1</sup> この一覧は動的です。最新情報を確認してください
 
 ## <a name="find-an-authorized-hololens-2-reseller"></a>HoloLens 2 の認定再販パートナーを探す
 リージョン別の HoloLens 2 の提供状況と購入オプションについては、以下の表を参照してください。

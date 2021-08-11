@@ -1,6 +1,6 @@
 ---
 title: 外部クライアント展開ガイド
-description: 外部クライアント向けの HoloLens 2 の展開ガイド (例としてリモートアシスタンスを使用)
+description: 外部クライアントのHoloLens 2の展開ガイド (例としてリモート 支援付き)
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -13,115 +13,115 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: acf4b5d730b9a7eee2dedfad2bb3f866931d7455
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 495be858c235931ed591b097e6b5951f7197c3f7a62bd1aaa16bea65a4e3885f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636947"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659894"
 ---
-# <a name="deploying-hololens-2-to-external-clients-with-remote-assist"></a>リモートアシスタンスを使用した外部クライアントへの HoloLens 2 の展開
+# <a name="deploying-hololens-2-to-external-clients-with-remote-assist"></a>次のHoloLens 2を使用して外部クライアントにRemote Assist
 
-このガイドは、次の目標を持つ it 担当者が Microsoft HoloLens 2 つのデバイスを組織に展開するのに役立ちます。
+このガイドは、次の目標を持つ IT プロフェッショナルが、組織内Microsoft HoloLens 2 つのデバイスを展開するのに役立ちます。
 
-1. クラウド接続 HoloLens 2 デバイス
-1. デバイスを使用するために、ローン HoloLens 2 デバイスを外部クライアントに
-1. セキュリティで保護された貸与デバイス
+1. クラウド接続HoloLens 2デバイス
+1. 使用HoloLens 2にデバイスを外部クライアントに貸し出す
+1. ローンされたデバイスをセキュリティで保護する
 
-このガイドでは、ほとんどの HoloLens 2 展開シナリオに適用できる[一般的な HoloLens 2 展開の推奨事項](#general-deployment-recommendations-and-instructions)と、外部使用のためにリモートアシスタンスを展開するときの[一般的な懸念](#common-concerns)事項について説明します。
+このガイド[では、ほとんどの](#general-deployment-recommendations-and-instructions)HoloLens 2 デプロイ シナリオに適用できる一般的な HoloLens 2 デプロイの推奨事項と、[](#common-concerns)お客様が外部で使用するために Remote Assist をデプロイするときに発生する一般的な問題について説明します。
 
 ## <a name="scenario-description"></a>シナリオの説明
 
-このドキュメントでは、Contoso 社は、短期または長期的に使用するために、HoloLens 2 デバイスを外部クライアントのプラントに発送することを希望しています。 クライアントがサポートサービスメカニズムを必要とする場合、クライアントは contoso 社から提供された資格情報を使用して HoloLens 2 デバイスにログインし、リモートアシスタンスを使用して contoso 社の専門家に問い合わせます。
+このドキュメントの目的上、Contoso Company は、短期的または長期的な使用のために、HoloLens 2 デバイスを外部クライアントの工場に出荷したいと考っています。 クライアントがサポート サービス マシンを必要とする場合、クライアントは Contoso Company から提供された資格情報を使用して HoloLens 2 デバイスにログインし、Remote Assist を使用して Contoso 社の専門家に問い合わせてください。
 
-リモートアシスタンスの詳細について [は、こちら](/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)を参照してください。
+詳細については、こちらをRemote Assist [してください](/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)。
 
 ### <a name="requirements-for-this-scenario"></a>このシナリオの要件
 
 1. [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis)
-1. モバイル Device Manager ( [Intune](/mem/intune/fundamentals/free-trial-sign-up)など)
-1. リモート支援ライセンス
-    1. [リモートアシスタンスの購入](/dynamics365/mixed-reality/remote-assist/buy-remote-assist)
-    1. [試用版リモートアシスタンス](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+1. モバイル デバイス マネージャー - Intune [など](/mem/intune/fundamentals/free-trial-sign-up)
+1. Remote Assist ライセンス
+    1. [購入Remote Assist](/dynamics365/mixed-reality/remote-assist/buy-remote-assist)
+    1. [試用版Remote Assist](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
 
 ## <a name="common-concerns"></a>一般的な懸念事項
 
-- [外部のクライアントが互いに通信することができないようにする方法](#how-to-ensure-that-external-clients-do-not-have-the-ability-to-communicate-with-one-another)
-- [クライアントが会社のリソースにアクセスできないようにする方法](#how-to-ensure-that-clients-do-not-have-access-to-company-resources)
+- [外部クライアントが相互に通信する機能を持たなかからずに行う方法](#how-to-ensure-that-external-clients-do-not-have-the-ability-to-communicate-with-one-another)
+- [クライアントが会社のリソースにアクセスできないのを確認する方法](#how-to-ensure-that-clients-do-not-have-access-to-company-resources)
 - [アプリを制限する方法](#how-to-restrict-apps)
 - [パスワードを管理する方法](#how-to-manage-passwords)
-- [クライアントがチャット履歴にアクセスできないようにする方法](#how-to-ensure-that-clients-do-not-have-access-to-chat-history)
+- [クライアントがチャット履歴にアクセスできないのを確認する方法](#how-to-ensure-that-clients-do-not-have-access-to-chat-history)
 
-### <a name="how-to-ensure-that-external-clients-do-not-have-the-ability-to-communicate-with-one-another"></a>外部のクライアントが互いに通信することができないようにする方法
+### <a name="how-to-ensure-that-external-clients-do-not-have-the-ability-to-communicate-with-one-another"></a>外部クライアントが相互に通信する機能を持たなかからずに行う方法
 
-HoloLens 呼び出しに対するリモートアシスタンス HoloLens はサポートされていないため、クライアントはそれらを検索できますが、相互に通信することはできません。 クライアントが検索して呼び出すことができるユーザーをさらに制限するために、  [情報バリア](/microsoft-365/compliance/information-barriers) はクライアントが通信できるユーザーを制限することができます。 考慮すべきもう1つのオプションは、スコープを指定した[ディレクトリ検索](/MicrosoftTeams/teams-scoped-directory-search)の使用
+呼Remote Assist HoloLens HoloLensサポートされていない場合、クライアントは相互に通信できますが、検索できますが、通信できません。 クライアントが検索して呼び出すユーザーをさらに制限するために、  [情報](/microsoft-365/compliance/information-barriers) バリアはクライアントが通信できるユーザーを制限できます。 考慮すべきもう 1 つのオプションは、 [スコープ付きディレクトリ検索の使用です](/MicrosoftTeams/teams-scoped-directory-search)
 
  > [!NOTE]
-> シングルサインオンが有効になっているため、 [**WDAC**](/hololens/windows-defender-application-control-wdac)を使用してブラウザーを無効にすることが重要です。 外部クライアントがブラウザーを開いて Teams の web バージョンを使用する場合、クライアントは通話/チャット履歴にアクセスできます。
+> シングル サインオンが有効になっているので、WDAC を使用してブラウザーを [**無効にすることが重要です**](/hololens/windows-defender-application-control-wdac)。 外部クライアントがブラウザーを開き、Web バージョンの Teams を使用している場合、クライアントは通話/チャット履歴にアクセスできます。
 
-### <a name="how-to-ensure-that-clients-do-not-have-access-to-company-resources"></a>クライアントが会社のリソースにアクセスできないようにする方法
+### <a name="how-to-ensure-that-clients-do-not-have-access-to-company-resources"></a>クライアントが会社のリソースにアクセスできないのを確認する方法
 
-考慮すべき2つのオプションがあります。
+考慮すべき 2 つのオプションがあります。
 
-1つ目のオプションは、マルチレイヤーアプローチです。
+1 つ目のオプションは、多層アプローチです。
 
-1. ユーザーが必要とするライセンスのみを割り当てます。 OneDrive、Outlook、SharePoint、Yammer などをユーザーに割り当てない場合、それらのリソースにアクセスすることはできません。 ユーザーが必要とするライセンスは、リモートアシスタンス、Intune、および AAD のライセンスのみです。
-1. クライアントにアクセスしたくないアプリ (電子メールなど) をブロックします (「 [アプリを制限する方法」を](#how-to-restrict-apps)参照してください)。
-1. ユーザー名とパスワードをクライアントで共有しないでください。 HoloLens 2 にログインするには、電子メールと数字の PIN が必要です。
+1. ユーザーが必要とするライセンスのみを割り当てる。 OneDrive、Outlook、SharePoint、Yammer などをユーザーに割り当てない場合、ユーザーはそれらのリソースにアクセスできます。 ユーザーに必要なライセンスは、開始Remote Assist、Intune、AAD のライセンスのみです。
+1. クライアントにアクセスしたくないアプリ (電子メールなど) をブロックする (「アプリを制限する[方法」を参照)。](#how-to-restrict-apps)
+1. ユーザー名やパスワードをクライアントと共有しません。 ログインするには、電子HoloLens 2 PIN が必要です。
 
-2つ目のオプションは、クライアントをホストする別のテナントを作成することです (「イメージ1.1」を参照してください)。
+2 つ目のオプションは、クライアントをホストする別のテナントを作成する方法です (イメージ 1.1 を参照)。
 
-**イメージ1.1**
+**イメージ 1.1**
 
-![サービステナントの画像](./images/hololens-service-tenant-image.png)
+![サービス テナント イメージ](./images/hololens-service-tenant-image.png)
 
 ### <a name="how-to-restrict-apps"></a>アプリを制限する方法
 
-[キオスクモード](/hololens/hololens-kiosk)または[WDAC (Windows Defender アプリケーション制御)](/hololens/windows-defender-application-control-wdac)は、アプリケーションを制限するためのオプションです。
+[キオスク モード](/hololens/hololens-kiosk)や[WDAC (Windows Defender アプリケーション制御)](/hololens/windows-defender-application-control-wdac)は、アプリケーションを制限するためのオプションです。
 
 ### <a name="how-to-manage-passwords"></a>パスワードを管理する方法
 
-1. パスワードの有効期限を削除します。 ただし、これにより、アカウントが侵害される可能性が高くなります。 NIST パスワードの推奨事項は、30-90 日おきにパスワードを変更することです。
-1. HoloLens 2 デバイスのパスワードの有効期限を90日を超えるように拡張します。
-1. デバイスは、パスワードを変更するために Contoso に返される必要があります。 ただし、デバイスが90日以上クライアントのプラントにあると予想される場合は、問題が発生する可能性があります。  
+1. パスワードの有効期限を削除します。 ただし、これにより、アカウントが侵害される可能性が高されます。 NIST パスワードの推奨事項は、30 日から 90 日ごとにパスワードを変更します。
+1. デバイスのパスワードの有効期限をHoloLens 2 90 日を超えるまで延長します。
+1. パスワードを変更するには、デバイスを Contoso に返す必要があります。 ただし、デバイスがクライアントの工場に 90 日以上含まれると予想される場合は、問題が発生する可能性があります。  
 1. 複数のクライアントに送信されるデバイスの場合は、デバイスをクライアントに発送する前にパスワードをリセットします。
 
-### <a name="how-to-ensure-that-clients-do-not-have-access-to-chat-history"></a>クライアントがチャット履歴にアクセスできないようにする方法
+### <a name="how-to-ensure-that-clients-do-not-have-access-to-chat-history"></a>クライアントがチャット履歴にアクセスできないのを確認する方法
 
-リモートアシスタンスは、各セッションの後にチャットの履歴をクリアします。 ただし、Microsoft Teams ユーザーがチャットの履歴を利用できるようになります。
+Remote Assistセッションの後にチャット履歴がクリアされます。 ただし、チャット履歴は、ユーザーがMicrosoft Teamsされます。
 
 > [!NOTE]
-> シングルサインオンが有効になっているため、 [**WDAC**](/hololens/windows-defender-application-control-wdac)を使用してブラウザーを無効にすることが重要です。 外部クライアントがブラウザーを開いて Teams の web バージョンを使用する場合、クライアントは通話/チャット履歴にアクセスできます。
+> シングル サインオンが有効になっているので、WDAC を使用してブラウザーを [**無効にすることが重要です**](/hololens/windows-defender-application-control-wdac)。 外部クライアントがブラウザーを開き、Web バージョンの Teams を使用する場合、クライアントは通話/チャット履歴にアクセスできます。
 
-## <a name="general-deployment-recommendations-and-instructions"></a>デプロイに関する一般的な推奨事項と手順
+## <a name="general-deployment-recommendations-and-instructions"></a>一般的なデプロイの推奨事項と手順
 
-HoloLens 2 デプロイの手順については、次のことをお勧めします。
+デプロイの手順では、次HoloLens 2することをお勧めします。
 
-1. ベースラインビルドとして、[最新の HoloLens OS リリース](https://aka.ms/hololens2download)を使用します。
+1. ベースライン ビルド[として最新HoloLens OS](https://aka.ms/hololens2download)リリースを使用します。
 1. ユーザーベースまたはデバイスベースのライセンスを割り当てる:
-    1. ユーザーベースおよびデバイスベースのライセンスは、次の手順に従います。
-        1. [AAD にグループを作成し、](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) HoloLens/RA ユーザーのメンバーを追加します。
-        1. [デバイスベースまたはユーザーベースのライセンス](/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) をこのグループに割り当てます。
-        1. OptionalMDM ポリシーのグループを対象にすることができます。
+    1. ユーザーベースのライセンスとデバイス ベースのライセンスは、どちらも次の手順に従います。
+        1. [AAD でグループを作成し、ユーザーまたは](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members)RA ユーザー HoloLensメンバーを追加します。
+        1. [デバイスベースまたはユーザーベースのライセンスをこのグループに割](/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) り当てる。
+        1. (省略可能)MDM ポリシーのグループをターゲットにできます。
 
-1. デバイスは、AAD をテナントに参加させ、 [自動登録](/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm)し、 [自動パイロット](/hololens/hololens2-autopilot)によって構成する必要があります。
-    1. デバイスの最初のユーザーがデバイスの所有者であることに注意してください。
-    1. デバイスが AAD に参加している場合は、結合を実行したユーザーがデバイスの所有者になります。
-    1. 詳細については、「 [デバイスの所有者](/hololens/security-adminless-os#device-owner)」を参照してください。
-1. テナントは、テナントにのみ参加できるようにデバイスを[ロック](/hololens/hololens-release-notes#tenantlockdown-csp-and-autopilot)します。
-    1. **追加リンク:** [テナントロック CSP](/windows/client-management/mdm/tenantlockdown-csp)。
-1. グローバルに割り当てられたアクセスを使用してキオスクを [構成します](/hololens/hololens-global-assigned-access-kiosk)。
-1. 次の (オプション) 機能を無効にすることをお勧めします。
-    1. [ここで](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)、デバイスを開発者モードにする機能。
-    1. HoloLens を PC に接続して日付をコピーする機能は、 [USB を無効](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)にします。
+1. デバイスは、テナントに AAD 参加済みである [ [自動](/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm)登録] で、自動パイロット を使用 [して構成する必要があります](/hololens/hololens2-autopilot)。
+    1. デバイスの最初のユーザーがデバイス所有者になる点に注意してください。
+    1. デバイスが AAD 参加している場合、参加を実行したユーザーはデバイス所有者になります。
+    1. 詳細については、「デバイス所有者」 [を参照してください](/hololens/security-adminless-os#device-owner)。
+1. [テナントは](/hololens/hololens-release-notes#tenantlockdown-csp-and-autopilot) 、テナントにのみ参加できるようデバイスをロックします。
+    1. **追加のリンク:** [テナント ロック CSP](/windows/client-management/mdm/tenantlockdown-csp)。
+1. こちら へのグローバル割り当てアクセスを使用してキオスクを [構成します](/hololens/hololens-global-assigned-access-kiosk)。
+1. 次の (省略可能) 機能を無効にすることをお勧めします。
+    1. ここでデバイスを開発者モードにする [機能](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)。
+    1. 日付をコピーする PC HoloLens接続する機能を使用すると[、USB が無効になります](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)。
        > [!NOTE]
-        > Usb を無効にし、USB を使用してプロビジョニングパッケージをデバイスに適用する機能が必要な場合は、 [**こちら**](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)の手順に従ってください。
+        > USB を無効にしないが、USB を使用してデバイスにプロビジョニング パッケージを適用する機能を必要とする場合は、ここに記載されている手順に従 [**います**](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)。
 
-1. [WDAC](/hololens/windows-defender-application-control-wdac)を使用して HoloLens 2 デバイス上のアプリを許可またはブロックします。
-1. セットアップの一部として、リモートアシスタンスを最新バージョンに更新します。 これを行うには、次の2つのオプションがあります。
-    1. これを行うには、[Windows **Microsoft Store--> リモートアシスタンス--> と更新アプリ**] に移動します。
-    1. [Applicationmanagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) -アプリの自動更新を許可します。既定では有効になっています。 デバイスを接続したままにして、更新プログラムを受信します。
-1. ネットワーク設定を除く[すべての設定ページを無効](/hololens/settings-uri-list)にして、ユーザーがクライアントサイトでゲストネットワークに接続できるようにします。
-1. [HoloLens の更新を管理する](/hololens/hololens-updates)
-    1. OS の [更新プログラムを制御](/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) したり、自由にフローを許可したりするためのオプションです。
+1. [WDAC を使用](/hololens/windows-defender-application-control-wdac)して、デバイス上のアプリを許可HoloLens 2します。
+1. セットアップRemote Assist最新バージョンに更新します。 これを行うには、次の 2 つのオプションがあります。
+    1. これを行う場合は、 **--Windows Microsoft Store --> Remote Assist に>アプリを更新します**。
+    1. [アプリの自動更新を許可する ApplicationManagement/AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) は、既定で有効になっています。 更新プログラムを受信するには、デバイスを接続した状態に保つ必要があります。
+1. [ユーザーがクライアント サイトのゲスト](/hololens/settings-uri-list) ネットワークに接続するには、ネットワーク設定を除くすべての設定ページを無効にします。
+1. [更新プログラムHoloLens管理する](/hololens/hololens-updates)
+    1. OS の更新 [を制御したり、自由](/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) にフローしたりするオプション。
 1. [一般的なデバイスの制限](/hololens/hololens-common-device-restrictions)。

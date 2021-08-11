@@ -13,14 +13,14 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bbf05404193f684bdc43d7d6a37159e17678d604
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 5e65cd542cc1090a7744c0041d57f1e13d3ca0c67b15f81a515f8e3040438aca
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284148"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665642"
 ---
-# セキュリティの概要
+# <a name="security-overview"></a>セキュリティの概要
 
 脅威に関する最新の情勢と、そこからもたらされるリスクに対応するため、HoloLens 2 のセキュリティ アーキテクチャは包括的な再設計が行われ、先進的かつ革新的なエンドツーエンドのセキュリティおよびプライバシー保護機能が備わりました。
 

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f2f7e1425a208e1f466d995f66118b7e68984242
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 67e34ea275ef73adda840ee4f44d9c0c3c9440ef0bd2aef48cb7aaa971219220
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637015"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660133"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>展開ガイド-Dynamics 365 Guides による企業接続 HoloLens 2-概要
 
@@ -77,7 +77,7 @@ ms.locfileid: "113637015"
 >- [Dynamics 365 Guides セットアップします。](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
 >- [キオスクモードを構成する方法 (省略可能)。](hololens2-corp-connected-configure.md#optional-kiosk-mode)
 >- [WDAC を構成する方法 (省略可能)。](hololens2-corp-connected-configure.md#optional-wdac)
-### <a name="deploy"></a>配置
+### <a name="deploy"></a>デプロイ
 > [!div class="checklist"]
 >-  [デバイスと MDM を使用して登録を検証します。](hololens2-corp-connected-deploy.md#enrollment-validation)
 >-  [Wi-Fi 証明書を検証します。](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation)

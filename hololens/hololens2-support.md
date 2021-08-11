@@ -1,46 +1,46 @@
 ---
-title: サポート オプションの詳細Mixed Realityする
+title: Mixed Reality サポートオプションについての詳細情報
 ms.author: rajhawar
 author: raunakjhawar
 ms.reviewer: asergaz
-description: Mixed Reality大企業のお客様向けサポート オプション
+description: 小規模から大規模企業のお客様向けの Mixed Reality サポートオプション
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: 0ddc4eb15036a4f5aa2ecf86893d5f671584f9bf
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 43940fca03dec957c2afc6108e1ce77979aa000c1366bdc873056107d0b7da20
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659099"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658773"
 ---
-# <a name="what-are-the-mixed-reality-support-and-help-options"></a>サポートオプションとMixed Realityオプションは何ですか?
+# <a name="what-are-the-mixed-reality-support-and-help-options"></a>Mixed Reality のサポートとヘルプオプションは何ですか。
 
-アプリケーションの開発でブロックを解除するか、ヘッドセットまたはヘッドセットのHoloLens 2問題Windows Mixed Realityですか? Azure Mixed Reality サービスを使用している可能性があります。技術的な質問があります。 
+アプリケーションの開発時にブロックを解除しようと考えていますか、または HoloLens 2 または Windows Mixed Reality ヘッドセットに問題がありますか? Azure mixed reality サービスを使用していて、技術的な質問があるかもしれません。 
 
-ここでは、適切な場所に接続するための次のオプションのサポート オプションを示します。 また、コミュニティ リソースとセルフサービス コンテンツオプションも取り上び、次の内容を確認できます。
+ここでは、次のオプションのサポートオプションを確認して、適切な場所に接続できるようにします。 また、コミュニティリソースとセルフサービスコンテンツオプションについても説明します。
 
-- [Communityヘルプ オプション](#community-help-options)
-- [デバイスの使用と構成に関するヘルプをHoloLens 2する](#help-with-technical-support-for-your-hololens-2)
-- [デバイスの購入に関するヘルプHoloLens 2する](#help-with-commercial-store-support-for-your-hololens-2)
-- [デバイスまたはイマーシブ ヘッドセットHoloLens 2プログラミングに関するヘルプを表示する](#help-with-technical-support-for-your-hololens-2) 
-- [Azure Mixed Reality サービスに関するヘルプを表示する](#azure-mixed-reality-services-support)
+- [開発者向けの Community ヘルプオプション](#community-help-options)
+- [HoloLens 2 デバイスの使用と構成に関するヘルプを表示する](#help-with-technical-support-for-your-hololens-2)
+- [HoloLens 2 デバイスの購入に関するヘルプを表示する](#help-with-commercial-store-support-for-your-hololens-2)
+- [HoloLens 2 デバイスまたはイマーシブヘッドセットのプログラミングに関するヘルプを表示する](#help-with-technical-support-for-your-hololens-2) 
+- [Azure mixed reality サービスに関するヘルプを表示する](#azure-mixed-reality-services-support)
 
-## <a name="community-help-options"></a>Communityヘルプ オプション
+## <a name="community-help-options"></a>Community のヘルプオプション
 
 ### <a name="post-a-question-on-microsoft-qa"></a>Microsoft Q&A に質問を投稿する
 <div class='icon is-large'>
     <img alt='Azure Q&A' src='/media/logos/logo_azure.svg'>
 </div><br/>
-Microsoft エンジニア、最も価値のあるプロフェッショナル (MVP)、または Microsoft のエキスパート コミュニティからの Azure Mixed Reality および HoloLens 2 プログラミングの質問に対する迅速かつ確実な回答を得る場合は、Microsoft のコミュニティ サポートの優先する場所である Microsoft Q&A にお問い合わせください。
+Azure 混在の HoloLens 2 現実に対する回答をすばやく、信頼性の高い回答を得るために、microsoft のエンジニア、最も貴重な専門家 (mvp)、または専門家のコミュニティから、microsoft Q&A、コミュニティサポートのお客様にお勧めします。
 
 問題に対する回答が検索で見つからない場合は、Microsoft Q&A に新しい質問を送信してください。 質問するときは、次のタグのいずれかを使います。
 
 - [Azure Spatial Anchors](/answers/topics/azure-spatial-anchors.html)
 - [Azure Remote Rendering](/answers/topics/azure-remote-rendering.html)
 - [Azure Object Anchors](/answers/topics/azure-object-anchors.html)
-- [HoloLensプログラミング](/answers/topics/hololens-development.html)
-- [Windows製品](/answers/products/windows)
+- [HoloLens番組](/answers/topics/hololens-development.html)
+- [WindowsProducts](/answers/products/windows)
 
 
 ### <a name="post-a-question-on-stack-overflow"></a>Stack Overflow に質問を投稿する
@@ -52,12 +52,12 @@ Microsoft エンジニア、最も価値のあるプロフェッショナル (MV
 
 Stack Overflow に新しい質問を送信する場合は、次のいずれかのタグを使用して質問を作成します。複数のタグを使用することもできます。
 
-- [HoloLensプログラミング](https://stackoverflow.com/questions/tagged/hololens)
+- [HoloLens番組](https://stackoverflow.com/questions/tagged/hololens)
 - [Windows Mixed Reality](https://stackoverflow.com/questions/tagged/windows-mixed-reality)
 - [Azure Spatial Anchors](https://stackoverflow.com/questions/tagged/azure-spatial-anchors)
 - [Azure Remote Rendering](https://stackoverflow.com/questions/tagged/azure-remote-rendering)
 - [Azure Object Anchors](https://stackoverflow.com/questions/tagged/azure-object-anchors)
-- [Mixed Reality ツールキット (MRTK)](https://stackoverflow.com/questions/tagged/MRTK)
+- [Mixed Reality Toolkit (MRTK)](https://stackoverflow.com/questions/tagged/MRTK)
 
 #### <a name="other-communities"></a>その他のコミュニティ:
 
@@ -65,47 +65,47 @@ Stack Overflow に新しい質問を送信する場合は、次のいずれか�
 - [Windows Mixed Realityヘッドセット Reddit](https://www.reddit.com/r/WindowsMR/)
 - [HoloLensReddit](https://www.reddit.com/r/HoloLens/)
 
-## <a name="hololens-2-support"></a>HoloLens 2サポート
+## <a name="hololens-2-support"></a>HoloLens 2ご
 
-### <a name="help-with-technical-support-for-your-hololens-2"></a>サービスのテクニカル サポートに関するHoloLens 2
+### <a name="help-with-technical-support-for-your-hololens-2"></a>HoloLens 2 のテクニカルサポートに関するヘルプ
 
-- Microsoft Q HoloLens 2 A でコミュニティからプログラミング のヘルプ[を&する](#post-a-question-on-microsoft-qa)
-- Azure Mixed Reality サービスのヘルプとサポートとサービス [正常性の詳細を確認する](#azure-mixed-reality-services-support)
-- MR サポートで、イマーシブ ヘッドセットHoloLens 2またはイマーシブ ヘッドセット プログラミングのサポート 要求[を作成する](https://aka.ms/mrsupport) 
-- デバイスのサポートに関するHoloLens 2要求 (ハードウェア、使用状況、構成など&を作成HoloLens 2[する](https://aka.ms/hlsupport) 
+- [Microsoft Q&A の](#post-a-question-on-microsoft-qa)コミュニティからプログラミングのヘルプを入手 HoloLens 2
+- [Azure mixed reality サービス](#azure-mixed-reality-services-support)のヘルプとサポートとサービスの正常性に関する詳細情報
+- [MR サポート](https://aka.ms/mrsupport)で HoloLens 2 またはイマーシブヘッドセットプログラミングのサポート要求を作成する 
+- [HoloLens 2 デバイスのサポート](https://aka.ms/hlsupport)で、ハードウェア、使用状況 & 構成などの HoloLens 2 デバイスの問題に対するサポート要求を作成する 
 
 
-### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>ビジネス 向けコマーシャル ストア のサポートに関するHoloLens 2
+### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>HoloLens 2 の商用ストアのサポートに関するヘルプ
 
-- [購入HoloLens 2](https://www.microsoft.com/hololens/buy)オプションの詳細については、このオプションHoloLens 2使用してください
-- 電話によるサポートが必要な場合は、コマーシャル ストア サポートの同僚と話すビジネス デスク番号の下の一覧を参照してください
-- Microsoft Store の外部での購入については、承認されたHoloLens 2リセラー[](hololens2-purchase.md)と、HoloLens 2利用可能な国の一覧を参照してください。
+- [購入 HoloLens 2](https://www.microsoft.com/hololens/buy)このオプションを使用して HoloLens 2 の価格とオプションの詳細を確認してください
+- 電話サポートによるサポートが必要な場合は、以下のビジネスデスク番号の一覧をご覧ください。
+- Microsoft Store 以外の購入については、HoloLens 2 が利用可能な、[認定 HoloLens 2 リセラーおよび国の一覧](hololens2-purchase.md)を参照してください。
 
-### <a name="commercial-store-support-numbers"></a>コマーシャル ストアのサポート番号
+### <a name="commercial-store-support-numbers"></a>商用ストアのサポート番号
 >[!Note]
->以下のいずれかの商用サポートの電話番号を使用して、購入を完了します。 
+>購入を完了するには、以下のいずれかの商用サポートの勤務先電話番号を使用してください。 
 
 >[!Note]
->以下に記載されていない市場からのサポートを求める場合は、米国のビジネス デスク番号に連絡してください。
+>以下に記載されていない市場からのサポートのためにを呼び出している場合は、米国のビジネスデスク番号でお問い合わせください。
 
-| 市場 | ビジネス デスク番号 | 営業時間 |
+| 市場 | ビジネスデスク番号 | 営業時間 |
 |-----------------|-------------------|-----------------------|
-| イギリス | +44 800 026 0061 | 月から金、午前 9 時から午後 6 時 |
-| ドイツ | +49 08 05 98 00 03 | 月から金、午前 9 時から午後 6 時 |
-| スウェーデン    | +46 20 120 3222   | 月から金、午前 9 時から午後 6 時 |
-| スイス | +41 800 662006 |    月から金、午前 9 時から午後 6 時 |
-| ベルギー | +32 80058153 |  月から金、午前 9 時から午後 6 時 |
-| オランダ | +31 8007482055 |    月から金、午前 9 時から午後 6 時 |
-| オーストリア | +43 800 943670 |    月から金、午前 9 時から午後 6 時 |
-| デンマーク | +45 80400184 |  月から金、午前 9 時から午後 6 時 |
-| アイルランド | +353 1800 832 653 | 月から金、午前 9 時から午後 6 時 |
-| イタリア |   +39 800598979 | 月から金、午前 9 時から午後 6 時 |
-| ルクセンブルク |  +352 80040425 | 月から金、午前 9 時から午後 6 時 |
-| スペイン |    +34 800 598979 |   月から金、午前 9 時から午後 6 時 |
-| ノルウェー |  +47 80062002 |  月から金、午前 9 時から午後 6 時 |
-| フィンランド | +358 800526136 |    月から金、午前 9 時から午後 6 時 |
-| ポルトガル |    +351 800600087 |    月から金、午前 9 時から午後 6 時 |
-| US |  866-425-4709 |  月から金、午前 6 時から午後 6 時、PST |
+| イギリス | + 44 800 026 0061 | 月曜から金曜、09AM から午後6時まで |
+| ドイツ | + 49 08 05 98 00 03 | 月曜から金曜、09AM から午後6時まで |
+| スウェーデン    | + 46 20 120 3222   | 月曜から金曜、09AM から午後6時まで |
+| スイス | + 41 800 662006 |    月曜から金曜、09AM から午後6時まで |
+| ベルギー | + 32 80058153 |  月曜から金曜、09AM から午後6時まで |
+| オランダ | + 31 8007482055 |    月曜から金曜、09AM から午後6時まで |
+| オーストリア | + 43 800 943670 |    月曜から金曜、09AM から午後6時まで |
+| デンマーク | + 45 80400184 |  月曜から金曜、09AM から午後6時まで |
+| アイルランド | + 353 1800 832 653 | 月曜から金曜、09AM から午後6時まで |
+| イタリア |   + 39 800598979 | 月曜から金曜、09AM から午後6時まで |
+| ルクセンブルク |  + 352 80040425 | 月曜から金曜、09AM から午後6時まで |
+| スペイン |    + 34 800 598979 |   月曜から金曜、09AM から午後6時まで |
+| ノルウェー |  + 47 80062002 |  月曜から金曜、09AM から午後6時まで |
+| フィンランド | + 358 800526136 |    月曜から金曜、09AM から午後6時まで |
+| ポルトガル |    + 351 800600087 |    月曜から金曜、09AM から午後6時まで |
+| US |  866-425-4709 |  月曜日 ~ 金曜日、午前から午後6時 (太平洋標準時) |
 | カナダ |  877-345-2661 |  月から金、午前 6 時から午後 6 時、PST |
 | 中国 |   400-805-6783 |  月から金、午前 9 時から午後 6 時 |
 | 日本 |   0120-03-5241 |  月から金、午前 9 時から午後 5 時 30 分 |

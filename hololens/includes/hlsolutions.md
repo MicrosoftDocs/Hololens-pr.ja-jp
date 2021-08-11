@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 628f30668452846b21c5042b25e8d98ed7a372ad
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: a817c62f55ce9fa0cf681129a2afef8254995f67949a5e065203563c4f360f85
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113659567"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665347"
 ---
 ## <a name="hololens-2-solutions"></a>HoloLens 2 のソリューション
 

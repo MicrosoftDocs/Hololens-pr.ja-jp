@@ -13,12 +13,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 66271911a4692dea89b6338cc8c77a05dfcaae1d
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: c510738595e234b30395aafa309d42bd33affb7889a3174f2e708ba1aac56626
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397393"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664904"
 ---
 # <a name="use-the-start-menu-and-mixed-reality-home"></a>スタート メニューと Mixed Reality ホームを使用する
 

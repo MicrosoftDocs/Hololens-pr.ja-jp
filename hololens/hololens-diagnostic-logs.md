@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 082a263bdd7eba694c13124abf40763644c83dfa
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 96fe9492da035747a22123ee1cd0c1481cd821a4f2e549b6414a21810ec268d6
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640442"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665303"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>HoloLens デバイスから診断情報を収集して使用する
 
@@ -39,7 +39,7 @@ HoloLens のユーザーと管理者は、HoloLens から診断情報を収集�
 
 次の表は、さまざまな収集方法を比較したものです。 メソッド名は、テーブルに続くセクションの詳細情報にリンクされています。
 
-|メソッド |前提条件 |データの場所 |データアクセスと使用 |データ保持期間 |
+|メソッド |前提条件 |データの場所 |データアクセスと使用 |データの保持 |
 | --- | --- | --- | --- | --- |
 |[フィードバック Hub](#feedback-hub) |ネットワークとインターネット接続<br /><br />フィードバックハブアプリ<br /><br />Microsoft クラウドにファイルをアップロードするためのアクセス許可 |Microsoft クラウド<br /><br />HoloLens デバイス (オプション) |ユーザーがアシスタンスを要求し、使用条件に同意して、データをアップロードする<br /><br />Microsoft の従業員が使用条件に従ってデータを表示する |クラウド内のデータは、次世代プライバシー (NGP) で定義されている期間にわたって保持されます。 その後、データは自動的に削除されます。<br /><br />デバイス上のデータは、 **デバイスの所有者** または **管理者** のアクセス許可を持つユーザーがいつでも削除できます。 |
 |[設定診断](#settings-troubleshooter) |設定アプリ |HoloLens デバイス<br /><br />接続されたコンピューター (オプション) |ユーザーはデータを保存し、ユーザーのみがデータにアクセスします (ユーザーが明示的に別のユーザーとデータを共有している場合を除く)。 |データは、ユーザーが削除するまでデバイスに保持されます。 * |

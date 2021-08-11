@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: b5ae9b0d6859c0f916b5b906e2e9ec54cad6cbd9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 7cf35a10a5f18dc0ccca876230b1677c6eca54ad116f0b2045fc1b269ac6c4b0
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661890"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>Windows Holographic for Business 機能のロック解除
 
@@ -55,7 +55,7 @@ Microsoft Intune を使用して HoloLens をアップグレードする手順�
     > [!NOTE]
     > [プロビジョニング パッケージでは追加の設定](hololens-provisioning.md)を構成できます。
 
-1. **[ファイル]** メニューの **[保存]** をクリックします。 
+1. **[ファイル]** メニューで、 **[保存]** を選択します。 
 
 1. プロジェクトファイルに機密情報が含まれている可能性があることを示す警告を確認し、[ **OK]** をクリックします。
 

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 26fd2def8ce1fa8f960ab930e209c74fb37e2e0a
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 8bba313e7b5ee3d055c2b6ff2c60810baf428ecfa7d5554a1efb4e0aa9e1e98b
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639762"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660316"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>展開ガイド–リモートアシスタンスを使用したクラウド接続 HoloLens 2-概要
 
@@ -49,20 +49,20 @@ HoloLens 2 を展開するには、次のインフラストラクチャが配置
 
 ### <a name="remote-assist-licensing-and-requirements"></a>リモートアシスタンスのライセンスと要件
 
-- Azure AD アカウント (サブスクリプションの購入とライセンスの割り当てに必要)
-- [リモートアシスタンスサブスクリプション](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (または [リモートアシスタンス試用版](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
+- Azure AD アカウント (サブスクリプションの購入とライセンスの割り当てに必要です)
+- [Remote Assist のサブスクリプション](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (または [Remote Assist 試用版](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
     
 #### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist ユーザー
 
-- リモート支援ライセンス
+- Remote Assist ライセンス
 - ネットワーク接続
 
 #### <a name="microsoft-teams-user"></a>Microsoft Teams ユーザー
 
-- Microsoft Teams または[Teams フリーミアム](https://products.office.com/microsoft-teams/free)。
+- Microsoft Teams または [Teams Freemium](https://products.office.com/microsoft-teams/free)。
 - ネットワーク接続
 
-この [クロステナントシナリオ](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)を実装する予定がある場合は、情報バリアライセンスが必要になることがあります。 情報バリアライセンスが必要かどうかを判断するには、「[ベンダーと顧客がフル Dynamics 365 Remote Assist 機能を使用する](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)」を参照してください。
+この[クロステナント シナリオ](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)を実装する予定の場合は、Information Barriers ライセンスが必要になる可能性があります。 情報バリアライセンスが必要かどうかを判断するには、「[ベンダーと顧客がフル Dynamics 365 Remote Assist 機能を使用する](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)」を参照してください。
 
 ## <a name="in-this-guide-you-will"></a>このガイドで行うこと:
 

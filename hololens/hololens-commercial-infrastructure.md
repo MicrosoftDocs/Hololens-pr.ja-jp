@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e3f87c524ce0f8af05ec8c92877d46facd962fb4
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 3aa5ed676a9f8864904752da3d965cba5fab7ce98db51abb4ff9444f1a0a370b
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639286"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664437"
 ---
 # <a name="configure-your-network-for-hololens"></a>HoloLens 向けにネットワークを構成する
 
@@ -171,7 +171,7 @@ Commercial Suite へのアップグレード手順については、[Holographic
     1. **[管理] > [製品とサービス] > [アプリとソフトウェア] の順に選択し、同期するアプリを選択し、[Private Store Availability]\(プライベート ストアの可用性\) を選択し、[すべてのユーザー] または [Specific Groups]\(特定のグループ\) を選択します**
         >[!NOTE]
         >目的のアプリが表示されない場合は、ストアを検索してアプリを "取得" する必要があります。 **右上隅にある [検索] バーをクリックし、アプリの名前を入力し、アプリをクリックし、[取得] を選択します**。
-    1. **[Intune] > [クライアント アプリ] > [アプリ]** にアプリが表示されない場合は、必要に応じてもう一度[アプリを同期](/intune/apps/windows-store-for-business#synchronize-apps)します。
+    1. **[Intune] > [クライアント アプリ] > [アプリ]** にアプリが表示されない場合は、必要に応じてもう一度 [アプリを同期](/intune/apps/windows-store-for-business#synchronize-apps)します。
 
 1. [キオスク モード用のデバイス プロファイルを作成します](/intune/configuration/kiosk-settings#create-the-profile)
 

@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7f712c571df1170badf3bfc832e43881278eec90
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d9a0901a916ec33c076eeae33b680406a45f7feefe82442da1f346e78bc9b383
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663802"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>プロビジョニングパッケージを使用して HoloLens を構成する
 
@@ -237,7 +237,7 @@ Windows 構成デザイナーで、Windows Holographic 向けプロビジョニ�
 
 ![HoloLens 用の一般的な実行時設定](images/icd-settings.png)
 
-| 設定 | 説明 |
+| 設定 | [説明] |
 | --- | --- |
 | **証明書** | 証明書を HoloLens に展開します。  |
 | **ConnectivityProfiles** | Wi-Fi プロファイルを HoloLens に展開します。   |

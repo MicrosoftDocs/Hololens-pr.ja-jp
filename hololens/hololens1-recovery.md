@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4840535030cc81f222cb25357474f1c751426e91
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: d6eb706c50e97a81910180c70be1d9dbc52bc6603cbc77ad130c1dd3b6a9010e
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635230"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661806"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>HoloLens の再起動、リセット、または回復 (第1世代)
 
@@ -91,15 +91,15 @@ HoloLens を再起動する最も安全な方法は、Cortana を使用するこ
 
 1. PC に接続されている携帯電話や Windows デバイスがないことを確認します。
 1. PC で、 [Windows Device Recovery Tool (wdrt)](https://support.microsoft.com/help/12379)をダウンロードします。
-1. [HoloLens 記念日更新プログラムの回復パッケージ](https://aka.ms/hololensrecovery)をダウンロードします。
+1. [HoloLens Anniversary Update 回復パッケージ](https://aka.ms/hololensrecovery)をダウンロードします。
 1. ダウンロードが完了したら、**エクスプローラー** の [ダウンロード] を開き  >  ます。 ダウンロードした zip 形式のフォルダーを右クリックし、[**すべて** 抽出] を選択し  >  て解凍します。
 1. 付属のマイクロ USB ケーブルを使用して、HoloLens を PC に Connect します。 (他のケーブルを使って HoloLens に接続していたとしても、この方法は最適です)。
-1. WDRT は、HoloLens を自動的に検出します。 [ **Microsoft HoloLens** ] タイルを選択します。
+1. WDRT は、HoloLens を自動的に検出します。 **[Microsoft HoloLens]** タイルを選択します。
 1. 次の画面で、[ **パッケージの手動選択** ] を選択し、手順 4. で解凍したフォルダーに格納されているインストールファイルを選択します。 (拡張子が ffu のファイルを探します。)
 1. [ **ソフトウェアのインストール**] を選択し、指示に従います。
 
 > [!NOTE]
-> wdrt によって HoloLens が検出されない場合は、PC を再起動してみてください。 それでもうまくいかない場合は、[**デバイスが検出されませんでした**] を選択し、[ **Microsoft HoloLens**] を選択して、指示に従います。
+> wdrt によって HoloLens が検出されない場合は、PC を再起動してみてください。 それでも機能しなかった場合は **[デバイスが検出されていない]** を選択し、 **[Microsoft HoloLens]** を選択して、指示に従います。
 
 ## <a name="reset-to-factory-settings"></a>工場出荷時の設定にリセットする
 
@@ -142,8 +142,8 @@ HoloLens (第1世代) が自動的に検出されなかった場合は、[**デ�
 
 1. 任意の電源からデバイスを取り外します。
 1. デバイスがオンになっている場合は、 **電源** ボタンを押したままにすると、完全にオフになります。
-2. [ **音量** ] ボタンを押したまま、[ **電源** ] ボタンを簡単にタップします。 デバイスが起動し、中央の LED のみが表示されます。
+2. 音量を **上げボタン** を押したまま、電源ボタンを簡単 **にタップ** します。 デバイスが起動し、中央の LED のみを表示する必要があります。
 3. デバイスを PC に接続します。
-4. Windows デバイスの回復ツールを開きます。
-5. [**デバイスが検出されませんでした**] を選択し、 **HoloLens** します。 
-6. 指示に従って、デバイスを回復します。
+4. Windows Device Recovery ツールを開きます。
+5. [**デバイスが検出されていない] を選択し**、**をHoloLens。** 
+6. 指示に従ってデバイスを回復します。

@@ -1,6 +1,6 @@
 ---
-title: HoloLens のローカライズ版をインストールする
-description: HoloLens のローカライズ版 (第1世代) をインストールする方法について説明します (中国語と日本語のバージョンを含む)。
+title: ローカライズされたバージョンのアプリケーションをインストールHoloLens
+description: 中国語と日本語のバージョンを含む、HoloLens (第 1 世代) のローカライズされたバージョンをインストールする方法について説明します。
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,32 +13,32 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 74eb003aafd23218b90988abe113d35f1fc3035a
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: fe29e4ed611f86764f0db576b1a8794fa0ceec3047cadd26f502209faadea8b0
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108310061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661805"
 ---
-# <a name="install-localized-versions-of-hololens-1st-gen"></a>HoloLens のローカライズ版をインストールする (第1世代)
+# <a name="install-localized-versions-of-hololens-1st-gen"></a>ローカライズされたバージョンの HoloLens (第 1 世代) をインストールする
 
-HoloLens の簡体字中国語または日本語版に切り替えるには、Windows デバイス回復ツール (WDRT) を使用して、PC の言語のビルドをダウンロードし、HoloLens にインストールする必要があります。
+中国語または日本語バージョンの HoloLens に切り替えるには、Windows Device Recovery Tool (WDRT) を使用して、PC 上の言語のビルドをダウンロードし、HoloLens にインストールする必要があります。
 
 > [!IMPORTANT]
-> HoloLens の中国語版または日本語版をインストールするために WDRT を使用すると、個人のファイルや設定などの既存のデータが HoloLens から削除されます。 
+> WDRT を使用して、中国語または日本語のビルドをインストールすると、HoloLensファイルや設定などの既存のデータが削除HoloLens。 
 
-1. PC で、 [Windows デバイス回復ツール (WDRT)](https://support.microsoft.com/help/12379)をダウンロードしてインストールします。
-1. お使いの PC に必要な言語 (簡  [体字中国語](https://aka.ms/hololensdownload-ch) または [日本語](https://aka.ms/hololensdownload-jp)) のパッケージをダウンロードします。
-1. ダウンロードが完了したら、[**エクスプローラー** のダウンロード] を選択し  >  ます。 ダウンロードした zip 形式のフォルダーを右クリックし、[**すべて** 抽出] を選択し  >  て解凍します。
-1. HoloLens を、同梱のマイクロ USB ケーブルを使用して PC に接続します。 (他のケーブルを使用して HoloLens に接続している場合でも、これは最適な方法です)。
-1. 自動的に HoloLens が検出されたら、[Microsoft HoloLens] タイルを選択します。
-1. 次の画面で、[ **パッケージの手動選択**] を選択   し、手順 4. で解凍したフォルダーに存在するインストールファイルを選択します。 (拡張子が ". ffu" のファイルを探します)。 
-1. [ **ソフトウェアのインストール** ] を選択し、指示に従います。 
-1. ビルドのインストールが完了すると、HoloLens セットアップが自動的に開始されます。 デバイスに移動し、セットアップの指示に従います。 
+1. お使いの PC で、Windows [Device Recovery Tool (WDRT) をダウンロードしてインストールします](https://support.microsoft.com/help/12379)。
+1. PC に必要な言語のパッケージをダウンロードします:[簡体中国語または日本語](https://aka.ms/hololensdownload-ch)[。](https://aka.ms/hololensdownload-jp)
+1. ダウンロードが完了したら、[ダウンロード]**をエクスプローラー**  >  **選択します**。 ダウンロードした zip 形式のフォルダーを右クリックし、[すべての抽出] を選択して  >  解凍します。
+1. Connect付属HoloLensマイクロ USB ケーブルを使用して、PC に接続します。 (他のケーブルを使用して接続している場合でも、HoloLens最適です)。
+1. ツールによってアプリケーションが自動的に検出された後HoloLensタイルをMicrosoft HoloLensします。
+1. 次の画面で、[手動 **パッケージの** 選択] を選択し、手順 4. で展開したフォルダーにあるインストール ファイル   を選択します。 (拡張子が ".ffu" のファイルを探します)。) 
+1. [ソフトウェア **のインストール] を** 選択し、指示に従います。 
+1. ビルドがインストールされると、セットアップHoloLens自動的に開始されます。 デバイスに取り付け、セットアップの指示に従います。 
 
-セットアップが完了したら、[**設定**] [  >  **更新 & セキュリティ**  >  ] [**Windows Insider program**] にアクセスして、最新のプレビュービルドを受信するように構成されていることを確認します。 英語版のプレビュービルドと同様に、Windows Insider Program では、最新のプレビュービルドを使用して、HoloLens の中国語および日本語バージョンを最新の状態に保つことができます。
+セットアップが完了したら、設定 Update & Security Windows Insider Program に移動し、最新のプレビュー ビルドを受信するように構成されていることを  >    >  確認します。 英語のプレビュー ビルドと同様に、Windows Insider Programは最新のプレビュー ビルドを使用して、HoloLensの中国語と日本語のバージョンを最新のバージョンに保っています。
 
 > [!NOTE]
 >  
-> - 設定アプリを使用して、英語、日本語、および中国語のシステム言語を変更することはできません。 デバイスシステムの言語を変更する唯一の方法は、新しいビルドを点滅させることです。
-> - スクリーン Pinyin キーボードを使用して簡体字中国語または日本語のテキストを入力できますが、この時点では、Bluetooth ハードウェアキーボードを使用して簡体字中国語または日本語のテキストを入力することはできません。  ただし、中国語または日本語の HoloLens では、Bluetooth キーボードを使用して英語で入力できます (ハードウェアキーボードを使用して英語の種類に切り替えるには、~ キーを押します)。
+> - 英語、日本語、中国語設定の間でシステム言語を変更するには、アプリでアプリを使用することはできません。 新しいビルドをフラッシュする方法は、デバイス システムの言語を変更する唯一のサポートされている方法です。
+> - 画面の Pinyin キーボードを使用して簡体中国語または日本語のテキストを入力することもできますが、現時点では、Bluetooth ハードウェア キーボードを使用して簡体中国語または日本語のテキストを入力することはできません。  ただし、中国語または日本語の HoloLens では、引き続き Bluetooth キーボードを使用して英語で入力できます (ハードウェア キーボードを英語で入力するには、 ~ キーを押します)。

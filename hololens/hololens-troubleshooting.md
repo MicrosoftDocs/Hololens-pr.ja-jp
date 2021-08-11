@@ -13,19 +13,19 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 問題、バグ、トラブルシューティング、修正、ヘルプ、サポート、HoloLens、エミュレーター
-ms.openlocfilehash: b07514e73e43d267aa856c0fb9a256448e565000
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 5501e036b5852833b7ff26445a98c3378ae6963c96114e26bf588eb33a56f6f0
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635451"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662881"
 ---
 # <a name="device-troubleshooting"></a>デバイスのトラブルシューティング
 
 この記事では、いくつかの一般的な HoloLens の問題を解決する方法について説明します。
 
 >[!IMPORTANT]
-> トラブルシューティングの手順を開始する前に、可能であれば、デバイスがバッテリ容量の **20 ~ 40%** に充電されていることを確認してください。 電源ボタンの下にある [バッテリインジケーターライト](hololens2-setup.md#lights-that-indicate-the-battery-level) は、デバイスにログインしなくてもバッテリ容量を確認するための簡単な方法です。
+> トラブルシューティングの手順を開始する前に、可能であれば、デバイスのバッテリ容量が **20 - 40%** 残っていることを確認してください。 電源 ボタンの下 にある[バッテリ インジケーター ライト](hololens2-setup.md#lights-that-indicate-the-battery-level)により、デバイスにログインせずにバッテリ容量を簡単に確認できます。
 
 <a id="list"></a>
 
@@ -80,7 +80,7 @@ ms.locfileid: "113635451"
 
 Windows Holographic でデバイスをすぐに再起動するには [、バージョン 21h1](hololens-release-notes.md#windows-holographic-version-21h1)で [スタート] メニューを開き、[ユーザー] アイコンを選択し、[**再起動**] を選択します。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="auto-login-asks-for-log-in"></a>自動ログインによるログインの要求
 
@@ -101,7 +101,7 @@ HoloLens 2 デバイスは、**設定** アカウントのサインイン > オ�
 - PIN、パスワード、虹彩、Web 認証、FIDO2 キーなどのサインイン方法。
 - デバイスの PIN を記憶できず、他の認証方法を使用できない場合、ユーザーは [手動の reflashing モード](hololens-recovery.md#manual-procedure)を使用できます。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="microsoft-edge-fails-to-launch"></a>Microsoft Edge を起動できない
 
@@ -112,7 +112,7 @@ HoloLens 2 デバイスは、**設定** アカウントのサインイン > オ�
 
 これまでに根本原因を根本的に解決できないため、既知の回避策はありません。 フィードバックハブを使用してバグを提出すると、調査に役立ちます。 これは **既知の問題** です。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="keyboard-doesnt-switch-to-special-characters"></a>キーボードが特殊文字に切り替わることはありません
 
@@ -128,7 +128,7 @@ OOBE 中に、ユーザーが職場または学校のアカウントを選択し
 これは、次のようには影響しません。
 - 個人のアカウントを使用することを選択したユーザー。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="downloading-locked-files-doesnt-error"></a>ロックされたファイルのダウンロードエラー
 
@@ -137,7 +137,7 @@ OOBE 中に、ユーザーが職場または学校のアカウントを選択し
 
 Windows Holographic の以前のビルドでは、ロックされたファイルをダウンロードしようとすると、結果は HTTP エラーページになります。 Windows Holographic バージョン21h1 更新プログラムでは、ロックされたファイルをダウンロードしようとしても、何も表示されません。ファイルはダウンロードされず、エラーもありません。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="device-portal-file-uploaddownload-times-out"></a>デバイスポータルファイルのアップロード/ダウンロードがタイムアウトする
 > [!NOTE]
@@ -152,7 +152,7 @@ Windows Holographic の以前のビルドでは、ロックされたファイル
 
 ユーザーは、https://(IP アドレス) ではなく http://にアクセスし、ファイルのアップロードやダウンロードなどの機能を使用できます。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build"></a>Insider build を使用してフラッシュされたデバイスで Insider preview から登録解除した後のブルースクリーン
 
@@ -176,7 +176,7 @@ Windows Holographic の以前のビルドでは、ロックされたファイル
     
     1. HoloLens 2 を既定のビルドにフラッシュします。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="onedrive-doesnt-automatically-upload-pictures"></a>画像が自動的にアップロードされない OneDrive
 
@@ -188,7 +188,7 @@ HoloLens 用の OneDrive アプリでは、職場または学校アカウント�
 
 - 写真を自動的にアップロードするためにコンシューマー Microsoft アカウントを安全に使用できない場合は、OneDrive アプリから職場または学校のアカウントに写真を手動でアップロードできます。 これを行うには、OneDrive アプリで職場または学校のアカウントにサインインしていることを確認します。 ボタンを選択し、[ **+** **アップロード**] を選択します。 [ **ピクチャ > カメラロール** に移動して、アップロードする写真またはビデオを検索します。 アップロードする写真またはビデオを選択し、[ **開く** ] ボタンを選択します。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="hololens-is-unresponsive-or-wont-start"></a>HoloLens が応答していないか、開始されていません
 
@@ -203,7 +203,7 @@ HoloLens がフリーズまたは応答しなくなった場合は、次のよ�
 
 これらの手順がうまくいかない場合は、HoloLens 2 デバイスまたは[HoloLens (第1世代) デバイス](hololens1-recovery.md)[の回復](hololens-recovery.md)を試すことができます。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="low-disk-space-error"></a>"ディスク領域が不足しています" エラー
 
@@ -214,7 +214,7 @@ HoloLens がフリーズまたは応答しなくなった場合は、次のよ�
 - 写真アプリから一部の画像とビデオを削除します。
 - HoloLens から一部のアプリをアンインストールします。 [ **すべてのアプリ** ] 一覧で、アンインストールするアプリをタップして保持し、[ **アンインストール**] を選択します。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="calibration-fails"></a>調整が失敗する
 
@@ -244,13 +244,13 @@ HoloLens がフリーズまたは応答しなくなった場合は、次のよ�
 
 視線位置はシステムによって計算されるため、IPD の設定は HoloLens 2 には適用されません。 
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>HoloLens が既に他のユーザーに設定されているため、サインインできません
 
 デバイスを [**点滅モード** にし、Advanced Recovery コンパニオンを使用](hololens-recovery.md#clean-reflash-the-device)してデバイスを回復することができます。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 
 ## <a name="unity-isnt-working"></a>Unity が動作しない
@@ -258,7 +258,7 @@ HoloLens がフリーズまたは応答しなくなった場合は、次のよ�
 - HoloLens 開発に推奨される Unity の最新バージョン用の[ツールをインストール](/windows/mixed-reality/install-the-tools)することをお勧めします。
 - unity HoloLens Technical Preview の既知の問題については、 [HoloLens unity フォーラム](https://forum.unity3d.com/threads/known-issues.394627/)をご覧ください。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="windows-device-portal-isnt-working-correctly"></a>Windowsデバイスポータルが正しく動作していません
 
@@ -268,7 +268,7 @@ HoloLens がフリーズまたは応答しなくなった場合は、次のよ�
 
 - 設定で開発者モードを有効にした後、デバイスポータルをオンにするスイッチが有効になるまで数秒かかることがあります。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="the-hololens-emulator-isnt-working"></a>HoloLens Emulator が機能していません
 
@@ -279,7 +279,7 @@ HoloLens エミュレーターに関する情報は、開発者向けのドキ�
 - Emulator では、PC web カメラを使用できません。
 - Windows デバイスポータルのライブプレビュー機能は、エミュレーターでは機能しません。 混合した現実のビデオとイメージをキャプチャすることもできます。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="voice-commands-arent-working"></a>音声コマンドが動作していません
 
@@ -289,7 +289,7 @@ HoloLens (第1世代) では、組み込み音声認識は構成できません�
 
 HoloLens 2 が音声に応答していない場合は、音声認識が有効になっていることを確認します。 [**スタート**  >  **設定**  >  **のプライバシー** に関する音声] を開き  >   、**音声認識** をオンにします。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="hand-input-isnt-working"></a>手書き入力が機能していません
 
@@ -303,18 +303,18 @@ HoloLens が自分の手を見えるようにするには、ジェスチャフ�
 
 バイザーに指紋または汚れがある場合は、HoloLens に付属しているマイクロファイバークリーニング布を使用して、バイザーをゆっくりとクリーニングします。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="cant-connect-to-wi-fi"></a>Wi-Fi に接続できません
 
-HoloLens を Wi-Fi ネットワークに接続できない場合は、次の点を試してみてください。
+HoloLens を Wi-Fi ネットワークに接続できない場合は、以下を試してください。
 
-- Wi-Fi が有効になっていることを確認します。 確認するには、開始ジェスチャを使用して、[**設定** ネットワーク] [  >  **&amp; インターネット** wi-fi] の順に選択し  >  ます。 Wi-Fi がオンになっている場合は、オフにしてから再度有効にしてみてください。
-- ルーターまたはアクセスポイントに近い場所に移動します。
+- Wi-Fi がオンになっていることを確認してください。 確認するには、開始ジェスチャを使用して、[**設定** ネットワーク] [  >  **&amp; インターネット** wi-fi] の順に選択し  >  ます。 Wi-Fi がオンである場合は、オフにしてから、もう一度オンにしてみてください。
+- ルーターまたはアクセス ポイントに PC を近づけます。
 - Wi-Fi ルーターを再起動し、 [HoloLens を再起動](hololens-recovery.md)します。 接続を再試行してください。
-- これらの問題が解決しない場合は、ルーターが最新のファームウェアを使用していることを確認してください。 この情報については、製造元の web サイトを参照してください。
+- これらのいずれも機能しない場合は、ルーターのファームウェアが最新であるか確認します。 この情報は、製造元の Web サイトで見つけることができます。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="bluetooth-devices-arent-pairing"></a>Bluetooth デバイスがペアリングしていない
 
@@ -324,7 +324,7 @@ HoloLens を Wi-Fi ネットワークに接続できない場合は、次の点�
 - Bluetooth デバイスが完全に充電されていること、または電池が最新であることを確認します。
 - それでも接続できない場合は、 [HoloLens を再起動](hololens-recovery.md)します。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)
 
 ## <a name="usb-c-microphone-isnt-working"></a>USB C マイクが動作していない
 USB C のマイクによっては、マイク *と* スピーカーの両方として誤って報告されることに注意してください。 これは、HoloLens ではなく、マイクに問題があります。 これらのマイクの1つを HoloLens に接続すると、サウンドが失われる可能性があります。 幸いにも、簡単な修正があります。  
@@ -347,4 +347,4 @@ Bluetooth デバイスの使用に問題がある場合は、それがサポー�
 
 他の Bluetooth HID および GATT デバイスを HoloLens とペアリングできます。 ただし、デバイスを実際に使用するには、Microsoft Store から対応するコンパニオンアプリをインストールすることが必要になる場合があります。
 
-[リストに戻る](#list)
+[一覧に戻る](#list)

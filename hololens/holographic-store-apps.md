@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: bbbc60decb74942bd7930afb04297f78df33028a
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: c26c3a236a1047e62d480c27ec1bbb09faa63630eb29e0e1103546842d6a76d3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635859"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664793"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Microsoft Store のアプリケーションの検索、インストール、アンインストール
 
@@ -60,7 +60,7 @@ HoloLens では、Microsoft Store の多くの既存のアプリケーション�
 > [!TIP]
 > 支払い方法を設定するには、[account.microsoft.com](https://account.microsoft.com/) に移動し、 **[支払いと請求]**  >  **[支払いオプション]**  >  **[Add a payment option]\(支払いオプションの追加\)** を選択します。
 
-1. [ **[スタート]** メニュー](holographic-home.md)を開くには、HoloLens (第 1 世代) で[スタート ジェスチャ](/hololens/hololens2-basic-usage#start-gesture)または[ブルーム](hololens1-basic-usage.md) ジェスチャを実行します。
+1. [ **[スタート]** メニュー](holographic-home.md)を開くには、HoloLens (第 1 世代) で [スタート ジェスチャ](/hololens/hololens2-basic-usage#start-gesture)または [ブルーム](hololens1-basic-usage.md) ジェスチャを実行します。
 
 1. Microsoft Store アプリを選択します。 Store アプリが開いたら、次の手順を実行します。
    1. 検索バーを使用してアプリケーションを検索します。 
@@ -73,7 +73,7 @@ HoloLens では、Microsoft Store の多くの既存のアプリケーション�
 
 Microsoft Store からインストールしたアプリを更新するには、Microsoft Store アプリからアプリを更新できます。 ビジネス向け Microsoft Store 用にインストールされたアプリの場合には、ビジネス向け Microsoft Store からそれらのアプリを更新することもできます。 
 
-1. [ **[スタート]** メニュー](holographic-home.md)を開くには、HoloLens (第 1 世代) で[スタート ジェスチャ](/hololens/hololens2-basic-usage#start-gesture)または[ブルーム](hololens1-basic-usage.md) ジェスチャを実行します。
+1. [ **[スタート]** メニュー](holographic-home.md)を開くには、HoloLens (第 1 世代) で [スタート ジェスチャ](/hololens/hololens2-basic-usage#start-gesture)または [ブルーム](hololens1-basic-usage.md) ジェスチャを実行します。
 
 1. Store アプリを選択します。
 

@@ -14,12 +14,12 @@ manager: jarrettr
 ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
-ms.openlocfilehash: 36991d62da91011b807dfb9ff52ab16eadac8bc7
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d2a8ae420a0c1d646625fe81b166e2daae07e44652b70f2e4a1b19ccba240cfb
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640306"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663949"
 ---
 # <a name="known-issues-for-hololens-1st-gen"></a>HoloLens (第 1 世代) に関する既知の問題
 
@@ -67,7 +67,7 @@ OneDriveアプリではHoloLensまたは学校アカウントの自動カメラ 
 
 Visual Studio VS 2019 バージョン 16.2 がリリースされました。これには、この問題の修正プログラムが含まれています。 このエラーが発生しないように、この最新バージョンに更新することをお勧めします。
 
-問題の根本原因: Visual Studio 2015 または Visual Studio 2017 の初期リリースを使用して HoloLens でアプリケーションをデプロイおよびデバッグし、その後、同じ HoloLens で Visual Studio 2017 または Visual Studio 2019 の最新バージョンを使用したユーザーが影響を受ける可能性があります。 新しいリリースの Visual Studioコンポーネントをデプロイする場合がありますが、古いバージョンのファイルはデバイスに残され、新しいバージョンは失敗します。  これにより、次のエラー メッセージが表示されます: DEP0100: ターゲット デバイスで開発者モードが有効になっている必要があります。 エラー \<ip\> 80004005 が原因で 開発者ライセンスを取得できない。
+問題の根本原因: Visual Studio 2015 または Visual Studio 2017 の初期リリースを使用して HoloLens でアプリケーションをデプロイおよびデバッグし、その後、同じ HoloLens で Visual Studio 2017 または Visual Studio 2019 の最新バージョンを使用したユーザーが影響を受ける可能性があります。 新しいリリースの Visual Studioコンポーネントをデプロイする場合がありますが、古いバージョンのファイルはデバイスに残され、新しいバージョンは失敗します。  これにより、次のエラー メッセージが表示されます: DEP0100: ターゲット デバイスで開発者モードが有効になっている必要があります。 エラーが発生し、開発者ライセンスを取得 \<ip\> 80004005。
 
 #### <a name="workaround"></a>回避策
 

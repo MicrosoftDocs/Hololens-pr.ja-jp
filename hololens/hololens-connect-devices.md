@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5fed56d7a0beeda0a0d96eddc63aaee872f3e52d
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 1e478e366b8ad70243f6fffc47cd62e847af837637a992ebb60fc80bf6774186
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639099"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664294"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Bluetooth および USB-C デバイスに接続する
 

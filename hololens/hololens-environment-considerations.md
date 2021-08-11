@@ -10,12 +10,12 @@ ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
 keywords: ホログラフィック フレーム, 視野, fov, 調整, 空間, 環境, 方法, HoloLens, Mixed Reality, Mixed Reality ヘットセット
-ms.openlocfilehash: 6976527d759e768fa5da72f96395a8b7b390cefd
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: bf70641958d6f29735512182fdf33ae48f40b956f3335643faeb5edb8a26f79f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924351"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664160"
 ---
 # <a name="hololens-environment-considerations"></a>HoloLens 環境に関する考慮事項
 

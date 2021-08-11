@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 25227184ec33b134215dbd1f42f7b920b26dc29c
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: e7f1efa99cc16b1003bd7063817451013ed2ec2661dbdf02edcd89c7984d0980
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659592"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664007"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>HoloLens をキオスクとしてセットアップする
 
@@ -98,87 +98,87 @@ ms.locfileid: "114659592"
 
 シングル アプリ キオスクを構成Windows デバイス ポータルを使用する場合は、セットアップ プロセス中にアプリを選択します。  
 
-Mobile デバイス管理 (MDM) システムまたはプロビジョニング パッケージを使用してキオスク モードを構成する場合は [、AssignedAccess 構成](/windows/client-management/mdm/assignedaccess-csp) サービス プロバイダー (CSP) を使用してアプリケーションを指定します。 CSP は、 [アプリケーション を識別するためにアプリケーション ユーザー モデル ID (AUMID)](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) を使用します。 次の表に、マルチアプリキオスクで使用できるいくつかのインボックスアプリケーションの AUMIDs を示します。
+Mobile デバイス管理 (MDM) システムまたはプロビジョニング パッケージを使用してキオスク モードを構成する場合は [、AssignedAccess 構成](/windows/client-management/mdm/assignedaccess-csp) サービス プロバイダー (CSP) を使用してアプリケーションを指定します。 CSP は、 [アプリケーション を識別するためにアプリケーション ユーザー モデル ID (AUMID)](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) を使用します。 次の表に、マルチアプリ キオスクで使用できる一部のインボックス アプリケーションの AUMID を示します。
 
 > [!IMPORTANT]
-> キオスクモードでは、ユーザーがデバイスにサインインしたときに利用できるアプリを決定します。 ただし、キオスクモードはセキュリティメソッドではありません。 許可されていない別のアプリを開くことが許可されていないアプリを停止することはありません。 この動作を制限しないため、アプリは Edge、ファイルエクスプローラー、および Microsoft Store アプリから起動できます。 キオスクから起動したくない特定のアプリがある場合は、 [Windows Defender アプリケーション制御 (WDAC) CSP](/windows/client-management/mdm/applicationcontrol-csp)を使用して適切なポリシーを作成します。 
+> キオスク モードは、ユーザーがデバイスにサインインするときに使用できるアプリを決定します。 ただし、キオスク モードはセキュリティ方法ではありません。 "許可された" アプリが、許可されていない別のアプリを開くのを停止しない。 この動作は制限されていないので、Edge、エクスプローラー、およびアプリからアプリを起動Microsoft Storeできます。 キオスクから起動したくない特定のアプリがある場合は[、Windows Defender Application Control (WDAC) CSP](/windows/client-management/mdm/applicationcontrol-csp)を使用して適切なポリシーを作成します。 
 > 
-> また、Mixed Reality ホームをキオスクアプリとして設定することはできません。
+> さらに、Mixed Reality Home をキオスク アプリとして設定できない。
 
 <a id="aumids"></a>
 
 |アプリ名 |AUMID |
 | --- | --- |
-|3D ビューアー |Microsoft3DViewer \_ 8Wekyb3d8bbwe \! Microsoft3DViewer |
-|Calendar |windowscommunicationsapps \_ 8wekyb3d8bbwe \! microsoft. live |
+|3D ビューアー |Microsoft.Microsoft3DViewer \_ 8wekyb3d8bbwe \! Microsoft.Microsoft3DViewer |
+|Calendar |microsoft.windowscommunicationsapps \_ 8wekyb3d8bbwe \! microsoft.windowslive.calendar |
 |カメラ<sup>1、2</sup> |HoloCamera \_ cw5n1h2txyewy \! HoloCamera |
-|Cortana<sup>3</sup> |Microsoft 549981C3F5F10 \_ 8wekyb3d8bbwe \! アプリ |
-|HoloLens のデバイスピッカー (第1世代) |HoloDevicesFlow \_ cw5n1h2txyewy \! HoloDevicesFlow |
-|HoloLens 2 でのデバイスの選択 |エクスプローラー.Windows。DevicesFlowHost \_ cw5n1h2txyewy \! Microsoft. Windows。DevicesFlowHost |
-|Dynamics 365 Guides |Dynamics365 \_ 8wekyb3d8bbwe の \! ガイド |
-|Dynamics 365 Remote Assist |Microsoft office Remoteassist \_ 8wekyb3d8bbwe \! Microsoft. remoteassist |
-|フィードバック &nbsp; ハブ |Microsoft Windowsフィード Backhub \_ 8wekyb3d8bbwe \! アプリ |
+|Cortana<sup>3</sup> |Microsoft.549981C3F5F10 \_ 8wekyb3d8bbwe \! アプリ |
+|HoloLens デバイス ピッカー (第 1 世代) |HoloDevicesFlow \_ cw5n1h2txyewy \! HoloDevicesFlow |
+|デバイス ピッカー (HoloLens 2 |マイクロソフト。Windows。DevicesFlowHost \_ cw5n1h2txyewy \! Microsoft.Windows。DevicesFlowHost |
+|Dynamics 365 Guides |Microsoft.Dynamics365.Guides \_ 8wekyb3d8bbwe \! MicrosoftGuides |
+|Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteAssist \_ 8wekyb3d8bbwe \! Microsoft.RemoteAssist |
+|フィードバック &nbsp; ハブ |Microsoft.WindowsFeedbackHub \_ 8wekyb3d8bbwe \! アプリ |
 |エクスプローラー |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
-|メール |microsoft.windowscommunicationsapps_8wekyb3d8bbwe! live |
-|古い Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge |
-|新しい Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE |
+|メール |microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail |
+|古いMicrosoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge |
+|新しいMicrosoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast<sup>4</sup> |&nbsp; |
-|映画 & テレビ |Microsoft ZuneVideo \_ 8wekyb3d8bbwe \! Microsoft ZuneVideo |
-|OneDrive |microsoft office skydrive \_ 8wekyb3d8bbwe \! アプリ |
-|Photos |エクスプローラー.Windows。Photos \_ 8wekyb3d8bbwe \! アプリ |
-|古い設定 |HolographicSystemSettings_cw5n1h2txyewy!アプリケーション |
-|新しい設定 |BAEAEF15-9BAB-47 FC-800B-ACECAD2AE94B_cw5n1h2txyewy!アプリケーション |
-|ヒント |HoloLensTips \_ 8wekyb3d8bbwe \! HoloLensTips |
+|映画 & テレビ |Microsoft.ZuneVideo \_ 8wekyb3d8bbwe \! Microsoft.ZuneVideo |
+|OneDrive |microsoft.microsoftskydrive \_ 8wekyb3d8bbwe \! アプリ |
+|写真 |マイクロソフト。Windows。写真 \_ 8wekyb3d8bbwe \! アプリ |
+|古い設定 |HolographicSystemSettings_cw5n1h2txyewy!アプリ |
+|新しい設定 |BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!アプリ |
+|ヒント |Microsoft.HoloLensTips \_ 8wekyb3d8bbwe \! HoloLensTips |
 
-> <sup>1</sup> 写真またはビデオのキャプチャを有効にするには、キオスクアプリとしてカメラアプリを有効にする必要があります。  
-> <sup>2</sup> カメラアプリを有効にするときは、次の条件に注意してください。
-> - [クイックアクション] メニューには、[写真] ボタンと [ビデオ] ボタンがあります。  
-> - また、画像を操作したり、画像を取得したりできるアプリ (写真、メール、OneDrive など) を有効にする必要もあります。  
+> <sup>1</sup> 写真またはビデオのキャプチャを有効にするには、キオスク アプリとしてカメラ アプリを有効にする必要があります。  
+> <sup>2</sup> カメラ アプリを有効にする場合は、次の条件に注意してください。
+> - [クイック アクション] メニューには、[写真] ボタンと [ビデオ] ボタンが表示されます。  
+> - また、画像を操作または取得できるアプリ (写真、メール、OneDrive など) を有効にする必要があります。  
 >  
-> <sup>3</sup>キオスクアプリとして Cortana を有効にしない場合でも、組み込みの音声コマンドが有効になります。 ただし、無効になっている機能に関連するコマンドには影響しません。  
-> <sup>4</sup> Miracast を直接有効にすることはできません。 キオスクアプリとして Miracast を有効にするには、カメラアプリとデバイスピッカーアプリを有効にします。
+> <sup>3</sup>キオスク アプリとしてCortana有効にしていない場合でも、組み込みの音声コマンドが有効になります。 ただし、無効な機能に関連するコマンドは効果がありません。  
+> <sup>4</sup>直接有効にMiracastすることはできません。 キオスク アプリMiracast有効にするには、カメラ アプリとデバイス ピッカー アプリを有効にします。
 
-### <a name="plan-kiosk-profiles-for-users-or-groups"></a>ユーザーまたはグループのキオスクプロファイルを計画する
+### <a name="plan-kiosk-profiles-for-users-or-groups"></a>ユーザーまたはグループのキオスク プロファイルを計画する
 
-Xml ファイルを作成する場合、または Intune の UI を使用してキオスクを設定する場合は、どのユーザーがキオスクを使用するかを検討する必要があります。 キオスク構成は、個々のアカウントまたは Azure AD グループに制限することができます。 
+xml ファイルを作成する場合、または Intune の UI を使用してキオスクを設定する場合は、キオスクのユーザーを検討する必要があります。 キオスクの構成は、個々のアカウントまたはグループにAzure ADできます。 
 
-通常、キオスクはユーザーまたはユーザーグループに対して有効になっています。 ただし、独自の XML キオスクの作成を計画している場合は、グローバルに割り当てられたアクセスを考慮することをお勧めします。この場合、キオスクは Id に関係なくデバイスレベルで適用されます。 この appeals に [ついては、「グローバルに割り当てられたアクセスキオスク」を参照してください。](hololens-global-assigned-access-kiosk.md)
+通常、キオスクはユーザーまたはユーザー グループに対して有効になります。 ただし、独自の XML キオスクの作成を計画している場合は、ID に関係なくデバイス レベルでキオスクが適用されるグローバル割り当てアクセスを検討できます。 これがお気に入りである場合は、グローバル [割り当てアクセス キオスクに関するページを参照してください。](hololens-global-assigned-access-kiosk.md)
 
-#### <a name="if-you-are-creating-an-xml-file"></a>XML ファイルを作成する場合は、次の手順を実行します。
--   複数のキオスクプロファイルを作成し、それぞれを異なるユーザー/グループに割り当てることができます。 たとえば、多くのアプリを持つ Azure AD グループのキオスクや、単一のアプリを持つ複数のアプリキオスクを持つビジターなどです。
--   キオスク構成は **プロファイル Id** と呼ばれ、GUID があります。
--   このプロファイルは、ユーザーの種類を指定し、 **Defaultprofile Id** に同じ GUID を使用して、構成セクションに割り当てます。
-- XML ファイルは作成できますが、カスタム oma-uri デバイス構成プロファイルを作成し、URI 値を使用して HoloLens デバイスグループに適用することで、MDM を介してデバイスに適用することができます。/Device/Vendor/MSFT/AssignedAccess/Configuration
+#### <a name="if-you-are-creating-an-xml-file"></a>XML ファイルを作成する場合:
+-   多くの場合、複数のキオスク プロファイルを作成し、それぞれを異なるユーザー/グループに割り当てる必要があります。 多数のアプリを持つ Azure AD グループのキオスクや、1 つのアプリを持つ複数のアプリ キオスクを持つビジターなどです。
+-   キオスクの構成はプロファイル ID と呼ば **され、GUID** が設定されます。
+-   ユーザーの種類を指定し、DefaultProfile ID に同じ GUID を使用して、configs セクションでこのプロファイル **を割り当てる必要があります**。
+- カスタム OMA URI デバイス構成プロファイルを作成し、URI 値 ./Device/Vendor/MSFT/AssignedAccess/Configuration を使用して HoloLens デバイス グループに適用することで、MDM を介してデバイスに XML ファイルを作成できますが、引き続き適用できます。
 
 #### <a name="if-you-are-creating-a-kiosk-in-intune"></a>Intune でキオスクを作成する場合。
--   各デバイスは、1つのキオスクプロファイルのみを受け取ることができます。それ以外の場合は、競合を作成し、キオスク構成を受信しません。 
-    -   キオスク構成プロファイルに関連付けられていないデバイス制限など、その他の種類のプロファイルやポリシーは、キオスク構成プロファイルと競合しません。
--   キオスクは、ユーザーログオンの種類の一部であるすべてのユーザーに対して有効になります。これは、ユーザーまたは Azure AD グループで設定されます。 
--   キオスク構成を設定し、ユーザーの **ログオンの種類** (キオスクにログインできるユーザー) とアプリを選択した後、デバイスの構成をグループに割り当てる必要があります。 割り当てられたグループによって、どのデバイスがキオスクデバイスの構成を受け取るかが決定されますが、キオスクが有効になっているかどうかはと対話しません。 
-    - Intune での構成プロファイルの割り当ての影響の詳細については、「 [Microsoft Intune でユーザーとデバイスのプロファイルを割り当てる](/intune/configuration/device-profile-assign)」を参照してください。
+-   各デバイスは 1 つのキオスク プロファイルのみを受け取る場合があります。それ以外の場合、競合が発生し、キオスク構成は一切受信されない。 
+    -   キオスク構成プロファイルに関連しないデバイスの制限など、他の種類のプロファイルとポリシーは、キオスク構成プロファイルと競合しない。
+-   キオスクは、ユーザー ログオンの種類の一部であるすべてのユーザーに対して有効になります。これは、ユーザーまたはユーザー グループAzure ADされます。 
+-   キオスクの構成が設定され、ユーザー ログオンの種類 **(キオスク** にログインできるユーザー) と [アプリ] が選択された後も、デバイス構成をグループに割り当てる必要があります。 [割り当て済み] グループは、キオスク デバイス構成を受け取るデバイスを決定しますが、キオスクが有効になっている場合は、対話しません。 
+    - Intune で構成プロファイルを割り当てる効果の詳細については、「Intune でのユーザープロファイルとデバイス プロファイルの割り当て」を[Microsoft Intune。](/intune/configuration/device-profile-assign)
 
-### <a name="select-a-deployment-method"></a>展開方法の選択
+### <a name="select-a-deployment-method"></a>デプロイ方法を選択する
 
-キオスク構成を展開するには、次のいずれかの方法を選択します。
+キオスク構成を展開するには、次のいずれかの方法を選択できます。
 
-- [Microsoft Intune またはその他のモバイルデバイス管理 (MDM) サービス](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)
+- [Microsoft Intuneその他のモバイル デバイス管理 (MDM) サービス](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)
 
-- [プロビジョニングパッケージ](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)
+- [プロビジョニング パッケージ](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)
 
-- [Windowsデバイスポータル](#use-the-windows-device-portal-to-set-up-a-single-app-kiosk)
+- [Windowsデバイス ポータル](#use-the-windows-device-portal-to-set-up-a-single-app-kiosk)
 
    > [!NOTE]  
-   > この方法では、デバイスで開発者モードを有効にする必要があるため、デモにのみ使用することをお勧めします。
+   > この方法では、デバイスで開発者モードを有効にする必要があります。このため、デモンストレーションにのみ使用することをお勧めします。
 
-次の表に、各展開方法の機能と利点を示します。
+次の表に、各デプロイ方法の機能と利点を示します。
 
-| &nbsp; |Windows デバイスポータルを使用したデプロイ |プロビジョニングパッケージを使用して展開する |MDM を使用したデプロイ |
+| &nbsp; |を使用してデプロイWindows デバイス ポータル |プロビジョニング パッケージを使用してデプロイする |MDM を使用したデプロイ |
 | --------------------------- | ------------- | -------------------- | ---- |
-|シングルアプリキオスクのデプロイ   | Yes           | Yes                  | Yes  |
-|複数アプリキオスクのデプロイ    | いいえ            | はい                  | Yes  |
-|ローカルデバイスのみに展開する | Yes           | はい                  | いいえ   |
-|開発者モードを使用した配置 |必須       | 必要なし            | 必要なし   |
+|シングル アプリ キオスクを展開する   | Yes           | Yes                  | Yes  |
+|マルチアプリ キオスクを展開する    | いいえ            | はい                  | Yes  |
+|ローカル デバイスにのみ展開する | Yes           | はい                  | いいえ   |
+|開発者モードを使用したデプロイ |必須       | 必要なし            | 必要なし   |
 |Azure Active Directory を使用したデプロイ (Azure AD)  | 必要なし            | 必要なし                   | 必須  |
 |自動的に配置する      | いいえ            | いいえ                   | はい  |
 |展開の速度            | 速い       | 高速                 | 低速 |
@@ -228,7 +228,7 @@ Microsoft Intune または別の MDM システムを使用してキオスクモ�
 
 - Intune でキオスク構成プロファイルを構成する方法の詳細については、「 [Microsoft Intune を使用してキオスクモードを構成する方法](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)」を参照してください。
 - Intune でのシングルアプリキオスクに使用できる設定の詳細については、「[シングルスクリーンアプリキオスク](/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks)」を参照してください。
-- その他の MDM サービスについては、プロバイダーのドキュメントで手順を確認してください。 カスタム XML 構成を使用して、MDM サービスでキオスクを設定する必要がある場合は、 [キオスク構成を定義する xml ファイルを作成](#ppkioskconfig)します。
+- その他の MDM サービスについては、使用しているプロバイダーのドキュメントで手順を参照してください。 カスタム XML 構成を使用して、MDM サービスでキオスクを設定する必要がある場合は、 [キオスク構成を定義する xml ファイルを作成](#ppkioskconfig)します。
 
 1. [**ユーザーログオンの種類**] [  >  **ローカルユーザーアカウント**] を選択し、キオスクにサインインできるローカル (デバイス) アカウントまたは Microsoft アカウント (MSA) のユーザー名を入力します。
    > [!NOTE]  
@@ -243,7 +243,7 @@ Microsoft Intune または別の MDM システムを使用してキオスクモ�
 
 - Intune でキオスク構成プロファイルを構成する方法の詳細については、「 [Microsoft Intune を使用してキオスクモードを構成する方法](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)」を参照してください。
 - Intune のマルチアプリキオスクで使用可能な設定の詳細については、「[マルチアプリキオスク](/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks)」を参照してください。
-- その他の MDM サービスについては、プロバイダーのドキュメントで手順を確認してください。 カスタム XML 構成を使用して、MDM サービスでキオスクを設定する必要がある場合は、 [キオスク構成を定義する xml ファイルを作成](#ppkioskconfig)します。 XML ファイルを使用する場合は、必ず [開始レイアウト](#start-layout-for-hololens)を含めてください。  
+- その他の MDM サービスについては、使用しているプロバイダーのドキュメントで手順を参照してください。 カスタム XML 構成を使用して、MDM サービスでキオスクを設定する必要がある場合は、 [キオスク構成を定義する xml ファイルを作成](#ppkioskconfig)します。 XML ファイルを使用する場合は、必ず [開始レイアウト](#start-layout-for-hololens)を含めてください。  
 - 必要に応じて、Intune またはその他の MDM サービスでカスタムのスタートレイアウトを使用することもできます。 詳細については、「 [MDM のレイアウトファイルの開始 (Intune など)](#start-layout-file-for-mdm-intune-and-others)」を参照してください。
 
 1. **S モードデバイスで [ターゲット Windows 10**] を選択し  >  ます。  
@@ -349,7 +349,7 @@ OOBE 中に、次の手順を実行します。
 - URI 値:./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
 
-| ポリシー |説明 |構成 
+| ポリシー |[説明] |構成 
 | --------------------------- | ------------- | -------------------- |
 | MixedReality/VisitorAutoLogon | 訪問者がキオスクに自動ログオンすることを許可します。 | 1 (はい)、0 (いいえ、既定値) |
 
@@ -453,40 +453,40 @@ Windows デバイスポータルを使用してキオスクモードを設定す
     > [!CAUTION]
     > デバイスポータルを使用するように HoloLens を設定する場合は、デバイスで開発者モードを有効にする必要があります。 Windows Holographic for Business があるデバイスの開発者モードでは、アプリをサイドロードすることができます。 ただし、この設定により、Microsoft Store によって認定されていないアプリをユーザーがインストールできる危険性が生じます。 管理者は、[ポリシー CSP](/windows/client-management/mdm/policy-configuration-service-provider)の **Applicationmanagement/allowdeveloper Unlock** 設定を使用して、開発者モードを有効にする機能をブロックできます。 [開発者モードの詳細をご覧ください。](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
     
-1. コンピューターで、 [wi-fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi)または[USB](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb)を使用して HoloLens に接続します。
+1. コンピューターで[、Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi)または USB HoloLensデバイスに接続[します](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb)。
 
 1. 次のいずれかの操作を行います。
-   - Windows デバイスポータルに初めて接続する場合は、[ユーザー名とパスワードを作成](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password)します。
-   - 以前に設定したユーザー名とパスワードを入力します。
+   - デバイスに初めて接続するWindows デバイス ポータル、ユーザー[名とパスワードを作成します](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password)
+   - 前に設定したユーザー名とパスワードを入力します。
 
     > [!TIP]
     > ブラウザーに証明書エラーが表示された場合は、[こちらのトラブルシューティング手順](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#security_certificate)に従います。
 
-1. Windows デバイスポータルで、[**キオスクモード**] を選択します。
+1. [キオスク モード] Windows デバイス ポータル[キオスク モード]**を選択します**。
 
-1. [ **キオスクモードを有効** にする] を選択し、デバイスの起動時に実行するアプリを選択して、[ **保存**] を選択します。
+1. [ **キオスク モードを有効にする**] を選択し、デバイスの起動時に実行するアプリを選択してから、[保存] を **選択します**。
 
     ![キオスク モード](images/kiosk.png)
-1. HoloLens を再起動します。 デバイスポータルページを開いたままにしている場合は、ページの上部にある [ **再起動** ] を選択できます。
+1. 再起動HoloLens。 このページを開いたデバイス ポータル、ページの上部にある **[再起動** ] を選択できます。
 
 > [!NOTE]
-> キオスクモードは、デバイスポータルの REST API を使用して設定できます。これを行うには、1つの必須クエリ文字列パラメーター ("kioskModeEnabled&quot;、値 &quot;true&quot; または &quot;false") と1つの省略可能なパラメーター (パッケージ名の値を持つ/api/holographic/kioskmode/settings) を指定します。 デバイスポータルは開発者向けのものであり、開発者以外のデバイスでは有効にしないでください。 REST API は、今後の更新プログラム/リリースで変更される可能性があります。
+> キオスク モードは、必要なクエリ文字列パラメーター ("kioskModeEnabled&quot; の値が &quot;true&quot; または &quot;false") とオプションのパラメーター (パッケージ名の値が "startupApp" ) を 1 つ指定して、/api/holographic/kioskmode/settings に POST を実行することで、デバイス ポータル の REST API を介して設定できます。 この機能は開発者デバイス ポータルのみを対象とし、開発者以外のデバイスでは有効にしなける必要があるという注意が必要です。 このREST API、今後の更新/リリースで変更される可能性があります。
 
 ## <a name="more-information"></a>詳細情報
 
-### <a name="watch-how-to-configure-a-kiosk-by-using-a-provisioning-package"></a>プロビジョニングパッケージを使用してキオスクを構成する方法をご覧ください。  
+### <a name="watch-how-to-configure-a-kiosk-by-using-a-provisioning-package"></a>プロビジョニング パッケージを使用してキオスクを構成する方法を見る。  
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
 
-### <a name="global-assigned-access--kiosk-mode"></a>グローバルに割り当てられたアクセス: キオスクモード
-- キオスクモードをシステムレベルで適用する新しいキオスク方法を有効にすることにより、キオスクの Id 管理を減らしました。
+### <a name="global-assigned-access--kiosk-mode"></a>グローバル割り当てアクセス – キオスク モード
+- システム レベルでキオスク モードを適用する新しいキオスク 方法を有効にすることで、キオスクの ID 管理を減らしました。
 
-この新機能により、IT 管理者は、システムレベルで適用可能な複数のアプリキオスクモード用の HoloLens 2 デバイスを構成し、システム上の id との関係はなく、デバイスにサインインするすべてのユーザーに適用することができます。 この新機能の詳細については、 [HoloLens グローバルに割り当てられたアクセスキオスク](hololens-global-assigned-access-kiosk.md)のドキュメントを参照してください。
+この新機能により、IT 管理者は、システム レベルで適用可能な複数のアプリ キオスク モード用に HoloLens 2 デバイスを構成できます。システム上の ID とのアフィニティは持たず、デバイスにサインインするすべてのユーザーに適用されます。 この新しい[HoloLensの詳細については、](hololens-global-assigned-access-kiosk.md)グローバル割り当てアクセス キオスクのドキュメントを参照してください。
 
-### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>マルチアプリキオスクモードでのアプリケーションの自動起動 
-- アプリの自動起動に焦点を合わせ、キオスクモードエクスペリエンス用に選択された UI とアプリの選択範囲をさらに増やしています。
+### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>複数アプリキオスク モードでのアプリケーションの自動起動 
+- アプリの自動起動に重点を置いてエクスペリエンスを向上し、キオスク モード エクスペリエンス用に選択された UI とアプリの選択をさらに増やします。
 
-マルチアプリキオスクモードにのみ適用され、[割り当てられたアクセス構成] の下の強調表示された属性を使用して、1つのアプリのみを自動起動するように指定できます。 
+複数アプリキオスク モードにのみ適用され、割り当て済みアクセス構成で以下の強調表示された属性を使用して、1 つのアプリのみを自動起動に指定できます。 
 
 ユーザーがサインインすると、アプリケーションが自動的に起動されます。 
 
@@ -497,54 +497,54 @@ Windows デバイスポータルを使用してキオスクモードを設定す
 ```
 
 
-### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>キオスクモードでのエラー処理の動作変更
-キオスクモードの適用中にエラーが発生すると、次の動作が表示されます。
+### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>エラー処理のためのキオスク モードの動作の変更
+キオスク モードの適用でエラーが発生すると、次の動作が表示されます。
 
-- Windows Holographic より前では、バージョン 20h2-HoloLens はスタートメニュー内のすべてのアプリケーションを表示します。
-- WindowsHolographic、バージョン 20H2-デバイスに、グローバルに割り当てられたアクセスと AAD グループメンバーの割り当て済みアクセスの両方を組み合わせたキオスク構成がある場合、AAD グループのメンバーシップの確認に失敗すると、ユーザーには [スタート] メニューに表示されないものが表示されます。
+- Holographic Windowsより前のバージョン 20H2 - HoloLens では、すべてのアプリケーションが スタート メニュー。
+- WindowsHolographic バージョン 20H2 - デバイスに、グローバル割り当てアクセスと AAD グループ メンバー割り当てアクセスの両方の組み合わせであるキオスク構成がある場合、AAD グループ メンバーシップの決定に失敗した場合、ユーザーには [スタート画面に何も表示されません] メニューが表示されます。
 
-![キオスクモードが失敗したときにどのように表示されるかを示した画像。](images/hololens-kiosk-failure-behavior.png )
+![失敗したときのキオスク モードの画像。](images/hololens-kiosk-failure-behavior.png )
 
 
-- [Windows Holographic バージョン 21h1](hololens-release-notes.md#windows-holographic-version-21h1)以降では、キオスクモードでは、空の [スタート] メニューが表示される前に、グローバルに割り当てられたアクセスが検索されます。 AAD グループキオスクモードでエラーが発生した場合、キオスクエクスペリエンスはグローバルキオスク構成 (存在する場合) にフォールバックします。
+- [Holographic バージョン 21H1 Windows、](hololens-release-notes.md#windows-holographic-version-21h1)キオスク モードでは、空のスタート メニューが表示される前にグローバル割り当てアクセスが検索されます。 キオスク エクスペリエンスは、AAD グループ キオスク モード中に障害が発生した場合に、グローバル キオスク構成 (存在する場合) にフォールバックします。
 
-### <a name="cache-azure-ad-group-membership-for-offline-kiosk"></a>オフラインキオスクのキャッシュ Azure AD グループメンバーシップ
+### <a name="cache-azure-ad-group-membership-for-offline-kiosk"></a>オフライン キオスクAzure ADグループ メンバーシップをキャッシュする
 
-- キオスクモードのエラーで利用可能なアプリを排除することで、より安全なキオスクモード。
-- オフラインキオスクが有効になり、Azure AD グループで最大60日間使用できるようになりました。
+- キオスク モードのエラーで使用可能なアプリを排除することで、より安全なキオスク モード。
+- 最大 60 日間、オフライン キオスクAzure ADグループで使用できます。
 
-このポリシーでは、サインインしているユーザーのグループ Azure AD グループを対象とする割り当てられたアクセス構成で、Azure AD グループメンバーシップキャッシュを使用できる日数を制御します。 このポリシー値が0より大きい値に設定されている場合は、キャッシュが使用されます。  
+このポリシーでは、サインインしたユーザーの Azure AD グループを対象とする割り当てアクセス構成に対して、Azure AD グループ メンバーシップ キャッシュを使用できる日数を制御します。 このポリシー値が 0 より大きい値にのみ設定されている場合は、キャッシュが使用されます。それ以外の場合は使用されません。  
 
-名前: AADGroupMembershipCacheValidityInDays URI 値:./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+名前: AADGroupMembershipCacheValidityInDays URI 値: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
-最小-0 日  
-最大-60 日 
+最小 - 0 日  
+最大 - 60 日 
 
-このポリシーを正しく使用するための手順: 
-1. Azure AD グループを対象とするキオスク用のデバイス構成プロファイルを作成し、HoloLens デバイスに割り当てます。 
-1. カスタム oma-uri ベースのデバイス構成を作成します。この構成では、このポリシー値が必要な日数 (> 0) に設定され、HoloLens デバイスに割り当てられます。 
-    1. URI 値は、/Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays のように OMA-URI テキストボックスに入力する必要があります。
-    1. 許容される最小値と最大値の間の値を指定できます。
-1. HoloLens デバイスを登録し、両方の構成がデバイスに適用されていることを確認します。 
-1. インターネットが利用可能なときにユーザー1のサインインを Azure AD し、ユーザーのサインインと Azure AD グループのメンバーシップが正常に確認されると、キャッシュが作成されます。 
-1. これで Azure AD ユーザー1がオフライン HoloLens して、ポリシー値で X 日の日数が許可されている限り、キオスクモードで使用できるようになりました。 
-1. 手順 4. と 5. は、他の Azure AD ユーザー N に対して繰り返すことができます。ここで重要なのは、Azure AD ユーザーは、少なくとも1回、キオスク構成の対象となる Azure AD グループのメンバーであることを確認できるように、インターネットを使用してデバイスにサインインする必要があるという点です。 
+このポリシーを正しく使用する手順: 
+1. デバイス グループを対象とするキオスク用のデバイス構成プロファイルAzure ADし、デバイスに割HoloLens割り当てる。 
+1. このポリシー値を必要な日数 (> 0) に設定し、それを HoloLens デバイスに割り当てるカスタム OMA URI ベースのデバイス構成を作成します。 
+    1. URI の値は、./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays として OMA-URI テキスト ボックスに入力する必要があります。
+    1. 値は、min または max allowed の間で指定できます。
+1. デバイスHoloLens登録し、両方の構成がデバイスに適用されるのを確認します。 
+1. インターネットAzure ADユーザー 1 のサインインを許可し、ユーザーがサインインし、Azure AD グループ メンバーシップが正常に確認されると、キャッシュが作成されます。 
+1. これでAzure ADユーザー 1 は、ポリシー値で X HoloLensできる限り、オフラインにし、キオスク モードで使用できます。 
+1. 手順 4 と 5 は、他の Azure AD ユーザー N に対して繰り返し実行できます。ここで重要な点は、すべての Azure AD ユーザーがインターネットを使用してデバイスにサインインする必要がある点です。少なくとも 1 回は、キオスク構成の対象となる Azure AD グループのメンバーと判断できます。 
  
 > [!NOTE]
-> 手順 4. を実行すると Azure AD ユーザーに対して、"切断" 環境に記載されているエラー動作が発生します。 
+> 手順 4. が実行されるまで、ユーザー Azure AD"切断" 環境で説明されているエラー動作が発生します。 
 
 
-## <a name="xml-kiosk-code-samples-for-hololens"></a>HoloLens 用の XML キオスクコードサンプル
+## <a name="xml-kiosk-code-samples-for-hololens"></a>XML キオスク コード サンプル (HoloLens
 
-### <a name="multiple-app-kiosk-mode-targeting-an-azure-ad-group"></a>Azure AD グループを対象とする複数のアプリキオスクモード。 
-このキオスクでは、Azure AD グループのユーザーに対してキオスクを展開します。このキオスクでは、設定、リモートアシスタンス、フィードバックハブの3つのアプリを含むキオスクが有効になっています。 このサンプルをすぐに使用するように変更するには、以下の強調表示されている GUID を、自分の Azure AD グループに一致するように変更してください。 
+### <a name="multiple-app-kiosk-mode-targeting-an-azure-ad-group"></a>1 つのグループを対象とする複数Azure AD モード。 
+このキオスクは、Azure AD グループ内のユーザーに対して、設定、Remote Assist、フィードバック Hub の 3 つのアプリを含むキオスクを有効にするキオスクを展開します。 このサンプルをすぐに使用するために変更するには、以下で強調表示されている GUID を独自のグループのAzure AD変更してください。 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 
-### <a name="multiple-app-kiosk-mode-targeting-azure-ad-account"></a>Azure AD アカウントを対象とする複数のアプリキオスクモード。
-このキオスクは、1人のユーザーに対してキオスクをデプロイし、3つのアプリ (設定、リモートアシスタンス、フィードバックハブ) を含むキオスクを有効にします。 このサンプルをすぐに使用するように変更するには、以下の強調表示されているアカウントを、自分の Azure AD アカウントと一致するように変更してください。 
+### <a name="multiple-app-kiosk-mode-targeting-azure-ad-account"></a>アカウントを対象とする複数Azure AD キオスク モード。
+このキオスクは、1 人のユーザーにキオスクを展開します。キオスクは、設定、Remote Assist、フィードバック Hub の 3 つのアプリを含むキオスクを有効にします。 このサンプルをすぐに使用するために変更するには、以下で強調表示されているアカウントを自分のアカウントのAzure AD変更してください。 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::

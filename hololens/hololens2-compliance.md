@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 684a97a4fcdc3aaf830f164c54fb3079e296c78c
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 3365e69c8408b75a5d4e1177df938f435dec05d9dc181c698d7991159645d15a
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637117"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660151"
 ---
 # <a name="hololens-2-privacy-statement"></a>HoloLens 2 のプライバシーに関する声明
 
@@ -40,7 +40,7 @@ HoloLens 2は、イマーシブ Mixed Reality 環境でアプリとソリュー�
 ## <a name="network-security"></a>ネットワークのセキュリティ
 「一[般的HoloLens 2シナリオ](/hololens/common-scenarios)」に従って、データは、法律/規制標準の統合と共に[、Azure](/azure/compliance/)の世界クラスのコンプライアンスによって保護されます。 データの作成と管理をAzure ADするDynamics 365 Remote Assist、GDPR の Azure と[Dynamics 365](/compliance/regulatory/gdpr-arc-azure-dynamics)の説明責任の準備チェックリストを参照してください。
 
-さらに、Windows Defenderファイアウォールは、デバイス接続をセキュリティで保護するための重要な機能を提供します。 このHoloLens 2ファイアウォールは常に有効になっているので、プログラムまたは UI を使用して無効にする方法はありません。 Intune をHoloLens 2マネージド デバイスとして展開すると[、Mobile](/mem/intune/protect/device-compliance-get-started)Threat Defense ソリューションとしてのエンドポイントと[Microsoft Intune](/mem/intune/protect/advanced-threat-protection)の統合により多くのコンプライアンス機能を利用できます。
+さらに、Windows Defenderファイアウォールは、デバイス接続をセキュリティで保護するための重要な機能を提供します。 HoloLens 2 を使用する場合、ファイアウォールは常に有効です。ファイアウォールをプログラムによって無効にしたり、UI を介して無効にしたりする方法はありません。 Intune をHoloLens 2マネージド デバイスとして展開すると[、Mobile](/mem/intune/protect/device-compliance-get-started)Threat Defense ソリューションとしてのエンドポイントと[Microsoft Intune](/mem/intune/protect/advanced-threat-protection)の統合により多くのコンプライアンス機能を利用できます。
 
 セキュリティとアーキテクチャに関するHoloLens 2[詳細を確認してください](/hololens/security-architecture)。
 

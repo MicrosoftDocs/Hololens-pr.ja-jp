@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: 273dcd2180225cf953686ed1c2e5b6524996dba3
-ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
+ms.openlocfilehash: 7438b147a31ff38233412a4213a568286fb2e3b8982bc4fd6af3f9dde842fd1a
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "115009359"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662561"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot for HoloLens 2
 

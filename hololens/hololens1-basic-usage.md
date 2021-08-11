@@ -1,11 +1,11 @@
 ---
-title: HoloLens の概要 (第1世代)
+title: HoloLens (第 1 世代) の操作方法
 description: HoloLens (第1世代) インターフェイス、ハンドトラッキング機能、holographic アプリケーションの使用に関する簡単なツアーを開始しましょう。
 ms.assetid: 064f7eb0-190e-4643-abeb-ed3b09312042
 ms.date: 9/16/2019
 ms.reviewer: jarrettr
 manager: jarrettr
-keywords: hololens
+keywords: HoloLens
 ms.prod: hololens
 ms.sitesec: library
 author: v-miegge
@@ -14,40 +14,40 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: a1ed1b900f255da9f8db66577f1e88f6bd6881e8
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 74b0c8b78bf6e310965f674098a883acda5ed6101f74619c2dea209beb27e47d
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309505"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662810"
 ---
-# <a name="getting-around-hololens-1st-gen"></a>HoloLens の概要 (第1世代)
+# <a name="getting-around-hololens-1st-gen"></a>HoloLens (第 1 世代) の操作方法
 
 ホログラムの世界にステップインする準備はできましたか。 開始するには、次の情報を参照してください。
 
-このガイドでは、mixed reality の概要、ホログラムとの対話に関するジェスチャ、および Windows Holographic の概要について説明します。
+このガイドでは、mixed reality の概要、ホログラムとの対話に関するジェスチャ、Windows Holographic の概要について説明します。
 
-## <a name="discover-mixed-reality"></a>Mixed reality の検出
+## <a name="discover-mixed-reality"></a>Mixed Reality について
 
-HoloLens では、ホログラムは、物理的な環境に合わせて、世界中の一部であるかのように見えるようにします。 ホログラムがすべてのものであっても、周囲を見て自由に移動したり、他のユーザーやオブジェクトと対話したりすることができます。 このエクスペリエンスを "mixed reality" と呼びます。
+HoloLens では、ホログラムは物理的な環境に合わせて、世界の一部であるかのように見えます。 ホログラムがすべてのものであっても、周囲を見て自由に移動したり、他のユーザーやオブジェクトと対話したりすることができます。 このエクスペリエンスを "mixed reality" と呼びます。
 
-Holographic フレームは、視線が最も機密性の高いものになるようにホログラムに配置します。また、「」を参照してください。 空間サウンドを使用すると、背後にある場合でも、ホログラムを特定できます。 また、HoloLens は環境を学習して理解するため、ホログラムを実際のオブジェクトに配置し、アプリやゲームに使用することができます。 ゲーム内の文字がソファに表示されるか、または [スペースロボットが壁から胸像](https://www.microsoft.com/store/apps/9nblggh5fv3j)れる可能性があります。
+Holographic フレームは、視線が最も機密性の高いものになるようにホログラムに配置します。また、「」を参照してください。 空間サウンドを使用すると、背後にある場合でも、ホログラムを特定できます。 また HoloLens は環境を学習して理解するため、ホログラムを実際のオブジェクトに配置して、アプリやゲームを可能にすることができます。 ゲーム内の文字がソファに表示されるか、または [スペースロボットが壁から胸像](https://www.microsoft.com/store/apps/9nblggh5fv3j)れる可能性があります。
 
-## <a name="use-hololens-with-your-hands"></a>HoloLens を手に使用する
+## <a name="use-hololens-with-your-hands"></a>自分の手で HoloLens を使用する
 
-HoloLens を利用することは、スマートフォンを使用するのとよく似ています。 自分の手で holographic ウィンドウ、メニュー、ボタンを操作できます。  ポイント、クリック、またはタップするのではなく、宝石、 [音声](hololens-cortana.md)、ジェスチャを使用して、アプリとホログラムを選択し、HoloLens を回避します。
+HoloLens の操作は、スマートフォンの使用によく似ています。 自分の手で holographic ウィンドウ、メニュー、ボタンを操作できます。  ポイント、クリック、またはタップするのではなく、宝石、[音声](hololens-cortana.md)、ジェスチャを使用して、アプリとホログラムを選択し、HoloLens を回避します。
 
-これらの基本的な相互作用がわかっていれば、HoloLens での作業はスナップになります。
+これらの基本的な操作を把握していると、HoloLens については、スナップになります。
 
-ここでは、初めて HoloLens を使用するときの基本について説明します。 また、[ **スタート** ] メニューにもジェスチャのチュートリアルがあります。このアプリについては、「」を参照してください。
+初めて HoloLens を使用するときの基本について説明します。 また、[ **スタート** ] メニューにもジェスチャのチュートリアルがあります。このアプリについては、「」を参照してください。
 
-### <a name="the-hand-tracking-frame"></a>ハンドトラッキングフレーム
+### <a name="the-hand-tracking-frame"></a>ハンド トラッキング フレーム
 
-HoloLens には、どちらかの面に数フィートを表示できるセンサーがあります。 手を使用する場合は、そのフレーム内に保持する必要があります。そうしないと、HoloLens には表示されません。 移動すると、フレームが移動します。  
+HoloLens には、ユーザーの左右を数フィートずつ見ることのできるセンサーが搭載されています。 手を使用する場合は、手の位置をこのフレーム内に収める必要があります。そうしないと、HoloLens では認識できません。 移動すると、フレームが移動します。  
 
-![HoloLens のハンドトラッキングフレームを表示する画像](./images/hololens-2-gesture-frame.png)
+![HoloLens のハンド トラッキング フレームを示す画像](./images/hololens-2-gesture-frame.png)
 
-### <a name="open-the-start-menu-with-bloom"></a>ブルームを使用して [スタート] メニューを開く
+### <a name="open-the-start-menu-with-bloom"></a>ブルームを使用してスタートメニューを開きます。
 
 [ **スタート** ] メニューを開くには
 
@@ -57,12 +57,12 @@ HoloLens には、どちらかの面に数フィートを表示できるセン�
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>見つめとエアタップを使用したホログラムの選択
 
-アプリまたはその他のホログラムを選択するには、選択しているホログラムを直接見ながら、エアタップします。 この操作を行うには、次の手順に従います。
+アプリまたはその他のホログラムを選択するには、選択しているホログラムを直接見ながら、エアタップします。 これを行うには、次の手順に従います。
 
 1. 選択するホログラムを見つめます。
-1. インデックス指を天井に向かってまっすぐ上にポイントします。
+1. 人差し指をまっすぐ上に伸ばして、天井を指します。
 1. エアタップ: 指を下げて、すぐに上げることができます。
-   ![エアタップのジェスチャアニメーション](./images/hololens-air-tap.gif)
+   ![エアタップの手ぶりのアニメーション](./images/hololens-air-tap.gif)
 
 ### <a name="select-a-hologram-by-using-your-voice"></a>音声を使用してホログラムを選択する
 
@@ -74,11 +74,11 @@ HoloLens には、どちらかの面に数フィートを表示できるセン�
 
 次に、テストにジェスチャを追加します。
 
-インストールされているアプリが [ [スタート] メニュー](holographic-home.md) に表示されます。また、Microsoft Store には、HoloLens 用のアプリが他にもあります (第1世代)。
+インストールされているアプリが[スタートメニュー](holographic-home.md)にあり、Microsoft Store に HoloLens (第1世代) のアプリが他にもあります。
 
 [ **スタート** ] メニューを開き、アプリを選択します。
 
-HoloLens でのアプリの使用は、PC の場合とは少し異なります。一部のアプリでは、2D ビューを使用し、他の Windows アプリケーションのように見えます。 他のアプリ (イマーシブアプリ) は3D ビューを使用し、起動すると、表示される唯一のアプリになります。
+HoloLens でのアプリの使用は、PC とは少し異なります。一部のアプリは、2d ビューを使用し、他の Windows アプリケーションのように見えます。 他のアプリ (イマーシブアプリ) は3D ビューを使用し、起動すると、表示される唯一のアプリになります。
 
 アプリウィンドウまたはアプリランチャーを配置した場合は、削除するまで保存されたままになります。 これらのホログラムは、mixed reality ホームでいつでも移動またはサイズ変更できます。
 
@@ -87,7 +87,7 @@ HoloLens でのアプリの使用は、PC の場合とは少し異なります�
 HoloLens でのアプリの移動とサイズ変更は、PC の場合とは少し異なります。 アプリをドラッグする代わりに、宝石と [ジェスチャ](https://support.microsoft.com/help/12644/hololens-use-gestures) または [clicker](hololens1-clicker.md)を使用します。 また、3D 空間でアプリウィンドウを回転させることもできます。
 
 > [!TIP]
-> アプリで音声を使用してアプリを再配置し、"顔、" 大規模な "、" より小さい "と言うことができます。 または、Cortana にアプリを移動させることもできます。たとえば、「Cortana さん、 \* *アプリ \* 名* をここに移動する」と言います。
+> アプリで音声を使用してアプリを再配置し、"顔、" 大規模な "、" より小さい "と言うことができます。 または、アプリを移動 Cortana 必要があります。 "Cortana、 \* *アプリ名 \** をここに移動します。" と言います。
 
 ### <a name="move-an-app"></a>アプリを移動する
 
@@ -121,15 +121,15 @@ HoloLens でのアプリの移動とサイズ変更は、PC の場合とは少�
 
 ## <a name="meet-the-hololens-1st-gen-clicker"></a>HoloLens (第1世代) Clicker を満たす
 
-[HoloLens (第1世代) clicker](hololens1-clicker.md)は、ホログラムを操作する別の方法を提供します。 [これ](hololens-connect-devices.md) を HoloLens と組み合わせて使用し、選択、スクロールなどの目的で、そのユーザーと共に使用します。
+[HoloLens (第1世代) clicker](hololens1-clicker.md)は、ホログラムを操作する別の方法を提供します。 [これ](hololens-connect-devices.md)を HoloLens と組み合わせて使用し、選択、スクロールなどの目的に合わせて使用します。
 
 ## <a name="next-steps"></a>次のステップ
 
-お疲れさまでした。 HoloLens (第1世代) を使用する準備ができました。
+お疲れさまでした。 これで HoloLens (第1世代) を使用する準備が整いました。
 
 これで、特定のニーズに合わせて HoloLens (第1世代) を構成できるようになりました。
 
-[マウスやキーボードなどの bluetooth デバイスの接続](hololens-connect-devices.md)
+[Connect bluetooth デバイス (マウス、キーボードなど)](hololens-connect-devices.md)
 
 [音声と Cortana についての詳細情報](hololens-cortana.md)
 
@@ -139,5 +139,5 @@ HoloLens の使用中に配置したホログラムが表示されない場合�
 
 - 右側の領域を見ていることを確認してください &mdash; 。ホログラムは残しておきます。
 - 直接太陽のない部屋にいることを確認してください。
-- 待機. HoloLens でスペースを認識できない場合、以前に配置されたホログラムは再び表示されるまでに最大で1分かかることがあります。
-- 問題が解決しない場合は、**設定** システムホログラムでホログラムストレージデータを消去し  >    >  、mixed reality ホームにもう一度ホログラムを配置することをお勧めします。
+- 待機. HoloLens がスペースを認識できない場合、以前に配置されたホログラムは再表示されるまでに最大で1分かかることがあります。
+- 問題が解決しない場合は、**設定** システムホログラム内のホログラムストレージデータを消去し  >    >  、mixed reality ホームにもう一度ホログラムを配置することもできます。

@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: cbf0b2e4b61f006d0b5d7d74d3d81a4b33cfd6d8c2e124288b17959d54a5a1ad
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659116"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665068"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>HoloLens のドキュメントに貢献する
 
@@ -23,7 +23,7 @@ HoloLens docs は、docs.microsoft.com プラットフォームに表示され�
 
 ## <a name="available-repos"></a>利用可能なリポジトリ
 
-| リポジトリ名です | [URL] |
+| リポジトリ名です | URL |
 | --- | --- |
 | HoloLens | [Microsoft Docs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 | Mixed Reality | [Microsoft Docs/mixed-現実](/windows/mixed-reality) |

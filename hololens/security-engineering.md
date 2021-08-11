@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1c043b721590e8245f694b3e4f6e5b6ce57f1ecf
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: bf0256ae24733fac7eb80a634edc78a33fcc1538d3d4a1db3c9b50fc01893c74
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639354"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665422"
 ---
 # <a name="security-engineering"></a>セキュリティ エンジニアリング
 

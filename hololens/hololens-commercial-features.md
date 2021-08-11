@@ -17,12 +17,12 @@ manager: skerewa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, Commercial, 機能, MDM, モバイル デバイス管理, キオスク モード, アプリケーション, ID, Bitlocker, 虹彩, Windows Hello, Azure の利用, Autopilot, Mixed Reality, WDAC
-ms.openlocfilehash: 5a68c4199cba20bba9d3aaa5183819975ea7b3f4
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 88a75224909fd64e387cfb5677056e2ae5d62e4b3518aa758f22ec66a86a8355
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635817"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665346"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 の機能とソリューション
 
