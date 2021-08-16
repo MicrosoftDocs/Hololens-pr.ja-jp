@@ -34,6 +34,7 @@
 #### [視覚効果と快適性の向上](hololens-calibration.md)
 #### [HoloLens を使用して物理的スペースをマッピングする](hololens-spaces.md)
 #### [HoloLens 環境に関する考慮事項](hololens-environment-considerations.md)
+#### [プラットフォームの移動](hololens2-moving-platform.md)
 ### HoloLens 2 の接続
 #### [HoloLens をネットワークに接続する](hololens-network.md)
 #### [Bluetooth および USB-C デバイスに接続する](hololens-connect-devices.md)
