@@ -53,7 +53,7 @@
 #### [構成](hololens2-cloud-connected-configure.md)
 #### [デプロイする](hololens2-cloud-connected-deploy.md)
 #### [管理](hololens2-cloud-connected-maintain.md)
-#### [クラウド接続された環境 (外部クライアント) のデプロイ ガイド](hololens2-deployment-guide.md)
+#### [外部クライアント](hololens2-deployment-guide.md)
 ### 企業ネットワークの展開ガイド
 #### [概要](hololens2-corp-connected-overview.md)
 #### [準備](hololens2-corp-connected-prepare.md)
@@ -75,7 +75,7 @@
 ### [暗号化とデータ保護](security-encryption-data-protection.md)
 ### [ネットワークのセキュリティ](security-network-security.md)
 ### [セキュリティ エンジニアリング](security-engineering.md)
-### [HoloLens 2 のプライバシーに関する声明](hololens2-compliance.md)
+### [HoloLens 2 のプライバシーとデータ保護](hololens2-privacy.md)
 ## デバイス管理
 ### [MDM を使用して HoloLens デバイスを管理する](hololens-mdm-configure.md)
 ## デバイスの登録
