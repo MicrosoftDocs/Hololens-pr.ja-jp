@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: 7438b147a31ff38233412a4213a568286fb2e3b8982bc4fd6af3f9dde842fd1a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b8bfa5359436151bcae9579c78674a93ae0db88d
+ms.sourcegitcommit: dab46153e0948310a96b1a6f47d788b7130cfa14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662561"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122620813"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot for HoloLens 2
 
@@ -250,7 +250,12 @@ HoloLens デバイスを登録する主な方法は 3 つあります。
        >
        > イーサネット アダプターを使用するデバイスの場合、Out-of-the-Box-Experience (OOBE) を開始する前に、デバイスをネットワークに接続する必要があります。 デバイスは、最初の OOBE 画面で、Autopilot デバイスとしてプロビジョニングされているかどうかを判断します。 デバイスがネットワークに接続できない場合、またはデバイスを Autopilot デバイスとしてプロビジョニングしないことを選択した場合、後で Autopilot プロビジョニングに変更することはできません。 代わりに、デバイスを Autopilot デバイスとしてプロビジョニングするには、この手順を最初からやり直す必要があります。
 
-1. デバイスは OOBE を自動的に起動します。 OOBE を使って操作しないでください。 何もせずにリラックスしてください。 HoloLens 2 にネットワーク接続を検出させ、OOBE が自動的に完了するようにします。 OOBE 中にデバイスが再起動される場合があります。 OOBE 画面は次のようになります。
+1. デバイスは OOBE を自動的に起動します。 OOBE を使って操作しないでください。
+
+    > [!IMPORTANT]
+    > オートパイロットの進行中に OOBE を操作するか、電源ボタンを押して、システムをスタンバイまたはシャットダウン状態にしないでください。 これにより、オートパイロット フローが完了しない場合があります。
+
+   HoloLens 2 にネットワーク接続を検出させ、OOBE が自動的に完了するようにします。 OOBE 中にデバイスが再起動される場合があります。 OOBE 画面は次のようになります。
 
    ![OOBE ステップ 1 ](./images/autopilot-welcome.jpg)
     ![ OOBE ステップ 2 ](./images/autopilot-step-complete.jpg)
