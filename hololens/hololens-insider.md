@@ -1,6 +1,6 @@
 ---
 title: Microsoft HoloLens の Insider Preview
-description: Insider ビルドの使用を開始する方法について説明します。また、次の主要なオペレーティングシステムの更新プログラムに関して、HoloLens の貴重なフィードバックを提供します。
+description: Insider ビルドの使用を開始し、次の主要なオペレーティング システム更新プログラムに関する貴重なフィードバックを提供する方法についてHoloLens。
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,74 +16,76 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 19035c53fec64ec19243ab5edc79bf77acbf400a
-ms.sourcegitcommit: d99de8d5afbe2585fdb5396bd0165ac74734b281
+ms.openlocfilehash: 80346fd74c9b38ed557d815ed138b1da5702609e
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "122277156"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859019"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens の Insider Preview
 
-HoloLens のための最新の Insider Preview ビルドへようこそ。 この機能は簡単に[開始](hololens-insider.md#start-receiving-insider-builds)でき、次の主要なオペレーティングシステムの更新プログラムについての重要なフィードバックを提供します HoloLens。
+最新の Insider Preview ビルドへようこそ HoloLens。 使用を開始し、[次の](hololens-insider.md#start-receiving-insider-builds)主要なオペレーティング システム更新プログラムに関する貴重なフィードバックを提供HoloLens。
 
-## <a name="windows-insider-release-notes"></a>WindowsInsider のリリースノート
+## <a name="windows-insider-release-notes"></a>WindowsInsider リリース ノート
 
-ここでは、新しい機能を開始して、insider を Windows します。 新しいビルドは、最新の更新プログラムの開発およびベータチャネルに対して実行されます。 Windows Insider ビルドに機能と更新プログラムを追加すると、このページは引き続き更新されます。 これらの更新プログラムを実際のものに混在させることができます。
+Insiders に対する新機能のフライトを開始Windowsしています。 新しいビルドは、最新の更新プログラムのために Dev および Beta チャネルにフライトします。 このページは引き続き更新されます。Insider ビルドの機能と更新プログラムWindows追加します。 これらの更新プログラムを実際に組み合わせ、準備を整えます。
 
-これは、トラブルシューティングとデバイスレポートの改善、キオスクモードおよび証明書ビューアーの一部の修正されたバグ、拡張された管理面の強化、および更新の信頼性の向上に関するものです。 この機能更新プログラムの新機能として、プラットフォームの移行モードが HoloLens になっています。 HoloLens 2 の新しい優れた機能をすべてご確認ください。
+これは、改善されたトラブルシューティングとデバイス レポート、キオスク モードの修正されたバグ、証明書ビューアー、拡張された管理可能性サーフェス、および更新の信頼性の向上に関する情報です。 この機能更新プログラムの新しい主要機能は、HoloLensプラットフォーム モードです。 お使いのための新しい機能を確認HoloLens 2。
 
 | 機能                 | 説明                | ユーザーまたはシナリオ | 導入されたビルド |
 |-------------------------|----------------------------|--------------|------------------|
-| [プラットフォームモードの移動](#moving-platform-mode) | プラットフォームモードベータの移行について説明します。これにより、構成されている場合、船舶を使用して、動的な動きが発生している大海の大規模な海での HoloLens 2 | すべて | 20348.1411 |
-| [証明書マネージャーの PFX ファイルのサポート](#pfx-file-support-for-certificate-manager) | 設定 UI を使用した PFX 証明書の追加 | エンド ユーザー | 20348.1405 |
-| [HoloLens の設定で詳細な診断レポートを表示する](#view-advanced-diagnostic-report-in-settings-on-hololens) | デバイスで MDM 診断ログを表示する | トラブルシューティング | 20348.1405 |
-| [オフライン診断の通知](#offline-diagnostics-notifications) | ログ収集に関する audiovisual フィードバック | トラブルシューティング | 20348.1405 |
-| [低ストレージログ収集の機能強化](#low-storage-log-collection-improvements) | ストレージが不足している場合のログ収集シナリオの改善。 | トラブルシューティング | 20348.1412 |
-| [レポート HoloLens の詳細の CSP の変更](#csp-changes-for-reporting-hololens-details) | データを照会するための新しい Csp | IT 管理者    | 20348.1403                 |
-| [CSP によって制御される自動ログインポリシー](#auto-login-policy-controlled-by-csp) | アカウントを自動的にログインするために使用されます | IT 管理者 | 20348.1405 |
-| [更新の再起動の検出と通知の向上](#improved-update-restart-detection-and-notifications) | 更新プログラム用の新しい有効なポリシーと UX。 | IT 管理者 | 20348.1405 |
-| [アプリの更新のためのスマートな再試行](#smart-retry-for-app-updates) | IT 管理者がアプリを更新するためのスケジュールされた再試行を許可します。 | IT 管理者 | 20348.1405 |
-| [Microsoft Store にのみプライベートストアアプリを使用する](#use-only-private-store-apps-for-microsoft-store) | 組織のアプリのみを表示するようにストアアプリを構成する | IT 管理者 | 20348.1408 |
-| [修正プログラムと機能強化](#fixes-and-improvements) | HoloLens の修正と改善。 | すべて | 20348.1411 |
+| [プラットフォーム モードの移動](#moving-platform-mode) | 移動プラットフォーム モード ベータ版を導入します。このベータ版では、構成時に、動きの少ない動きが発生しているHoloLens 2大型の船でシステムを使用できます。 | すべて | 20348.1411 |
+| [証明書マネージャーの PFX ファイルのサポート](#pfx-file-support-for-certificate-manager) | UI を使用して PFX 証明書設定する | エンド ユーザー | 20348.1405 |
+| [詳細な診断レポートは、設定で表示HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | デバイスで MDM 診断ログを表示する | トラブルシューティング | 20348.1405 |
+| [オフライン診断通知](#offline-diagnostics-notifications) | ログ収集に関する視聴覚フィードバック | トラブルシューティング | 20348.1405 |
+| [低ストレージ ログ収集の機能強化](#low-storage-log-collection-improvements) | ストレージが少ない状況でのログ収集シナリオの改善。 | トラブルシューティング | 20348.1412 |
+| [レポートの詳細に関する CSP HoloLens変更](#csp-changes-for-reporting-hololens-details) | データに対してクエリを実行するの新しい CSP | IT 管理者    | 20348.1403                 |
+| [CSP によって制御される自動ログイン ポリシー](#auto-login-policy-controlled-by-csp) | アカウントを自動的にログインするために使用されます | IT 管理者 | 20348.1405 |
+| [更新プログラムの再起動の検出と通知の改善](#improved-update-restart-detection-and-notifications) | 新しく有効にされたポリシーと更新プログラムの UX。 | IT 管理者 | 20348.1405 |
+| [アプリ更新プログラムのスマート再試行](#smart-retry-for-app-updates) | IT 管理者がアプリを更新するためにスケジュールされた再試行を許可します。 | IT 管理者 | 20348.1405 |
+| [プライベート ストア アプリのみをプライベート ストア アプリにMicrosoft Store](#use-only-private-store-apps-for-microsoft-store) | 組織のアプリのみを表示するストア アプリを構成する | IT 管理者 | 20348.1408 |
+| [WDAC アプリと LOB アプリを使用する](#use-wdac-and-lob-apps) | IT 管理者が独自のアプリを使用し、WDAC を使用して他のアプリをブロックできます。 | IT 管理者 | 20348.1405 |
+| [修正と機能強化](#fixes-and-improvements) | 更新プログラムの修正とHoloLens。 | すべて | 20348.1411 |
 
-### <a name="it-admin-insider-feature-checklist"></a>IT 管理者の Insider 機能のチェックリスト
+### <a name="it-admin-insider-feature-checklist"></a>IT 管理者のインサイダー機能のチェックリスト
 
-✔️、1つの Azure AD アカウントを自動的にログインするように設定する場合は、 [この新しい CSP を構成します。](#auto-login-policy-controlled-by-csp) <br>
-✔️更新に失敗した後に自動的に更新を試みるようにアプリを構成する場合は、 [この新しい CSP をスマート再試行用に設定します。](#smart-retry-for-app-updates) <br>
-✔️ OS の更新をより細かく制御する場合は、 [新しく有効にした更新ポリシーを確認してください。](#improved-update-restart-detection-and-notifications) <br>
-✔️組織のアプリを Microsoft Store を通じて会社のストアで使用できるようにする必要がありますが、完全なストアではなく、組織のアプリへのアクセスのみを許可する場合は、[このポリシーを設定します。](#use-only-private-store-apps-for-microsoft-store) <br>
-✔️ HoloLens デバイスの空き記憶域スペース、SSID、または BSSID を知りたい場合は、これらの[レポート csp を確認してください。](#csp-changes-for-reporting-hololens-details)
+✔️アカウントを 1 つ設定して自動的にログインAzure AD場合は、この新しい [CSP を構成します。](#auto-login-policy-controlled-by-csp) <br>
+✔️更新に失敗した後に自動的に更新を試行するアプリを構成する場合は、この新しい CSP をスマート 再試行 [用に設定します。](#smart-retry-for-app-updates) <br>
+✔️ OS の更新を詳細に制御する場合は、これらの新しく有効にされた更新 [ポリシーを確認してください。](#improved-update-restart-detection-and-notifications) <br>
+✔️ Microsoft Store 経由で組織のアプリを会社のストアで使用できる必要があるが、完全なストアではなく組織のアプリへのアクセスのみを許可する場合は、このポリシーを設定します。 [](#use-only-private-store-apps-for-microsoft-store) <br>
+✔️ デバイスの空き記憶域スペース、SSID、または BSSID を知りたい場合はHoloLensこれらのレポートの SSID を[確認してください。](#csp-changes-for-reporting-hololens-details) <br>
+✔️ WDAC を使用してアプリまたはプロセスの起動をブロックするが、独自の行の機能アプリを使用する必要がある場合は [、WDAC](#use-wdac-and-lob-apps)ポリシー で LOB を許可できます。
 
-### <a name="moving-platform-mode"></a>プラットフォームモードの移動
+### <a name="moving-platform-mode"></a>プラットフォーム モードの移動
 
-**Insider build 20348.1411** の段階では、HoloLens 2 での動的な動き移動プラットフォームを追跡するためのベータサポートを追加しました。 ビルドをインストールし、プラットフォームの移動モードを有効にすると、大規模な船舶や大海船舶など、以前にアクセスできなかった環境で HoloLens 2 を使用できるようになります。 現時点では、この機能は、これらの特定の移動プラットフォームのみを有効にすることを目的としています。 他の環境でこの機能を使用することはできませんが、この機能は最初にこれらの環境のサポートを追加することに重点を置いています。
+Insider ビルド **20348.1411** の段階で、HoloLens 2 の低動的モーション移動プラットフォームの追跡に対するベータ サポートが追加されました。 ビルドをインストールしてプラットフォーム モードの移動を有効にすると、以前はアクセスできない環境 (大型船や大型の船船など) で HoloLens 2 を使用できます。 現在、この機能は、これらの特定の移動プラットフォームを有効にすることのみを目的としています。 この機能を他の環境で使用してはいけないことはありませんが、この機能はそもそもこういった環境にサポートを追加することに重点を置いています。
 
-サポートされている機能と、この新機能を有効にする方法の詳細については、「[プラットフォームの移行」ページを参照](hololens2-moving-platform.md)してください。
+サポートされている機能と、この新機能を有効にする方法の詳細については、プラットフォームの移動に関する [ページを参照してください。](hololens2-moving-platform.md)
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>証明書マネージャーの PFX ファイルのサポート
 
-Windows Insider build 20348.1405 で導入されました。 .Pfx 証明書を使用するように、 [証明書マネージャー](certificate-manager.md) にサポートを追加しました。 ユーザーが  >  **& セキュリティ**  >  **証明書** を更新設定に移動し、[**証明書のインストール**] を選択すると、UI で .pfx 証明書ファイルがサポートされるようになりました。
-ユーザーは、秘密キーを持つ .pfx 証明書をユーザーストアまたはコンピューターストアにインポートできます。
+Insider ビルド 20348.1405 Windowsで導入されました。 証明書マネージャーに .pfx [証明書を](certificate-manager.md) 使用するサポートが追加されました。 ユーザーが [Update 設定 &セキュリティ証明書] に移動し、[証明書のインストール] を選択すると、UI で .pfx 証明書ファイル  >    >  がサポートされます。 
+ユーザーは、ユーザー ストアまたはコンピューター ストアに、プライベート キーを使用して .pfx 証明書をインポートできます。
 
-### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>HoloLens の設定で詳細な診断レポートを表示する
+### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>詳細な診断レポートは、設定で表示HoloLens
 
-管理対象デバイスでの動作のトラブルシューティングでは、必要なポリシー構成が適用されていることを確認することが重要な手順です。 これまでの新機能では、**設定** アカウントによって収集された mdm 診断ログをエクスポートした後、mdm またはデバイスの近くでデバイスを使用する必要がありました。これには、  ->    >  **職場または学校へのアクセス権** があります。また、**管理ログをエクスポート** し、近くの PC に表示します。
+動作のトラブルシューティング時にマネージド デバイスに対して、想定されるポリシー構成が適用されるのを確認することが重要な手順です。 以前は、この新機能では、この情報を MDM 経由で、または **設定** アカウント アクセスの仕事または学校を介して収集された MDM 診断ログをエクスポートした後、デバイスの近くでこの情報を表示し、管理ログをエクスポートし、近くの  ->    >  PCで表示するを選択する必要がありました。
 
-これで、Edge ブラウザーを使用してデバイスで MDM 診断を表示できるようになりました。 MDM 診断レポートをより簡単に表示するには、[職場または学校へのアクセス] ページに移動し、[ **詳細な診断レポートの表示**] を選択します。 これにより、レポートが生成され、新しいエッジウィンドウで開きます。
+これで、Edge ブラウザーを使用してデバイスで MDM 診断を表示できます。 MDM 診断レポートを簡単に表示するには、[Access work or school]/(学校または学校へのアクセス)ページに移動し、[高度な診断レポートの表示 **] を選択します**。 これにより、新しい Edge ウィンドウでレポートが生成され、開きます。
 
-![設定アプリで詳細な診断レポートを表示します。](./images/view-advanced-diagnostic-report.jpg)
+![アプリで高度な診断レポート設定表示します。](./images/view-advanced-diagnostic-report.jpg)
 
-### <a name="offline-diagnostics-notifications"></a>オフライン診断の通知
+### <a name="offline-diagnostics-notifications"></a>オフライン診断通知
 
-これは、 [オフライン診断](hololens-diagnostic-logs.md#offline-diagnostics)と呼ばれる既存の機能の更新プログラムです。 以前は、診断コレクションがトリガーされたか、または完了したことをユーザーに明確に示すインジケーターがありませんでした。
-Windows Insider ビルドに追加された、オフライン診断に対するオーディオビジュアルフィードバックには、2つの形式があります。 コレクションの開始時と完了時の両方について、最初に表示されるトースト通知が表示されます。 これらは、ユーザーがログインし、視覚エフェクトを持っているときに表示されます。
+これは、オフライン診断 と呼ばれる既存の機能 [の更新プログラムです](hololens-diagnostic-logs.md#offline-diagnostics)。 以前は、診断収集をトリガーした、または完了したユーザーに対する明確なインジケーターは見ていました。
+Insider ビルドWindowsに追加されました。オフライン診断には、2 つの形式の視聴覚フィードバックがあります。 1 つ目は、コレクションの開始と完了の両方に対して表示されるトースト通知です。 これらは、ユーザーがログインし、ビジュアルを持つ場合に表示されます。
 
-![ログを収集するためのトースト。](./images/logcollection1.jpg)
+![ログを収集するトースト。](./images/logcollection1.jpg)
 
-![ログの収集が完了したときのトースト。](./images/logcollection2.jpg)
+![ログ収集が完了したらトーストします。](./images/logcollection2.jpg)
 
-多くの場合、ユーザーがディスプレイにアクセスできない場合にはフォールバックログ収集メカニズムとしてオフライン診断を使用しますが、ログインができない場合や、まだ OOBE にある場合は、ログが収集されるときにオーディオキューも再生されます。 このサウンドは、トースト通知に加えて再生されます。
+ユーザーは、ディスプレイにアクセスできない場合、ログインできない、または OOBE にまだ存在する場合のフォールバック ログ収集メカニズムとしてオフライン診断を使用する場合が多いので、ログを収集するときにオーディオ キューも再生されます。 このサウンドは、トースト通知に加えて再生されます。
 
 この新機能は、デバイスの更新時に有効になり、有効にしたり管理したりする必要はありません。 この新しいフィードバックを表示したり聞いたりできない場合でも、オフライン診断は引き続き生成されます。
 
@@ -151,9 +153,9 @@ devicestatus CSP は、HoloLens がアクティブに接続されている Wi-Fi
 
 ### <a name="improved-update-restart-detection-and-notifications"></a>更新の再起動の検出と通知の向上
 
-アクティブ時間とインストール時間のポリシーの間に、デバイスが使用されているときに HoloLens デバイスを再起動しないようにすることができます。 ただし、必要な更新プログラムのインストールを完了するために再起動が行われない場合は、更新プログラムの導入が遅れることもあります。 ポリシーを追加して、期限および必要な再起動を実施し、更新プログラムのインストールが適時に完了するようにしました。 再起動が開始される前にユーザーに通知し、IT ポリシーに従って再起動を遅らせることができます。
+アクティブ時間とインストール時間のポリシーの間に、デバイスが使用されているときに HoloLens デバイスを再起動しないようにすることができます。 ただし、必要な更新プログラムのインストールを完了するために再起動が行われない場合は、更新プログラムの導入が遅れることもあります。 ポリシーを追加して、期限および必要な再起動を実施し、更新プログラムのインストールが適時に完了するようにしました。 ユーザーは再起動を開始する前に通知を受け、IT ポリシーに従って再起動を遅らせることができます。
 
-次の更新ポリシーが追加されました:
+次の更新ポリシーが追加されました。
 
 - [Update/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
 - [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
@@ -167,13 +169,17 @@ devicestatus CSP は、HoloLens がアクティブに接続されている Wi-Fi
 
 ### <a name="smart-retry-for-app-updates"></a>アプリの更新のためのスマートな再試行
 
-現在、HoloLens が有効になっています。これにより、IT 管理者は、更新プログラムの適用を許可するアプリが使用中であるために更新が失敗したアプリを再起動するように、定期的または1回の日付を設定できます。 これらは、スケジュールされた時刻やサインインなど、いくつかの異なるトリガーに基づいて設定できます。 このポリシーの使用方法の詳細については、「 [Applicationmanagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)」を参照してください。
+現在、HoloLens が有効になっています。これにより、IT 管理者は、更新プログラムの適用を許可するアプリが使用中であるために更新が失敗したアプリを再起動するように、定期的または1回の日付を設定できます。 これらは、スケジュールされた時刻やサインインなど、いくつかの異なるトリガーに基づいて設定できます。 このポリシーを使用する方法の詳細については、「 [Applicationmanagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)」を参照してください。
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>Microsoft Store の専用ストアアプリのみを使用する
 
 RequirePrivateStoreOnly ポリシーは HoloLens に対して有効になっています。 このポリシーを使用すると、組織用に構成されたプライベートストアのみを表示するように Microsoft Store アプリを構成できます。 使用できるようにしたアプリのみにアクセスを制限する。
 
 [Applicationmanagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)の詳細情報
+
+### <a name="use-wdac-and-lob-apps"></a>WDAC アプリと LOB アプリを使用する
+
+WDAC を使用して、アプリやプロセスの起動をブロックし、独自の bushiness アプリを引き続き使用できるようになりました。 これで、WDAC ポリシーで許可できるようになりました。 このポリシーを使用するには、WDAC ポリシーを作成するときに、PowerShell で余分なコード行を実行する必要があります。 [こちらの手順を確認してください。](/mem/intune/configuration/custom-profile-hololens)
 
 ### <a name="fixes-and-improvements"></a>修正プログラムと機能強化
 
@@ -205,7 +211,7 @@ Windows insider がチャネルに移行しています。 **高速** リング�
 
 ### <a name="update-error-0x80070490-work-around"></a>Update エラー0x80070490 の回避策
 
-Dev または Beta チャネルで更新するときに更新エラー0x80070490 が発生した場合は、次の短期的な対処を試してください。 これには、insider チャネルを移動し、更新を選択して、Insider channel を戻す必要があります。
+Dev または Beta チャネルで更新するときに update エラー0x80070490 が発生した場合は、次の短期的な回避策を試してください。 これには、insider チャネルを移動し、更新を選択して、Insider channel を戻す必要があります。
 
 #### <a name="stage-one---release-preview"></a>ステージワンリリースプレビュー
 

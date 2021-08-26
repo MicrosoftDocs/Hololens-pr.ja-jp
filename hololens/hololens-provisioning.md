@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d9a0901a916ec33c076eeae33b680406a45f7feefe82442da1f346e78bc9b383
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 999e16f117e4f0838c4a0cb6d6bafcbbf72e1d5a
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663802"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859036"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>プロビジョニングパッケージを使用して HoloLens を構成する
 
@@ -34,7 +34,7 @@ ms.locfileid: "115663802"
 - Wi-Fi 接続をセットアップする
 - デバイスに証明書を適用する
 - 開発者モードを有効にする
-- [詳細な手順](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)に従ってキオスクモードを構成します。
+- [詳細な手順](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens)に従ってキオスクモードを構成します。
 
 ## <a name="provisioning-package-hololens-wizard"></a>プロビジョニングパッケージ HoloLens ウィザード
 
@@ -50,7 +50,7 @@ HoloLens ウィザードを使用すると、プロビジョニングパッケ�
 - Azure Active Directory にデバイスを登録するか、ローカルアカウントを作成します。
 - 証明書の追加
 - 開発者モードを有効にする
-- [詳細な手順](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)に従ってキオスクモードを構成します。
+- [詳細な手順](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens)に従ってキオスクモードを構成します。
 
 > [!WARNING]
 > いずれかのウィザードを使って Azure Active Directory の登録を構成するには、Windows 10 で Windows 構成デザイナーを実行する必要があります。
@@ -123,7 +123,7 @@ Windows 構成デザイナー ツールを使用して、プロビジョニン�
 
     > [!IMPORTANT]
     > プロビジョニング パッケージを作成する場合、プロジェクト ファイルとプロビジョニング パッケージ (.ppkg) ファイルに機密情報を含めることができます。 .ppkg ファイルは暗号化するかどうかを選べますが、プロジェクト ファイルは暗号化されません。 プロジェクト ファイルは、安全な場所に保存し、不要になったときに削除する必要があります。
-    
+
 9. [   >  **プロビジョニングパッケージ** のエクスポート] を選択します。
 
 10. **所有者** を **IT 管理** 者に変更します。これにより、このプロビジョニングパッケージの優先順位は、他のソースからこのデバイスに適用されるパッケージのプロビジョニングよりも高くなります。 **[次へ]** を選択します。
@@ -154,19 +154,19 @@ Windows 構成デザイナー ツールを使用して、プロビジョニン�
 
 Windows HoloLens 2 Holographic バージョン 2004 またはビルド[19041.1103](hololens-release-notes.md#windows-holographic-version-2004)以降のデバイスでは、USB ドライブを使用してプロビジョニング パッケージを適用できます。 .ppkg ファイルを USB ドライブのルートにコピーします。 プロビジョニング パッケージは、USB ドライブのルートにある場合にのみ適用されます。 存在する複数のプロビジョニング パッケージが順番に適用されます。
 
-HoloLens 2 [Holographic バージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2)以降Windowsのデバイスには、このプロセスを効率化し、簡略化して自動化するのに役立つ新しい機能があります。 次のセクションを確認してください。
+HoloLens 2 [Holographic バージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2)以降の Windows デバイスには、このプロセスを効率化し、自動化するためのより新しい機能があります。 次のセクションを確認してください。
 
 - [USB からの自動起動プロビジョニング](hololens-provisioning.md#auto-launch-provisioning-from-usb)
 - [OOBE でのプロビジョニング パッケージの自動確認](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
 - [UI を使用しない自動プロビジョニング](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
-1. USB ケーブルを使用してデバイスを PC に接続し (または前述HoloLens 2 USB ドライブ)、デバイスを起動します。 OOBE の [対話可能 **な最初の瞬間]** ページを過ぎて続行しない。   
-    - このHoloLens (第 1 世代) には、青いボックスが表示されます。 
+1. USB ケーブルを使用してデバイスを PC に接続し (または前述HoloLens 2 USB ドライブ)、デバイスを起動します。 OOBE の [対話可能 **な最初の瞬間]** ページを過ぎて続行しない。
+    - このHoloLens (第 1 世代) には、青いボックスが表示されます。
     - このHoloLens 2には、このページにingbird が含まれている必要があります。
 
-2. **[音量を下げる]** ボタンと **電源** ボタンを同時に短く押して離します。 
+2. **[音量を下げる]** ボタンと **電源** ボタンを同時に短く押して離します。
 
-3. HoloLens PC 上のデバイスとしてエクスプローラー表示されます。
+3. HoloLens PC 上のデバイスとしてエクスプローラーデバイスとして表示されます。
 
 4. エクスプローラーで、プロビジョニング パッケージ (.ppkg) をデバイス ストレージに ドラッグ アンド ドロップします。
 
@@ -183,10 +183,10 @@ HoloLens 2 [Holographic バージョン 20H2](hololens-release-notes.md#windows-
 
 - OOBE 中にプロビジョニング パッケージを備えた USB ドライブが使用されている場合、ユーザーの操作を減らして自動化されたプロセス。
 
-このリリースより前は、ユーザーは、ボタンの組み合わせを使用してプロビジョニングするために、OOBE 中にプロビジョニング画面を手動で起動する必要があります。 これで、ユーザーは USB ストレージ ドライブ上のプロビジョニング パッケージを使用して、ボタンの組み合わせをスキップできます。 
+このリリースより前は、ユーザーは、ボタンの組み合わせを使用してプロビジョニングするために、OOBE 中にプロビジョニング画面を手動で起動する必要があります。 これで、ユーザーは USB ストレージ ドライブ上のプロビジョニング パッケージを使用して、ボタンの組み合わせをスキップできます。
 
 1. OOBE の最初の対話可能な瞬間にプロビジョニング パッケージを使用して USB ドライブを接続する
-1. デバイスをプロビジョニングする準備ができたら、プロビジョニング ページが表示されたプロンプトが自動的に開きます。 
+1. デバイスをプロビジョニングする準備ができたら、プロビジョニング ページが表示されたプロンプトが自動的に開きます。
 
 注: デバイスの起動中に USB ドライブが接続された状態の場合、OOBE は既存の USB ストレージ デバイスを列挙し、追加の USB ストレージ デバイスが接続されているのを監視します。
 
@@ -204,27 +204,27 @@ USB デバイスからのプロビジョニングの自動起動とプロビジ�
 
 1. [構成デザイナー を使用してプロビジョニング](hololens-provisioning.md)[パッケージWindows作成します](https://www.microsoft.com/store/productId/9NBLGGH4TX22)。 
 1. パッケージを USB ストレージ ドライブにコピーします。
-1. [19041.1361](https://aka.ms/hololens2previewdownload)[以降の](hololens-insider.md#ffu-download-and-flash-directions)ビルド にHoloLens 2をフラッシュします。 
+1. [19041.1361](https://aka.ms/hololens2previewdownload)[以降HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions)ビルド にフラッシュします。 
 1. Advanced [Recovery Companion で](https://www.microsoft.com/store/productId/9P74Z35SFRS8) デバイスのフラッシュが完了したら、USB-C ケーブルを取り外します。 
 1. USB ドライブをデバイスに接続します。
-1. デバイスが HoloLens 2 OOBE に起動すると、USB ドライブ上のプロビジョニング パッケージが自動的に検出され、プロビジョニング ページが起動します。
+1. デバイスHoloLens 2 OOBE に起動すると、USB ドライブ上のプロビジョニング パッケージが自動的に検出され、プロビジョニング ページが起動します。
 1. 10 秒後、デバイスによってプロビジョニング パッケージが自動的に適用されます。 
 
 これでデバイスが構成され、[プロビジョニングに成功しました] 画面が表示されます。
 
-## <a name="applyremove-a-provisioning-package-to-hololens-after-setup"></a>セットアップ後にプロビジョニング パッケージを適用またはHoloLensする
+## <a name="applyremove-a-provisioning-package-to-hololens-after-setup"></a>セットアップ後にプロビジョニング パッケージを適用または削除HoloLensする
 
 > [!NOTE]
-> これらの手順は、HoloLens 2 Holographic バージョン 1809 以上のすべての HoloLens デバイスと Windows (第 1 世代) デバイスに適用されます。
+> これらの手順は、HoloLens 2 Holographic バージョン 1809 以上の Windows デバイスと HoloLens (第 1 世代) のすべてのデバイスに適用されます。
 
 PC で、次の手順に従います。
-1. 「プロビジョニング ウィザードを使用してプロビジョニング パッケージを作成する」の説明にHoloLensプロビジョニング パッケージ[HoloLensします](hololens-provisioning.md)。
-2. Connect USB HoloLens使用して、デバイスを PC に接続します。 HoloLens PC 上のデバイスとしてエクスプローラー表示されます。
+1. 「プロビジョニング ウィザードを使用してプロビジョニング[パッケージを作成する](hololens-provisioning.md)」の説明に従HoloLensプロビジョニング パッケージHoloLensします。
+2. ConnectデバイスHoloLens USB ケーブルを使用して PC に接続します。 HoloLens PC 上のデバイスとしてエクスプローラーデバイスとして表示されます。
 3. プロビジョニング パッケージを、プロビジョニング パッケージの [ドキュメント] フォルダーにドラッグ アンド ドロップHoloLens。
 
 次のHoloLens手順に従います。
 1. **[設定]**  >  **[アカウント]**  >  **[職場または学校にアクセスする]** の順に移動します。 
-2. [**関連する設定]** で、 [プロビジョニング パッケージ **の追加または削除] を選択します**。
+2. [**関連する設定]** で、[**プロビジョニング パッケージの追加または削除] を選択します**。
 3. 次のページで[パッケージの **追加] を選択** してファイル ピッカーを起動し、プロビジョニング パッケージを選択します。 フォルダーが空の場合は、必ず [このデバイス] を **選択し、[** ドキュメント] **を選択します**。
 
 パッケージが適用されると、インストール済みパッケージ の一覧に **表示されます**。 パッケージの詳細を表示したり、デバイスからパッケージを削除したりするには、一覧表示されているパッケージを選択します。
@@ -237,7 +237,7 @@ Windows 構成デザイナーで、Windows Holographic 向けプロビジョニ�
 
 ![HoloLens 用の一般的な実行時設定](images/icd-settings.png)
 
-| 設定 | [説明] |
+| 設定 | 説明 |
 | --- | --- |
 | **証明書** | 証明書を HoloLens に展開します。  |
 | **ConnectivityProfiles** | Wi-Fi プロファイルを HoloLens に展開します。   |
