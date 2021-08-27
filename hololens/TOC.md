@@ -93,7 +93,7 @@
 ### [プロビジョニング パッケージを使用して HoloLens を構成する](hololens-provisioning.md)
 ### [一般的なデバイスの制限](hololens-common-device-restrictions.md)
 ### [HoloLens をキオスクとしてセットアップする](hololens-kiosk.md)
-### [グローバルに割り当てられたアクセス - キオスク](hololens-global-assigned-access-kiosk.md)
+### [HoloLens キオスクの参照情報](hololens-kiosk-reference.md)
 ### [Windows Defender アプリケーション制御 - WDAC](windows-defender-application-control-wdac.md)
 ### [HoloLens 用のページ設定 CSP と URI](settings-uri-list.md)
 ## ネットワークと接続
