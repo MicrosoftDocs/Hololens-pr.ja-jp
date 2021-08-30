@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 67e34ea275ef73adda840ee4f44d9c0c3c9440ef0bd2aef48cb7aaa971219220
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 541c1080d7f5fe9491d6cb11179ea98b160f687c
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660133"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190176"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>展開ガイド-Dynamics 365 Guides による企業接続 HoloLens 2-概要
 

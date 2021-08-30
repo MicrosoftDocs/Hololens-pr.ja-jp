@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a110f711d402432e727be6f342156e7dee733157
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309329"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189445"
 ---
 # <a name="hololens-2-cleaning-faq"></a>HoloLens 2 クリーニング: よくあるご質問
 
@@ -37,7 +37,7 @@ ms.locfileid: "108309329"
 
 1. 乾いたリントフリーのマイクロファイバー クロスを使用してデバイスの表面を軽く拭き、すべてのほこりを取り除きます。
 
-   ![ブロー パッドを持ちながらクリーニングする](images/hl2-cleaning.png)
+   ![ブラウザー pad を保持したままクリーンにします。](images/hl2-cleaning.png)
 
 2. 医療用の "70%" のイソプロピル アルコールを使用してクロスを軽く湿らせてから、その湿らせたクロスを使用してデバイスの表面をやさしく拭きます。
 
@@ -71,7 +71,7 @@ ms.locfileid: "108309329"
 
 はい。 ブロー パッドは、磁気によってデバイスに取り付けられています。 取り外す場合は、ヘッドバンドからやさしく離します。 交換する場合は、元の場所に戻します。
 
-![ブロー パッドを取り外す、または交換する](images/hololens2-remove-browpad.png)
+![ブラウザー pad を削除または置換します。](images/hololens2-remove-browpad.png)
 
 ## <a name="how-can-i-clean-the-brow-pad"></a>ブロー パッドをクリーニングするにはどうすればよいですか?
 
@@ -89,6 +89,6 @@ UVC LED (0.5-0.6 mW/cm<sup>2</sup> の強度レベルで 265 nm で動作し、�
 > 1. バイザーとセンサー ウィンドウの基材に損傷が発生します。
 > 1. ディスプレイのパフォーマンスが低下します。
 
-## <a name="is-the-rear-pad-replaceable"></a>背面パッドは交換可能ですか?
+## <a name="is-the-rear-pad-replaceable"></a>リアパッドは置き換え可能ですか。
 
 いいえ。

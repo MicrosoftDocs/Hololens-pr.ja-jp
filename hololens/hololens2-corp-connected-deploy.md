@@ -1,7 +1,7 @@
 ---
-title: 展開ガイド– Dynamics 365 Guides による企業接続 HoloLens 2
-description: Dynamics 365 Guides を使用して、企業に接続されたネットワーク経由で HoloLens 2 デバイスの展開を設定する方法について説明します。
-keywords: HoloLens、管理、企業接続、Dynamics 365 Guides、AAD、Azure AD、MDM、モバイルデバイス管理
+title: デプロイ ガイド – 企業接続HoloLens 2 Dynamics 365 Guides - デプロイ
+description: デバイスを使用して企業の接続済みネットワークHoloLens 2デバイスの展開を設定する方法についてDynamics 365 Guides。
+keywords: HoloLens、管理、企業接続、Dynamics 365 Guides、AAD、Azure AD、MDM、Mobile デバイス管理
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -14,104 +14,104 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f9435ce94986a851bb7744eeea48fa6e411454f5090d7ae11c869ba6f27dc942
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 7df2b00b2d87be7b9ad4a5d84c83251ec0ebec4d
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660205"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189683"
 ---
-# <a name="deploy---corporate-connected-guide"></a>デプロイ-企業接続ガイド
+# <a name="deploy---corporate-connected-guide"></a>デプロイ - 企業接続ガイド
 
-各デプロイの重要な部分は、エンドユーザーに対して円滑なエクスペリエンスを確保するために、自分でテストする前に、デプロイが適切に設定されていることを確認することです。
+各デプロイの重要な部分は、エンド ユーザーのスムーズなエクスペリエンスを確保するために、自分でテストする前にデプロイが適切に設定されていることを確認する点です。
 
-MDM 経由で Wi-Fi 証明書をデプロイしているため、最初に HoloLens を設定し、開いている Wi-Fi ネットワークまたは証明書を必要としないネットワークにデバイスを登録する必要があります。 HoloLens が OOBE を完了し、登録されると、デバイスは以前に構成したネットワーク証明書と LOB を受信します。デバイスが受信した両方の検証を行うことができます。
+MDM を介して Wi-Fi 証明書を展開するために、最初に HoloLens を設定し、開いている Wi-Fi ネットワークまたは証明書を必要としないネットワークにデバイスを登録する必要があります。 HoloLens OOBE と登録が完了すると、デバイスは、前に構成したネットワーク証明書と LOB を受け取り、両方がデバイスによって受信されたと検証できます。
 
-その後、テストガイドの作成と操作の両方ができることを確認できます。
+その後、テスト ガイドを作成して操作できると確認できます。
 
 ## <a name="enrollment-validation"></a>登録の検証
 
-これで、Azure AD と MDM 登録のすべてが正しく構成されたので、残りはスナップになります。 Wi-Fi 接続と HoloLens デバイス、および以前に構成した Azure AD ユーザーアカウントのいずれかが必要です。
+アプリケーションと MDM 登録用にすべてがAzure AD構成されたので、残りはスナップする必要があります。 ユーザー アカウントに接続Wi-FiデバイスHoloLens、以前に構成したユーザー アカウントの 1 つAzure ADがあります。
 
-現在デバイスが工場出荷時の設定状態になっていない場合は、ここで [デバイスを更新](/hololens/hololens-recovery#clean-reflash-the-device)することをお勧めします。
+デバイスが現在出荷時の設定状態ではない場合は、デバイス を再フラッシュする [良い時期になります](/hololens/hololens-recovery#clean-reflash-the-device)。
 
-1. デバイスが OOBE になったら、操作を開始し、プロンプトに従って操作を開始する必要があります。
+1. デバイスが OOBE に入った後は、対話を開始し、プロンプトに従う必要があります。
 
-2. wi-fi に参加するために証明書を必要としない、開いている Wi-Fi ネットワークに Connect します。 これにより、初期セットアップ後に、デバイスが組織の Wi-Fi で使用する証明書をダウンロードできるようになります。
+2. Connect Wi-Fi にWi-Fiを必要としない開いているネットワークに接続します。 これにより、デバイスは、初期セットアップ後に組織のアカウントで使用される証明書Wi-Fiダウンロードできます。
 
-3. **この HoloLens を所有 Who** ことを確認するメッセージが表示されます。 [ **職場または学校が所有** する] を選択し、Azure AD アカウントの資格情報を入力します。
+3. 重要なプロンプトは、このアカウントを **Who求めるメッセージが表示HoloLens?** [ **マイ ワークまたは学校が所有している] を選択し** 、アカウントの資格情報Azure AD入力します。
 
-4. 登録が成功すると、PIN の設定を求められます。 この PIN は、このユーザーに対してこのデバイスに固有のものです。 また、虹彩スキャン、音声データ、テレメトリの設定を求められます。最後に、[スタート] メニューを開き、OOBE を完了する方法を学習できます。
+4. 登録が成功すると、PIN の設定を求めるメッセージが表示されます。 この PIN は、このユーザーに対してこのデバイスに固有です。 あやめスキャン、音声データ、テレメトリ設定の入力も求め、最後にスタート メニューを開いて OOBE を完了する方法を学習できます。
 
-5. Mixed Reality ホームに移動したら、学習した **開始ジェスチャ** を使用してスタートメニューを開きます。
+5. [ホーム] の [Mixed Realityしたら、学習スタート メニュー開始ジェスチャを使用して **アプリを開** きます。
 
-6. **設定** アプリを選択し、[**システム**] を選択します。 最初に表示される情報は、デバイス名です。 HoloLens 2 デバイスの場合は、 &quot; HoloLens- &quot; 6 文字の文字列が続きます。
+6. アプリを選択 **設定、 [** システム] を **選択します**。 最初に表示される情報は、デバイス名です。HoloLens 2 デバイスの場合は HOLOLENS で、その後に 6 つの文字列が &quot; &quot; 続きます。
 
-7. この名前をメモしておきます。
+7. この名前をメモします。
 
-    ![HoloLens 2 設定画面](./images/hololens2-settings-about.jpg)
+    ![HoloLens 2 設定画面。](./images/hololens2-settings-about.jpg)
 
-8. デバイスが Azure AD に正常に参加していることを確認します。 2つの方法があります。
+8. デバイスがデバイスに正常に参加Azure AD。 次の 2 つの方法があります。
 
-    1.  設定アプリ。 **設定**[   ->  **職場または学校にアクセス** するアカウント] を選択します。 この画面では、 &quot; nameofAAD&#39;s Azure AD に接続されていることを確認して、正常に登録されたことを確認できます。 接続 *yourusername@nameofAAD.onmicrosoft.com* します。 これにより、デバイスが組織&#39;s Azure AD に参加していることが確認されます。
+    1.  アプリ設定アプリ。 [アカウント **設定** アクセス **の**  ->  **仕事または学校] を選択します**。 この画面から、[Connected to nameofAAD]/(nameofAAD に接続済み)、[接続済み] の [&#39;&quot; を確認Azure AD。 によって接続されます *yourusername@nameofAAD.onmicrosoft.com* 。 これにより、デバイスが組織の組織に参加&#39;確認Azure AD。
 
-    1. [Azure ポータル](https://portal.azure.com/#home)。 [ **Azure Active Directory**  ->  **デバイス**  ->  ] [**すべてのデバイス**] にアクセスし、デバイス名を検索します。 [結合の種類] では、"Azure AD" 結合 "として表示されます。
-        ![Azure AD での結合の種類の確認](./images/hololens2-devices-all-devices.png)
+    1. [Azure ポータル](https://portal.azure.com/#home)。 [デバイス]  ->  **Azure Active Directory[**  ->  **すべてのデバイス**] に移動し、デバイス名を検索します。 [結合の種類] の下に 、"参加Azure AD表示されます。
+        ![[結合の種類] を [Azure AD。](./images/hololens2-devices-all-devices.png)
 
-9. デバイスが MDM に登録されていることを確認します。 2つの方法があります。
+9. デバイスが MDM に登録されていないことを確認します。 次の 2 つの方法があります。
 
-    1. **設定** で、[**アカウント**] [  ->  **職場または学校にアクセス** する] を選択します。 この画面では、 &quot; nameofAAD&#39;s Azure AD に接続されていることを確認して、正常に登録されたことを確認できます。 接続 *yourusername@nameofAAD.onmicrosoft.com* します。 この職場または学校アカウントから、[ &quot; nameofAAD&#39;s に接続] を選択して Azure AD します。 によって接続され yourusername@nameofAAD.onmicrosoft.com &quot; 、[**情報**] ボタンを選択します。
+    1. [アカウント **設定、**[アカウント] [**アクセス] の**  ->  **[仕事または学校] を選択します**。 この画面から、[Connected to nameofAAD]/(nameofAAD に接続済み)、[接続済み] の [&#39;&quot; を確認Azure AD。 によって接続されます *yourusername@nameofAAD.onmicrosoft.com* 。 [接続済み] [nameofAAD] を選択して、この [仕事または学校アカウント&#39;&quot; アクセスAzure AD。 [接続者 yourusername@nameofAAD.onmicrosoft.com &quot; ] を選択し、[**情報] ボタンを** 選択します。
 
-    1. [Microsoft エンドポイントマネージャー管理センター](https://endpoint.microsoft.com/#home)。 ログインし、[  **デバイス**  ]、[  **すべてのデバイス**] の順に選択します。 ここから、HoloLens デバイス&#39;s 名を検索できます。 HoloLens が Intune に一覧表示されます。
+    1. [Microsoft エンドポイント マネージャー 管理センター](https://endpoint.microsoft.com/#home)。 ログインし、 [デバイス] 、  **[すべてのデバイス**  ]  **の順に選択します**。 ここから、デバイスの名前をHoloLens検索&#39;できます。 Intune に一覧表示されているHoloLens表示される必要があります。
 
-        ![Azure AD で Intune によって管理されていることを確認する](./images/hololens2-devices-all-devices2.png)
+        ![Intune によって管理されているのを確認Azure AD。](./images/hololens2-devices-all-devices2.png)
 
 
-## <a name="wi-fi-certificate-validation"></a>証明書の検証の Wi-Fi
+## <a name="wi-fi-certificate-validation"></a>Wi-Fi証明書の検証
 
-これで、デバイスは Wi-Fi 証明書を受信しました。 最も簡単な検証は、証明書を受信した Wi-Fi&#39;接続への接続を試みることです。 **設定** アプリを開き、[ネットワーク] **[ &amp; インターネット**] [wi-fi] の順に移動して  ->   、[wi-fi 接続] を選択します。 接続したら、Microsoft Edge アプリを開き、web サイトに移動できることを確認します。
+これで、デバイスは証明書を受け取Wi-Fiがあります。 実行できる最も簡単な検証は、証明書をWi-Fiした&#39;接続を試みる方法です。 アプリを開 **設定** Network **&amp; Internet** Wi-Fi に移動し  ->  **、Wi-Fi** 接続を選択します。 接続したら、アプリで Microsoft Edge開き、Web サイトに移動できると確認します。
 
-デバイスで証明書を受信したことを確認するには、 [証明書マネージャー](/hololens/certificate-manager)を使用します。
+デバイスで証明書を受信したと確認するには、証明書マネージャー を [使用できます](/hololens/certificate-manager)。
 
-## <a name="validate-lob-app-install"></a>LOB アプリのインストールの検証
+## <a name="validate-lob-app-install"></a>LOB アプリのインストールを検証する
 
-マネージアプリのインストールの進行状況を表示するには、アプリがインストールされているかどうかを確認するか、設定を確認します。 LOB アプリをグループの必須のインストールとして構成することにより、割り当てられたグループのユーザーに HoloLens を登録した後、アプリが HoloLens に自動的にダウンロードされます。
+マネージド アプリのインストールの進行状況を確認するには、アプリがインストールされているのか、またはアプリのインストール設定。 グループに必要なインストールとして LOB アプリを構成することで、割り当てられたグループ内のユーザーに HoloLens を登録した後、アプリは自動的に HoloLens にダウンロードされます。
 
-スタートメニューを開き、[**すべてのアプリ**] を選択します。 使用しているアプリの数によっては、[pageup **]** ボタンまたは [ **pagedown] ボタン** の使用が必要になる場合があります。
+アプリを開スタート メニューすべてのアプリ]**を選択します**。 アプリの数によっては、ページアップボタンまたはページダウン ボタンの使用が必要 **な場合** があります。
 
-デバイスでのアプリのインストールを検証するには、職場または学校にアクセスする **設定** アカウントを使用してアカウントを選択し、  ->    ->  [**情報**] ボタンをクリックして下にスクロールし、MDM からデバイスに適用されているさまざまな構成とアプリを表示します。
+デバイスへのアプリのインストールを検証するには **、設定**  ->  **Accounts**  ->  **Access** の仕事または学校を使用して行います。アカウントを選択し、[情報] ボタンを選択し、下にスクロールして MDM からデバイスに適用されているさまざまな構成とアプリを表示します。
 
-Intune からインストールを検証するには、[[メモリポータル](https://endpoint.microsoft.com/#home)  ->  **アプリ**-> すべての **アプリ**]  -> *TheNameOfYourApp*[  ->  **デバイスのインストール状態**] ページに移動します。
+Intune からインストールを検証するには [、MEM ポータル](https://endpoint.microsoft.com/#home)の [アプリ] -> [すべてのアプリ  ->  ]   -> *[TheNameOfYourApp Device* install status] ページ  ->  **に移動** します。
 
-詳細については[、「HoloLens の Intune アプリの展開」を](/hololens/app-deploy-intune)参照してください。
+詳細については、以下をご覧ください[。Intune App Deployment for HoloLens](/hololens/app-deploy-intune)
 
-## <a name="validate-dynamics-365-guides"></a>Dynamics 365 Guides の検証
+## <a name="validate-dynamics-365-guides"></a>検証Dynamics 365 Guides
 
-HoloLens のガイドアプリには、作成と操作のためのモードが用意されています。 運用する前に、ガイドの作成を完了する必要があります。
+ガイド アプリには、アプリの作成、作成HoloLens動作に関するモードがあります。 ガイドを操作する前に、ガイドの作成を完了する必要があります。
 
-### <a name="authoring-the-guide"></a>ガイドを作成する
+### <a name="authoring-the-guide"></a>ガイドの作成
 
-このクイック検証については、あまり必要ありません。 PC で準備した番組ガイドを選択するだけです。 [ガイドを固定](/dynamics365/mixed-reality/guides/hololens-app-anchor)する必要があります。簡単な検証を行うには、holographic アンカーを使用します。 その後、 [ステップとモデルを配置](/dynamics365/mixed-reality/guides/hololens-app-orientation)する必要があります。
+このクイック検証のために多くのことを行う必要はない。 PC で準備したガイドを選択します。 ホログラフィック アンカーを [使用して簡単](/dynamics365/mixed-reality/guides/hololens-app-anchor)に検証するには、ガイド を固定する必要があります。 その後、手順と [モデル を配置する必要があります](/dynamics365/mixed-reality/guides/hololens-app-orientation)。
 
 >[!NOTE]
-> PC にログインして HoloLens に作成するには、**オーサリング** ロールが必要です。 オペレーターロールは読み取り専用で、PC アプリへのアクセス権はありません。
+> PC にログイン **し、** 管理者アカウントで作成するには、オーサリング ロールがHoloLens。 オペレーター ロールは読み取り専用であり、PC アプリにアクセスできません。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/poE7s7_zWDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### <a name="operating-the-guide"></a>ガイドを操作する
+### <a name="operating-the-guide"></a>ガイドの操作
 
-ホログラムが配置されたら、ガイドの操作をテストできます。 
-- **オペレーターモード** の選択
+ホログラムが配置された後は、ガイドの操作をテストできます。 
+- 演算子モード **の選択**
 - ガイドの手順をクリックします。
 
-ガイドを操作する方法の詳細なガイダンスについては、次のリソースを参照してください。
+ガイドの操作方法に関する詳細なガイダンスについては、次のリソースを参照してください。
 
-[Dynamics 365 Guides でのガイドの運用の概要](/dynamics365/mixed-reality/guides/operator-overview)
+[Dynamics 365 Guides でのガイドの操作の概要](/dynamics365/mixed-reality/guides/operator-overview)
 
-[ステップカードを Dynamics 365 Guides の演算子として取得します。](/dynamics365/mixed-reality/guides/operator-step-card-orientation)
+[[ステップ] カードを操作者として使用Dynamics 365 Guides](/dynamics365/mixed-reality/guides/operator-step-card-orientation)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9s41BKGHVL8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## <a name="next-step"></a>次のステップ 
 > [!div class="nextstepaction"]
-> [企業に接続された展開-管理](hololens2-corp-connected-maintain.md)
+> [企業に接続されたデプロイ - 保守](hololens2-corp-connected-maintain.md)

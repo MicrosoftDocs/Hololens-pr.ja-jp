@@ -13,22 +13,22 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f76c8bb669f45ddde539c0149159287724b73707765703bf310530adb4e300c6
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 587253a7ec3d3959e7861fedc474d6a2e39dd369
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662114"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189904"
 ---
 # <a name="hololens-1st-gen-hardware"></a>HoloLens (第 1 世代) ハードウェア
 
-![Microsoft HoloLens (第1世代)](images/see-through-400px.jpg)
+![Microsoft HoloLens (第1世代)。](images/see-through-400px.jpg)
 
 Microsoft HoloLens (第1世代) は、世界初の完全ならでは holographic コンピューターです。 HoloLens は、holographic エクスペリエンスによってパーソナルコンピューティングを再定義して、新しい方法で支援します。 HoloLens は、最先端の光やセンサーをブレンドして、実際の世界にピン留めされた3d ホログラムを提供します。
 
 ## <a name="hololens-components"></a>HoloLens のコンポーネント
 
-![ボックスの内容を表示する画像](images/hololens-box-contents.png)
+![ボックスの内容を表示する画像。](images/hololens-box-contents.png)
 
 HoloLens には、次の機能が含まれています。
 
@@ -65,7 +65,7 @@ HoloLens には、次の機能が含まれています。
 
 ### <a name="display"></a>表示
 
-![HoloLens には holographic レンズが表示されています](images/displays-400px.jpg)
+![HoloLens には holographic レンズが表示されます。](images/displays-400px.jpg)
 
 | &nbsp; | &nbsp; |
 |---|---|
@@ -76,7 +76,7 @@ HoloLens には、次の機能が含まれています。
 
 ### <a name="sensors"></a>センサー
 
-![環境とユーザーの操作を理解するためのセンサーが HoloLens](images/sensor-bar-400px.jpg)
+![HoloLens には、環境とユーザーの操作を理解するためのセンサーがあります。](images/sensor-bar-400px.jpg)
 
 - 1慣性測定単位 (IMU)
 - 4環境カメラを理解する
@@ -108,7 +108,7 @@ HoloLens には、次の機能が含まれています。
 
 ### <a name="processors"></a>[プロセッサ]
 
-![Microsoft HoloLens のマザーボード](images/motherboard-400px.jpg)
+![Microsoft HoloLens のマザーボード。](images/motherboard-400px.jpg)
 
 - TPM 2.0 をサポートする Intel 32 ビットアーキテクチャ
 - カスタムビルドの Microsoft Holographic Processing Unit (HPU 1.0)
@@ -153,36 +153,36 @@ HoloLens には、次の機能が含まれています。
 
 ### <a name="safety"></a>安全性
 
-HoloLensテスト済みであり、ANSI Z87.1、CSA Z94.3、EN 166 の基本的な影響保護要件に準拠している必要があります。
+HoloLens は、ANSI z 87.1、CSA z 94.3、および EN 166 の基本的な影響保護要件に準拠していることがテストされています。
 - [SAR 情報](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## <a name="care-and-cleaning"></a>注意とクリーニング
 
-お使HoloLens慎重に処理してください。 デバイスを持ち上げ、持ちHoloLens調整するには、オーバーヘッド のひも &mdash; ではなくデバイス のアームを使用します。 バイザーをホスティや指紋から解放し、触れるのを避けるため。 クリーニングを繰り返し行うとバイザーが破損する可能性があります。そのため、デバイスをクリーンな状態に保ち続けしてみてください。
+HoloLens を慎重に処理します。 HoloLens をリフトし、伝達し、調整するには、オーバーヘッドストラップではなくデバイスアームを使用し &mdash; ます。 ほこりと指紋を利用しないようにして、それに触れないようにします。 クリーニングを繰り返すと、バイザーが破損する可能性があるので、デバイスをクリーンな状態にしておきます。
 
-HoloLens にクリーナーやブラシを使用したり、水に水を入れなかったり、水を直接水に塗り付けなかったりする。
+HoloLens では、クリーナーやハードな通風を使用しないでください。また、水で結合したり、水を直接適用したりしないでください。
 
-バイザーをクリーンアップするには、キャメルまたはアヤメのレンズ ブラシまたは電球スタイルのレンズレンズのレンズを使用して、すべてのホスティを取り除きます。 少量の水でマイクロファイバーの衣を軽く塗り分け、それを使用して円形の動きでバイザーを軽くワイプします。
+バイザーをクリーニングするには、camel または goat 髪レンズブラシまたは電球スタイルのレンズブロワを使用してほこりを取り除きます。 わずかな distilled 水を使用して microfiber 布を軽く moisten、それを使用して、ビデオの動きを軽くします。
 
-ヘッドバンドやデバイス のアームを含むデバイスの残りの部分をクリーンアップするには、リントフリーの石石と水で作り出された無料の布を使用します。 再び使用HoloLens、完全にドライ状態にしてください。
+ヘッドバンドとデバイスのアームを含む、デバイスの残りの部分をクリーニングするには、中性と水が少ない、けばのない布 moistened を使用します。 もう一度使用する前に、HoloLens を完全に乾かします。
 
-![バイザーをクリーンアップする方法を示す画像](images/hololens-cleaning-visor.png)
+![バイザーをクリーニングする方法を示すイメージ。](images/hololens-cleaning-visor.png)
 
 ## <a name="finding-the-serial-number"></a>シリアル番号を見つける
 
-デバイス (第 1 世代) HoloLensのシリアル番号は、右側のレンズの下に出力されます。
-1. デバイスを頭の上に装着する場合と同様に、デバイスを目の前に押さえる。 デバイスが前方に向き、直立している。
-1. レンズを前方に向け続け、デバイスを上下に反転して、下端が表示されます。
-1. 右側のレンズが左側に表示され、バンドのレンズの下にシリアル番号が出力されます。 
+HoloLens (第1世代) デバイスのシリアル番号は、右側のレンズの下に印刷されます。
+1. ヘッドに磨耗するように、デバイスを手前に置いておきます。 デバイスが前後向きになるようにします。
+1. レンズがまだ前進している状態で、デバイスの上下を反転させます。
+1. 右側のレンズが左側に表示されるようになりました。バンドのレンズの下に印刷されるのはシリアル番号です。 
 
 シリアル番号は、接続されている PC でも確認できます。
 
 1. デバイスを接続します
 1. エクスプローラーで **[この PC]** に移動します
 1. 右クリックして HoloLens デバイスの **プロパティ** を選択する
-1. これにより、デバイスの系列番号が表示されます。 次のスクリーンショットと同様です。
+1. これにより、デバイスのシリーズ番号が表示されます。 次のスクリーンショットのようにします。
 
    <img src="images/hl1-serial-number.png" width="400" height="600" alt="Properties page in Windows 10 for HoloLens-3TNKV"/>
 
 > [!div class="nextstepaction"]
-> [アプリケーションを設定して起動HoloLens (第 1 世代)](hololens1-setup.md)
+> [HoloLens を設定して開始する (第1世代)](hololens1-setup.md)

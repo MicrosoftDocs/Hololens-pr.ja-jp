@@ -14,12 +14,12 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 74b0c8b78bf6e310965f674098a883acda5ed6101f74619c2dea209beb27e47d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662810"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190074"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>HoloLens (第 1 世代) の操作方法
 
@@ -45,7 +45,7 @@ HoloLens の操作は、スマートフォンの使用によく似ています�
 
 HoloLens には、ユーザーの左右を数フィートずつ見ることのできるセンサーが搭載されています。 手を使用する場合は、手の位置をこのフレーム内に収める必要があります。そうしないと、HoloLens では認識できません。 移動すると、フレームが移動します。  
 
-![HoloLens のハンド トラッキング フレームを示す画像](./images/hololens-2-gesture-frame.png)
+![HoloLens ハンドトラッキングフレームを表示する画像。](./images/hololens-2-gesture-frame.png)
 
 ### <a name="open-the-start-menu-with-bloom"></a>ブルームを使用してスタートメニューを開きます。
 
@@ -53,16 +53,16 @@ HoloLens には、ユーザーの左右を数フィートずつ見ることの�
 
 1. ジェスチャフレームにあるように、手の前に置いておきます。
 1. ブルーム: すべての指をまとめて、手を開けます。
-  ![ブルームジェスチャを示すアニメーション](./images/hololens-bloom.gif)
+  ![ブルームジェスチャを示すアニメーション。](./images/hololens-bloom.gif)
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>見つめとエアタップを使用したホログラムの選択
 
-アプリまたはその他のホログラムを選択するには、選択しているホログラムを直接見ながら、エアタップします。 これを行うには、次の手順に従います。
+アプリまたはその他のホログラムを選択するには、選択しているホログラムを直接見ながら、エアタップします。 そのためには、次の手順に従います。
 
 1. 選択するホログラムを見つめます。
 1. 人差し指をまっすぐ上に伸ばして、天井を指します。
 1. エアタップ: 指を下げて、すぐに上げることができます。
-   ![エアタップの手ぶりのアニメーション](./images/hololens-air-tap.gif)
+   ![エアタップのジェスチャアニメーション。](./images/hololens-air-tap.gif)
 
 ### <a name="select-a-hologram-by-using-your-voice"></a>音声を使用してホログラムを選択する
 

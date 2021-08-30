@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b07bb87b34ec966472bcbde000106590570fd7e7063ab503724884fa266bb34
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d5cf7385dd0a53c6b17f79e16364e84ab6ec867d
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662754"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189938"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens (第 1 世代) の BitLocker 暗号化
 
@@ -51,7 +51,7 @@ HoloLens (第1世代) では、手動で、またはモバイルデバイス管�
 1. [HoloLens 用プロビジョニング パッケージを作成します。](hololens-provisioning.md)
 1. [**ランタイム設定**  >  ] [**ポリシー**  >  ] [**セキュリティ**] にアクセスし、[ **requiredeviceencryption**] を選択します。
 
-    ![[はい] に構成されているデバイスの暗号化の設定が必要](images/device-encryption.png)
+    ![[デバイスの暗号化] 設定を [はい] に構成する必要があります。](images/device-encryption.png)
 
 1. 商用スイートを購入したときに提供された XML ライセンスファイルを見つけます。
 
@@ -101,4 +101,4 @@ HoloLens (第1世代) では、手動で、またはモバイルデバイス管�
 
 - HoloLens で、[**設定**  >  **システム**] [  >  **バージョン情報**] にアクセスします。 デバイスが暗号化されている場合は、 **BitLocker** が **有効に** なります。 
 
-    ![BitLocker が有効になっている画面について](images/about-encryption.png)
+    ![BitLocker が有効になっていることを示す画面について。](images/about-encryption.png)

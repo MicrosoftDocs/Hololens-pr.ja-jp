@@ -1,6 +1,6 @@
 ---
-title: HoloLens clicker を使用する
-description: この記事では、clicker のペアリング、課金、復旧など、HoloLens clicker の使用方法について説明します。
+title: 新しいクリックHoloLens使用する
+description: この記事では、クッカーのペアリング、HoloLens、回復など、新しいツールを使用する方法について説明します。
 ms.assetid: 7d4a30fd-cf1d-4c9a-8eb1-1968ccecbe59
 ms.date: 09/16/2019
 manager: jarrettr
@@ -13,100 +13,100 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 6e98918c89da7e74157d8fc003e6997f1e44b8538e9006a835707e85c5fd3307
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 98ec5795974fa242225bb1048ead41892d8296e4
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662682"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189955"
 ---
 # <a name="use-the-hololens-1st-gen-clicker"></a>HoloLens (第 1 世代) クリッカーの使用
 
-clicker は HoloLens (第1世代) 専用に設計されており、ホログラムを操作する別の方法を提供しています。 これには、別のボックスに HoloLens (第1世代) が付属しています。
+このクッカーは、特にHoloLens (第 1 世代) 用に設計され、ホログラムと対話する別の方法を提供します。 別のボックスHoloLens (第 1 世代) が付属しています。
 
-ハンドジェスチャの代わりに使用して、アプリの選択、スクロール、移動、およびサイズ変更を行います。
+手のジェスチャの代用として、アプリの選択、スクロール、移動、サイズ変更を行います。
 
-## <a name="clicker-hardware-and-pairing"></a>ハードウェアとペアリングの Clicker
+## <a name="clicker-hardware-and-pairing"></a>Clicker ハードウェアとペアリング
 
-HoloLens (第1世代) clicker には、ホールディングとインジケーターライトを簡単にするための指ループがあります。
+1 HoloLens (第 1 世代) のクッカーには、保持しやすくする指ループとインジケーター ライトがあります。
 
-![HoloLens Clicker](images/use-hololens-clicker-1.png)
+![[HoloLens Clicker] を選択します。](images/use-hololens-clicker-1.png)
 
-### <a name="clicker-indicator-lights"></a>Clicker インジケーターライト
+### <a name="clicker-indicator-lights"></a>Clicker インジケーター ライト
 
-Clicker のライトは次のようになります。
+クッカーのライトの意味を次に示します。
 
-- **白を点滅** します。 Clicker はペアリングモードです。
+- **白で点滅する**。 クッカーはペアリング モードです。
 - **高速点滅白**。 ペアリングに成功しました。
-- **無地の白**。 Clicker は充電中です。
-- **黄色で点滅** します。 バッテリが不足しています。
-- 緑色で **点灯** します。 Clicker でエラーが発生したため、再起動する必要があります。 ペアリングボタンを押しながら、15秒間はクリックしたままにします。
+- **白の単色**。 クッカーが充電中です。
+- **アンバー を点滅します**。 バッテリが少ない。
+- **アンバーの単色**。 クリックツールでエラーが発生し、再起動する必要があります。 ペアリング ボタンを押しながら、15 秒間長押しします。
 
-### <a name="pair-the-clicker-with-your-hololens-1st-gen"></a>clicker を HoloLens とペアにする (第1世代)
+### <a name="pair-the-clicker-with-your-hololens-1st-gen"></a>クッカーを自分のHoloLens (第 1 世代) とペアリングする
 
-1. ブルームジェスチャを使用して [**スタート**] にアクセスし、[**設定** デバイス] を選択して、  >   Bluetooth がオンになっていることを確認します。
-1. Clicker で、ペアリングボタンを押したままにして、ステータスライトが白になるまで続けます。
-1. [ペアリング] 画面で、[ **Clicker** Pair] を選択し  >  ます。
+1. 花のジェスチャを使用して **[スタート] に移動し**、[デバイス設定  >  **選択し**、BluetoothがオンBluetooth確認します。
+1. クリンカーで、状態ライトが白に点滅するまでペアリング ボタンを長押しします。
+1. ペアリング画面で **、[Clicker** Pair]を  >  **選択します**。
 
-### <a name="charge-the-clicker"></a>Clicker を請求する
+### <a name="charge-the-clicker"></a>Clicker を課金する
 
-Clicker バッテリが低い場合、バッテリインジケーターは黄色で点滅します。 マイクロ USB ケーブルを USB 電源装置に接続して、デバイスを充電します。
+クッカーバッテリが少ない場合、バッテリ インジケーターがオレンジ色に点滅します。 マイクロ USB ケーブルを USB 電源に差し込み、デバイスを充電します。
 
-## <a name="use-the-clicker-with-hololens-1st-gen"></a>HoloLens での clicker の使用 (第1世代)
+## <a name="use-the-clicker-with-hololens-1st-gen"></a>[clicker with HoloLens (第 1 世代)
 
-### <a name="hold-the-clicker"></a>Clicker を保持する
+### <a name="hold-the-clicker"></a>クリックボタンを押したまま
 
-Clicker を使用するには、このループをリングまたは真ん中の指でスライドさせることで、マイクロ USB ポートが手首に向くようにします。 インデントにつまみを置きます。
+クッカーを装着するには、ループをリングまたは中指の上にスライドして、Micro USB ポートが手の指の方に向かっている状態にしてください。 インデントに親指を入します。
 
-![Clicker を保持する方法](images/use-hololens-clicker-2.png)
+![Clicker を保持する方法。](images/use-hololens-clicker-2.png)
 
 ### <a name="clicker-gestures"></a>Clicker ジェスチャ
 
-Clicker ジェスチャは、HoloLens ハンドジェスチャに使用される大きな動きではなく、小さな手首回転です。 clicker が[ジェスチャフレーム](hololens1-basic-usage.md)の外側にある場合でも、と HoloLens はジェスチャとクリックを認識するので、clicker を最も快適な位置に保持できます。
+クリックジェスチャは、手のジェスチャに使用される大きな動きではなく、HoloLens回転です。 またHoloLensは、クッカーがジェスチャ フレームの外側にある場合でもジェスチャとクリックを認識[](hololens1-basic-usage.md)し、ユーザーにとって最も快適な位置にクッカーを保持できます。
 
-- **を選択** します。 ホログラム、ボタン、またはその他の要素を選択するには、その要素を見つめて、をクリックします。
+- **を選択します**。 ホログラム、ボタン、または他の要素を選択するには、その要素を視線入力してクリックします。
 
-- **クリック** したままにします。 ボタンのつまみをクリックしたままにすると、ホログラムの移動やサイズ変更など、タップして保持するものと同じことが実行されます。
+- **を長押しします**。 ボタンをクリックしたままにし、ホログラムの移動やサイズ変更など、タップアンドホールドと同じ操作を行います。
 
-- **スクロール**。 アプリバーで、[ **スクロールツール**] を選択します。 クリックしたままにして、clicker up、down、left、または right を回転させます。 スクロールを速くするには、スクロールツールの中央から離れた位置に移動します。
+- **スクロール**。 アプリ バーで、[スクロール ツール] **を選択します**。 クリックして長押しし、クリックツールを上、下、左、または右に回転させます。 より速くスクロールするには、スクロール ツールの中央から手を遠くに移動します。
 
-- **ズーム**。 アプリバーで、[ **ズームツール**] を選択します。 [拡大] をクリックし、clicker を回転して、ズームアウトします。
+- **ズーム**。 アプリ バーで、[ズーム ツール] **を選択します**。 クリックして長押しし、クリックボタンを上に回転させて拡大するか、下に移動して縮小します。
 
 > [!TIP]
-> Microsoft Edge を使用するときに拡大または縮小するには、ページを見つめ、をダブルクリックします。
+> ウィンドウを使用するときに拡大または縮小Microsoft Edge、ページを視線入力してダブルクリックします。
 
-## <a name="im-having-problems-using-the-hololens-clicker"></a>HoloLens clicker の使用に関する問題が発生しています
+## <a name="im-having-problems-using-the-hololens-clicker"></a>クリックツールの使用で問題HoloLensしています
 
-[Clicker](hololens1-clicker.md)を使用して、ホログラムの選択、スクロール、移動、およびサイズ変更を行います。 個々のアプリは、追加の clicker ジェスチャをサポートする場合があります。
+クッカー [を使用して、](hololens1-clicker.md) ホログラムの選択、スクロール、移動、サイズ変更を行います。 個々のアプリで、追加のクリックジェスチャがサポートされる場合があります。
 
-Clicker の使用に問題がある場合は、課金され、HoloLens とペアになっていることを確認してください。 バッテリが低い場合は、インジケーターライトが黄色で点滅します。 clicker がペアリングされていることを確認するには、[**設定** デバイス] にアクセスし、  >  表示されているかどうかを確認します。 詳細については、「 [Pair the clicker](hololens1-clicker.md)」を参照してください。
+クリックツールの使用で問題が発生した場合は、課金され、アプリとペアリングHoloLens。 バッテリが少ない場合は、インジケーターライトがオレンジ色に点滅します。 クッカーがペアリングされているのを確認するには、[デバイス設定に移動し、そこに表示  >  されるのを確認します。 詳細については、「Clicker をペアリング [する」を参照してください](hololens1-clicker.md)。
 
-Clicker が課金され、ペアリングされていても問題が発生する場合は、メインボタンを押したまま15秒のペアリングボタンを押してリセットします。 次に、clicker を HoloLens とペアにします。
+クッカーが課金され、ペアリングされ、問題が解決しない場合は、メイン ボタンとペアリング ボタンを 15 秒間押してリセットします。 次に、clicker をもう一度HoloLensします。
 
-clicker をリセットしても問題が解決しない場合は、「 [HoloLens clicker を再起動または回復する](hololens1-clicker.md#restart-or-recover-the-clicker)」を参照してください。
+クリックツールをリセットしても問題が発生しない場合は、「再起動または回復する」を参照HoloLens[してください](hololens1-clicker.md#restart-or-recover-the-clicker)。
 ## <a name="restart-or-recover-the-clicker"></a>Clicker を再起動または回復する
 
-HoloLens clicker が応答していないか、正しく機能していない場合は、次の点を試してみてください。
+クリック機能が応答しないか、HoloLens機能しない場合に試してみる必要があるいくつかの操作を次に示します。
 
-### <a name="restart-the-clicker"></a>Clicker を再起動します。
+### <a name="restart-the-clicker"></a>Clicker を再起動する
 
-ペンの先端を使用して、ペアリングボタンを押したままにします。 同時に、clicker を15秒間クリックして保持します。 clicker が既に HoloLens とペアリングされている場合は、再起動後もペアリングされたままになります。
+ペンのチップを使用して、ペアリング ボタンを長押しします。 同時に、クリックボタンを 15 秒間長押しします。 クリックツールが既にアプリとペアリングされている場合HoloLens再起動後もペアリングされたが保持されます。
 
-clicker が有効にならない場合、または再起動しない場合は、HoloLens チャージャーを使用して課金してみてください。 バッテリの残量が非常に少ない場合は、白いインジケーターライトが点灯するまで数分かかることがあります。
+クッカーの電源が入らない場合や再起動しない場合は、ボタンを使用して充電HoloLensしてみてください。 バッテリが非常に低い場合は、白いインジケーター ライトがオンになるまで数分かかる場合があります。
 
-### <a name="re-pair-the-clicker"></a>Clicker を再ペアします。
+### <a name="re-pair-the-clicker"></a>クッカーを再ペアリングする
 
-[**設定** デバイス] を選択し  >   、[clicker] を選択します。 [ **削除**] を選択し、数秒待ってから、もう一度 clicker をペアリングします。
+[デバイス **設定**  >  **選択し**、クリックツールを選択します。 [ **削除]** を選択し、数秒待って、もう一度クッカーをペアリングします。
 
 ### <a name="recover-the-clicker"></a>Clicker を回復する
 
-clicker を再起動して再ペアリングしても問題が解決しない場合は、Windows デバイス回復ツールを使用して回復できます。 回復プロセスには時間がかかる場合があり、最新バージョンの clicker ソフトウェアがインストールされます。 このツールを使用するには、少なくとも 4 GB の空き記憶領域がある Windows 10 以降を実行しているコンピューターが必要です。
+Clicker を再起動して再ペアリングして問題が解決しない場合は、Windows Device Recovery Tool を使用して回復できます。 回復プロセスには時間がかかる場合があります。また、最新バージョンの Clicker ソフトウェアがインストールされます。 このツールを使用するには、少なくとも 4 GB の空きストレージ領域をWindows 10以降を実行しているコンピューターが必要です。
 
-Clicker を回復するには:
+クリックツールを回復するには:
 
-1. [Windows デバイス回復ツール](https://dev.azure.com/ContentIdea/ContentIdea/_queries/query/8a004dbe-73f8-4a32-94bc-368fc2f2a895/)をコンピューターにダウンロードしてインストールします。
-1. HoloLens に付属のマイクロ USB ケーブルを使用して、clicker をコンピューターに Connect します。
-1. Windows デバイス回復ツールを実行し、指示に従います。
+1. お使いのコンピューターに[Windows Device Recovery Tool をダウンロードして](https://dev.azure.com/ContentIdea/ContentIdea/_queries/query/8a004dbe-73f8-4a32-94bc-368fc2f2a895/)インストールします。
+1. Connect付属のマイクロ USB ケーブルを使用して、コンピューターにクッカーを接続HoloLens。
+1. Windows Device Recovery Tool を実行し、指示に従います。
 
-Clicker が自動的に検出されない場合は、[ **デバイスが検出されませんでした** ] を選択し、指示に従ってデバイスを回復モードにします。
+クリック機能が自動的に検出されない場合は、[デバイスが検出されていない] を選択し、指示に従ってデバイスを回復モードにします。
 

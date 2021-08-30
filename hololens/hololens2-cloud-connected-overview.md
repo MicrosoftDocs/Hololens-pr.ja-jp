@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8bba313e7b5ee3d055c2b6ff2c60810baf428ecfa7d5554a1efb4e0aa9e1e98b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 66e543dd699edbd54ab41474f3ea86fa313bf6ba
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660316"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189649"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>展開ガイド–リモートアシスタンスを使用したクラウド接続 HoloLens 2-概要
 
@@ -38,7 +38,7 @@ HoloLens 2 を展開するには、次のインフラストラクチャが配置
 - ユーザーが自分の会社のアカウントでサインインする (Azure AD)
     - デバイスごとに1つまたは複数のユーザーがサポートされています。
 
-:::image type="content" alt-text="クラウド接続シナリオ" source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
+:::image type="content" alt-text="クラウド接続シナリオ。" source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
 
 
 ## <a name="learn-about-remote-assist"></a>リモートアシスタンスの詳細

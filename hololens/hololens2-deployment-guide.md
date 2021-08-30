@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 476ea17dfad114741191595fa0ce3bd1c7bca28d
-ms.sourcegitcommit: 7b666c63a0367032a4a3f366b7f9029b2613e345
+ms.openlocfilehash: d5cd9c380e0d276f0a8aa9efac14cf44885446e5
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122401135"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190329"
 ---
 # <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>クラウドに接続されている HoloLens 2 を外部クライアントに展開する
 
@@ -114,7 +114,7 @@ HoloLens 呼び出しへのリモートアシスタンス HoloLens はサポー�
 
 **イメージ1.1**
 
-![サービステナントの画像](./images/hololens-service-tenant-image.png)
+![サービステナントの画像。](./images/hololens-service-tenant-image.png)
 
 ### <a name="hidden-or-restricted-apps"></a>非表示または制限されたアプリ
 

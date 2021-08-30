@@ -16,26 +16,26 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 80346fd74c9b38ed557d815ed138b1da5702609e
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: b865f9f9a9a734ef6a6c6419fc523049e925d5f8
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859019"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189479"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens の Insider Preview
 
-最新の Insider Preview ビルドへようこそ HoloLens。 使用を開始し、[次の](hololens-insider.md#start-receiving-insider-builds)主要なオペレーティング システム更新プログラムに関する貴重なフィードバックを提供HoloLens。
+最新の Insider Preview ビルドへようこそ HoloLens。 使用を開始し、[次の](hololens-insider.md#start-receiving-insider-builds)主要なオペレーティング システムの更新プログラムに関する貴重なフィードバックを提供HoloLens。
 
 ## <a name="windows-insider-release-notes"></a>WindowsInsider リリース ノート
 
-Insiders に対する新機能のフライトを開始Windowsしています。 新しいビルドは、最新の更新プログラムのために Dev および Beta チャネルにフライトします。 このページは引き続き更新されます。Insider ビルドの機能と更新プログラムWindows追加します。 これらの更新プログラムを実際に組み合わせ、準備を整えます。
+新しい機能のフライトを開始して、Insiders Windows開始します。 新しいビルドは、最新の更新プログラムのために Dev および Beta チャネルにフライトします。 このページは引き続き更新されます。Insider ビルドの機能と更新プログラムWindows追加します。 これらの更新プログラムを実際に組み合わせ、準備を整えます。
 
-これは、改善されたトラブルシューティングとデバイス レポート、キオスク モードの修正されたバグ、証明書ビューアー、拡張された管理可能性サーフェス、および更新の信頼性の向上に関する情報です。 この機能更新プログラムの新しい主要機能は、HoloLensプラットフォーム モードです。 お使いのための新しい機能を確認HoloLens 2。
+これは、改善されたトラブルシューティングとデバイス レポート、キオスク モードの修正されたバグ、証明書ビューアー、拡張された管理可能性サーフェス、および更新の信頼性の向上に関する情報です。 この機能更新プログラムの新しい主要な機能は、HoloLensプラットフォーム モードです。 お使いのための新しい機能を確認HoloLens 2。
 
 | 機能                 | 説明                | ユーザーまたはシナリオ | 導入されたビルド |
 |-------------------------|----------------------------|--------------|------------------|
-| [プラットフォーム モードの移動](#moving-platform-mode) | 移動プラットフォーム モード ベータ版を導入します。このベータ版では、構成時に、動きの少ない動きが発生しているHoloLens 2大型の船でシステムを使用できます。 | すべて | 20348.1411 |
+| [プラットフォーム モードの移動](#moving-platform-mode) | 移動プラットフォーム モード ベータ版を導入します。このベータ版では、構成すると、動きの少ないHoloLens 2発生している大規模な船で船を使用できます。 | すべて | 20348.1411 |
 | [証明書マネージャーの PFX ファイルのサポート](#pfx-file-support-for-certificate-manager) | UI を使用して PFX 証明書設定する | エンド ユーザー | 20348.1405 |
 | [詳細な診断レポートは、設定で表示HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | デバイスで MDM 診断ログを表示する | トラブルシューティング | 20348.1405 |
 | [オフライン診断通知](#offline-diagnostics-notifications) | ログ収集に関する視聴覚フィードバック | トラブルシューティング | 20348.1405 |
@@ -50,11 +50,11 @@ Insiders に対する新機能のフライトを開始Windowsしています。 
 
 ### <a name="it-admin-insider-feature-checklist"></a>IT 管理者のインサイダー機能のチェックリスト
 
-✔️アカウントを 1 つ設定して自動的にログインAzure AD場合は、この新しい [CSP を構成します。](#auto-login-policy-controlled-by-csp) <br>
+✔️アカウントを 1 つ設定して自動的にログインAzure AD場合は、この新しい CSP [を構成します。](#auto-login-policy-controlled-by-csp) <br>
 ✔️更新に失敗した後に自動的に更新を試行するアプリを構成する場合は、この新しい CSP をスマート 再試行 [用に設定します。](#smart-retry-for-app-updates) <br>
 ✔️ OS の更新を詳細に制御する場合は、これらの新しく有効にされた更新 [ポリシーを確認してください。](#improved-update-restart-detection-and-notifications) <br>
-✔️ Microsoft Store 経由で組織のアプリを会社のストアで使用できる必要があるが、完全なストアではなく組織のアプリへのアクセスのみを許可する場合は、このポリシーを設定します。 [](#use-only-private-store-apps-for-microsoft-store) <br>
-✔️ デバイスの空き記憶域スペース、SSID、または BSSID を知りたい場合はHoloLensこれらのレポートの SSID を[確認してください。](#csp-changes-for-reporting-hololens-details) <br>
+✔️ Microsoft Store 経由で会社のストアで組織のアプリを使用できる必要があるが、完全なストアではなく組織のアプリへのアクセスのみを許可する場合は、このポリシーを設定します。 [](#use-only-private-store-apps-for-microsoft-store) <br>
+✔️ デバイスの空き記憶域スペース、SSID、または BSSID を知りたい場合は、HoloLensこれらのレポートの SSID を[確認してください。](#csp-changes-for-reporting-hololens-details) <br>
 ✔️ WDAC を使用してアプリまたはプロセスの起動をブロックするが、独自の行の機能アプリを使用する必要がある場合は [、WDAC](#use-wdac-and-lob-apps)ポリシー で LOB を許可できます。
 
 ### <a name="moving-platform-mode"></a>プラットフォーム モードの移動
@@ -70,7 +70,7 @@ Insider ビルド 20348.1405 Windowsで導入されました。 証明書マネ�
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>詳細な診断レポートは、設定で表示HoloLens
 
-動作のトラブルシューティング時にマネージド デバイスに対して、想定されるポリシー構成が適用されるのを確認することが重要な手順です。 以前は、この新機能では、この情報を MDM 経由で、または **設定** アカウント アクセスの仕事または学校を介して収集された MDM 診断ログをエクスポートした後、デバイスの近くでこの情報を表示し、管理ログをエクスポートし、近くの  ->    >  PCで表示するを選択する必要がありました。
+動作のトラブルシューティング時にマネージド デバイスに対して、想定されるポリシー構成が適用されるのを確認することが重要な手順です。 以前は、この新機能では、この情報を MDM 経由で、または **設定** アカウント アクセスの仕事または学校経由で収集した MDM 診断ログをエクスポートした後、デバイスの近くでデバイスからこの情報を表示し、管理ログをエクスポートし、近くの  ->    >  PCで表示するを選択する必要がありました。
 
 これで、Edge ブラウザーを使用してデバイスで MDM 診断を表示できます。 MDM 診断レポートを簡単に表示するには、[Access work or school]/(学校または学校へのアクセス)ページに移動し、[高度な診断レポートの表示 **] を選択します**。 これにより、新しい Edge ウィンドウでレポートが生成され、開きます。
 
@@ -203,7 +203,7 @@ HoloLens 2 デバイスで、[   >  **セキュリティ**  >  **Windows Insider
 
 Windows insider がチャネルに移行しています。 **高速** リングが **開発チャネル** になり、**低速** リングが **ベータチャネル** になり、 **release preview** リングが **release preview チャネル** になります。 マッピングは次のようになります。
 
-![Windows内部のチャネルの説明](images/WindowsInsiderChannels.png)
+![Windows内部のチャネルの説明。](images/WindowsInsiderChannels.png)
 
 詳細については、Windows ブログの「 [Windows Insider](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) channel の概要」を参照してください。
 次に、[ **Windows のアクティブな開発**] を選択し、**開発チャネル** または **ベータチャネル** のビルドを受信するかどうかを選択して、プログラムの条件を確認します。
@@ -232,38 +232,38 @@ Dev または Beta チャネルで更新するときに update エラー0x800704
 1. PC の場合:
     1. から PC に ffu をダウンロード [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) します。
 
-    1. Microsoft Store から ARC (Advanced Recovery コンパニオン) をインストール [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) します。
+    1. ARC (Advanced Recovery Companion) を次のコマンドからMicrosoft Storeします [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 。
 
-1. HoloLens フライトのロック解除:   >  **& セキュリティ**  >  **Windows Insider プログラム** を開き設定更新し、サインアップして、デバイスを再起動します。
+1. [HoloLens - Flight Unlock: Update 設定 Security &を開Windows Insider Program  >    >  サインアップし、デバイスを再起動します。
 
-1. Flash FFU-atc を使用して、デジタル署名された FFU をフラッシュできるようになりました。
+1. Flash FFU - ARC を使用してフライト署名済み FFU をフラッシュできます。
 
-### <a name="provide-feedback-and-report-issues"></a>フィードバックの提供と問題の報告
+### <a name="provide-feedback-and-report-issues"></a>フィードバックを提供し、問題を報告する
 
-フィードバックを提供し、問題を報告するに[は、HoloLens でフィードバックハブアプリ](hololens-feedback.md)を使用してください。 フィードバックハブを使用すると、エンジニアが迅速に問題をデバッグして解決できるように、必要な診断情報がすべて含まれるようになります。  HoloLens の中国語と日本語バージョンに関する問題は、同じように報告する必要があります。
+フィードバックを[提供フィードバック Hub問題を報告](hololens-feedback.md)するには、HoloLensアプリを使用してください。 このフィードバック Hub使用すると、エンジニアが問題を迅速にデバッグして解決するのに役立つ、必要なすべての診断情報が確実に含まれます。  中国語と日本語のバージョンに関する問題HoloLens同じように報告する必要があります。
 
 > [!NOTE]
-> フィードバックハブがドキュメントフォルダーにアクセスするかどうかを確認するメッセージが表示されることを確認します (メッセージが表示されたら [ **はい]** を選択します)。
+> [ドキュメント] フォルダーにアクセスするかどうかを確認するプロンプトフィードバック Hub受け入れる必要があります (メッセージが表示されたら、[はい **]** を選択します)。
 
-## <a name="note-for-developers"></a>開発者向けのメモ
+## <a name="note-for-developers"></a>開発者向けの注意
 
-HoloLens の Insider ビルドを使用してアプリケーションを開発することをお勧めします。  作業を開始するには、 [HoloLens 開発者向けドキュメント](https://developer.microsoft.com/windows/mixed-reality/development)を参照してください。 これらの同じ手順は、HoloLens の内部のビルドでも機能します。  Unity の同じビルドと、HoloLens 開発に既に使用している Visual Studio を使用できます。
+アプリケーションの Insider ビルドを使用してアプリケーションの開発を試みHoloLens。  使用を開始[するにはHoloLens開発者向けドキュメント](https://developer.microsoft.com/windows/mixed-reality/development)を参照してください。 これらの同じ手順は、アプリケーションの Insider ビルドHoloLens。  Unity と同じビルドを使用して、Visual Studio開発に既に使用している同じHoloLensできます。
 
-## <a name="stop-receiving-insider-builds"></a>Insider ビルドの受信を停止します
+## <a name="stop-receiving-insider-builds"></a>Insider ビルドの受信を停止する
 
-Windows Holographic の insider ビルドを受信する必要がなくなった場合は、HoloLens が実稼働ビルドを実行しているタイミングをオプトアウトできます。または、Advanced Recovery コンパニオンを使用してデバイスを[回復](hololens-recovery.md)し、デバイスを Insider バージョン以外の Windows Holographic に回復することもできます。
+Windows Holographic の Insider ビルドを受け取らなくなった場合は、HoloLens が実稼働ビルドを実行している場合はオプトアウトできます。または、Advanced [](hololens-recovery.md) Recovery Companion を使用してデバイスを回復して、Insider 以外のバージョンの Windows Holographic にデバイスを回復することもできます。
 
 > [!CAUTION]
-> 新しいプレビュービルドを手動で再インストールした後に、Insider Preview ビルドから登録を解除したユーザーがブルースクリーンを使用するという既知の問題があります。 その後、デバイスを手動で回復する必要があります。 影響を受けるかどうかに関する詳細については、この既知の [問題](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)を参照してください。
+> 新しいプレビュー ビルドを手動で再インストールした後に Insider Preview から登録を解除したユーザーがブルー スクリーンを表示する既知の問題があります。 その後、デバイスを手動で回復する必要があります。 影響を受け取る可能性がある場合の詳細については、この既知の問題に関するページを [参照してください](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)。
 
-HoloLens が運用ビルドを実行していることを確認するには、次のようにします。
+アプリケーションで実稼働HoloLensを実行している場合は、次の手順を実行します。
 
-1. 設定にアクセスし **て > システム > のバージョン情報** を確認し、ビルド番号を見つけます。
+1. [System **設定 > About] >に移動** し、ビルド番号を見つける。
 
-1. [実稼働ビルド番号については、リリースノートを参照してください](hololens-release-notes.md)。
+1. [実稼働ビルド番号については、リリース ノートを参照してください](hololens-release-notes.md)。
 
-Insider ビルドをオプトアウトするには、次のようにします。
+Insider ビルドをオプトアウトするには:
 
-1. 実稼働ビルドを実行している HoloLens で、設定にアクセスして **& セキュリティ > Windows insider program > 更新** し、[ **insider ビルドの停止**] を選択します。
+1. 実稼働HoloLensを実行している場合は、設定 > Update **& Security**> Windows Insider Program に移動し、[Stop Insider builds]/(Insider ビルドの停止)を **選択します**。
 
 1. 指示に従ってデバイスをオプトアウトします。

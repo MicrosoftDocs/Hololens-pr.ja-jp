@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 593dc65ab97eaae65591a5239cd0a978750eac9fa538364ba6bbc7ef0a2a08a4
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 519770badab9f260316fe4cfff4bf453a7c971a7
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660511"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189751"
 ---
 # <a name="deploy---cloud-connected-guide"></a>デプロイ-クラウド接続ガイド
 
@@ -38,7 +38,7 @@ ms.locfileid: "115660511"
 1. **設定** アプリを選択し、[システム] を選択し **ます。** &#39;最初に表示される情報は、デバイス名です。これは、HoloLens 2 デバイスの場合は &quot; HoloLens- &quot; その後に6文字の文字列が続きます。
 1. この名前をメモしておきます。
 
-![HoloLens 2 設定](./images/hololens2-settings-about.jpg)
+![HoloLens 2 設定については、「」をご覧ください。](./images/hololens2-settings-about.jpg)
 
 7. デバイスが設定アプリ内の Azure AD に正常に登録されていることを確認できます。 **設定**[   ->  **職場または学校にアクセス** するアカウント] を選択します。 この画面では、 &quot; _Nameofaad_&#39;s Azure AD に接続されていることを確認して、正常に登録されたことを確認できます。 _ユーザー名_ @ _nameofaad_ によって接続され &quot; ます。
 
@@ -46,11 +46,11 @@ ms.locfileid: "115660511"
 デバイスが参加して Azure AD かどうかを検証するには、[ [Azure portal](https://portal.azure.com/#home)  ->  **Azure Active Directory** デバイスのすべてのデバイス] から Azure Active Directory を確認  ->    ->  し、デバイス名を検索します。 デバイスが Azure Active Directory の一部であることを確認でき&#39;ます。
 
 
-![Azure Active Directory-デバイス](./images/aad-enrollment.png)
+![Azure Active Directory-デバイス。](./images/aad-enrollment.png)
 
 次に&#39;[Microsoft エンドポイントマネージャー管理センター](https://endpoint.microsoft.com/#home)にログインする必要があります。 ログインし、[ **デバイス** ]、[ **すべてのデバイス**] の順に選択します。 ここから、HoloLens デバイス&#39;s 名を検索できます。 HoloLens が Intune に一覧表示されます。
 
-![Intune-デバイス](./images/endpoint-all-devices-enrolled.png)
+![Intune-デバイス。](./images/endpoint-all-devices-enrolled.png)
 
 ## <a name="remote-assist-call-validation"></a>リモートアシスタンス呼び出しの検証
 

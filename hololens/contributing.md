@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: cbf0b2e4b61f006d0b5d7d74d3d81a4b33cfd6d8c2e124288b17959d54a5a1ad
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665068"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188986"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>HoloLens のドキュメントに貢献する
 
@@ -99,7 +99,7 @@ GitHub アカウントを設定するときは、次のセキュリティに関�
 
 - は、 `redirect_url` 以前の記事から新しい記事までの相対パブリック URL です。 この URL は、  `mixed-reality-docs` `.md` リポジトリパスではなくパブリック url を参照しているため、またはを含んでいないことを確認してください。 を使用した新しいアーティクル内のセクションへのリンク `#section` は許可されます。 必要に応じて、ここで別のサイトへの絶対パスを使用することもできます。
 
-- `redirect_document_id` 前のファイルのドキュメント ID を保持するかどうかを示します。 既定では、 `false`です。 リダイレクトされたアーティクルの属性値を保持する場合は、を使用し `true` `ms.documentid` ます。 ドキュメント ID を保持している場合は、ページビューやランキングなどのデータがターゲットアーティクルに転送されます。 リダイレクトの主な目的が名前変更であり、内容の一部だけが同じである別の記事へのポインターではない場合に、これを行ってください。
+- `redirect_document_id` 前のファイルのドキュメント ID を保持するかどうかを示します。 既定値は、`false` です。 リダイレクトされたアーティクルの属性値を保持する場合は、を使用し `true` `ms.documentid` ます。 ドキュメント ID を保持している場合は、ページビューやランキングなどのデータがターゲットアーティクルに転送されます。 リダイレクトの主な目的が名前変更であり、内容の一部だけが同じである別の記事へのポインターではない場合に、これを行ってください。
 
 リダイレクトを追加する場合は、古いファイルも必ず削除してください。
 
@@ -147,7 +147,7 @@ GitHub アカウントを設定するときは、次のセキュリティに関�
 
 9. [ **新しいプル要求** ] を選択し、フォークの _マスター_ ブランチを microsoft docs/mixed reality _マスター_ にマージします (矢印が正しい宛先を指していることを確認します)。
 
-   ![フォークからのプル要求を作成して、Microsoft Docs/mixed reality に](images/pr-to-master.png)
+   ![フォークから、Microsoft Docs/mixed reality へのプル要求を作成します。](images/pr-to-master.png)
 
 ## <a name="markdown-basics"></a>Markdown の基本
 
@@ -164,101 +164,101 @@ Docs.microsoft.com スタイルの表では、インライン CSS を試す場�
 
 ### <a name="adding-images"></a>イメージの追加
 
-イメージをレポポの "mixed-reality-docs/images" フォルダーにアップロードし、記事で適切に参照する必要があります。 画像はフルサイズで自動的に表示されます。これは、大きな画像が記事の幅全体を埋めるという意味です。 画像をアップロードする前に、事前にサイズを設定することをお勧めします。 推奨される幅は 600 から 700 ピクセルですが、高密度のスクリーンショットまたはスクリーンショットの一部である場合は、サイズを上下に設定する必要があります。
+リポジトリの "mixed-reality/images" フォルダーにイメージをアップロードし、記事で適切に参照する必要があります。 画像は自動的にフルサイズで表示されます。これは、大きな画像が記事全体の幅を占めることを意味します。 イメージをアップロードする前に、イメージのサイズを事前に設定することをお勧めします。 推奨される幅は、600 ~ 700 ピクセルです。ただし、サイズの細かいスクリーンショットやスクリーンショットの一部である場合は、サイズを変更する必要があります。
 
 >[!IMPORTANT]
->マージする前に、フォークされたレポポに画像のみをアップロードできます。 そのため、記事に画像を追加する予定の場合は[、Visual Studio Code](#using-visual-studio-code)を使用して、最初にフォークの "images" フォルダーに画像を追加するか、Web ブラウザーで次の手順を実行する必要があります。
+>マージする前に、フォークされたリポジトリにのみイメージをアップロードできます。 そのため、記事にイメージを追加する予定がある場合は、まず、 [Visual Studio Code を使用](#using-visual-studio-code)して、最初にそのイメージをフォークの "images" フォルダーに追加するか、web ブラウザーで次の操作を行っていることを確認する必要があります。
 >
->1. MicrosoftDocs/Mixed-Reality レポポをフォークしました。
->2. フォーク内の記事を編集しました。
->3. 記事で参照している画像をフォークの "mixed-reality-docs/images" フォルダーにアップロードしました。
->4. フォークをmicrosoftDocs/mixed-reality マスター ブランチにマージpull requestを作成しました。
+>1. Microsoft Docs/mixed reality リポジトリをフォークしています。
+>2. フォーク内のアーティクルを編集しています。
+>3. 記事で参照しているイメージを、フォーク内の "mixed-reality/images" フォルダーにアップロードしました。
+>4. フォークを Microsoft Docs/mixed reality _マスター_ ブランチにマージする **プル要求** を作成しました。
 >
->独自のフォークされたレポポを設定する方法については、新しい記事 を作成する [手順に従ってください](#creating-a-new-article)。
+>独自にフォークしたリポジトリを設定する方法については、 [新しい記事を作成](#creating-a-new-article)するための手順に従ってください。
 
 ## <a name="previewing-your-work"></a>作業のプレビュー
 
-Web ブラウザーをGitHubで編集する場合は、ページの上部付近にある[プレビュー] タブを選択して、コミット前に作業をプレビューできます。 
+web ブラウザーを使用して GitHub を編集しているときに、ページの上部の近くにある [**プレビュー** ] タブを選択して、コミットする前に作業をプレビューすることができます。 
 
 >[!NOTE]
->変更のプレビューはreview.docs.microsoft.com Microsoft の従業員だけが利用できます
+>review.docs.microsoft.com での変更のプレビューは、Microsoft の従業員のみが利用できます。
 
-Microsoft の従業員: 投稿が既定のブランチ _master_ にマージされている場合は、</hololens?branch=master> で公開される前にコンテンツを確認できます。 左側の列の目次を使用して、記事を見つける。
+Microsoft の従業員: 投稿が既定のブランチである _master_ にマージされている場合は、</hololens? branch = master> に公開する前に、コンテンツを確認することができます。 左側の列の目次を使用して、記事を探します。
 
-## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>ブラウザーでの編集とデスクトップ クライアントでの編集
+## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>ブラウザーでの編集とデスクトップクライアントを使用した編集
 
-ブラウザーでの編集は、簡単に変更を加える最も簡単な方法ですが、いくつかの欠点があります。
+クイック変更を行うには、ブラウザーでの編集が最も簡単な方法です。ただし、いくつかの欠点があります。
 
-- スペル チェックは受け取らない。
-- 他の記事へのスマート リンクは取得できません (記事のファイル名を手動で入力する必要があります)。
-- 画像をアップロードして参照するのも面倒な場合があります。
+- スペルチェックは行われません。
+- 他の記事へのスマートリンクは表示されません (記事のファイル名を手動で入力する必要があります)。
+- イメージをアップロードして参照するのは面倒な場合があります。
 
-これらの問題に対処しない場合は、Visual Studio Code のようなデスクトップ クライアントを使用して、[](https://code.visualstudio.com/)貢献するときに役立つ拡張機能を[](#useful-extensions)2 つ追加します。
+これらの問題に対処しない場合は、貢献するときに、いくつかの[便利な拡張機能](#useful-extensions)を持つ[Visual Studio Code](https://code.visualstudio.com/)のようなデスクトップクライアントを使用します。
 
 ## <a name="using-visual-studio-code"></a>Visual Studio Code の使用
 
-上記の理由 [から、Web](#editing-in-the-browser-vs-editing-with-a-desktop-client)ブラウザーではなく、デスクトップ クライアントを使用してドキュメントを編集することができます。 [Visual Studio Code](https://code.visualstudio.com/) を使用することをお勧めします。
+[上記](#editing-in-the-browser-vs-editing-with-a-desktop-client)の理由から、デスクトップクライアントを使用して、web ブラウザーではなくドキュメントを編集することをお勧めします。 [Visual Studio Code](https://code.visualstudio.com/) を使用することをお勧めします。
 
 ### <a name="setup"></a>セットアップ
 
-次の手順に従って、このVisual Studio Codeを使用するための構成を構成します。
+このリポジトリを使用するように Visual Studio Code を構成するには、次の手順に従います。
 
-1. Web ブラウザーで:
-    1. お使 [いの PC 用に Git をインストールします](https://git-scm.com/downloads)。
+1. Web ブラウザーで次のようにします。
+    1. [PC の Git を](https://git-scm.com/downloads)インストールします。
     2. [Visual Studio Code](https://code.visualstudio.com/) をインストールします。
-    3. [まだ行っていない場合は、MicrosoftDocs/Mixed-Reality](#creating-a-new-article) をフォークします。
-    4. フォークで、[複製] または **[ダウンロード] を選択し、URL** をコピーします。
-2. 次の方法でフォークのローカル クローンを作成Visual Studio Code。
-    1. [表示] **メニューの** [コマンド パレット] **を選択します**。
+    3. まだお持ちでない場合は、 [Microsoft docs/mixed reality をフォーク](#creating-a-new-article)します。
+    4. フォークで、[ **複製] または [ダウンロード** ] を選択し、URL をコピーします。
+2. Visual Studio Code でフォークのローカル複製を作成します。
+    1. [ **表示** ] メニューの [ **コマンドパレット**] をクリックします。
     2. 「Git: Clone」と入力します。
     3. コピーした URL を貼り付けます。
-    4. 複製を PC に保存する場所を選択します。
-    5. ポップアップ **で [Open repo]** を選択します。
+    4. コンピューターの複製を保存する場所を選択します。
+    5. ポップアップで [ **リポジトリを開く** ] を選択します。
 
 ### <a name="editing-documentation"></a>ドキュメントの編集
 
-次のワークフローを使用して、 を使用してドキュメントを変更Visual Studio Code。
+次のワークフローを使用して、Visual Studio Code でドキュメントに変更を加えます。
 
 >[!NOTE]
->記事の編集と[作成に](#editing-an-existing-article)関するガイダンス、および[上記の Markdown](#markdown-basics)の編集の基本は、この記事を使用する場合Visual Studio Code適用されます。 [](#creating-a-new-article)
+>Visual Studio Code を使用する場合は、記事の[編集](#editing-an-existing-article)と[作成](#creating-a-new-article)に関するすべてのガイダンスと、上記の[Markdown の編集の基礎](#markdown-basics)が適用されます。
 
-1. 複製したフォークが公式リポジトリで最新の情報に更新されていないことを確認します。
+1. 複製されたフォークが公式リポジトリを使用して最新の状態であることを確認します。
 
-   1. Web ブラウザーで pull request を作成し、MicrosoftDocs/Mixed-Reality の既定のブランチである _master_ の他の共同作成者からの最近の変更をフォークに同期します (矢印が正しい宛先を指していることを確認してください)。
+   1. Web ブラウザーでプル要求を作成し、Microsoft Docs/mixed-reality の _既定のブランチ_ 内の他の共同作成者からフォークに最近の変更を同期します (矢印が正しい宛先を指していることを確認してください)。
       
-      ![MicrosoftDocs/Mixed-Reality からフォークへの変更の同期](images/sync-repos.png)
+      ![Microsoft Docs/mixed-reality からフォークに変更を同期します。](images/sync-repos.png)
       
-   2. [Visual Studio Code同期] ボタンを選択して、新しく更新されたフォークをローカル クローンに同期します。
+   2. Visual Studio Code で、[同期] ボタンを選択して、新しく更新されたフォークをローカルクローンに同期します。
       
-      ![同期ボタンの画像をクリックします](images/sync-clone.png)
+      ![[同期] ボタンの画像をクリックします。](images/sync-clone.png)
       
-2. 複製したリポジトリ内の記事を作成または編集するには、 Visual Studio Code。
+2. Visual Studio Code を使用して、複製されたリポジトリのアーティクルを作成または編集します。
 
-   1. 1 つ以上の記事を編集します (必要に応じて、画像を "images" フォルダーに追加します)。
+   1. 1つ以上の記事を編集します (必要に応じて、画像を "images" フォルダーに追加します)。
    
-   2. **エクスプローラーに** 変更を **保存します**。
+   2. 変更を **エクスプローラー** に **保存** します。
       
-      ![エクスプローラーで [すべて保存] を選択する](images/explorer-save.png)
+      ![エクスプローラーで [すべてを保存] を選択します。](images/explorer-save.png)
       
-   3. **ソース管理のすべての** 変更を **コミットします** (メッセージが表示されたら、コミット メッセージを書き込む)。
+   3. **ソース管理** ですべての変更を **コミット** します (メッセージが表示されたら書き込みコミットメッセージ)。
    
       ![ソース管理で [すべてコミット] を選択する](images/source-control-commit.png)
       
-   4. 同期ボタン **を選択** して、変更内容を元の元に戻します (GitHub。
+   4. [**同期**] ボタンを選択して、変更内容を元に戻します (GitHub のフォーク)。
       
-      ![[同期] ボタンをクリックします](images/sync-back.png)
+      ![[同期] ボタンをクリックします。](images/sync-back.png)
       
-3. Web ブラウザーで、フォークの新しい変更を MicrosoftDocs/Mixed-Reality マスターに同期する pull requestを作成します (矢印が正しい宛先を指していることを確認してください)。
+3. Web ブラウザーでプル要求を作成して、フォークの新しい変更を Microsoft Docs/mixed reality _マスター_ に戻します (矢印が正しい宛先を指していることを確認してください)。
 
-   ![フォークpull request MicrosoftDocs/Mixed-Reality にアプリを作成する](images/pr-to-master.png)
+   ![フォークから、Microsoft Docs/mixed reality へのプル要求を作成します。](images/pr-to-master.png)
 
 ### <a name="useful-extensions"></a>便利な拡張機能
 
-次のVisual Studio Codeは、ドキュメントを編集するときに役立ちます。
+ドキュメントを編集する際には、次の Visual Studio Code 拡張機能が役立ちます。
 
-- [Docs Markdown Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - **Alt + M** を使用して、次のようなドキュメント作成オプションのメニューを表示します。
-   - アップロードした画像を検索して参照します。
-   - リスト、テーブル、ドキュメント固有の呼び出し (など) のような書式設定を追加します `>[!NOTE]` 。
+- [docs Markdown Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - **Alt + M キー** を使用して、次のような docs 作成オプションのメニューを表示します。
+   - アップロードしたイメージを検索して参照します。
+   - など、リスト、テーブル、ドキュメント固有の呼び出しなどの書式設定を追加 `>[!NOTE]` します。
    - 内部リンクとブックマーク (ページ内の特定のセクションへのリンク) を検索して参照します。
-   - 書式設定エラーが強調表示されています (詳細については、エラーの上にマウス ポインターを合わせる)。
-- [コード スペル チェック](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - スペルミスの単語には下線が引かされます。スペルミスの単語を右クリックして変更するか、ディクショナリに保存します。
+   - 書式設定エラーが強調表示されます (詳細については、エラーの上にマウスポインターを置きます)。
+- [コードスペルチェッカー](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) -スペルミスの単語に下線が引かれます。スペルミスの単語を右クリックして変更するか、辞書に保存します。

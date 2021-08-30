@@ -14,12 +14,12 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1da19665dd3298ece8b007e86695bfe9f298f2347a0e7e058cbd30f0ad5d35c3
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 10d1955249630202a05fbf2057e1d175855ce0b5
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664555"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189122"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>一般的なシナリオ–オフラインのセキュリティで保護された HoloLens 2
 
@@ -33,7 +33,7 @@ ms.locfileid: "115664555"
 -   プロビジョニングパッケージを追加または削除できないようにします。
 -   上記の制限されたコンポーネントをユーザーが有効にすることはできません。
 
-[![オフラインのセキュリティで保護されたシナリオ ](./images/deployment-guides-revised-scenario-c-01.png)](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
+[![オフラインのセキュリティで保護されたシナリオ。 ](./images/deployment-guides-revised-scenario-c-01.png)](./images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
 ## <a name="prepare"></a>準備
 
@@ -56,11 +56,11 @@ Windows 10PC のセットアップ
 1. プロジェクトが開き、利用可能なカスタマイズの一覧が表示されます。
 
    > [!div class="mx-imgBorder"]
-   > ![WCD で開かれている構成パッケージのスクリーンショット](images/offline-secure-sample-wcd.png)
+   > ![構成パッケージが WCD で開かれているスクリーンショット。](images/offline-secure-sample-wcd.png)
 
    このプロビジョニングパッケージで設定される構成:
    
-   |     項目                                                |     設定                       |     [説明]                                                                                                                    |
+   |     項目                                                |     設定                       |     説明                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
    |     アカウント/ユーザー                                    |     ローカルユーザー名 & パスワード    |     これらのオフラインデバイスでは、デバイスのすべてのユーザーが1つのユーザー名とパスワードを設定して共有する必要があります。          |
    |     最初のエクスペリエンス/HoloLens/skipcalibration       |     True                          |     初期デバイスのセットアップ中のみ調整をスキップします                                                                             |
@@ -95,16 +95,16 @@ Windows 10PC のセットアップ
 1. USB ケーブルを使用して、HL2 を Windows 10 PC に Connect します。
 1. [弧] ツールを起動し、[ **HoloLens 2** ] を選択します。
 
-   ![HoloLens 2 クリーン 再フラッシュの初期画面](images/ARC2.png)
+   ![HoloLens 2 クリーン更新の初期画面。](images/ARC2.png)
 
 1. 次の画面で、[ **パッケージの手動選択**] を選択します。
 
-   ![HoloLens 2ARC 情報画面](images/arc_device_info.png)
+   ![HoloLens 2ARC 情報画面。](images/arc_device_info.png)
 
 1. 以前にダウンロードした ffu ファイルに移動し、[ **開く**] を選択します。
 1. [警告] ページで [ **続行**] を選択します。
 
-   ![HoloLens 2弧の警告画面](images/arc_warning.png)
+   ![HoloLens 2アーク警告画面。](images/arc_warning.png)
 
 1. ARC ツールが HoloLens 2 OS のインストールを完了するのを待ちます。
 1. デバイスのインストールが完了し、再起動されたら、PC からエクスプローラーに移動し、以前に保存した PPKG ファイルをデバイスフォルダーにコピーします。
