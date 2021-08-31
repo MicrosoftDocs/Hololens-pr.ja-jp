@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5104a489cebee56938cb1968f253e7e9447e2452
-ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
+ms.openlocfilehash: cd46e162971ea709d865b2ac998cc7a517d231ec
+ms.sourcegitcommit: 18f6c00a57a6b4608dadcec418d1970455d8ee3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122610134"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989204"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>低ダイナミック モーション移動プラットフォームでの移動プラットフォーム モード
 
@@ -27,6 +27,8 @@ ms.locfileid: "122610134"
 
 > [!NOTE]
 > 現在、この機能は [Windows Insider](hololens-insider.md) でのみ利用できます。
+
+![移動プラットフォームの例。](./images/mpm-compare.gif)
 
 この記事には、次の内容が含まれます。
 
@@ -93,7 +95,7 @@ HoloLens は、安定したホログラムを表示するために、[自由度 
 
 前述のように、この機能は、開発者モードでのみ使用できるベータ機能です。そのため、問題が発生する可能性があります。 そのような場合は、Microsoft が製品を調査して改善できます。以下を行ってください。
 
-1. **Hologram の精度、安定性、信頼性** のカテゴリで[フィードバック Hub](hololens-feedback.md) を使用して問題を報告し、その際、以下を含めます。
+1. **Hologram の精度、安定性、信頼性** のカテゴリで [フィードバック Hub](hololens-feedback.md) を使用して問題を報告し、その際、以下を含めます。
     1. 期待される動作と経験した動作を含む、問題の説明
     1. 問題の Mixed Reality の[ビデオ録画](holographic-photos-and-videos.md#capture-a-mixed-reality-video)
 2.  Microsoft がフォローアップの質問がある場合にアクセスできるように、[https://aka.ms/hlsupport](https://aka.ms/hlsupport) でサポート ケースを開き、フィードバック Hub の URL を共有します。
