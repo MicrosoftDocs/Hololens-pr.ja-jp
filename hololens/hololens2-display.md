@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3567c1f33f10240a9cacbf258669a0e3274f4c6bb3c90fc1317a57a3a415fc7f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 38bab16d2d0d4ace5879f00c133d66b9974e4b2a
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659944"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190363"
 ---
 # <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 ディスプレイのトラブルシューティング
 
@@ -46,7 +46,7 @@ HoloLens 2 のディスプレイは、導波管とプロジェクターを組み
     > お使いの環境で単色表示されているシーンが表示されない場合は、デバイスの左側にある [明るさ] ボタンを使用して HoloLens 2 の明るさのレベルを手動で調整できます。
 1. ボタン1-6 を選択すると、各カラープロファイルが瞬時に表示され、最もよく見られるものを見つけることができます (これは通常、シーンを最もニュートラルにするのに役立つプロファイルで、グレースケール パターンとスキントーンが予想どおりに見えることを意味します)。
 
-    ![ディスプレイの色の調整シーン](images/color-cal-ui.png)
+    ![ディスプレイの色の調整シーン。](images/color-cal-ui.png)
     
 6. 選択したプロフィールに満足している場合、 **[保存して終了]** ボタンを選択します
 1. 変更しない場合は、 **[キャンセル して終了]** ボタンを選択すると、変更が元に戻されます
@@ -79,7 +79,7 @@ HoloLens 2 に保存されたカスタム カラー プロファイルに不満�
 
 場合によっては、HoloLens 2 の画面の左下と右側の表示パターンが異なる場合があります。 以下に例を示します (アニメーション GIF)。 このパターンは、最適な環境を実現するためにディスプレイを調整する、HoloLens 2 デバイスの通常の操作の一部です。
 
-![二位相パターン](./images/DAT-Biphase-Fiducial.gif) ![地理的パターン](./images/DAT-GEO-Fiducial.gif)
+![二位相パターン。](./images/DAT-Biphase-Fiducial.gif) ![地理的パターン](./images/DAT-GEO-Fiducial.gif)
 
 ### <a name="why-am-i-unable-to-take-an-accurate-photograph-of-my-hololens-2-display"></a>HoloLens 2 のディスプレイを正確に撮影できないのはなぜですか?
 

@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 452a032896d7b1959e706313d83f023588507c0882962cf689508edc63921bdb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: cf3770dd55498dbe98abf88d002247646e4db9be
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661946"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189887"
 ---
 # <a name="getting-around-hololens-2"></a>HoloLens 2 の基本操作
 
@@ -47,7 +47,7 @@ HoloLens の操作は、スマートフォンの使用によく似ています�
 
 HoloLens には、ユーザーの左右を数フィートずつ見ることのできるセンサーが搭載されています。 手を使用する場合は、手の位置をこのフレーム内に収める必要があります。そうしないと、HoloLens では認識できません。 ただし、ユーザーが動くと、フレームも一緒に動きます。  
 
-![HoloLens のハンド トラッキング フレームを示す画像](./images/hololens-2-gesture-frame.png)
+![HoloLens のハンド トラッキング フレームを示す画像。](./images/hololens-2-gesture-frame.png)
 
 ## <a name="touch-holograms-near-you"></a>近くにあるホログラムにタッチする
 
@@ -74,7 +74,7 @@ HoloLens には、ユーザーの左右を数フィートずつ見ることの�
 1. 人差し指をまっすぐ上に伸ばして、天井を指します。
 1. **エアタップ** の手ぶりを実行するには、親指と人差し指でピンチし、すばやく開きます。
 
-   ![エアタップの手ぶりのアニメーション](./images/hololens-air-tap.gif)
+   ![エアタップの手ぶりのアニメーション。](./images/hololens-air-tap.gif)
 
 ### <a name="grab-using-air-tap-and-hold"></a>エアタップしたまま押さえてつかむ
 
@@ -101,7 +101,7 @@ HoloLens には、ユーザーの左右を数フィートずつ見ることの�
 > - スタート メニューのテキストが小さくて読めない場合は、開いたメニューに近寄ってみてください。
 > - 手の位置がフレームの側面から少し出ていた場合は、アイコンが見えなくても、手首の内側をタップするとスタート メニューを表示できます。
 
-![[スタート] アイコンとスタート ジェスチャを示す画像](./images/hololens-2-start-gesture.png)
+![[スタート] アイコンとスタート ジェスチャを示す画像。](./images/hololens-2-start-gesture.png)
 
 スタート メニューを **閉じる** には、スタート メニューが開いている状態でスタート ジェスチャを実行します。  また、スタート メニューを見ながら「閉じて」と言うこともできます。
 
@@ -115,7 +115,7 @@ HoloLens には、ユーザーの左右を数フィートずつ見ることの�
 
 スタート ジェスチャは、片手のみで実行することもできます。 これを行うには、手のひらを手前に向けて手を差し出し、手首の内側にある **[開始] アイコン** を見ます。 **アイコンを見ながら**、親指と人差し指をピンチします。
 
-![[スタート] アイコンと片手のスタート ジェスチャを示す画像](./images/hololens-2-start-alternative.png)
+![[スタート] アイコンと片手のスタート ジェスチャを示す画像。](./images/hololens-2-start-alternative.png)
 
 ## <a name="start-menu-mixed-reality-home-and-apps"></a>スタート メニュー、Mixed Reality ホーム、アプリ
 

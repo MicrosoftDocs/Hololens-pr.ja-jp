@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9b306b10ff82603fd238f195beacc300f1a82bf6
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: e23bd458e26668f1f4a9a361ffaadf8fc377933e
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859002"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189071"
 ---
 # <a name="configure-your-network-for-hololens"></a>HoloLens 向けにネットワークを構成する
 
@@ -95,9 +95,9 @@ Guides には、アプリをダウンロードして使用するためのネッ�
 **Azure portal に管理者としてサインインし** >  **[Azure Active Directory]**  >  **[デバイス]**  >  **[デバイスの設定] の順に選択し** >
  **[ユーザーはデバイスを Azure AD に参加させることができます] を *[すべて]*** に設定します
 
-    1. **オプション 2:** デバイスを Azure AD に参加させるアクセス許可を、選択したユーザーまたはグループに与えます。**管理者として Azure portal にサインインし** >  **[Azure Active Directory]**  >  **[デバイス]**  >  **[デバイスの設定] の順に選択し** >
+    1. **オプション 2:** デバイスを Azure AD に参加させるアクセス許可を、選択したユーザーまたはグループに与えます。**管理者として Azure portal にサインイン** し、 >  **[Azure Active Directory]**  >  **[デバイス]**  >  **[デバイスの設定] の順に選択し** >
  **[ユーザーはデバイスを Azure AD に参加させることができます] を *[選択]*** に設定します
-![Azure AD 参加済みデバイスの構成を示す画像](images/azure-ad-image.png)
+![Azure AD 参加済みデバイスの構成を示す画像。](images/azure-ad-image.png)
 
     1. **オプション 3:** デバイスをドメインに参加させることをすべてのユーザーに対してブロックできます。 この場合、すべてのデバイスを手動で登録する必要があります。
 
@@ -178,7 +178,7 @@ Commercial Suite へのアップグレード手順については、[Holographic
 > [!NOTE]
 > [ユーザーのログオンの種類] として [Azure AD] を使用することで、ユーザーごとにキオスク モードのエクスペリエンスが変わるように構成できます。 ただし、このオプションはマルチアプリ キオスク モードでのみ使用できます。 マルチアプリ キオスク モードは、複数のアプリだけでなくアプリが 1 つのみでも機能します。
 
-![Intune のキオスク モードの構成画面を示す画像](images/aad-kioskmode.png)
+![Intune のキオスク モードの構成画面を示す画像。](images/aad-kioskmode.png)
 
 その他の MDM サービスについては、使用しているプロバイダーのドキュメントで手順を参照してください。 カスタム設定と完全な XML 構成を使用して MDM サービスでキオスクを設定する必要がある場合は、[HoloLens キオスク](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens)に関するページの手順を参照してください。
 

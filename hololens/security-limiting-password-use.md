@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: a4ceaa1a741ec63153cd9112d04547165b46b0fa72c32ee7f9580f15368a2f88
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 24cd9b81d0d99afaa0479787b846b423310c6739
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665454"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190465"
 ---
 # <a name="limiting-password-use"></a>パスワードの使用制限
 
@@ -52,7 +52,7 @@ Windows Hello の資格情報の作成時には、ID プロバイダーとの信
 
 詳細については、次のインフォグラフィックをご覧ください。
 
-  ![Windows Hello のサインイン](images/security-hello-sign-in.png)
+  ![Windows Hello のサインイン。](images/security-hello-sign-in.png)
   
 上記のグラフィックで、"nonce" は "一度きりの数字" を表し、ランダムまたはセミランダムに生成された数であることに注意してください。 Windows Hello 生体認証または PIN の資格情報が一度設定されると、それがプロビジョニングされているデバイスから離れることはありません。 フィッシング攻撃などでユーザーの Windows Hello PIN が盗まれた場合でも、[ユーザーの物理デバイスがないと役に立ちません](/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password)。
 
@@ -68,7 +68,7 @@ Windows Hello の資格情報の作成時には、ID プロバイダーとの信
 
 Web アカウント マネージャー API の実装の詳細については、[Web アカウント マネージャー API の実装](/windows/uwp/security/web-account-manager)に関するページを参照してください。
 
-  ![Security API](images/security-api-img.png)
+  ![Security API。](images/security-api-img.png)
   
 特殊な認証要件を持つアプリ スイートの場合、Web アカウント マネージャー (WAM) フレームワークは、カスタム ID プロバイダーにも拡張できます。 ユーザーは、Microsoft Store からユニバーサル Windows プラットフォーム (UWP) アプリとしてパッケージ化されたカスタム ID プロバイダーをダウンロードし、その ID プロバイダーと統合された他のアプリで SSO を有効にできます。
 
@@ -91,7 +91,7 @@ Windows Hello および FIDO2 デバイスには、HoloLens デバイス、特�
 
 ### <a name="strong-authentication-with-fido2-security-key"></a>FIDO2 セキュリティ キーを使用した強力な認証
 
-  ![FIDO の画像](images/security-fido2-whfb-smaller.png)
+  ![FIDO の画像。](images/security-fido2-whfb-smaller.png)
 
 1. ユーザーが FIDO2 セキュリティ キーを HoloLens 2 に接続します
 1. Windows によって FIDO2 セキュリティ キーが検出されます

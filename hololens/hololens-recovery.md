@@ -7,7 +7,7 @@ ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
 ms.author: mazeller
-ms.date: 04/27/2020
+ms.date: 08/30/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d8f2f8bf6aaaeb7f6f0ddbd339d428dad9335faeb99bfca48a19e68929921ed
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
+ms.sourcegitcommit: c4fe077e9e19a3b0a9fad8defa4b51547c5ae3c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662975"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123261925"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>HoloLens 2 を再起動、リセット、または回復する
 
@@ -43,7 +43,7 @@ HoloLens 2 に付属している[充電器と USB タイプ C ケーブル](http
     - バッテリー レベルが極端に低い場合にデバイスの電源を入れようとすると、1 個のライトが短く点滅してから消えます。
 - ホスト PC で、**エクスプローラー** を開き、 **[この PC]** の下にある HoloLens 2 デバイスを探します。 そのデバイスを右クリックし、 **[プロパティ]** を選択します。 ダイアログ ボックスにバッテリの充電レベルが表示されます。
 
-   ![HoloLens 2 のプロパティ画面にバッテリの残量レベルが表示されます](images/ResetRecovery2.png)
+   ![HoloLens 2 のプロパティ画面にバッテリの残量レベルが表示されます。](images/ResetRecovery2.png)
 
 デバイスが起動メニューから起動できない場合は、ホスト PC の LED の外観とデバイスの一覧を確認します。 次に、[トラブルシューティング ガイド](hololens-troubleshooting.md)に従います。 デバイスの状態がトラブルシューティング ガイドに記載されている状態と一致しない場合は、ホスト PC ではなく、電源に接続されたデバイスで[ハード的なリセット手順](hololens-recovery.md#hard-reset-procedure)を実行してください。 デバイスが充電されるまで少なくとも 1 時間待ちます。
 
@@ -61,7 +61,7 @@ HoloLens 2 に付属している[充電器と USB タイプ C ケーブル](http
 
 4. デバイスをホスト PC に接続し、デバイス マネージャーを開きます。 (Windows 10 の場合は、**Windows** キーを押し、次に **X** キーを押して、**デバイス マネージャー** を選択します)。次の図に示すように、デバイスが *Microsoft HoloLens* として正しく列挙されていることを確認します。
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery デバイス マネージャー](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery デバイス マネージャー。](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### <a name="hard-reset-procedure"></a>ハード リセット手順
 
@@ -69,18 +69,18 @@ HoloLens 2 に付属している[充電器と USB タイプ C ケーブル](http
 
 1. Type-C ケーブルを抜いて、デバイスを電源またはホスト PC から切断します。
 
-2. **[ボリューム ダウン]** ボタン +  **[電源]** ボタンを 15 秒間押したままにします。 デバイスが自動的に再起動します。
+1. **[ボリューム ダウン]** ボタン +  **[電源]** ボタンを 15 秒間押したままにします。 デバイスが自動的に再起動します。
 
-4. デバイスをホスト PC に接続します。
+1. デバイスをホスト PC に接続します。
 
+1. デバイス マネージャーを開きます (Windows 10 の場合は **Windows** キー、次に **X** キーを押して、**デバイス マネージャー** を選択します)。 次の図に示すように、デバイスが *Microsoft HoloLens* として正しく列挙されていることを確認します。
 
-5. デバイス マネージャーを開きます (Windows 10 の場合は **Windows** キー、次に **X** キーを押して、**デバイス マネージャー** を選択します)。 次の図に示すように、デバイスが *Microsoft HoloLens* として正しく列挙されていることを確認します。
-
-   ![HoloLens 2 MicrosoftHoloLensRecovery デバイス マネージャー 2](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery デバイス マネージャー 2。](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## <a name="clean-reflash-the-device"></a>デバイスをきれいに再フラッシュする
 
 異常な状況では、HoloLens 2 のクリーン フラッシュが必要になることがあります。 なお、以下の問題については、クリーン再フラッシュの実行によって解決することは期待できません。
+
 - [ディスプレイの色の均一性](hololens2-display.md)
 - 起動時に音がするが、ディスプレイ出力がない
 - [1-3-5 の LED パターン](hololens2-setup.md#lights-to-indicate-problems)
@@ -92,25 +92,29 @@ HoloLens 2 に付属している[充電器と USB タイプ C ケーブル](http
 >[!WARNING]
 >デバイスを再フラッシュすると、TPM リセットを含むすべての個人データ、アプリ、設定が消去されます。
 
-既定では、Advanced Recovery Companion は最新の機能リリース ビルドをダウンロードするように設定されています。最新の機能リリースについては、 [リリース ノート](hololens-release-notes.md#)を参照してください。 最新の HoloLens 2 Full Flash Update (FFU) パッケージを取得し、Advanced Recovery Companion を使用してデバイスを再フラッシュするには、[ここをクリックして最新のマンスリー HoloLens 2 イメージをダウンロードしてください](https://aka.ms/hololens2download)。 このバージョンは、一般的に利用可能な最新のビルドです。
+既定では、Advanced Recovery Companion は最新の機能リリース ビルドをダウンロードするように設定されています。最新の機能リリースについては、[HoloLens 2 のリリース ノート](hololens-release-notes.md)を参照してください。 最新の HoloLens 2 Full Flash Update (FFU) パッケージを取得し、Advanced Recovery Companion を使用してデバイスを再フラッシュするには、最新のマンスリー HoloLens 2 イメージをダウンロードしてください: [https://aka.ms/hololens2download](https://aka.ms/hololens2download)。 このバージョンは、一般的に利用可能な最新のビルドです。
 
 再フラッシュ手順を開始する前に、アプリが Windows 10 PC にインストールされて実行されており、デバイスを検出する準備ができていることを確認してください。 また、HoloLens の充電が少なくとも 40% 以上になっていることをご確認ください。
 
-![HoloLens 2 クリーン再フラッシュのスクリーンショット](images/ARC1.png)
+![HoloLens 2 クリーン再フラッシュのスクリーンショット。](images/ARC1.png)
 
 ### <a name="normal-procedure"></a>通常の手順
 
 1. HoloLens デバイスの実行中に、以前に Advanced Recovery Companion アプリを開いた Windows 10 PC に接続します。
- 
+
    デバイスが自動的に検出され、Advanced Recovery Companion アプリの UI が更新プロセスを開始します。
 
-   ![HoloLens 2 クリーン 再フラッシュの初期画面](images/ARC2.png)
+   ![HoloLens 2 クリーン 再フラッシュの初期画面。](images/ARC2.png)
 
-3. Advanced Recovery Companion アプリの UI で HoloLens 2 デバイスを選択し、指示に従って再フラッシュを完了します。
+1. Advanced Recovery Companion アプリの UI で HoloLens 2 デバイスを選択し、指示に従って再フラッシュを完了します。
 
 ### <a name="manual-procedure"></a>手動の手順
 
-HoloLens 2 が正常に起動しない場合、または Advanced Recovery Companion がデバイスを検出できない場合は、デバイスを回復モードにする必要がある場合があります。
+次の場合は、デバイスを回復モードにする必要がある可能性があります。
+
+- HoloLens 2 が正常に起動しない
+- Advanced Recovery Companion がデバイスを検出できない
+- ユーザーが 1 人しかいないデバイスのパスワード/PIN がわからなくなった
 
 1. Type-C ケーブルを抜いて、デバイスを電源またはホスト PC から切断します。
 
@@ -120,11 +124,11 @@ HoloLens 2 が正常に起動しない場合、または Advanced Recovery Compa
 
 4. デバイスをホスト PC に接続し、デバイス マネージャーを開きます。 (Windows 10 の場合は、**Windows** キーを押し、次に **X** キーを押して、**デバイス マネージャー** を選択します)。次の図に示すように、デバイスが Microsoft HoloLens として正しく列挙されていることを確認します。
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery。](images/MicrosoftHoloLensRecovery.png)
 
    デバイスが自動的に検出され、Advanced Recovery Companion アプリの UI が更新プロセスを開始します。
 
-   ![HoloLens 2 クリーン再フラッシュの画面](images/ARC2.png)
+   ![HoloLens 2 クリーン再フラッシュの画面。](images/ARC2.png)
 
 6. Advanced Recovery Companion アプリの UI で HoloLens 2 デバイスを選択し、指示に従って再フラッシュを完了します。
 
@@ -132,18 +136,18 @@ HoloLens 2 が正常に起動しない場合、または Advanced Recovery Compa
 
 1. フラッシュを試みる前に、デバイスが 40% 以上に充電されるようにしてください。
 
-2. デバイスがロックされていないことを確認します。
+1. デバイスがロックされていないことを確認します。
 
 1. デバイスがハブではなくホスト PC に直接接続されていることを確認します。
 
 1. デバイスがユニバーサル シリアル バス ドライバーに HoloLens/HoloLens Recovery デバイスと表示されない場合は、次のことを確認します。
     1. **[ポート]** (Qualcomm HS-USB デバイスの場合)
-    1.   **[その他のデバイス]** (QUSB_BULK デバイスの場合) - HoloLens を検出するために必要なドライバーがホスト PC にありません。 右クリックして [ドライバーの更新] を選択し、オンラインでドライバーを検索するか、[Windows Update の設定で [オプションの更新プログラム] をオンにします](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674)。 ドライバーをダウンロードすると、ARC によって検出できるようになります。
- 
+    1. **[その他のデバイス]** (QUSB_BULK デバイスの場合) - HoloLens を検出するために必要なドライバーがホスト PC にありません。 右クリックして [ドライバーの更新] を選択し、オンラインでドライバーを検索するか、[Windows Update の設定で [オプションの更新プログラム] をオンにします](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674)。 ドライバーをダウンロードすると、ARC によって検出できるようになります。
+
 1. ARC によってデバイスが検出されない場合は、PC 上のデバイスからデバイスへエクスプローラーから接続できます。 それができない場合、
 
-    1.  デバイスに、その接続を無効にする USB ポリシーがある可能性があります。 その場合は、[手動フラッシュ モード](hololens-recovery.md#manual-procedure)を試してください。
-    2.  ポリシーがない場合は、別の USB ケーブルを試してください。
+    1. デバイスに、その接続を無効にする USB ポリシーがある可能性があります。 その場合は、[手動フラッシュ モード](hololens-recovery.md#manual-procedure)を試してください。
+    2. ポリシーがない場合は、別の USB ケーブルを試してください。
 
 1. デバイスに [1-3-5-LED パターン](hololens2-setup.md#lights-to-indicate-problems)が表示されていないことを確認します。
 
@@ -183,7 +187,7 @@ IT 環境が Windows Store アプリの使用を妨げたり、小売店への�
 > [!TIP]
 > Advanced Recovery Companion を使用して FFU をオフラインでインストールする場合は、フラッシュ イメージをダウンロードすると便利です。 [**HoloLens 2 の現在のイメージをダウンロードします**](https://aka.ms/hololens2download)。
 
-
 その他のリソース:
+
 - [オフライン アプリの配布](/microsoft-store/distribute-offline-apps) 
 - [DISM アプリ パッケージ (.appx または .appxbundle) によるコマンドライン オプションのサービス](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d9af1fb7d2c87b13cee926c3172ed2ce5411d9da73ab4b880efb1bd837ca3e5
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 51306755da5500d22829f359d2bf1467980892ea
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659030"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188867"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 Industrial Edition
 
@@ -34,7 +34,7 @@ HoloLens 2 Industrial Edition は、新しい素材と認定によって強化�
 
 HoloLens 2 Industrial Edition には、アップグレードされたデバイスに加えて、2 年間の保証と迅速な交換プログラムが含まれます。
 
-![クリーン ルームで使用される Industrial Edition](./images/ie-small-pic.png)
+![クリーン ルームで使用されている Industrial Edition。](./images/ie-small-pic.png)
 
 [HoloLens 2 Industrial Edition に関する FAQ](hololens2-industrial-edition-faq.md) を見直します。
 

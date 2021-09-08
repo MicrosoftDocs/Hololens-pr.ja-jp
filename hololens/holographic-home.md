@@ -13,12 +13,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c510738595e234b30395aafa309d42bd33affb7889a3174f2e708ba1aac56626
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: f9a6f1692df05e5fd8faec3da07cc85f7c6a32c7
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664904"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189173"
 ---
 # <a name="use-the-start-menu-and-mixed-reality-home"></a>スタート メニューと Mixed Reality ホームを使用する
 
@@ -91,7 +91,7 @@ HoloLens 2 では、Mixed Reality ホームでアプリ ウィンドウを使用
 
 [Windows Holographic バージョン 21H1](hololens-release-notes.md#windows-holographic-version-21h1) では、ハイパーリンクをアクティブ化するか、複数のインストール済みアプリでファイルの種類を開くと、そのファイルまたはリンクの種類を処理するインストール済みアプリを選択するよう求めるメッセージが表示されます。 このウィンドウでは、選択したアプリがファイルまたはリンクの種類を「一度のみ」または「常時」として処理するように選択することもできます。
 
-![アプリ ピッカー ウィンドウ](images/default-app-picker.png)
+![アプリ ピッカー ウィンドウ。](images/default-app-picker.png)
 
 [常時] を選択した後、特定のファイルまたはリンクの種類を処理するアプリを変更する場合は、 **[設定] > [アプリ]** で保存されている既定値をリセットできます。 ページの一番下までスクロールし、[ファイルの種類の既定のアプリ] または [リンクの種類の既定のアプリ] の下にある **[クリア]** ボタンを選択します。 デスクトップ PC の同様の設定とは異なり、個々のファイルの種類の既定値をリセットすることはできません。
 

@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: a230538a2bbf33481ef33c992a5b6c76107bb3829774744bc7e9a888f9102692
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: fe1c47de48e413a6f45921ba1e247016873ca996
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663088"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189105"
 ---
 # <a name="connect-hololens-to-a-network"></a>HoloLens をネットワークに接続する
 
@@ -39,7 +39,7 @@ HoloLens 2 デバイスでは、ユーザーは[USB-C からイーサネット�
 1. ネットワークを選択し、 **[接続]** を選択します。
 1. ネットワーク パスワードを求めるメッセージが表示されたら、入力して **[次へ]** を選択します。
 
-![HoloLens の Wi-Fi 設定](./images/hololens-2-wifi-settings.jpg)
+![HoloLens の Wi-Fi 設定。](./images/hololens-2-wifi-settings.jpg)
 
 Wi-Fi ネットワークに接続されていることを確認するには、 **[スタート]** メニューで Wi-Fiの状態を確認します。
 
@@ -211,7 +211,7 @@ VPN は既定で有効になっていませんが、 **[設定]** アプリを�
 1. 必要に応じて、ユーザー名とパスワードを追加します。
 1. VPN 設定を適用します。 
 
-![HoloLens VPN の設定](./images/vpn-settings-ui.jpg)
+![HoloLens VPN の設定。](./images/vpn-settings-ui.jpg)
 
 ### <a name="vpn-set-via-provisioning-package"></a>プロビジョニング パッケージによる VPN の設定
 
@@ -354,7 +354,7 @@ Intune のドキュメントに従って、作業を開始します。 これら
 1. **[ネットワークとインターネット]** を選択します。
 1. 使用可能な Wi-Fi ネットワークの下までスクロールし、 **[ハードウェアのプロパティ]** を選択します。
 
-    ![Wi-Fi 設定のハードウェア プロパティ](./images/wifi-hololens-hwdetails.jpg)
+    ![Wi-Fi 設定のハードウェア プロパティ。](./images/wifi-hololens-hwdetails.jpg)
 
    IP アドレスは、**IPv4 アドレス** の横に表示されます。
 

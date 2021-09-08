@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2747da37ae198f7a2c051593da3ffd4cb4476dfaa7a3078a7749fa1fc912ba2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665626"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190431"
 ---
 # <a name="page-settings-visibility"></a>ページ設定の可視性
 
@@ -74,7 +74,7 @@ Windows Configuration Designer で指定される構成値を次に示します�
 
 選択した方法に関係なく、デバイスは変更を受け取る必要があります。ユーザーには次の設定アプリが表示されます。
 
-![設定アプリで変更されたアクティブ時間のスクリーンショット](images/hololens-page-visibility-list.jpg)
+![設定アプリで変更されたアクティブ時間のスクリーンショット。](images/hololens-page-visibility-list.jpg)
 
 独自の選択したページを表示または非表示に設定アプリ ページを構成するには、HoloLens で使用可能な設定 URI を確認します。
 

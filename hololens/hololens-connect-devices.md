@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1e478e366b8ad70243f6fffc47cd62e847af837637a992ebb60fc80bf6774186
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d9c8b813ba54edbcfef8d1a32e641dad39a7f193
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664294"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189088"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Bluetooth および USB-C デバイスに接続する
 
@@ -93,7 +93,7 @@ HoloLens 2 は、次のクラスの USB-C デバイスをサポートします�
 
 **設定** アプリを開いて **[システム]**  >  **[サウンド]** を選択します。
 
-![サウンド設定](images/usbc-mic-1.jpg)
+![サウンド設定。](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
 > 外部マイクを **Remote Assist** で使用するには、[サウンド デバイスの管理] ハイパーリンクをクリックする必要があります。
@@ -102,11 +102,11 @@ HoloLens 2 は、次のクラスの USB-C デバイスをサポートします�
 >
 > **[通信の既定値]** を選択すると、外部マイクは Remote Assist や他の通信アプリで使用されますが、HoloLens マイク 配列は他のタスクにも引き続き使用できます。
 
-![サウンド デバイスを管理する](images/usbc-mic-2.png)
+![サウンド デバイスを管理する。](images/usbc-mic-2.png)
 
 <br>
 
-![マイクの既定値を設定する](images/usbc-mic-3.jpg)
+![マイクの既定値を設定する。](images/usbc-mic-3.jpg)
 
 #### <a name="what-about-bluetooth-microphone-support"></a>Bluetooth のマイクのサポートについてはどうですか?
 

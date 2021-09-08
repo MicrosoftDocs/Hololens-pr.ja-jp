@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6f50874c39d8bffa43ff94101c81dcffe3dc1b3c34c69e940ed503dc7bd8b4ba
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8f07ed42c873b62b3b4201c2756b55bbb29707d3
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659348"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189768"
 ---
 # <a name="set-up-your-hololens-2"></a>HoloLens 2 のセットアップ
 
@@ -82,7 +82,7 @@ Microsoft ロゴのボタンが表示されます。 ボタンを押すと、Hol
 
      Wi-Fi ネットワークから取得した情報に基づいて、HoloLens のタイム ゾーンが自動的に設定されます。 タイムゾーンは、セットアップの完了後に設定アプリを使用して変更することもできます。
 
-    ![Wi-Fi に接続する](images/11-network.png)
+    ![Wi-Fi に接続する。](images/11-network.png)
 
     > [!NOTE] 
     > Wi-Fi の手順よりも先に進んでいて、後でセットアップ中に別のネットワークに切り替える必要がある場合は、 **[ボリューム ダウン]** ボタンと **[電源]** ボタンを同時に押して、この手順に戻ることができます (October 2019 以降の OS バージョンを実行している場合)。 以前のバージョンでは、自動的に接続できないようにするために、Wi-Fi ネットワークが使用できない場所で[デバイスをリセットする](hololens-recovery.md)か、または再起動する必要があります。
@@ -91,15 +91,15 @@ Microsoft ロゴのボタンが表示されます。 ボタンを押すと、Hol
 
 1. HoloLens 2 Autopilot プロファイルが存在する場合は、そのプロファイルを検索して適用します。 この画面では、操作は必要はありません。
  
-    ![Autopilot プロファイルの検索](images/autopilot-profile-search.png) 
+    ![Autopilot プロファイルの検索。](images/autopilot-profile-search.png) 
 
 1. ライセンス 画面で **[同意する]** をクリックします。
 
-    ![Windows ライセンス契約](images/windows-license-agreement.png)
+    ![Windows ライセンス契約。](images/windows-license-agreement.png)
 
 1. お使いのユーザー アカウントにサインインします。 **自分の職場または学校 が所有し**、 **自分が所有している** から 選択します。
 
-    ![ユーザーの設定](images/13-device-owner.png)
+    ![ユーザーの設定。](images/13-device-owner.png)
     - **[職場または学校が所有しています]** を選んだ場合、Azure AD アカウントを使ってサインインします。 組織で Azure AD Premium を使用しており、MDM への自動登録が構成されている場合は、HoloLens が自動的に MDM に登録されます。 組織で Azure AD Premium が使用されていない場合、MDM への自動登録は使用できません。 その場合は、[デバイス管理で手動で HoloLens を登録する必要があります](hololens-enroll-mdm.md#different-ways-to-enroll)。
 
         1. 組織アカウントの情報を入力します。
@@ -123,11 +123,11 @@ Microsoft ロゴのボタンが表示されます。 ボタンを押すと、Hol
   
 1. デバイスにログインする PIN を設定します。 この PIN はデバイス固有です。 
 
-    ![Windows Hello の設定](images/setup-windows-hello.png)
+    ![Windows Hello の設定。](images/setup-windows-hello.png)
 
-    ![Windows Hello PIN の設定](images/windows-hello-pin.png)
+    ![Windows Hello PIN の設定。](images/windows-hello-pin.png)
 
-    ![Windows Hello セットアップが成功しました](images/windows-hello-successful.png) 
+    ![Windows Hello セットアップが成功しました。](images/windows-hello-successful.png) 
 
     
 1. HoloLens 2 で音声を有効にするかどうかを選択します。

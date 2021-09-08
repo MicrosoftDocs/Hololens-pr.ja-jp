@@ -12,16 +12,16 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 759ef671e9a831e23809d5974595ce5928433e3e50ddb26e25a7a74ebe2559a3
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c1d83577400126903a80999c46ddaeabddaba029
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659985"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190380"
 ---
 # <a name="about-hololens-2"></a>HoloLens 2 について
 
-![HoloLens 2 の側面図](images/hololens2-breakdown.png)
+![HoloLens 2 の側面図。](images/hololens2-breakdown.png)
 
 Microsoft HoloLens 2 は、自立型ホログラフィック コンピューターです。  HoloLens (第 1 世代) から始まったホログラフィック コンピューティングをさらに改良し、より快適でイマーシブなエクスペリエンスを実現しています。Mixed Reality でのコラボレーションに必要なオプションも多数追加されています。 HoloLens 2 は、 [Windows Holographic OS](hololens-release-notes.md) で実行されます。これは Windows 10 の "フレーバー" に基づいており、ユーザー、管理者、および開発者に堅牢で高性能で安全なプラットフォームを提供します。 
 
@@ -75,7 +75,7 @@ HoloLens 2 を使用するには、ユーザー アカウントが必要です�
 | **慣性測定装置 (IMU)** | 加速度計, ジャイロスコープ, 磁力計 |
 | **カメラ** | 静止画 8-MP, 1080p30 ビデオ |
 
-![HoloLens 2 センサー](images/hololens2-front-view.png)
+![HoloLens 2 センサー。](images/hololens2-front-view.png)
 
 > [!NOTE]
 > 写真で呼び出されるセンサーを覆い隠さないでください。 ヘッド トラッキング カメラは非常に幅広い FOV を持っています。覆い隠さないだけでなく、カメラの周囲には何も配置しないでください。

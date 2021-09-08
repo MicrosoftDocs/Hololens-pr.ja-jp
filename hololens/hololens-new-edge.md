@@ -9,16 +9,16 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 35d3b38cd442198aec8aaabf46ff7d842c1bf599dbada68718c1d0fa548b2030
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8ef73733b9fa4f422335977be860371b9570d549
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663243"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189700"
 ---
 # <a name="introducing-the-new-microsoft-edge"></a>新しい Microsoft Edge について
 
-![レガシ Microsoft Edge ロゴから新しい Microsoft Edge ロゴへのアニメーション](images/new-edge.gif)
+![レガシ Microsoft Edge ロゴから新しい Microsoft Edge ロゴへのアニメーション。](images/new-edge.gif)
 
 新しいMicrosoft Edge[ は、Chromiumオープンソース プロジェクト](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/)を採用して、顧客との互換性を向上し、Web 開発者向けの Web の断片化を減らします。
 
@@ -27,11 +27,11 @@ ms.locfileid: "115663243"
 > [!IMPORTANT]
 > この新しい Microsoft Edge は、新しいリリースでは[サポートされなくなった](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/)レガシの Microsoft Edge を自動的に置き換える機能です。
 
-![新しい Microsoft Edge のスクリーンショット](images/new-edge-ui.png)
+![新しい Microsoft Edge のスクリーンショット。](images/new-edge-ui.png)
 
 ## <a name="launching-the-new-microsoft-edge"></a>新しい Microsoft Edge を起動する
 
-新しい Microsoft Edge ![新しい Microsoft Edge アイコン](images/new_edge_logo.png) (青と緑のスワイル アイコンで表されます) は、スタート メニュー にピン留めされ、Web リンクをアクティブ化すると自動的に起動します。
+新しい Microsoft Edge ![新しい Microsoft Edge アイコン。](images/new_edge_logo.png) (青と緑のスワイル アイコンで表されます) は、スタート メニュー にピン留めされ、Web リンクをアクティブ化すると自動的に起動します。
 
 > [!NOTE]
 > HoloLens 2 で新しい Microsoft Edge を初めて起動するとき、設定とデータはレガシの Microsoft Edgeからインポートされます。
@@ -139,7 +139,7 @@ Microsoft Edge Insider チャネルを HoloLens 2 にインストールするに
 1. WebXR がサポートされている Web サイトに移動します。
 1. Web サイトの **[VR の入力]** ボタンを選択します。 このボタンの場所と視覚的な表現は、Web サイトごとに異なる場合がありますが、次のような場合があります。
 
-    ![ENTER VR ボタンの例](images/75px-enter-vr.png)
+    ![ENTER VR ボタンの例。](images/75px-enter-vr.png)
 
 1. 特定のドメインで初めて WebXR エクスペリエンスを起動しようとすると、ブラウザーでイマーシブ ビューに入る同意を求められます。 **[許可]** を選択 してください。
 1. [HoloLens 2 ジェスチャ](hololens2-basic-usage.md#the-hand-tracking-frame) を使用して、エクスペリエンスを操作します。
@@ -156,7 +156,7 @@ Microsoft Edge Insider チャネルを HoloLens 2 にインストールするに
 1. YouTube で 360 度のビデオに移動します。
 1. ビデオ フレームで、[Mixed Reality ヘッドセット] ボタンを選択します。
 
-    ![360 ビューアーをアクティブ化するボタン](images/enter-360-viewer.jpg)
+    ![360 ビューアーをアクティブ化するボタン。](images/enter-360-viewer.jpg)
 
 1. 特定のドメインで初めて 360 ビューアーを起動しようとすると、ブラウザーでイマーシブ ビューに入る同意を求められます。 **[許可]** を選択します。
 1. [エア タップ](hololens2-basic-usage.md#select-using-air-tap) で再生コントロールを表示します。 [ハンド レイとエア タップ](hololens2-basic-usage.md#select-using-air-tap) を使用して、再生/一時停止、前方/戻るスキップ、キャプションのオン/オフの切り替え、エクスペリエンスの停止 (イマーシブ ビューを終了) を行います。 再生コントロールは、数秒の非アクティブ状態の後に消えます。

@@ -12,12 +12,12 @@ ms.date: 05/14/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b117542704968150639a47956a8142d7232fcc66d696feb61ec4fffdaa49df59
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b4692468942da88877370864eda2ce173cc499af
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660580"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189802"
 ---
 # <a name="hololens-2-battery-and-charging"></a>HoloLens 2 バッテリーと充電
 
@@ -41,7 +41,7 @@ HoloLens 2 に付属している[充電器と USB タイプ C ケーブル](http
     - バッテリー レベルが極端に低い場合にデバイスの電源を入れようとすると、1 個のライトが短く点滅してから消えます。
 - ホスト PC で、**エクスプローラー** を開き、 **[この PC]** の下にある HoloLens 2 デバイスを探します。 そのデバイスを右クリックし、 **[プロパティ]** を選択します。 ダイアログ ボックスにバッテリの充電レベルが表示されます。
 
-   ![HoloLens 2 のプロパティ画面にバッテリの残量レベルが表示されます](images/ResetRecovery2.png)
+   ![HoloLens 2 のプロパティ画面にバッテリの残量レベルが表示されます。](images/ResetRecovery2.png)
 
 ## <a name="alternative-charging-specifications"></a>代替充電の仕様
 

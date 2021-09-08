@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 13f7000f608e6375efce201f1edd1627900ecdda2f86ddca8a174ac0b8e43ceb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 77c061c53806e7410d73ecf3aaa20d74c217ea33
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658978"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190414"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>HoloLens 2 の使用準備
 
@@ -42,7 +42,7 @@ HoloLens 2 を頭に装着します。 眼鏡をかけている場合は、か�
 
 必要に応じて調整ノブを回してヘッドバンドを広げ、オーバーヘッド ストラップを緩めます。
 
-![HoloLens 2 のフィット調整](images/hololens2-fit.png)
+![HoloLens 2 のフィット調整。](images/hololens2-fit.png)
 
 ### <a name="attach-and-detach-the-overhead-strap"></a>オーバーヘッド ストラップの取り付けと取り外し
 
@@ -52,7 +52,7 @@ HoloLens 2 を頭に装着します。 眼鏡をかけている場合は、か�
 
 オーバーヘッド ストラップの背面部分を取り外すには、各接続タブの下にあるボタンを押してそっと引っ張ります。 もう一度取り付けるには、接続タブを元のスロットにカチッと差し込みます。
 
-![HoloLens 2 ヘッド ストラップの取り付けまたは取り外し](images/hololens2-headstrap.png)
+![HoloLens 2 ヘッド ストラップの取り付けまたは取り外し。](images/hololens2-headstrap.png)
 
 ## <a name="turn-on-the-hololens-2"></a>HoloLens 2 の電源を入れる
 
