@@ -13,12 +13,12 @@ audience: ITPro
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: d25a87bd210535e36e18f165b5461141c40aa292a07c560018ba7c0cbf76f6ba
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 00e99d3f67e9e4371da12612b9b01c3ce58e71bd
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664929"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428336"
 ---
 # <a name="using-3d-viewer-beta-on-hololens-1st-gen"></a>HoloLens (第 1 世代) で 3D ビューアー ベータ版を使用する
 

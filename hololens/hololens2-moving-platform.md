@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a0717524cd1f762c92a5b821ae90acb8474dafd2
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 81b3231827fce9a2ae2d5e3105800685fedb917b
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190397"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427951"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>低ダイナミック モーション移動プラットフォームでの移動プラットフォーム モード
 
@@ -75,19 +75,19 @@ HoloLens は、安定したホログラムを表示するために、[自由度 
 
 1. 左側のメニューで、 **[システム]** アコーディオンを選択します。
 
-   ![最初の画像。](.\images\moving-platform-1w.png)
+   ![最初の画像。](.\images\mpm-01.png)
 
 2. **[Moving Platform Mode]\(移動プラットフォーム モード\)** ページを選択し、 **[Moving Platform Mode]\(移動プラットフォーム モード\)** チェックボックスをオンにします。
 
-    ![2 番目の画像。](.\images\moving-platform-2z.png)
+    ![2 番目の画像。](.\images\mpm-02.png)
 
 3. 警告が表示されたら、 **[OK]** を選択します。
 
-   ![3 番目の画像。](.\images\moving-platform-3w.png)
+   ![3 番目の画像。](.\images\mpm-03.png)
 
 4. デバイスを再起動します。この操作は、右上のデバイスポータルの **[電源]** メニューから、または音声コマンド「&quot;デバイスを再起動&quot;」を使用し、&quot;[はい]&quot; を選択して行えます。
 
-   ![4 番目の画像。](.\images\moving-platform-4z.png)
+   ![4 番目の画像。](.\images\mpm-04.png)
 
 デバイス ポータルで [Moving Platform Mode]\(移動プラットフォーム モード\) オプションが表示されない場合は、まだ適切なビルドを使用していない可能性があります。 「[前提条件](#prerequisites)」をご覧ください。
 

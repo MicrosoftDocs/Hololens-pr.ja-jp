@@ -13,11 +13,11 @@ ms.reviewer: ''
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 38bab16d2d0d4ace5879f00c133d66b9974e4b2a
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190363"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427291"
 ---
 # <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 ディスプレイのトラブルシューティング
 
