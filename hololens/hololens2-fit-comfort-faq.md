@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9edcf4e49d92bbdcab523206e4685f2d7a8d8b0e2c2ccf8391ea2b32e304201f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 158354c23e93abe770875491af1ab559e47557a7
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659797"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427295"
 ---
 # <a name="hololens-2-fit-and-comfort-frequently-asked-questions"></a>HoloLens 2 を快適に使うためのよくある質問
 

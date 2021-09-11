@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: ylempidakis
-ms.openlocfilehash: 2304e7ec18eb531cce431fb93c7abf38f2c9a1cef30f0d6c6fcaac6c95281f8e
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: cdd2ab68905d5cc82b1c5ccc50640112e857f2f4
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661778"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427378"
 ---
 # <a name="hololens-2-registration-support-for-autopilot"></a>Autopilot の HoloLens 2 登録のサポート
 
