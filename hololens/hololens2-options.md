@@ -15,11 +15,11 @@ manager: sekerawa
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428903"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034299"
 ---
 # <a name="compare-hololens-2-options"></a>HoloLens 2 オプションの比較
 

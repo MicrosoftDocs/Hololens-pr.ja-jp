@@ -13,11 +13,11 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 8f07ed42c873b62b3b4201c2756b55bbb29707d3
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427838"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034284"
 ---
 # <a name="set-up-your-hololens-2"></a>HoloLens 2 のセットアップ
 

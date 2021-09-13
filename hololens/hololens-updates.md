@@ -20,11 +20,11 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.openlocfilehash: 3afe3d2aecd64c2b4724f4805571cb3c46112875
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034365"
 ---
 # <a name="manage-hololens-updates"></a>HoloLens 更新プログラムの管理
 

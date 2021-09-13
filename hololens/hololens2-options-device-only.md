@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: bbb99b37ab20d6ac8c593045265de29c0481a0d5
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428252"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034307"
 ---
 # <a name="hololens-2-device-only-edition"></a>HoloLens 2 デバイ単体のエディション
 

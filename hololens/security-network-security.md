@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 416a4f7b9e3cf2e52b79fb29f50424a9c573a18a
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034437"
 ---
 # <a name="network-security"></a>ネットワークのセキュリティ
 

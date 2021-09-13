@@ -13,11 +13,11 @@ ms.reviewer: ''
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 9f3950de51e4bfa2a76431a2a070d87aa81ed443
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034336"
 ---
 # <a name="troubleshooting-implementation-and-managed-devices"></a>実装とマネージド デバイスのトラブルシューティング 
 
