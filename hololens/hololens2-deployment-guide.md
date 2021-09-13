@@ -14,17 +14,17 @@ manager: sekerawa
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: d5cd9c380e0d276f0a8aa9efac14cf44885446e5
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190329"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033400"
 ---
 # <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>クラウドに接続されている HoloLens 2 を外部クライアントに展開する
 
 このガイドは、 [クラウドに接続されたデプロイガイド](hololens2-cloud-connected-overview.md)を補足するものです。 これは、組織が短期または長期の使用のために外部クライアントの施設に HoloLens 2 デバイスを発送する必要がある状況で使用されます。 外部クライアントは、組織から提供された資格情報を使用して HoloLens 2 デバイスにログインし、[リモート](/dynamics365/mixed-reality/remote-assist/ra-overview)アシスタンスを使用して専門家に連絡します。 このガイドでは、ほとんどの外部 HoloLens 2 展開シナリオに適用される[一般的な HoloLens 2 展開の推奨事項](#general-deployment-recommendations)と、外部使用のためにリモートアシスタンスを展開するときの[一般的な考慮](#common-external-client-deployment-concerns)事項について説明します。 
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 HoloLens 2 を外部にデプロイするには、[クラウドに接続されたデプロイガイド](hololens2-cloud-connected-overview.md)に従って、次のインフラストラクチャを配置する必要があります。
 

@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 66e543dd699edbd54ab41474f3ea86fa313bf6ba
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189649"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033525"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>展開ガイド–リモートアシスタンスを使用したクラウド接続 HoloLens 2-概要
 
@@ -27,7 +27,7 @@ ms.locfileid: "123189649"
 
 このガイドでは、デバイスをデバイス管理に登録する方法、必要に応じてライセンスを適用する方法、およびエンドユーザーがデバイスのセットアップ時にすぐにリモートアシスタンスを使用できることを検証する方法について説明します。 これを行うには、セットアップと実行に必要なインフラストラクチャの重要な部分について説明します。 HoloLens 2 による大規模なデプロイを実現します。 このガイドでは、その他のデバイスの制限や構成は適用されませんが、これらのオプションについては、完了後に調査することをお勧めします。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 HoloLens 2 を展開するには、次のインフラストラクチャが配置されている必要があります。 Azure と Intune を設定していない場合は、次のガイドに記載されています。
 
@@ -96,7 +96,7 @@ HoloLens 2 を展開するには、次のインフラストラクチャが配置
 > - [サポートプランを作成しています。](hololens2-cloud-connected-maintain.md#support-plan)
 > - [開発計画。](hololens2-cloud-connected-maintain.md#development-plan)
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [クラウドに接続されたデプロイ-準備](hololens2-cloud-connected-prepare.md)

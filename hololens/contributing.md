@@ -1,89 +1,89 @@
 ---
-title: 関与する指示
-description: GitHub-flavored Markdown を使用して docs.microsoft.com プラットフォーム上の HoloLens docs に投稿する方法について説明します。
+title: 手順の貢献
+description: お使いな Markdown を使用してHoloLensプラットフォームの docs.microsoft.com ドキュメントにGitHubする方法について説明します。
 author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
 ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188986"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032964"
 ---
-# <a name="contributing-to-the-hololens-documentation"></a>HoloLens のドキュメントに貢献する
+# <a name="contributing-to-the-hololens-documentation"></a>ドキュメントへのHoloLens寄稿
 
-[HoloLens のドキュメント](https://github.com/MicrosoftDocs/Hololens)へようこそ。 このリポジトリで作成または編集した記事 **は、パブリックに表示されます。** 
+このドキュメント[へようこそHoloLensしてください](https://github.com/MicrosoftDocs/Hololens)。 このレポポで作成または編集した記事は **、一般に公開されます。** 
 
-HoloLens docs は、docs.microsoft.com プラットフォームに表示されます。このプラットフォームでは、flavored Markdown を markdig 機能と共に GitHub 使用します。 このリポジトリで編集するコンテンツは、/hololens. に表示される定型ページに書式設定されます。
+HoloLensドキュメントは、Docs.microsoft.com プラットフォームに表示されます。このプラットフォームでは、Markdig 機能GitHubされた Markdown が使用されます。 このレポジトで編集するコンテンツは、/hololens に表示されるスタイル化されたページに書式設定されます。
 
-このページでは、Markdown の基本に寄与するための基本的な手順とガイドラインについて説明します。 投稿をお寄せいただき、ありがとうございます。
+このページでは、Markdown の基本への貢献とリンクに関する基本的な手順とガイドラインについて説明します。 ご投稿いただきありがとうございます。
 
-## <a name="available-repos"></a>利用可能なリポジトリ
+## <a name="available-repos"></a>使用可能なリポジトリ
 
 | リポジトリ名です | URL |
 | --- | --- |
-| HoloLens | [Microsoft Docs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
-| Mixed Reality | [Microsoft Docs/mixed-現実](/windows/mixed-reality) |
-| VR 愛好家ガイド | [Microsoft Docs/mixed-現実ガイド](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
+| HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
+| Mixed Reality | [MicrosoftDocs/Mixed-Reality](/windows/mixed-reality) |
+| VR ファンズ ガイド | [MicrosoftDocs/Mixed-Reality/ファンズガイド](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 
 ## <a name="before-you-start"></a>開始する前に
 
-まだお持ちでない場合は、 [GitHub アカウントを作成](https://github.com/join)する必要があります。
+アカウント をまだ作成していない場合は、アカウント を[作成GitHubがあります](https://github.com/join)。
 
 >[!NOTE]
->microsoft の従業員の場合は、GitHub アカウントを microsoft[オープンソースポータル](https://repos.opensource.microsoft.com/)の microsoft エイリアスにリンクします。 **"Microsoft"** と "microsoft **docs"** の組織に参加してください。
+>Microsoft の従業員の場合は、Microsoft オープン ソース ポータルでGitHubアカウントを Microsoft エイリアス[にリンクします](https://repos.opensource.microsoft.com/)。 **"Microsoft" および** **"MicrosoftDocs" 組織に参加** します。
 
-GitHub アカウントを設定するときは、次のセキュリティに関する注意事項もお勧めします。
-- [GitHub アカウントの強力なパスワード](https://github.com/settings/admin)を作成します。
-- [2 要素認証](https://github.com/settings/two_factor_authentication/configure)を有効にします。
-- [回復コード](https://github.com/settings/auth/recovery-codes)を安全な場所に保存します。
-- [パブリックプロファイルの設定](https://github.com/settings/profile)を更新します。
-   - 自分の名前を設定し、電子メールアドレスを *表示しない* ように *パブリック電子メール* を設定することを検討してください。
-   - プロフィール画像をアップロードすることをお勧めします。これは、投稿するドキュメントページにサムネイルが表示されるためです。
-- コマンドラインを使用する場合は、 [Windows 用に Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)を設定することを検討してください。 これにより、投稿を行うたびにパスワードを入力する必要がなくなります。
+お使GitHubアカウントを設定する場合は、次のセキュリティ上の注意事項も推奨されます。
+- アカウント[の強力なパスワードをGitHubします](https://github.com/settings/admin)。
+- 2 [要素認証 を有効にします](https://github.com/settings/two_factor_authentication/configure)。
+- 回復コード [を安全な](https://github.com/settings/auth/recovery-codes) 場所に保存します。
+- パブリック プロファイルの [設定を更新します](https://github.com/settings/profile)。
+   - 自分の名前を設定し、[パブリック *メール]* を [自分のメール アドレスを表示しない *] に設定します*。
+   - 投稿するドキュメント ページにサムネイルが表示されるので、プロファイル画像をアップロードすることをお勧めします。
+- コマンド ラインを使用する予定の場合は、 に対して Git 資格情報マネージャー[をWindows。](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest) そうすることで、投稿を行うごとにパスワードを入力する必要はありません。
 
-発行システムは GitHub に関連付けられているため、これらの手順は重要です。 GitHub エイリアスを使用して、各記事の作成者または共同作成者として一覧表示されます。
+発行システムはアプリケーションに関連付GitHub、これらの手順が重要です。 自分のエイリアスを使用して、各記事の作成者または共同作成者としてGitHubされます。
 
 ## <a name="editing-an-existing-article"></a>既存の記事の編集
 
-次のワークフローを使用して、web ブラウザーで GitHub を介して *既存の記事* を更新します。
+次のワークフローを使用して、Webブラウザーで GitHub既存の記事を更新します。
 
-1. "Mixed-reality" フォルダーで、編集する記事に移動します。
+1. "mixed-reality-docs" フォルダーで編集する記事に移動します。
 
-2. 右上にある [編集] ボタン (鉛筆アイコン) を選択します。
+2. 右上にある編集ボタン (鉛筆アイコン) を選択します。
 
    ![記事を編集します。](images/editpage.png)
 
-   これにより、破棄可能な分岐が既定のブランチである _master_ に自動的にフォークされます。
+   これにより、既定のブランチ master から、使い捨て可能なブランチが自動的にフォーク _されます_。
 
    > [!NOTE]
-   > この記事には、Microsoft が使用しなくなった、 _マスター_ への参照が含まれています。 ソフトウェアからこの用語が削除された時点で、この記事から削除します。
+   > この記事には、microsoft が使用しなくなった _用語である master_ への参照が含まれている。 ソフトウェアからこの用語が削除された時点で、この記事から削除します。
    
-3. [Markdown の基本](#markdown-basics)に従って、記事の内容を編集します。
+3. Markdown の基本に従って、記事 [の内容を編集します](#markdown-basics)。
 
 4. 各記事の上部にあるメタデータを更新します。
 
-   * **title**: 記事が表示されているときに [ブラウザー] タブに表示されるページタイトル。 ページタイトルは、SEO とインデックス作成に使用されるため、必要な場合以外はタイトルを変更しないでください (ただし、ドキュメントが公開される前には重要度が低くなります)。
-   * **description**: 記事のコンテンツに関する簡単な説明を記述します。これにより、SEO と検出が向上します。
-   * **author**: ページのプライマリ所有者である場合は、ここに GitHub エイリアスを追加します。
-   * **ms. author**: ページのプライマリ所有者である場合は、ここに Microsoft エイリアスを追加します (必要なのはエイリアスではありません @microsoft.com )。
-   * **ms. date**: ページに主要なコンテンツを追加する場合は日付を更新します。ただし、明確、書式設定、文法、スペルなどの修正には使用しません。
-   * **キーワード**: キーワードは、SEO (検索エンジンの最適化) に役立ちます。 コンマとスペースで区切られたキーワードを追加します。これは、記事に固有のものですが、リスト内の最後のキーワードの後には句読点がありません。 すべての記事に適用するグローバルキーワードを追加する必要はありません。他の場所で管理されているためです。 
+   * **title**: 記事を表示するときにブラウザー タブに表示されるページ タイトル。 ページ タイトルは SEO とインデックス作成に使用されます。そのため、必要な場合を限り、タイトルを変更する必要はありません (ドキュメントが公開される前はそれほど重要ではありません)。
+   * **description**: 記事の内容の簡単な説明を記述します。この内容は SEO と検出を向上します。
+   * **author:** ページのプライマリ所有者である場合は、ここにエイリアスをGitHubします。
+   * **ms.author:** ページのプライマリ所有者である場合は、ここに Microsoft エイリアスを追加します (エイリアスは @microsoft.com 不要です)。
+   * **ms.date:** ページに主要なコンテンツを追加する場合は日付を更新しますが、明確化、書式設定、文法、スペルの修正は行う必要はありません。
+   * **keywords**: キーワードは、SEO (検索エンジンの最適化) を支援します。 記事に固有のコンマとスペースで区切られたキーワードを追加しますが、リスト内の最後のキーワードの後に句読点はありません。 すべての記事に適用されるグローバル キーワードは、他の場所で管理されているので、追加する必要があります。 
    
-5. 記事の編集が完了したら、下にスクロールして [ **ファイル変更の提案**] を選択します。
+5. 記事の編集が完了したら、下にスクロールし、[ファイル変更の提案] **を選択します**。
 
-6. 次のページで、[ **プル要求の作成** ] を選択して、自動的に作成されたブランチを既定のブランチである _master_ にマージします。
+6. 次のページで、[作成] を **選択pull request** 自動的に作成されたブランチを既定のブランチ master にマージ _します_。
 
-7. 編集する次の記事に対して上記の手順を繰り返します。
+7. 編集する次の記事について、上記の手順を繰り返します。
 
-## <a name="renaming-or-deleting-an-existing-article"></a>既存のアーティクルの名前の変更または削除
+## <a name="renaming-or-deleting-an-existing-article"></a>既存の記事の名前変更または削除
 
-既存のアーティクルの名前を変更または削除する場合は、必ずリダイレクトを追加してください。 こうすることで、既存の記事へのリンクを持つユーザーは、引き続き適切な場所に配置されます。 リダイレクトは、リポジトリのルートにあるファイルの .openpublishing.redirection.jsによって管理されます。
+変更によって既存の記事の名前が変更または削除される場合は、必ずリダイレクトを追加してください。 そうすることで、既存の記事へのリンクを持つユーザーは、依然として適切な場所に配置されます。 リダイレクトは、レポポのルートにある .openpublishing.redirect.json ファイルによって管理されます。
 
-.openpublishing.redirection.jsにリダイレクトを追加するには、次のように、配列にエントリを追加し `redirections` ます。
+.openpublishing.redirect.json へのリダイレクトを追加するには、配列にエントリを追加 `redirections` します。
 
 ```json
 {
@@ -95,35 +95,35 @@ GitHub アカウントを設定するときは、次のセキュリティに関�
         },
 ```
 
-- `source_path`は、削除しようとしている古いアーティクルへの相対リポジトリパスです。 パスがで始まり、で終わることを確認してください `mixed-reality-docs` `.md` 。
+- は `source_path` 、削除する古い記事への相対リポジトリ パスです。 パスが で始まり、 `mixed-reality-docs` で終わる必要があります `.md` 。
 
-- は、 `redirect_url` 以前の記事から新しい記事までの相対パブリック URL です。 この URL は、  `mixed-reality-docs` `.md` リポジトリパスではなくパブリック url を参照しているため、またはを含んでいないことを確認してください。 を使用した新しいアーティクル内のセクションへのリンク `#section` は許可されます。 必要に応じて、ここで別のサイトへの絶対パスを使用することもできます。
+- は `redirect_url` 、古い記事から新しい記事への相対パブリック URL です。 リポジトリ のパスではなく **パブリック** URL を参照する場合は、この URL に または `mixed-reality-docs` `.md` が含まれている必要があります。 を使用して、新しい記事内のセクション `#section` にリンクできます。 必要に応じて、ここで別のサイトへの絶対パスを使用できます。
 
-- `redirect_document_id` 前のファイルのドキュメント ID を保持するかどうかを示します。 既定値は、`false` です。 リダイレクトされたアーティクルの属性値を保持する場合は、を使用し `true` `ms.documentid` ます。 ドキュメント ID を保持している場合は、ページビューやランキングなどのデータがターゲットアーティクルに転送されます。 リダイレクトの主な目的が名前変更であり、内容の一部だけが同じである別の記事へのポインターではない場合に、これを行ってください。
+- `redirect_document_id` は、前のファイルのドキュメント ID を保持するかどうかを示します。 既定では、 `false`です。 リダイレクト `true` された記事の属性値を `ms.documentid` 保持する場合は、 を使用します。 ドキュメント ID を保持すると、ページ ビューやランク付けなどのデータがターゲット記事に転送されます。 リダイレクトの主な目的が名前変更であり、内容の一部だけが同じである別の記事へのポインターではない場合に、これを行ってください。
 
-リダイレクトを追加する場合は、古いファイルも必ず削除してください。
+リダイレクトを追加する場合は、必ず古いファイルも削除してください。
 
-## <a name="creating-a-new-article"></a>新しい記事を作成しています
+## <a name="creating-a-new-article"></a>新しい記事の作成
 
-次のワークフローを使用して、web ブラウザーで GitHub を使用してドキュメントリポジトリに *新しい記事を作成* します。
+次のワークフローを使用して *、Web* ブラウザーでドキュメント を使用してドキュメント GitHub新しい記事を作成します。
 
-1. 右上の [**フォーク**] ボタンを使用して、microsoft docs/mixed reality の既定のブランチである _master_ からフォークを作成します。
+1. 上部の [フォーク] ボタンを使用して、MicrosoftDocs/Mixed-Reality の既定のブランチ (マスター ) からフォークを作成します。
 
-   ![既定のブランチをフォークします。現在、"master" という名前が付けられています。](images/forkbranch.png)
+   !["master" という名前の既定のブランチをフォークします。](images/forkbranch.png)
 
    > [!NOTE]
-   > この記事には、Microsoft が使用しなくなった、 _マスター_ への参照が含まれています。 ソフトウェアからこの用語が削除された時点で、この記事から削除します。
+   > この記事には、microsoft が使用しなくなった _用語である master_ への参照が含まれている。 ソフトウェアからこの用語が削除された時点で、この記事から削除します。
    
-2. "Mixed-reality" フォルダーで、右上にある [ **新しいファイルの作成** ] を選択します。
+2. "mixed-reality-docs" フォルダーで、上部の **[新しいファイルの** 作成] を選択します。
 
-3. アーティクルのページ名を作成します (スペースの代わりにハイフンを使用し、句読点やアポストロフィは使用しません)。 "md" を追加します。
+3. 記事のページ名を作成し (スペースではなくハイフンを使用し、句読点やアポストロフィを使用しない)、".md" を追加します
 
-   ![新しいページの名前を指定します。](images/newpagetitle.png)
+   ![新しいページに名前を付け、](images/newpagetitle.png)
    
    >[!IMPORTANT]
-   >必ず、"mixed-docs" フォルダー内から新しい記事を作成してください。 これを確認するには、新しいファイル名の行で "/mixed-reality-docs/" を確認します。
+   >"mixed-reality-docs" フォルダー内から新しい記事を作成してください。 これを確認するには、新しいファイル名行で "/mixed-reality-docs/" を確認します。
 
-4. 新しいページの上部に、次のメタデータブロックを追加します。
+4. 新しいページの上部に、次のメタデータ ブロックを追加します。
 
    ```md
    ---
@@ -137,128 +137,128 @@ GitHub アカウントを設定するときは、次のセキュリティに関�
    ---
    ```
 
-5. 「 [既存の記事を編集する](#editing-an-existing-article)」の説明に従って、関連するメタデータフィールドに入力します。
+5. 「既存の記事の編集」で前述したように、 [関連するメタデータ フィールドに入力します](#editing-an-existing-article)。
 
-6. [Markdown の基礎](#markdown-basics)を使用して、記事の内容を記述します。
+6. Markdown の基本 を使用して記事 [の内容を書き込む](#markdown-basics)。
 
-7. `## See also`記事の下部に、関連するその他の記事へのリンクが記載されたセクションを追加します。
+7. 他の `## See also` 関連記事へのリンクを含むセクションを記事の下部に追加します。
 
-8. 完了したら、[ **新しいファイルをコミット** する] を選択します。
+8. 完了したら、 [新しいファイルの **コミット] を選択します**。
 
-9. [ **新しいプル要求** ] を選択し、フォークの _マスター_ ブランチを microsoft docs/mixed reality _マスター_ にマージします (矢印が正しい宛先を指していることを確認します)。
+9. [**新しい** pull request] を選択し、フォークの _マスター_ ブランチを MicrosoftDocs/Mixed-Reality マスターにマージします (矢印が正しい宛先を指していることを確認してください)。
 
-   ![フォークから、Microsoft Docs/mixed reality へのプル要求を作成します。](images/pr-to-master.png)
+   ![フォークpull request MicrosoftDocs/Mixed-Reality に作成します。](images/pr-to-master.png)
 
 ## <a name="markdown-basics"></a>Markdown の基本
 
-Markdown 言語を使用してドキュメントを編集する方法については、次のリソースを参照してください。
+次のリソースは、Markdown 言語を使用してドキュメントを編集する方法を学習するのに役立ちます。
 
 - [Markdown の基礎](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Docs.microsoft.com の Markdown を作成するためのその他のリソース](/contribute/how-to-write-use-markdown)
+- [Markdown for docs.microsoft.com の記述に関するその他の docs.microsoft.com](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>テーブルの追加
 
-Docs.microsoft.com スタイルの表では、インライン CSS を試す場合でも、罫線やカスタムスタイルはありません。 これは短時間は機能しているように見えますが、最終的には、プラットフォームによってテーブルからスタイルが除去されます。 そのため、事前に計画し、テーブルを単純にしておきます。 Markdown テーブルを簡単にするためのサイトを次に示します。 [Tables Generator] https://www.tablesgenerator.com/markdown_tables) ] ()
+テーブルのスタイル docs.microsoft.com 方法のため、インライン CSS を試した場合でも、罫線やカスタム スタイルは使用されません。 これは短時間動作する可能性がありますが、最終的にプラットフォームによってスタイル設定がテーブルから取り除かれます。 そのため、先に計画を立て、テーブルをシンプルに保つ必要があります。 Markdown テーブルを簡単にするサイトを次に示します。 [Tables Generator]]( https://www.tablesgenerator.com/markdown_tables) 。
 
-[Visual Studio Code の Docs Markdown 拡張機能](/teamblog/docs-extension)では、 [Visual Studio Code (下記参照)](#using-visual-studio-code)を使用してドキュメントを編集する場合にも、テーブルの生成を簡単に行うことができます。
+ドキュメント[用の Docs Markdown 拡張機能Visual Studio Code、](/teamblog/docs-extension)ドキュメントを編集するために Visual Studio Code [(](#using-visual-studio-code)下記参照) を使用すると、テーブルの生成も簡単になります。
 
 ### <a name="adding-images"></a>イメージの追加
 
-リポジトリの "mixed-reality/images" フォルダーにイメージをアップロードし、記事で適切に参照する必要があります。 画像は自動的にフルサイズで表示されます。これは、大きな画像が記事全体の幅を占めることを意味します。 イメージをアップロードする前に、イメージのサイズを事前に設定することをお勧めします。 推奨される幅は、600 ~ 700 ピクセルです。ただし、サイズの細かいスクリーンショットやスクリーンショットの一部である場合は、サイズを変更する必要があります。
+イメージをレポポの "mixed-reality-docs/images" フォルダーにアップロードし、記事で適切に参照する必要があります。 画像はフルサイズで自動的に表示されます。これは、大きな画像が記事の幅全体を埋めるという意味です。 画像をアップロードする前に、事前にサイズを設定することをお勧めします。 推奨される幅は 600 から 700 ピクセルですが、密度の高いスクリーンショットまたはスクリーンショットの一部である場合は、サイズを上下に設定する必要があります。
 
 >[!IMPORTANT]
->マージする前に、フォークされたリポジトリにのみイメージをアップロードできます。 そのため、記事にイメージを追加する予定がある場合は、まず、 [Visual Studio Code を使用](#using-visual-studio-code)して、最初にそのイメージをフォークの "images" フォルダーに追加するか、web ブラウザーで次の操作を行っていることを確認する必要があります。
+>マージする前に、フォークされたレポポに画像のみをアップロードできます。 そのため、記事に画像を追加する予定の場合は[、Visual Studio Code](#using-visual-studio-code)を使用して、最初にフォークの "images" フォルダーに画像を追加するか、Web ブラウザーで次の手順を実行する必要があります。
 >
->1. Microsoft Docs/mixed reality リポジトリをフォークしています。
->2. フォーク内のアーティクルを編集しています。
->3. 記事で参照しているイメージを、フォーク内の "mixed-reality/images" フォルダーにアップロードしました。
->4. フォークを Microsoft Docs/mixed reality _マスター_ ブランチにマージする **プル要求** を作成しました。
+>1. MicrosoftDocs/Mixed-Reality レポポをフォークしました。
+>2. フォーク内の記事を編集しました。
+>3. 記事で参照している画像をフォークの "mixed-reality-docs/images" フォルダーにアップロードしました。
+>4. フォークpull request  MicrosoftDocs/Mixed-Reality マスター ブランチにマージするアプリケーションを _作成_ しました。
 >
->独自にフォークしたリポジトリを設定する方法については、 [新しい記事を作成](#creating-a-new-article)するための手順に従ってください。
+>独自のフォークされたレポポを設定する方法については、新しい記事 を作成する手順 [に従ってください](#creating-a-new-article)。
 
 ## <a name="previewing-your-work"></a>作業のプレビュー
 
-web ブラウザーを使用して GitHub を編集しているときに、ページの上部の近くにある [**プレビュー** ] タブを選択して、コミットする前に作業をプレビューすることができます。 
+Web ブラウザー GitHubで編集する場合は、ページの上部付近にある[プレビュー] タブを選択して、コミットする前に作業をプレビューできます。 
 
 >[!NOTE]
->review.docs.microsoft.com での変更のプレビューは、Microsoft の従業員のみが利用できます。
+>変更のプレビューは review.docs.microsoft.com Microsoft の従業員だけが利用できます
 
-Microsoft の従業員: 投稿が既定のブランチである _master_ にマージされている場合は、</hololens? branch = master> に公開する前に、コンテンツを確認することができます。 左側の列の目次を使用して、記事を探します。
+Microsoft の従業員: 投稿が既定のブランチ _master_ にマージされている場合は、</hololens?branch=master> で公開される前にコンテンツを確認できます。 左側の列の目次を使用して、記事を見つける。
 
-## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>ブラウザーでの編集とデスクトップクライアントを使用した編集
+## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>ブラウザーでの編集とデスクトップ クライアントでの編集
 
-クイック変更を行うには、ブラウザーでの編集が最も簡単な方法です。ただし、いくつかの欠点があります。
+ブラウザーでの編集は、簡単に変更を加える最も簡単な方法ですが、いくつかの欠点があります。
 
-- スペルチェックは行われません。
-- 他の記事へのスマートリンクは表示されません (記事のファイル名を手動で入力する必要があります)。
-- イメージをアップロードして参照するのは面倒な場合があります。
+- スペル チェックは受け取らない。
+- 他の記事へのスマート リンクは取得できません (記事のファイル名を手動で入力する必要があります)。
+- 画像をアップロードして参照するのも面倒な場合があります。
 
-これらの問題に対処しない場合は、貢献するときに、いくつかの[便利な拡張機能](#useful-extensions)を持つ[Visual Studio Code](https://code.visualstudio.com/)のようなデスクトップクライアントを使用します。
+これらの問題に対処しない場合は、Visual Studio Code のようなデスクトップ クライアントを使用して、[](https://code.visualstudio.com/)貢献するときに役立つ拡張機能を[](#useful-extensions)2 つ追加します。
 
 ## <a name="using-visual-studio-code"></a>Visual Studio Code の使用
 
-[上記](#editing-in-the-browser-vs-editing-with-a-desktop-client)の理由から、デスクトップクライアントを使用して、web ブラウザーではなくドキュメントを編集することをお勧めします。 [Visual Studio Code](https://code.visualstudio.com/) を使用することをお勧めします。
+上記の理由 [から、Web](#editing-in-the-browser-vs-editing-with-a-desktop-client)ブラウザーではなく、デスクトップ クライアントを使用してドキュメントを編集することができます。 [Visual Studio Code](https://code.visualstudio.com/) を使用することをお勧めします。
 
 ### <a name="setup"></a>セットアップ
 
-このリポジトリを使用するように Visual Studio Code を構成するには、次の手順に従います。
+次の手順に従って、このVisual Studio Codeを使用するための構成を構成します。
 
-1. Web ブラウザーで次のようにします。
-    1. [PC の Git を](https://git-scm.com/downloads)インストールします。
+1. Web ブラウザーで:
+    1. お使 [いの PC 用に Git をインストールします](https://git-scm.com/downloads)。
     2. [Visual Studio Code](https://code.visualstudio.com/) をインストールします。
-    3. まだお持ちでない場合は、 [Microsoft docs/mixed reality をフォーク](#creating-a-new-article)します。
-    4. フォークで、[ **複製] または [ダウンロード** ] を選択し、URL をコピーします。
-2. Visual Studio Code でフォークのローカル複製を作成します。
-    1. [ **表示** ] メニューの [ **コマンドパレット**] をクリックします。
+    3. [まだ行っていない場合は、MicrosoftDocs/Mixed-Reality](#creating-a-new-article) をフォークします。
+    4. フォークで、[複製] または **[ダウンロード] を選択し、URL** をコピーします。
+2. 次の方法でフォークのローカル クローンを作成Visual Studio Code。
+    1. [表示] **メニューの** [コマンド パレット] **を選択します**。
     2. 「Git: Clone」と入力します。
     3. コピーした URL を貼り付けます。
-    4. コンピューターの複製を保存する場所を選択します。
-    5. ポップアップで [ **リポジトリを開く** ] を選択します。
+    4. 複製を PC に保存する場所を選択します。
+    5. ポップアップ **で [Open repo]** を選択します。
 
 ### <a name="editing-documentation"></a>ドキュメントの編集
 
-次のワークフローを使用して、Visual Studio Code でドキュメントに変更を加えます。
+次のワークフローを使用して、 を使用してドキュメントを変更Visual Studio Code。
 
 >[!NOTE]
->Visual Studio Code を使用する場合は、記事の[編集](#editing-an-existing-article)と[作成](#creating-a-new-article)に関するすべてのガイダンスと、上記の[Markdown の編集の基礎](#markdown-basics)が適用されます。
+>記事の編集と[作成](#editing-an-existing-article)に[](#creating-a-new-article)関するガイダンス、および上記の[Markdown](#markdown-basics)の編集の基本は、この記事を使用する場合Visual Studio Code適用されます。
 
-1. 複製されたフォークが公式リポジトリを使用して最新の状態であることを確認します。
+1. 複製したフォークが公式リポジトリで最新の情報に更新されていないことを確認します。
 
-   1. Web ブラウザーでプル要求を作成し、Microsoft Docs/mixed-reality の _既定のブランチ_ 内の他の共同作成者からフォークに最近の変更を同期します (矢印が正しい宛先を指していることを確認してください)。
+   1. Web ブラウザーで pull request を作成し、MicrosoftDocs/Mixed-Reality の既定のブランチ ( _マスター_) にある他の共同作成者からの最近の変更をフォークに同期します (矢印が正しい宛先を指していることを確認してください)。
       
-      ![Microsoft Docs/mixed-reality からフォークに変更を同期します。](images/sync-repos.png)
+      ![MicrosoftDocs/Mixed-Reality からフォークへの変更を同期します。](images/sync-repos.png)
       
-   2. Visual Studio Code で、[同期] ボタンを選択して、新しく更新されたフォークをローカルクローンに同期します。
+   2. [Visual Studio Code同期] ボタンを選択して、新しく更新されたフォークをローカル クローンに同期します。
       
-      ![[同期] ボタンの画像をクリックします。](images/sync-clone.png)
+      ![同期ボタンの画像をクリックします。](images/sync-clone.png)
       
-2. Visual Studio Code を使用して、複製されたリポジトリのアーティクルを作成または編集します。
+2. 複製したリポジトリ内の記事を作成または編集するには、 Visual Studio Code。
 
-   1. 1つ以上の記事を編集します (必要に応じて、画像を "images" フォルダーに追加します)。
+   1. 1 つ以上の記事を編集します (必要に応じて、画像を "images" フォルダーに追加します)。
    
-   2. 変更を **エクスプローラー** に **保存** します。
+   2. **エクスプローラーに** 変更を **保存します**。
       
-      ![エクスプローラーで [すべてを保存] を選択します。](images/explorer-save.png)
+      ![エクスプローラーで [すべて保存] を選択する](images/explorer-save.png)
       
-   3. **ソース管理** ですべての変更を **コミット** します (メッセージが表示されたら書き込みコミットメッセージ)。
+   3. **ソース管理のすべての** 変更を **コミットします** (メッセージが表示されたら、コミット メッセージを書き込む)。
    
       ![ソース管理で [すべてコミット] を選択する](images/source-control-commit.png)
       
-   4. [**同期**] ボタンを選択して、変更内容を元に戻します (GitHub のフォーク)。
+   4. 同期ボタン **を選択** して、変更内容を元の元に戻します (GitHub。
       
       ![[同期] ボタンをクリックします。](images/sync-back.png)
       
-3. Web ブラウザーでプル要求を作成して、フォークの新しい変更を Microsoft Docs/mixed reality _マスター_ に戻します (矢印が正しい宛先を指していることを確認してください)。
+3. Web ブラウザーで、フォークの新しい変更を MicrosoftDocs/Mixed-Reality マスターに同期する pull request を作成します (矢印が正しい宛先を指していることを確認してください)。
 
-   ![フォークから、Microsoft Docs/mixed reality へのプル要求を作成します。](images/pr-to-master.png)
+   ![フォークpull request MicrosoftDocs/Mixed-Reality に作成します。](images/pr-to-master.png)
 
 ### <a name="useful-extensions"></a>便利な拡張機能
 
-ドキュメントを編集する際には、次の Visual Studio Code 拡張機能が役立ちます。
+次のVisual Studio Codeは、ドキュメントを編集するときに役立ちます。
 
-- [docs Markdown Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - **Alt + M キー** を使用して、次のような docs 作成オプションのメニューを表示します。
-   - アップロードしたイメージを検索して参照します。
-   - など、リスト、テーブル、ドキュメント固有の呼び出しなどの書式設定を追加 `>[!NOTE]` します。
+- [Docs Markdown Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - **Alt + M** を使用して、次のようなドキュメント作成オプションのメニューを表示します。
+   - アップロードした画像を検索して参照します。
+   - リスト、テーブル、ドキュメント固有の呼び出し (など) のような書式設定を追加します `>[!NOTE]` 。
    - 内部リンクとブックマーク (ページ内の特定のセクションへのリンク) を検索して参照します。
-   - 書式設定エラーが強調表示されます (詳細については、エラーの上にマウスポインターを置きます)。
-- [コードスペルチェッカー](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) -スペルミスの単語に下線が引かれます。スペルミスの単語を右クリックして変更するか、辞書に保存します。
+   - 書式設定エラーが強調表示されています (詳細については、エラーの上にマウス ポインターを合わせる)。
+- [コード スペル チェック](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - スペルミスの単語には下線が引かされます。スペルミスの単語を右クリックして変更するか、ディクショナリに保存します。

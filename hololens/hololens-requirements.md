@@ -13,11 +13,11 @@ ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189241"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033831"
 ---
 # <a name="common-deployment-scenarios"></a>一般的な配置シナリオ
 
@@ -29,7 +29,7 @@ ms.locfileid: "123189241"
 
 ビジネス上の意思決定者、IT プロフェッショナル、またはお客様の組織内で HoloLens を採用するイノベーションチームである場合があります。 概念実証から構築された展開に合わせて、展開ガイドでは、規模や規模に関係なく、IT インフラストラクチャ内の HoloLens を理解することができます。 最も一般的な展開シナリオを次に示します。
 
-| シナリオ |使用 | 重要なポイント |
+| シナリオ |使用方法 | 重要なポイント |
 |---------|---------|---------|
 | [シナリオ A: クラウド接続デバイス](hololens2-cloud-connected-overview.md) | 最初にデプロイを開始するときに、基本的なプロセスを表示するために、小規模に開始して、クラウドに接続された単一のデバイスをデプロイすることができます。 | デバイスは、クラウドサービスとパブリックインターネットに接続されます。 これは、お客様のユースケース、フィールドサービス、概念実証に最適です。|
 | [シナリオ B: 組織のネットワーク](hololens2-corp-connected-overview.md) | 大規模な運用環境にデプロイする場合は、組織のネットワークとの統合が必要になることがあります。 | デバイスは、"企業" の wi-fi ネットワークに接続されます。 これは、社内ユーザーに最も適しているか、企業環境内で使用されています。|

@@ -1,6 +1,6 @@
 ---
 title: Microsoft の エンドポイント マネージャー Intune を使用してデバイスHoloLensする
-description: MDM を使用して、Intune を使用して大規模な複合現実HoloLens CSP、ポリシー、管理を構成する方法について説明します。
+description: MDM を使用して、Intune を使用して大規模な複合現実デバイスHoloLens CSP、ポリシー、管理を構成する方法について説明します。
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a0f26750ff6ea881babfab44af95cbbefa0574674336934ccf1443df1701a96
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5485a4b2558a11a6c0545ec8b3405c120cff287c
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033188"
 ---
 # <a name="using-microsofts-endpoint-manager-intune-to-manage-hololens-devices"></a>Microsoft の エンドポイント マネージャー Intune を使用してデバイスHoloLensする
 
@@ -41,17 +41,17 @@ MDM を使用してデバイスを管理すると、さまざまな項目を選�
 
 ### <a name="wi-fi"></a>Wi-Fi
 [Wi-Fi 設定](/mem/intune/configuration/wi-fi-settings-configure)は、ユーザーとデバイスにワイヤレス ネットワーク設定を割り当てます。 ユーザープロファイルを割り当Wi-Fi、ユーザーは自分で構成することなく、Wi-Fi企業アカウントにアクセスできます。
-ネットワークを構成[する方法の詳細については、HoloLens](hololens-commercial-infrastructure.md)
+ネットワークの構成[の詳細については、次を参照HoloLens](hololens-commercial-infrastructure.md)
 
 ### <a name="certificates"></a>証明書
-証明書は、Web コンテンツのアカウント認証、Wi-Fi、VPN 暗号化、SSL 暗号化を提供することで、セキュリティを向上させるのに役立ちます。 管理者はプロビジョニング パッケージを使用してデバイス上の証明書を手動で管理することができますが、MDM システムを使用して、登録から更新、失効まで、ライフサイクル全体を通してそれらの証明書を管理するベスト プラクティスです。 MDM システムは、デバイスの登録後に、デバイスの証明書ストアにこれらの証明書を自動的に展開できます (MDM システムが Simple Certificate Enrollment Protocol (SCEP) または公開キー暗号化標準 #12 (PKCS #12) をサポートしている限り)。 MDM では、登録されたクライアント証明書の照会と削除、または現在の証明書の有効期限が切る前に新しい登録要求をトリガーすることもできます。 
+証明書は、Web コンテンツのアカウント認証、Wi-Fi VPN 暗号化、SSL 暗号化を提供することで、セキュリティを向上させるのに役立ちます。 管理者はプロビジョニング パッケージを使用してデバイス上の証明書を手動で管理することができますが、MDM システムを使用して、登録から更新、失効まで、ライフサイクル全体を通してそれらの証明書を管理するベスト プラクティスです。 MDM システムでは、デバイスの登録後に、これらの証明書をデバイスの証明書ストアに自動的に展開できます (MDM システムが Simple Certificate Enrollment Protocol (SCEP) または公開キー暗号化標準 #12 (PKCS #12) をサポートしている限り)。 MDM では、登録されたクライアント証明書の照会と削除、または現在の証明書の有効期限が切る前に新しい登録要求をトリガーすることもできます。 
 
-### <a name="proxy"></a>Proxy (プロキシ)
+### <a name="proxy"></a>プロキシ
 ほとんどの企業イントラネット ネットワークでは、プロキシを利用して内部トラフィックを管理します。 このHoloLens 2、イーサネット接続とネットワーク接続用にプロキシ サーバーWi-Fiできます。 これらの設定は、VPN 接続には適用されません。 アプリケーションのプロキシ設定の詳細については[、「NetworkProxy CSP Windows 10」を参照してください](/windows/client-management/mdm/networkproxy-csp)。
 
 ### <a name="vpn"></a>VPN
-多くの場合、組織では VPN を使用して、企業のイントラネット上のアプリとリソースにアクセスします。 HoloLens 2 SSL VPN 接続がサポートされています。この接続には、Microsoft Store からダウンロード可能なプラグインが必要であり、選択した VPN ベンダーに固有です。 
-- 詳細については、 の[VPN に関するページをHoloLens。](hololens-network.md#vpn)
+多くの場合、組織では VPN を使用して、企業のイントラネット上のアプリとリソースにアクセスします。 HoloLens 2 SSL VPN 接続がサポートされています。この接続では、Microsoft Store からダウンロード可能なプラグインが必要であり、選択した VPN ベンダーに固有です。 
+- 詳細については、 の[VPN に関するページHoloLens。](hololens-network.md#vpn)
 - VPN プロファイルの詳細については [、VPNv2 CSP に関するページを参照してください](/windows/client-management/mdm/vpnv2-csp)。
 
 ### <a name="deploy-and-manage-apps"></a>アプリの展開と管理

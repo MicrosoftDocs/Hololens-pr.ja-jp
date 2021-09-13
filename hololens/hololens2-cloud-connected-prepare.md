@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f6c2e514024a171661b182a310145e26280e114a1cff65ef5b03b16feae8371a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 21fffdc24f8682bc44779e1cebe8cd6eacb59619
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660164"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033508"
 ---
 # <a name="prepare---cloud-connected-guide"></a>準備-クラウド接続ガイド
 
@@ -75,7 +75,7 @@ Dynamics 365 Remote Assist には、ビデオの呼び出しエクスペリエ�
 
 このガイドに接続されているデバイスは、および外部クラウドネットワーク経由でネットワークに接続します。 会社のリソースにアクセスするには、VPN 経由でデバイスを接続する必要が&#39;ます。 デバイスを VPN に接続する方法はいくつかあり、エンドユーザーがデバイス UI を使用して接続することも、デバイスを管理して、PPKG または MDM から VPN プロファイルを受け取ることもできます。 この記事では、vpn について&#39;t をセットアップする方法について説明します。&#39;そのため、さまざまな vpn プロトコルや vpn の管理方法の詳細については、次のガイドを参照して[HoloLens と vpn に関する情報を](/hololens/hololens-network#vpn)参照してください。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [クラウドに接続されたデプロイ-構成](hololens2-cloud-connected-configure.md)

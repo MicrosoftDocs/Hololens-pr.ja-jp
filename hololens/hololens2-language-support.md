@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 でサポートされる言語
-description: ユーザーがサポートしているすべての言語HoloLens 2、キーボード レイアウトの変更、および表示言語のWindowsについて学習します。
+description: ユーザーがサポートしているすべての言語HoloLens 2キーボード レイアウトの変更、および表示言語のWindowsについて学習します。
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -17,12 +17,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 32f4cce668b2f8a483dbef3f4b41a0ceb8267dcc202f2be9d32ecec4061d0c21
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: dc3de0c95f17c821816bad278de5717bc24a2c29
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659578"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033363"
 ---
 # <a name="supported-languages-for-hololens-2"></a>HoloLens 2 でサポートされる言語
 
@@ -46,7 +46,7 @@ HoloLens 2は、次の言語もサポートしています。 ただし、この
 - オランダ語 (オランダ)
 - 韓国語 (韓国)
 
-の一部の機能HoloLens 2表示言語Windows使用します。 このWindows言語は、ローカライズをサポートするアプリWindowsの次の設定に影響します。
+の一部の機能HoloLens 2言語をWindows使用できます。 このWindows言語は、ローカライズをサポートするアプリWindowsの次の設定に影響します。
 
 - ユーザー インターフェイスのテキスト言語。
 - 音声言語。
@@ -54,21 +54,21 @@ HoloLens 2は、次の言語もサポートしています。 ただし、この
 
 ## <a name="change-the-language-or-keyboard-layout"></a>言語またはキーボード のレイアウトを変更する
 
-セットアップ プロセスでは、特定のリージョンHoloLens言語に合った構成が構成されます。 この構成は、 の Time **& 言語セクション** を使用して **変更設定。**
+セットアップ プロセスでは、特定のリージョンHoloLens言語に合った構成が構成されます。 この構成は、 の Time **& language セクション** を使用して **設定。**
 
 > [!NOTE]  
 > 音声とディクテーション言語は、表示言語に依存する (およびと同じ) Windowsします。
 
-### <a name="to-change-the-windows-display-language"></a>表示言語をWindows変更するには
+### <a name="to-change-the-windows-display-language"></a>表示言語Windows変更するには
 
 1. [スタート]**メニューを** 開き、[時刻と **言語設定**  >  **を選択**  >  **します**。
-2. **[Windows言語] を選択し**、言語を選択します。  
+2. 表示 **Windowsを選択し**、言語を選択します。  
 
 探しているサポートされている言語がメニューに表示されない場合は、次の手順に従います。  
 
 1. [優先 **言語] で、[** 言語の **追加] を選択します**。
 2. 言語を見つけて追加します。
-3. [言語 **Windowsもう** 一度選択し、前の手順で追加した言語を選択します。
+3. 表示言語 **Windowsもう** 一度選択し、前の手順で追加した言語を選択します。
 
 ### <a name="to-change-the-keyboard-layout"></a>キーボード レイアウトを変更するには
 
@@ -79,4 +79,4 @@ HoloLens 2は、次の言語もサポートしています。 ただし、この
 > [!NOTE]  
 > 画面のキーボードでは、入力方法エディター (IME) を使用して、日本語などの言語で文字を入力できます。 ただし、HoloLens IME を使用する外部Bluetoothキーボードはサポートされていません。
 >  
-> IME を画面のキーボードと一緒に使用している間は、引き続きキーボードのBluetoothを使用して英語で入力できます。 キーボードを切り替えるには、チルダ文字ボタン ( ) を押します **~** 。
+> IME とスクリーン キーボードを組み合わせて使用している間は、引き続きキーボードのBluetoothを使用して英語で入力できます。 キーボードを切り替えるには、チルダ文字ボタン ( ) を押します **~** 。

@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 54e9959c03b69db39ff2738e5d4f41f9740ae562b38e8d85998521a4733edad7
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: daced6fab65f779b7bd670bf1275f99ae5311d3f
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664861"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033283"
 ---
 # <a name="create-mixed-reality-photos-and-videos"></a>Mixed Reality の写真とビデオを作成する
 

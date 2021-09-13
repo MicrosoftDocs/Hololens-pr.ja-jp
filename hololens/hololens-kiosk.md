@@ -1,6 +1,6 @@
 ---
 title: HoloLens をキオスクとしてセットアップする
-description: キオスク構成を設定して使用して、デバイス上のアプリをロックダウンする方法HoloLensします。
+description: キオスク構成を設定して使用して、デバイス上のアプリをロックダウンするHoloLensします。
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -18,11 +18,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: e856ac74e959743e8d05ea6acf583700a6450373
-ms.sourcegitcommit: 37611ac0a4efaf69816a734e16b763c810655f1a
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123411346"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033203"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>HoloLens をキオスクとしてセットアップする
 
@@ -44,14 +44,14 @@ ms.locfileid: "123411346"
 |シングル アプリ キオスク |無効 |無効 |無効 |無効   |無効 |有効* |
 |マルチ アプリ キオスク |Enabled |有効*  |利用可能*  |利用可能* |利用可能*   |有効*  |
 
-\*無効な機能を有効にする方法、または音声コマンドが無効な機能と対話する方法の詳細については、「Cortana [AUMID](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)のHoloLensを参照してください。
+\*無効になっている機能を有効にする方法、または音声コマンドが無効な機能と対話する方法の詳細については、「Cortana [AUMID](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)のHoloLensを参照してください。
 
 ## <a name="key-general-considerations-before-configuring-kiosk-mode"></a>キオスク モードを構成する前の主な一般的な考慮事項
 
-1. 環境内の HoloLens にサインインするユーザー アカウントの種類を決定する - HoloLens では、Azure Active Directory (AAD) アカウント、Microsoft アカウント (MSA)、ローカル アカウントがサポートされます。 さらに、ゲスト/ビジターと呼ばれる一時的に作成されたアカウントもサポートされています (AAD 参加デバイスの場合のみ)。 詳細については、「ユーザー ID[とサインインの管理 」を参照HoloLens。](hololens-identity.md)
+1. 環境内の HoloLens にサインインするユーザー アカウントの種類を決定する - HoloLens では、Azure Active Directory (AAD) アカウント、Microsoft アカウント (MSA)、ローカル アカウントがサポートされます。 さらに、ゲスト/ビジターと呼ばれる一時的に作成されたアカウントもサポートされています (AAD 参加デバイスの場合のみ)。 詳細については、「[ユーザー ID とサインインの管理 」を参照HoloLens。](hololens-identity.md)
 2. キオスク モード エクスペリエンスのターゲットを決定する – すべてのユーザー、1 人のユーザー、特定のユーザー、または AAD グループのメンバーであるユーザーなどです。
 3. 複数のアプリ キオスク モードの場合は、スタート メニューに表示するアプリケーションを決定します。 アプリケーションごとに、その [アプリケーション ユーザー モデル ID (AUMID) が](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids) 必要です。
-4. ランタイム プロビジョニング パッケージまたは Mobile HoloLens (MDM) サーバーを使用して、キオスク モードがデバイス管理適用されるかどうかを決定します。
+4. ランタイム プロビジョニング パッケージまたは Mobile デバイス管理 (MDM) サーバーを使用して、キオスク モードがHoloLensに適用されるかどうかを決定します。
 
 ## <a name="security-considerations"></a>セキュリティに関する考慮事項
 
@@ -59,7 +59,7 @@ ms.locfileid: "123411346"
 
 - アプリ設定キオスク モードで表示するように構成され、設定 アプリに表示されるページを制御する場合は、「ページの表示設定[参照してください](settings-uri-list.md)。
 - 特定のアプリの特定のハードウェア機能 (カメラ、Bluetooth など) へのアクセスを制御する場合は[、「HoloLens 2 - Windows Client Management](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)でサポートされるポリシー CSP のポリシー」を参照してください。 アイデアについては、デバイス [に関する一般的な](hololens-common-device-restrictions.md) 制限を確認できます。
-- キオスク モードでは、(キオスク エクスペリエンスの一部として構成されている) アプリが他のアプリを起動できません。 HoloLens での特定のアプリまたはプロセスの起動を完全にブロックする場合は、「HoloLens 内の HoloLens 2 Microsoft Intune デバイスで Windows Defender アプリケーション制御を使用する[- Azure」を](/mem/intune/configuration/custom-profile-hololens)参照してください。
+- キオスク モードでは、(キオスク エクスペリエンスの一部として構成されている) アプリが他のアプリを起動できません。 HoloLens での特定のアプリ/プロセスの起動を完全にブロックする場合は、「Microsoft Intune - Azure の HoloLens 2 デバイスで Windows Defender アプリケーション制御を使用する」[を参照](/mem/intune/configuration/custom-profile-hololens)してください。
 
 ## <a name="key-technical-considerations-for-kiosk-mode-for-hololens"></a>デバイスのキオスク モードに関する主な技術的HoloLens
 
@@ -89,22 +89,22 @@ ms.locfileid: "123411346"
 | --- | --- | --- | --- |
 | サインインするユーザーは、キオスク エクスペリエンスを取得します。 | [複数のアプリのグローバル割り当てアクセス プロファイルを構成する](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune テンプレート](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [ランタイム プロビジョニング - マルチ アプリ](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | グローバル割り当てアクセスには [、20H2 以降のビルドが必要です](hololens-release-notes.md#windows-holographic-version-20h2) |
 | サインインしたユーザーは、特定のユーザーを除くすべてのユーザーがキオスク エクスペリエンスを取得します。 | [特定のユーザー (デバイス所有者である必要があります](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners)) を除外して、複数のアプリのグローバル割り当てアクセス プロファイルを構成します。 | • [Microsoft Intune テンプレート](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [ランタイム プロビジョニング - マルチ アプリ](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | グローバル割り当てアクセスには [、20H2 以降のビルドが必要です](hololens-release-notes.md#windows-holographic-version-20h2) |
-| すべての AAD ユーザーは、そのユーザーに固有の個別のキオスク エクスペリエンスを取得します。 | [AAD アカウント名を指定して、各ユーザーに割り当てられたアクセス構成を構成します。](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune テンプレート](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [ランタイム プロビジョニング - マルチ アプリ](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
-| 別の AAD グループのユーザーには、グループ専用のキオスク モードが表示されます。 | [必要な AAD グループごとに割り当てられたアクセス構成を構成します。](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune テンプレート](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [ランタイム プロビジョニング - マルチ アプリ](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • ユーザーがサインインし、HoloLens がインターネットに接続されている場合、そのユーザーがキオスク構成が存在する AAD グループのメンバーである場合、ユーザーは、その AAD グループのキオスクを体験します。 <br> • ユーザーのサインイン時にインターネットを使用できない場合、ユーザーはHoloLens[動作を受け取ります。](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) <br> • ユーザーがサインインし、AAD グループ ベースのキオスクを使用する必要があるときにインターネットの可用性が保証されない場合は [、AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk)の使用を検討してください。 <br> • サインイン中に AAD グループを最適に使用するには[、AADGroupMembershipCacheValidityInDayspolicy](/hololens/hololens-release-notes#cache-azure-ad-group-membership-for-offline-kiosk)を使用する方法が推奨されます |
-| 一時的な目的でHoloLensする必要があるユーザーは、キオスク エクスペリエンスを利用できます。 | [訪問者の割り当て済みアクセス構成を構成する](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune テンプレート](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [ランタイム プロビジョニング - 単一アプリ](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • 一時ユーザー アカウントは、サインイン時HoloLensによって自動的に作成され、一時ユーザーがサインアウトすると削除されます。 <br> • ビジターの自動ログイン [ポリシー を有効にしてください](#how-can-visitor-accounts-automatically-logon-to-kiosk-experience)。 |
+| すべての AAD ユーザーは、そのユーザーに固有のキオスク エクスペリエンスを個別に取得します。 | [AAD アカウント名を指定して、各ユーザーに割り当てられたアクセス構成を構成します。](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune テンプレート](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [ランタイム プロビジョニング - マルチ アプリ](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
+| 異なる AAD グループのユーザーは、グループ専用のキオスク モードを使用します。 | [必要な AAD グループごとに割り当てられたアクセス構成を構成します。](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune テンプレート](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [ランタイム プロビジョニング - マルチ アプリ](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • ユーザーがサインインし、HoloLens がインターネットに接続されている場合、そのユーザーがキオスク構成が存在する AAD グループのメンバーである場合、ユーザーは、その AAD グループのキオスクを体験します。 <br> •[ユーザーのサインイン時にインターネット](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)を使用できない場合、ユーザーはエラー モードHoloLens発生します。 <br> • ユーザーがサインインし、AAD グループ ベースのキオスクを使用する必要があるときにインターネットの可用性が保証されない場合は [、AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk)の使用を検討してください。 <br> • サインイン中に AAD グループを最適に使用するには[、AADGroupMembershipCacheValidityInDayspolicy](/hololens/hololens-release-notes#cache-azure-ad-group-membership-for-offline-kiosk)を使用する方法が推奨されます |
+| 一時的な目的でHoloLensする必要があるユーザーは、キオスク エクスペリエンスを取得します。 | [訪問者の割り当て済みアクセス構成を構成する](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune テンプレート](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [ランタイム プロビジョニング - 単一アプリ](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • 一時ユーザー アカウントは、サインイン時HoloLensによって自動的に作成され、一時ユーザーがサインアウトすると削除されます。 <br> • ビジターの自動ログイン [ポリシー を有効にしてください](#how-can-visitor-accounts-automatically-logon-to-kiosk-experience)。 |
 
 ## <a name="steps-in-configuring-kiosk-mode-for-hololens"></a>デバイスのキオスク モードを構成するHoloLens
 
 キオスク構成は、次の方法で作成および適用できます。
 
 1. MDM サーバーの UI (Intune のキオスク テンプレートやカスタム OMA-URI 構成など) を使用すると、リモートで HoloLens に適用されます。
-2. ランタイム プロビジョニング パッケージを使用すると、パッケージに直接適用HoloLens。
+2. ランタイム プロビジョニング パッケージを使用すると、パッケージに直接HoloLens。
 
 次の構成方法を示します。使用するプロセスに一致するタブを選択します。
 
-1. [Microsoft Intune シングル アプリ キオスク テンプレートを作成する](hololens-kiosk.md?tabs=uisak#steps-in-configuring-kiosk-mode-for-hololens)
+1. [Microsoft Intune シングル アプリ キオスク テンプレート](hololens-kiosk.md?tabs=uisak#steps-in-configuring-kiosk-mode-for-hololens)
 2. [Microsoft Intune マルチ アプリ キオスク テンプレート](hololens-kiosk.md?tabs=uimak#steps-in-configuring-kiosk-mode-for-hololens)
-1. [Microsoft Intune テンプレートの作成](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens)
+1. [Microsoft Intune テンプレートを作成する](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens)
 1. [ランタイム プロビジョニング - マルチ アプリ](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens)
 1. [ランタイム プロビジョニング - 単一アプリ](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens)
 
@@ -122,18 +122,18 @@ ms.locfileid: "123411346"
 
 ### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>キオスク エクスペリエンスは、HoloLens (第 1 世代) でサポートされていますか?
 
-キオスク モードは、デバイスにデバイスがインストールされているWindows Holographic for Business。 すべてのHoloLens 2デバイスは Windows Holographic for Businessに出荷され、他のエディションはありません。 すべてのデバイスHoloLens 2、キオスク モードを一から実行できます。
+キオスク モードは、デバイスにデバイスがインストールされているWindows Holographic for Business。 すべてのHoloLens 2デバイスは Windows Holographic for Businessに出荷され、他のエディションはありません。 すべてのHoloLens 2デバイスは、キオスク モードを一から実行できます。
 
-HoloLens (第 1 世代) デバイスは、OS ビルドと OS エディションの両方でアップグレードする必要があります。 次に示すのは、HoloLens (第 1 世代) を新しいエディション[に更新Windows Holographic for Business](hololens1-upgrade-enterprise.md)です。 キオスク モードを使用HoloLens (第 1 世代) デバイスを更新するには、まず、デバイスが Windows 10 バージョン 1803 以降のバージョンを実行している必要があります。 Windows Device Recovery Tool を使用して HoloLens (第 1 世代) デバイスを既定のビルドに回復した場合、または最新の更新プログラムをインストールした場合は、デバイスを構成する準備ができています。
+HoloLens (第 1 世代) デバイスは、OS ビルドと OS エディションの両方でアップグレードする必要があります。 次に、新しいエディション (第 1 世代) HoloLens更新する方法の詳細を[Windows Holographic for Business](hololens1-upgrade-enterprise.md)します。 キオスク モードを使用HoloLens (第 1 世代) デバイスを更新するには、まず、デバイスが Windows 10 バージョン 1803 以降のバージョンを実行している必要があります。 Windows Device Recovery Tool を使用して HoloLens (第 1 世代) デバイスを既定のビルドに回復した場合、または最新の更新プログラムをインストールした場合は、デバイスを構成する準備ができています。
 
 ### <a name="how-to-use-device-portal-to-configure-kiosk-in-non-production-environments"></a>デバイス ポータルを使用して非実稼働環境でキオスクを構成する方法
 
 次のコマンドを[HoloLensデバイスを設定Windows デバイス ポータル。](/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) デバイス ポータルは、お使いの PC に Web ブラウザーから接続することができる HoloLens 上の Web サーバーです。
 
  > [!CAUTION]
- > アプリケーションを使用HoloLens設定デバイス ポータル、デバイスで開発者モードを有効にする必要があります。 アプリがインストールされているデバイスの開発者モードWindows Holographic for Businessアプリをサイドロードできます。 ただし、この設定により、ユーザーがアプリの認定を受けしていないアプリをインストールMicrosoft Store。 管理者は、ポリシー CSP の **ApplicationManagement/AllowDeveloper Unlock** 設定を使用して、開発者モードを有効にする機能を [ブロックできます](/windows/client-management/mdm/policy-configuration-service-provider)。 [開発者モードの詳細をご覧ください。](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+ > アプリケーションを使用HoloLens設定デバイス ポータルデバイスで開発者モードを有効にする必要があります。 アプリがインストールされているデバイスの開発者モードWindows Holographic for Businessアプリをサイドロードできます。 ただし、この設定により、ユーザーがアプリの認定を受けしていないアプリをインストールMicrosoft Store。 管理者は、ポリシー CSP の **ApplicationManagement/AllowDeveloper Unlock** 設定を使用して、開発者モードを有効にする機能を [ブロックできます](/windows/client-management/mdm/policy-configuration-service-provider)。 [開発者モードの詳細をご覧ください。](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
 
-キオスク モードは、必要なクエリ文字列パラメーター ("kioskModeEnabled" の値が "true" または "false") とオプションのパラメーター (パッケージ名の値が "startupApp" ) を 1 つ指定して、/api/holographic/kioskmode/settings に POST を実行することで、デバイス ポータル の REST API を介して設定できます。 この機能はデバイス ポータル開発者のみを対象とし、開発者以外のデバイスでは有効にしなける必要があるという念頭に置いておきます。 このREST API、今後の更新プログラム/リリースで変更される可能性があります。
+キオスク モードは、必要なクエリ文字列パラメーター ("kioskModeEnabled" の値が "true" または "false") とオプションのパラメーター (パッケージ名の値が "startupApp" ) を 1 つ指定して、/api/holographic/kioskmode/settings に POST を実行することで、デバイス ポータル の REST API を介して設定できます。 この機能はデバイス ポータル開発者のみを対象とし、開発者以外のデバイスでは有効にしなける必要があるという念頭に置いておきます。 このREST API、今後の更新/リリースで変更される可能性があります。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
@@ -148,7 +148,7 @@ HoloLens (第 1 世代) デバイスは、OS ビルドと OS エディション�
 
     ![失敗したときのキオスク モードの画像。](images/hololens-kiosk-failure-behavior.png )
 
-- [Holographic バージョン 21H1 Windows、](hololens-release-notes.md#windows-holographic-version-21h1)キオスク モードでは、空のスタート メニューを表示する前にグローバル割り当てアクセスが検索されます。 AAD グループ キオスク モード中にエラーが発生した場合、キオスク エクスペリエンスはグローバル キオスク構成 (存在する場合) に戻ります。
+- [Holographic バージョン 21H1 Windows、](hololens-release-notes.md#windows-holographic-version-21h1)キオスク モードでは、空のスタート メニューが表示される前にグローバル割り当てアクセスが検索されます。 AAD グループ キオスク モード中にエラーが発生した場合、キオスク エクスペリエンスはグローバル キオスク構成 (存在する場合) に戻ります。
 
 **トラブルシューティングの手順**
 

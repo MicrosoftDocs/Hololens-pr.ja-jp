@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190074"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033796"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>HoloLens (第 1 世代) の操作方法
 
@@ -45,7 +45,7 @@ HoloLens の操作は、スマートフォンの使用によく似ています�
 
 HoloLens には、ユーザーの左右を数フィートずつ見ることのできるセンサーが搭載されています。 手を使用する場合は、手の位置をこのフレーム内に収める必要があります。そうしないと、HoloLens では認識できません。 移動すると、フレームが移動します。  
 
-![HoloLens ハンドトラッキングフレームを表示する画像。](./images/hololens-2-gesture-frame.png)
+![HoloLens のハンド トラッキング フレームを示す画像。](./images/hololens-2-gesture-frame.png)
 
 ### <a name="open-the-start-menu-with-bloom"></a>ブルームを使用してスタートメニューを開きます。
 
@@ -57,12 +57,12 @@ HoloLens には、ユーザーの左右を数フィートずつ見ることの�
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>見つめとエアタップを使用したホログラムの選択
 
-アプリまたはその他のホログラムを選択するには、選択しているホログラムを直接見ながら、エアタップします。 そのためには、次の手順に従います。
+アプリまたはその他のホログラムを選択するには、選択しているホログラムを直接見ながら、エアタップします。 これを行うには、次の手順に従います。
 
 1. 選択するホログラムを見つめます。
 1. 人差し指をまっすぐ上に伸ばして、天井を指します。
 1. エアタップ: 指を下げて、すぐに上げることができます。
-   ![エアタップのジェスチャアニメーション。](./images/hololens-air-tap.gif)
+   ![エアタップの手ぶりのアニメーション。](./images/hololens-air-tap.gif)
 
 ### <a name="select-a-hologram-by-using-your-voice"></a>音声を使用してホログラムを選択する
 
@@ -139,5 +139,5 @@ HoloLens の使用中に配置したホログラムが表示されない場合�
 
 - 右側の領域を見ていることを確認してください &mdash; 。ホログラムは残しておきます。
 - 直接太陽のない部屋にいることを確認してください。
-- 待機. HoloLens がスペースを認識できない場合、以前に配置されたホログラムは再表示されるまでに最大で1分かかることがあります。
-- 問題が解決しない場合は、**設定** システムホログラム内のホログラムストレージデータを消去し  >    >  、mixed reality ホームにもう一度ホログラムを配置することもできます。
+- 待機. スペースHoloLens認識に問題がある場合、以前に配置されたホログラムが再び表示されるのに最大で 1 分かかる場合があります。
+- 問題が解決しない場合は **、設定** System ホログラム 内の ホログラム ストレージ データを消去してから、ホログラムを再び Mixed Reality ホーム  >    >  できます。

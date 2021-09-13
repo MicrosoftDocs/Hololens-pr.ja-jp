@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 96fe9492da035747a22123ee1cd0c1481cd821a4f2e549b6414a21810ec268d6
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 082a263bdd7eba694c13124abf40763644c83dfa
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032948"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>HoloLens デバイスから診断情報を収集して使用する
 
@@ -39,7 +39,7 @@ HoloLens のユーザーと管理者は、HoloLens から診断情報を収集�
 
 次の表は、さまざまな収集方法を比較したものです。 メソッド名は、テーブルに続くセクションの詳細情報にリンクされています。
 
-|メソッド |前提条件 |データの場所 |データアクセスと使用 |データの保持 |
+|メソッド |必須コンポーネント |データの場所 |データアクセスと使用 |データの保持 |
 | --- | --- | --- | --- | --- |
 |[フィードバック Hub](#feedback-hub) |ネットワークとインターネット接続<br /><br />フィードバックハブアプリ<br /><br />Microsoft クラウドにファイルをアップロードするためのアクセス許可 |Microsoft クラウド<br /><br />HoloLens デバイス (オプション) |ユーザーがアシスタンスを要求し、使用条件に同意して、データをアップロードする<br /><br />Microsoft の従業員が使用条件に従ってデータを表示する |クラウド内のデータは、次世代プライバシー (NGP) で定義されている期間にわたって保持されます。 その後、データは自動的に削除されます。<br /><br />デバイス上のデータは、 **デバイスの所有者** または **管理者** のアクセス許可を持つユーザーがいつでも削除できます。 |
 |[設定診断](#settings-troubleshooter) |設定アプリ |HoloLens デバイス<br /><br />接続されたコンピューター (オプション) |ユーザーはデータを保存し、ユーザーのみがデータにアクセスします (ユーザーが明示的に別のユーザーとデータを共有している場合を除く)。 |データは、ユーザーが削除するまでデバイスに保持されます。 * |
@@ -57,7 +57,7 @@ HoloLens ユーザーは、Microsoft フィードバックハブデスクトッ�
 
 >[!IMPORTANT]
 > 問題を修正するための最適なデータを提供するには、デバイスのテレメトリを **オプション** に設定することを強くお勧めします。 この値は、インボックスエクスペリエンス (OOBE) で、または **設定** アプリを使用して設定できます。 設定を使用してこれを行うには、[**スタート > 設定 > プライバシー > App Diagnostics > On**] を選択します。
-### <a name="prerequisites"></a>前提条件
+### <a name="prerequisites"></a>必須コンポーネント
 
 - デバイスはネットワークに接続されています。
 - フィードバックハブアプリはユーザーのデスクトップコンピューターで使用でき、ユーザーは Microsoft クラウドにファイルをアップロードできます。
@@ -91,7 +91,7 @@ HoloLens ユーザーは、デバイスの **設定** アプリを使用して�
 ### <a name="os-update-troubleshooter"></a>OS の更新に関するトラブルシューティング
 ビルド時[Windows Holographic、バージョン 21h1](hololens-release-notes.md#windows-holographic-version-21h1)以降:
 - 設定アプリ内の前のトラブルシューティングツールに加えて、新しいトラブルシューティングツールが追加されました。 OS 更新プログラム用の新しい設定アプリが追加されました。 設定に移動し、 **> Update & Security-> トラブルシューティング-> Windows Update** をクリックして、[**開始**] を選択します。 これにより、OS の更新に関する問題を再現しながら、IT またはサポートによるトラブルシューティングを容易にするために、トレースを収集することができます。
-### <a name="prerequisites"></a>前提条件
+### <a name="prerequisites"></a>必須コンポーネント
 
 - **設定** アプリがデバイスにインストールされ、ユーザーが使用できるようになります。
 
@@ -116,7 +116,7 @@ HoloLens ユーザーは、デバイスの **設定** アプリを使用して�
 - [Windows デバイスから診断情報を収集する](/mem/intune/remote-actions/collect-diagnostics)
 - [Intune パブリックプレビュー-Windows 10 デバイス診断](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
 
-### <a name="prerequisites"></a>前提条件
+### <a name="prerequisites"></a>必須コンポーネント
 
 - デバイスはネットワークに接続されています。
 - デバイスは、DiagnosticLog CSP をサポートする MDM 環境に登録されています。

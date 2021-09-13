@@ -1,6 +1,6 @@
 ---
 title: デプロイ ガイド – 企業接続HoloLens 2 Dynamics 365 Guides - メンテナンス
-description: デバイスを使用して企業の接続HoloLens 2を使用してデバイスを管理する方法Dynamics 365 Guides。
+description: デバイスを使用して企業の接続HoloLens 2ネットワークを使用してデバイスを管理する方法Dynamics 365 Guides。
 keywords: HoloLens、管理、企業接続、Dynamics 365 Guides、AAD、Azure AD、MDM、Mobile デバイス管理
 author: joyjaz
 ms.author: v-jjaswinski
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2649e370e98747562591c031b8ae262674c831e071f4ef228557dda66d2dc768
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 0176e816f167499574607bc16c8fbd6bde757daf
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660277"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033435"
 ---
 # <a name="maintain---corporate-connected-guide"></a>メンテナンス - 企業接続ガイド
 
@@ -27,13 +27,13 @@ ms.locfileid: "115660277"
 
 Windows Update for Business は、IT 管理者に対して Windows Update を中心とした追加の管理機能を提供するように設計されています。これには、更新プログラムをデバイスのグループに展開する機能や、更新プログラムをインストールするためのメンテナンス ウィンドウを定義する機能などが含まれています。
 
-更新プログラムを管理する一般的な方法の 1 つは、30 日間の機能の遅延を実行する方法です。 これにより、管理者は新機能を更新してプレビューし、最初の知識を得て、新しい変更についてサポート デスクに通知することができます。
+更新プログラムを管理する一般的な方法の 1 つは、機能の遅延を 30 日間実行する方法です。 これにより、管理者は新機能を更新してプレビューし、最初の知識を得て、新しい変更についてサポート デスクに通知することができます。
 
-スケジュールされた日、[スケジュールHoloLens](/hololens/hololens-updates)時間、デバイスのアクティブな時間の設定など、更新プログラムを管理して、作業時間外に更新する方法について学習します。
+スケジュールされた日[、スケジュールHoloLens](/hololens/hololens-updates)時間、デバイスのアクティブな時間の設定など、更新プログラムを管理して、作業時間外に更新する方法について学習します。
 
 ## <a name="how-to-update-dynamics-365-guides-and-other-store-apps"></a>アプリ (および他Dynamics 365 Guidesアプリ) を更新する方法
 
-Dynamics 365 GuidesはIn-Boxであり、アプリを使用して更新Microsoft Storeできます。 アプリを使用してダウンロードMicrosoft Storeアプリ自体を使用してMicrosoft Store更新できます。 [](/hololens/holographic-store-apps#update-apps)
+Dynamics 365 GuidesはIn-Boxであり、アプリを使用して更新Microsoft Storeできます。 アプリを使用してダウンロードMicrosoft Store、アプリ自体を手動でMicrosoft Store更新できます[](/hololens/holographic-store-apps#update-apps)。
 
 ## <a name="how-to-update-lob-apps"></a>LOB アプリを更新する方法
 
@@ -50,7 +50,7 @@ LOB アプリは、Intune に追加されたのと同じ方法で更新できま
 
 デバイスが正常に登録されると、より多くの LOB アプリをデバイスに展開する準備が完了しました。 このガイドの期間中は、サンプル アプリを使用していますが、組織のニーズに合って構築されたカスタム アプリを使用する可能性が高い可能性があります。
 
-既に LOB アプリがある場合は、MDM を使用してアプリ [をデプロイする準備が整います](/hololens/app-deploy-intune)。 別の方法を使用する場合は[、HoloLens 2](/hololens/app-deploy-overview)のアプリケーション展開の概要に関するページを参照して、LOB アプリをデバイスに展開する方法の詳細を確認してください。
+既に LOB アプリがある場合は、MDM を使用してアプリ [をデプロイする準備が整います](/hololens/app-deploy-intune)。 別の方法を使用する場合は、HoloLens 2 のアプリケーション展開の概要に関するページを参照して[、LOB](/hololens/app-deploy-overview)アプリをデバイスに展開する方法の詳細を確認してください。
 
 独自の LOB アプリをまだ作成していない場合、またはまだ作成中の場合は、Mixed Reality 開発に関する[](/windows/mixed-reality/design/design)ドキュメントを参照して、設計とプロトタイプ作成を開始するか、Mixed [Reality](/windows/mixed-reality/discover/get-started-with-mr)開発を開始する主要な概念を学習してください。
 
@@ -73,9 +73,9 @@ LOB アプリは、Intune に追加されたのと同じ方法で更新できま
 
 - [SettingsPageVisibility](/hololens/settings-uri-list)を使用して 設定 アプリで表示できるページを制限すると、ユーザーは、Wi-Fi 接続の変更など、調整する必要がある設定にのみアクセスできます。
 - キオスク [モードを使用](/hololens/hololens-kiosk) して、デバイス上のユーザーに表示される UI を制限します。 キオスクを設定して、1 つのアプリを表示するか、カスタム スタート ページを使用して複数のアプリを表示できます。 キオスクでは、異なるユーザーに異なるエクスペリエンスを表示できます。
-- [Windowsアプリケーション制御 (WDAC)](/hololens/windows-defender-application-control-wdac)を使用して、特定のアプリやプロセスが完全に起動しなきを維持します。
+- [Windowsアプリケーション制御 (WDAC)](/hololens/windows-defender-application-control-wdac)を使用して、特定のアプリまたはプロセスが完全に起動しなきにし続ける必要があります。
 
-デバイス管理またはデバイスの制限の追加の方法について学習する場合は、次の手順に進み、「概要」を参照デバイス管理 [してください](/hololens/hololens-csp-policy-overview)。
+デバイス管理またはデバイス制限の追加の方法について学習する場合は、次の手順に進み、「概要」を参照デバイス管理 [してください](/hololens/hololens-csp-policy-overview)。
 
 
 

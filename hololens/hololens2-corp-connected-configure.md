@@ -1,6 +1,6 @@
 ---
 title: デプロイ ガイド - 企業接続HoloLens 2 Dynamics 365 Guides - 構成
-description: デバイスを展開する構成を設定して、HoloLens 2を使用して企業の接続済みネットワーク上に展開する方法Dynamics 365 Guides。
+description: デバイスを使用して企業の接続済みネットワークHoloLens 2デバイスを展開する構成を設定する方法Dynamics 365 Guides。
 keywords: HoloLens、管理、企業接続、Dynamics 365 Guides、AAD、Azure AD、MDM、Mobile デバイス管理
 author: joyjaz
 ms.author: v-jjaswinski
@@ -14,18 +14,18 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2b855f5891dfa4ca695e4ae3b2a2e82510c5b626f08b434643169be239b48291
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 9457acd2f53d0d3127d6c68d620b660f6e09866d
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660189"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033507"
 ---
 # <a name="configure---corporate-connected-guide"></a>構成 - 企業接続ガイド
 
 ## <a name="azure-users-and-groups"></a>Azure ユーザーとグループ
 
-その拡張機能による Azure と Intune では、ユーザーとグループを使用して構成とライセンスの割り当てに役立ちます。 このデプロイ フローを検証し、ガイドを作成して操作&#39;確認するために、ユーザー アカウントが必要になります。
+その拡張機能による Azure と Intune では、ユーザーとグループを使用して構成とライセンスの割り当てに役立ちます。 このデプロイ フローを検証し、ガイドを作成して操作&#39;確認するには、ユーザー アカウントが必要です。
 
 ライセンスの割り当て専用に 1 つのユーザー グループを作成できます。
 
@@ -34,11 +34,11 @@ ms.locfileid: "115660189"
 - [ユーザーを作成する方法](/mem/intune/fundamentals/quickstart-create-user)
 - [グループを作成する方法](/mem/intune/fundamentals/quickstart-create-group)
 - [グループにユーザーを追加する](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) – 作成したユーザーを追加してグループを作成する
-- [ユーザー Azure ADデバイスへの参加を](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) 許可するユーザー グループを構成する – 新しいユーザー グループにデバイスを登録するアクセス許可が付与Azure AD
+- [ユーザー Azure ADデバイスへの参加を](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) 許可する構成 - 新しいユーザー グループにデバイスを登録するアクセス許可が付与Azure AD
 
-## <a name="auto-enrollment-on-hololens-2"></a>[自動登録] (HoloLens 2
+## <a name="auto-enrollment-on-hololens-2"></a>自動登録 (HoloLens 2
 
-スムーズでシームレスなエクスペリエンスを実現するには、Azure Active Directory デバイス用に Azure Active Directory Join (AADJ) と HoloLens 2 Intune への自動登録を設定します。 これにより、ユーザーは OOBE 中に組織のログイン資格情報を入力し、Azure AD に自動的に登録し、デバイスを MDM に登録できます。
+スムーズでシームレスなエクスペリエンスを実現するには、HoloLens 2 デバイス用に Azure Active Directory Join (AADJ) と Intune への自動登録を設定します。 これにより、ユーザーは OOBE 中に組織のログイン資格情報を入力し、Azure AD に自動的に登録し、デバイスを MDM に登録できます。
 
 を使用[Microsoft エンドポイント マネージャー](https://endpoint.microsoft.com/#home)サービスを選択し、[無料試用版を取得する] を選択するまで、いくつかのページプレミアムできます。 1 と 2 のAzure Active Directory Premiumがある場合があります。自動登録 P1 で十分です。 Intune を選択し、自動登録のユーザー スコープを選択し、以前に作成したグループを選択できます。
 
@@ -46,7 +46,7 @@ ms.locfileid: "115660189"
 
 ## <a name="corporate-wi-fi-connectivity"></a>企業Wi-Fi接続
 
-企業Wi-Fi接続では、通常、証明書ベースの認証を使用しているお客様にHoloLens 2。 このような証明書は、MDM ソリューションと統合された Simple Certificate Enrollment Protocol (SCEP) または公開キー暗号化標準 (PKCS) 証明書インフラストラクチャを使用して展開する必要があります。 Intune を使用してWi-Fi、証明書、プロキシ設定を展開すると、エンド ユーザーにシームレスなエクスペリエンスが作成されます。
+企業Wi-Fi接続では、一般に、お客様が証明書ベースの認証を使用する必要HoloLens 2。 このような証明書は、MDM ソリューションと統合された Simple Certificate Enrollment Protocol (SCEP) または公開キー暗号化 Standard (PKCS) 証明書インフラストラクチャを使用して展開する必要があります。 Intune を使用して、Wi-Fi、証明書、およびプロキシ設定を展開すると、エンド ユーザーにシームレスなエクスペリエンスが作成されます。
  
 ### <a name="deploy-certificates-and-wi-fi-profiles"></a>証明書と証明書プロファイルWi-Fi展開する
 
@@ -63,9 +63,9 @@ ms.locfileid: "115660189"
     > **有効期限のない証明書プロファイルは、展開されません。**
 
     > [!Note]
-    > HoloLens 2 は共有デバイスと見なされます。つまり、デバイスごとに複数のユーザーを使用する場合は、可能であれば、Wi-Fi 認証用のユーザー証明書ではなく、デバイス証明書を展開してください。
+    > HoloLens 2 は共有デバイスと見なされます。つまり、デバイスごとに複数のユーザーを使用する場合は、可能な限り、Wi-Fi 認証用のユーザー証明書ではなく、デバイス証明書を展開してください。
 
-3. 企業ネットワーク用のプロファイルを作成Wi-Fiネットワークの Wi-Fi 設定に関するページWindows 10[を参照してください](/intune/wi-fi-settings-windows))。 プロファイル内Wi-Fi組織内でプロキシ設定を使用する場合に選択できます。
+3. 企業ネットワーク用のプロファイルを作成Wi-Fiネットワークの Wi-Fi 設定に関するページをWindows 10[を参照してください](/intune/wi-fi-settings-windows))。 プロファイル内Wi-Fi組織内でプロキシ設定を使用する場合に選択できます。
 
     次のようなオプションがあります。
     - **なし**: プロキシ設定は構成されません。
@@ -84,22 +84,22 @@ ms.locfileid: "115660189"
 
 2.  Intune[でデバイス](/mem/intune/configuration/device-profile-monitor)プロファイルを監視します。
 
-デバイス プロファイルに問題がある場合Wi-Fi Intune でのデバイス構成 [Wi-Fiのトラブルシューティングに関するページを参照してください](/troubleshoot/mem/intune/troubleshoot-wi-fi-profiles)。
+デバイス プロファイルに問題がある場合はWi-Fi Intune でのデバイス構成 [プロファイルWi-Fiのトラブルシューティングに関するページを参照してください](/troubleshoot/mem/intune/troubleshoot-wi-fi-profiles)。
 
 ## <a name="troubleshooting-external-internet-access-when-corp-connected"></a>Corp 接続時の外部インターネット アクセスのトラブルシューティング
 サービスが設定されたプロキシを経由しない場合は、ファイアウォール経由で接続を試みる場合があります。 これらの問題をトラブルシューティングするために、ファイアウォール規則にエンドポイント固有の一覧を追加できます。
 
 ファイアウォール ポートでブロックされている場合は、一般的なエンドポイント[](/hololens/hololens-offline)の一部を有効HoloLens。
 
-また、ガイド固有のポートを有効にできます。 への接続に必要なインターネットにアクセスできる[URL](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)Microsoft Dynamics CRM Online。
+また、ガイド固有のポートを有効にできます。 への接続に必要なインターネットアクセス[可能な URL](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)Microsoft Dynamics CRM Online。
 
 ## <a name="app-deployment"></a>アプリの展開
 
 MDM を使用した LOB アプリのデプロイは、簡単にスケーラブルな方法であり、作成されたグループへの登録時にデバイスに自動的に展開できます。
 
-まだアプリを開発している場合、またはアプリがまだない場合は、MRTK サンプル ハブのサンプル アプリを使用できます。 このサンプル アプリは使用する準備が整い、Unity または Visual Studio を使用する必要はありません。 [MRTK サンプル サンプル アプリ をダウンロードします](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App)。
+まだアプリを開発している場合、またはアプリがまだない場合は、MRTK サンプル ハブのサンプル アプリを使用できます。 このサンプル アプリは使用する準備が整ったので、Unity または Visual Studio を使用する必要はありません。 [MRTK サンプル サンプル アプリ をダウンロードします](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App)。
 
-独自のアプリを使用する場合、または Mixed Reality 用のアプリ開発に関心がある場合は、開発者向けドキュメントをMixed Reality [してください](/windows/mixed-reality/design/design)。
+独自のアプリを使用する場合、または Mixed Reality 用のアプリ開発に関心がある場合は、開発者向けドキュメント をMixed Reality [してください](/windows/mixed-reality/design/design)。
 
 > [!NOTE]
 > HoloLens デバイスのシステム要件は、アプリのビルドのアーキテクチャに基づいています。 HoloLens 2は ARM アーキテクチャを使用します。 Visual Studio でアプリを構築する場合は、デバイスに適切なアーキテクチャを選択し、必要な依存関係を含める必要があります。
@@ -115,7 +115,7 @@ MDM を使用した LOB アプリのデプロイは、簡単にスケーラブ�
 
 3. [その他] の下にある **[Line-of-business app] を選択します**。 [] を **クリックします**。
 
-4. アプリ パッケージ ファイルを選択します。これは APPXBUNDLE ファイルです。この例では、アプリは _MRTK Examples Hub \_ 2.4.2.0 \_ arm \_ Master.appxbundle_ です。
+4. アプリ パッケージ ファイルを選択します。これは APPXBUNDLE ファイルです。この例の場合、アプリは _MRTK Examples Hub \_ 2.4.2.0 \_ arm \_ Master.appxbundle_ です。
 
 5. 依存関係が見つからないという通知が表示されます。 この場合は _、Microsoft.VCLibs.ARM.14.00.appx をアップロードする必要があります_。 [ファイルの選択] **で検索します**。
 
@@ -137,18 +137,18 @@ MDM を使用した LOB アプリのデプロイは、簡単にスケーラブ�
 
 ガイドを使用するには、前にこのガイドで設定した Azure AD アカウントを使用する必要があります。
 
-また、作成したユーザーにDynamics 365 Guidesライセンスを割り当てる必要があります。 この操作は、 から行[Microsoft 365 管理センター。](https://admin.microsoft.com/AdminPortal/Home) また、プライマリ Azure アカウントにライセンスを割り当てる。
+また、作成したユーザーにDynamics 365 Guidesライセンスを割り当てる必要があります。 これを行うには、[のMicrosoft 365 管理センター。](https://admin.microsoft.com/AdminPortal/Home) また、プライマリ Azure アカウントにライセンスを割り当てる。
 
-アプリケーション [ライセンスの適用に関](/dynamics365/mixed-reality/guides/setup-step-one#assign-the-dynamics-365-guides-license-to-user-accounts) する詳細な手順については、この短いガイドに従ってください。
+アプリケーション [ライセンスの適用に](/dynamics365/mixed-reality/guides/setup-step-one#assign-the-dynamics-365-guides-license-to-user-accounts) 関する詳細な手順については、この短いガイドに従ってください。
 
 ### <a name="set-up-the-dataverse"></a>Dataverse を設定する
 
-実稼働環境 [を設定するには、2](/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) つの前提条件を満たす必要があります。 システム管理者ロールを [](/power-platform/admin/database-security)持っている必要があります。また、Power Apps ライセンス [**(または**](/power-platform/admin/signup-question-and-answer)Dynamics 365 Guidesライセンスを [](/dynamics365/mixed-reality/guides/setup-step-one)含む Power Apps ライセンスが必要です。 このガイドに従ってアプリケーションを作成Azure AD、システム管理者のロール要件を満たします。 また、前の手順でガイド ライセンスを割り当てしました。
+実稼働環境 [を設定するには、2](/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) つの前提条件を満たす必要があります。 システム管理者ロールを [**持**](/power-platform/admin/database-security)っている必要があります。また、Power Apps ライセンス [**(または**](/power-platform/admin/signup-question-and-answer)Dynamics 365 Guidesライセンスを含 [](/dynamics365/mixed-reality/guides/setup-step-one)む Power Appsがあります。 このガイドに従ってアプリケーションを作成Azure AD、システム管理者のロール要件を満たします。 また、前の手順でガイド ライセンスを割り当てしました。
 
 このガイドでは [、Microsoft Dataverse 環境を作成します](/dynamics365/mixed-reality/guides/setup-step-two)。
 
 1. まず、新しい環境 [Power Platform 管理センター](https://admin.powerplatform.microsoft.com/environments) 新しい環境を作成します。
-2. [新しい環境 **] を作成** するときに、[種類] **に対して** [&#39;] を選択 **します**。
+2. [新しい環境 **] を作成** するときに、[種類] **に対&#39;** [実稼働] を選択 **します**。
 3. [この環境用にデータベースを **作成する] を切り替える必要がありますか?**  オプションを [はい  **] に設定します**。
 4. [データベースの  **追加] ダイアログ**  ボックスで  **、[Dynamics 365**  アプリを有効にする] オプションを [はい] に  **設定します。**
 
@@ -180,6 +180,6 @@ WDAC を使用すると、IT 管理者は、デバイスでのアプリの起動
 
 [Windows Defender アプリケーション制御 - WDAC](/hololens/windows-defender-application-control-wdac)
 
-## <a name="next-step"></a>次のステップ 
+## <a name="next-step"></a>次の手順 
 > [!div class="nextstepaction"]
 > [企業に接続された展開-デプロイ](hololens2-corp-connected-deploy.md)

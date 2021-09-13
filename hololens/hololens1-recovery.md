@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: d6eb706c50e97a81910180c70be1d9dbc52bc6603cbc77ad130c1dd3b6a9010e
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 4840535030cc81f222cb25357474f1c751426e91
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661806"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033652"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>HoloLens の再起動、リセット、または回復 (第1世代)
 

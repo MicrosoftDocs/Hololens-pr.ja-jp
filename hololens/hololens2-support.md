@@ -8,11 +8,11 @@ ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
 ms.openlocfilehash: 17aaf8627384098de240d2c2e79c1ed9b0d39165
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190448"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033284"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Mixed Reality のサポートとヘルプオプションは何ですか。
 
@@ -106,7 +106,7 @@ Stack Overflow に新しい質問を送信する場合は、次のいずれか�
 | フィンランド | + 358 800526136 |    月曜から金曜、09AM から午後6時まで |
 | ポルトガル |    + 351 800600087 |    月曜から金曜、09AM から午後6時まで |
 | US |  866-425-4709 |  月曜日 ~ 金曜日、午前から午後6時 (太平洋標準時) |
-| カナダ |  877-345-2661 |  月曜日 ~ 金曜日、午前から午後6時 (太平洋標準時) |
+| Canada |  877-345-2661 |  月曜日 ~ 金曜日、午前から午後6時 (太平洋標準時) |
 | 中国 |   400-805-6783 |  月曜日から金曜日、午前9時から午後6時まで |
 | 日本 |   0120-03-5241 |  月曜日から金曜日、午前9時から 5: 5:30 |
 | オーストラリア |   1800-217-709 |  月曜日から金曜日、午前8時午後8時 |

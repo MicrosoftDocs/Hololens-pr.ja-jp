@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 286e90fab7be0c4132cfab15306cc57c52607ccf
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033348"
 ---
 # <a name="hololens-2-cleaning-faq"></a>HoloLens 2 クリーニング: よくあるご質問
 
@@ -37,7 +37,7 @@ ms.locfileid: "123189445"
 
 1. 乾いたリントフリーのマイクロファイバー クロスを使用してデバイスの表面を軽く拭き、すべてのほこりを取り除きます。
 
-   ![ブラウザー pad を保持したままクリーンにします。](images/hl2-cleaning.png)
+   ![ブロー パッドを押しながらクリーンアップします。](images/hl2-cleaning.png)
 
 2. 医療用の "70%" のイソプロピル アルコールを使用してクロスを軽く湿らせてから、その湿らせたクロスを使用してデバイスの表面をやさしく拭きます。
 
@@ -71,7 +71,7 @@ ms.locfileid: "123189445"
 
 はい。 ブロー パッドは、磁気によってデバイスに取り付けられています。 取り外す場合は、ヘッドバンドからやさしく離します。 交換する場合は、元の場所に戻します。
 
-![ブラウザー pad を削除または置換します。](images/hololens2-remove-browpad.png)
+![ブロー パッドを取り外す、または交換します。](images/hololens2-remove-browpad.png)
 
 ## <a name="how-can-i-clean-the-brow-pad"></a>ブロー パッドをクリーニングするにはどうすればよいですか?
 
@@ -79,7 +79,7 @@ ms.locfileid: "123189445"
 
 ## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>紫外線 (UV) ライトを使用してデバイスを消毒できますか?
 
-UVC LED (0.5-0.6 mW/cm<sup>2</sup> の強度レベルで 265 nm で動作し、オゾンを排出しません) を使用した UVC 放射は、HoloLens2 の消毒に使用できます。 取り扱いと照射時間については、製造元の仕様に従ってください。
+UVC LED を使用した UVC の輝度、またはフィルター処理された uvC ライト。強度レベルが 0.5-0.6mW/cm2 で動作し、排出を出力しない場合は、HoloLens 2 をサニタイズするために使用できます。 取り扱いと照射時間については、製造元の仕様に従ってください。
 
 > [!CAUTION]  
 > 高レベルの UV-A および UV-B の照射は、デバイスのディスプレイの品質を低下させたり、バイザーのコーティングを損傷させたりする可能性があります。 UV-A および UV-B の過剰照射による、照射の時間と強度に応じた影響は次のとおりです。
@@ -89,6 +89,6 @@ UVC LED (0.5-0.6 mW/cm<sup>2</sup> の強度レベルで 265 nm で動作し、�
 > 1. バイザーとセンサー ウィンドウの基材に損傷が発生します。
 > 1. ディスプレイのパフォーマンスが低下します。
 
-## <a name="is-the-rear-pad-replaceable"></a>リアパッドは置き換え可能ですか。
+## <a name="is-the-rear-pad-replaceable"></a>背面パッドは交換可能ですか?
 
 いいえ。

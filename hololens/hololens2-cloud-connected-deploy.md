@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 519770badab9f260316fe4cfff4bf453a7c971a7
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189751"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033543"
 ---
 # <a name="deploy---cloud-connected-guide"></a>デプロイ-クラウド接続ガイド
 
@@ -73,7 +73,7 @@ ms.locfileid: "123189751"
 - [ファイルとビューを mixed reality で共有する](/dynamics365/mixed-reality/remote-assist/display-save-files)
 - [別の HoloLens アプリのヘルプを取得する](/dynamics365/mixed-reality/remote-assist/get-help-hololens-app-hololens)
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [クラウドに接続されたデプロイ-管理](hololens2-cloud-connected-maintain.md)

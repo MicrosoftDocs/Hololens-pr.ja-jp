@@ -14,11 +14,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 587253a7ec3d3959e7861fedc474d6a2e39dd369
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189904"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033669"
 ---
 # <a name="hololens-1st-gen-hardware"></a>HoloLens (第 1 世代) ハードウェア
 

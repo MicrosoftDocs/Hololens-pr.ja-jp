@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 10d1955249630202a05fbf2057e1d175855ce0b5
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189122"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032980"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>一般的なシナリオ–オフラインのセキュリティで保護された HoloLens 2
 
@@ -63,18 +63,18 @@ Windows 10PC のセットアップ
    |     項目                                                |     設定                       |     説明                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
    |     アカウント/ユーザー                                    |     ローカルユーザー名 & パスワード    |     これらのオフラインデバイスでは、デバイスのすべてのユーザーが1つのユーザー名とパスワードを設定して共有する必要があります。          |
-   |     最初のエクスペリエンス/HoloLens/skipcalibration       |     True                          |     初期デバイスのセットアップ中のみ調整をスキップします                                                                             |
-   |     最初の経験/HoloLens/skiptraining          |     True                          |     初期デバイスのセットアップ中にデバイストレーニングをスキップします                                                                              |
-   |     最初のエクスペリエンス/HoloLens/WiFi                  |     True                          |     初期デバイスのセットアップ中に Wi-Fi 構成をスキップします                                                                                 |
-   |     ポリシー/接続/AllowBluetooth                |     No                            |     無効化 Bluetooth                                                                                                             |
-   |     ポリシー/エクスペリエンス/AllowCortana                    |     No                            |     Cortana を無効にします (マイクが無効になったために発生する可能性のある問題を排除します)                                          |
-   |     Policies/MixedReality/マイクロ電話の無効化            |     Yes                           |     マイクを無効にする                                                                                                            |
+   |     最初のエクスペリエンス/HoloLens/skipcalibration       |     ○                          |     初期デバイスのセットアップ中のみ調整をスキップします                                                                             |
+   |     最初の経験/HoloLens/skiptraining          |     ○                          |     初期デバイスのセットアップ中にデバイストレーニングをスキップします                                                                              |
+   |     最初のエクスペリエンス/HoloLens/WiFi                  |     ○                          |     初期デバイスのセットアップ中に Wi-Fi 構成をスキップします                                                                                 |
+   |     ポリシー/接続/AllowBluetooth                |     いいえ                            |     無効化 Bluetooth                                                                                                             |
+   |     ポリシー/エクスペリエンス/AllowCortana                    |     いいえ                            |     Cortana を無効にします (マイクが無効になったために発生する可能性のある問題を排除します)                                          |
+   |     Policies/MixedReality/マイクロ電話の無効化            |     はい                           |     マイクを無効にする                                                                                                            |
    |     ポリシー/プライバシー/保管場所              |     強制拒否                    |     アプリが場所データにアクセスできないようにします (場所の追跡が無効になっているために発生する可能性のある問題を回避するため)    |
    |     ポリシー/プライバシー/お客様            |     強制拒否                    |     アプリがマイクにアクセスできないようにします (マイクが無効になったために発生する可能性のある問題を回避するため)           |
-   |     Policies/Security/Allowaddプロビジョニングパッケージ       |     No                            |     ロックダウンされたポリシーを上書きしようとする可能性があるプロビジョニングパッケージを誰も追加できないようにします。                         |
-   |     Policies/Security/Allowremoveプロビジョニングパッケージ    |     No                            |     このロックダウンされたプロビジョニングパッケージをすべてのユーザーが削除できないようにします。                                                           |
-   |     ポリシー/システム/AllowLocation                       |     No                            |     デバイスが場所データを追跡しないようにします。                                                                        |
-   |     ポリシー/WiFi/AllowWiFi                             |     No                            |     無効化 Wi-Fi                                                                                                                 |
+   |     Policies/Security/Allowaddプロビジョニングパッケージ       |     いいえ                            |     ロックダウンされたポリシーを上書きしようとする可能性があるプロビジョニングパッケージを誰も追加できないようにします。                         |
+   |     Policies/Security/Allowremoveプロビジョニングパッケージ    |     いいえ                            |     このロックダウンされたプロビジョニングパッケージをすべてのユーザーが削除できないようにします。                                                           |
+   |     ポリシー/システム/AllowLocation                       |     いいえ                            |     デバイスが場所データを追跡しないようにします。                                                                        |
+   |     ポリシー/WiFi/AllowWiFi                             |     いいえ                            |     無効化 Wi-Fi                                                                                                                 |
 
 1. [ランタイム設定で、[ **Accounts/Users/UserName: Holo/Password**] を選択します。
 
@@ -95,7 +95,7 @@ Windows 10PC のセットアップ
 1. USB ケーブルを使用して、HL2 を Windows 10 PC に Connect します。
 1. [弧] ツールを起動し、[ **HoloLens 2** ] を選択します。
 
-   ![HoloLens 2 クリーン更新の初期画面。](images/ARC2.png)
+   ![HoloLens 2 クリーン 再フラッシュの初期画面。](images/ARC2.png)
 
 1. 次の画面で、[ **パッケージの手動選択**] を選択します。
 

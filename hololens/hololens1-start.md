@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 06b7142be471d0db3f45812654288a33425abd60
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189870"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033633"
 ---
 # <a name="set-up-your-hololens-1st-gen"></a>HoloLens (第 1 世代) のセットアップ
 
@@ -67,13 +67,13 @@ HoloLens (第1世代) では、pupils (IPD または[interpupillary distance](ht
 
 調整中、HoloLens は、指を1つの視点に沿って6つのターゲットに揃えるように求めます。 HoloLens は、このプロセスを使用して、目の IPD を適切に設定します。 新しいユーザーに対して調整を更新または調整する必要がある場合、新しいユーザーはセットアップの外部で調整アプリを実行できます。
 
-![2番目の手順での IPD の指配置画面。](./images/ipd-finger-alignment-300px.jpg)
+![IPD の指合わせ画面 (2 番目の手順)。](./images/ipd-finger-alignment-300px.jpg)
 
-*IPD の指合わせ画面 (2 番目の手順)*
+*2番目の手順での IPD の指配置画面*
 
-おめでとうございます。 セットアップが完了し、HoloLens の使用を開始できます。
+おめでとうございます! セットアップが完了し、HoloLens の使用を開始できます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [HoloLens の概要 (第 1 世代)](hololens1-basic-usage.md)
