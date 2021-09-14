@@ -17,12 +17,12 @@ manager: skerewa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, Commercial, 機能, MDM, モバイル デバイス管理, キオスク モード, アプリケーション, ID, Bitlocker, 虹彩, Windows Hello, Azure の利用, Autopilot, Mixed Reality, WDAC
-ms.openlocfilehash: 0c47eedad0d5a23249c48356765b74e4dbeac33e
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.openlocfilehash: aef0bfd8672464eb71d147eeffa3e0ea245dbbd0
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428501"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034256"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 の機能とソリューション
 
@@ -77,7 +77,7 @@ HoloLens 2 を強力にしているものは何でしょうか。
     :::column-end:::
     :::column span="2":::
         ### <a name="sheba-medical-center-uses-microsofts-hololens-for-ventilators-training"></a>[Sheba Medical Center、人工呼吸器の訓練に Microsoft の HoloLens を使用。](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
-        コロナ禍での医療訓練に HoloLens が活用されています。
+        Sheba Medical Center のスタッフは、HoloLens を使用して、COVID-19 パンデミック中に何百もの数配置された人工呼吸器の使用に関して、看護士や他の援助要員を訓練しました。
     :::column-end:::
 :::row-end:::
 
