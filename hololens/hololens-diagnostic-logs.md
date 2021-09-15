@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 082a263bdd7eba694c13124abf40763644c83dfa
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
+ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032948"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127817278"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>HoloLens デバイスから診断情報を収集して使用する
 
@@ -39,14 +39,14 @@ HoloLens のユーザーと管理者は、HoloLens から診断情報を収集�
 
 次の表は、さまざまな収集方法を比較したものです。 メソッド名は、テーブルに続くセクションの詳細情報にリンクされています。
 
-|メソッド |必須コンポーネント |データの場所 |データアクセスと使用 |データの保持 |
+|Method |前提条件 |データの場所 |データアクセスと使用 |データの保持 |
 | --- | --- | --- | --- | --- |
 |[フィードバック Hub](#feedback-hub) |ネットワークとインターネット接続<br /><br />フィードバックハブアプリ<br /><br />Microsoft クラウドにファイルをアップロードするためのアクセス許可 |Microsoft クラウド<br /><br />HoloLens デバイス (オプション) |ユーザーがアシスタンスを要求し、使用条件に同意して、データをアップロードする<br /><br />Microsoft の従業員が使用条件に従ってデータを表示する |クラウド内のデータは、次世代プライバシー (NGP) で定義されている期間にわたって保持されます。 その後、データは自動的に削除されます。<br /><br />デバイス上のデータは、 **デバイスの所有者** または **管理者** のアクセス許可を持つユーザーがいつでも削除できます。 |
 |[設定診断](#settings-troubleshooter) |設定アプリ |HoloLens デバイス<br /><br />接続されたコンピューター (オプション) |ユーザーはデータを保存し、ユーザーのみがデータにアクセスします (ユーザーが明示的に別のユーザーとデータを共有している場合を除く)。 |データは、ユーザーが削除するまでデバイスに保持されます。 * |
 |[DiagnosticLog CSP](#diagnosticlog-csp) |ネットワーク接続<br /><br />DiagnosticLog CSP をサポートする MDM 環境 |管理者がストレージの場所を構成する |管理された環境では、ユーザーはデータへの管理者アクセスを暗黙的に同意ます。<br /><br />管理者は、アクセスの役割とアクセス許可を構成します。 | データはクラウドストレージに保持され、管理者はリテンション期間ポリシーを構成します。 |
 |[オフライン診断](#offline-diagnostics) |デバイスの構成:<ul><li>電源が入っていて、コンピューターに接続されている</li><li>電源ボタンと音量ボタンが機能している</li></ul> |HoloLens デバイス<br /><br />接続されたコンピューター |ユーザーはデータを保存し、ユーザーのみがデータにアクセスします (ユーザーが明示的に別のユーザーとデータを共有している場合を除く)。 |データは、ユーザーが削除するまでデバイスに保持されます。 |
 
-* エンドユーザーは、ログを他のユーザーと確実に共有する責任があります。 これらのファイルは、主にカスタマーサービスおよびサポートに連絡するときに役立ちます。  
+* エンドユーザーは、他のユーザーとログを確実に共有する必要があります。 これらのファイルは、主にカスタマーサービスおよびサポートに連絡するときに役立ちます。  
 
 ## <a name="feedback-hub"></a>フィードバック Hub
 
@@ -57,7 +57,8 @@ HoloLens ユーザーは、Microsoft フィードバックハブデスクトッ�
 
 >[!IMPORTANT]
 > 問題を修正するための最適なデータを提供するには、デバイスのテレメトリを **オプション** に設定することを強くお勧めします。 この値は、インボックスエクスペリエンス (OOBE) で、または **設定** アプリを使用して設定できます。 設定を使用してこれを行うには、[**スタート > 設定 > プライバシー > App Diagnostics > On**] を選択します。
-### <a name="prerequisites"></a>必須コンポーネント
+
+### <a name="prerequisites"></a>前提条件
 
 - デバイスはネットワークに接続されています。
 - フィードバックハブアプリはユーザーのデスクトップコンピューターで使用でき、ユーザーは Microsoft クラウドにファイルをアップロードできます。
@@ -91,7 +92,8 @@ HoloLens ユーザーは、デバイスの **設定** アプリを使用して�
 ### <a name="os-update-troubleshooter"></a>OS の更新に関するトラブルシューティング
 ビルド時[Windows Holographic、バージョン 21h1](hololens-release-notes.md#windows-holographic-version-21h1)以降:
 - 設定アプリ内の前のトラブルシューティングツールに加えて、新しいトラブルシューティングツールが追加されました。 OS 更新プログラム用の新しい設定アプリが追加されました。 設定に移動し、 **> Update & Security-> トラブルシューティング-> Windows Update** をクリックして、[**開始**] を選択します。 これにより、OS の更新に関する問題を再現しながら、IT またはサポートによるトラブルシューティングを容易にするために、トレースを収集することができます。
-### <a name="prerequisites"></a>必須コンポーネント
+
+### <a name="prerequisites"></a>前提条件
 
 - **設定** アプリがデバイスにインストールされ、ユーザーが使用できるようになります。
 
@@ -108,58 +110,69 @@ HoloLens ユーザーは、デバイスの **設定** アプリを使用して�
 
 診断情報は、ユーザーが削除するまで、これらの場所に残ります。
 
+### <a name="view-diagnostic-report"></a>診断レポートを表示する
+
+HoloLens 2 で MDM 診断を表示するには、WiFi アイコンを選択し、[設定Accounts Access work or school] に移動し、[管理ログのエクスポート]  ->    >  **を選択します**。 HoloLensアカウントにログ ファイルを送信し、その場所をデスクトップ PC に表示します。
+
 ## <a name="diagnosticlog-csp"></a>DiagnosticLog CSP
 
-モバイルデバイス管理 (MDM) 環境では、IT 管理者は[DiagnosticLog 構成サービスプロバイダー (CSP)](/windows/client-management/mdm/diagnosticlog-csp)を使用して、登録されている HoloLens デバイスの診断設定を構成できます。 IT 管理者は、登録されているデバイスからログを収集するようにこれらの設定を構成できます。
+MOBILE デバイス管理 (MDM) 環境では、IT 管理者は DiagnosticLog 構成サービス プロバイダー [(CSP)](/windows/client-management/mdm/diagnosticlog-csp)を使用して、登録済みデバイスの診断設定を構成HoloLensできます。 IT 管理者は、登録されたデバイスからログを収集するためにこれらの設定を構成できます。
 
-詳細を表示:
+詳細については、以下を参照してください。
 - [Windows デバイスから診断情報を収集する](/mem/intune/remote-actions/collect-diagnostics)
-- [Intune パブリックプレビュー-Windows 10 デバイス診断](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
+- [Intune パブリック プレビュー - Windows 10 デバイス診断](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
 
-### <a name="prerequisites"></a>必須コンポーネント
+### <a name="prerequisites"></a>前提条件
 
 - デバイスはネットワークに接続されています。
-- デバイスは、DiagnosticLog CSP をサポートする MDM 環境に登録されています。
+- デバイスは、DiagnosticLog CSP をサポートする MDM 環境に登録されます。
 
-### <a name="data-locations-access-and-retention"></a>データの場所、アクセス、および保有期間
+### <a name="data-locations-access-and-retention"></a>データの場所、アクセス、リテンション期間
 
-デバイスは管理された環境の一部であるため、ユーザーは、診断情報への管理アクセスを暗黙的に同意ます。
+デバイスはマネージド環境の一部なので、ユーザーは診断情報への管理アクセスに暗黙的に同意します。
 
-IT 管理者は、DiagnosticLog CSP を使用して、データストレージ、リテンション期間、およびアクセスポリシーを構成します。これには、次のポリシーが含まれます。
+IT 管理者は、DiagnosticLog CSP を使用して、次のポリシーを管理するポリシーを含む、データ ストレージ、リテンション期間、およびアクセス ポリシーを構成します。
 
-- 診断情報を格納するクラウドインフラストラクチャ。
-- 診断情報の保有期間。
+- 診断情報を格納するクラウド インフラストラクチャ。
+- 診断情報の保持期間。
 - 診断情報へのアクセスを制御するアクセス許可。
 
 ## <a name="offline-diagnostics"></a>オフライン診断
-デバイスがフィードバックハブまたは設定トラブルシューティングツールを使用して診断情報を収集できない場合は、手動で診断を収集できます。 これが必要なシナリオの1つは、デバイスが Wi-Fi に接続できない場合、または上記の他の方法にアクセスできない場合です。 診断によって、Microsoft サポートエンジニアが問題を特定するのに役立つ、デバイスからのクラッシュダンプとログが収集されます。
+デバイスが診断を収集できない場合は、フィードバック Hub トラブルシューティング ツール設定診断を手動で収集できます。 これが必要なシナリオの 1 つは、デバイスがデバイスに接続できないWi-Fi上記の他の方法にアクセスできない場合です。 診断では、Microsoft サポート エンジニアが問題を特定するのに役立つクラッシュ ダンプとログがデバイスから収集されます。
 
-これは、USB ケーブル経由で PC に接続した後に、デバイスがエクスプローラーに表示される場合に機能します。
+これは、USB ケーブルを介して PC に接続エクスプローラーデバイスがデバイスに表示される場合に機能します。
 
 > [!NOTE]
-> オフライン診断の生成と管理は、使用している OS のバージョンによって異なる方法で制御されます。 以前はテレメトリの設定によって制御されていましたが、MDM ポリシーを使用して直接制御されています。 いずれかの設定または MDM ポリシーを使用して無効にした場合、このメカニズムを使用して診断ログを収集することはできません。
+> オフライン診断の生成と管理は、OS のバージョンによって異なる方法で制御されます。 以前はテレメトリ設定によって制御されましたが、現在は MDM ポリシーを介して直接制御されています。 設定または MDM ポリシーを使用して無効にした場合、このメカニズムを使用して診断ログを収集することはできません。
 
-[Windows Holographic より前の動作、バージョン 20h2](hololens-release-notes.md#windows-holographic-version-20h2):
- - オフライン診断が有効になるのは、ユーザーが OOBE を使用している場合、または[System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)ポリシー値が Full に設定されている場合のみです (基本は HoloLens の既定値です)。 
-- オフライン診断を無効にするには、**設定 App > のプライバシー** ] ページにアクセスし、[**診断データ**] で [**基本**] を選択します。 オフライン診断がテレメトリ設定に依存するビルドでは、ログが収集されるかどうかにのみ影響します。 収集されるファイルには影響しません。
+[Holographic バージョン 20H2 Windows以前の動作](hololens-release-notes.md#windows-holographic-version-20h2):
+ - オフライン診断は、ユーザーが OOBE を通過している場合、または[System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)ポリシー値が [完全] に設定されている場合にのみ有効になります (基本は HoloLens の既定値です)。 
+- オフライン診断を無効にするには、[アプリのプライバシー]**ページ設定[>]** ページに移動し、[診断データ] で [**基本]** **を選択します**。 オフライン診断がテレメトリ設定に依存するビルドでは、ログが収集されるかどうかにのみ影響します。 収集されるファイルには影響はありません。
 - デバイスがロックされている場合、ログは表示されません。
 
-ビルドで[Windows Holographic、バージョン 20h2](hololens-release-notes.md#windows-holographic-version-20h2)以降:
-- フォールバック診断が有効になっている場合は、対応する設定[MixedReality/FallbackDiagnostics](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)を使用して、特定の MDM ポリシーによって制御されます。
+[Holographic Windowsバージョン 20H2 以降のビルド](hololens-release-notes.md#windows-holographic-version-20h2)の場合:
+- フォールバック診断が有効になっている場合は、対応する[MixedReality/FallbackDiagnostics](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)設定を使用して特定の MDM ポリシーによって制御されます
 - デバイスがロックされている場合、ログは表示されません。
 
 詳細については、次の動画をご覧ください。
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
-診断を収集するには、次の手順を実行します。
-1.  PC に USB ケーブルを使用してデバイスを Connect します。
-2.  PC のファイルエクスプローラーで、 **' この pc \<hololens-device> \ 内部 Storage '** に移動します。
-3.  **内部 Storage** フォルダーが表示されない場合、デバイスはユーザーのサインインを待機しています。 電源ボタンを10秒間押して、デバイスのサインインまたは電源を入れます。
-4.  を押すと、すぐに [ **電源 + 音量** ] ボタンが一緒に解放されます。
-5.  デバイスが zip アーカイブを準備するまで1分待ちます。 (HololensDiagnostics という名前の一時ファイルは、デバイスが zip アーカイブを生成している間に表示される場合があります。 このファイルにアクセスしたり保存したりしないでください。 プロセスが完了すると、zip アーカイブに置き換えられます)。
-6.  エクスプローラーを最新の状態に更新し、 **' \Documents '** フォルダーに移動します。
-7.  診断 ZIP ファイルをコピーし、Microsoft サポートチームと共有します。
+診断を収集するには、次の手順に従います。
 
-> [!NOTE]
-> 一部の診断 ZIP ファイルには PII が含まれている場合があります。
+1.  Connect USB ケーブルを使用してデバイスを PC に接続します。
+
+2.  PC エクスプローラーで、'This PC **\<hololens-device> \Internal Storage' に移動します**。
+
+3.  Internal **Storage** フォルダーが表示されない場合、デバイスはユーザーのサインインを待機しています。 POWER ボタンを 10 秒間押して、サインインまたは電源サイクルを行います。
+
+4.  Power + Volume Down ボタンを **押してすぐに** 離します。
+
+5.  デバイスが zip アーカイブを準備するまで少し待ちます。 (HololensDiagnostics.temp という名前の一時ファイルは、デバイスが zip アーカイブを生成している間に表示される場合があります。 そのファイルにアクセスしたり保存したりしない。 プロセスが完了すると、zip アーカイブに置き換えられる)。
+
+6.  エクスプローラーを更新し **、'\Documents' フォルダーに移動** します。
+
+7.  診断 ZIP ファイルをコピーし、Microsoft サポート チームと共有します。
+
+    > [!NOTE]
+    > 一部の診断 ZIP ファイルには PII が含まれている場合があります。
