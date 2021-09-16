@@ -76,8 +76,6 @@
 ### [ネットワークのセキュリティ](security-network-security.md)
 ### [セキュリティ エンジニアリング](security-engineering.md)
 ### [HoloLens 2 のプライバシーとデータ保護](hololens2-privacy.md)
-## デバイス管理
-### [MDM を使用して HoloLens デバイスを管理する](hololens-mdm-configure.md)
 ## デバイスの登録
 ### [MDM での HoloLens の登録](hololens-enroll-mdm.md)
 ### [Windows Autopilot for HoloLens 2](hololens2-autopilot.md) 
@@ -90,6 +88,7 @@
 ### [アプリ インストーラー](app-deploy-app-installer.md)
 ## ポリシー (CSP)
 ### [CSP の構成とデバイス管理の概要](hololens-csp-policy-overview.md)
+### [MDM を使用して HoloLens デバイスを管理する](hololens-mdm-configure.md)
 ### [プロビジョニング パッケージを使用して HoloLens を構成する](hololens-provisioning.md)
 ### [一般的なデバイスの制限](hololens-common-device-restrictions.md)
 ### [HoloLens をキオスクとしてセットアップする](hololens-kiosk.md)
