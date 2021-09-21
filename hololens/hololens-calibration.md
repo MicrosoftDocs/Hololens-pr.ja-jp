@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: 調整, 快適性, 視覚効果, 品質, ipd, HoloLens, Windows Mixed Reality, VR ヘッドセット
-ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: cdeef216cbf6d1fb165737ae194071c60b31146a
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034241"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833558"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>視覚効果と快適性の向上
 
@@ -38,7 +38,6 @@ HoloLens 2 では、次のようなときに、デバイスの調整がユーザ
 - ユーザーが前回デバイスを使用したときに、調整プロセスに失敗した
 - ユーザーが調整プロファイルを削除した
 - デバイスが取り外されて再びオンになり、上記のいずれかの状況の状況が発生する 
-
 
 ![目に合わせるための調整プロンプト。](./images/07-et-adjust-for-your-eyes.png)
 
@@ -104,16 +103,23 @@ HoloLens 2 では、視線により、正確なホログラムの位置決め、
 
 ### <a name="disable-calibration"></a>調整を無効にする
 
-調整プロンプトは、以下の手順に従って無効にすることもできます。
+#### <a name="eye-calibration-behavior-on-hololens-2-builds-20h2-and-newer"></a>HoloLens 2 ビルド 20H2 以降での視線の調整動作
+
+Windows Holographic バージョン 20H2 から[視線の自動調整がサポート](hololens-release-notes.md#auto-eye-position-support)されたので、調整を無効にする必要がなくなりました。 視線追跡対応アプリを使用している場合にのみ、調整プロンプトが自動的に表示されます。
+
+#### <a name="disabling-eye-calibration-on-hololens-2-older-builds"></a>HoloLens 2 の以前のビルドで視線の調整を無効にする
+
+調整を無効にするには、ヘッドセットの設定スイッチを切り替えます。ただし、スイッチの状態を簡単に判断できない場合があります。 これは削除され、[視線の自動調整サポート](hololens-release-notes.md#auto-eye-position-support)に置き換えられました。これは、調整を延期しながら、色補正とホログラムの位置決めを行うものです。
+
+#### <a name="disabling-eye-calibration-on-hololens-1st-gen"></a>HoloLens (第 1 世代) で視線の調整を無効にする
+
+[HoloLens (第 1 世代) の調整](#calibrating-your-hololens-1st-gen)の場合、次の手順で視線の調整プロンプトを無効にすることができます。
 
 1. **[設定]**  >  **[システム]**  >  **[調整]** を選択します。
 1. **新しいユーザーがこの HoloLens を使用したときに、自動的に [視線の調整を実行]** をオフにします。
 
    > [!IMPORTANT]
    > この設定では、ホログラムのレンダリング品質と快適さが低下することがあります。  この設定をオフにすると、視線追跡に依存する機能 (テキストのスクロールなど) がイマーシブ アプリケーションで動作しなくなります。
-
-> [!NOTE]
-> Windows Holographic バージョン 20H2 で[視線の自動調整サポート](hololens-release-notes.md#auto-eye-position-support)が導入されたことに伴い、[設定] スイッチは削除されました。 調整を行っていないユーザーが視線追跡対応のアプリを使用している場合にのみ、自動的に調整プロンプトが表示されます。
 
 ### <a name="hololens-2-eye-tracking-technology"></a>HoloLens 2 の視線追跡テクノロジ
 
