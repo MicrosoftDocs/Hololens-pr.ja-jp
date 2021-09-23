@@ -4,23 +4,23 @@ description: ビジネス向け Microsoft Store を使用して、mixed reality 
 keywords: ビジネス向け Microsoft Store、msfb、アプリのデプロイ、ストア
 author: evmill
 ms.author: v-evmill
-ms.date: 6/22/2020
+ms.date: 9/22/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
-ms.openlocfilehash: d7d5ad05dc675cf07afd075f4fb52d24cd4d3e15
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: b60795d7a5a4f9fab980ee16a23250faa6025bb5
+ms.sourcegitcommit: ab86b31357004726d8a28ebae76123728adc8e59
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033044"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128306150"
 ---
 # <a name="microsoft-store-for-business"></a>ビジネス向け Microsoft Store
 
-ビジネス向け Microsoft Store は、主に IT の意思決定者と企業または組織の管理者向けに設計されており、選択した市場でデバイスを Windows 10 して、無料および有料のアプリを簡単に検索、取得、管理、配布することができます。 
+[ビジネス向け Microsoft Store](/microsoft-store/microsoft-store-for-business-overview)は、主に IT の意思決定者と企業または組織の管理者向けに設計されており、選択した市場でデバイスを Windows 10 して、無料および有料のアプリを簡単に検索、取得、管理、配布することができます。 
 
 1つのインベントリで Microsoft Store アプリとプライベート基幹業務アプリを管理し、必要に応じてライセンスを割り当てて再利用することができます。 また、組織に最適な配布方法を選択することもできます。個人やチームにアプリを直接割り当てる方法、Microsoft Store のプライベートページにアプリを発行する方法、さらに多くのオプションを使用する場合は管理ソリューションに接続する方法などがあります。
 
