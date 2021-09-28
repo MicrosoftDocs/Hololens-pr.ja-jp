@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0c110f332337e58f2b1be11057c7564edfd17a1f
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: a8585d2cf00d08f1c877e5f62e864ffd21b6c8f8
+ms.sourcegitcommit: 89f47c105ae4d46ed578343e4e1449c7d2c3f821
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034287"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "128036864"
 ---
 # <a name="where-to-buy-hololens-2"></a>HoloLens 2 の購入先
 
@@ -83,9 +83,9 @@ HoloLens 2 は、イマーシブ エクスペリエンスを実現する業界�
 | | 分析情報 | Siegfried Halfmann <siegfried.halfmann@insight.com> |  |  | 
 | **ベルギー/ルクセンブルグ** | Bechtle | Jens De Weerdt<br><jens.deweerdt@bechtle.com> | [HoloLens 2 を購入する - Bechtle](https://www.bechtle.com/be/shop/microsoft-hololens-2-smart-glasses--4342628--p) | [HoloLens 2 Industrial Edition を購入する - Bechtle](https://www.bechtle.com/be/shop/microsoft-hololens-2-ind-ed-smartglasses--4525629--p) | 
 | | Econocom | Fabrice Legrand <fabrice.legrand@econocom.com> | [HoloLens 2 を購入する - Econocom](https://lp.econocom.com/fr/page-contact-econocom-microsoft-hololens2) | [HoloLens 2 Industrial Edition を購入する - Econocom](https://microsoft-hololens.econocom.com/fr/hololens-2) | 
-| | 分析情報 | Danny De Paepe<br><danny.depaepe@insight.com><br>Dirk Fierens<br><dirk.fierens@insight.com><br>Herman Steurs<br><herman.steurs@insight.com> | [HoloLens 2 を購入する - Insight](https://be.insight.com/fr/infos-produit/accessoires-de-jeux/0010985150-00000001) | [HoloLens 2 Industrial Edition を購入する - Insight](https://be.insight.com/fr/infos-produit/accessoires-de-jeux/0011395310-00000001) |
-| **デンマーク** | ATEA | Peter Halk<br><peterhalk.jensen@atea.dk><br>Kristjan Hgosson<br><kristjan.hugosson@atea.dk><br>Leif Anders Aasen<br><leif.anders.aasen@atea.com><br>Sverre Panduro<br><sverre.panduro@atea.com.dk> | [HoloLens 2 を購入する- ATEA](https://www.atea.dk/eshop/products/?filters=S_hololens) | [HoloLens 2 を購入する- ATEA](https://www.atea.dk/eshop/product/microsoft-hololens-2-industrial-edition-smartglasses/?prodid=5165315) |  
-| | 分析情報 | Andreas Lilja, Enterprise<br><andreas.lilja@insight.com><br>Susanna Reppling Corporate/Public/SMC<br><susanna.reppling@insight.com><br>Mikael Björkefall, Cloud Channel, SMB<br><mikael.bjorkefall@insight.com> | [HoloLens 2 を購入する - Insight](https://se.insight.com/shop/microsoft/devices-and-hardware/hololens#) |  | 
+| | 分析情報 | Olivier Castelao<br><Olivier.Castelao@insight.com><br>Dirk Fierens<br><dirk.fierens@insight.com><br>Herman Steurs<br><herman.steurs@insight.com> | [HoloLens 2 を購入する - Insight](https://be.insight.com/fr/infos-produit/accessoires-de-jeux/0010985150-00000001) | [HoloLens 2 Industrial Edition を購入する - Insight](https://be.insight.com/fr/infos-produit/accessoires-de-jeux/0011395310-00000001) |
+| **デンマーク** | ATEA | Kristjan Hgosson<br><kristjan.hugosson@atea.dk><br>Leif Anders Aasen<br><leif.anders.aasen@atea.com><br>Sverre Panduro<br><sverre.panduro@atea.com.dk> | [HoloLens 2 を購入する- ATEA](https://www.atea.dk/eshop/products/?filters=S_hololens) | [HoloLens 2 を購入する- ATEA](https://www.atea.dk/eshop/product/microsoft-hololens-2-industrial-edition-smartglasses/?prodid=5165315) |  
+| | 分析情報 | Andreas Lilja, Enterprise<br><andreas.lilja@insight.com><br>Susanna Reppling Corporate/Public/SMC<br><susanna.reppling@insight.com><br>Mikael Björkefall, Cloud Channel, SMB<br><mikael.bjorkefall@insight.com> | [HoloLens 2 を購入する - Insight](https://se.insight.com/shop/microsoft/devices-and-hardware/hololens#) |   | 
 | **フィンランド** | ATEA | Petteri Halonen<br><petteri.halonen@atea.fi><br>Johanna Ronnholm<br><Johanna.ronnholm@atea.fi><br>Jonas Kjaerulf<br><Jonas.kjaerulf@atea.com> | [HoloLens 2 を購入する - ATEA](https://www.atea.fi/eshop/products/?filters=S_hololens) | [HoloLens 2 Industrial Edition を購入する - ATEA](https://www.atea.fi/eshop/product/microsoft-hololens-2-industrial-version/?prodid=3361862) | 
 | **フランス** | ARP France (Bechtle) | Doha Benchair<br><doha.benchair@arp.com> | [HoloLens 2 を購入する - ARP France (Bechtle)](https://www.arp.fr/promo/microsoft-hololens-2/) | [HoloLens 2 Industrial Edition を購入する - ARP France (Bechtle)](https://www.arp.fr/lunettes-microsoft-hololens-2-ind-ed-ssu-00003-5496988) | 
 | | Econocom | Sabine Lhuillery<br><sabine.lhuillery@econocom.com> | [HoloLens 2 を購入する - Econocom](https://microsoft-hololens.econocom.com/fr) | [HoloLens 2 Industrial Edition を購入する - Econocom](https://microsoft-hololens.econocom.com/en/hololens-2) | 
@@ -104,7 +104,7 @@ HoloLens 2 は、イマーシブ エクスペリエンスを実現する業界�
 | **ポルトガル** | Bechtle |  | [HoloLens 2 を購入する - Bechtle](https://www.bechtle.com/pt/finder?query=Hololens) | [HoloLens 2 Industrial Edition を購入する - Bechtle](https://www.bechtle.com/pt/shop/oculos-dados-microsoft-hololens-2-ind-ed--4525629--p) | 
 | **スペイン** | Bechtle | Julia Castrillo<br><julia.castrillo@bechtle.com> | [HoloLens 2 を購入する - Bechtle](https://www.bechtle.com/es/promociones/microsoft-hololens-2) | [HoloLens 2 Industrial Edition を購入する - Bechtle](https://www.bechtle.com/es/shop/microsoft-hololens-2-ind-ed-gafas-datos--4525629--p) | 
 | | Econocom | Alejandro Varas<br><alejandro.varas@econocom.com> |  | | 
-| **スウェーデン** | ATEA | Anders Gronlund<br><anders.gronlund@atea.se> | [HoloLens 2 を購入する - ATEA](https://www.atea.se/eshop/products/?filters=S_hololens) | [HoloLens 2 Industrial Edition を購入する - ATEA](https://www.atea.se/eshop/product/microsoft-hololens-2-industrial-edition-smarta-glasogon/?prodid=2147896) | 
+| **スウェーデン** | ATEA | Andreas Bilen<br><andreas.bilen@atea.se> | [HoloLens 2 を購入する - ATEA](https://www.atea.se/eshop/products/?filters=S_hololens) | [HoloLens 2 Industrial Edition を購入する - ATEA](https://www.atea.se/eshop/product/microsoft-hololens-2-industrial-edition-smarta-glasogon/?prodid=2147896) | 
 | | 分析情報 | Fredrik Saxholm<br><fredrik.saxholm@insight.com><br>Andreas Lilja, Enterprise<br><andreas.lilja@insight.com><br>Susanna Reppling Corporate/Public/SMC<br><susanna.reppling@insight.com><br>Mikael Björkefall, Cloud Channel, SMB<br><mikael.bjorkefall@insight.com> | [HoloLens 2 を購入する - Insight](https://se.insight.com/shop/microsoft/devices-and-hardware/hololens#) |  | 
 | **スイス** | Bechtle | Shirin Baeuerle<br><shirin.baeuerle@bechtle.com> | [HoloLens 2 を購入する - Bechtel](https://www.bechtle.com/ch-en/shop/microsoft-hololens-2-smart-glasses--4342628-40--p) | [HoloLens 2 Industrial Edition を購入する - Bechtle](https://www.bechtle.com/ch-fr/shop/lunettes-microsoft-hololens-2-ind-ed--4525629--p) | 
 | | 分析情報 | Sheila Hofer<br><sheila.hofer@insight.com> | [HoloLens 2 を購入する - Insight](https://ch.insight.com/en-gb/productinfo/games-accessories/0010985150-00000001) | [HoloLens 2 Industrial Edition を購入する - Insight](https://ch.insight.com/en-gb/productinfo/games-accessories/0011395310-00000001) | 

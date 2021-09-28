@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: sekerawa
-ms.openlocfilehash: 28793b385bad58d44c6592a800c4f56b18d152ce
-ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
+ms.openlocfilehash: 10dc251bbeb204a6621ca0891029858c00c467bc
+ms.sourcegitcommit: d09556a101663ef5dfff865d4753e64a41032b78
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127833575"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128346776"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot for HoloLens 2
 
@@ -26,7 +26,7 @@ ms.locfileid: "127833575"
 
 大規模に展開するには、まず Windows Autopilot を使用することをお勧めします。 IT 担当者とエンド ユーザーの両方にとって、HoloLens の設定が劇的に簡単になるという点で、これは "ロー タッチ" と考えられます。 
 
-大まかに言うと、通常、IT 管理者はビジネスに適した構成を作成し、MDM ポータルに HoloLens 2 デバイスを登録します。 HoloLens 2 デバイスが Out-Of-Box Experience (OOBE) で起動し、インターネットに接続されると、登録された HoloLens 2 デバイスのビジネス対応構成が自動的にダウンロードされて適用され、ユーザーの介入なしでデバイスがビジネス対応になります。
+大まかに言うと、通常、IT 管理者はビジネスに適した構成を作成し、MDM ポータルに HoloLens 2 デバイスを登録します。 HoloLens 2 デバイスが Out-of-Box Experience (OOBE) で起動し、インターネットに接続されると、登録された HoloLens 2 デバイスのビジネス対応構成が自動的にダウンロードされて適用され、ユーザーの介入なしでデバイスがビジネス対応になります。
 
 詳細については、「[Windows Autopilot の概要| Microsoft Docs](/mem/autopilot/windows-autopilot)」の記事を参照してください。
 
@@ -244,7 +244,7 @@ ESP の詳細については、「[登録ステータス ページを設定す�
 
 1. Autopilot のエクスペリエンスには、インターネット アクセスが必要です。 インターネットにアクセスするには、次のいずれかのオプションを使用します。
 
-    - デバイスを OOBE の Wi-Fi ネットワークに接続し、Autopilot エクスペリエンスを自動的に検出できるようにします。 これは、Autopilot エクスペリエンスが自動的に完了するまで、OOBE を操作する必要がある唯一の場合です。 既定では、HoloLens 2 は、インターネットを検出した後、Autopilot を検出するために 10 秒間待機します。 Autopilot プロファイルが 10 秒以内に検出されない場合は、OOBE に EULA が表示されます。 このシナリオが発生した場合は、デバイスを再起動して、Autopilot の検出をもう一度試行できるようにしてください。 また、デバイスに TenantLockdown ポリシーが設定されている場合にのみ、OOBE が Autopilot を無期限に待機する場合があることにも注意してください。
+    - デバイスを OOBE の Wi-Fi ネットワークに接続し、Autopilot エクスペリエンスを自動的に検出できるようにします。 これは、Autopilot エクスペリエンスが自動的に完了するまで、OOBE を操作する必要がある唯一の場合です。
 
     - 有線インターネット接続用の「USB-C to Ethernet」アダプターを使用してデバイスをイーサネットに接続し、HoloLens 2 に Autopilot エクスペリエンスを自動的に完了させます。
 
@@ -268,7 +268,7 @@ ESP の詳細については、「[登録ステータス ページを設定す�
 
 1. OOBE の最後に、ユーザー名とパスワードを使用してデバイスにサインインできます。
 
-   <br/><img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
+   <img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
 
 ## <a name="tenant-lockdown-csp-and-autopilot"></a>テナント ロックダウン CSP と Autopilot
 
@@ -318,7 +318,13 @@ OOBE は、Autopilot プロファイルがダウンロードされるのを無�
 
 ![ポリシーがデバイスに適用される時のデバイス内ビュー。](images/hololens-autopilot-lockdown.png)
 
-## <a name="known-issues--limitations"></a>既知の問題と制限事項
+#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>Autopilot プロファイルが Intune に割り当てられているにもかかわらず、Autopilot エクスペリエンスが表示されないのはなぜですか?
+
+既定では、HoloLens 2 は、インターネットを検出した後、Autopilot を検出するために 15 秒間待機します。 15 秒以内に Autopilot プロファイルが検出されなかった場合は、Autopilot が正しく検出されなかったことを意味し、EULA ページが表示されます。
+
+デバイスを再起動して、もう一度やり直してください。 詳細については、「[既知の問題と制限事項](hololens2-autopilot.md#known-issues-and-limitations)」または「[トラブルシューティング](hololens2-autopilot.md#troubleshooting)」を参照してください。
+
+## <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 
 - MEM に構成されているデバイスコンテキスト ベースのアプリケーション インストールが HoloLens に適用されない問題を調査しています。 [「デバイス コンテキストとユーザー コンテキストのインストールの詳細」をご覧ください。](/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
 - Wi-Fi 経由で Autopilot を設定しているときに、インターネット接続が最初に確立されたときに Autopilot プロファイルがダウンロードされない場合があります。 この場合、使用許諾契約書 (EULA) が提示され、ユーザーは Autopilot 以外のセットアップを続行することができます。 Autopilot による設定を再試行するには、デバイスをスリープ状態にしてから電源を入れます。または、デバイスを再起動して、もう一度お試しください。
