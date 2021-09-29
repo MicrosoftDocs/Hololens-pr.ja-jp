@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
-  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+  ms.openlocfilehash: 2d0d57406c0d8b1759c53bf5847d8369f98a865e
+  ms.sourcegitcommit: 2b541bacb32279ccec0d7b7caef216626634a2ad
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/13/2021
-  ms.locfileid: "126031901"
+  ms.lasthandoff: 09/28/2021
+  ms.locfileid: "129145932"
 landingContent:
 - title: HoloLens 2 についての理解を深める
   linkLists:
@@ -68,6 +68,22 @@ landingContent:
       url: hololens2-corp-connected-overview.md
     - text: 展開ガイド - オフライン セキュリティ保護
       url: hololens-common-scenarios-offline-secure.md
+- title: Mixed Reality パートナー向けリソース
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Mixed Reality パートナー向けリソース
+      url: https://www.microsoft.com/en-us/hololens/mixed-reality-partners
+    - text: Mixed Reality パートナー フォーラム
+      url: https://techcommunity.microsoft.com/t5/mixed-reality-partners/bd-p/MixedRealityPartnersForum
+    - text: Mixed Reality パートナー ブログ
+      url: https://aka.ms/MRPartnerBlog
+    - text: 設計とプロトタイプ作成を始める
+      url: https://docs.microsoft.com/en-us/windows/mixed-reality/design/design
+    - text: 移動プラットフォーム モード
+      url: /hololens/hololens2-moving-platform
+    - text: 環境に関する考慮事項
+      url: /hololens/hololens-environment-considerations
 - title: トラブルシューティング
   linkLists:
   - linkListType: how-to-guide

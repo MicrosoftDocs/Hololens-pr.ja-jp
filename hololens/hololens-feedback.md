@@ -2,9 +2,9 @@
 title: フィードバックの送信
 description: フィードバックハブを使用して、HoloLens および Windows Mixed Reality の開発者向けに、アクションにつながるフィードバックを作成します。
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
-author: mattzmsft
-ms.author: mazeller
-ms.date: 12/17/2020
+author: evmill
+ms.author: v-evmill
+ms.date: 9/28/2021
 ms.custom:
 - CI 116157
 - CSSTroubleshooting
@@ -12,17 +12,17 @@ audience: ITPro
 ms.prod: hololens
 ms.topic: article
 keywords: フィードバック、バグ、問題、エラー、トラブルシューティング、ヘルプ
-manager: jarrettr
+manager: ranjibb
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 214b2b9cda33eb074b06a9157429d1f52bfe0716
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 40619e6d891ddd56d26be227df11aae758f880ae
+ms.sourcegitcommit: 0b42c241c44c98e94dc9043bd5891d26776bc745
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033267"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "129191211"
 ---
 # <a name="feedback-for-hololens"></a>HoloLens に関するフィードバック
 
@@ -30,11 +30,13 @@ ms.locfileid: "126033267"
 
 フィードバックハブは、エンジニアリングチームにバグを知らせる優れた方法であり、今後の更新プログラムが高くなりされ、一貫性のあるバグをより確実に解放できるようにします。 ただし、フィードバックハブは応答を提供しません。 早急に支援が必要な場合は、フィードバックをお送りください。フィードバックのために提供した概要をメモし、 [HoloLens サポート](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)にご協力ください。フィードバックハブの **共有** 機能を使用して、URL への直接リンクを共有してください。 フィードバックハブは、毎日大量のデータを取得します。この URL は、フィードバックを迅速に識別するのに役立ちます。
 
-> [!NOTE]  
->  
-> - フィードバックハブの最新バージョンがあることを確認します。 これを行うには、[**開始** Microsoft Store] を選択し、  >  省略記号 (**...**) を選択します。次に、[**ダウンロードと更新** プログラムの取得] を選択し  >  ます。  
->  
-> - 問題を修正するための最適なデータを提供するには、デバイスのテレメトリを **オプション** に設定することを強くお勧めします。 この値は、インボックスエクスペリエンス (OOBE) で、または設定アプリを使用して設定できます。 設定を使用してこれを行うには、  >    >  [設定の **プライバシー**  >  **アプリ診断** の開始] を選択し  >  ます。
+> [!NOTE]
+> フィードバックハブの最新バージョンがあることを確認します。 これを行うには、[**開始** Microsoft Store] を選択し、  >  省略記号 (**...**) を選択します。次に、[**ダウンロードと更新** プログラムの取得] を選択し  >  ます。 詳細について [は、ストアアプリを更新する方法](holographic-store-apps.md#update-apps)に関する説明を参照してください。
+
+> [!IMPORTANT]
+> 問題を修正するための最適なデータを提供するには、デバイスのテレメトリを **オプション** に設定することを強くお勧めします。 この追加のテレメトリを有効にしないと、バグやフィードバックが不可能になる可能性があります。
+>
+> この値は、インボックスエクスペリエンス (OOBE) で、または設定アプリを使用して設定できます。 設定を使用してこれを行うには、[  >  **設定**  >  の **プライバシー**  >  **診断 & フィードバック**]  >  **オプションの診断データ** をオン  >  **に** します。
 
 ## <a name="use-the-feedback-hub"></a>フィードバックハブを使用する
 
