@@ -28,7 +28,7 @@
 #### [新しい設定アプリ](hololens-new-settings.md)
 #### [新しい Microsoft Edge](hololens-new-edge.md)
 ### アプリケーションを管理する
-#### [アプリケーションの検索、インストール、およびアンインストール](holographic-store-apps.md)
+#### [ストア アプリの検索、インストール、およびアンインストール](holographic-store-apps.md)
 #### [HoloLens 2 用のカスタム アプリを管理する](hololens2-holographic-custom-apps.md)
 ### ホログラム光学と空間内での配置
 #### [視覚効果と快適性の向上](hololens-calibration.md)
