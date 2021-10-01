@@ -3,7 +3,7 @@ title: HoloLensデバイスのトラブルシューティング
 description: デバイスの問題とトラブルシューティング手法を HoloLens するための最も一般的な解決策については、最新情報を入手してください。
 author: mattzmsft
 ms.author: mazeller
-ms.date: 12/02/2019
+ms.date: 9/30/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 問題、バグ、トラブルシューティング、修正、ヘルプ、サポート、HoloLens、エミュレーター
-ms.openlocfilehash: 6ac86acf85e8e4fc1b97473732ea358d3d612d12
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 3c4d6e22660e365acd2c3aca3119632c73926391
+ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033813"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129364618"
 ---
 # <a name="device-troubleshooting"></a>デバイスのトラブルシューティング
 
@@ -30,6 +30,7 @@ ms.locfileid: "126033813"
 <a id="list"></a>
 
 **既知の問題**
+- [電力が18% になるたびに、デバイスが突然自動的にシャットダウンされます。](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [20分後にリモートアシスタンスビデオがフリーズする](#remote-assist-video-freezes-after-20-minutes)
 - [自動ログインによるログインの要求](#auto-login-asks-for-log-in)
 - [Microsoft Edge を起動できない](#microsoft-edge-fails-to-launch)
@@ -59,6 +60,16 @@ ms.locfileid: "126033813"
 - [Bluetooth デバイスがペアリングしていない](#bluetooth-devices-arent-pairing)
 - [USB C マイクが動作していない](#usb-c-microphone-isnt-working)
 - [設定で使用可能と表示されているデバイスが動作しない](#devices-listed-as-available-in-settings-dont-work)
+
+## <a name="every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically"></a>電力が18% になるたびに、デバイスが突然自動的にシャットダウンされます。
+
+デバイスが18% のバッテリに達したときに、予期しないシャットダウンが発生する既知の問題があります。 これはソフトウェアの問題であり、ハードウェアやバッテリの問題ではありません。このため、デバイスを交換しないでください。 問題がこのバグと一致するかどうかわからない場合は、次のことを行ってください。
+
+1. デバイスでオプションの診断が有効になっていることを確認します。
+1. 問題を再現する
+1. [フィードバックハブ](hololens-feedback.md)の送信の問題
+1. フィードバックの発行 URL を共有する
+1. [サポートに問い合わせ](https://aka.ms/hololenssupport)
 
 ## <a name="remote-assist-video-freezes-after-20-minutes"></a>20分後にリモートアシスタンスビデオがフリーズする
 
@@ -141,139 +152,141 @@ Windows Holographic の以前のビルドでは、ロックされたファイル
 
 [一覧に戻る](#list)
 
-## <a name="device-portal-file-uploaddownload-times-out"></a>デバイスポータルファイルのアップロード/ダウンロードがタイムアウトする
+## <a name="device-portal-file-uploaddownload-times-out"></a>デバイス ポータルファイルのアップロード/ダウンロードがアウトした場合
 > [!NOTE]
-> これは [、Windows Holographic バージョン 21h1-2021 年7月の更新](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update)で修正された **既知の問題** です。 回避策の一環として SSL 接続を無効にした場合は、再度有効にすることを強くお勧めします。
+> これは、Holographic **バージョン** [21H1 Windows 2021](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update)年 7 月の更新プログラム で修正された既知の問題です。 回避策の一環として以前に SSL 接続を無効にした場合は、再び有効にすることを強くお勧めします。
 
-一部のお客様は、ファイルをアップロードまたはダウンロードしようとすると、操作がハングし、タイムアウトになるか、完了しないように見えることがあります。 これは、"ファイルがロックされています[" という既知の問題](#downloading-locked-files-doesnt-error)とは別のものです。これは Windows Holographic、バージョン2004、20h2、21h1 のマーケットビルドに影響します。 この問題は、デバイスポータルで特定の要求を処理するときのバグに起因し、既定の https を使用する場合に最も一貫してヒットしています。
+一部のお客様は、ファイルのアップロードまたはダウンロードを試みる際に、操作がハングし、その後に時間が切れているか、完了しない可能性があります。 これは、'ファイル ロック['](#downloading-locked-files-doesnt-error)の既知の問題とは別です。これは、Windows Holographic、バージョン 2004、20H2、および 21H1 の市場内ビルドに影響します。 この問題は、デバイス ポータル による特定の要求の処理のバグが原因で根本原因であり、既定の https を使用すると最も一貫してヒットします。
 
 ### <a name="workaround"></a>回避策
 
-この回避策は Wi-Fi と UsbNcm に同様に適用されますが、[SSL 接続] の下の [必須] オプションを無効にすることをお勧めします。 これを行うには、[デバイスポータル]、[ **システム**] の順に移動し、[ **基本設定** ] ページを選択します。 [ **デバイスのセキュリティ** ] セクションで、[ **SSL 接続**] を見つけて、[ **必須** の無効化] をオフにします。
+この回避策は、Wi-Fi と UsbNcm に等しく適用され、"SSL 接続" で "必須" オプションを無効にします。 これを行うには、[システム] **デバイス ポータルに移動** し、[基本設定] **ページを選択** します。 [デバイス セキュリティ **] セクションで** 、[SSL 接続] **を探し、[** 必須] を無効にするにはオフ **にします**。
 
-ユーザーは、https://(IP アドレス) ではなく http://にアクセスし、ファイルのアップロードやダウンロードなどの機能を使用できます。
-
-[一覧に戻る](#list)
-
-## <a name="blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build"></a>Insider build を使用してフラッシュされたデバイスで Insider preview から登録解除した後のブルースクリーン
-
-これは、insider preview ビルドを使用しており、HoloLens 2 を新しい insider preview ビルドで reflashed した後、insider プログラムから登録解除されたユーザーに影響する問題です。 これは **既知の問題** です。
-
-これは、次のようには影響しません。
-- Windows Insider に登録されていないユーザー 
-- Insider
-    - Insider ビルドがバージョン 18362. x であるためにデバイスが登録されている場合
-    - 内部で署名された19041ビルドをフラッシュし、Insider プログラムに登録したままにする場合
-
-回避策: 
-- 問題を回避する 
-    - Insider 以外のビルドをフラッシュします。 毎月の定期的な更新の1つ。
-    - Insider Preview を維持
-- デバイスの更新
-
-    1. 接続されていない状態で完全に電源を切ることによって、HoloLens 2 を手動で[点滅モードに](hololens-recovery.md)します。 音量を上げたまま、[電源] ボタンをタップします。
-    
-    1. PC に Connect し、高度な回復コンパニオンを開きます。
-    
-    1. HoloLens 2 を既定のビルドにフラッシュします。
+その後、ユーザーは http:// にアクセスする必要 https:// (IP アドレス) ではなく、ファイルのアップロードやダウンロードのような機能が機能します。
 
 [一覧に戻る](#list)
 
-## <a name="onedrive-doesnt-automatically-upload-pictures"></a>画像が自動的にアップロードされない OneDrive
+## <a name="blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build"></a>Insider ビルドでフラッシュされたデバイスで Insider プレビューから登録を解除した後のブルー スクリーン
 
-HoloLens 用の OneDrive アプリでは、職場または学校アカウントのカメラの自動アップロードはサポートされていません。 これは **既知の問題** です。
+これは、Insider プレビュー ビルドのユーザーに影響を与え、新しい Insider プレビュー ビルドで HoloLens 2 を再フラッシュした後、Insider プログラムから登録を解除したユーザーに影響を与える問題です。 これは既知の **問題です**。
+
+これは、次の場合には影響を与え "ない" です。
+
+- Insider に登録されていないWindowsユーザー
+- インサイダー：
+    - Insider ビルドがバージョン 18362.x 以降にデバイスが登録されている場合
+    - Insider 署名済み 19041.x ビルドをフラッシュし、Insider プログラムに登録された
+
+回避:
+
+- 問題を回避する
+    - インサイダー以外のビルドをフラッシュします。 定期的な毎月の更新プログラムの 1 つ。
+    - Insider Preview を利用する
+- デバイスを再フラッシュする
+
+    1. 接続していない[HoloLens 2電源](hololens-recovery.md)を完全にオフにすることで、デバイスを手動でフラッシュ モードにします。 次に、ボリュームを上に保持している間に、[電源] ボタンをタップします。
+
+    1. Connect PC に接続し、Advanced Recovery Companion を開きます。
+
+    1. 既定のビルドHoloLens 2をフラッシュします。
+
+[一覧に戻る](#list)
+
+## <a name="onedrive-doesnt-automatically-upload-pictures"></a>OneDrive画像が自動的にアップロードされません
+
+アプリOneDriveアプリではHoloLensまたは学校アカウントの自動カメラ アップロードはサポートされていません。 これは既知の **問題です**。
 
 回避策:
 
-- お客様のビジネスで利用可能な場合、カメラの自動アップロードはコンシューマーの Microsoft アカウントでサポートされています。 職場または学校のアカウントに加えて、Microsoft アカウントにサインインできます (OneDrive アプリではデュアルサインインがサポートされています)。 OneDrive 内の Microsoft アカウントプロファイルから、自動、バックグラウンドカメラロールのアップロードを有効にすることができます。
+- ビジネスで実行可能な場合は、コンシューマー向け Microsoft アカウントでカメラの自動アップロードがサポートされます。 自分のアカウントまたは学校アカウントMicrosoft アカウント、自分のアカウントにサインインできます (OneDrive アプリはデュアル サインインをサポートしています)。 アプリ内Microsoft アカウントプロファイルOneDrive、バックグラウンド カメラの自動ロール アップロードを有効にできます。
 
-- 写真を自動的にアップロードするためにコンシューマー Microsoft アカウントを安全に使用できない場合は、OneDrive アプリから職場または学校のアカウントに写真を手動でアップロードできます。 これを行うには、OneDrive アプリで職場または学校のアカウントにサインインしていることを確認します。 ボタンを選択し、[ **+** **アップロード**] を選択します。 [ **ピクチャ > カメラロール** に移動して、アップロードする写真またはビデオを検索します。 アップロードする写真またはビデオを選択し、[ **開く** ] ボタンを選択します。
-
-[一覧に戻る](#list)
-
-## <a name="hololens-is-unresponsive-or-wont-start"></a>HoloLens が応答していないか、開始されていません
-
-HoloLens が開始されない場合:
-
-- 電源ボタンの横にある Led が点灯していない場合、または LED が少し点滅している場合は、 [HoloLens の料金](hololens2-charging.md#charging-the-device)が発生することがあります。
-- 電源ボタンを押したときに Led が点灯しても、ディスプレイに何も表示されない場合は、 [デバイスをハードリセット](hololens-recovery.md#hard-reset-procedure)します。
-
-HoloLens がフリーズまたは応答しなくなった場合は、次のようになります。
-
-- 電源ボタンを押して、5つの led がすべてオフになるまで、または led が応答していない場合は15秒間、HoloLens をオフにします。 HoloLens を開始するには、[電源] ボタンをもう一度押します。
-
-これらの手順がうまくいかない場合は、HoloLens 2 デバイスまたは[HoloLens (第1世代) デバイス](hololens1-recovery.md)[の回復](hololens-recovery.md)を試すことができます。
+- 写真を自動的にアップロードするためにコンシューマー Microsoft アカウント を安全に使用できない場合は、アプリから手動で写真を仕事または学校アカウントにアップロードOneDriveできます。 これを行うには、アプリで自分の仕事用または学校アカウントにサインインOneDriveしてください。 ボタンを選択 **+** し、 [] を **アップロード。** [カメラ ロール] の [ピクチャ] に移動して、アップロード **する>を見つける。** アップロードする写真またはビデオを選択し、[開く] ボタン **を選択** します。
 
 [一覧に戻る](#list)
 
-## <a name="low-disk-space-error"></a>"ディスク領域が不足しています" エラー
+## <a name="hololens-is-unresponsive-or-wont-start"></a>HoloLens応答しないか、起動しない
 
-次の1つまたは複数の操作を行って、記憶域スペースを解放する必要があります。
+お使HoloLens開始しない場合:
 
-- 未使用の領域をいくつか削除します。 [**設定** システムスペース] にアクセスして  >    >  、不要になった領域を選択し、[**削除**] を選択します。
+- 電源ボタンの横にある LED が点灯しない場合、または短時間点滅する LED が 1 つしか表示されていない場合は、電源[HoloLens。](hololens2-charging.md#charging-the-device)
+- 電源ボタンを押すと LED が点灯するが、ディスプレイに何も表示できない場合は、デバイス のハード リセット [を行います](hololens-recovery.md#hard-reset-procedure)。
+
+お使HoloLensが固定または応答しなくなる場合:
+
+- 5 つの LED HoloLens電源がオフになるまで電源ボタンを押し、LED が応答しない場合は 15 秒間電源をオフにします。 アプリケーションを起動するにはHoloLensもう一度電源ボタンを押します。
+
+これらの手順が機能しない場合は、デバイスまたは (第[1](hololens-recovery.md)世代) HoloLens 2デバイスHoloLens[回復を試みてみます。](hololens1-recovery.md)
+
+[一覧に戻る](#list)
+
+## <a name="low-disk-space-error"></a>"ディスク領域が少ない" エラー
+
+次の 1 つ以上を実行して、一部の記憶域スペースを解放する必要があります。
+
+- 未使用のスペースを削除します。 [システム **スペース設定** に移動し、不要になった領域を選択して、 [削除  >    >  ] を **選択します**。
 - 配置したホログラムの一部を削除します。
-- 写真アプリから一部の画像とビデオを削除します。
-- HoloLens から一部のアプリをアンインストールします。 [ **すべてのアプリ** ] 一覧で、アンインストールするアプリをタップして保持し、[ **アンインストール**] を選択します。
+- フォト アプリからいくつかの画像とビデオを削除します。
+- アプリから一部のアプリをアンインストールHoloLens。 [すべての **アプリ] の一** 覧で、アンインストールするアプリをタップしたままにし、[ アンインストール] を **選択します**。
 
 [一覧に戻る](#list)
 
 ## <a name="calibration-fails"></a>調整が失敗する
 
-調整はほとんどの従業員に対して機能しますが、調整が失敗する場合もあります。
+調整はほとんどのユーザーに対して機能しますが、調整に失敗する場合があります。
   
-調整エラーの考えられる原因には、次のようなものがあります。
+調整エラーの考え方としては、次のようなものがあります。
 
-- 調整ターゲットに従うのではなく、気をかける
-- ダーティまたは傷のあるデバイスのバイザーまたはデバイスのバイザーが適切に配置されていない
-- 汚れまたは傷
-- 特定の種類の連絡先レンズとグラス (色分けされたコンタクトレンズ、一部の toric 連絡先レンズ、IR ブロックグラス、高処方箋グラス、サングラス、類似)
-- その他の発音と eyelash の拡張機能
-- デバイスが目に見えないようにブロックしている場合は、ヘアまたは太 eyeglass フレーム
-- 特定の目の physiology、視線、eyelashes、amblyopia、n agmu、LASIK またはその他の目のような目になることがあります。
+- 気を散らして調整ターゲットに従わなくなって
+- ダーティまたはスクラッチされたデバイス バイザーまたはデバイス バイザーが正しく配置されていない
+- ダーティまたはスクラッチの眼鏡
+- 特定の種類のコンタクト レンズと眼鏡 (色付きコンタクト レンズ、一部の Toric コンタクト レンズ、IR ブロッキング 眼鏡、高い眼鏡、眼鏡など)
+- より顕著なメイクといくつかのまつげの拡張機能
+- デバイスが目を見るのを妨げている場合は、黒い眼鏡フレームまたは太い眼鏡フレーム
+- 特定の目の前部、目の状態、または狭い目、長いまつげ、アンブリータイン、nystagmus、LASIK や他の目の治療の一部のケースなど、目の治療
 
-調整が失敗した場合は、次の操作を行います。
+調整に失敗した場合は、次の手順を試してください。
 
-- デバイスのバイザーをクリーニングしています
-- グラスをクリーニングする
-- デバイスバイザーをできるだけ近くにプッシュする
-- バイザーでのオブジェクトの移動 (髪など)
-- 部屋のライトをオンにする、または直接日光を切る
+- デバイス バイザーのクリーニング
+- 眼鏡のクリーニング
+- デバイスバイザーを可能な限り目の近くにプッシュする
+- バイザー内のオブジェクトを外に移動する (生長など)
+- 部屋の照明をオンにするか、直接の光から出て行く
 
-すべてのガイドラインに従い、調整が引き続き失敗する場合は、設定で調整のプロンプトを無効にすることができます。 また、 [フィードバックハブ](hololens-feedback.md)でフィードバックを提出してお知らせください。
+すべてのガイドラインに従い、調整がまだ失敗している場合は、次の手順で調整プロンプトを設定。 また、 でフィードバックを送信して、お知[フィードバック Hub。](hololens-feedback.md)
 
-[イメージの色または明るさのトラブルシューティング](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)に関する関連情報も参照してください。
+画像の色または明るさ [のトラブルシューティングについては、関連情報も参照してください。](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
-視線位置はシステムによって計算されるため、IPD の設定は HoloLens 2 には適用されません。 
-
-[一覧に戻る](#list)
-
-## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>HoloLens が既に他のユーザーに設定されているため、サインインできません
-
-デバイスを [**点滅モード** にし、Advanced Recovery コンパニオンを使用](hololens-recovery.md#clean-reflash-the-device)してデバイスを回復することができます。
+目の位置はシステムによって計算HoloLens 2、IPD の設定は適用されません。 
 
 [一覧に戻る](#list)
 
+## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>自分のアカウントが他のユーザー HoloLens設定されたため、サインインできない
 
-## <a name="unity-isnt-working"></a>Unity が動作しない
-
-- HoloLens 開発に推奨される Unity の最新バージョン用の[ツールをインストール](/windows/mixed-reality/install-the-tools)することをお勧めします。
-- unity HoloLens Technical Preview の既知の問題については、 [HoloLens unity フォーラム](https://forum.unity3d.com/threads/known-issues.394627/)をご覧ください。
+デバイスを[フラッシュ モードにし、Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device)を使用してデバイスを回復できます。
 
 [一覧に戻る](#list)
 
-## <a name="windows-device-portal-isnt-working-correctly"></a>Windowsデバイスポータルが正しく動作していません
 
-- Mixed Reality キャプチャのライブプレビュー機能は、数秒の待機時間が発生する場合があります。
+## <a name="unity-isnt-working"></a>Unity が機能しない
 
-- [仮想入力] ページで、[仮想ジェスチャ] セクションのジェスチャとスクロールコントロールが機能していません。 使用すると、効果はありません。 仮想入力ページの仮想キーボードが正常に動作します。
-
-- 設定で開発者モードを有効にした後、デバイスポータルをオンにするスイッチが有効になるまで数秒かかることがあります。
+- 新[しい開発に推奨される](/windows/mixed-reality/install-the-tools)Unity の最新バージョンについては、「ツールをインストールするHoloLensしてください。
+- Unity HoloLens Technical Preview に関する既知の問題については、Unity フォーラムのHoloLens[を参照してください](https://forum.unity3d.com/threads/known-issues.394627/)。
 
 [一覧に戻る](#list)
 
-## <a name="the-hololens-emulator-isnt-working"></a>HoloLens Emulator が機能していません
+## <a name="windows-device-portal-isnt-working-correctly"></a>Windowsデバイス ポータルが正しく動作しない
 
-HoloLens エミュレーターに関する情報は、開発者向けのドキュメントにあります。  [HoloLens エミュレーターのトラブルシューティングの](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)詳細については、こちらを参照してください。
+- キャプチャの Live Preview 機能Mixed Reality数秒の待機時間が発生する可能性があります。
+
+- [仮想入力] ページの [仮想ジェスチャ] セクションの [ジェスチャ] コントロールと [スクロール] コントロールは機能しません。 それらを使用した場合、効果はありません。 仮想入力ページの仮想キーボードは正しく動作します。
+
+- 設定 で開発者モードを有効にした後、スイッチが有効になっているまで数秒デバイス ポータル場合があります。
+
+[一覧に戻る](#list)
+
+## <a name="the-hololens-emulator-isnt-working"></a>このHoloLens Emulator動作していません
+
+このエミュレーターのHoloLensについては、開発者向けドキュメントを参照してください。  詳細については、HoloLens[エミュレーターのトラブルシューティングに関する記事を参照してください](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)。
 
 
 - Microsoft Store の一部のアプリは、エミュレーターと互換性がありません。 たとえば、若い Conker とフラグメントは、エミュレーターでは再生できません。
@@ -295,6 +308,7 @@ HoloLens 2 が音声に応答していない場合は、音声認識が有効に
 ## <a name="hand-input-isnt-working"></a>手書き入力が機能していません
 
 HoloLens が自分の手を見えるようにするには、ジェスチャフレームに保持する必要があります。  Mixed Reality ホームでは、自分がどのように追跡されるかを知ることができるフィードバックが提供されます。  HoloLens のバージョンによって、次のようなフィードバックが異なる場合があります。
+
 - HoloLens (第1世代) では、宝石カーソルがドットからリングに変わります。
 - HoloLens 2 では、指先カーソルがスレートの近くにあると表示され、スレートがさらに離れたときにハンドレイが表示されます。
 
@@ -328,6 +342,7 @@ HoloLens を Wi-Fi ネットワークに接続できない場合は、以下を�
 [一覧に戻る](#list)
 
 ## <a name="usb-c-microphone-isnt-working"></a>USB C マイクが動作していない
+
 USB C のマイクによっては、マイク *と* スピーカーの両方として誤って報告されることに注意してください。 これは、HoloLens ではなく、マイクに問題があります。 これらのマイクの1つを HoloLens に接続すると、サウンドが失われる可能性があります。 幸いにも、簡単な修正があります。  
 
 **設定**  ->  **システム**  ->  **サウンド** で、組み込みのスピーカー **(アナログ機能オーディオドライバー)** を **既定のデバイス** として明示的に設定します。 マイクが取り外され、後で再接続された場合でも、HoloLens はこの設定を記憶する必要があります。
