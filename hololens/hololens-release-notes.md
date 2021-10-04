@@ -15,22 +15,19 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9f9d012540cf29b7ed7ffd4033681c58767d78db
-ms.sourcegitcommit: e8a4714c7b16720819c7aaebefb7cfd21fc29c56
+ms.openlocfilehash: 8ad76f1c0cc16101b10fb0576c1b3763caac450d
+ms.sourcegitcommit: db573910a0c81fdf6edaca8cb8ef3d0be5e25603
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "127985640"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129432030"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 のリリース ノート
 
-ご利用のデバイスで生産性の高いエクスペリエンスをHoloLens、機能、バグ、およびセキュリティ更新プログラムを引き続きリリースします。 このページでは、各月の新しい機能HoloLens確認できます。 最新の更新プログラムHoloLens 2するには、更新プログラムを確認し、[](hololens-update-hololens.md#check-for-updates-and-manually-update)手動で更新するか、フル フラッシュ更新 (FFU) を取得して[、Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device)を使用してデバイスをフラッシュします。 ダウンロード [は](https://aka.ms/hololens2download) 最新の状態に保たれ、一般提供される最新のビルドが提供されます。
+お使いのすべてのデバイスで生産性の高いエクスペリエンスをHoloLens、機能、バグ、およびセキュリティ更新プログラムを引き続きリリースします。 このページでは、各月の新しい機能HoloLens確認できます。 最新の更新プログラムHoloLens 2するには、更新プログラムを確認し、[](hololens-update-hololens.md#check-for-updates-and-manually-update)手動で更新するか、フル フラッシュ更新 (FFU) を取得して Advanced [Recovery Companion](hololens-recovery.md#clean-reflash-the-device)を使用してデバイスをフラッシュします。 ダウンロード [は](https://aka.ms/hololens2download) 最新の状態に保たれ、一般提供される最新のビルドが提供されます。
 
 > [!NOTE]
 > 最近の Windows 11 の発表は、Windows の PC バージョンに重点を置いていました。 マイクロソフトでは、2021 年 5 月に HoloLens 2 に[主要 OS のアップデート](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067)を開始したばかりであり、この秋に向けてお客様からのフィードバックに基づいて今後のリリースに取り組んでいます。
-
-> [!IMPORTANT]
-> Remote Assist ユーザーに影響を与えた[21H1](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes)ビルドで既知の問題が解決されたので、Windows Holographic バージョン 21H1 更新プログラムのオファリングを一時的に一時停止しました。 また、既定の Advanced Recovery Companion (ARC) ビルドを[Windows Holographic バージョン 20H2 – June 2021 Update に変更しました](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update)。 ARC ビルドは、21H1 ビルドを対象として再開されます。
 
 ## <a name="windows-holographic-version-21h1---september-2021-update"></a>WindowsHolographic バージョン 21H1 - 2021 年 9 月の更新プログラム
 
@@ -71,9 +68,9 @@ ms.locfileid: "127985640"
 
 更新プログラムの機能強化と修正:
 
-- デバイス ポータルファイルを開く際に問題が発生した場合にエクスプローラーする方法が強化されています。
+- デバイス ポータルファイルを開く際に問題が発生した場合に顧客に通知エクスプローラー方法が強化されました。
 - サポートされているブラウザーすべてで https を使用すると、ファイルのアップロード、ダウンロード、名前変更、削除が修正されました。
-- Wi-Fi Wi-Fi プロパティ UI 設定 > Network & Status > Status プロパティ から起動すると、> プロキシを保存できない問題 **>修正しました**。
+- Wi-Fi プロパティ UI 設定 > Network & Status > Status > から Wi-Fi プロパティ UI を起動すると、プロキシを保存できない問題 **を修正** しました。 Wi-Fi
 - OS 更新プログラム全体での eSIM 証明書の削除に関する問題に対処しました。 この修正により、21H1 リリースに更新するときに、eSIM 証明書と関連コンポーネントが確実に削除されます。
 - OS のリセット全体でプレインストールされているアプリに影響する問題を修正しました。
 - バッテリ充電のパフォーマンスは、CPU 読み込みを増やして充電するときにランタイムを向上させるチューニングを行いました。 デバイスへのHoloLens 2中に、デバイスがホットな動作を検出した場合、内部バッテリの充電速度が遅くなると、熱が低下します。 肯定的なトレードオフは、温度の問題が原因でデバイスがシャットダウンする可能性が低く、影響を受け、デバイスの実行時間が長くなる点です。 デバイスがクールで実行されている場合、料金は影響を受けません。
@@ -84,25 +81,25 @@ ms.locfileid: "127985640"
 
 更新プログラムの機能強化と修正:
 
-- デバイス ポータルファイルを開く際に問題が発生した場合にエクスプローラーする方法が強化されています。
+- デバイス ポータルファイルを開く際に問題が発生した場合に顧客に通知エクスプローラー方法が強化されました。
 - サポートされているブラウザーすべてで https を使用すると、ファイルのアップロード、ダウンロード、名前変更、削除が修正されました。
 
 ## <a name="windows-holographic-version-21h1---june-2021-update"></a>WindowsHolographic バージョン 21H1 - 2021 年 6 月更新
 
 - ビルド 20348.1007
 
-### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>OneDriveまたは学校のカメラ ロール アップロード用のアプリ
+### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>OneDriveまたは学校のカメラ ロールアップロード用のアプリ
 
-HoloLens 2 設定 アプリに新しい機能が追加されました。これにより、お客様はデバイスの Pictures > Camera Roll フォルダーから、対応する OneDrive for work または school フォルダーに Mixed Reality の写真とビデオを自動的にアップロードできます。 この機能は、HoloLens 2 上の[OneDrive](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos)アプリ内の機能のギャップに対応します。これは、(仕事または学校アカウントではなく) 顧客の個人の Microsoft アカウント へのカメラ ロールの自動アップロードのみをサポートします。
+HoloLens 2 設定 アプリに新しい機能が追加されました。これにより、お客様は、デバイスの Pictures > Camera Roll フォルダーから、対応する仕事用または学校用の OneDrive フォルダーに Mixed Reality の写真とビデオを自動的にアップロードできます。 この機能は、HoloLens 2 上の[OneDrive](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos)アプリ内の機能のギャップに対応します。これは、(仕事または学校アカウントではなく) 顧客の個人の Microsoft アカウント へのカメラ ロールの自動アップロードのみをサポートします。
 
 **動作のしくみ**
 
-- 「設定 > **System > Mixed Reality カメラ」にアクセス** して、"カメラのアップロード" を有効にしてください。
+- 「設定 > **System > Mixed Reality カメラ」に** アクセスして、"カメラのアップロード" を有効にしてください。
 - この機能を [オン] の位置に設定すると、デバイスにキャプチャされた Mixed Reality の写真またはビデオは、自動的にキューに登録され、OneDrive の仕事用または学校アカウント用の Pictures > Camera Roll フォルダーにアップロードされます。
     >[!NOTE]
     >この機能を有効にする前にキャプチャされた写真とビデオは、アップロード用にキューに登録されるのではなく、引き続き手動でアップロードする必要があります。
 - 設定 ページのステータス メッセージには、アップロードが保留中のファイルの数が表示されます (または、保留中のすべてのファイルがアップロードされると "OneDrive is up to date" と読み取ります)。
-- 帯域幅が気になる場合や、何らかの理由でアップロードを "一時停止" したい場合は、機能を [オフ] の位置に **切り替** えます。 この機能を一時的に無効にすると、Camera Roll フォルダーに新しいファイルを追加するとアップロード キューが引き続き増加しますが、機能を再び有効にするまでファイルはアップロードされます。
+- 帯域幅が気になる場合や、何らかの理由でアップロードを "一時停止" したい場合は、機能を [オフ] の位置に **切り替** えます。 この機能を一時的に無効にすると、Camera Roll フォルダーに新しいファイルを追加する間、アップロード キューは引き続き増加しますが、機能を再び有効にするまでファイルはアップロードされます。
 - 最新のファイルが最初にアップロードされます (最後のファイル、最初のファイル)。
 - お使OneDriveアカウントに問題がある場合 (パスワードの変更後など)、[今すぐ修正] ボタンが [設定されます。
 - 最大ファイル サイズはありません。ただし、大きなファイルのアップロードには長い時間がかかる点に注意してください (特にアップロード帯域幅が制限されている場合)。 大きなファイルのアップロード中にアップロードを "一時停止" またはオフにした場合、部分的なアップロードは保持されます。 アップロードが "一時停止" またはオフになってから数時間以内に再び有効になっている場合、アップロードは中断された場所から続行されます。 ただし、数時間後にアップロードが再び有効になっている場合、大きなファイルのアップロードは最初から再開されます。
@@ -111,7 +108,7 @@ HoloLens 2 設定 アプリに新しい機能が追加されました。これ�
 
 - この設定には、現在の帯域幅の使用量に基づく調整は組み込みはありません。 別のシナリオで帯域幅を最大化する必要がある場合は、手動で設定をオフにします。 アップロードは一時停止されますが、この機能はカメラ ロールに新しく追加されたファイルを引き続き監視します。 続行する準備ができたら、アップロードを再び有効にしてください。
 - この機能は、デバイス上の各ユーザー アカウントに対して有効にする必要があります。また、デバイスに現在サインインしているユーザーのファイルのみをアクティブにアップロードできます。
-- 設定 ページのアップロード数をリアルタイムで視聴しながら写真やビデオを撮影している場合は、現在のファイルのアップロードが完了するまで、保留中のファイル数が変更されない可能性があります。
+- 設定 ページのアップロード数をリアルタイムで監視しながら写真やビデオを撮影している場合は、現在のファイルのアップロードが完了するまで、保留中のファイル数が変更されない可能性があります。
 - アップロードがスリープ状態になっている場合、または電源がオフになっている場合は、一時停止します。 保留中のアップロードを確実に完了するには、設定 ページに "OneDrive が最新の状態です" と表示されるまでデバイスをアクティブに使用するか **、Power &** のスリープ設定を調整します。
 
 ### <a name="added-support-for-some-telemetry-policies"></a>一部のテレメトリ ポリシーのサポートを追加しました
@@ -131,7 +128,7 @@ System\AllowTelemetry と System\ConfigureTelemetryOptInSettingsUx の両方を�
 - [電源] メニューでテキストが切り捨てられる可能性がある問題を修正します。
 - RequirePrivateStoreOnly ポリシーのサポートを有効にする。
 
-## <a name="windows-holographic-version-20h2--june-2021-update"></a>WindowsHolographic バージョン 20H2 – 2021 年 6 月の更新プログラム
+## <a name="windows-holographic-version-20h2--june-2021-update"></a>WindowsHolographic バージョン 20H2 – 2021 年 6 月更新
 
 - ビルド 19041.1154
 
@@ -159,11 +156,11 @@ Holographic バージョン 21H1 の最新Windowsをお試しください。
 >[!IMPORTANT]
 > このビルドはサービス提供されなくなりました。
 
-## <a name="windows-holographic-version-21h1"></a>WindowsHolographic、バージョン21H1
+## <a name="windows-holographic-version-21h1"></a>WindowsHolographic バージョン 21H1
 
-- ビルド20346.1002
+- ビルド 20346.1002
 
-この更新プログラムには、2つの対象ユーザーのための機能が含まれています。エンドユーザーによってデバイス上のすべてのユーザーが使用できる機能と、IT 管理者が構成できる新しいデバイス管理オプション。 次の表は、各ユーザーに関連する機能を示しています。 IT 管理者の場合は、 [it 管理者の更新チェックリスト](#it-admin---update-checklist)を参照してください。
+この更新プログラムには、2 つの対象ユーザーの機能が含まれている。エンド ユーザーがデバイス上のだれでも使用できる機能と、IT 管理者が構成できる新しいデバイス管理オプション。 次の表は、各ユーザーに関連する機能を示しています。 IT 管理者の場合は、 [it 管理者の更新チェックリスト](#it-admin---update-checklist)を参照してください。
 >[!IMPORTANT]
 >このビルドに更新するには、HoloLens 2 デバイスが2021年2月の更新プログラム (ビルド 19041.1136) 以降を実行している必要があります。 この機能更新プログラムが利用可能になっていない場合は、まずデバイスを更新してから、もう一度お試しください。
 
@@ -266,11 +263,11 @@ Holographic バージョン 21H1 の最新Windowsをお試しください。
 - 「見て発音する」
 - 印刷
 
-**ブラウザーの上位の既知の問題:**
+**ブラウザーに関する既知の問題:**
 
 - ホログラフィック キーボードの拡大鏡プレビューは、新しい Microsoft Edge では無効になっています。 拡大が正しく機能したら、今後の更新プログラムでこの機能を再び有効にしてください。
 - 別のブラウザー ウィンドウが開いておりアクティブな場合、間違ったブラウザー ウィンドウからオーディオが再生される可能性があります。 この問題を回避するには、オーディオを再生していてはいけない他のアクティブ ウィンドウを閉じます。
-- "フォローする" モードでブラウザー[](hololens2-basic-usage.md#follow-me-stop-following)ウィンドウからオーディオを再生すると、"フォローする" モードを無効にした場合、オーディオは再生を続行します。 この問題を回避するには、"フォローする" モードを無効にする前にオーディオ再生を停止するか **、X** ボタンでウィンドウを閉じます。
+- "フォローする" [モード](hololens2-basic-usage.md#follow-me-stop-following)でブラウザーウィンドウからオーディオを再生するときに、"フォローする" モードを無効にすると、オーディオの再生が続行されます。 この問題を回避するには、"フォローする" モードを無効にする前にオーディオの再生を停止するか、[ **X** ] ボタンを使用してウィンドウを閉じます。
 - アクティブな Microsoft Edge ウィンドウとやりとりすると、他の 2D アプリ ウィンドウが予期せず非アクティブになる可能性があります。 これらのウィンドウは、もう一度操作すれば再アクティブ化できます。
 
 #### <a name="microsoft-edge-insider-channels"></a>Microsoft Edge Insider アイコン
@@ -358,7 +355,7 @@ Microsoft Edge Insider チャネルを HoloLens 2 にインストールするに
 #### <a name="top-webxr-and-360-viewer-known-issues"></a>WebXR と 360 ビューアーの既知の問題
 
 - WebXR エクスペリエンスの複雑さによっては、フレームレートが低下したり、つまずく場合があります。
-- WebXR での多関節手関節のサポートは、既定では有効になっていません。 開発者は、"WebXR ハンド入力" をオンにすることで、 を使用 `edge://flags` してサポートを有効にできます。
+- WebXR での多関節手関節のサポートは、既定では有効になっていません。 開発者は `edge://flags` 、"WebXR 手書き入力" をオンにすることで、を使用してサポートを有効にできます。
 - YouTube 以外の Web サイト 360 本の動画は想定通り動作しない場合があります。
 
 #### <a name="providing-feedback-on-webxr-and-360-viewer"></a>WebXR と 360 ビューアーに関するフィードバックの提供
@@ -367,7 +364,7 @@ Microsoft Edge Insider チャネルを HoloLens 2 にインストールするに
 
 ### <a name="new-settings-app"></a>新しい設定アプリ
 
-このリリースでは、新しいバージョンの新しいバージョンの 設定しています。 新しい設定アプリには、サウンド、電源とスリープ、ネットワークとインターネット、アプリ、アカウント、コンピューターの簡単操作などの領域における HoloLens 2 の新機能と拡張設定が含まれています。
+今回のリリースでは、設定アプリの新しいバージョンが導入されています。 新しい設定アプリには、サウンド、電源とスリープ、ネットワークとインターネット、アプリ、アカウント、コンピューターの簡単操作などの領域における HoloLens 2 の新機能と拡張設定が含まれています。
 
 > [!NOTE]
 > 新しい設定アプリは従来の設定アプリとは別であるため、以前に環境に配置した設定の windows は、更新時に削除されます。
@@ -402,7 +399,7 @@ Microsoft Edge Insider チャネルを HoloLens 2 にインストールするに
 
 #### <a name="display-color-calibration"></a>色の調整を表示する
 
-この新しい設定では、新しい色のプロファイルを選択して、HoloLens 2できます。 これにより、特にディスプレイの明るさが低いレベルで、色が正確に表示される場合があります。 ディスプレイの色の調整は、アプリの [システム設定調整] ページ>確認できます。
+この新しい設定を使用すると、表示する別の色プロファイルをHoloLens 2できます。 これにより、特にディスプレイの明るさが低いレベルで、色が正確に表示される場合があります。 ディスプレイの色の調整は、アプリの [システム設定調整] ページ>確認できます。
 
 > [!NOTE]
 > この設定により、ディスプレイ ファームウェアに新しいカラー プロファイルが保存されるため、デバイスごとの設定になります (各ユーザー アカウントに固有ではありません)。
@@ -440,7 +437,7 @@ HoloLens 2 に保存されたカスタム カラー プロファイルに不満�
 
 #### <a name="top-display-color-calibration-known-issues"></a>最上位のディスプレイの色の調整に関する既知の問題
 
-- [設定] ページで、カラー プロファイルが最後に変更された日時を示すステータス文字列は、そのページのページを再度読み込むまで設定。
+- [設定] ページで、カラー プロファイルが最後に変更された日時を示す状態文字列は、そのページのページを再度読み込むまで設定。
     - 回避策: 別の設定ページを選択し、[調整] ページを再選択します。
 
 #### <a name="default-app-picker"></a>既定のアプリ ピッカー
@@ -459,7 +456,7 @@ HoloLens 2 に保存されたカスタム カラー プロファイルに不満�
 
 #### <a name="swipe-to-type"></a>スワイプして入力する
 
-一部のお客様は、入力する予定の単語の形をスワイプすることで、仮想キーボードで "入力" する方が速く見つかり、ホログラフィック キーボード用にこの機能をプレビューしています。 ホログラフィック キーボードの平面に指のチップを渡し、単語の形をスワイプし、キーボードの平面から指の先を引き出して、一度に 1 つの単語をスワイプできます。 単語と単語の間ではキーボードから指を離せば、スペース バーを押さなくてもフォローアップ ワードをスワイプできます。 キーボード上で指の動きの後にスワイプ の跡が見えれば、機能が動作しているということです。
+一部のお客様は、入力する予定の単語の形をスワイプすることで、仮想キーボードで "入力" する方が速く見つかり、ホログラフィック キーボード用にこの機能をプレビューしています。 ホログラフィック キーボードの平面に指のチップを渡し、単語の形をスワイプし、キーボードの平面から指のチップを引き出して、一度に 1 つの単語をスワイプできます。 単語と単語の間ではキーボードから指を離せば、スペース バーを押さなくてもフォローアップ ワードをスワイプできます。 キーボード上で指の動きの後にスワイプ の跡が見えれば、機能が動作しているということです。
 
 この機能は、(携帯電話のディスプレイとは異なり) 指に抵抗を感じないホログラフィック キーボードの性質上、使い方をマスターするのが難しい場合があります。 
 
@@ -495,7 +492,7 @@ HoloLens 2 に保存されたカスタム カラー プロファイルに不満�
 
 以前は、[サインイン] 画面には、最近サインインしたユーザーと "その他のユーザー" エントリ ポイントだけが表示されました。 複数のユーザーがデバイスにサインインしている場合は、これでは十分ではないというお客様からのフィードバックを受け取っています。 それでも、ユーザー名などを再入力する必要があります。
 
-この Windows ビルドで導入された[PIN エントリ]フィールドの右側にある [その他のユーザー] を選択すると、[サインイン] 画面に、以前にデバイスにサインインしたユーザーが複数表示されます。 これにより、ユーザーは自分のユーザー プロファイルを選択し、自分の資格情報を使用Windows Helloできます。 [アカウントの追加] ボタンを使用して、この [その他のユーザー] ページからデバイスに新しい **ユーザーを追加** することもできます。
+この Windows ビルドで導入された[PIN エントリ]フィールドの右側にある [その他のユーザー] を選択すると、[サインイン] 画面に、以前にデバイスにサインインしたユーザーが複数表示されます。 これにより、ユーザーは自分のユーザー プロファイルを選択し、資格情報を使用してサインインWindows Helloできます。 [アカウントの追加] ボタンを使用して、この [その他のユーザー] ページからデバイスに新しい **ユーザーを追加** することもできます。
 
 [その他のユーザー] メニューの [その他のユーザー] ボタンには、デバイスにサインインした最後のユーザーが表示されます。 このボタンを選択すると、このユーザーのサインイン画面に戻ります。
 
@@ -508,7 +505,7 @@ HoloLens 2 に保存されたカスタム カラー プロファイルに不満�
 ### <a name="usb-c-external-microphone-support"></a>USB-C 外部マイクのサポート
 
 > [!IMPORTANT]
-> USB マイクを **接続すると、入力デバイス として自動的に設定されません**。 一連の USB C ヘッドホンに接続すると、ヘッドホンのオーディオがヘッドホンに自動的にリダイレクトされることがユーザーに確認されますが、HoloLens OS は、他の入力デバイスの上にある内部マイク配列の優先順位を設定します。 **USB-C マイクを使用するには、次の手順に従います。**
+> USB マイクを **接続すると、入力デバイス として自動的に設定されません**。 USB-C の一連のヘッドセットを接続すると、ユーザーは、ヘッドセットのオーディオが自動的にヘッドセットにリダイレクトされるのを確認しますが、HoloLens OS では、他の入力デバイスよりも内部マイク 配列の優先順位が優先されます。 **USB-C マイクを使用するには、次の手順に従います。**
 
 ユーザーは、 **[サウンド]** 設定パネルを使用して USB-C 接続外部マイク を 選択できます。 USB-C マイクは、通話や録音などに使用できます。
 
@@ -531,121 +528,121 @@ HoloLens 2 に保存されたカスタム カラー プロファイルに不満�
 
 #### <a name="what-about-bluetooth-microphone-support"></a>Bluetooth のマイクのサポートについてはどうですか?
 
-残念ながら Bluetooth マイクは現在も HoloLens 2 ではサポートされていません。
+残念Bluetooth、マイクは現在、デバイスでHoloLens 2。
 
-#### <a name="troubleshooting-usb-c-microphones"></a>USB C マイクのトラブルシューティング
+#### <a name="troubleshooting-usb-c-microphones"></a>USB-C マイクのトラブルシューティング
 
-USB C のマイクによっては、マイク *と* スピーカーの両方として誤って報告されることに注意してください。 これは、HoloLens ではなく、マイクに問題があります。 これらのマイクの1つを HoloLens に接続すると、サウンドが失われる可能性があります。 幸いにも、簡単な修正があります。  
+一部の USB-C マイクでは、マイクとスピーカーの両方として誤って報告される *点に* 注意してください。 これはマイクの問題であり、マイクには問題HoloLens。 これらのマイクの 1 つをデバイスに接続HoloLens音が失われる可能性があります。 さいわい、簡単な修正があります。  
 
-**設定**  >  **システム**  >  **サウンド** で、組み込みのスピーカー **(アナログ機能オーディオドライバー)** を **既定のデバイス** として明示的に設定します。 マイクが取り外され、後で再接続された場合でも、HoloLens はこの設定を記憶する必要があります。
+**[設定** サウンド] で、組み込みのスピーカー (アナログ機能オーディオ ドライバー) を既定のデバイス として明示的  >    >  **に設定します**。  HoloLensマイクが削除され、後で再接続された場合でも、この設定を覚えておく必要があります。
 
-![USB C マイクのトラブルシューティング。](images/usbc-mic-4.png)
+![USB-C マイクのトラブルシューティング。](images/usbc-mic-4.png)
 
 ### <a name="visitor-auto-logon-for-kiosks"></a>キオスクのビジター自動ログオン
 
-この新機能により、ビジターアカウントの自動ログオンがキオスクモードで使用できるようになります。
+この新機能により、キオスク モードでビジター アカウントの自動ログオンを使用できます。
 
-AAD 以外の構成の場合、訪問者の自動ログオン用にデバイスを構成するには、次のようにします。
+AAD 以外の構成の場合は、訪問者の自動ログオン用にデバイスを構成します。
 
-1. 次のようなプロビジョニングパッケージを作成します。
-    1. ユーザーアカウントを許可するように **ランタイム設定/AssignedAccess** を構成します。
-    1. 必要に応じて、後で管理できるように MDM **(ランタイム設定/ワークプレース/登録)** にデバイスを登録します。
-    1. ローカルアカウントを作成しない
-1. [プロビジョニングパッケージを適用](hololens-provisioning.md)します。
+1. 次のプロビジョニング パッケージを作成します。
+    1. ビジター アカウント **を許可するランタイム設定/AssignedAccess** を構成します。
+    1. 後で管理できるよう、必要に応じてデバイスを MDM **(ランタイム設定/ワークプレース/登録)** に登録します。
+    1. ローカル アカウントを作成しない
+1. [プロビジョニング パッケージ を適用します](hololens-provisioning.md)。
 
-AAD 構成の場合、ユーザーはこの変更を行わずに、このような問題を解決することができます。 キオスクモード用に構成された AAD 参加済みデバイスは、サインイン画面からボタンを1回タップするだけで、ビジターアカウントにサインインできます。 ビジターアカウントにサインインすると、ユーザーが [スタート] メニューから明示的にサインアウトするか、デバイスが再起動されるまで、もう一度サインインするように求められることはありません。
+AAD 構成の場合、ユーザーは、この変更を行わずに、現在、このようなことを実現できます。 キオスク モード用に構成された AAD 参加済みデバイスは、サインイン画面から 1 つのボタン タップで Visitor アカウントにサインインできます。 ビジター アカウントにサインインすると、ビジターがスタート メニューから明示的にサインアウトするか、デバイスが再起動されるまで、デバイスは再度サインインを求めるメッセージを表示しません。
 
-ビジター自動ログオンは、 [カスタム oma-uri](/mem/intune/configuration/custom-settings-windows-10) ポリシーを使用して管理できます。
+ビジター自動ログオンは、カスタム [OMA-URI ポリシーを使用して管理](/mem/intune/configuration/custom-settings-windows-10) できます。
 
-- URI 値:./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
+- URI 値: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
 | ポリシー  | 説明   | 構成  |
 |---|---|---|
-| MixedReality/VisitorAutoLogon  | 訪問者がキオスクに自動ログオンすることを許可します   | 1 (はい)、0 (いいえ、既定値)  |
+| MixedReality/VisitorAutoLogon  | キオスクへの訪問者の自動ログオンを許可する   | 1 (はい)、0 (いいえ、既定値)。  |
 
-### <a name="use-the-new-settings-and-edge-apps-in-kiosk-modes"></a>キオスクモードでの新しい設定とエッジアプリの使用
+### <a name="use-the-new-settings-and-edge-apps-in-kiosk-modes"></a>キオスク モードで新しい 設定 Edge アプリを使用する
 
-[キオスク](hololens-kiosk.md)にアプリを含めると、多くの場合、It 管理者はアプリをキオスクに追加しますが、アプリユーザーモデル ID (AUMID) を使用します。 設定アプリと Microsoft Edge アプリは両方とも新しいアプリと見なされるため、これらのアプリで AUMIDs を使用する古いアプリキオスクとは異なるものとして、新しい AUMID を使用するように更新する必要があります。
+キオスクにアプリを [含めた](hololens-kiosk.md)場合、IT 管理者は多くの場合、キオスクにアプリを追加しますが、アプリ ユーザー モデル ID (AUMID) を使用します。 設定 アプリと Microsoft Edge アプリの両方が新しいアプリと見なされ、それらのアプリに AUMID を使用する古いアプリ キオスクとは異なるので、新しい AUMID を使用するには更新する必要があります。
 
-新しいアプリを含めるようにキオスクを変更する場合は、新しい AUMID にを追加することをお勧めします。 これにより、ユーザーが OS を更新するときに簡単に移行できるようになります。また、意図したとおりにキオスクを使用し続けるために新しいポリシーを受け取る必要はありません。
+キオスクを変更して新しいアプリを含める場合は、新しい AUMID に を追加し、古いアプリを残することをお勧めします。 これにより、ユーザーが OS を更新するときに簡単に切り替わるので、キオスクを意図した方法で使用し続ける新しいポリシーを受け取る必要がなされます。
 
 | アプリ                    | AUMID                                                  |
 |------------------------|--------------------------------------------------------|
-| 古い設定アプリ       | HolographicSystemSettings_cw5n1h2txyewy!アプリケーション            |
-| 新しい設定アプリ       | BAEAEF15-9BAB-47 FC-800B-ACECAD2AE94B_cw5n1h2txyewy!アプリケーション |
-| 古い Microsoft Edge アプリ | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge    |
-| 新しい Microsoft Edge アプリ | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE    |
+| 古い 設定 アプリ       | HolographicSystemSettings_cw5n1h2txyewy!アプリ            |
+| 新設定 アプリ       | BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy!アプリ |
+| 古Microsoft Edgeアプリ | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge    |
+| 新Microsoft Edgeアプリ | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE    |
 
-### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>キオスクモードでのエラー処理の動作変更
+### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>エラー処理のためのキオスク モードの動作の変更
 
-以前のビルドでは、グローバルに割り当てられたアクセスと AAD グループメンバーの両方を組み合わせたキオスク構成がデバイスにある場合、AAD グループのメンバーシップの確認に失敗すると、ユーザーには [スタート] メニュー[に表示](hololens-kiosk.md#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)されないものが表示されます。
+以前のビルドでは、デバイスにキオスク構成 (グローバル割り当てアクセスと AAD グループ メンバー割り当てアクセスの両方の組み合わせ) がある場合、AAD[](hololens-kiosk.md#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode)グループ メンバーシップが失敗したと判断すると、ユーザーには "何も表示されません" メニューが表示されます。
 
-この Windows リリース以降、AAD グループキオスクモードでのエラーが発生した場合、キオスクエクスペリエンスはグローバルキオスク構成 (存在する場合) にフォールバックします。
+このリリースWindows、AAD グループ キオスク モード中に障害が発生した場合、キオスク エクスペリエンスはグローバル キオスク構成 (存在する場合) にフォールバックします。
 
-### <a name="new-settings-uris-for-page-settings-visibility"></a>ページ設定表示用の新しい設定 uri
+### <a name="new-settings-uris-for-page-settings-visibility"></a>ページ設定可視性の新しい 設定 URI
 
-[Windows Holographic のバージョン 20h2](hololens-release-notes.md#windows-holographic-version-20h2)では、設定アプリ内で表示されるページを制限する[設定/PageVisibilityList ポリシー](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)を追加しました。 PageVisibilityList は、IT 管理者がシステム設定アプリの特定のページを表示またはアクセスできないようにしたり、または指定されたページ以外のすべてのページで同様に行うことを許可するポリシーです。
+[Holographic Windowsバージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2)では[、設定/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)ポリシーを追加して、設定 アプリ内に表示されるページを制限しました。 PageVisibilityList は、IT 管理者がシステム設定アプリの特定のページを表示またはアクセスできないようにしたり、または指定されたページ以外のすべてのページで同様に行うことを許可するポリシーです。
 
-[ページ設定表示](settings-uri-list.md)にアクセスする場合は、この CSP を使用する手順と、以前のリリースで使用可能な uri の一覧を確認できます。
+[Page[設定 Visibility] に](settings-uri-list.md)アクセスする場合は、この CSP を使用する手順と、以前のリリースで使用できる URI の一覧を確認できます。
 
-ここでは、IT 管理者が管理できる、使用可能な設定 uri の一覧について説明します。 これらの Uri の一部は、新しい設定アプリ内で新しく利用できる領域用です。 設定/PageVisibilityList ポリシーを使用している場合は、次の一覧を確認し、許可または禁止されているページを必要に応じて調整します。
+IT 管理者が管理できる利用可能な設定 URI の一覧を拡張しています。 これらの URI の一部は、新しいアプリ内で新しく使用可能な領域設定されています。 設定/PageVisibilityList ポリシーを使用している場合は、次の一覧を確認し、必要に応じて許可またはブロックされたページを調整します。
 
 > [!NOTE]
-> **非推奨: ms 設定: ネットワーク-プロキシ**
+> **非推奨: ms-settings:network-proxy**
 >
-> これらの新しいビルドでは、1つの設定ページが非推奨とされます。 [古い **ネットワーク & のインターネット**  >  **プロキシ**] ページは、グローバル設定として使用できなくなりました。 接続ごとの新しいプロキシ設定は、[**ネットワーク & インターネット**  >  **wi-fi**  >  **プロパティ**] または [**ネットワーク & インターネット**  >  **イーサネット** のプロパティ] にあり  >  ます。
+> これらの新しいビルドでは、1 つの設定ページが非推奨とされます。 古い **[ネットワーク & インターネット**  >  **プロキシ]** ページは、グローバル設定として使用できなくなりました。 新しい接続ごとのプロキシ設定は、[ネットワーク]の [インターネット の Wi-Fi プロパティ] & [ネットワーク] [インターネット イーサネットのプロパティ] &  >    >  **で**  >  **確認**  >  **できます**。
 
 <br>
 
 | [設定] ページ                                        | URI                                              |
 |------------------------------------------------------|--------------------------------------------------|
-| アプリ > アプリの & 機能                               | `ms-settings:appsfeatures`                         |
-| アプリ > アプリ & 機能 > 詳細オプション          | `ms-settings:appsfeatures-app`                     |
-| オフラインマップ > アプリ                                  | `ms-settings:maps`                                 |
-| アプリ > オフラインマップ > ダウンロードマップ                  | `ms-settings:maps-downloadmaps`                    |
-| マウス > デバイス                                      | `ms-settings:mouse`                                |
-| USB > デバイス                                        | `ms-settings:usb`                                  |
-| ネットワーク & インターネット > 機内モード                   | `ms-settings:network-airplanemode`                 |
-| プライバシー > 全般                                    | `ms-settings:privacy-general`                      |
-| プライバシー > インク & 個人設定の入力             | `ms-settings:privacy-speechtyping`                 |
-| プライバシー > モーション                                     | `ms-settings:privacy-motion`                       |
-| プライバシー > スクリーンショットの枠線                         | `ms-settings:privacy-graphicsCaptureWithoutBorder` |
-| プライバシー > スクリーンショットとアプリ                       | `ms-settings:privacy-graphicsCaptureProgrammatic`  |
+| Apps > Apps & 機能                               | `ms-settings:appsfeatures`                         |
+| Apps > Apps &機能>詳細オプション          | `ms-settings:appsfeatures-app`                     |
+| オフライン >アプリ                                  | `ms-settings:maps`                                 |
+| オフライン >アプリとダウンロード > マップ                  | `ms-settings:maps-downloadmaps`                    |
+| デバイス > マウス                                      | `ms-settings:mouse`                                |
+| USB >デバイス                                        | `ms-settings:usb`                                  |
+| ネットワーク & インターネット >フライト モード                   | `ms-settings:network-airplanemode`                 |
+| プライバシー>全般                                    | `ms-settings:privacy-general`                      |
+| プライバシー > Ink &入力パーソナル化             | `ms-settings:privacy-speechtyping`                 |
+| Privacy > Motion                                     | `ms-settings:privacy-motion`                       |
+| プライバシー>スクリーンショットの境界線                         | `ms-settings:privacy-graphicsCaptureWithoutBorder` |
+| プライバシー>スクリーンショットとアプリ                       | `ms-settings:privacy-graphicsCaptureProgrammatic`  |
 | システム > バッテリ                                     | `ms-settings:batterysaver`                         |
 | システム > バッテリ                                     | `ms-settings:batterysaver-settings`                |
-| システム > サウンド                                       | `ms-settings:sound`                                |
-| システム > サウンド > アプリのボリュームとデバイスの基本設定 | `ms-settings:apps-volume`                          |
-| システム > サウンド > サウンドデバイスの管理              | `ms-settings:sound-devices`                        |
-| システム > Storage > Storage Sense の構成         | `ms-settings:storagepolicies`                      |
-| 時刻 & 言語 > 日付 & 時刻                        | `ms-settings:dateandtime`                          |
-| 時刻 & 言語 > キーボード                           | `ms-settings:keyboard`                             |
-| 時刻 & 言語 > 言語                           | `ms-settings:language`                             |
-| 時刻 & 言語 > 言語                           | `ms-settings:regionlanguage-languageoptions`       |
-| 更新 & セキュリティ > リセット & 回復               | `ms-settings:reset`                                |
+| System > Sound                                       | `ms-settings:sound`                                |
+| System > Sound > アプリのボリュームとデバイスの基本設定 | `ms-settings:apps-volume`                          |
+| System > Sound > サウンド デバイスの管理              | `ms-settings:sound-devices`                        |
+| System > Storage > Configure Storage Sense         | `ms-settings:storagepolicies`                      |
+| Time & Language > Date & time                        | `ms-settings:dateandtime`                          |
+| Time & Language > Keyboard                           | `ms-settings:keyboard`                             |
+| Time & Language > Language                           | `ms-settings:language`                             |
+| Time & Language > Language                           | `ms-settings:regionlanguage-languageoptions`       |
+| セキュリティ &の更新>回復&リセット               | `ms-settings:reset`                                |
 
-#### <a name="updated-uris"></a>更新された Uri
+#### <a name="updated-uris"></a>更新された URI
 
-以前は、次の2つの Uri は、指定されたページに直接ユーザーを移動しませんが、メイン更新ページはブロックされています。 次の項目が更新され、ページに直接移動しました。
+以前は、次の 2 つの URI は、指定されたページにユーザーを直接移動するのではなく、メインの更新ページのみをブロックしました。 ページに移動するために、次の項目が更新されました。
 
 - `ms-settings:windowsupdate-options`
 - `ms-settings:windowsupdate-restartoptions`
 
-### <a name="configuring-fallback-diagnostics-via-settings-app"></a>設定アプリを使用したフォールバック診断の構成
+### <a name="configuring-fallback-diagnostics-via-settings-app"></a>アプリを使用したフォールバック診断設定構成
 
-現在設定アプリでは、ユーザーは[フォールバック診断](hololens-diagnostic-logs.md)の動作を構成できます。 [アプリ] 設定プライバシーのトラブルシューティング  >  **ページに移動** して、この設定を構成します。
+アプリの設定、ユーザーはフォールバック診断 の動作[を構成できます](hololens-diagnostic-logs.md)。 [アプリ] 設定プライバシーのトラブルシューティング  >  **ページに移動** して、この設定を構成します。
 
 > [!NOTE]
 > デバイスに対して MDM ポリシーが構成されている場合、ユーザーは、その動作をオーバーライドできます。  
 
 ### <a name="share-things-with-nearby-devices"></a>近くのデバイスと共有する
 
-PC と他のデバイスの両方をWindows 10、近くのデバイスとHoloLens 2します。 「システム共有エクスペリエンス」**で設定** を試して、ファイルまたは URL を HoloLens  >    >   PC に共有できます。 詳細については、 で近くのデバイスと情報を共有する方法[に関するページをWindows 10。](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)
+PC と他のデバイスの両方Windows 10など、近くのデバイスとHoloLens 2します。 システム共有エクスペリエンスで試 **設定** して、ファイルまたは URL を HoloLens  >    >   PC に共有できます。 詳細については、「 で近くのデバイスと物を共有する方法」[を参照Windows 10。](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)
 
 この機能は [、Connectivity/AllowConnectedDevices を使用して管理できます](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices)。
 
 ### <a name="new-os-diagnostic-traces"></a>新しい OS 診断トレース
 
-設定 アプリ内の以前のトラブルシューティング ツールに加えて、新しいトラブルシューティング ツールが追加され、OS 更新用の新しい 設定 アプリが追加されました。 [Update Security **Troubleshoot 設定**  >  **&amp; Update]** に  >  **移動し**  >  **Windowsを選択****します**。 これにより、OS の更新に関する問題を再現しながらトレースを収集し、IT またはサポートのトラブルシューティングに役立ちます。
+設定 アプリ内の以前のトラブルシューティング ツールに加えて、新しいトラブルシューティング ツールが追加され、OS 更新用の新しい 設定 アプリが追加されました。 [Update Security **Troubleshoot 設定**  >  **&amp; Update]** に  >  **移動し**  >  **Windowsを** 選択 **します**。 これにより、OS の更新に関する問題を再現しながらトレースを収集し、IT またはサポートのトラブルシューティングに役立ちます。
 
 ### <a name="delivery-optimization-preview"></a>配信の最適化のプレビュー
 
@@ -680,7 +677,7 @@ PC と他のデバイスの両方をWindows 10、近くのデバイスとHoloLen
 
 ✔️ [**モードの新しいアプリの新しい AUMID を選択します**](#use-the-new-settings-and-edge-apps-in-kiosk-modes)。
 
-以前にキオスクで 設定 アプリまたは Microsoft Edge アプリを使用していた場合は、これらのアプリを別のアプリ ID を使用する新しいアプリに置き換えました。 以下のキオスク モードの新しい [アプリの新しい AUMID を読み取することを強くお勧](#use-the-new-settings-and-edge-apps-in-kiosk-modes) めしています。 これにより、キオスクで引き続き設定アプリを使用するか、新しいアプリをMicrosoft Edgeできます。 これらの変更を今すぐ実行し、すべてのデバイスに展開して、更新時の移行をスムーズに行えます。
+以前にキオスクで 設定 アプリまたは Microsoft Edge アプリを使用していた場合は、これらのアプリを別のアプリ ID を使用する新しいアプリに置き換えました。 以下のキオスク モードで新しい [アプリの新しい AUMID を読み取る方法を強くお勧](#use-the-new-settings-and-edge-apps-in-kiosk-modes) めしています。 これにより、キオスクで引き続き設定アプリを使用するか、新しいアプリをMicrosoft Edgeできます。 これらの変更を今すぐ実行し、すべてのデバイスに展開して、更新時の移行をスムーズに行えます。
 
 ✔️ [**キオスクのビジター自動ログオン**](#visitor-auto-logon-for-kiosks):
 
@@ -690,7 +687,7 @@ PC と他のデバイスの両方をWindows 10、近くのデバイスとHoloLen
 
 サインインしている AAD ユーザーの AAD グループ メンバーシップが正常に決定されない場合は、グローバル キオスク構成がスタート メニューに使用されます (存在する場合)。 それ以外の場合、ユーザーには空のスタート メニューが表示されます。 空のスタート メニューは直接設定できる構成ではありません。この新しい処理は、キオスクを使用している場合、構成に適用される場合や、割り当てられたアクセス構成に対して新しい調整を行う場合など、サポート部門に通知する必要がある場合があります。
 
-#### <a name="updates-to-page-settings-visibility"></a>ページの可視性の設定更新
+#### <a name="updates-to-page-settings-visibility"></a>ページの可視性設定更新
 
 ✔️ [**の表示設定の新しい 設定 URI**](#new-settings-uris-for-page-settings-visibility)
 
@@ -710,7 +707,7 @@ PC と他のデバイスの両方をWindows 10、近くのデバイスとHoloLen
 
 ✔️[近くのデバイスと共有する](#share-things-with-nearby-devices): 近くの新しい共有機能を無効にできます。
 
-✔️[のポリシー設定の構成](#configuring-policy-settings-for-the-new-microsoft-edge): Microsoft Edgeに使用できる新しい構成を確認Microsoft Edge。
+✔️[のポリシー設定の構成](#configuring-policy-settings-for-the-new-microsoft-edge): Microsoft Edgeで使用できる新しい構成を確認Microsoft Edge。
 
 #### <a name="new-diagnostic-tool"></a>新しい診断ツール
 
@@ -742,7 +739,7 @@ PC と他のデバイスの両方をWindows 10、近くのデバイスとHoloLen
 
 - この毎月の品質更新プログラムには、重要な変更は含め "一切" は含め " ではありません。 **このビルドでは、毎月のサービス更新プログラム が受信されなくなりました**。 Holographic バージョン 21H1 の最新Windowsをお試しください。
 
-## <a name="windows-holographic-version-20h2---april-2021-update"></a>WindowsHolographic バージョン 20H2 - 2021 年 4 月の更新プログラム
+## <a name="windows-holographic-version-20h2---april-2021-update"></a>WindowsHolographic バージョン 20H2 - 2021 年 4 月更新
 
 - ビルド 19041.1144
 
@@ -777,7 +774,7 @@ PC と他のデバイスの両方をWindows 10、近くのデバイスとHoloLen
 
 - デバイス ポータル Service のメモリ リークを修正しました。この問題により、他のアプリケーションがメモリの割り当てに失敗する原因となるサービスによるメモリ使用量が増加しました。
 
-## <a name="windows-holographic-version-20h2---february-2021-update"></a>WindowsHolographic バージョン 20H2 - 2021 年 2 月更新
+## <a name="windows-holographic-version-20h2---february-2021-update"></a>WindowsHolographic バージョン 20H2 - 2021 年 2 月の更新プログラム
 
 - ビルド 19041.1136
 
@@ -791,7 +788,7 @@ PC と他のデバイスの両方をWindows 10、近くのデバイスとHoloLen
 
 - ビルド 18362.1098
 
-この毎月の品質更新プログラムには、重要な変更は含まれているのではなく、Windows Holographic バージョン 2004 の最新のビルドをお試しください。
+この毎月の品質更新プログラムには、重要な変更は含められないので、Windows Holographic バージョン 2004 の最新のビルドを試しに行ってみ事をお勧めしています。
 
 ## <a name="windows-holographic-version-20h2---january-2021-update"></a>WindowsHolographic バージョン 20H2 - 2021 年 1 月更新
 
@@ -806,13 +803,13 @@ PC と他のデバイスの両方をWindows 10、近くのデバイスとHoloLen
 
 - ビルド 18362.1091
 
-この毎月の品質更新プログラムには、重要な変更は含まれているのではなく、Windows Holographic バージョン 2004 の最新のビルドをお試しください。
+この毎月の品質更新プログラムには、重要な変更は含められないので、Windows Holographic バージョン 2004 の最新のビルドを試しに行ってみ事をお勧めしています。
 
 ## <a name="windows-holographic-version-20h2--december-2020-update"></a>WindowsHolographic バージョン 20H2 – 2020 年 12 月の更新プログラム
 
 - ビルド 19041.1131
 
-### <a name="install-apps-on-hololens-2-via-app-installer"></a>アプリ インストーラー 経由でアプリを HoloLens 2 にインストールアプリ インストーラー
+### <a name="install-apps-on-hololens-2-via-app-installer"></a>HoloLens 2 経由でアプリをインストールアプリ インストーラー
 
 新しい **機能 (アプリ インストーラー)** を追加して、アプリケーションをデバイスにシームレスにインストールHoloLens 2しています。 この機能は、アン **マネージド デバイスでは既定でオンになります**。 企業の中断を防ぐために、現時点では、マネージド デバイスでアプリ インストーラー **を** 使用できません。  
 
@@ -822,15 +819,15 @@ PC と他のデバイスの両方をWindows 10、近くのデバイスとHoloLen
 - プロビジョニング パッケージ [を使用して構成する](hololens-provisioning.md)
 - ユーザー [ID が](hololens-identity.md) Azure AD
 
-開発者モードを有効にしたり、アプリを使用したりせずにアプリをインストールデバイス ポータル。  (USB 経由または Edge 経由で) Appx バンドルをデバイスにダウンロードし、エクスプローラー の Appx バンドルに移動するだけで、インストールを開始するように求めるメッセージが表示されます。  または、Web [ページ からインストールを開始します](/windows/msix/app-installer/installing-windows10-apps-web)。  mdm の LOB アプリ展開機能を使用して Microsoft Store またはサイドロードからインストールするアプリと同様に、アプリは署名ツールでデジタル[](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)署名する必要があります[](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations)。また、アプリを展開する前に、署名に使用される証明書が HoloLens デバイスによって信頼されている必要があります。
+開発者モードを有効にしたり、アプリを使用したりせずにアプリをインストールデバイス ポータル。  (USB 経由または Edge 経由で) Appx バンドルをデバイスにダウンロードし、エクスプローラー の Appx バンドルに移動するだけで、インストールを開始するように求めるメッセージが表示されます。  または、Web [ページ からインストールを開始します](/windows/msix/app-installer/installing-windows10-apps-web)。  MDM の LOB アプリ展開機能を使用して Microsoft Store またはサイドロードからインストールするアプリと同様に、アプリは署名ツールでデジタル[](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)署名する必要があります[](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations)。また、アプリを展開する前に、署名に使用される証明書が HoloLens デバイスによって信頼されている必要があります。
 
 **アプリケーションのインストール手順。**
 
 1. デバイスが管理対象と見なされていないことを確認する
 1. デバイスの電源HoloLens 2 PC に接続されていることを確認します
-1. デバイスにサインイン済みHoloLens 2する
+1. デバイスにサインインHoloLens 2する
 1. PC でカスタム アプリに移動し、yourapp.appxbundle を yourdevicename\Internal Storage\Downloads にコピーします。   ファイルのコピーが完了したら、デバイスを切断できます
-1. デバイスからHoloLens 2スタート メニューを開き、[すべてのアプリ] を選択し、アプリのエクスプローラーします。
+1. デバイスからHoloLens 2スタート メニューを開き、[すべてのアプリ] を選択し、アプリを起動エクスプローラーします。
 1. [ダウンロード] フォルダーに移動します。 アプリの左側のパネルで、[このデバイス] を最初に選択し、[ダウンロード] に移動する必要があります。
 1. yourapp.appxbundle ファイルを選択します。
 1. このアプリ インストーラーが起動します。 [インストール] ボタンを選択して、アプリをインストールします。
@@ -840,12 +837,12 @@ PC と他のデバイスの両方をWindows 10、近くのデバイスとHoloLen
 
 を使用してアプリをインストール[するプロセスの詳細については、HoloLens 2を参照アプリ インストーラー。](app-deploy-app-installer.md)  
 
-![を使用した MRTK のインストールアプリ インストーラー。](images/hololens-app-installer-picture.jpg)
+![を使用した MRTK のアプリ インストーラー。](images/hololens-app-installer-picture.jpg)
 
 ### <a name="improvements-and-fixes-in-the-update"></a>更新プログラムの機能強化と修正:
 
 - 手の追跡では、以前に手が失われた可能性がある多くの新しいケースで追跡が維持されます。  これらの新しいケースの一部では、手のひらの位置だけがユーザーの実際の手に基づいて更新され続け、もう一方の関節は前の姿勢に基づいて推論されます。  この変更は、スラップ、スロー、傾斜、アプリの適用などの動きの追跡の一貫性を向上させるのに役立ちます。  また、手が表面に近い場合やオブジェクトを保持している場合にも役立ちます。  手の関節が推論されている場合 [、関節ごとの](/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) 精度の値は 、"高" ではなく "近似" に設定されます。
-- アカウントの PIN のリセットでAzure ADが表示される問題を修正しました。
+- アカウントの PIN リセットで、Azure ADが表示される問題を修正しました。
 - ET、Iris を設定アプリ、新しいユーザー、または通知トーストから起動すると、起動後の OOBE クラッシュがはるかに少なく表示される必要があります。
 - ユーザーは、OOBE から正しいタイム ゾーンが出てくる必要があります。
 
@@ -859,9 +856,9 @@ PC と他のデバイスの両方をWindows 10、近くのデバイスとHoloLen
 
 - ビルド 19041.1128
 
-WindowsHolographic バージョン 20H2 が利用可能にされ、ユーザーや IT プロフェッショナルにHoloLens 2機能のセットが追加されました。 自動目の配置から、設定 の証明書マネージャー、キオスク モードの機能の向上、および新しい Autopilot セットアップ機能まで。 この新しい更新により、IT チームは、HoloLens デバイスの構成と管理をきめ細かく制御し、ユーザーにさらにシームレスなホログラフィック エクスペリエンスを提供できます。
+WindowsHolographic バージョン 20H2 が利用可能にされ、ユーザーや IT プロフェッショナルにHoloLens 2機能のセットが提供されます。 自動目のポジショニングから、設定 の証明書マネージャー、キオスク モード機能の向上、および新しい Autopilot セットアップ機能まで。 この新しい更新により、IT チームは、HoloLens デバイスの構成と管理をきめ細かく制御し、ユーザーにさらにシームレスなホログラフィック エクスペリエンスを提供できます。
 
-この最新リリースは、バージョン 2004 の月次更新プログラムですが、今回は新機能が含まれる予定です。 メジャー ビルド番号は変わりません。Windows Update では、バージョン 2004 (ビルド 19041) への月次リリースが示されます。 [バージョン情報] 画面で [ビルド番号] を設定 >、利用可能な最新のビルド 19041.1128 以上を確認できます。 最新リリースに更新するには、設定 アプリを開き、[& Security の更新] に移動して、[更新プログラムの確認] をタップします。 更新プログラムを管理する方法の詳細については、「更新プログラムHoloLens管理[する」をHoloLensしてください](hololens-updates.md)。
+この最新リリースは、バージョン 2004 の月次更新プログラムですが、今回は新機能が含まれる予定です。 メジャー ビルド番号は変わりません。Windows Update は、バージョン 2004 (ビルド 19041) への月次リリースを示します。 [バージョン情報] 画面で [ビルド番号] を設定 >、利用可能な最新のビルド 19041.1128 以上を確認できます。 最新リリースに更新するには、設定 アプリを開き、[& Security の更新] に移動して、[更新プログラムの確認] をタップします。 更新プログラムを管理する方法の詳細については、「更新プログラムHoloLens管理する[」をHoloLensしてください](hololens-updates.md)。
 
 ### <a name="whats-new-in-windows-holographic-version-20h2"></a>Holographic バージョン 20H2 Windowsの新機能  
 
@@ -872,7 +869,7 @@ WindowsHolographic バージョン 20H2 が利用可能にされ、ユーザー�
 | [USB からの自動起動プロビジョニング](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | USB ドライブにパッケージをプロビジョニングすると、OOBE のプロビジョニング ページが自動的に表示されます。                                                         |
 | [OOBE でのプロビジョニング パッケージの自動確認](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | プロビジョニング パッケージは、プロビジョニング ページから OOBE 中に自動的に適用されます。                                                         |
 | [UI を使用しない自動プロビジョニング](hololens-release-notes.md#automatic-provisioning-without-using-ui) | プロビジョニングの自動起動と自動確認を組み合わせる方法。 |
-| [Autopilot を使用して接続Wi-Fiする](hololens-release-notes.md#using-autopilot-with-wi-fi-connection) | イーサネット アダプターを必要とせずにWi-Fiデバイスからオートパイロットを使用します。 |
+| [Autopilot を使用して接続Wi-Fiする](hololens-release-notes.md#using-autopilot-with-wi-fi-connection) | イーサネット アダプターを必要とせずに、デバイスWi-Fiオートパイロットを使用します。 |
 | [Tenantlockdown CSP と Autopilot](hololens-release-notes.md#tenantlockdown-csp-and-autopilot)                     | テナントの登録とポリシーが適用された後は、デバイスがリセットまたは再フラッシュされた場合にのみ、そのテナントにデバイスを登録できます。 |
 | [グローバル割り当てアクセス](hololens-release-notes.md#global-assigned-access--kiosk-mode)                               | システム レベルでキオスクを適用し、すべてのユーザーに適用できる、複数のアプリ キオスク モードの新しい構成方法。                  |
 | [マルチアプリ キオスクでアプリを自動起動する](hololens-release-notes.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                | 複数アプリキオスク モードにサインインするときに自動的に起動するアプリケーションを設定します。                                                        |
@@ -882,18 +879,18 @@ WindowsHolographic バージョン 20H2 が利用可能にされ、ユーザー�
 | [デバイスの新しい制限ポリシー HoloLens 2](hololens-release-notes.md#new-device-restriction-policies-for-hololens-2)       | デバイス管理ポリシーが新しく有効になっていると、HoloLens 2。                                                                                |
 | [新しい電源ポリシーのHoloLens 2](hololens-release-notes.md#new-power-policies-for-hololens-2)       | 電源タイムアウト設定で新しくサポートされたポリシー。  |
 | [ポリシーの更新](hololens-release-notes.md#newly-enabled-update-policies-for-hololens)        | 更新プログラムの制御を許可する新しく有効にされたポリシー。           |
-| [データ設定ページの表示を有効HoloLens 2](hololens-release-notes.md#enabled-settings-page-visibility-for-hololens-2)      | アプリに表示されるページを選択設定ポリシー。             |
+| [ページ設定表示を有効HoloLens 2](hololens-release-notes.md#enabled-settings-page-visibility-for-hololens-2)      | アプリに表示されるページを選択設定ポリシー。             |
 | [調査モード](hololens-release-notes.md#research-mode) | 調査モードを使用HoloLens 2。 |
-| [記録長の増加](hololens-release-notes.md#recording-length-increased) | MRC の記録は 5 分に制限されなくなりました。 |
+| [記録の長さが増加しました](hololens-release-notes.md#recording-length-increased) | MRC の記録は 5 分に制限されなくなりました。 |
 | [更新プログラムの機能強化と修正](hololens-release-notes.md#improvements-and-fixes-in-the-update)                 | 更新プログラムの追加の修正。   |
 
 ### <a name="auto-eye-position-support"></a>視線の自動調整サポート
 
-このHoloLens 2、目の位置を使用すると、正確なホログラムの配置、快適な表示エクスペリエンス、および表示品質の向上が可能になります。 視線は、視線追跡計算の一部として内部的に計算されます。 ただし、これには、エクスペリエンスで視線の入力が必要ない場合でも、各ユーザーが視線追跡の調整を実行する必要があります。
+HoloLens 2 では、正確なホログラムの配置、快適な表示エクスペリエンス、表示品質の向上を実現します。 視線は、視線追跡計算の一部として内部的に計算されます。 ただし、これには、エクスペリエンスで視線の入力が必要ない場合でも、各ユーザーが視線追跡の調整を実行する必要があります。
 
-**視線の自動調整 (AEP)** は、ユーザーの目の位置を計算するための操作のない方法でこれらのシナリオを可能にします。 自動目の位置は、ユーザーがデバイスを置いた瞬間から自動的にバックグラウンドで作業を開始します。 ユーザーが前の目追跡の調整を行っていない場合、自動目の位置は、20 - 30 秒の処理時間の後に、表示システムにユーザーの目の位置を提供し始める。 ユーザー データはデバイスに保持されません。そのため、ユーザーが離れてデバイスを再度起動した場合、またはデバイスが再起動またはスリープからウェイクアップした場合は、このプロセスが繰り返されます。
+**視線の自動調整 (AEP)** は、ユーザーの目の位置を計算するための操作のない方法でこれらのシナリオを可能にします。 自動目の位置は、ユーザーがデバイスを配置した時点から、バックグラウンドで自動的に動作を開始します。 ユーザーが以前の目の追跡の調整を行っていない場合は、20-30 秒の処理時間が経過すると、ユーザーの視点がディスプレイシステムに提供されるようになります。 ユーザーデータはデバイスに保存されないため、このプロセスは、ユーザーが電源を切ってデバイスを戻すか、デバイスを再起動するか、スリープ状態から復帰した場合に繰り返されます。
 
-調整されていないユーザーがデバイスを装着した場合、視線の自動調整機能によるシステム動作の変更がいくつかあります。 このコンテキストでは、未調整のユーザーは、以前にデバイスで目の追跡の調整プロセスを実行していないユーザーを指します。
+調整されていないユーザーがデバイスを装着した場合、視線の自動調整機能によるシステム動作の変更がいくつかあります。 このコンテキストでは、uncalibrated ユーザーが、以前にデバイスで目の追跡調整プロセスを実行していないユーザーを指しています。
 
 | アクティブなアプリケーション | 以前の動作 | Windows Holographic、バージョン 20H2 アップデートからの動作 |
 |:-------------------|:-----------------|:-----------------------------------|
@@ -902,98 +899,98 @@ WindowsHolographic バージョン 20H2 が利用可能にされ、ユーザー�
 
 ユーザーが非視線対応アプリケーションから視線データにアクセスするアプリケーションに移行すると、調整プロンプトが表示されます。
 
-他のすべてのシステム動作は、現在のユーザーがアクティブな目追跡調整を行っていない場合と似ています。 たとえば、One-handed Start ジェスチャは有効になりません。 初期設定の既定のエクスペリエンスに変更はありません。
+その他のすべてのシステム動作は、現在のユーザーに対して、現在のユーザーが目に見た追跡の調整を行っていない場合と同様になります。 たとえば、ワンききの開始ジェスチャは有効になりません。 初期設定の既定のエクスペリエンスに変更はありません。
 
-目の視線入力データまたは非常に正確なホログラムの配置を必要とするエクスペリエンスの場合は、未調整のユーザーに視線追跡の調整を実行することをお勧めします。 これは、目の追跡の調整プロンプトから、またはスタート メニューから 設定 アプリを起動し **、[System > Calibration > Eye Calibration > Run eye calibration**] を選択することでアクセスできます。
+視線データを必要とするエクスペリエンスや、正確にホログラムを配置する必要がある経験については、ユーザーが視線追跡の調整を実行することを uncalibrated ことをお勧めします。 これには、視線追跡の調整のプロンプトからアクセスするか、[スタート] メニューから設定アプリを起動し、[**システム > の調整] >**[目の調整] をクリックして目の調整を > ます。
 
-この情報は、後で他の調整 [情報 と一緒に確認できます](hololens-calibration.md#auto-eye-position-support)。
+この情報については、後で [その他の調整情報](hololens-calibration.md#auto-eye-position-support)を参照してください。
 
 ### <a name="certificate-manager"></a>証明書マネージャー
 
-- 新しい証明書マネージャーを使用して、デバイスのセキュリティとコンプライアンスのための監査、診断、検証ツールが改善されました。 この機能を使用すると、商用環境で大規模に証明書を展開、トラブルシューティング、検証できます。
+- 新しい証明書マネージャーを使用した、デバイスのセキュリティとコンプライアンスのための監査、診断、検証のツールが改善されました。 この機能により、商用環境で大規模に証明書をデプロイ、トラブルシューティング、および検証することができます。
 
-Holographic Windows 20H2 では、証明書マネージャーをアプリにHoloLens 2 設定しています。 [Update **設定 > Security & Certificates >に移動します**。 この機能を使用すると、デバイス上の証明書を表示、インストール、削除する簡単で使い分け的な方法が提供されます。 新しい証明書マネージャーにより、管理者とユーザーは、デバイスのセキュリティと準拠を維持するために、監査、診断、検証ツールが改善されました。
+Windows Holographic バージョン20h2 では、HoloLens 2 設定アプリに証明書マネージャーを追加しています。 設定にアクセスして **& セキュリティ > 証明書を更新 >** ます。 この機能は、デバイス上の証明書を表示、インストール、削除するための簡単でわかりやすい方法を提供します。 新しい証明書マネージャーを使用すると、管理者とユーザーは、デバイスが安全で準拠していることを確認するための監査、診断、検証のツールが改善されました。
 
-- **監査:** 証明書が正しく展開されていることを検証する機能、または証明書が適切に削除されていることを確認する機能。
-- **診断:** 問題が発生した場合は、デバイスに適切な証明書が存在する場合は、時間を節約し、トラブルシューティングに役立ちます。
-- **検証:** 証明書が目的の目的に対応し、機能することを確認すると、特に商用環境で大規模に証明書を展開する前に、かなりの時間を節約できます。
+- **監査:** 証明書が正しく展開されていることを検証したり、適切に削除されたことを確認したりする機能。
+- **診断:** 問題が発生した場合、デバイスに適切な証明書が存在することを検証すると、時間が節約され、トラブルシューティングに役立ちます。
+- **検証:** 証明書が意図した目的を果たし、機能していることを確認することにより、証明書を大規模に展開する前に、特に商用環境においてかなりの時間を節約することができます。
 
-一覧内の特定の証明書をすばやく検索するには、名前、ストア、または有効期限で並べ替えるオプションがあります。 ユーザーは証明書を直接検索することもできます。 個々の証明書のプロパティを表示するには、証明書を選択し、[情報] を **クリックします**。
+リスト内の特定の証明書をすばやく検索するには、名前、ストア、または有効期限の日付で並べ替えるオプションがあります。 ユーザーは、証明書を直接検索することもできます。 個々の証明書のプロパティを表示するには、証明書を選択し、[ **情報**] をクリックします。
 
-証明書のインストールでは現在、.cer ファイルと .crt ファイルがサポートされています。 デバイス所有者は、ローカル コンピューターと現在のユーザーに証明書をインストールできます。 他のすべてのユーザーは、現在のユーザーにのみインストールできます。 ユーザーは、UI から直接インストールされた証明書設定できます。 証明書が他の方法でインストールされている場合は、同じメカニズムでも削除する必要があります。
+証明書のインストールでは、.cer ファイルと .crt ファイルが現在サポートされています。 デバイスの所有者は、ローカルコンピューターと現在のユーザーに証明書をインストールできます。 他のすべてのユーザーは、現在のユーザーにのみインストールできます。 ユーザーは、設定 UI から直接インストールされた証明書のみを削除できます。 証明書が他の方法でインストールされている場合は、同じメカニズムでも削除する必要があります。
 
 #### <a name="steps-to-install-a-certificate"></a>証明書をインストールする手順
 
-1. Connect PC HoloLens 2に接続します。
-1. インストールする証明書ファイルを、自分の証明書ファイルの場所にHoloLens 2。
-1. [App 設定 **Update > Security & Certificates >]** に移動し、[証明書のインストール] を選択します。
-1. [ **ファイルのインポート]** をクリックし、証明書を保存した場所に移動します。
-1. [ストア **の場所] を選択します**。
-1. [証明書 **ストア] を選択します**。
+1. HoloLens 2 を PC に Connect します。
+1. インストールする証明書ファイルを HoloLens 2 の場所に配置します。
+1. 設定アプリに移動して **& セキュリティ > 証明書を更新 >**、[証明書のインストール] を選択します。
+1. [ **ファイルのインポート** ] をクリックし、証明書を保存した場所に移動します。
+1. [ **ストアの場所**] を選択します。
+1. [ **証明書ストア**] を選択します。
 1. **[インストール]** をクリックします。
 
 これで、証明書がデバイスにインストールされます。
 
 #### <a name="steps-to-remove-a-certificate"></a>証明書を削除する手順
 
-1. [App 設定 **Update and Security > Certificates]** に移動>します。
-1. 検索ボックスで名前で証明書を検索します。
+1. **設定アプリ > 更新プログラムとセキュリティ > 証明書** に移動します。
+1. 検索ボックスで、名前を指定して証明書を検索します。
 1. 証明書を選択します。
-1. [削除] **をクリックします。**
+1. [**削除**] をクリック
 1. 確認を求められたら、 **[はい]** を選択します。
 
-![アプリの証明書ビューアー設定します。](images/certificate-viewer-device.jpg)
+![設定アプリの証明書ビューアー。](images/certificate-viewer-device.jpg)
 
-![証明書 UI を使用して証明書をインストールする方法を示す図。](images/certificate-device-install.jpg)
+![証明書 UI を使用して証明書をインストールする方法を示す画像。](images/certificate-device-install.jpg)
 
-この情報は、後で新 [しい [証明書マネージャー] ページで確認できます](certificate-manager.md)。
+この情報は、後で [新しい [証明書マネージャー] ページで](certificate-manager.md)確認できます。
 
-### <a name="auto-launch-provisioning-from-usb"></a>USB からの自動起動プロビジョニング
+### <a name="auto-launch-provisioning-from-usb"></a>USB からのプロビジョニングの自動起動
 
-- OOBE 中にプロビジョニング パッケージを備えた USB ドライブが使用されている場合、ユーザーの操作を減らして自動化されたプロセス。
+- プロビジョニングパッケージのある USB ドライブが OOBE 中に使用される場合に、ユーザー操作を減らすことができる自動プロセス。
 
-このリリースより前は、ユーザーは、ボタンの組み合わせを使用してプロビジョニングするために、OOBE 中にプロビジョニング画面を手動で起動する必要があります。 これで、ユーザーは USB ストレージ ドライブ上のプロビジョニング パッケージを使用して、ボタンの組み合わせをスキップできます。
+このリリースの前に、ユーザーは、OOBE 中にボタンの組み合わせを使用してプロビジョニング画面を手動で起動する必要がありました。 これで、ユーザーは USB ストレージドライブでプロビジョニングパッケージを使用して、ボタンの組み合わせをスキップできるようになりました。
 
-1. OOBE の最初の対話可能な瞬間にプロビジョニング パッケージを使用して USB ドライブを接続する
-1. デバイスをプロビジョニングする準備ができたら、プロビジョニング ページが表示されたプロンプトが自動的に開きます。
+1. OOBE の最初の対話型モーメント中に、プロビジョニングパッケージを使用して USB ドライブにプラグインする
+1. デバイスをプロビジョニングする準備が整うと、[プロビジョニング] ページでプロンプトが自動的に開きます。
 
-注: デバイスの起動中に USB ドライブが接続された状態の場合、OOBE は既存の USB ストレージ デバイスを列挙し、追加の USB ストレージ デバイスが接続されているのを監視します。
+注: デバイスの起動中に USB ドライブが接続されたままになっている場合、OOBE は既存の USB 記憶装置を列挙し、接続されている追加のデバイスを監視します。
 
-OOBE 中にプロビジョニング パッケージを適用する方法の詳細については、プロビジョニングに関するドキュメント[HoloLens参照](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)してください。
+OOBE 中にプロビジョニングパッケージを適用する方法の詳細については、 [HoloLens プロビジョニング](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)に関するドキュメントを参照してください。
 
-USB からの[自動起動プロビジョニングに関](hololens-provisioning.md#auto-launch-provisioning-from-usb)する追加情報については、プロビジョニングに関するドキュメントHoloLens参照してください。
+[USB からの自動起動のプロビジョニング](hololens-provisioning.md#auto-launch-provisioning-from-usb)に関する追加情報については、HoloLens プロビジョニングに関するドキュメントを参照してください。
 
-### <a name="auto-confirm-provisioning-packages-in-oobe"></a>OOBE でのプロビジョニング パッケージの自動確認
+### <a name="auto-confirm-provisioning-packages-in-oobe"></a>OOBE でのプロビジョニングパッケージの自動確認
 
-- [プロビジョニング パッケージ] ページが表示されている場合、ユーザーの操作を減らして自動プロセスを実行すると、一覧に表示されているすべてのパッケージが自動的に適用されます。
+- 自動プロセスでは、ユーザーの操作を減らすことができます。 [プロビジョニングパッケージ] ページが表示されると、一覧にあるすべてのパッケージが自動的に適用されます。
 
-プロビジョニングのメイン画面が表示された場合、OOBE は、すべてのプロビジョニング パッケージの適用を自動的に開始する前に、10 秒をカウントダウンします。 ユーザーは、 [期待したパッケージを](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe) 確認した後も、この 10 時間以内に確認または取り消しを行います。
+プロビジョニングのメイン画面が表示されると、OOBE は、すべてのプロビジョニングパッケージの適用が自動的に開始されるまで10秒後にカウントされます。 ユーザーは、必要なパッケージを確認した後、この10秒以内に [確認または取り消し](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe) を行うことができます。
 
 ### <a name="automatic-provisioning-without-using-ui"></a>UI を使用しない自動プロビジョニング
 
-- プロビジョニングのためのデバイスの操作を減らした自動プロセスを組み合わせたもの。
+- プロビジョニングのためにデバイスの相互作用を削減するための自動プロセスを結合しました。
 
-USB デバイスからのプロビジョニングの自動起動とプロビジョニング パッケージの自動確認を組み合わせることで、ユーザーはデバイスの UI を使用したり、デバイスを装着したりすることなく、HoloLens 2 デバイスを自動的にプロビジョニングできます。 複数のデバイスに対して同じ USB ドライブとプロビジョニング パッケージを引き続き使用できます。 これは、同じ領域に複数のデバイスを一度に展開する場合に便利です。
+USB デバイスからのプロビジョニングの自動起動とプロビジョニングパッケージの自動確認を組み合わせることによって、ユーザーは、デバイスの UI を使用したり、デバイスを装着したりせずに HoloLens 2 デバイスを自動的にプロビジョニングできます。 複数のデバイスに同じ USB ドライブとプロビジョニングパッケージを使用し続けることができます。 これは、複数のデバイスを同じ領域に一度に展開する場合に便利です。
 
-1. [構成デザイナー を使用してプロビジョニング](hololens-provisioning.md) [Windows作成します](https://www.microsoft.com/store/productId/9NBLGGH4TX22)。
-1. パッケージを USB ストレージ ドライブにコピーします。
-1. [19041.1361](https://aka.ms/hololens2previewdownload)[以降HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions)ビルド にフラッシュします。
-1. Advanced [Recovery Companion で](https://www.microsoft.com/store/productId/9P74Z35SFRS8) デバイスのフラッシュが完了したら、USB-C ケーブルを取り外します。
+1. [Windows 構成デザイナー](https://www.microsoft.com/store/productId/9NBLGGH4TX22)を使用して[、プロビジョニングパッケージを作成](hololens-provisioning.md)します。
+1. パッケージを USB ストレージドライブにコピーします。
+1. [HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions)を[19041.1361 またはそれ以降のビルド](https://aka.ms/hololens2previewdownload)にフラッシュします。
+1. [Advanced Recovery コンパニオン](https://www.microsoft.com/store/productId/9P74Z35SFRS8)が完了したら、USB C ケーブルを取り外します。
 1. USB ドライブをデバイスに接続します。
-1. デバイスが HoloLens 2 OOBE に起動すると、USB ドライブ上のプロビジョニング パッケージが自動的に検出され、プロビジョニング ページが起動します。
-1. 10 秒後、デバイスによってプロビジョニング パッケージが自動的に適用されます。
+1. HoloLens 2 デバイスが OOBE で起動すると、USB ドライブ上のプロビジョニングパッケージが自動的に検出され、[プロビジョニング] ページが起動します。
+1. 10秒後に、デバイスはプロビジョニングパッケージを自動的に適用します。
 
-これでデバイスが構成され、[プロビジョニングに成功 [しました] 画面が表示されます](hololens-provisioning.md#automatic-provisioning-without-using-ui)。
+デバイスが構成され、[ [プロビジョニングが成功しました] 画面が表示](hololens-provisioning.md#automatic-provisioning-without-using-ui)されます。
 
-### <a name="using-autopilot-with-wi-fi-connection"></a>Autopilot と接続を使用Wi-Fiする
+### <a name="using-autopilot-with-wi-fi-connection"></a>Wi-Fi 接続での自動操縦の使用
 
-- 接続されているデバイスで Autopilot が機能する機能を有効にすることで、ハードウェアのニーズを減らすイーサネットに USB-C アダプターWi-Fi必要が取り除かれました。
+- Wi-Fi 接続されたデバイスで自動操縦が機能するようにすることで、ハードウェアのニーズを軽減するために、USB-C アダプターをイーサネットにする必要がなくなりました。
 
-OOBE 中に、Wi-Fi HoloLens 2接続すると、OOBE によってデバイスの Autopilot プロファイルが確認されます。 見つかった場合は、AAD 参加フローと登録フローの残りの部分を完了するために使用されます。 つまり、USB-C または Wi-Fi から USB-C アダプターへのイーサネットの使用は要件ではなくなりましたが、OOBE の開始時に提供されている場合は引き続き機能します。 デバイスの[Autopilot の詳細については、HoloLens 2してください](hololens2-autopilot.md)。
+oobe の実行中に HoloLens 2 を wi-fi に接続すると、oobe によってデバイスの自動操縦プロファイルが確認されます。 検出された場合は、AAD 参加および登録フローの残りの部分を完了するために使用されます。 つまり、イーサネットを USB-C または Wi-Fi USB-C アダプターに使用することは、もはや必須ではありませんが、OOBE の開始時に提供される場合は引き続き機能します。 [HoloLens 2 デバイスの自動操縦の](hololens2-autopilot.md)詳細については、こちらをご覧ください。
 
 ### <a name="tenantlockdown-csp-and-autopilot"></a>Tenantlockdown CSP と Autopilot
 
-- デバイスのリセットまたは再フラッシュを使用しても、デバイスをテナントにロックすることで、組織のテナント上のデバイスを保持します。 プロビジョニングによってでアカウントの作成を禁止することで、セキュリティを強化します。
+- デバイスをリセットまたは更新することによっても、テナントにデバイスをロックすることによって、組織のテナントのデバイスを保持します。 プロビジョニングによってでアカウントの作成を禁止することで、セキュリティを強化します。
 
 HoloLens 2 デバイスは、 [Windows Holographic バージョン 20h2](hololens-release-notes.md#windows-holographic-version-20h2)の時点で tenantlockdown CSP をサポートするようになりました。
 
@@ -1025,7 +1022,7 @@ Intune ポータルで、デバイス構成が正常に適用されているこ�
 
 1. 上で作成したデバイス構成が以前に割り当てられていたデバイス グループから HoloLens 2 を削除します。
 
-1. 次に示すように、OMA URI ベースのカスタムデバイス構成プロファイルを作成し、RequireNetworkInOOBE に false を指定します。
+1. 以下に示すように、カスタム OMA URI ベースのデバイス構成プロファイルを作成し、RequireNetworkInOOBE に false を指定します。
 OMA-URI 値は ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE である必要があります
 
    > [!div class="mx-imgBorder"]
@@ -1043,19 +1040,19 @@ OOBE は、Autopilot プロファイルがダウンロードされるのを無�
 
 ![ポリシーがデバイスに適用される時のデバイス内ビュー。](images/hololens-autopilot-lockdown.png)
 
-この情報は、 [Tenantlockdown CSP および自動操縦](hololens2-autopilot.md#tenant-lockdown-csp-and-autopilot)の残りの自動操縦と共に見つかりました。
+この情報は [、Tenantlockdown CSP と Autopilot](hololens2-autopilot.md#tenant-lockdown-csp-and-autopilot)の下にある Autopilot の残りの部分と共に確認できます。
 
-### <a name="global-assigned-access--kiosk-mode"></a>グローバルに割り当てられたアクセス: キオスクモード
+### <a name="global-assigned-access--kiosk-mode"></a>グローバル割り当てアクセス – キオスク モード
 
-- キオスクモードをシステムレベルで適用する新しいキオスク方法を有効にすることにより、キオスクの Id 管理を減らしました。
+- システム レベルでキオスク モードを適用する新しいキオスク 方法を有効にすることで、キオスクの ID 管理を減らしました。
 
-この新機能により、IT 管理者は、システムレベルで適用可能な複数のアプリキオスクモード用の HoloLens 2 デバイスを構成し、システム上の id との関係はなく、デバイスにサインインするすべてのユーザーに適用することができます。 この新機能の詳細については[HoloLens キオスクモード](hololens-kiosk.md)」を参照してください。
+この新機能を使用すると、IT 管理者は、システム レベルで適用できる複数のアプリ キオスク モード用に HoloLens 2 デバイスを構成できます。システム上の ID とのアフィニティは持たず、デバイスにサインインするすべてのユーザーに適用されます。 この新機能の詳細については、キオスク モード[の](hololens-kiosk.md)HoloLensしてください。
 
-### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>マルチアプリキオスクモードでのアプリケーションの自動起動
+### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>複数アプリキオスク モードでのアプリケーションの自動起動
 
-- アプリの自動起動に焦点を合わせ、キオスクモードエクスペリエンス用に選択された UI とアプリの選択範囲をさらに増やしています。
+- アプリの自動起動に重点を置いてエクスペリエンスを向上し、キオスク モード エクスペリエンス用に選択された UI とアプリの選択をさらに増やします。
 
-マルチアプリキオスクモードにのみ適用され、[割り当てられたアクセス構成] の下の強調表示された属性を使用して、1つのアプリのみを自動起動するように指定できます。
+複数アプリキオスク モードにのみ適用され、割り当て済みアクセス構成で以下の強調表示された属性を使用して、1 つのアプリのみを自動起動に指定できます。
 
 ユーザーがサインインすると、アプリケーションが自動的に起動されます。
 
@@ -1064,79 +1061,79 @@ OOBE は、Autopilot プロファイルがダウンロードされるのを無�
     <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
-### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>キオスクモードでのエラー処理の動作変更
+### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>エラー処理のためのキオスク モードの動作の変更
 
-- キオスクモードのエラーで利用可能なアプリを排除することで、より安全なキオスクモード。
+- キオスク モードのエラーで使用可能なアプリを排除することで、より安全なキオスク モード。
 
-キオスクモードの適用中にエラーが発生した場合は、HoloLens [スタート] メニューのすべてのアプリケーションを表示するために使用されます。 Holographic バージョン20h2 でエラーが発生した場合は、次のように [スタート] メニューにアプリが表示されなくなり Windows ます。
+以前は、キオスク モードの適用でエラーが発生した場合、HoloLensすべてのアプリケーションを [スタート] メニューに表示するために使用されました。 これで、Windows Holographic バージョン 20H2 でエラーが発生した場合、次のようにスタート メニューにアプリが表示されません。
 
-![キオスクモードが失敗したときにどのように表示されるかを示した画像。](images/hololens-kiosk-failure-behavior.png )
+![失敗したときのキオスク モードの画像。](images/hololens-kiosk-failure-behavior.png )
 
 ### <a name="hololens-policies"></a>HoloLensポリシー
 
-- デバイスを管理するために作成された HoloLens 専用のデバイス管理オプション。
+- デバイス管理オプションは、デバイスHoloLens専用に作成されます。
 
-Windows Holographic バージョン20h2 の HoloLens 2 デバイスに対して、新しい mixed reality ポリシーが作成されました。 新しい制御可能な設定には、明るさの設定、音量の設定、混合 reality キャプチャでのオーディオ記録の無効化、診断が収集されるタイミングの設定、AAD グループメンバーシップキャッシュなどがあります。  
+Holographic バージョン 20H2 の HoloLens 2デバイス用Windows Mixed Reality ポリシーが新しく作成されました。 新しい制御可能な設定には、明るさの設定、ボリュームの設定、Mixed Reality キャプチャでのオーディオ記録の無効化、診断を収集できる時間の設定、AAD グループ メンバーシップ キャッシュが含まれます。  
 
-| 新しい HoloLens ポリシー                                | 説明                                                                               | メモ                                                                |
+| 新HoloLensポリシー                                | 説明                                                                               | Notes                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| MixedReality\BrightnessButtonDisabled              | 明るさのボタンを無効にして、押したときに明るさを変更しないようにします。       | 1 Yes、0 No (既定値)                                                |
-| MixedReality\VolumeButtonDisabled                  | ボリュームボタンを無効にして、押しても音量を変更できないようにします。               | 1 Yes、0 No (既定値)                                                |
-| MixedReality\MicrophoneDisabled                    | マイクを無効にして HoloLens 2 でオーディオの記録を実行できないようにします。                      | 1 Yes、0 No (既定値)                                                |
-| MixedReality\FallbackDiagnostics                   | 診断ログを収集できるタイミングを制御します。                               | 0無効、デバイス所有者に対しては1が有効、すべての場合は 2 (既定) |
-| MixedReality\HeadTrackingMode                      | 将来使用するために予約されています。                                                                  |                                                                      |
-| MixedReality\AADGroupMembershipCacheValidityInDays | グループメンバーシップのキャッシュを使用して、Azure AD グループを対象とするキオスクの Azure AD 日数を制御します。 | 以下を参照してください。                                                           |
+| MixedReality\BrightnessButtonDisabled              | 明るさボタンを無効にし、ボタンを押しても明るさが変わらないよう許可します。       | 1 はい、0 はい (既定値)                                                |
+| MixedReality\VolumeButtonDisabled                  | ボリューム ボタンを無効にし、ボタンを押してもボリュームが変更されません。               | 1 はい、0 はい (既定値)                                                |
+| MixedReality\MicrophoneDisabled                    | マイクを無効にして、オーディオ録音を行HoloLens 2。                      | 1 はい、0 はい (既定値)                                                |
+| MixedReality\FallbackDiagnostics                   | 診断ログを収集できる場合の動作を制御します。                               | 0 無効、1 デバイス所有者に対して有効、2 すべて有効 (既定) |
+| MixedReality\HeadTrackingMode                      | 将来利用するために予約されています。                                                                  |                                                                      |
+| MixedReality\AADGroupMembershipCacheValidityInDays | キオスクがグループを対象Azure ADに使用されるグループ メンバーシップ キャッシュの日数Azure AD制御します。 | 以下を参照してください。                                                           |
 
-### <a name="cache-azure-ad-group-membership-for-offline-kiosk"></a>オフラインキオスクのキャッシュ Azure AD グループメンバーシップ
+### <a name="cache-azure-ad-group-membership-for-offline-kiosk"></a>オフライン キオスクAzure ADグループ メンバーシップをキャッシュする
 
-- オフラインキオスクは、最大60日間、AAD グループで使用できます。
+- オフライン キオスクを AAD グループで最大 60 日間使用できます。
 
-このポリシーでは、サインインしているユーザーのグループ Azure AD グループを対象とする割り当てられたアクセス構成で、Azure AD グループメンバーシップキャッシュを使用できる日数を制御します。 このポリシー値が0より大きい値に設定されている場合は、キャッシュが使用されます。  
+このポリシーでは、サインインしたユーザーの Azure AD グループを対象とする割り当てアクセス構成に対して、Azure AD Azure AD グループ メンバーシップ キャッシュを使用できる日数を制御します。 このポリシー値が 0 より大きい値にのみ設定されている場合は、キャッシュが使用されます。それ以外の場合は使用されません。  
 
-名前: AADGroupMembershipCacheValidityInDays URI 値:./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+名前: AADGroupMembershipCacheValidityInDays URI 値: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
-最小-0 日  
-最大-60 日
+最小 - 0 日  
+最大 - 60 日
 
-このポリシーを正しく使用するための手順:
+このポリシーを正しく使用する手順:
 
-1. Azure AD グループを対象とするキオスク用のデバイス構成プロファイルを作成し、HoloLens デバイスに割り当てます。
-1. カスタム oma-uri ベースのデバイス構成を作成します。この構成では、このポリシー値が必要な日数 (> 0) に設定され、HoloLens デバイスに割り当てられます。
-    1. URI 値は、/Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays のように OMA-URI テキストボックスに入力する必要があります。
-    1. 許容される最小値と最大値の間の値を指定できます。
-1. HoloLens デバイスを登録し、両方の構成がデバイスに適用されていることを確認します。
-1. インターネットが利用可能なときにユーザー1のサインインを Azure AD し、ユーザーのサインインと Azure AD グループのメンバーシップが正常に確認されると、キャッシュが作成されます。
-1. これで Azure AD ユーザー1がオフライン HoloLens して、ポリシー値で X 日の日数が許可されている限り、キオスクモードで使用できるようになりました。
-1. 手順 4. と 5. は、他の Azure AD ユーザー N に対して繰り返すことができます。ここで重要なのは、Azure AD ユーザーは、少なくとも1回、キオスク構成の対象となる Azure AD グループのメンバーであることを確認できるように、インターネットを使用してデバイスにサインインする必要があるという点です。
+1. デバイス グループを対象とするキオスク用のデバイス構成プロファイルをAzure ADし、デバイスに割HoloLens割り当てる。
+1. このポリシー値を必要な日数 (> 0) に設定し、HoloLens デバイスに割り当てるカスタム OMA URI ベースのデバイス構成を作成します。
+    1. URI の値は、./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays として OMA-URI テキスト ボックスに入力する必要があります。
+    1. 値は、min または max allowed の間で指定できます。
+1. デバイスHoloLens登録し、両方の構成がデバイスに適用されるのを確認します。
+1. インターネットAzure ADユーザー 1 のサインインを許可し、ユーザーがサインインし、Azure AD グループ メンバーシップが正常に確認されると、キャッシュが作成されます。
+1. これでAzure AD 1 はオフラインHoloLens、ポリシー値で X 日が許可されている限り、キオスク モードで使用できます。
+1. 手順 4 と 5 は、他の Azure AD ユーザー N に対して繰り返し実行できます。ここで重要な点は、すべての Azure AD ユーザーがインターネットを使用してデバイスにサインインする必要がある点です。少なくとも 1 回は、キオスク構成の対象となる Azure AD グループのメンバーと判断できます。
 
 > [!NOTE]
-> 手順 4. を実行すると Azure AD ユーザーに対して、"切断" 環境に記載されているエラー動作が発生します。
+> 手順 4. が実行されるまで、ユーザー Azure AD"切断" 環境で説明されているエラー動作が発生します。
 
-### <a name="new-device-restriction-policies-for-hololens-2"></a>HoloLens 2 の新しいデバイス制限ポリシー
+### <a name="new-device-restriction-policies-for-hololens-2"></a>デバイスの新しい制限ポリシー HoloLens 2
 
-- プロビジョニングパッケージの追加や削除をブロックするなど、特定のデバイス管理ポリシーをユーザーが管理できるようにします。
+- プロビジョニング パッケージの追加または削除をブロックするなどの特定のデバイス管理ポリシーをユーザーが管理できます。
 
-新しく有効になったポリシーにより、HoloLens 2 デバイスの管理オプションを追加できるようになりました。
+新しく有効にしたポリシー。このポリシーを使用すると、デバイスの管理オプションHoloLens 2できます。
 
 - [AllowAddProvisioningPackage](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage)
 - [ConfigureTimeZone](/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
 - [RemoteLock](/windows/client-management/mdm/remotelock-csp)
 
-この2つの新しいポリシー Allowaddのパッケージと Allowremoveのパッケージは、 [一般的なデバイスの制限](hololens-common-device-restrictions.md)に追加されています。
+AllowAddProvisioningPackage と AllowRemoveProvisioningPackage のこれら 2 つの新しいポリシーが、一般的なデバイス制限 に [追加されています](hololens-common-device-restrictions.md)。
 
 > [!NOTE]
-> [remotelock](/windows/client-management/mdm/remotelock-csp)に関しては、HoloLens は/Vendor/MSFT/RemoteLock/Lock 構成のみをサポートします。 リセットや回復などの PIN を処理する構成はサポートされていません。
+> [RemoteLock に関して](/windows/client-management/mdm/remotelock-csp)、HoloLensは ./Vendor/MSFT/RemoteLock/Lock 構成のみをサポートします。 リセットや回復などの PIN を処理する構成はサポートされていません。
 
-### <a name="new-power-policies-for-hololens-2"></a>HoloLens 2 の新しい電源ポリシー
+### <a name="new-power-policies-for-hololens-2"></a>新しい電源ポリシーのHoloLens 2
 
-- 電源ポリシーを使用してスリープまたはロックを HoloLens する場合のその他のオプション。
+- 電源ポリシーを使用してHoloLensまたはロックする場合のその他のオプション。
 
-これらの新しく追加されたポリシーにより、管理者はアイドルタイムアウトなどの電源状態を制御できるようになります。 個々のポリシーの詳細を確認するには、そのポリシーのリンクをクリックしてください。
+これらの新しく追加されたポリシーを使用すると、管理者はアイドル タイムアウトなどの電源状態を制御できます。 個々のポリシーの詳細については、そのポリシーのリンクをクリックしてください。
 
-|     ポリシードキュメントのリンク                |     メモ                                                                                                                                       |
+|     ポリシー ドキュメント のリンク                |     Notes                                                                                                                                       |
 |----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Windows 構成デザイナーで使用する値の例を次に示します。`<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     構成デザイナーでWindows使用する値の例。つまり、`<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
 |     [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Windows 構成デザイナーで使用する値の例を次に示します。`<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
 |     [EnergySaverBatteryThresholdOnBattery](/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Windows 構成デザイナーで使用する値の例 (100)                                                                             |
 |     [EnergySaverBatteryThresholdPluggedIn](/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Windows 構成デザイナーで使用する値の例 (100)                                                                          |
@@ -1369,34 +1366,34 @@ WindowsHoloLens 2 の自動操縦機能により、デバイスの販売チャ�
 
 一部のユーザーは、職場または学校の環境で HoloLens デバイスを他のユーザーと共有します。 このため、ユーザーが長いユーザー名とパスワードを入力しなくても簡単に実行できるようにすることが重要です。 高速 id オンライン (FIDO) を使用すると、組織内のすべてのユーザー (Azure AD テナント) は、ユーザー名やパスワードを入力しなくても HoloLens にシームレスにサインインできます。
 
-FIDO2 セキュリティキーは、"unphishable" 標準ベースのパスワードなし認証方法であり、任意のフォームファクターで使用できます。 FIDO は、パスワードレス認証のオープン標準です。 これにより、ユーザーと組織は、ユーザー名やパスワードを使用せずにリソースにサインインできます。 代わりに、外部セキュリティ キーまたはデバイスに組み込みのプラットフォーム キーを使用します。
+FIDO2 セキュリティキーは、"unphishable" 標準ベースのパスワードなし認証方法であり、任意のフォームファクターで使用できます。 FIDO は、パスワードなし認証用のオープンスタンダードです。 これにより、ユーザーと組織はユーザー名やパスワードを使用せずに自分のリソースにサインインできるようになります。 代わりに、デバイスに組み込まれている外部セキュリティキーまたはプラットフォームキーを使用します。
 
-開始するには、「パスワードレス セキュリティ [キーのサインインを有効にする」を参照してください](/azure/active-directory/authentication/howto-authentication-passwordless-security-key)。
+開始するには、「 [パスワードなしセキュリティキーのサインインを有効に](/azure/active-directory/authentication/howto-authentication-passwordless-security-key)する」を参照してください。
 
-### <a name="improved-mdm-enrollment-via-provisioning-package"></a>プロビジョニング パッケージを使用した MDM 登録の改善
+### <a name="improved-mdm-enrollment-via-provisioning-package"></a>プロビジョニングパッケージによる MDM 登録の向上
 
-プロビジョニング パッケージを使用すると、HoloLensを使用するのではなく、構成ファイルを使用して構成を設定HoloLens out-of-box experience。 以前は、プロビジョニング パッケージを内部メモリの HoloLensする必要があります。 USB ドライブに接続して、複数の HoloLens デバイスで簡単に再利用し、デバイスを並列でプロビジョニングできます。 プロビジョニング パッケージでデバイス管理に登録するフィールドもサポートされるので、プロビジョニング後に手動でセットアップする必要はありません。
+プロビジョニングパッケージを使用すると、HoloLens の既定の操作ではなく、構成ファイルを使用して HoloLens 構成を設定できます。 以前は、プロビジョニングパッケージを内部メモリ HoloLens にコピーする必要がありました。 USB ドライブを使用すると、複数の HoloLens デバイスでの再利用が容易になり、デバイスを並行してプロビジョニングすることができます。 プロビジョニングパッケージでは、デバイス管理に登録するためのフィールドもサポートされるようになりました。プロビジョニング後に手動で設定する必要はありません。
 
 実行方法:
 
-1. 最新バージョンの Windows 構成デザイナーを、Windowsストアから PC にダウンロードします。
-1. [Provision **HoloLens Devices Provision HoloLens 2**  >  **devices]を選択します**。
-1. 構成プロファイルを作成します。 次に、作成されたファイルを USB-C ストレージ デバイスにコピーします。
-1. USB-C デバイスをフラッシュした新しいデバイスに接続HoloLens。 次に、**ボリュームダウン電源**  +  **ボタンを** 押して、プロビジョニング パッケージを適用します。
+1. Windows 構成デザイナーの最新バージョンを Windows ストアから PC にダウンロードします。
+1. [**プロビジョニング**] [デバイス  >  の **プロビジョニング HoloLens 2** デバイス] の HoloLens 選択します。
+1. 構成プロファイルを作成します。 次に、作成されたすべてのファイルを USB C ストレージデバイスにコピーします。
+1. USB C デバイスを、新しくフラッシュした HoloLens に接続します。 次に、**音量を下げ** た電源ボタンを押して、  +  プロビジョニングパッケージを適用します。
 
-### <a name="line-of-business-application-install-status"></a>Line-of-Business アプリケーションのインストール状態
+### <a name="line-of-business-application-install-status"></a>基幹業務アプリケーションのインストール状態
 
-ビジネスアプリの MDM アプリの展開と管理は、アプリケーションの開発に不可欠HoloLens。 管理者とユーザーは、監査と診断のためにアプリのインストール状態を表示する必要があります。 このリリースでは、アカウントアクセスの詳細を「設定または学校にアクセスする」に追加しました。  >    >    >  **アカウント情報 をクリック**  >  **します**。
+基幹業務アプリの MDM アプリの展開と管理は、HoloLens するうえで重要です。 管理者とユーザーは、監査と診断のためにアプリのインストール状態を表示する必要があります。 このリリースでは、   >    >  アカウント情報をクリックして設定アカウントに **アクセス職場または学校**  >    >  で詳細を追加しました。
 
-### <a name="additional-csps-and-policies"></a>その他の CSP とポリシー
+### <a name="additional-csps-and-policies"></a>追加の Csp とポリシー
 
-構成 [サービス プロバイダー (CSP) は](/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN) 、デバイスの構成設定を読み取り、設定、変更、または削除するインターフェイスです。 このリリースでは、展開されたデバイスに対して管理者が持っている制御を増やHoloLensしました。 HoloLens でサポートされている CSP の一覧については[、「NetworkQoSPolicy CSP 」を参照してください](/windows/client-management/mdm/networkqospolicy-csp)。
+[構成サービスプロバイダー (CSP)](/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN)は、デバイスの構成設定を読み取り、設定、変更、または削除するためのインターフェイスです。 このリリースでは、より多くのポリシーのサポートを追加して、管理者が展開した HoloLens デバイスよりも多くの制御を行うことができます。 HoloLens でサポートされる csp の一覧については、「 [NetworkQoSPolicy csp](/windows/client-management/mdm/networkqospolicy-csp)」を参照してください。
 
 このリリースでの新しい内容
 
 **Policy CSP** 
 
-ポリシー構成サービス プロバイダーを使用すると、企業はデバイスに対してポリシー Windowsできます。 このリリースでは、次に示す HoloLens新しいポリシーを追加しました。 詳細については、 でサポート[されているポリシーの PS に関するページをHoloLens 2。](/windows/client-management/mdm/policies-supported-by-hololens2)  
+ポリシー構成サービスプロバイダーを使用すると、企業は Windows デバイスでポリシーを構成できます。 このリリースでは、HoloLens の新しいポリシーを追加しました。このポリシーは、ここに記載されています。 詳細については、 [HoloLens 2 によってサポートされるポリシー csp](/windows/client-management/mdm/policies-supported-by-hololens2)に関するページを参照してください。  
 
 - LetAppsAccessCamera_ForceAllowTheseApps  
 - LetAppsAccessCamera_ForceDenyTheseApps  
@@ -1412,31 +1409,31 @@ FIDO2 セキュリティキーは、"unphishable" 標準ベースのパスワー
 
 **NetworkQoSPolicy CSP**
 
-NetworkQoSPolicy 構成サービス プロバイダーは、ネットワークサービス品質 (QoS) ポリシーを作成します。 QoS ポリシーは、一連の照合条件に基づいて、ネットワーク トラフィックに一連のアクションを実行します。 詳細については [、「NetworkQoSPolicy CSP 」を参照してください](/windows/client-management/mdm/networkqospolicy-csp)。
+NetworkQoSPolicy 構成サービスプロバイダーは、ネットワークのサービス品質 (QoS) ポリシーを作成します。 QoS ポリシーは、一連の照合条件に基づいて、ネットワーク トラフィックに一連のアクションを実行します。 詳細については、「 [NETWORKQOSPOLICY CSP](/windows/client-management/mdm/networkqospolicy-csp)」を参照してください。
 
-### <a name="expanded-usb-ethernet-support-for-5glte-tethered-devices"></a>5G/LTE テザリングされたデバイスに対する USB イーサネットサポートの拡張
+### <a name="expanded-usb-ethernet-support-for-5glte-tethered-devices"></a>5G/LTE テザリングさデバイス向けの拡張された USB イーサネットサポート
 
-USB 経由で HoloLens 2 にテザリングされている場合に、5G/LTE フォンや Wi-Fi ホットスポットなどの特定のモバイル ブロードバンド デバイスを有効にするためにサポートが追加されました。 これらのデバイスは、別のイーサネット **接続としてネットワーク** 設定に表示されます。 (外部ドライバーを必要とするモバイル ブロードバンド デバイスはサポートされていません)。この機能により、テザリングが十分にWi-Fiテザリングが十分にWi-Fi場合に、高帯域幅接続が可能になります。 サポートされている USB デバイスの詳細については、「CONNECT [Bluetooth USB-C デバイス」を参照してください](hololens-connect-devices.md)。  
+5G/LTE フォンや Wi-Fi ホットスポットなど、特定のモバイルブロードバンドデバイスを USB 経由で HoloLens 2 にテザリングさするときに、サポートが追加されました。 これらのデバイスは、別のイーサネット接続として [ **ネットワーク設定** ] に表示されるようになりました。 (外部ドライバーを必要とするモバイルブロードバンドデバイスはサポートされていません)。この機能により、Wi-Fi を利用できず Wi-Fi テザリングで十分なパフォーマンスが得られない場合に、高帯域幅の接続が可能になります。 サポートされている usb デバイスの詳細については、「 [Connect Bluetooth と usb C デバイス](hololens-connect-devices.md)」を参照してください。  
 
-### <a name="hand-tracking-improvements"></a>手の追跡の機能強化
+### <a name="hand-tracking-improvements"></a>手動追跡の機能強化
 
-このリリースには、いくつかのハンド トラッキングの機能強化が含まれています。
+このリリースには、いくつかの手動追跡の機能強化が含まれています。
 
-- **ポイント姿勢の安定性:** これで、人差し指が手のひらに取り込むときに、システムは人差し指を触れ込むのを抵抗します。 この変更により、ボタンのプッシュ、入力、コンテンツのスクロールなど、精度が向上します。 
-- **エア タップの偶発的な減少:** エアタップ ジェスチャの検出を改善しました。 手をサイドにドロップする場合など、いくつかの一般的なシナリオでは、偶発的なアクティブ化が少なくなっています。
-- **ユーザー スイッチの信頼性:** デバイスを共有するときに手のサイズを更新する際に、システムの速度と信頼性が向上しました。
-- **手盗みを減らします。** センサーを見て、手が 2 つ以上あるケースの処理を改善しました。 複数のユーザーが密接に作業している場合、追跡された手がユーザーからシーン内の他のユーザーの手に "ジャンプ" する可能性がはるかに低くなります。
-- **システムの信頼性:** デバイスの負荷が高いときに手の追跡が動作を停止する原因となる問題を修正しました。
+- **ポイントの安定性:** これで、システムは、palm によって occluded されたときにインデックスの指を resists 曲げます。 この変更により、ボタン、型、コンテンツのスクロールなどをプッシュするときの精度が向上します。 
+- **偶発的なエアタップの削減:** エアタップジェスチャの検出を改善しました。 いくつかの一般的なシナリオでは、ユーザーを自分の側にドロップしたときなど、誤ったアクティベーションが減ります。
+- **ユーザースイッチの信頼性:** デバイスを共有するときに、手動でサイズを更新すると、システムの速度と信頼性が向上しました。
+- **手作業の盗難:** センサーの2つ以上のハンズオンビューがあるケースの処理を改善しました。 複数の人が近くに作業している場合、追跡されたハンドがシーン内の他のユーザーの手に "ジャンプ" する可能性は非常に低くなります。
+- **システムの信頼性:** デバイスの負荷が高いときに、ハンドトラッキングが動作を停止する原因となった問題を修正しました。
 
 ### <a name="dark-mode"></a>ダーク モード
 
-多くのWindowsアプリでは、ダーク モードとライト モードの両方がサポートされています。 HoloLens 2ユーザーは、両方をサポートするアプリの既定のモードを選択できます。 更新後、既定のアプリ モードは "ダーク" になりますが、この設定を簡単に変更できます **。[** システム の色] 設定既定のアプリ モードを  >    >    >  **選択します**。
+多くの Windows アプリで、ダークモードとライトモードの両方がサポートされるようになりました。 HoloLens 2 ユーザーは、両方をサポートするアプリの既定のモードを選択できます。 更新後、既定のアプリモードは "ダーク" になりますが、この設定を簡単に変更できます。 [**設定**  >  **システム** の色] に移動し  >    >  **て、既定のアプリモードを選択** します。
 
-これらの "インボックス" アプリでは、ダーク モードがサポートされます。
+これらの "インボックス" アプリでは、ダークモードがサポートされるようになります。
 
 - 設定
 - Microsoft Store
-- Mail
+- メール
 - 予定表
 - エクスプローラー
 - フィードバック Hub
@@ -1445,58 +1442,58 @@ USB 経由で HoloLens 2 にテザリングされている場合に、5G/LTE フ
 - 3D ビューアー
 - 映画 & テレビ
 
-![タイル表示されたダーク モードのウィンドウ。](images/DarkMode.jpg)
+![ダークモードのウィンドウが並べて表示します。](images/DarkMode.jpg)
 
 ### <a name="system-voice-commands"></a>システム音声コマンド
 
-これで、デバイス上の任意のアプリで音声コマンドを使用できます。 詳細については、「音声を[使用して音声を操作する」をHoloLens。](hololens-cortana.md) 「サポート[されている言語」も参照HoloLens 2。](hololens2-language-support.md)  
+デバイス上の任意のアプリで音声コマンドを使用できるようになりました。 詳細については、「[音声を使用](hololens-cortana.md)した HoloLens の操作」を参照してください。 「 [HoloLens 2 でサポートされる言語](hololens2-language-support.md)」も参照してください。  
 
-### <a name="cortana-updates"></a>Cortana更新プログラム
+### <a name="cortana-updates"></a>Cortana の更新プログラム
 
-更新されたアプリは Microsoft 365 と統合され、デバイス全体でより多くの作業を行うのに役立ちます (現在、US-Englishされています)。 このHoloLens 2、Cortanaの調整や再起動など、特定のデバイス固有のコマンドがサポートされなくなりました。 これらのオプションは、新しいシステム音声コマンドでサポートされています。 新しいアプリの詳細についてはCortanaブログを[参照してください](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)。
+更新されたアプリは Microsoft 365 と統合されているため、デバイス全体でより多くの作業を行うことができます (現時点では US-English のみ)。 HoloLens 2 では Cortana、ボリュームの調整や再起動など、デバイス固有の特定のコマンドがサポートされなくなりました。 これらのオプションは、新しいシステムの音声コマンドでサポートされるようになりました。 新しい Cortana アプリの詳細については、こちらの[ブログ](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)を参照してください。
 
 ### <a name="quality-improvements-and-fixes"></a>品質の向上と修正
 
 更新プログラムの機能強化と修正:  
 
-- アクティブなディスプレイ調整システムを導入しました。 この機能により、ホログラムの安定性と配置が向上します。 これで、頭を横から横に移動すると、その場所に残ることになります。
-- ストリーム配信が定期的Wi-Fi中断HoloLensバグを修正しました。 アプリケーションで低待機時間のストリーミングが必要と示されている場合は [、SetSocketMediaStreamingMode](/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)関数 を呼び出して修正プログラムを実装します。
-- 調査モードでのストリーミング中に発生したデバイスハングを修正しました。
-- セッションを終了するときに、サインイン画面に適切なユーザーが表示されない場合があるバグを修正しました。
-- ユーザーが を使用して MDM ログをエクスポートできない問題を **修正設定。**
-- すぐに設定した後の目の追跡の精度が予想よりも低い可能性がある問題を修正しました。
-- 特定の条件下で、目の追跡サブシステムが初期化または調整を実行できなかった問題を修正しました。
-- 既に調整されたユーザーに対して目の調整を求める問題を修正しました。
-- 目の調整中にドライバーがクラッシュする問題を修正しました。
-- 電源ボタンを繰り返し押すと、60 秒のシステム タイムアウトとシェル クラッシュが発生する可能性がある問題を修正しました。
+- アクティブなディスプレイ調整システムが導入されました。 この機能により、ホログラムの安定性とアラインメントが向上します。 ここでは、ヘッドを左右に移動したときにそのままにしておきます。
+- HoloLens への Wi-Fi ストリーミングが定期的に中断されているバグを修正しています。 アプリケーションで、待機時間の短いストリーミングが必要であることが示された場合は、 [SetSocketMediaStreamingMode 関数](/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)を呼び出して修正プログラムを実装します。
+- リサーチモードでのストリーミング中に発生したデバイスのハングを修正しました。
+- セッションの再開時に、適切なユーザーがサインイン画面に表示されない場合があるバグを修正します。
+- ユーザーが **設定** を使用して MDM ログをエクスポートできない問題を修正した。
+- すぐに使用できるセットアップの直後にある目の追跡の精度が予想よりも低くなるという問題を修正しました。
+- 特定の条件下で、視線追跡サブシステムが初期化または調整を実行できなかった問題を修正しました。
+- 既に調整されたユーザーに対して目の調整が求められる問題を修正した。
+- 目の調整中にドライバーがクラッシュする問題を修正した。
+- 電源ボタンを繰り返し押すと60秒のシステムタイムアウトが発生し、シェルがクラッシュする問題を修正しました。
 - 深度バッファーの安定性が向上しました。
 - フィードバックを簡単に共有できるように、フィードバックハブに [ **共有** ] ボタンが追加されました。
 - RoboRaid wan't が正しくインストールされているバグを修正しました。
 
 ### <a name="known-issues"></a>既知の問題
 
-- Zh-tw システム言語の問題により、音声コマンドが mixed reality を撮影したり、デバイスの IP アドレスを表示したりするのを防ぐことができます。
-- 問題が発生した場合は、デバイスを起動した後、音声ライセンス認証を Cortana 使用するように Cortana アプリを起動する必要があります。 18362ビルドから更新した場合は、**スタート** で動作しなくなった以前のバージョンの Cortana アプリの2つ目のアプリタイルが表示されることもあります。
+- zh-CN システム言語に関する問題により、音声コマンドが Mixed Reality キャプチャを取得したり、デバイスの IP アドレスを表示したり妨げる可能性があります。
+- 問題では、Cortana"Hey Cortana" の音声アクティブ化を使用するためにデバイスを起動した後、アプリを起動する必要があります。 18362 ビルドから更新した場合は、以前のバージョンの Cortana アプリの 2 つ目のアプリ タイルも表示され、 [開始] で機能し **なくなる場合があります**。
 
-## <a name="windows-holographic-version-1903---may-2020-update"></a>WindowsHolographic、バージョン 1903-2020 更新プログラム
+## <a name="windows-holographic-version-1903---may-2020-update"></a>WindowsHolographic バージョン 1903 - 2020 年 5 月更新
 
-- ビルド18362.1061
+- ビルド 18362.1061
 
-この毎月の品質更新プログラムに Windows は、前に説明したように、Holographic バージョン2004の更新プログラムでチームが作業していたため、重要な変更は含まれていません。
+この毎月の品質更新プログラムには、前述のように、チームが Windows Holographic バージョン 2004 May Update に取り組っていたため、重要な変更は含められない。
 
-## <a name="windows-holographic-version-1903---april-2020-update"></a>WindowsHolographic、バージョン 1903-2020 年4月更新
+## <a name="windows-holographic-version-1903---april-2020-update"></a>WindowsHolographic バージョン 1903 - 2020 年 4 月更新
 
-- ビルド18362.1059
+- ビルド 18362.1059
 
-**サポートされているアプリのダークモード**
+**サポートされているアプリのダーク モード**
 
-多くの Windows アプリは、ダークモードとライトモードの両方をサポートしています。 HoloLens 2 のお客様は、両方の配色をサポートするアプリの既定のモードを選択できるようになりました。 お客様からのフィードバックに基づいて、既定のアプリモードを "ダーク" に設定しますが、この設定はいつでも簡単に変更できます。**設定 > システム > の色** に移動し **て、[既定のアプリモードを選択してください]** を見つけます。
+多くのWindowsアプリでは、ダーク モードとライト モードの両方がサポートされています。 HoloLens 2両方の配色をサポートするアプリの既定のモードを選択できます。 お客様からのフィードバックに基づいて、既定のアプリ モードを "ダーク" に設定していますが、いつでもこの設定を簡単に変更できます **。[設定 > System > Colors]** に移動して [既定のアプリ モードを選択する] を見つける。
 
-これらの "インボックス" アプリでは、ダークモードがサポートされるようになります。
+これらの "インボックス" アプリでは、ダーク モードがサポートされます。
 
 - 設定
 - Microsoft Store
-- Mail
+- メール
 - 予定表
 - エクスプローラー
 - フィードバック Hub
@@ -1507,58 +1504,58 @@ USB 経由で HoloLens 2 にテザリングされている場合に、5G/LTE フ
 
 **更新プログラムの機能強化と修正:**
 
-- シェルオーバーレイが混合現実キャプチャに含まれることを確認します。
-- Unreal の開発者は、デバイスポータルの [3D ビュー] ページを使用して、アプリケーションをテストおよびデバッグできるようになりました。
-- *HolographicDepthReprojectionMethod Dep の予測* アルゴリズムが使用されている場合に、mixed reality キャプチャでのホログラムの安定性が向上しました。
-- 32ビット ARM アプリで "WinRT IStreamSocketListener API クラスが登録されていません" エラーを修正しました。
+- シェル オーバーレイが Mixed Reality キャプチャに含まれる必要があります。
+- Unreal 開発者は、アプリケーションをテストおよびデバッグするために、デバイス ポータルの 3D ビュー ページを使用できます。
+- *HolographicDepthReprojectionMethod DepthReprojection* アルゴリズムを使用すると、Mixed Reality キャプチャのホログラムの安定性が向上しました。
+- 32 ビット ARM アプリで "WinRT IStreamSocketListener API クラスが登録されていません" というエラーを修正しました。
 
-## <a name="windows-holographic-version-1903---march-2020-update"></a>WindowsHolographic、バージョン 1903-2020 年3月更新
+## <a name="windows-holographic-version-1903---march-2020-update"></a>WindowsHolographic バージョン 1903 - 2020 年 3 月更新
 
-- ビルド18362.1056
-
-更新プログラムの機能強化と修正:
-
-- *HolographicDepthReprojectionMethod AutoPlanar* アルゴリズムが使用されている場合に、mixed reality キャプチャでのホログラムの安定性が向上しました。
-- 深度の MF サンプルにアタッチされている座標系が、パブリックドキュメントと一致していることを確認します。
-- 顧客がデバイスポータルを使用して大量のテキストを貼り付けることで、開発者の生産性が向上しました。
-
-## <a name="windows-holographic-version-1903---february-2020-update"></a>WindowsHolographic、バージョン 1903-2020 更新プログラム
-
-- ビルド18362.1053
+- ビルド 18362.1056
 
 更新プログラムの機能強化と修正:
 
-- Unity アプリケーションの HolographicSpace API を一時的に無効にしました。 この変更により、[バックグラウンドで実行する] 設定が有効になっている場合でも、バイザーが反転されたときに一部のアプリが一時停止する原因となった問題が回避されます。
-- 手動追跡によって発生するランダムな HUP クラッシュを修正しました。この場合、ユーザーは UI をフリーズしてから、数秒後にシェルに戻ることに気付きました。
-- インデックス指をからかうすると、その指の上部が予期せずに curl される可能性が低くなるように、ハンドトラッキングが向上しました。
-- ヘッド追跡、空間マッピング、およびその他のランタイムの信頼性が向上しました。
+- *HolographicDepthReprojectionMethod AutoPlanar* アルゴリズムを使用すると、Mixed Reality キャプチャのホログラムの安定性が向上しました。
+- 深度 MF サンプルにアタッチされている座標系がパブリック ドキュメントと一致する必要があります。
+- 顧客がデバイス ポータルを使用して大量のテキストを貼り付け可能にすることで、開発者の生産性が向上しました。
 
-## <a name="windows-holographic-version-1903---january-2020-update"></a>WindowsHolographic、バージョン 1903-1 月2020更新プログラム
+## <a name="windows-holographic-version-1903---february-2020-update"></a>WindowsHolographic バージョン 1903 - 2020 年 2 月更新
 
-- ビルド18362.1043
-
-更新プログラムの機能強化と修正:
-
-- HoloLens 2 エミュレーターを使用する場合の排他的なアプリの安定性が向上しました。
-
-## <a name="windows-holographic-version-1903---december-2019-update"></a>WindowsHolographic、バージョン 1903-12 月2019更新プログラム
-
-- ビルド18362.1042
+- ビルド 18362.1053
 
 更新プログラムの機能強化と修正:
 
-- 最終ステージ再現 (LSR) 修正が導入されました。 ホログラムの視覚的レンダリングが改善され、詳細をより正確に把握できるようになりました。 この現象は、アプリがホログラムの深さを正しく設定していない場合に、この更新後により顕著になります。
-- 排他アプリの安定性と排他アプリ間のナビゲーションを修正します。
-- デバイスが数日間スタンバイ状態になった後に、mixed reality capture がビデオを記録できない問題を解決しました。
+- Unity アプリケーション用の HolographicSpace.UserPresence API を一時的に無効にしました。 この変更により、"バックグラウンドで実行" 設定が有効になっている場合でも、バイザーが反転した場合に一部のアプリが一時停止する問題が回避されます。
+- ユーザーが UI がフリーズし、数秒後にシェルに戻るのをユーザーが気付いた、手の追跡によって発生するランダムな HUP クラッシュを修正しました。
+- 人差し指で突っ込むときに、その指の上部が予期せず丸くならずになじむので、手の追跡が改善されました。
+- ヘッドトラッキング、空間マッピング、その他のランタイムの信頼性が向上しました。
+
+## <a name="windows-holographic-version-1903---january-2020-update"></a>WindowsHolographic バージョン 1903 - 2020 年 1 月更新
+
+- ビルド 18362.1043
+
+更新プログラムの機能強化と修正:
+
+- アプリケーション エミュレーターを使用する場合の排他アプリの安定性HoloLens 2しました。
+
+## <a name="windows-holographic-version-1903---december-2019-update"></a>WindowsHolographic バージョン 1903 - 2019 年 12 月の更新プログラム
+
+- ビルド 18362.1042
+
+更新プログラムの機能強化と修正:
+
+- 最後のステージの再現 (LSR) の修正が導入されました。 ホログラムの深度をより正確に説明することで、ホログラムの視覚的なレンダリングが向上し、より安定して鮮明に見える。 この現象は、アプリがホログラムの深さを正しく設定しない場合、この更新後に顕著になります。
+- 排他的なアプリと排他的なアプリ間のナビゲーションの安定性を修正しました。
+- デバイスが数日間スタンバイ状態の後に Mixed Reality キャプチャでビデオを記録できない問題を解決しました。
 - ホログラムの安定性が向上しました。
 
-## <a name="windows-holographic-version-1903---november-2019-update"></a>WindowsHolographic、バージョン 1903-2019 の11月の更新プログラム
+## <a name="windows-holographic-version-1903---november-2019-update"></a>WindowsHolographic バージョン 1903 - 2019 年 11 月の更新プログラム
 
-- ビルド18362.1039
+- ビルド 18362.1039
 
 更新プログラムの機能強化と修正:
 
-- En-us と en-us の初回セットアップ時に **選択し** た音声コマンドの機能を修正しました。
-- 最新の Unity と Mixed Reality Toolkit (mrtk) バージョンには遠く離れたオブジェクトの視覚的な品質が向上しました。
-- スタートメニューが開かれた後に閉じられるまで、holographic アプリケーションの問題を解決して、起動時に一時停止状態になります。
-- HoloLens 2 とエミュレーターの OpenXR ランタイム準拠の修正と改善。
+- en-CA **と** en-AU の初期セットアップ中に音声コマンドを選択する機能を修正しました。
+- 最新の Unity および MRTK (MRTK) バージョンに配置されたオブジェクトMixed Reality Toolkit品質が向上しました。
+- ホログラフィック アプリケーションが開いてから閉じるまで、起動時に一時停止状態でスタックする問題スタート メニュー修正しました。
+- OpenXR ランタイム準拠の修正と、HoloLens 2エミュレーターの機能強化。
