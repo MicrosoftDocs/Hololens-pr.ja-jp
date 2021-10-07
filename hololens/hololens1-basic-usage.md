@@ -2,24 +2,24 @@
 title: HoloLens (第 1 世代) の操作方法
 description: HoloLens (第1世代) インターフェイス、ハンドトラッキング機能、holographic アプリケーションの使用に関する簡単なツアーを開始しましょう。
 ms.assetid: 064f7eb0-190e-4643-abeb-ed3b09312042
-ms.date: 9/16/2019
-ms.reviewer: jarrettr
-manager: jarrettr
+ms.date: 8/9/2021
+ms.reviewer: sean-kerawala
+manager: sean-kerawala
 keywords: HoloLens
 ms.prod: hololens
 ms.sitesec: library
-author: v-miegge
-ms.author: v-miegge
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 3723a30499c0237f19d85b48109b40ca643c6bdb
+ms.sourcegitcommit: be1393d24a98381e37bd1f56183c1f381f87cbd4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033796"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129600748"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>HoloLens (第 1 世代) の操作方法
 
@@ -57,7 +57,7 @@ HoloLens には、ユーザーの左右を数フィートずつ見ることの�
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>見つめとエアタップを使用したホログラムの選択
 
-アプリまたはその他のホログラムを選択するには、選択しているホログラムを直接見ながら、エアタップします。 これを行うには、次の手順に従います。
+アプリまたはその他のホログラムを選択するには、選択しているホログラムを直接見ながら、エアタップします。 次の手順のようにします。
 
 1. 選択するホログラムを見つめます。
 1. 人差し指をまっすぐ上に伸ばして、天井を指します。
@@ -119,6 +119,35 @@ HoloLens でのアプリの移動とサイズ変更は、PC の場合とは少�
 
 アプリウィンドウの内容を見つめます。 タップして押したまま、少し上または下に移動して、コンテンツをスクロールします。
 
+## <a name="share-your-hololens-with-multiple-people"></a>HoloLens を複数のユーザーと共有する
+
+1つの HoloLens を多くの人と共有したり、多くの人が一連の HoloLens デバイスを共有したりすることは一般的です。  
+
+### <a name="share-with-multiple-people-each-using-their-own-account"></a>複数のユーザーと共有し、それぞれが独自のアカウントを使用する
+
+**前提条件**: HoloLens (第1世代)[を Windows Holographic for Business にアップグレード](hololens-upgrade-enterprise.md)する必要があります。
+
+独自の Azure Active Directory (Azure AD) アカウントを使用する場合、複数のユーザーが各自のユーザー設定とユーザーデータをデバイスに保持できます。
+
+複数のユーザーが HoloLens で自分のアカウントを使用できるようにするには、次の手順を実行します。
+
+1. デバイスを設定するときに、[ **自分の職場または学校が所有** する] を選択し、Azure AD アカウントを使用してサインインします。
+1. セットアップが完了したら、アカウントの設定 (**設定**  >  **アカウント**) に **他のユーザー** が含まれていることを確認してください。
+
+HoloLens を使用するには、各ユーザーが次の手順を実行する必要があります。
+
+1. 別のユーザーがデバイスを使用している場合は、電源ボタンを1回押して、スタンバイに切り替えます。 次に、もう一度 [電源] ボタンを押して、ロック画面に戻ります。
+
+1. Azure AD アカウントの資格情報を使用して、デバイスにサインインします。 デバイスを初めて使用する場合は、HoloLens を自分の目に合わせて[調整](hololens-calibration.md)する必要があります。
+
+デバイスのユーザーの一覧を表示したり、デバイスからユーザーを削除したりするには、[**設定**  >  **アカウント**] [  >  **その他のユーザー**] にアクセスします。
+
+### <a name="share-with-multiple-people-all-using-the-same-account"></a>同じアカウントを使用して複数のメンバーと共有する
+
+また、複数のユーザーが1つのユーザーアカウントを使用して HoloLens デバイスを共有することもできます。
+
+同じアカウントを共有するユーザーは、**設定** で HoloLens を再調整する必要があります。  詳細については、「 [調整](hololens-calibration.md)」を参照してください。
+
 ## <a name="meet-the-hololens-1st-gen-clicker"></a>HoloLens (第1世代) Clicker を満たす
 
 [HoloLens (第1世代) clicker](hololens1-clicker.md)は、ホログラムを操作する別の方法を提供します。 [これ](hololens-connect-devices.md)を HoloLens と組み合わせて使用し、選択、スクロールなどの目的に合わせて使用します。
@@ -139,5 +168,5 @@ HoloLens の使用中に配置したホログラムが表示されない場合�
 
 - 右側の領域を見ていることを確認してください &mdash; 。ホログラムは残しておきます。
 - 直接太陽のない部屋にいることを確認してください。
-- 待機. スペースHoloLens認識に問題がある場合、以前に配置されたホログラムが再び表示されるのに最大で 1 分かかる場合があります。
-- 問題が解決しない場合は **、設定** System ホログラム 内の ホログラム ストレージ データを消去してから、ホログラムを再び Mixed Reality ホーム  >    >  できます。
+- Wait。 HoloLens がスペースを認識できない場合、以前に配置されたホログラムは再表示されるまでに最大で1分かかることがあります。
+- 問題が解決しない場合は、**設定** システムホログラム内のホログラムストレージデータを消去し  >    >  、mixed reality ホームにもう一度ホログラムを配置することもできます。
