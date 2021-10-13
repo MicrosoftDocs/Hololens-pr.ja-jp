@@ -1,41 +1,55 @@
 ---
 title: ビジネス向け Microsoft Store
-description: ビジネス向け Microsoft Store を使用して、mixed reality アプリケーションをビジネスに発行する方法について説明します。
-keywords: ビジネス向け Microsoft Store、msfb、アプリのデプロイ、ストア
+description: 複合現実アプリケーションをビジネスに発行ビジネス向け Microsoft Storeを使用する方法について学習します。
+keywords: ビジネス向け Microsoft Store, msfb, アプリのデプロイ, ストア
 author: evmill
 ms.author: v-evmill
-ms.date: 9/22/2021
+ms.date: 10/13/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
-ms.openlocfilehash: b60795d7a5a4f9fab980ee16a23250faa6025bb5
-ms.sourcegitcommit: ab86b31357004726d8a28ebae76123728adc8e59
+ms.openlocfilehash: 5bc719539aaa254b8aacb05e24554152231f7e5a
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "128306150"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924330"
 ---
 # <a name="microsoft-store-for-business"></a>ビジネス向け Microsoft Store
 
-[ビジネス向け Microsoft Store](/microsoft-store/microsoft-store-for-business-overview)は、主に IT の意思決定者と企業または組織の管理者向けに設計されており、選択した市場でデバイスを Windows 10 して、無料および有料のアプリを簡単に検索、取得、管理、配布することができます。 
+[ビジネス向け Microsoft Store ビジネス向け Microsoft Store](/microsoft-store/microsoft-store-for-business-overview)は、主に、一部の市場で無料および有料のアプリを検索、取得、管理、配布する柔軟な方法を使用して、企業や組織の IT 意思決定者と管理者を対象に設計され、ボリューム内の Windows 10 デバイスに提供されます。 
 
-1つのインベントリで Microsoft Store アプリとプライベート基幹業務アプリを管理し、必要に応じてライセンスを割り当てて再利用することができます。 また、組織に最適な配布方法を選択することもできます。個人やチームにアプリを直接割り当てる方法、Microsoft Store のプライベートページにアプリを発行する方法、さらに多くのオプションを使用する場合は管理ソリューションに接続する方法などがあります。
+1 つのインベントリMicrosoft Storeアプリとプライベートの業務アプリを管理し、必要に応じてライセンスを割り当て、再使用できます。 また、組織に最適な配布方法を選択することもできます。アプリを個人やチームに直接割り当てるか、Microsoft Store のプライベート ページにアプリを発行するか、管理ソリューションに接続してその他のオプションを選択することもできます。
 
-エンドユーザーがビジネス向け Microsoft Store を使用すると Microsoft Store アプリが起動されます。 起動すると、ユーザーは組織名を含むタブを選択できるようになります。その後、使用可能なアプリまたはデバイスが表示されます。
+エンド ビジネス向け Microsoft Store使用すると、エンド ユーザーはアプリを起動Microsoft Storeします。 起動すると、ユーザーは組織名のタブを選択できます。その後、ユーザーは自分またはデバイスで使用できるアプリと一緒に表示されます。
 
-> [!Note] 
-> ビジネス向け Microsoft Store は、アプリをデバイスに自動的にダウンロード (プッシュ) しません。 ただし、ビジネス向け Microsoft Store のアプリをデバイス管理 (MDM) サーバーに関連付けて、アプリを対象としてデバイスに同期することができます。
+> [!Note]
+> ビジネス向け Microsoft Storeアプリはデバイスに自動的にダウンロード (プッシュ) されません。 ただし、デバイス管理 (MDM) ビジネス向け Microsoft Storeに関連付け、アプリをターゲットにし、デバイスに同期することもできます。
 
-ビジネス向け Microsoft Store の使用方法の詳細については、次のページを参照してください。
+次のページを参照して、次のページを参照して、次のページを参照ビジネス向け Microsoft Store。
 
 * [アプリケーションのインストールに使用されるアクセス許可のレベル](/mem/intune/configuration/device-restrictions-windows-holographic#app-store)
 * [ビジネス向けストアにアプリを追加する方法](/mem/intune/apps/store-apps-windows)
 * [従業員のグループにアプリを割り当てる方法](/mem/intune/apps/windows-store-for-business)
 
-ビジネス向け Microsoft Store を関連付けるには、「[ビジネス向け Microsoft Store を Intune に関連付ける](/mem/intune/apps/windows-store-for-business#associate-your-microsoft-store-for-business-account-with-intune)」を参照してください。
+アプリケーションを関連付ビジネス向け Microsoft Store、Intune[に関連付ビジネス向け Microsoft Storeに関するページを参照してください](/mem/intune/apps/windows-store-for-business#associate-your-microsoft-store-for-business-account-with-intune)。
 
 > [!Tip]
-> 高度な回復コンパニオン (ARC) や Windows 構成デザイナー (wcd) などのアプリを使用する場合の[オフラインアプリの配布](/microsoft-store/distribute-offline-apps)について説明します。
+> Advanced Recovery [](/microsoft-store/distribute-offline-apps) Companion (ARC) や Windows Configuration Designer (WCD) などのアプリを使用する場合のオフライン アプリの配布の詳細について説明します。
+
+## <a name="use-only-private-store-apps-for-microsoft-store"></a>プライベート ストア アプリのみを使用してMicrosoft Store
+
+- [Holographic バージョンWindows 21H2 で導入されました](hololens-release-notes.md#windows-holographic-version-21h2)。
+
+RequirePrivateStoreOnly ポリシーが有効になっているHoloLens。 このポリシーにより、組織Microsoft Storeプライベート ストアのみを表示するようにアプリを構成できます。 使用可能にしたアプリにのみアクセスを制限する。
+
+[ApplicationManagement/RequirePrivateStoreOnly の詳細を確認する](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+## <a name="smart-retry-for-app-updates"></a>アプリ更新プログラムのスマート再試行
+
+- [Holographic バージョンWindows 21H2 で導入されました](hololens-release-notes.md#windows-holographic-version-21h2)。
+
+HoloLens に対して有効にされたのは、IT 管理者が定期的または 1 回の日付を設定して、アプリの使用が原因で更新が失敗したアプリを再起動し、更新プログラムの適用を許可する新しいポリシーです。 これらは、スケジュールされた時刻やサインインなど、いくつかの異なるトリガーに基づいて設定できます。 このポリシーの使用方法の詳細については [、「ApplicationManagement/ScheduleForceRestartForUpdateFailures 」を参照してください](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)。
