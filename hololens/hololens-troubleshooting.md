@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 問題、バグ、トラブルシューティング、修正、ヘルプ、サポート、HoloLens、エミュレーター
-ms.openlocfilehash: 247cf9d34da723e587f6796178ad9a917b93ac08
-ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
+ms.openlocfilehash: 5c79e119352146ac249ef02ab888141391c9cea1
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129964566"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034197"
 ---
 # <a name="device-troubleshooting"></a>デバイスのトラブルシューティング
 
@@ -163,7 +163,7 @@ HoloLens 2 デバイスは、**設定** アカウントのサインイン > オ�
 メソッドに対処する:
 
 - PIN、パスワード、虹彩、Web 認証、FIDO2 キーなどのサインイン方法。
-- デバイスの PIN を記憶できず、他の認証方法を使用できない場合、ユーザーは [手動の reflashing モード](hololens-recovery.md#manual-procedure)を使用できます。
+- デバイスの PIN を記憶できず、他の認証方法を使用できない場合、ユーザーは [手動の reflashing モード](hololens-recovery.md#manual-flashing-mode-procedure)を使用できます。
 
 [一覧に戻る](#list)
 
@@ -262,7 +262,7 @@ HoloLens 用の OneDrive アプリでは、職場または学校アカウント�
 HoloLens が開始されない場合:
 
 - 電源ボタンの横にある Led が点灯していない場合、または LED が少し点滅している場合は、 [HoloLens の料金](hololens2-charging.md#charging-the-device)が発生することがあります。
-- 電源ボタンを押したときに Led が点灯しても、ディスプレイに何も表示されない場合は、 [デバイスをハードリセット](hololens-recovery.md#hard-reset-procedure)します。
+- 電源ボタンを押したときに Led が点灯しても、ディスプレイに何も表示されない場合は、 [デバイスをハードリセット](hololens-recovery.md#hard-restart-procedure)します。
 
 HoloLens がフリーズまたは応答しなくなった場合は、次のようになります。
 
@@ -278,142 +278,142 @@ HoloLens がフリーズまたは応答しなくなった場合は、次のよ�
 
 - 未使用の領域をいくつか削除します。 [**設定** システムスペース] にアクセスして  >    >  、不要になった領域を選択し、[**削除**] を選択します。
 - 配置したホログラムの一部を削除します。
-- 写真アプリから一部の画像とビデオを削除します。
-- HoloLens から一部のアプリをアンインストールします。 [ **すべてのアプリ** ] 一覧で、アンインストールするアプリをタップして保持し、[ **アンインストール**] を選択します。
+- フォト アプリからいくつかの画像とビデオを削除します。
+- アプリから一部のアプリをアンインストールHoloLens。 [すべての **アプリ] の一** 覧で、アンインストールするアプリをタップしたままにし、[ アンインストール] を **選択します**。
 
 [一覧に戻る](#list)
 
 ## <a name="calibration-fails"></a>調整が失敗する
 
-調整はほとんどの従業員に対して機能しますが、調整が失敗する場合もあります。
+調整はほとんどのユーザーに対して機能しますが、調整に失敗する場合があります。
   
-調整エラーの考えられる原因には、次のようなものがあります。
+調整エラーの考え方としては、次のようなものがあります。
 
-- 調整ターゲットに従うのではなく、気をかける
-- ダーティまたは傷のあるデバイスのバイザーまたはデバイスのバイザーが適切に配置されていない
-- 汚れまたは傷
-- 特定の種類の連絡先レンズとグラス (色分けされたコンタクトレンズ、一部の toric 連絡先レンズ、IR ブロックグラス、高処方箋グラス、サングラス、類似)
-- その他の発音と eyelash の拡張機能
-- デバイスが目に見えないようにブロックしている場合は、ヘアまたは太 eyeglass フレーム
-- 特定の目の physiology、視線、eyelashes、amblyopia、n agmu、LASIK またはその他の目のような目になることがあります。
+- 気を散らして調整ターゲットに従わなくなって
+- ダーティまたはスクラッチされたデバイス バイザーまたはデバイス バイザーが正しく配置されていない
+- ダーティまたはスクラッチの眼鏡
+- 特定の種類のコンタクト レンズと眼鏡 (色付きコンタクト レンズ、一部の Toric コンタクト レンズ、IR ブロッキング 眼鏡、高い眼鏡、眼鏡など)
+- より顕著なメイクといくつかのまつげの拡張機能
+- デバイスが目を見るのを妨げている場合は、黒い眼鏡フレームまたは太い眼鏡フレーム
+- 特定の目の前部、目の状態、または狭い目、長いまつげ、アンブリータイン、nystagmus、LASIK や他の目の治療の一部のケースなど、目の治療
 
-調整が失敗した場合は、次の操作を行います。
+調整に失敗した場合は、次の手順を試してください。
 
-- デバイスのバイザーをクリーニングしています
-- グラスをクリーニングする
-- デバイスバイザーをできるだけ近くにプッシュする
-- バイザーでのオブジェクトの移動 (髪など)
-- 部屋のライトをオンにする、または直接日光を切る
+- デバイス バイザーのクリーニング
+- 眼鏡のクリーニング
+- デバイスバイザーを可能な限り目の近くにプッシュする
+- バイザー内のオブジェクトを外に移動する (生長など)
+- 部屋の照明をオンにするか、直接の光から出て行く
 
-すべてのガイドラインに従い、調整が引き続き失敗する場合は、設定で調整のプロンプトを無効にすることができます。 また、 [フィードバックハブ](hololens-feedback.md)でフィードバックを提出してお知らせください。
+すべてのガイドラインに従い、調整がまだ失敗している場合は、次の手順で調整プロンプトを設定。 また、 でフィードバックを送信して、お知[フィードバック Hub。](hololens-feedback.md)
 
-[イメージの色または明るさのトラブルシューティング](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)に関する関連情報も参照してください。
+画像の色または明るさ [のトラブルシューティングについては、関連情報も参照してください。](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
-視線位置はシステムによって計算されるため、IPD の設定は HoloLens 2 には適用されません。 
-
-[一覧に戻る](#list)
-
-## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>HoloLens が既に他のユーザーに設定されているため、サインインできません
-
-デバイスを [**点滅モード** にし、Advanced Recovery コンパニオンを使用](hololens-recovery.md#clean-reflash-the-device)してデバイスを回復することができます。
+目の位置はシステムによって計算HoloLens 2、IPD の設定は適用されません。 
 
 [一覧に戻る](#list)
 
+## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>自分のアカウントが他のユーザー HoloLens設定されたため、サインインできない
 
-## <a name="unity-isnt-working"></a>Unity が動作しない
-
-- HoloLens 開発に推奨される Unity の最新バージョン用の[ツールをインストール](/windows/mixed-reality/install-the-tools)することをお勧めします。
-- unity HoloLens Technical Preview の既知の問題については、 [HoloLens unity フォーラム](https://forum.unity3d.com/threads/known-issues.394627/)をご覧ください。
+デバイスを[フラッシュ モードにし、Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device)を使用してデバイスを回復できます。
 
 [一覧に戻る](#list)
 
-## <a name="windows-device-portal-isnt-working-correctly"></a>Windowsデバイスポータルが正しく動作していません
 
-- Mixed Reality キャプチャのライブプレビュー機能は、数秒の待機時間が発生する場合があります。
+## <a name="unity-isnt-working"></a>Unity が機能しない
 
-- [仮想入力] ページで、[仮想ジェスチャ] セクションのジェスチャとスクロールコントロールが機能していません。 使用すると、効果はありません。 仮想入力ページの仮想キーボードが正常に動作します。
-
-- 設定で開発者モードを有効にした後、デバイスポータルをオンにするスイッチが有効になるまで数秒かかることがあります。
+- 新[しい開発に推奨される](/windows/mixed-reality/install-the-tools)Unity の最新バージョンについては、ツールのインストールに関するHoloLensしてください。
+- Unity HoloLens Technical Preview に関する既知の問題については、Unity フォーラムHoloLens[を参照してください](https://forum.unity3d.com/threads/known-issues.394627/)。
 
 [一覧に戻る](#list)
 
-## <a name="the-hololens-emulator-isnt-working"></a>HoloLens Emulator が機能していません
+## <a name="windows-device-portal-isnt-working-correctly"></a>Windowsデバイス ポータルが正しく動作しない
 
-HoloLens エミュレーターに関する情報は、開発者向けのドキュメントにあります。  [HoloLens エミュレーターのトラブルシューティングの](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)詳細については、こちらを参照してください。
+- キャプチャの Live Preview 機能Mixed Reality数秒の待機時間が発生する可能性があります。
 
+- [仮想入力] ページの [仮想ジェスチャ] セクションの [ジェスチャ] コントロールと [スクロール] コントロールは機能しません。 それらを使用した場合、効果はありません。 仮想入力ページの仮想キーボードは正しく動作します。
 
-- Microsoft Store の一部のアプリは、エミュレーターと互換性がありません。 たとえば、若い Conker とフラグメントは、エミュレーターでは再生できません。
-- Emulator では、PC web カメラを使用できません。
-- Windows デバイスポータルのライブプレビュー機能は、エミュレーターでは機能しません。 混合した現実のビデオとイメージをキャプチャすることもできます。
-
-[一覧に戻る](#list)
-
-## <a name="voice-commands-arent-working"></a>音声コマンドが動作していません
-
-Cortana が音声コマンドに応答しない場合は、Cortana が有効になっていることを確認します。 [すべてのアプリ] の一覧で **Cortana**  >  **メニュー** ノートブック設定を選択して  >    >  変更を行います。 説明できることの詳細については、「 [HoloLens での音声の使用](hololens-cortana.md)」を参照してください。
-
-HoloLens (第1世代) では、組み込み音声認識は構成できません。 常に有効になっています。 HoloLens 2 では、デバイスのセットアップ時に音声認識と Cortana の両方をオンにするかどうかを選択できます。
-
-HoloLens 2 が音声に応答していない場合は、音声認識が有効になっていることを確認します。 [**スタート**  >  **設定**  >  **のプライバシー** に関する音声] を開き  >   、**音声認識** をオンにします。
+- 設定 で開発者モードを有効にした後、スイッチが有効になっているまで数秒デバイス ポータル場合があります。
 
 [一覧に戻る](#list)
 
-## <a name="hand-input-isnt-working"></a>手書き入力が機能していません
+## <a name="the-hololens-emulator-isnt-working"></a>アプリケーションHoloLens Emulator動作していません
 
-HoloLens が自分の手を見えるようにするには、ジェスチャフレームに保持する必要があります。  Mixed Reality ホームでは、自分がどのように追跡されるかを知ることができるフィードバックが提供されます。  HoloLens のバージョンによって、次のようなフィードバックが異なる場合があります。
+エミュレーターのHoloLensについては、開発者向けドキュメントを参照してください。  詳細については、HoloLens[エミュレーターのトラブルシューティングに関する記事を参照してください](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)。
 
-- HoloLens (第1世代) では、宝石カーソルがドットからリングに変わります。
-- HoloLens 2 では、指先カーソルがスレートの近くにあると表示され、スレートがさらに離れたときにハンドレイが表示されます。
 
-多くのイマーシブアプリは、Mixed Reality ホームに似た入力パターンに従います。  [HoloLens (第1世代)](hololens1-basic-usage.md#use-hololens-with-your-hands)と[HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame)で手書き入力を使用する方法について説明します。
-
-手袋を装着している場合は、一部の種類の手袋がハンドトラッキングで動作しないことに注意してください。  一般的な例としては、赤外線信号を吸収する傾向があり、深度カメラでは選択されていない黒色のゴムグローブがあります。  ゴムグローブが使用されている場合は、青や灰色などの明るい色を試すことをお勧めします。  もう1つの例として、大きな baggy グローブがあります。これは、手の形が見えにくくなる傾向があります。 最良の結果を得るには、できるだけフォーム継ぎ手として手袋を使用することをお勧めします。
-
-バイザーに指紋または汚れがある場合は、HoloLens に付属しているマイクロファイバークリーニング布を使用して、バイザーをゆっくりとクリーニングします。
+- アプリ内のすべてのアプリMicrosoft Storeエミュレーターと互換性がある場合はありません。 たとえば、Young Conker と Fragments はエミュレーターで再生できません。
+- PC Web カメラは、Emulator。
+- アプリケーションのライブ プレビュー機能Windows デバイス ポータルエミュレーターでは機能しません。 引き続き、ビデオMixed Realityキャプチャできます。
 
 [一覧に戻る](#list)
 
-## <a name="cant-connect-to-wi-fi"></a>Wi-Fi に接続できません
+## <a name="voice-commands-arent-working"></a>音声コマンドが機能しない
+
+音声Cortana応答しない場合は、有効になっているCortana確認します。 [すべてのアプリ] ボックスの一覧 **で、[メニュー Cortana**  >    >  **ノートブック]** 設定  >  を選択して変更を加えます。 話し方の詳細については、「音声を使用して音声を使用する」[をHoloLens。](hololens-cortana.md)
+
+HoloLens (第 1 世代) では、組み込みの音声認識は構成できません。 これは常にオンです。 デバイスHoloLens 2、デバイスのセットアップ中に音声認識と音声の両方Cortanaを有効にするかどうかを選択できます。
+
+音声にHoloLens 2応答していない場合は、音声認識が有効になっていることを確認します。 [Start **設定**  >  Privacy Speech]**に**  >  **移動**  >  **し、** 音声認識を **有効にしてください**。
+
+[一覧に戻る](#list)
+
+## <a name="hand-input-isnt-working"></a>手入力が機能しない
+
+手をHoloLensするには、ジェスチャ フレーム内に保持する必要があります。  [Mixed Reality ホーム] には、手がいつ追跡されるのか知るフィードバックが提供されます。  フィードバックは、さまざまなバージョンのサービスでHoloLens。
+
+- 第HoloLens (第 1 世代) に、視線カーソルがドットからリングに変わります
+- このHoloLens 2、手がスレートに近いときに指先カーソルが表示され、スレートが離れたときに手の光線が表示されます
+
+多くのイマーシブ アプリは、ホームに似た入力パターンMixed Realityします。  HoloLens [(第 1](hololens1-basic-usage.md#use-hololens-with-your-hands)世代) および HoloLens 2 で手入力を使用する方法[について学習します](hololens2-basic-usage.md#the-hand-tracking-frame)。
+
+グラブを装着している場合は、一部の種類の靴下が手の追跡で動作しない点に注意してください。  一般的な例として、黒いゴムのグラブがあります。これは、赤外光を吸収する傾向が高く、深度カメラでは取り出されません。  作業にゴムのグラブが含まれる場合は、青やグレーなどの薄い色を試することをお勧めします。  もう 1 つの例は、手の形があいまいになりがちな、大きなバッグ状のグラブです。 最適な結果を得る場合は、可能な限りフォームに合ったアダプターを使用することをお勧めします。
+
+バイザーに指紋やくもりがある場合は、バイザーに付いたマイクロファイバー クリーニング HoloLensを使用して、バイザーを簡単にクリーニングします。
+
+[一覧に戻る](#list)
+
+## <a name="cant-connect-to-wi-fi"></a>デバイスに接続Wi-Fi
 
 HoloLens を Wi-Fi ネットワークに接続できない場合は、以下を試してください。
 
-- Wi-Fi がオンになっていることを確認してください。 確認するには、開始ジェスチャを使用して、[**設定** ネットワーク] [  >  **&amp; インターネット** wi-fi] の順に選択し  >  ます。 Wi-Fi がオンである場合は、オフにしてから、もう一度オンにしてみてください。
+- Wi-Fi がオンになっていることを確認してください。 確認するには、[開始] ジェスチャを使用し、[ネットワーク **設定**  >  **Wi-Fi ] &amp; を**  >  **選択します**。 Wi-Fi がオンである場合は、オフにしてから、もう一度オンにしてみてください。
 - ルーターまたはアクセス ポイントに PC を近づけます。
-- Wi-Fi ルーターを再起動し、 [HoloLens を再起動](hololens-recovery.md)します。 接続を再試行してください。
+- お使Wi-Fiルーターを再起動し、[を再起動HoloLens。](hololens-recovery.md) 接続を再試行してください。
 - これらのいずれも機能しない場合は、ルーターのファームウェアが最新であるか確認します。 この情報は、製造元の Web サイトで見つけることができます。
 
 [一覧に戻る](#list)
 
-## <a name="bluetooth-devices-arent-pairing"></a>Bluetooth デバイスがペアリングしていない
+## <a name="bluetooth-devices-arent-pairing"></a>Bluetoothデバイスがペアリングされていない
 
-[Bluetooth デバイスのペアリング](hololens-connect-devices.md)で問題が発生した場合は、次の操作を試してください。
+デバイスのペアリングで問題が発生した場合[Bluetoothを](hololens-connect-devices.md)試してください。
 
-- **設定**  >  **デバイス** にアクセスし、Bluetooth が有効になっていることを確認します。 有効になっている場合は、オフにしてから再びオンにします。
-- Bluetooth デバイスが完全に充電されていること、または電池が最新であることを確認します。
-- それでも接続できない場合は、 [HoloLens を再起動](hololens-recovery.md)します。
+- [デバイス **設定**  >  **に移動** し、デバイスが有効Bluetooth確認します。 有効な場合は、オフにし、再度オンにします。
+- デバイスが完全にBluetooth、または新しいバッテリを持っている必要があります。
+- それでも接続できない場合は、次[のコマンドをHoloLens。](hololens-recovery.md)
 
 [一覧に戻る](#list)
 
-## <a name="usb-c-microphone-isnt-working"></a>USB C マイクが動作していない
+## <a name="usb-c-microphone-isnt-working"></a>USB-C マイクが動作しない
 
-USB C のマイクによっては、マイク *と* スピーカーの両方として誤って報告されることに注意してください。 これは、HoloLens ではなく、マイクに問題があります。 これらのマイクの1つを HoloLens に接続すると、サウンドが失われる可能性があります。 幸いにも、簡単な修正があります。  
+一部の USB-C マイクでは、マイクとスピーカーの両方として誤って報告される *点に* 注意してください。 これはマイクの問題であり、マイクには問題HoloLens。 これらのマイクの 1 つをデバイスに接続HoloLens音が失われる可能性があります。 さいわい、簡単な修正があります。  
 
-**設定**  ->  **システム**  ->  **サウンド** で、組み込みのスピーカー **(アナログ機能オーディオドライバー)** を **既定のデバイス** として明示的に設定します。 マイクが取り外され、後で再接続された場合でも、HoloLens はこの設定を記憶する必要があります。
+**[設定** サウンド] で、組み込みのスピーカー (アナログ機能オーディオ ドライバー) を既定のデバイス として明示的  ->    ->  **に設定します**。  HoloLensマイクが削除され、後で再接続された場合でも、この設定を覚えておく必要があります。
 
-![USB C マイクのトラブルシューティング。](images/usbc-mic-4.png)
+![USB-C マイクのトラブルシューティング。](images/usbc-mic-4.png)
 
-## <a name="devices-listed-as-available-in-settings-dont-work"></a>設定で使用可能と表示されているデバイスが動作しない
+## <a name="devices-listed-as-available-in-settings-dont-work"></a>[デバイス] で使用可能として一設定デバイスが機能しない
 
-HoloLens (第 1 世代) では、オーディオ プロファイルBluetoothサポートされていません。 Bluetoothやヘッドセットなどのオーディオ デバイスは、HoloLens 設定で使用できると表示される場合がありますが、サポートされていません。
+HoloLens (第1世代) では Bluetooth オーディオプロファイルはサポートされていません。 スピーカーやヘッドセットなどの Bluetooth オーディオデバイスは、HoloLens 設定で使用できるように見えることがありますが、これらはサポートされていません。
 
-HoloLens 2、ステレオ再生Bluetooth A2DP オーディオ プロファイルをサポートしています。 周辺機器Bluetooth Bluetoothマイク キャプチャを有効にする Bluetooth ハンズ フリー プロファイルは、HoloLens 2 ではサポートされていません。
+HoloLens 2 は、ステレオ再生用の Bluetooth A2DP audio プロファイルをサポートしています。 Bluetooth 周辺機器からのマイクキャプチャを有効にする Bluetooth ハンドフリープロファイルは、HoloLens 2 ではサポートされていません。
 
-デバイスの使用で問題がBluetooth場合は、それがサポートされているデバイスである必要があります。 サポートされているデバイスは次のとおりです。
+Bluetooth デバイスの使用に問題がある場合は、それがサポートされているデバイスであることを確認してください。 サポートされているデバイスは次のとおりです。
 
-- 英語の QWERTY Bluetooth (ホログラフィック キーボードを使用する任意の場所で使用できます)。
-- Bluetoothマウス。
-- クリック[HoloLens 。](hololens1-clicker.md)
+- 英語の QWERTY Bluetooth キーボード (holographic キーボードを使用する任意の場所で使用できます)。
+- マウスを Bluetooth します。
+- [HoloLens clicker](hololens1-clicker.md)。
 
-HID デバイスと GATT デバイスBluetooth他のデバイスを組み合わせて使用HoloLens。 ただし、デバイスを実際に使用するには、Microsoft Storeアプリをインストールする必要がある場合があります。
+他の Bluetooth HID および GATT デバイスを HoloLens とペアリングできます。 ただし、デバイスを実際に使用するには、Microsoft Store から対応するコンパニオンアプリをインストールすることが必要になる場合があります。
 
 [一覧に戻る](#list)
