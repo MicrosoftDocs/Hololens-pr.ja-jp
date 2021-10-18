@@ -117,7 +117,7 @@
 ## [HoloLens 2 のリリース ノート](hololens-release-notes.md)
 ## [Microsoft HoloLens の Insider Preview](hololens-insider.md)
 ## [サポートされている言語](hololens2-language-support.md)
-## [Microsoft Mesh を使用した開発 (プレビュー)](/mesh/overview)
+## [Microsoft Mesh (プレビュー) について](/mesh/overview)
 ## HoloLens (第 1 世代)
 ### 初めての使用
 #### [HoloLens について (第 1 世代)](hololens1-hardware.md)
