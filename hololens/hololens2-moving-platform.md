@@ -5,7 +5,7 @@ keywords: 動くプラットフォーム, ダイナミック モーション, ho
 author: evmill
 ms.author: v-evmill
 ms.reviewer: yabahman
-ms.date: 8/10/2021
+ms.date: 10/12/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,19 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 81b3231827fce9a2ae2d5e3105800685fedb917b
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 7c636cd97e31c74d4976e71ec3f41ac5afe5bdcc
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034311"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924420"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>低ダイナミック モーション移動プラットフォームでの移動プラットフォーム モード
 
-**Insider ビルド 20348.1411** において、HoloLens 2 上の低ダイナミック モーション移動プラットフォームでの追跡用にベータ サポートを追加しました。 ビルドをインストールし、移動プラットフォーム モードを有効にすると、大型の船や海洋船舶など、以前にアクセスできなかった環境で HoloLens 2 を使用できるようになります。 現在、この機能は、これらの特定の移動プラットフォームを有効にすることのみを目的としています。 この機能を他の環境で使用してはいけないことはありませんが、この機能はそもそもこういった環境にサポートを追加することに重点を置いています。
-
-> [!NOTE]
-> 現在、この機能は [Windows Insider](hololens-insider.md) でのみ利用できます。
+[Windows Holographic バージョン 21H2](hololens-release-notes.md#windows-holographic-version-21h2) において、HoloLens 2 上の低ダイナミック モーション移動プラットフォームでの追跡用にベータ サポートを追加しました。 ビルドをインストールし、移動プラットフォーム モードを有効にすると、大型の船や海洋船舶など、以前にアクセスできなかった環境で HoloLens 2 を使用できるようになります。 現在、この機能は、これらの特定の移動プラットフォームを有効にすることのみを目的としています。 この機能を他の環境で使用してはいけないことはありませんが、この機能はそもそもこういった環境にサポートを追加することに重点を置いています。
 
 ![移動プラットフォームの例。](./images/mpm-compare.gif)
 
@@ -39,8 +36,8 @@ ms.locfileid: "126034311"
 
 HoloLens は、安定したホログラムを表示するために、[自由度 6](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) (X、Y、Z 方向の平行移動、ロール、ピッチ、ヨーの回転) で頭の位置を追跡できる必要があります。 これを行うために、HoloLens により、次の 2 つの別々のソースから 2 つの類似した情報が追跡されます。
 
-1. 可視光カメラ: 環境を追跡します。たとえば、HoloLens を使用している物理的な部屋など
-1. 慣性測定装置 (IMU) – 地球を基準として頭の動きと向きを追跡する、加速度計、ジャイロスコープ、および磁力計で構成されます。
+1. **可視光カメラ**。 これらのカメラにより環境が追跡されます。たとえば、HoloLens を使用している物理的な部屋など
+1. **慣性測定装置 (IMU)** 。 IMU は、地球を基準として頭の動きと向きを追跡する、加速度計、ジャイロスコープ、および磁力計で構成されます。
 
 これら 2 つのソースからの情報が複雑に組み合わされて、スムーズなホログラムをレンダリングするために、低待機時間かつ十分に高い頻度でヘッド位置が追跡されます。
 
@@ -62,10 +59,7 @@ HoloLens は、安定したホログラムを表示するために、[自由度 
 
 移動プラットフォーム モードのベータ サポートの前提条件は、数えるほどしかありません。
 
-1. [ARC 経由で最新の Insider ビルドをフラッシュ](hololens-insider.md#ffu-download-and-flash-directions)するか、[デバイスの登録と更新](hololens-insider.md#start-receiving-insider-builds)を行って、ビルド 20348.1411 以降をインストールします。
-
-   > [!NOTE]
-   > 現在、このビルドは [Insider Dev チャネル](hololens-insider.md#start-receiving-insider-builds)でのみ入手できます。
+1. [ARC 経由](hololens-recovery.md#clean-reflash-the-device)で[最新のビルド](https://aka.ms/hololens2download)を更新またはフラッシュして、[Windows Holographic バージョン 21H2](hololens-release-notes.md#windows-holographic-version-21h2) 以降をインストールします。
 
 2. [開発者モードとデバイス ポータル](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)を有効にします。
 

@@ -3,7 +3,7 @@ title: Windows Autopilot for HoloLens 2
 description: HoloLens 2 デバイスで Autopilot をセットアップ、構成、およびトラブルシューティングする方法を説明します。
 author: qianw211
 ms.author: v-qianwen
-ms.date: 9/8/2021
+ms.date: 10/11/2021
 ms.prod: hololens
 ms.topic: article
 ms.custom:
@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: sekerawa
-ms.openlocfilehash: 10dc251bbeb204a6621ca0891029858c00c467bc
-ms.sourcegitcommit: d09556a101663ef5dfff865d4753e64a41032b78
+ms.openlocfilehash: 05eb629e05395f04ddb8723d58d41db4161896fa
+ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "128346776"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129964583"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot for HoloLens 2
 
@@ -79,13 +79,13 @@ Surface デバイスの場合と同様に、お客様が Microsoft [クラウド
 
 **Windows Autopilot 自己展開モードに関する記事の「[要件](/windows/deployment/windows-autopilot/self-deploying#requirements)」のセクションを確認してください。** お客様の環境が、これらの要件と、標準的な Windows Autopilot の要件を満たす必要があります。 記事の「ステップ バイ ステップ」と「検証」のセクションを確認する必要はありません。 この記事の後半の手順では、HoloLens に固有の対応する手順を示します。
 
-デバイスがまだ Azure AD のメンバーではなく、Intune (または別の MDM システム) に登録されていないことを確認します。 Autopilot の自己展開プロセスが、次の手順を実行します。 デバイス関連のすべての情報がクリーン アップされていることを確認するには、Azure AD および Intune ポータル の両方の **デバイス** ページを確認します。 現時点では、HoloLens で [すべての対象デバイスをAutopilot に変換する] 機能はサポートされていません。 
+デバイスがまだ Azure AD のメンバーではなく、Intune (または別の MDM システム) に登録されていないことを確認します。 Autopilot の自己展開プロセスが、次の手順を実行します。 デバイス関連のすべての情報がクリーン アップされていることを確認するには、Azure AD および Intune ポータル の両方の **デバイス** ページを確認します。 現時点では、HoloLens で [すべての対象デバイスをAutopilot に変換する] 機能はサポートされていません。
 
 #### <a name="review-hololens-os-requirements"></a>HoloLens OS の要件を確認します:
 
 デバイスのビルド バージョンを確認するか、最新の OS に再フラッシュするには、[Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=2&activetab=pivot:overviewtab) と[デバイスの再フラッシュ手順](hololens-recovery.md)を使用します。 2020 年 9 月の後半までに配信されたデバイスには、Windows Holographic バージョン 1903 がプリインストールされています。 販売業者に連絡して、Autopilot 対応のデバイスが発送されていることを確認してください。
 
- オペレーティング システムの最小バージョン | サポートされる機能 | 注釈 
+ オペレーティング システムの最小バージョン | サポートされる機能 | 注釈
  ------ | ------ | ------  
  [Windows Holographic バージョン 2004](hololens-release-notes.md#windows-holographic-version-2004) (ビルド 19041.1103) 以降 | 1. HoloLens 2 上の Autopilot の自己展開シナリオ。 | Autopilot プロファイルのダウンロードは、イーサネット経由でのみサポートされます。 **電源を入れる前に**、「USB-C to Ethernet」アダプターを使って、HoloLens が イーサネットに接続されていることを確認します。  多くの HoloLens デバイスに Autopilot ロールアウトを計画している場合は、アダプター インフラストラクチャの計画を立てることをお勧めします。 USB ハブは、HoloLens でサポートされていないサードパーティ製ドライバーのインストールが必要な場合が多いため、お勧めしません。
  [Windows Holographic バージョン 20H2](hololens-release-notes.md#windows-holographic-version-20h2) (ビルド 19041.1128) 以降 | 1. Wi-Fi 経由での Autopilot プロファイルのダウンロード。 <br> 2. Autopilot で指定されたテナントを使用してデバイスをロックする[テナント ロックダウン CSP と Autopilot](#tenant-lockdown-csp-and-autopilot)。 | 必要に応じて、イーサネット アダプターを使用することもできます。 Wi-fi 経由で接続されているデバイスの場合、ユーザーは次のことのみを行う必要があります: <ul> <li> ハチドリのシーンに移動します。 </li> <li> 言語とロケールを選択します。 </li> <li> 視線の調整を実行します。 </li> <li> 目的の Wi-Fi ネットワークに正常に接続します。 </li> </ul>
@@ -102,7 +102,7 @@ Autopilot を正常に実行するには、HoloLens デバイスで確実に登�
 
 ### <a name="4-register-devices-in-windows-autopilot"></a>4. Windows Autopilot にデバイスを登録する
 
-最初のセットアップの前に、お使いのデバイスが Windows Autopilot に登録されている必要があります。 
+最初のセットアップの前に、お使いのデバイスが Windows Autopilot に登録されている必要があります。
 
 HoloLens デバイスを登録する主な方法は 3 つあります。
 
@@ -133,7 +133,7 @@ HoloLens デバイスを登録する主な方法は 3 つあります。
 
    > [!NOTE]  
    > .zip ファイルはすぐに使用できない場合があります。 ファイルの準備ができていない場合は、[ドキュメント] フォルダーに HoloLensDiagnostics ファイルが表示されることがあります。 ファイルの一覧を更新するには、ウィンドウを更新します。
-    
+
 1. AutopilotDiagnostics.zip ファイルの内容を抽出します。
 
 1. 抽出されたファイルで、ファイル名に "DeviceHash" プレフィックスが付いた CSV ファイルを見つけます。 そのファイルをコンピューターのドライブに保存し、後でアクセスできるようにします。  
@@ -280,11 +280,12 @@ HoloLens 2 で TenantLockdown CSP の RequireNetworkInOOBE ノードが true に
 
 HoloLens 2 で TenantLockdown CSP の RequireNetworkInOOBE ノードが true に設定されると、OOBE では次の操作が許可されなくなります。
 
-- ランタイム プロビジョニングを使用したローカル ユーザーの作成 
-- ランタイム プロビジョニングによる Azure AD への参加操作の実行 
-- OOBE エクスペリエンスでデバイスの所有者を選択する 
+- ランタイム プロビジョニングを使用したローカル ユーザーの作成
+- ランタイム プロビジョニングによる Azure AD への参加操作の実行
+- OOBE エクスペリエンスでデバイスの所有者を選択する
 
-#### <a name="how-to-set-this-using-intune"></a>Intune を使用してこれを設定する方法 
+#### <a name="how-to-set-this-using-intune"></a>Intune を使用してこれを設定する方法
+
 1. 以下に示すように、カスタム OMA URI デバイス構成プロファイルを作成し、RequireNetworkInOOBE ノードに true を指定します。
 OMA-URI 値は ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE である必要があります
 
@@ -307,13 +308,14 @@ OMA-URI 値は ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE である必要
    > [!div class="mx-imgBorder"]
    > ![Intune の OMA URI を介して RequireNetworkInOOBE を false に設定するスクリーンショット。](images/hololens-tenant-lockdown-false.png)
 
-1. グループを作成し、デバイス構成プロファイルをそのデバイス グループに割り当てます。 
+1. グループを作成し、デバイス構成プロファイルをそのデバイス グループに割り当てます。
 
 1. 前の手順で作成したグループの HoloLens 2 デバイス メンバーを作成し、同期をトリガーします。
 
 Intune ポータルで、デバイス構成が正常に適用されていることを確認します。 このデバイスの構成が HoloLens 2 デバイスに正常に適用されると、TenantLockdown の効果が非アクティブになります。
 
-#### <a name="what-would-happen-during-oobe-if-autopilot-profile-is-unassigned-on-a-hololens-after-tenantlockdown-was-set-to-true"></a>TenantLockdown が true に設定された後、HoloLens で Autopilot プロファイルが割り当て解除された場合、OOBE 中にどうなりますか? 
+#### <a name="what-would-happen-during-oobe-if-autopilot-profile-is-unassigned-on-a-hololens-after-tenantlockdown-was-set-to-true"></a>TenantLockdown が true に設定された後、HoloLens で Autopilot プロファイルが割り当て解除された場合、OOBE 中にどうなりますか?
+
 OOBE は、Autopilot プロファイルがダウンロードされるのを無期限に待機し、次のダイアログが表示されます。 TenantLockdown の影響を取り除くには、最初に Autopilot のみを使用してデバイスを元のテナントに登録し、TenantLockdown CSP によって導入された制限を取り除く前に、前の手順で説明したように RequireNetworkInOOBE の設定を解除する必要があります。
 
 ![ポリシーがデバイスに適用される時のデバイス内ビュー。](images/hololens-autopilot-lockdown.png)
@@ -326,8 +328,25 @@ OOBE は、Autopilot プロファイルがダウンロードされるのを無�
 
 ## <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 
-- MEM に構成されているデバイスコンテキスト ベースのアプリケーション インストールが HoloLens に適用されない問題を調査しています。 [「デバイス コンテキストとユーザー コンテキストのインストールの詳細」をご覧ください。](/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
-- Wi-Fi 経由で Autopilot を設定しているときに、インターネット接続が最初に確立されたときに Autopilot プロファイルがダウンロードされない場合があります。 この場合、使用許諾契約書 (EULA) が提示され、ユーザーは Autopilot 以外のセットアップを続行することができます。 Autopilot による設定を再試行するには、デバイスをスリープ状態にしてから電源を入れます。または、デバイスを再起動して、もう一度お試しください。
+### <a name="why-do-i-see-0x80180014-during-autopilot"></a>オートパイロット中に、0x80180014 が表示されるのはなぜですか。
+
+これは、デバイスでの Autopilot プロセス中に表示されるエラーです。 この問題は、HoloLens デバイスにより以下が行われた場合にのみ適用されます。
+
+1. Autopilot が少なくとも 1 回は実行された場合
+1. オートパイロットのためにリセット中であり、再使用中である場合
+
+Autopilot エクスペリエンスが特定のエラーで失敗します。
+
+![HoloLens オートパイロット失敗のエラー コード](images/autopilot-0x80180014-failure.jpg)
+
+このエラーを解決するために必要な手順
+
+1. 「[Autopilot デバイスのインポートと登録の問題のトラブルシューティング](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode)」の手順に従って、Intune からデバイスを削除します。 (Intune 管理者が、このタスクを実行する必要があります)
+1. 手順 1. が完了したら、デバイスを再起動してサインインします。
+1. **[設定]**  ->  **[更新とセキュリティ]**  ->  **[Reset & recovery]\(リセットと回復\)** に移動し、 **[開始する]** を選択します。
+    1. 手順 2. や 3. で問題が発生した場合は、[HoloLens のリセットまたは再フラッシュ](hololens-recovery.md)に関するページでデバイスをリセットする代替手段を確認してください。
+
+これで、AutoPilot は正常に登録されます。
 
 ### <a name="troubleshooting"></a>トラブルシューティング
 

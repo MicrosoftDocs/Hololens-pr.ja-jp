@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 810bcae8b457c2f6efba55162e54bcc8956e6005
+ms.sourcegitcommit: a9a86748afd368f3d316a4d2c978063a0905ad08
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034299"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129949022"
 ---
 # <a name="compare-hololens-2-options"></a>HoloLens 2 オプションの比較
 
@@ -39,6 +39,7 @@ HoloLens は、*ホログラムで強化された* Mixed Reality デバイスで
 | **ノイズを除去したオーディオ出力**                        |            |                               |                               |                                                  |               ✔️              |                                |
 | **開発者の権利 <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
 | **高速置換プログラム <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+ **イングレス保護等級 (IP50、防塵対応済み)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
 | **商用使用権**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**保証**](hololens2-hardware.md#warranty-information)                                             |   1 年   |             1 年            |             2 年            |                      2 年                      |            1 年 <sup>3</sup>            |             1 年             |
 | **デバイス購入の制限**                                |    なし    |              なし             |              なし             |                       なし                       |             なし             |       1 回の購入につき 1 台      |

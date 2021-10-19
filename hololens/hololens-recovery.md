@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034371"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034234"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>HoloLens 2 を再起動、リセット、または回復する
 
@@ -45,13 +45,19 @@ HoloLens 2 に付属している[充電器と USB タイプ C ケーブル](http
 
    ![HoloLens 2 のプロパティ画面にバッテリの残量レベルが表示されます。](images/ResetRecovery2.png)
 
-デバイスが起動メニューから起動できない場合は、ホスト PC の LED の外観とデバイスの一覧を確認します。 次に、[トラブルシューティング ガイド](hololens-troubleshooting.md)に従います。 デバイスの状態がトラブルシューティング ガイドに記載されている状態と一致しない場合は、ホスト PC ではなく、電源に接続されたデバイスで[ハード的なリセット手順](hololens-recovery.md#hard-reset-procedure)を実行してください。 デバイスが充電されるまで少なくとも 1 時間待ちます。
+デバイスが起動メニューから起動できない場合は、ホスト PC の LED の外観とデバイスの一覧を確認します。 次に、[トラブルシューティング ガイド](hololens-troubleshooting.md)に従います。 デバイスの状態がトラブルシューティング ガイドに記載されている状態と一致しない場合は、ホスト PC ではなく、電源に接続されたデバイスで[ハード的なリセット手順](hololens-recovery.md#hard-restart-procedure)を実行してください。 デバイスが充電されるまで少なくとも 1 時間待ちます。
 
-## <a name="reset-the-device"></a>デバイスをリセットする
+> [!NOTE]
+> また、用語を定義します。
+> "再起動" は、単にデバイスの電源をオフにしてオンにすることを意味します。
+> "リセット" は、現在のイメージを再インストールするために、設定 UI を使用してデバイスを既定値に戻すことを意味します。
+> "再フラッシュ" は、デバイスが PC に接続されていて、新しいイメージ (必要に応じて別のイメージ) がインストールされることを意味します。
 
-状況によっては、ソフトウェアの UI を使用せずにデバイスを手動でリセットする必要がある場合があります。
+## <a name="restart-the-device"></a>デバイスを再起動します
 
-### <a name="standard-procedure"></a>標準手順
+状況によっては、ソフトウェアの UI を使用せずにデバイスを手動で再起動する必要がある場合があります。 これにより、デバイスをリセットまたは再フラッシュすることなく、発生している問題を解決できる場合があります。
+
+### <a name="standard-restart-procedure"></a>標準の再起動手順
 
 1. Type-C ケーブルを抜いて、デバイスを電源またはホスト PC から切断します。
 
@@ -63,7 +69,7 @@ HoloLens 2 に付属している[充電器と USB タイプ C ケーブル](http
 
    ![HoloLens 2 MicrosoftHoloLensRecovery デバイス マネージャー。](images/MicrosoftHoloLens_DeviceManager.png)
 
-### <a name="hard-reset-procedure"></a>ハード リセット手順
+### <a name="hard-restart-procedure"></a>ハード再起動の手順
 
 標準のリセット手順が機能しない場合は、ハード リセット手順を使用します。
 
@@ -92,13 +98,13 @@ HoloLens 2 に付属している[充電器と USB タイプ C ケーブル](http
 >[!WARNING]
 >デバイスを再フラッシュすると、TPM リセットを含むすべての個人データ、アプリ、設定が消去されます。
 
-既定では、Advanced Recovery Companion は最新の機能リリース ビルドをダウンロードするように設定されています。最新の機能リリースについては、[HoloLens 2 のリリース ノート](hololens-release-notes.md)を参照してください。 最新の HoloLens 2 Full Flash Update (FFU) パッケージを取得し、Advanced Recovery Companion を使用してデバイスを再フラッシュするには、最新のマンスリー HoloLens 2 イメージをダウンロードしてください: [https://aka.ms/hololens2download](https://aka.ms/hololens2download)。 このバージョンは、一般的に利用可能な最新のビルドです。
+既定では、Advanced Recovery Companion は最新の機能リリース ビルドをダウンロードするように設定されています。 最新の機能リリースについては、[HoloLens 2 のリリース ノート](hololens-release-notes.md)を参照してください。 最新の HoloLens 2 Full Flash Update (FFU) パッケージを取得し、Advanced Recovery Companion を使用してデバイスを再フラッシュするには、最新のマンスリー HoloLens 2 イメージをダウンロードしてください: [https://aka.ms/hololens2download](https://aka.ms/hololens2download)。 このバージョンは、一般的に利用可能な最新のビルドです。
 
 再フラッシュ手順を開始する前に、アプリが Windows 10 PC にインストールされて実行されており、デバイスを検出する準備ができていることを確認してください。 また、HoloLens の充電が少なくとも 40% 以上になっていることをご確認ください。
 
 ![HoloLens 2 クリーン再フラッシュのスクリーンショット。](images/ARC1.png)
 
-### <a name="normal-procedure"></a>通常の手順
+### <a name="normal-flashing-procedure"></a>通常のフラッシュ手順
 
 1. HoloLens デバイスの実行中に、以前に Advanced Recovery Companion アプリを開いた Windows 10 PC に接続します。
 
@@ -108,7 +114,7 @@ HoloLens 2 に付属している[充電器と USB タイプ C ケーブル](http
 
 1. Advanced Recovery Companion アプリの UI で HoloLens 2 デバイスを選択し、指示に従って再フラッシュを完了します。
 
-### <a name="manual-procedure"></a>手動の手順
+### <a name="manual-flashing-mode-procedure"></a>手動フラッシュ モードの手順
 
 次の場合は、デバイスを回復モードにする必要がある可能性があります。
 
@@ -146,7 +152,7 @@ HoloLens 2 に付属している[充電器と USB タイプ C ケーブル](http
 
 1. ARC によってデバイスが検出されない場合は、PC 上のデバイスからデバイスへエクスプローラーから接続できます。 それができない場合、
 
-    1. デバイスに、その接続を無効にする USB ポリシーがある可能性があります。 その場合は、[手動フラッシュ モード](hololens-recovery.md#manual-procedure)を試してください。
+    1. デバイスに、その接続を無効にする USB ポリシーがある可能性があります。 その場合は、[手動フラッシュ モード](hololens-recovery.md#manual-flashing-mode-procedure)を試してください。
     2. ポリシーがない場合は、別の USB ケーブルを試してください。
 
 1. デバイスに [1-3-5-LED パターン](hololens2-setup.md#lights-to-indicate-problems)が表示されていないことを確認します。
