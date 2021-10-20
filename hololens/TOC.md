@@ -108,7 +108,7 @@
 ## [ディスプレイ](hololens2-display.md)
 ## [実装デバイスとマネージド デバイス](hololens2-enterprise-troubleshooting.md#)
 ## [診断ログを有効にする](hololens-diagnostic-logs.md)
-## [HoloLens 2 のリセット](hololens-recovery.md)
+## [HoloLens 2 を再起動、リセット、または回復する](hololens-recovery.md)
 
 # リソース
 ## [HoloLens 2 の購入先](hololens2-purchase.md)
@@ -131,7 +131,7 @@
 #### [HoloLens 用のカスタム アプリを管理する](holographic-custom-apps.md)
 #### [HoloLens (第 1 世代) のローカライズされたバージョンをインストールする](hololens1-install-localized.md)
 #### [Windows Holographic for Business 機能のロック解除](hololens1-upgrade-enterprise.md)
-#### [HoloLens のリセット (第 1 世代)](hololens1-recovery.md)
+#### [HoloLens (第 1 世代) を再起動、リセット、または回復する](hololens1-recovery.md)
 ### HoloLens (第 1 世代) のセキュリティ
 #### [HoloLens (第 1 世代) のセキュリティに関するよく寄せられる質問](hololens1-faq-security.yml)
 #### [HoloLens (第 1 世代) の BitLocker 暗号化](hololens1-encryption.md)
