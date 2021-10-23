@@ -14,12 +14,12 @@ manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fa114633afe70a11a180c67fedbd40eb423ece99
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f466abe45a1a9ad676f8dd6a94244473c084be7
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034180"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202881"
 ---
 # <a name="enroll-hololens-in-mdm"></a>MDM での HoloLens の登録
 
@@ -52,7 +52,7 @@ OOBE 中に選択された [id](hololens-identity.md) の種類によって、�
 
 ## <a name="auto-enrollment-in-mdm"></a>MDM への自動登録
 
-組織に[Azure プレミアムサブスクリプション](https://azure.microsoft.com/overview/)があり、Azure Active Directory (Azure AD) を使用していて、認証のために Azure AD トークンを受け入れる mdm ソリューション (現時点では、Microsoft Intune と航空監視でのみサポートされています) を使用している場合、IT 管理者は、ユーザーが Azure AD アカウントでサインインした後に MDM 登録を自動的に許可するように Azure AD を [Azure AD の登録を構成する方法をご覧ください。](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+組織に[Azure プレミアムサブスクリプション](https://azure.microsoft.com/overview/)があり、Azure Active Directory (Azure AD) を使用していて、認証のために Azure AD トークンを受け入れる mdm ソリューション (現時点では、Microsoft Intune と航空監視でのみサポートされています) を使用している場合、IT 管理者は、ユーザーが Azure AD アカウントでサインインした後に MDM 登録を自動的に許可するように Azure AD を 詳細な背景情報について、Azure AD 登録と[Azure active directory と MDM の統合](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)[を構成する方法について説明](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)します。
 
 自動登録が有効になっている場合、追加の手動登録は必要ありません。 ユーザーが Azure AD アカウントでサインインすると、最初の実行エクスペリエンスを完了した後デバイスが MDM に登録されます。
 
@@ -67,6 +67,14 @@ OOBE 中に選択された [id](hololens-identity.md) の種類によって、�
 仕事用アカウントを追加した MSA アカウント、またはデバイス管理のみに登録されているローカルアカウントからデバイスが登録されている場合は、デバイスの登録を解除することができます。 スタートメニューを開き、[**設定アプリ**  ->  **アクセスの職場または学校**  ->  *アカウント* の  ->  **切断**] ボタンを選択します。
 
 ## <a name="enrollment-troubleshooting"></a>登録のトラブルシューティング
+
+### <a name="ensure-device-is-successfully-connected-to-internet-before-attempting-enrollment-post-oobe"></a>OOBE の登録後にデバイスがインターネットに正常に接続されていることを確認します
+
+ユーザーがサインインしたら、インターネットに接続していることを確認します。そのためには、デバイス上のインターネットに接続している web サイトを参照します。
+
+### <a name="ensure-that-azure-active-directory-aad-join-is-not-disabled-in-your-aad-tenant"></a>AAD テナントで Azure Active Directory (AAD) 参加が無効になっていないことを確認してください
+
+Azure portal で使用可能なオプションの詳細については、「 [デバイス設定の構成](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) 」を参照してください。
 
 ### <a name="ensure-valid-license-is-assigned-to-the-user"></a>有効なライセンスがユーザーに割り当てられていることを確認する
 
