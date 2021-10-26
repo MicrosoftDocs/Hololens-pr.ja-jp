@@ -6,8 +6,8 @@ keywords: ハウツー, 再起動, リセット, 回復, ハード リセット,
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/30/2021
+ms.author: v-beehanson
+ms.date: 10/15/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f8969d018059a3b38d2b3001f8bc983b72d58c7
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034234"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151650"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>HoloLens 2 を再起動、リセット、または回復する
 
@@ -45,7 +45,7 @@ HoloLens 2 に付属している[充電器と USB タイプ C ケーブル](http
 
    ![HoloLens 2 のプロパティ画面にバッテリの残量レベルが表示されます。](images/ResetRecovery2.png)
 
-デバイスが起動メニューから起動できない場合は、ホスト PC の LED の外観とデバイスの一覧を確認します。 次に、[トラブルシューティング ガイド](hololens-troubleshooting.md)に従います。 デバイスの状態がトラブルシューティング ガイドに記載されている状態と一致しない場合は、ホスト PC ではなく、電源に接続されたデバイスで[ハード的なリセット手順](hololens-recovery.md#hard-restart-procedure)を実行してください。 デバイスが充電されるまで少なくとも 1 時間待ちます。
+デバイスが起動メニューから起動できない場合は、ホスト PC の LED の外観とデバイスの一覧を確認します。 次に、[トラブルシューティング ガイド](hololens-troubleshooting.md)に従います。 デバイスの状態がトラブルシューティング ガイドに記載されている状態と一致しない場合は、ホスト PC ではなく、電源に接続されたデバイスで[ハード再起動の手順](hololens-recovery.md#hard-restart-procedure)を実行してください。 デバイスが充電されるまで少なくとも 1 時間待ちます。
 
 > [!NOTE]
 > また、用語を定義します。
@@ -71,7 +71,7 @@ HoloLens 2 に付属している[充電器と USB タイプ C ケーブル](http
 
 ### <a name="hard-restart-procedure"></a>ハード再起動の手順
 
-標準のリセット手順が機能しない場合は、ハード リセット手順を使用します。
+標準のリセット手順が機能しない場合は、ハード再起動の手順を使用してください。
 
 1. Type-C ケーブルを抜いて、デバイスを電源またはホスト PC から切断します。
 
@@ -82,6 +82,14 @@ HoloLens 2 に付属している[充電器と USB タイプ C ケーブル](http
 1. デバイス マネージャーを開きます (Windows 10 の場合は **Windows** キー、次に **X** キーを押して、**デバイス マネージャー** を選択します)。 次の図に示すように、デバイスが *Microsoft HoloLens* として正しく列挙されていることを確認します。
 
    ![HoloLens 2 MicrosoftHoloLensRecovery デバイス マネージャー 2。](images/MicrosoftHoloLens_DeviceManager.png)
+
+## <a name="reset-the-device"></a>デバイスをリセットする
+
+ヘッドセットから直接デバイスをリセットできます。 **[設定]**、**[更新とセキュリティ]、[Reset & recovery]\(リセットと回復\)、[このデバイスをリセットする]** の順に選択します。
+
+   ![HoloLens ヘッドセットのリセット。](images/headset-reset-recovery.png)
+
+この方法でリセットすると、すべてのユーザー アカウントが削除され、すべてのデータが消去されます。
 
 ## <a name="clean-reflash-the-device"></a>デバイスをきれいに再フラッシュする
 

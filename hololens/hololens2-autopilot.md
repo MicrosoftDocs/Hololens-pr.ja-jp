@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: sekerawa
-ms.openlocfilehash: 05eb629e05395f04ddb8723d58d41db4161896fa
-ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
+ms.openlocfilehash: b343e4dc6e217319574efa068cd72c5f5a8675a8
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129964583"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202915"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot for HoloLens 2
 
@@ -320,12 +320,6 @@ OOBE は、Autopilot プロファイルがダウンロードされるのを無�
 
 ![ポリシーがデバイスに適用される時のデバイス内ビュー。](images/hololens-autopilot-lockdown.png)
 
-#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>Autopilot プロファイルが Intune に割り当てられているにもかかわらず、Autopilot エクスペリエンスが表示されないのはなぜですか?
-
-既定では、HoloLens 2 は、インターネットを検出した後、Autopilot を検出するために 15 秒間待機します。 15 秒以内に Autopilot プロファイルが検出されなかった場合は、Autopilot が正しく検出されなかったことを意味し、EULA ページが表示されます。
-
-デバイスを再起動して、もう一度やり直してください。 詳細については、「[既知の問題と制限事項](hololens2-autopilot.md#known-issues-and-limitations)」または「[トラブルシューティング](hololens2-autopilot.md#troubleshooting)」を参照してください。
-
 ## <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 
 ### <a name="why-do-i-see-0x80180014-during-autopilot"></a>オートパイロット中に、0x80180014 が表示されるのはなぜですか。
@@ -355,6 +349,12 @@ Autopilot エクスペリエンスが特定のエラーで失敗します。
 - [Windows Autopilot - 既知の問題](/mem/autopilot/known-issues)
 - [Microsoft Intune での Windows デバイスの登録に関する問題のトラブルシューティング](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
 - [Windows Autopilot - ポリシーの競合](/mem/autopilot/policy-conflicts)
+
+#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>Autopilot プロファイルが Intune に割り当てられているにもかかわらず、Autopilot エクスペリエンスが表示されないのはなぜですか?
+
+既定では、HoloLens 2 は、インターネットを検出した後、Autopilot を検出するために 15 秒間待機します。 15 秒以内に Autopilot プロファイルが検出されなかった場合は、Autopilot が正しく検出されなかったことを意味し、EULA ページが表示されます。
+
+デバイスを再起動して、もう一度やり直してください。 詳細については、「[既知の問題と制限事項](hololens2-autopilot.md#known-issues-and-limitations)」を参照してください。
 
 ## <a name="feedback-and-support-for-autopilot"></a>Autopilot のフィードバックとサポート
 

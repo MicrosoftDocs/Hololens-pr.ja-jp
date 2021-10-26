@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 62eedd0c05bb23f11a4e17a97b4ab5441a2931cf
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: c7c15cc0630f11d1687db19f2e6b28b8347dd4c3
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034259"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151668"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>HoloLens 2 の証明書とネットワーク プロファイルを準備する
 
@@ -27,7 +27,7 @@ ms.locfileid: "126034259"
 HoloLens 2 デバイスは通常、Azure Active Directory (Azure AD) に参加し、Intune やその他の MDM プロバイダーによって管理されるため、ご利用の MDM ソリューションに統合されているネットワーク デバイス登録サービス (SCEP) や公開キー暗号化標準 (PKCS) 証明書インフラストラクチャを使用して、そのような証明書を展開する必要があります。 
 
 >[!NOTE]
-> MDM プロバイダーがない場合でも、 [Windows 構成デザイナー](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab)の [プロビジョニングパッケージ](hololens-provisioning.md#steps-for-creating-provisioning-packages)または [証明書マネージャー](certificate-manager.md)を使用して証明書を展開することができます。そのためには、 **[設定] > [アップデートとセキュリティ] > [証明書マネージャー]** の順に移動します。
+> MDM プロバイダーがない場合でも、 [Windows 構成デザイナー](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab)の [プロビジョニングパッケージ](hololens-provisioning.md#create-the-provisioning-package)または [証明書マネージャー](certificate-manager.md)を使用して証明書を展開することができます。そのためには、 **[設定] > [アップデートとセキュリティ] > [証明書マネージャー]** の順に移動します。
 
 ## <a name="certificate-requirements"></a>証明書の要件
 SCEP や PKCS インフラストラクチャを介して証明書を展開するには、ルート証明書が必要です。 組織内のその他のアプリケーションやサービスでは、HoloLens 2 デバイスにもルート証明書を展開する必要がある可能性があります。 

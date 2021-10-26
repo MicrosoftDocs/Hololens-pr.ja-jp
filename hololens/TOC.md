@@ -108,7 +108,7 @@
 ## [ディスプレイ](hololens2-display.md)
 ## [実装デバイスとマネージド デバイス](hololens2-enterprise-troubleshooting.md#)
 ## [診断ログを有効にする](hololens-diagnostic-logs.md)
-## [HoloLens 2 を再起動、リセット、または回復する](hololens-recovery.md)
+## [HoloLens 2 の再起動、リセット、または回復](hololens-recovery.md)
 
 # リソース
 ## [HoloLens 2 の購入先](hololens2-purchase.md)

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0ee90e8aa89c4121053ff6319ec46f83f01a4a3f
-ms.sourcegitcommit: a9a86748afd368f3d316a4d2c978063a0905ad08
+ms.openlocfilehash: a9f4609f39405b6815fe044cae124bc95365707c
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129949039"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202864"
 ---
 # <a name="where-to-buy-hololens-2"></a>HoloLens 2 の購入先
 
@@ -30,15 +30,23 @@ HoloLens 2 は、イマーシブ エクスペリエンスを実現する業界�
 
 | HoloLens 2 Edition| サポート対象の市場 |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | オーストラリア、オーストリア、ベルギー、カナダ、中国、デンマーク、フィンランド、フランス、ドイツ、香港、アイルランド、イタリア、日本、マレーシア、オランダ、ニュージーランド、ノルウェー、ポーランド、ポルトガル、シンガポール、韓国、スペイン、スウェーデン、スイス、台湾、タイ、英国、米国、ベトナム  |
-| HoloLens 2 (Remote Assist付き) | オーストラリア、オーストリア、ベルギー、カナダ、デンマーク、フィンランド、フランス、ドイツ、香港、アイルランド、イタリア、日本、韓国、マレーシア、オランダ、ニュージーランド、ノルウェー、シンガポール、スペイン、スウェーデン、スイス、台湾、タイ、英国、米国、ベトナム<sup>1</sup> 
-| *HoloLens 2 Industrial Edition (ローンチ時)* | オーストラリア、オーストリア、ベルギー、カナダ、中国、デンマーク、フィンランド、フランス、ドイツ、香港、アイルランド、イタリア、日本、マレーシア、オランダ、ニュージーランド、ノルウェー、ポーランド、ポルトガル、シンガポール、韓国、スペイン、スウェーデン、スイス、台湾、タイ、英国、米国、ベトナム  |
+| HoloLens 2 | オーストラリア、オーストリア、ベルギー、カナダ、中国、デンマーク、フィンランド、フランス、ドイツ、香港、アイルランド、イタリア、日本、マレーシア、メキシコ、オランダ、ニュージーランド、ノルウェー、ポーランド、ポルトガル、シンガポール、南アフリカ、韓国、スペイン、スウェーデン、スイス、台湾、タイ、英国、米国、ベトナム  |
+| HoloLens 2 (Remote Assist付き) | オーストラリア、オーストリア、ベルギー、カナダ、デンマーク、フィンランド、フランス、ドイツ、香港、アイルランド、イタリア、日本、韓国、マレーシア、メキシコ、オランダ、ニュージーランド、ノルウェー、シンガポール、南アフリカ、スペイン、スウェーデン、スイス、台湾、タイ、英国、米国、ベトナム <sup>1</sup> 
+| *HoloLens 2 Industrial Edition (ローンチ時)* | オーストラリア、オーストリア、ベルギー、カナダ、中国、デンマーク、フィンランド、フランス、ドイツ、香港、アイルランド、イタリア、日本、マレーシア、メキシコ、オランダ、ニュージーランド、ノルウェー、ポーランド、ポルトガル、シンガポール、南アフリカ、韓国、スペイン、スウェーデン、スイス、台湾、タイ、英国、米国、ベトナム  |
 | HoloLens 2 Development Edition | オーストラリア、カナダ、フランス、ドイツ、アイルランド、イタリア、日本、ニュージーランド、スイス、英国 |
 
 &nbsp;&nbsp;&nbsp;<sup>1</sup> この一覧は動的です。最新情報を確認してください
 
 ## <a name="find-an-authorized-hololens-2-reseller"></a>HoloLens 2 の認定再販パートナーを探す
 リージョン別の HoloLens 2 の提供状況と購入オプションについては、以下の表を参照してください。
+
+### <a name="africa"></a>**アフリカ**
+
+| 国 | ADD | DMP | HoloLens 2 DMP |
+|---------|-----|------|----------------|
+| **南アフリカ** | Tarsus ディストリビューション | Datacentrix | [Datacentrix - 大手のハイブリッド IT システム インテグレーターおよびマネージド サービス プロバイダー](https://www.datacentrix.co.za/)|
+| || Nulitics Development Company Pty Ltd. | [NULITICS、拡張現実、開発、Rich Communication Services](https://nulitics.com/#work-with-us)|
+| | | Crimson Line Networking <br/>cc - t/a Crimson Line - Solving IT |[マネージド クラウドおよび IT サービス \| 南アフリカ \| Crimsonline](https://www.crimsonline.co.za)|
 
 ### <a name="apac"></a>**アジア太平洋**
 
@@ -64,6 +72,13 @@ HoloLens 2 は、イマーシブ エクスペリエンスを実現する業界�
 | **台湾** | Systex Software & Service Corporation精誠資訊股份有限公司 | Gina Ko<br><ginako@systex.com><br>Sean Chien<br><seanchien@systex.com> | [HoloLens 2 を購入する - Systex Software & Service Corporation精誠資訊股份有限公司](https://tw.systex.com/microsoft-hololens/) | [HoloLens 2 Industrial Edition を購入する - Systex Software & Service Corporation精誠資訊股份有限公司](https://dcsalesportal.com/brands/microsoft/microsoft-hololens/) | 
 | **タイ** | Sustainable Solution Co., Ltd. | Vongsakorn Pannate <vongsakorn@sustain-solution.com> | [HoloLens 2 を購入する - Sustainable Solution Co., Ltd.](https://hololensthai.com/) | [HoloLens 2 Industrial Edition を購入する - Sustainable Solution Co., Ltd.](https://hololensthai.com/) |
 | **ベトナム** | CÔNG TY TNHH HIVERLAB VIETNAM | Cincin Phung<br><cincin.phung@hiverlab.com> | [HoloLens 2 を購入する - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) | [HoloLens 2 Industrial Edition を購入する - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) |
+
+### <a name="south-america"></a>**南アメリカ**
+
+| 国 | ADD | DMP | HoloLens 2 DMP |
+|---------|-----|------|----------------|
+| **メキシコ** | Ingram Micro México, S.A. de C.V. | Aevitas S.A. de C.V. | [Aevitas S.A. de C.V.](http://aevitas.com.mx)|
+| | Commercializadora Intcomex, S.A. de C.V.| Equipos Comp. de Occte. S.A. de C.V. | [Productos \| Equipos MCA  S.A. de C.V.](https://equiposmca.com/productos/) |
 
 ### <a name="north-america"></a>**北米**
 
