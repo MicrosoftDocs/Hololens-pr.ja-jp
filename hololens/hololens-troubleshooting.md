@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 問題、バグ、トラブルシューティング、修正、ヘルプ、サポート、HoloLens、エミュレーター
-ms.openlocfilehash: 5c79e119352146ac249ef02ab888141391c9cea1
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: deed0d14b2567ae0a1fb2cde8ad1fbe3dbb20bb3
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034197"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351767"
 ---
 # <a name="device-troubleshooting"></a>デバイスのトラブルシューティング
 
@@ -30,9 +30,9 @@ ms.locfileid: "130034197"
 <a id="list"></a>
 
 **既知の問題**
-- [電力が18% になるたびに、デバイスが突然自動的にシャットダウンされます。](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- [Insider fix-電力が18% になるたびに、デバイスが突然自動的にシャットダウンします。](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
 - [OneDriveUWP アプリが Azure AD ユーザーに対して機能しない](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
-- [自動操縦中に0x80180014 を確認するにはどうすればよいですか。](#why-do-i-see-0x80180014-during-autopilot)
+- [オートパイロット中に、0x80180014 が表示されるのはなぜですか。](#why-do-i-see-0x80180014-during-autopilot)
 - [Microsoft Store エラーコード0x80131500](#microsoft-store-error-code-0x80131500)
 - [Microsoft Edge がマイクを起動できない](#microsoft-edge-fails-to-start-the-microphone)
 - [**修正** -20 分後にリモートサポートビデオがフリーズする](#remote-assist-video-freezes-after-20-minutes)
@@ -67,6 +67,9 @@ ms.locfileid: "130034197"
 
 ## <a name="every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically"></a>電力が18% になるたびに、デバイスが突然自動的にシャットダウンされます。
 
+> [!NOTE]
+> Windows insider では、この問題に対する修正プログラムが提供されてい[ます。](hololens-insider.md)
+
 デバイスが18% のバッテリに達したときに、予期しないシャットダウンが発生する既知の問題があります。 これはソフトウェアの問題であり、ハードウェアやバッテリの問題ではありません。このため、デバイスを交換しないでください。 問題がこのバグと一致するかどうかわからない場合は、次のことを行ってください。
 
 1. デバイスでオプションの診断が有効になっていることを確認します。
@@ -92,11 +95,11 @@ Azure AD アカウントを使用して OneDrive For Business を使用する場
 
 [一覧に戻る](#list)
 
-## <a name="why-do-i-see-0x80180014-during-autopilot"></a>自動操縦中に0x80180014 を確認するにはどうすればよいですか。
+## <a name="why-do-i-see-0x80180014-during-autopilot"></a>オートパイロット中に、0x80180014 が表示されるのはなぜですか。
 
 このエラーは通常、デバイスのリセット中に発生し、HoloLens デバイスが少なくとも1回は自動操縦を通過したフローを再利用します。 この問題を解決するには、[デバイスを Microsoft Intune から削除](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode)し、再設定のフローを完了するためにもう一度リセットしてください。
 
-詳細については、「[自動操縦」ページのトラブルシューティングの手順](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)を参照してください。
+詳細については、「[自動操縦」ページのトラブルシューティングの手順](hololens2-autopilot.md#issue---mdm-enrollment-fails-with-error-0x80180014-error-code-during-autopilot)を参照してください。
 
 ## <a name="microsoft-store-error-code-0x80131500"></a>Microsoft Store エラーコード0x80131500
 
@@ -305,7 +308,7 @@ HoloLens がフリーズまたは応答しなくなった場合は、次のよ�
 - バイザー内のオブジェクトを外に移動する (生長など)
 - 部屋の照明をオンにするか、直接の光から出て行く
 
-すべてのガイドラインに従い、調整がまだ失敗している場合は、次の手順で調整プロンプトを設定。 また、 でフィードバックを送信して、お知[フィードバック Hub。](hololens-feedback.md)
+すべてのガイドラインに従い、調整がまだ失敗している場合は、次の手順で調整プロンプトを無効設定。 また、 でフィードバックを送信して、お知[フィードバック Hub。](hololens-feedback.md)
 
 画像の色または明るさ [のトラブルシューティングについては、関連情報も参照してください。](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
@@ -322,8 +325,8 @@ HoloLens がフリーズまたは応答しなくなった場合は、次のよ�
 
 ## <a name="unity-isnt-working"></a>Unity が機能しない
 
-- 新[しい開発に推奨される](/windows/mixed-reality/install-the-tools)Unity の最新バージョンについては、ツールのインストールに関するHoloLensしてください。
-- Unity HoloLens Technical Preview に関する既知の問題については、Unity フォーラムHoloLens[を参照してください](https://forum.unity3d.com/threads/known-issues.394627/)。
+- 新[しい開発に推奨される](/windows/mixed-reality/install-the-tools)Unity の最新バージョンについては、「ツールをインストールするHoloLensしてください。
+- Unity HoloLens Technical Preview に関する既知の問題については、Unity フォーラムのHoloLens[を参照してください](https://forum.unity3d.com/threads/known-issues.394627/)。
 
 [一覧に戻る](#list)
 
@@ -337,39 +340,39 @@ HoloLens がフリーズまたは応答しなくなった場合は、次のよ�
 
 [一覧に戻る](#list)
 
-## <a name="the-hololens-emulator-isnt-working"></a>アプリケーションHoloLens Emulator動作していません
+## <a name="the-hololens-emulator-isnt-working"></a>このHoloLens Emulator動作していません
 
-エミュレーターのHoloLensについては、開発者向けドキュメントを参照してください。  詳細については、HoloLens[エミュレーターのトラブルシューティングに関する記事を参照してください](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)。
+このエミュレーターのHoloLensについては、開発者向けドキュメントを参照してください。  詳細については、HoloLens[エミュレーターのトラブルシューティングに関する記事を参照してください](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)。
 
 
 - アプリ内のすべてのアプリMicrosoft Storeエミュレーターと互換性がある場合はありません。 たとえば、Young Conker と Fragments はエミュレーターで再生できません。
-- PC Web カメラは、Emulator。
-- アプリケーションのライブ プレビュー機能Windows デバイス ポータルエミュレーターでは機能しません。 引き続き、ビデオMixed Realityキャプチャできます。
+- PC Web カメラは、EMULATOR で使用Emulator。
+- アプリケーションのライブ プレビュー機能Windows デバイス ポータルエミュレーターでは機能しません。 引き続きビデオMixed Realityキャプチャできます。
 
 [一覧に戻る](#list)
 
 ## <a name="voice-commands-arent-working"></a>音声コマンドが機能しない
 
-音声Cortana応答しない場合は、有効になっているCortana確認します。 [すべてのアプリ] ボックスの一覧 **で、[メニュー Cortana**  >    >  **ノートブック]** 設定  >  を選択して変更を加えます。 話し方の詳細については、「音声を使用して音声を使用する」[をHoloLens。](hololens-cortana.md)
+音声Cortana応答しない場合は、有効になっているCortana確認します。 [すべてのアプリ] の一覧で、[**メニュー Cortana**  >    >  **ノートブック]** 設定  >  を選択して変更を加えます。 話し方の詳細については、「音声を使用して音声を使用する」[をHoloLens。](hololens-cortana.md)
 
-HoloLens (第 1 世代) では、組み込みの音声認識は構成できません。 これは常にオンです。 デバイスHoloLens 2、デバイスのセットアップ中に音声認識と音声の両方Cortanaを有効にするかどうかを選択できます。
+このHoloLens (第 1 世代) では、組み込みの音声認識は構成できません。 これは常にオンです。 デバイスHoloLens 2、デバイスのセットアップ中に音声認識と音声の両方をCortanaするかどうかを選択できます。
 
-音声にHoloLens 2応答していない場合は、音声認識が有効になっていることを確認します。 [Start **設定**  >  Privacy Speech]**に**  >  **移動**  >  **し、** 音声認識を **有効にしてください**。
+音声にHoloLens 2応答していない場合は、音声認識が有効になっていることを確認します。 [Start **設定** Privacy  >  **Speech] に**  >    >  **移動し、** 音声認識を **有効にしてください**。
 
 [一覧に戻る](#list)
 
 ## <a name="hand-input-isnt-working"></a>手入力が機能しない
 
-手をHoloLensするには、ジェスチャ フレーム内に保持する必要があります。  [Mixed Reality ホーム] には、手がいつ追跡されるのか知るフィードバックが提供されます。  フィードバックは、さまざまなバージョンのサービスでHoloLens。
+手をHoloLensするには、ジェスチャ フレーム内に保持する必要があります。  [Mixed Reality ホーム] には、手がいつ追跡されるのか知るフィードバックが提供されます。  フィードバックは、異なるバージョンのサービスで異HoloLens。
 
-- 第HoloLens (第 1 世代) に、視線カーソルがドットからリングに変わります
+- 1 HoloLens (第 1 世代) では、視線カーソルがドットからリングに変わります
 - このHoloLens 2、手がスレートに近いときに指先カーソルが表示され、スレートが離れたときに手の光線が表示されます
 
-多くのイマーシブ アプリは、ホームに似た入力パターンMixed Realityします。  HoloLens [(第 1](hololens1-basic-usage.md#use-hololens-with-your-hands)世代) および HoloLens 2 で手入力を使用する方法[について学習します](hololens2-basic-usage.md#the-hand-tracking-frame)。
+多くのイマーシブ アプリは、ホームに似た入力Mixed Realityします。  HoloLens (第[1](hololens1-basic-usage.md#use-hololens-with-your-hands)世代) および HoloLens 2 で手入力を使用する方法[について学習します](hololens2-basic-usage.md#the-hand-tracking-frame)。
 
-グラブを装着している場合は、一部の種類の靴下が手の追跡で動作しない点に注意してください。  一般的な例として、黒いゴムのグラブがあります。これは、赤外光を吸収する傾向が高く、深度カメラでは取り出されません。  作業にゴムのグラブが含まれる場合は、青やグレーなどの薄い色を試することをお勧めします。  もう 1 つの例は、手の形があいまいになりがちな、大きなバッグ状のグラブです。 最適な結果を得る場合は、可能な限りフォームに合ったアダプターを使用することをお勧めします。
+グラブを装着している場合は、一部の種類の靴下が手の追跡で動作しない点に注意してください。  一般的な例として、黒いゴムのグラブがあります。これは、赤外光を吸収する傾向があるが、深度カメラでは取り出されません。  作業にゴムのグラブが含まれる場合は、青やグレーなどの薄い色を試することをお勧めします。  もう 1 つの例は、手の形があいまいになりがちな、大きなバッグ状のグラブです。 最適な結果を得る場合は、可能な限りフォームに合ったアダプターを使用することをお勧めします。
 
-バイザーに指紋やくもりがある場合は、バイザーに付いたマイクロファイバー クリーニング HoloLensを使用して、バイザーを簡単にクリーニングします。
+バイザーに指紋やスマージがある場合は、バイザーに付いたマイクロファイバー クリーニング HoloLensを使用して、バイザーを簡単にクリーニングします。
 
 [一覧に戻る](#list)
 
@@ -379,30 +382,30 @@ HoloLens を Wi-Fi ネットワークに接続できない場合は、以下を�
 
 - Wi-Fi がオンになっていることを確認してください。 確認するには、[開始] ジェスチャを使用し、[ネットワーク **設定**  >  **Wi-Fi ] &amp; を**  >  **選択します**。 Wi-Fi がオンである場合は、オフにしてから、もう一度オンにしてみてください。
 - ルーターまたはアクセス ポイントに PC を近づけます。
-- お使Wi-Fiルーターを再起動し、[を再起動HoloLens。](hololens-recovery.md) 接続を再試行してください。
+- ルーターをWi-Fiし、[を再起動HoloLens。](hololens-recovery.md) 接続を再試行してください。
 - これらのいずれも機能しない場合は、ルーターのファームウェアが最新であるか確認します。 この情報は、製造元の Web サイトで見つけることができます。
 
 [一覧に戻る](#list)
 
 ## <a name="bluetooth-devices-arent-pairing"></a>Bluetoothデバイスがペアリングされていない
 
-デバイスのペアリングで問題が発生した場合[Bluetoothを](hololens-connect-devices.md)試してください。
+デバイス のペアリングで問題が発生した場合Bluetooth[を](hololens-connect-devices.md)試してください。
 
-- [デバイス **設定**  >  **に移動** し、デバイスが有効Bluetooth確認します。 有効な場合は、オフにし、再度オンにします。
-- デバイスが完全にBluetooth、または新しいバッテリを持っている必要があります。
+- [デバイス  >  **設定]** に移動し、デバイスがBluetoothになっていることを確認します。 有効な場合は、オフにし、再度オンにします。
+- お使いのデバイスにBluetooth、または新しいバッテリが搭載されていないことを確認します。
 - それでも接続できない場合は、次[のコマンドをHoloLens。](hololens-recovery.md)
 
 [一覧に戻る](#list)
 
 ## <a name="usb-c-microphone-isnt-working"></a>USB-C マイクが動作しない
 
-一部の USB-C マイクでは、マイクとスピーカーの両方として誤って報告される *点に* 注意してください。 これはマイクの問題であり、マイクには問題HoloLens。 これらのマイクの 1 つをデバイスに接続HoloLens音が失われる可能性があります。 さいわい、簡単な修正があります。  
+一部の USB-C マイクでは、マイクとスピーカーの両方として誤って報告される *点に* 注意してください。 これはマイクの問題であり、マイクには問題HoloLens。 これらのマイクの 1 つを電源に接続HoloLens音が失われる可能性があります。 さいわい、簡単な修正があります。  
 
 **[設定** サウンド] で、組み込みのスピーカー (アナログ機能オーディオ ドライバー) を既定のデバイス として明示的  ->    ->  **に設定します**。  HoloLensマイクが削除され、後で再接続された場合でも、この設定を覚えておく必要があります。
 
 ![USB-C マイクのトラブルシューティング。](images/usbc-mic-4.png)
 
-## <a name="devices-listed-as-available-in-settings-dont-work"></a>[デバイス] で使用可能として一設定デバイスが機能しない
+## <a name="devices-listed-as-available-in-settings-dont-work"></a>設定で使用可能と表示されているデバイスが動作しない
 
 HoloLens (第1世代) では Bluetooth オーディオプロファイルはサポートされていません。 スピーカーやヘッドセットなどの Bluetooth オーディオデバイスは、HoloLens 設定で使用できるように見えることがありますが、これらはサポートされていません。
 

@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 10/12/2021
+ms.date: 10/19/2021
 ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 080eb5949bc80d1ce922d57f099c375668f5633f
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 382c979138068ab1d9682ee4e84831accc9e4553
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924350"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351657"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens の Insider Preview
 
@@ -29,7 +29,26 @@ HoloLens のための最新の Insider Preview ビルドへようこそ。 こ�
 
 ## <a name="windows-insider-release-notes"></a>WindowsInsider のリリースノート
 
-最近の全 Insider 機能が公開されました。 詳細については、[リリースノートのページ](hololens-release-notes.md)を参照してください。
+新機能と HoloLens の期間 これらの新しい更新プログラムについては HoloLens をご覧ください。
+
+### <a name="colorblind-mode"></a>Colorblind モード
+
+Insider build 20348.1463 に追加されました
+
+colorblind モードは、HoloLens アクセスしやすくする優れた機能です。 新しい色覚モードは、設定アプリの [   ->  **アクセスの容易さ** 設定  ->  **色フィルター**] の下にあります。 いくつかの新しいフィルターを使用できます。 いくつかの使用可能なフィルターの視覚的な例を次に示します。
+
+| オフ | グレースケール | Tritanopia |
+|-----|-----------|------------|
+| ![色フィルターをオフにする](images/colorblind-off.png)   | ![カラーフィルターグレースケール](images/colorblind-greyscale.png)         | ![カラーフィルター tritanopia](images/colorblind-tritanopia.png)          |
+
+### <a name="fixes-and-improvements"></a>修正プログラムと機能強化
+
+- [電力が18% になるたびに、デバイスが突然自動的に](hololens-troubleshooting.md#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)シャットダウンされるという既知の問題を修正しています。
+- ダウン方向を検出するときのプラットフォームモードの移動の機能強化。
+- 更新ダイアログに関する問題を修正しています。
+- 受信トレイ Microsoft Edge ブラウザーのバージョンが更新されました。
+- 再起動後にオプションの診断データを切り替えると、テレメトリ設定ページで選択した設定が保持されない問題を修正しました。
+- デバイスに対して45度の角度で回転したときに、QR コードが認識されない問題を修正しました。
 
 ## <a name="start-receiving-insider-builds"></a>Insider ビルドの受信を開始します
 
